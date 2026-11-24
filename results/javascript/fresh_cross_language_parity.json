@@ -1,0 +1,24 @@
+{
+  "domain_observation_pairs": 33013,
+  "input_sha256": {
+    "results/revision-native-completion/raw/armstrong.jsonl.gz": "e4e8839316cdc77374e90a785b47a465e1d0e5ded53e9a054dcc32b3fa3e3979",
+    "results/revision-native-completion/raw/collatz_steps.jsonl.gz": "d185d13d9c0badf16ef4a25105598f3690ace2c9801587301113463387137eb9",
+    "results/revision-native-completion/raw/darts.jsonl.gz": "5be9311b4bd249e51904471f3f18ef029928ef94cc350e2031a9f247a511acc2",
+    "results/revision-native-completion/raw/grains.jsonl.gz": "d88979a51b8f461efbedff335eba70ad19bb56e7b04d325bcb7875c2aeaad479",
+    "results/revision-native-completion/raw/hamming.jsonl.gz": "0871c9456707bb505460bd50da083b7735f9d4c56f1ac75df245e54f5410c75e",
+    "results/revision-native-completion/raw/isogram.jsonl.gz": "6b16fe24ad6b712e4ba5f04c9421a04d2ab9f9cf6f5ed669fa963187a7f0b94e",
+    "results/revision-native-completion/raw/leap_year.jsonl.gz": "212dbaad8e9cd2b1f61fc9992ab83cef48aef7110116d5e0c817873a3f5abfcd",
+    "results/revision-native-completion/raw/luhn.jsonl.gz": "31be3d0959f8f84ece193e9c39d6837577cfa50ebdb4c0aa26cf9313ca85ccda",
+    "results/revision-native-completion/raw/nucleotide_count.jsonl.gz": "fd214f05743dca03b6a27f1b62f5f7048ade65485fb6bd0129ad030a056df1d5",
+    "results/revision-native-completion/raw/raindrops.jsonl.gz": "72a4227e2178be39a36b49f39db5d85e1882442a9182618692793d95b207c5af",
+    "results/revision-native-completion/raw/reverse_text.jsonl.gz": "38ec1870136e93ad6dc109ebef9b6ec1c3d4fc0eeb039c58fac6fcf78d319d3b",
+    "results/revision-native-completion/raw/triangle.jsonl.gz": "e5c7e14bcbcf63ebca4447fc7b5dc699fa68e9e248da3088f764c652901e5431",
+    "results/revision-python-fresh/observations.jsonl.gz": "61b7da5f6161ea6c89351c4deb8900822781f345676aa9af1ddf3cbbcfc3abed"
+  },
+  "nominal_observation_pairs": 61,
+  "output_sha256": "41d99365cc83675430e18134919ebb88d5cbc176f8de3e6b5d0ef403602bdc32",
+  "producer_sha256": "97fef3a43427c496c5a04e766cc156756a92a8a5118fdc05d257664a773f0c0e",
+  "scope": "Full stored typed reference vectors compared value by value under the fresh-input v2 contract; no program execution by this check.",
+  "status": "PASS",
+  "tasks": 12
+}

@@ -1,0 +1,13 @@
+{
+  "stdout": "{\"elapsed_seconds\":0.003288,\"error\":null,\"observations\":[{\"after\":{\"args\":[\"tuple\",[[\"str\",\"Hello world\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"Hello world\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"0\"]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"Is the sky blue?\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"Is the sky blue?\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"0\"]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"I love It !\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"I love It !\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"1\"]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"bIt\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"bIt\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"0\"]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"I feel good today. I will be productive. will kill It\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"I feel good today. I will be productive. will kill It\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"2\"]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"You and I are going for a walk\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"You and I are going for a walk\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"0\"]]}],\"status\":\"passed\",\"stderr\":\"\",\"stdout\":\"\"}\n",
+  "stderr": "",
+  "returncode": 0,
+  "interruption": null,
+  "child_user_cpu_seconds": 0.03636099999999942,
+  "child_system_cpu_seconds": 0.004692999999999614,
+  "group": "0037b96e172bb014c17662fc67c0b3d8325d7e0763679ab2aac652547cc0ed68",
+  "received_label": true,
+  "source_sha256": "d1cf0b1f7038af77c4b9aff16063fe792743ad1b8d27fb2b180309af1e614938",
+  "contract_sha256": "8cb0bb7e0550268c997a466d7fd239aa8d1edc05fb3ab6cc16954dcf3055f033",
+  "worker_seconds": 0.04168009100249037
+}

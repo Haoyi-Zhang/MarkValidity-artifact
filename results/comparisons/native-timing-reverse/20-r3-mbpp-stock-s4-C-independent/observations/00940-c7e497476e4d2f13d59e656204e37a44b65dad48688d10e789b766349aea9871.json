@@ -1,0 +1,13 @@
+{
+  "stdout": "{\"error\": null, \"event\": \"source_compile\", \"status\": \"passed\"}\n{\"assertion_reached\": true, \"elapsed_seconds\": 0.00012, \"error\": null, \"event\": \"test_result\", \"status\": \"passed\", \"stderr\": \"\", \"stdout\": \"\", \"test_index\": 0}\n{\"assertion_reached\": true, \"elapsed_seconds\": 4.5e-05, \"error\": null, \"event\": \"test_result\", \"status\": \"passed\", \"stderr\": \"\", \"stdout\": \"\", \"test_index\": 1}\n{\"assertion_reached\": true, \"elapsed_seconds\": 3.1e-05, \"error\": null, \"event\": \"test_result\", \"status\": \"passed\", \"stderr\": \"\", \"stdout\": \"\", \"test_index\": 2}\n{\"completed_tests\": 3, \"elapsed_seconds\": 0.00298, \"event\": \"complete\", \"evidence_schema\": \"markvalidity-mbpp-original-assertions-v2\", \"failed_tests\": 0, \"passed_tests\": 3, \"rejected_tests\": 0, \"scheduled_tests\": 3, \"status\": \"passed\", \"unavailable_tests\": 0}\n",
+  "stderr": "<mbpp-candidate>:3: SyntaxWarning: invalid escape sequence '\\w'\n",
+  "returncode": 0,
+  "interruption": null,
+  "child_user_cpu_seconds": 0.019481000000041604,
+  "child_system_cpu_seconds": 0.011689000000004057,
+  "group": "c7e497476e4d2f13d59e656204e37a44b65dad48688d10e789b766349aea9871",
+  "received_label": true,
+  "source_sha256": "a116dc16289deec81fd5e4d766c0d3c64b4a29bb871f2c369d272980696047c7",
+  "contract_sha256": "f9e5cb54d82b6978026a41660252e601d2693c26e5137ce87fce2a66f191008f",
+  "worker_seconds": 0.03190987600100925
+}

@@ -1,0 +1,67 @@
+{
+  "schema": "markvalidity-mbpp-runtime-bound-contract-v1",
+  "native_contract": {
+    "dataset": "google-research/sanitized-mbpp",
+    "task_id": 408,
+    "test_imports": [],
+    "test_list": [
+      "assert k_smallest_pairs([1,3,7],[2,4,6],2)==[[1, 2], [1, 4]]",
+      "assert k_smallest_pairs([1,3,7],[2,4,6],1)==[[1, 2]]",
+      "assert k_smallest_pairs([1,3,7],[2,4,6],7)==[[1, 2], [1, 4], [3, 2], [1, 6], [3, 4], [3, 6], [7, 2]]"
+    ],
+    "initialization": "fresh namespace and builtin map per original test_list entry; test imports before source initialization",
+    "process": "fresh subprocess per source; deterministic random seed and hash seed zero",
+    "runtime": "CPython 3.12.14",
+    "oracle": "unchanged original assert statements",
+    "evidence_schema": "markvalidity-mbpp-original-assertions-v2",
+    "evidence_policy": {
+      "uncaught_resource_exceptions": [
+        "MemoryError",
+        "OSError(ENOMEM)",
+        "KeyboardInterrupt"
+      ],
+      "resource_or_observer_failure": "unavailable unless an earlier admitted program-failure witness remains",
+      "source_syntax_error": "contradicted",
+      "malformed_test_or_request": "evidence_rejected",
+      "reference_failure": "reject preservation evidence; do not label the candidate invalid"
+    },
+    "native_runner_sha256": "003909bf27456960596204a830cfde367f6aa1d95a13423f589c30633192d46a",
+    "execution_environment": {
+      "implementation": "CPython",
+      "python_version": "3.12.14",
+      "sys_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+      "python_build": [
+        "main",
+        "Aug 25 2026 14:00:49"
+      ],
+      "python_compiler": "Clang 22.1.3 ",
+      "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+      "machine": "x86_64",
+      "interpreter_executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7"
+    },
+    "resource_guard": {
+      "cpu_seconds": 10,
+      "wall_seconds": 15,
+      "address_space_bytes": 1073741824
+    },
+    "random_seed_per_test": 0,
+    "python_hash_seed": 0,
+    "python_assertions_enabled": true,
+    "test_list_sha256": "97f8d9b38f47bc402d90437df3b77a70bc0e9e3ff528cd6e3d359601791b7f7e",
+    "test_imports_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  "native_contract_sha256": "dff02eb347450b516c206ef951c82b26141aaf49cc93f842fedd3c2ad4c21478",
+  "execution_environment": {
+    "implementation": "CPython",
+    "python_version": "3.12.14",
+    "sys_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "python_build": [
+      "main",
+      "Aug 25 2026 14:00:49"
+    ],
+    "python_compiler": "Clang 22.1.3 ",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "machine": "x86_64",
+    "interpreter_executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7"
+  }
+}

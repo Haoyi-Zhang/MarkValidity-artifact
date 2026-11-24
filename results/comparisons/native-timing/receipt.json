@@ -1,0 +1,1858 @@
+{
+  "schema": "markvalidity-serial-native-comparison-costs-v1",
+  "status": "COMPLETE",
+  "protocol_sha256": "463c576d6e5a4286ed8701cb8113d591d9acc9cdacf95f8ada7ee7a547398c78",
+  "common_registration_sha256": "1d16da8f5625c0e4dbe2f077964af6db827e59f9f54eea66e84531dcbf0634ce",
+  "public_registry_sha256": "b27d496c4cb7dade0ec39d6a5094805e609d3bcf1cdb32654b12db160effce49",
+  "candidate_observation_files_read_before_selection": 0,
+  "cross_run_candidate_label_reuse": false,
+  "runs": [
+    {
+      "repeat": 1,
+      "dataset": "HumanEval",
+      "scope": "humaneval",
+      "left": "stock",
+      "right": "s1",
+      "target": "J",
+      "method": "coupled",
+      "policy": "joint_width_per_suite",
+      "ordinal": 1,
+      "directory": "01-r1-humaneval-stock-s1-J-coupled",
+      "denominator": 492,
+      "initial_reference_groups": 3,
+      "candidate_suite_queries": 146,
+      "decision": "left_strict",
+      "final_bounds": {
+        "lower": 1,
+        "upper": 6,
+        "units": "joint_count_difference",
+        "decision": "left_strict",
+        "defined_all": true
+      },
+      "phase_seconds": {
+        "register_seconds": 0.005603355006314814,
+        "select_seconds": 0.00035607305471785367,
+        "bounds_seconds": 0.0008357039332622662,
+        "worker_seconds": 4.63367230307631,
+        "receive_seconds": 0.01744751307705883,
+        "record_seconds": 0.12203087293892168
+      },
+      "audit_total_seconds": 4.782586683999398,
+      "unallocated_loop_seconds": 0.002640862912812736,
+      "trace_sha256": "6aec862d8d421797c293a5dbbe3e1f6cc6e7f025606fd106bc21dba05af0aaa4",
+      "load_before": {
+        "monotonic_seconds": 33712.719633715,
+        "load_average": [
+          3.158203125,
+          3.46630859375,
+          3.73291015625
+        ],
+        "visible_processes": 3,
+        "producer_cpu_seconds": 1.943565435,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "load_after": {
+        "monotonic_seconds": 33717.502310083,
+        "load_average": [
+          3.30615234375,
+          3.4921875,
+          3.73974609375
+        ],
+        "visible_processes": 3,
+        "producer_cpu_seconds": 2.256265803,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "repeat": 1,
+      "dataset": "HumanEval",
+      "scope": "humaneval",
+      "left": "stock",
+      "right": "s1",
+      "target": "J",
+      "method": "independent",
+      "policy": "independent_joint_width",
+      "ordinal": 2,
+      "directory": "02-r1-humaneval-stock-s1-J-independent",
+      "denominator": 492,
+      "initial_reference_groups": 3,
+      "candidate_suite_queries": 429,
+      "decision": "left_strict",
+      "final_bounds": {
+        "lower": 1,
+        "upper": 6,
+        "units": "joint_count_difference",
+        "decision": "left_strict",
+        "defined_all": true
+      },
+      "phase_seconds": {
+        "register_seconds": 0.005535431999305729,
+        "select_seconds": 0.001414594953530468,
+        "bounds_seconds": 0.0028909730026498437,
+        "worker_seconds": 14.311292690050323,
+        "receive_seconds": 0.07358555399696343,
+        "record_seconds": 0.23511339900869643
+      },
+      "audit_total_seconds": 14.64322629399976,
+      "unallocated_loop_seconds": 0.013393650988291483,
+      "trace_sha256": "5aa72531d93a29a714b9091c01d0f8b1bcea95ff61ebd1ba90acac2cd69922ce",
+      "load_before": {
+        "monotonic_seconds": 33717.505175191,
+        "load_average": [
+          3.30615234375,
+          3.4921875,
+          3.73974609375
+        ],
+        "visible_processes": 3,
+        "producer_cpu_seconds": 2.259103706,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "load_after": {
+        "monotonic_seconds": 33732.148519352,
+        "load_average": [
+          3.95458984375,
+          3.625,
+          3.7802734375
+        ],
+        "visible_processes": 3,
+        "producer_cpu_seconds": 3.077573855,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "repeat": 1,
+      "dataset": "HumanEval",
+      "scope": "humaneval",
+      "left": "stock",
+      "right": "s1",
+      "target": "C",
+      "method": "independent",
+      "policy": "independent_conditional_minimax_width",
+      "ordinal": 3,
+      "directory": "03-r1-humaneval-stock-s1-C-independent",
+      "denominator": 492,
+      "initial_reference_groups": 3,
+      "candidate_suite_queries": 532,
+      "decision": "left_strict",
+      "final_bounds": {
+        "lower": "79/236652",
+        "upper": "1/164",
+        "units": "conditional_rate_difference",
+        "decision": "left_strict",
+        "defined_all": true
+      },
+      "phase_seconds": {
+        "register_seconds": 0.0035878950002370402,
+        "select_seconds": 0.10091909300535917,
+        "bounds_seconds": 0.0264990769646829,
+        "worker_seconds": 17.15988106795703,
+        "receive_seconds": 0.07094348888495006,
+        "record_seconds": 0.3692677370781894
+      },
+      "audit_total_seconds": 17.748076251002203,
+      "unallocated_loop_seconds": 0.016977892111754045,
+      "trace_sha256": "f68781370af759efddd02ab7d579a4be34e9d721f31a62e26631366ce51684e2",
+      "load_before": {
+        "monotonic_seconds": 33732.153303596,
+        "load_average": [
+          3.95458984375,
+          3.625,
+          3.7802734375
+        ],
+        "visible_processes": 3,
+        "producer_cpu_seconds": 3.082276283,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "load_after": {
+        "monotonic_seconds": 33749.901526998,
+        "load_average": [
+          4.798828125,
+          3.83056640625,
+          3.84521484375
+        ],
+        "visible_processes": 3,
+        "producer_cpu_seconds": 4.238607878,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "repeat": 1,
+      "dataset": "HumanEval",
+      "scope": "humaneval",
+      "left": "stock",
+      "right": "s1",
+      "target": "C",
+      "method": "coupled",
+      "policy": "conditional_differences_first",
+      "ordinal": 4,
+      "directory": "04-r1-humaneval-stock-s1-C-coupled",
+      "denominator": 492,
+      "initial_reference_groups": 3,
+      "candidate_suite_queries": 160,
+      "decision": "left_strict",
+      "final_bounds": {
+        "lower": 249,
+        "upper": 1476,
+        "units": "conditional_cross_product_count_margin",
+        "decision": "left_strict",
+        "defined_all": true
+      },
+      "phase_seconds": {
+        "register_seconds": 0.003773896998609416,
+        "select_seconds": 0.0004027829854749143,
+        "bounds_seconds": 0.008664408938784618,
+        "worker_seconds": 4.840650974030723,
+        "receive_seconds": 0.02358337095938623,
+        "record_seconds": 0.12625388896412915
+      },
+      "audit_total_seconds": 5.006149381995783,
+      "unallocated_loop_seconds": 0.0028200591186759993,
+      "trace_sha256": "d2f39f239bbb17a4480c3e91a60eab06695f020b595e06df5d2098996d796a64",
+      "load_before": {
+        "monotonic_seconds": 33749.905327434,
+        "load_average": [
+          4.798828125,
+          3.83056640625,
+          3.84521484375
+        ],
+        "visible_processes": 3,
+        "producer_cpu_seconds": 4.242371489,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "load_after": {
+        "monotonic_seconds": 33754.911541253,
+        "load_average": [
+          5.05517578125,
+          3.89990234375,
+          3.86767578125
+        ],
+        "visible_processes": 3,
+        "producer_cpu_seconds": 4.594405205,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "repeat": 1,
+      "dataset": "mbpp_sanitized",
+      "scope": "mbpp",
+      "left": "stock",
+      "right": "s4",
+      "target": "J",
+      "method": "coupled",
+      "policy": "joint_width_per_suite",
+      "ordinal": 5,
+      "directory": "05-r1-mbpp-stock-s4-J-coupled",
+      "denominator": 1281,
+      "initial_reference_groups": 20,
+      "candidate_suite_queries": 1,
+      "decision": "right_strict",
+      "final_bounds": {
+        "lower": -3,
+        "upper": -1,
+        "units": "joint_count_difference",
+        "decision": "right_strict",
+        "defined_all": true
+      },
+      "phase_seconds": {
+        "register_seconds": 0.012559375005366746,
+        "select_seconds": 1.8229984561912715e-06,
+        "bounds_seconds": 9.224997484125197e-06,
+        "worker_seconds": 0.036079012003028765,
+        "receive_seconds": 0.00017127799947047606,
+        "record_seconds": 0.0007586520005133934
+      },
+      "audit_total_seconds": 0.0498175109969452,
+      "unallocated_loop_seconds": 0.00023814599262550473,
+      "trace_sha256": "f6a269a3ae3d7a9db5534463137fd7f00aa6fbbea0d877c6314db861fca73751",
+      "load_before": {
+        "monotonic_seconds": 33754.914931852,
+        "load_average": [
+          5.05517578125,
+          3.89990234375,
+          3.86767578125
+        ],
+        "visible_processes": 3,
+        "producer_cpu_seconds": 4.597756973,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "load_after": {
+        "monotonic_seconds": 33754.964788871,
+        "load_average": [
+          5.05517578125,
+          3.89990234375,
+          3.86767578125
+        ],
+        "visible_processes": 3,
+        "producer_cpu_seconds": 4.612889183,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "repeat": 1,
+      "dataset": "mbpp_sanitized",
+      "scope": "mbpp",
+      "left": "stock",
+      "right": "s4",
+      "target": "J",
+      "method": "independent",
+      "policy": "independent_joint_width",
+      "ordinal": 6,
+      "directory": "06-r1-mbpp-stock-s4-J-independent",
+      "denominator": 1281,
+      "initial_reference_groups": 20,
+      "candidate_suite_queries": 811,
+      "decision": "right_strict",
+      "final_bounds": {
+        "lower": -3,
+        "upper": -1,
+        "units": "joint_count_difference",
+        "decision": "right_strict",
+        "defined_all": true
+      },
+      "phase_seconds": {
+        "register_seconds": 0.010459097000421025,
+        "select_seconds": 0.0024582519981777295,
+        "bounds_seconds": 0.005344087119738106,
+        "worker_seconds": 40.013947975909105,
+        "receive_seconds": 0.11951160286844242,
+        "record_seconds": 0.6353865650671651
+      },
+      "audit_total_seconds": 40.80129570700228,
+      "unallocated_loop_seconds": 0.014188127039233223,
+      "trace_sha256": "68e2fb1c330235fcfed9993c9621721fa9dfade5bc5bc0c0c9373ea35e7ea417",
+      "load_before": {
+        "monotonic_seconds": 33754.965325839,
+        "load_average": [
+          5.05517578125,
+          3.89990234375,
+          3.86767578125
+        ],
+        "visible_processes": 3,
+        "producer_cpu_seconds": 4.613394375,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "load_after": {
+        "monotonic_seconds": 33795.766800885,
+        "load_average": [
+          5.8203125,
+          4.26806640625,
+          3.99560546875
+        ],
+        "visible_processes": 3,
+        "producer_cpu_seconds": 6.404243099,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "repeat": 1,
+      "dataset": "mbpp_sanitized",
+      "scope": "mbpp",
+      "left": "stock",
+      "right": "s4",
+      "target": "C",
+      "method": "independent",
+      "policy": "independent_conditional_minimax_width",
+      "ordinal": 7,
+      "directory": "07-r1-mbpp-stock-s4-C-independent",
+      "denominator": 1281,
+      "initial_reference_groups": 20,
+      "candidate_suite_queries": 1136,
+      "decision": "right_strict",
+      "final_bounds": {
+        "lower": "-143/181902",
+        "upper": "-143/544854",
+        "units": "conditional_rate_difference",
+        "decision": "right_strict",
+        "defined_all": true
+      },
+      "phase_seconds": {
+        "register_seconds": 0.008950903997174464,
+        "select_seconds": 0.2519954949748353,
+        "bounds_seconds": 0.06454756292805541,
+        "worker_seconds": 48.686215562986035,
+        "receive_seconds": 0.18783348791475873,
+        "record_seconds": 0.7268698740153923
+      },
+      "audit_total_seconds": 49.94949202400312,
+      "unallocated_loop_seconds": 0.023079137186869048,
+      "trace_sha256": "8266a3c3bda7992e6d73403df2e9c4c74ea55d4f4d65310e7b41370a7337ca48",
+      "load_before": {
+        "monotonic_seconds": 33795.773633625,
+        "load_average": [
+          5.8203125,
+          4.26806640625,
+          3.99560546875
+        ],
+        "visible_processes": 3,
+        "producer_cpu_seconds": 6.410708019,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "load_after": {
+        "monotonic_seconds": 33845.723362825,
+        "load_average": [
+          5.47705078125,
+          4.4375,
+          4.0703125
+        ],
+        "visible_processes": 3,
+        "producer_cpu_seconds": 9.096608216,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "repeat": 1,
+      "dataset": "mbpp_sanitized",
+      "scope": "mbpp",
+      "left": "stock",
+      "right": "s4",
+      "target": "C",
+      "method": "coupled",
+      "policy": "conditional_differences_first",
+      "ordinal": 8,
+      "directory": "08-r1-mbpp-stock-s4-C-coupled",
+      "denominator": 1281,
+      "initial_reference_groups": 20,
+      "candidate_suite_queries": 6,
+      "decision": "right_strict",
+      "final_bounds": {
+        "lower": -1287,
+        "upper": -57,
+        "units": "conditional_cross_product_count_margin",
+        "decision": "right_strict",
+        "defined_all": true
+      },
+      "phase_seconds": {
+        "register_seconds": 0.010644171998137608,
+        "select_seconds": 1.4552002539858222e-05,
+        "bounds_seconds": 0.00037988999247318134,
+        "worker_seconds": 0.18252879599458538,
+        "receive_seconds": 0.0015112020118976943,
+        "record_seconds": 0.003713573001732584
+      },
+      "audit_total_seconds": 0.19964099999924656,
+      "unallocated_loop_seconds": 0.0008488149978802539,
+      "trace_sha256": "be430d5ee890507bb9518bfbcaa94847b3447bc8f95ee033e265d46d33d6cab4",
+      "load_before": {
+        "monotonic_seconds": 33845.732077206,
+        "load_average": [
+          5.47705078125,
+          4.4375,
+          4.0703125
+        ],
+        "visible_processes": 3,
+        "producer_cpu_seconds": 9.105325418,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "load_after": {
+        "monotonic_seconds": 33845.931753118,
+        "load_average": [
+          5.47705078125,
+          4.4375,
+          4.0703125
+        ],
+        "visible_processes": 3,
+        "producer_cpu_seconds": 9.129100013,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "repeat": 2,
+      "dataset": "HumanEval",
+      "scope": "humaneval",
+      "left": "stock",
+      "right": "s1",
+      "target": "C",
+      "method": "independent",
+      "policy": "independent_conditional_minimax_width",
+      "ordinal": 9,
+      "directory": "09-r2-humaneval-stock-s1-C-independent",
+      "denominator": 492,
+      "initial_reference_groups": 3,
+      "candidate_suite_queries": 532,
+      "decision": "left_strict",
+      "final_bounds": {
+        "lower": "79/236652",
+        "upper": "1/164",
+        "units": "conditional_rate_difference",
+        "decision": "left_strict",
+        "defined_all": true
+      },
+      "phase_seconds": {
+        "register_seconds": 0.005249681002169382,
+        "select_seconds": 0.10086858096474316,
+        "bounds_seconds": 0.030782080975768622,
+        "worker_seconds": 16.867104167904472,
+        "receive_seconds": 0.08084836690250086,
+        "record_seconds": 0.26940306599863106
+      },
+      "audit_total_seconds": 17.36550207500113,
+      "unallocated_loop_seconds": 0.01124613125284668,
+      "trace_sha256": "f68781370af759efddd02ab7d579a4be34e9d721f31a62e26631366ce51684e2",
+      "load_before": {
+        "monotonic_seconds": 33845.933307795,
+        "load_average": [
+          5.47705078125,
+          4.4375,
+          4.0703125
+        ],
+        "visible_processes": 3,
+        "producer_cpu_seconds": 9.130639835,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "load_after": {
+        "monotonic_seconds": 33863.298928478,
+        "load_average": [
+          5.6884765625,
+          4.5556640625,
+          4.1171875
+        ],
+        "visible_processes": 3,
+        "producer_cpu_seconds": 10.200753151,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "repeat": 2,
+      "dataset": "HumanEval",
+      "scope": "humaneval",
+      "left": "stock",
+      "right": "s1",
+      "target": "C",
+      "method": "coupled",
+      "policy": "conditional_differences_first",
+      "ordinal": 10,
+      "directory": "10-r2-humaneval-stock-s1-C-coupled",
+      "denominator": 492,
+      "initial_reference_groups": 3,
+      "candidate_suite_queries": 160,
+      "decision": "left_strict",
+      "final_bounds": {
+        "lower": 249,
+        "upper": 1476,
+        "units": "conditional_cross_product_count_margin",
+        "decision": "left_strict",
+        "defined_all": true
+      },
+      "phase_seconds": {
+        "register_seconds": 0.003507233996060677,
+        "select_seconds": 0.0007514570315834135,
+        "bounds_seconds": 0.011408599995775148,
+        "worker_seconds": 6.050167775007139,
+        "receive_seconds": 0.030383795012312476,
+        "record_seconds": 0.1321603430696996
+      },
+      "audit_total_seconds": 6.2330247220015735,
+      "unallocated_loop_seconds": 0.004645517889002804,
+      "trace_sha256": "d2f39f239bbb17a4480c3e91a60eab06695f020b595e06df5d2098996d796a64",
+      "load_before": {
+        "monotonic_seconds": 33863.301897632,
+        "load_average": [
+          5.6884765625,
+          4.5556640625,
+          4.1171875
+        ],
+        "visible_processes": 3,
+        "producer_cpu_seconds": 10.203696591,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "load_after": {
+        "monotonic_seconds": 33869.535090918,
+        "load_average": [
+          5.8740234375,
+          4.61328125,
+          4.13818359375
+        ],
+        "visible_processes": 3,
+        "producer_cpu_seconds": 10.61768018,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "repeat": 2,
+      "dataset": "mbpp_sanitized",
+      "scope": "mbpp",
+      "left": "stock",
+      "right": "s4",
+      "target": "J",
+      "method": "coupled",
+      "policy": "joint_width_per_suite",
+      "ordinal": 11,
+      "directory": "11-r2-mbpp-stock-s4-J-coupled",
+      "denominator": 1281,
+      "initial_reference_groups": 20,
+      "candidate_suite_queries": 1,
+      "decision": "right_strict",
+      "final_bounds": {
+        "lower": -3,
+        "upper": -1,
+        "units": "joint_count_difference",
+        "decision": "right_strict",
+        "defined_all": true
+      },
+      "phase_seconds": {
+        "register_seconds": 0.00960161599505227,
+        "select_seconds": 1.2520031305029988e-06,
+        "bounds_seconds": 9.404000593349338e-06,
+        "worker_seconds": 0.039933749998454005,
+        "receive_seconds": 0.00023355099983746186,
+        "record_seconds": 0.0008886470022844151
+      },
+      "audit_total_seconds": 0.05106423500546953,
+      "unallocated_loop_seconds": 0.0003960150061175227,
+      "trace_sha256": "f6a269a3ae3d7a9db5534463137fd7f00aa6fbbea0d877c6314db861fca73751",
+      "load_before": {
+        "monotonic_seconds": 33869.537035331,
+        "load_average": [
+          5.8740234375,
+          4.61328125,
+          4.13818359375
+        ],
+        "visible_processes": 3,
+        "producer_cpu_seconds": 10.619725043,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "load_after": {
+        "monotonic_seconds": 33869.588145795,
+        "load_average": [
+          5.8740234375,
+          4.61328125,
+          4.13818359375
+        ],
+        "visible_processes": 3,
+        "producer_cpu_seconds": 10.632427974,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "repeat": 2,
+      "dataset": "mbpp_sanitized",
+      "scope": "mbpp",
+      "left": "stock",
+      "right": "s4",
+      "target": "J",
+      "method": "independent",
+      "policy": "independent_joint_width",
+      "ordinal": 12,
+      "directory": "12-r2-mbpp-stock-s4-J-independent",
+      "denominator": 1281,
+      "initial_reference_groups": 20,
+      "candidate_suite_queries": 811,
+      "decision": "right_strict",
+      "final_bounds": {
+        "lower": -3,
+        "upper": -1,
+        "units": "joint_count_difference",
+        "decision": "right_strict",
+        "defined_all": true
+      },
+      "phase_seconds": {
+        "register_seconds": 0.01706648999970639,
+        "select_seconds": 0.0024105219927150756,
+        "bounds_seconds": 0.005231652976362966,
+        "worker_seconds": 35.94578886389354,
+        "receive_seconds": 0.11183457512379391,
+        "record_seconds": 0.4803834520353121
+      },
+      "audit_total_seconds": 36.57782970500557,
+      "unallocated_loop_seconds": 0.01511414898413932,
+      "trace_sha256": "68e2fb1c330235fcfed9993c9621721fa9dfade5bc5bc0c0c9373ea35e7ea417",
+      "load_before": {
+        "monotonic_seconds": 33869.589176615,
+        "load_average": [
+          5.8740234375,
+          4.61328125,
+          4.13818359375
+        ],
+        "visible_processes": 3,
+        "producer_cpu_seconds": 10.633462724,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "load_after": {
+        "monotonic_seconds": 33906.167170216,
+        "load_average": [
+          5.07177734375,
+          4.55859375,
+          4.1376953125
+        ],
+        "visible_processes": 3,
+        "producer_cpu_seconds": 12.229058215,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "repeat": 2,
+      "dataset": "mbpp_sanitized",
+      "scope": "mbpp",
+      "left": "stock",
+      "right": "s4",
+      "target": "C",
+      "method": "independent",
+      "policy": "independent_conditional_minimax_width",
+      "ordinal": 13,
+      "directory": "13-r2-mbpp-stock-s4-C-independent",
+      "denominator": 1281,
+      "initial_reference_groups": 20,
+      "candidate_suite_queries": 1136,
+      "decision": "right_strict",
+      "final_bounds": {
+        "lower": "-143/181902",
+        "upper": "-143/544854",
+        "units": "conditional_rate_difference",
+        "decision": "right_strict",
+        "defined_all": true
+      },
+      "phase_seconds": {
+        "register_seconds": 0.009584701001585927,
+        "select_seconds": 0.2512955569764017,
+        "bounds_seconds": 0.06700342986732721,
+        "worker_seconds": 46.629831536985876,
+        "receive_seconds": 0.15161016899946844,
+        "record_seconds": 0.6234752019590815
+      },
+      "audit_total_seconds": 47.751443989996915,
+      "unallocated_loop_seconds": 0.018643394207174424,
+      "trace_sha256": "8266a3c3bda7992e6d73403df2e9c4c74ea55d4f4d65310e7b41370a7337ca48",
+      "load_before": {
+        "monotonic_seconds": 33906.173322506,
+        "load_average": [
+          5.07177734375,
+          4.55859375,
+          4.1376953125
+        ],
+        "visible_processes": 3,
+        "producer_cpu_seconds": 12.235031854,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "load_after": {
+        "monotonic_seconds": 33953.925013618,
+        "load_average": [
+          5.33447265625,
+          4.6689453125,
+          4.19482421875
+        ],
+        "visible_processes": 3,
+        "producer_cpu_seconds": 14.637382146,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "repeat": 2,
+      "dataset": "mbpp_sanitized",
+      "scope": "mbpp",
+      "left": "stock",
+      "right": "s4",
+      "target": "C",
+      "method": "coupled",
+      "policy": "conditional_differences_first",
+      "ordinal": 14,
+      "directory": "14-r2-mbpp-stock-s4-C-coupled",
+      "denominator": 1281,
+      "initial_reference_groups": 20,
+      "candidate_suite_queries": 6,
+      "decision": "right_strict",
+      "final_bounds": {
+        "lower": -1287,
+        "upper": -57,
+        "units": "conditional_cross_product_count_margin",
+        "decision": "right_strict",
+        "defined_all": true
+      },
+      "phase_seconds": {
+        "register_seconds": 0.011389944003894925,
+        "select_seconds": 1.5251993318088353e-05,
+        "bounds_seconds": 0.0003148620089632459,
+        "worker_seconds": 0.2074183529985021,
+        "receive_seconds": 0.0014654810074716806,
+        "record_seconds": 0.0027864469957421534
+      },
+      "audit_total_seconds": 0.224372491997201,
+      "unallocated_loop_seconds": 0.0009821529893088154,
+      "trace_sha256": "be430d5ee890507bb9518bfbcaa94847b3447bc8f95ee033e265d46d33d6cab4",
+      "load_before": {
+        "monotonic_seconds": 33953.934458579,
+        "load_average": [
+          5.33447265625,
+          4.6689453125,
+          4.19482421875
+        ],
+        "visible_processes": 3,
+        "producer_cpu_seconds": 14.646854842,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "load_after": {
+        "monotonic_seconds": 33954.158850771,
+        "load_average": [
+          5.33447265625,
+          4.6689453125,
+          4.19482421875
+        ],
+        "visible_processes": 3,
+        "producer_cpu_seconds": 14.669978197,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "repeat": 2,
+      "dataset": "HumanEval",
+      "scope": "humaneval",
+      "left": "stock",
+      "right": "s1",
+      "target": "J",
+      "method": "coupled",
+      "policy": "joint_width_per_suite",
+      "ordinal": 15,
+      "directory": "15-r2-humaneval-stock-s1-J-coupled",
+      "denominator": 492,
+      "initial_reference_groups": 3,
+      "candidate_suite_queries": 146,
+      "decision": "left_strict",
+      "final_bounds": {
+        "lower": 1,
+        "upper": 6,
+        "units": "joint_count_difference",
+        "decision": "left_strict",
+        "defined_all": true
+      },
+      "phase_seconds": {
+        "register_seconds": 0.008000760004506446,
+        "select_seconds": 0.00038822501664981246,
+        "bounds_seconds": 0.000711205015250016,
+        "worker_seconds": 4.275867771968478,
+        "receive_seconds": 0.022293583024293184,
+        "record_seconds": 0.07236453204677673
+      },
+      "audit_total_seconds": 4.382161294997786,
+      "unallocated_loop_seconds": 0.002535217921831645,
+      "trace_sha256": "6aec862d8d421797c293a5dbbe3e1f6cc6e7f025606fd106bc21dba05af0aaa4",
+      "load_before": {
+        "monotonic_seconds": 33954.159733208,
+        "load_average": [
+          5.33447265625,
+          4.6689453125,
+          4.19482421875
+        ],
+        "visible_processes": 3,
+        "producer_cpu_seconds": 14.670837035,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "load_after": {
+        "monotonic_seconds": 33958.54195932,
+        "load_average": [
+          5.54833984375,
+          4.724609375,
+          4.21533203125
+        ],
+        "visible_processes": 3,
+        "producer_cpu_seconds": 14.92535017,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "repeat": 2,
+      "dataset": "HumanEval",
+      "scope": "humaneval",
+      "left": "stock",
+      "right": "s1",
+      "target": "J",
+      "method": "independent",
+      "policy": "independent_joint_width",
+      "ordinal": 16,
+      "directory": "16-r2-humaneval-stock-s1-J-independent",
+      "denominator": 492,
+      "initial_reference_groups": 3,
+      "candidate_suite_queries": 429,
+      "decision": "left_strict",
+      "final_bounds": {
+        "lower": 1,
+        "upper": 6,
+        "units": "joint_count_difference",
+        "decision": "left_strict",
+        "defined_all": true
+      },
+      "phase_seconds": {
+        "register_seconds": 0.0041924640026991256,
+        "select_seconds": 0.001479449012549594,
+        "bounds_seconds": 0.004162319070019294,
+        "worker_seconds": 13.505039685980591,
+        "receive_seconds": 0.08052589510043617,
+        "record_seconds": 0.25507318207382923
+      },
+      "audit_total_seconds": 13.858270694996463,
+      "unallocated_loop_seconds": 0.007797699756338261,
+      "trace_sha256": "5aa72531d93a29a714b9091c01d0f8b1bcea95ff61ebd1ba90acac2cd69922ce",
+      "load_before": {
+        "monotonic_seconds": 33958.543340157,
+        "load_average": [
+          5.54833984375,
+          4.724609375,
+          4.21533203125
+        ],
+        "visible_processes": 3,
+        "producer_cpu_seconds": 14.926718696,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "load_after": {
+        "monotonic_seconds": 33972.401719856,
+        "load_average": [
+          5.61865234375,
+          4.76708984375,
+          4.23486328125
+        ],
+        "visible_processes": 3,
+        "producer_cpu_seconds": 15.733797117,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "repeat": 3,
+      "dataset": "mbpp_sanitized",
+      "scope": "mbpp",
+      "left": "stock",
+      "right": "s4",
+      "target": "J",
+      "method": "coupled",
+      "policy": "joint_width_per_suite",
+      "ordinal": 17,
+      "directory": "17-r3-mbpp-stock-s4-J-coupled",
+      "denominator": 1281,
+      "initial_reference_groups": 20,
+      "candidate_suite_queries": 1,
+      "decision": "right_strict",
+      "final_bounds": {
+        "lower": -3,
+        "upper": -1,
+        "units": "joint_count_difference",
+        "decision": "right_strict",
+        "defined_all": true
+      },
+      "phase_seconds": {
+        "register_seconds": 0.01238651700259652,
+        "select_seconds": 1.381995389238e-06,
+        "bounds_seconds": 9.79500327957794e-06,
+        "worker_seconds": 0.0346819440019317,
+        "receive_seconds": 0.00012139300088165328,
+        "record_seconds": 0.0004951249939040281
+      },
+      "audit_total_seconds": 0.048087846000271384,
+      "unallocated_loop_seconds": 0.00039169000228866935,
+      "trace_sha256": "f6a269a3ae3d7a9db5534463137fd7f00aa6fbbea0d877c6314db861fca73751",
+      "load_before": {
+        "monotonic_seconds": 33972.405446944,
+        "load_average": [
+          5.61865234375,
+          4.76708984375,
+          4.23486328125
+        ],
+        "visible_processes": 3,
+        "producer_cpu_seconds": 15.737541339,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "load_after": {
+        "monotonic_seconds": 33972.453604274,
+        "load_average": [
+          5.61865234375,
+          4.76708984375,
+          4.23486328125
+        ],
+        "visible_processes": 3,
+        "producer_cpu_seconds": 15.752068065,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "repeat": 3,
+      "dataset": "mbpp_sanitized",
+      "scope": "mbpp",
+      "left": "stock",
+      "right": "s4",
+      "target": "J",
+      "method": "independent",
+      "policy": "independent_joint_width",
+      "ordinal": 18,
+      "directory": "18-r3-mbpp-stock-s4-J-independent",
+      "denominator": 1281,
+      "initial_reference_groups": 20,
+      "candidate_suite_queries": 811,
+      "decision": "right_strict",
+      "final_bounds": {
+        "lower": -3,
+        "upper": -1,
+        "units": "joint_count_difference",
+        "decision": "right_strict",
+        "defined_all": true
+      },
+      "phase_seconds": {
+        "register_seconds": 0.013184577001084108,
+        "select_seconds": 0.0024722939924686216,
+        "bounds_seconds": 0.0052752511473954655,
+        "worker_seconds": 38.44532140985393,
+        "receive_seconds": 0.10024816713121254,
+        "record_seconds": 0.46582208589825314
+      },
+      "audit_total_seconds": 39.04626298999938,
+      "unallocated_loop_seconds": 0.013939204975031316,
+      "trace_sha256": "68e2fb1c330235fcfed9993c9621721fa9dfade5bc5bc0c0c9373ea35e7ea417",
+      "load_before": {
+        "monotonic_seconds": 33972.454590798,
+        "load_average": [
+          5.61865234375,
+          4.76708984375,
+          4.23486328125
+        ],
+        "visible_processes": 3,
+        "producer_cpu_seconds": 15.753032911,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "load_after": {
+        "monotonic_seconds": 34011.501041982,
+        "load_average": [
+          6.626953125,
+          5.11572265625,
+          4.375
+        ],
+        "visible_processes": 3,
+        "producer_cpu_seconds": 17.268553927,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "repeat": 3,
+      "dataset": "mbpp_sanitized",
+      "scope": "mbpp",
+      "left": "stock",
+      "right": "s4",
+      "target": "C",
+      "method": "independent",
+      "policy": "independent_conditional_minimax_width",
+      "ordinal": 19,
+      "directory": "19-r3-mbpp-stock-s4-C-independent",
+      "denominator": 1281,
+      "initial_reference_groups": 20,
+      "candidate_suite_queries": 1136,
+      "decision": "right_strict",
+      "final_bounds": {
+        "lower": "-143/181902",
+        "upper": "-143/544854",
+        "units": "conditional_rate_difference",
+        "decision": "right_strict",
+        "defined_all": true
+      },
+      "phase_seconds": {
+        "register_seconds": 0.01073563400132116,
+        "select_seconds": 0.2786232420767192,
+        "bounds_seconds": 0.061106639965146314,
+        "worker_seconds": 98.50953286909498,
+        "receive_seconds": 0.15678057905461174,
+        "record_seconds": 0.7116066759263049
+      },
+      "audit_total_seconds": 99.75570132800203,
+      "unallocated_loop_seconds": 0.027315687882946804,
+      "trace_sha256": "8266a3c3bda7992e6d73403df2e9c4c74ea55d4f4d65310e7b41370a7337ca48",
+      "load_before": {
+        "monotonic_seconds": 34011.507750029,
+        "load_average": [
+          6.626953125,
+          5.11572265625,
+          4.375
+        ],
+        "visible_processes": 3,
+        "producer_cpu_seconds": 17.27525572,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "load_after": {
+        "monotonic_seconds": 34111.263722525,
+        "load_average": [
+          10.474609375,
+          6.69140625,
+          5.00537109375
+        ],
+        "visible_processes": 3,
+        "producer_cpu_seconds": 19.769257799,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "repeat": 3,
+      "dataset": "mbpp_sanitized",
+      "scope": "mbpp",
+      "left": "stock",
+      "right": "s4",
+      "target": "C",
+      "method": "coupled",
+      "policy": "conditional_differences_first",
+      "ordinal": 20,
+      "directory": "20-r3-mbpp-stock-s4-C-coupled",
+      "denominator": 1281,
+      "initial_reference_groups": 20,
+      "candidate_suite_queries": 6,
+      "decision": "right_strict",
+      "final_bounds": {
+        "lower": -1287,
+        "upper": -57,
+        "units": "conditional_cross_product_count_margin",
+        "decision": "right_strict",
+        "defined_all": true
+      },
+      "phase_seconds": {
+        "register_seconds": 0.025168759995722212,
+        "select_seconds": 1.836897718021646e-05,
+        "bounds_seconds": 0.00033303200325462967,
+        "worker_seconds": 0.6121108410079614,
+        "receive_seconds": 0.0016753089948906563,
+        "record_seconds": 0.003666171003715135
+      },
+      "audit_total_seconds": 0.6481994070054498,
+      "unallocated_loop_seconds": 0.0052269250227254815,
+      "trace_sha256": "be430d5ee890507bb9518bfbcaa94847b3447bc8f95ee033e265d46d33d6cab4",
+      "load_before": {
+        "monotonic_seconds": 34111.285947488,
+        "load_average": [
+          10.474609375,
+          6.69140625,
+          5.00537109375
+        ],
+        "visible_processes": 3,
+        "producer_cpu_seconds": 19.780370557,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "load_after": {
+        "monotonic_seconds": 34111.934176309,
+        "load_average": [
+          10.474609375,
+          6.69140625,
+          5.00537109375
+        ],
+        "visible_processes": 3,
+        "producer_cpu_seconds": 19.808117715,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "repeat": 3,
+      "dataset": "HumanEval",
+      "scope": "humaneval",
+      "left": "stock",
+      "right": "s1",
+      "target": "J",
+      "method": "coupled",
+      "policy": "joint_width_per_suite",
+      "ordinal": 21,
+      "directory": "21-r3-humaneval-stock-s1-J-coupled",
+      "denominator": 492,
+      "initial_reference_groups": 3,
+      "candidate_suite_queries": 146,
+      "decision": "left_strict",
+      "final_bounds": {
+        "lower": 1,
+        "upper": 6,
+        "units": "joint_count_difference",
+        "decision": "left_strict",
+        "defined_all": true
+      },
+      "phase_seconds": {
+        "register_seconds": 0.010445885003719013,
+        "select_seconds": 0.0006608640251215547,
+        "bounds_seconds": 0.0008411259914282709,
+        "worker_seconds": 11.647227516055864,
+        "receive_seconds": 0.02335495502484264,
+        "record_seconds": 0.1009362710028654
+      },
+      "audit_total_seconds": 11.785996845996124,
+      "unallocated_loop_seconds": 0.0025302288922830485,
+      "trace_sha256": "6aec862d8d421797c293a5dbbe3e1f6cc6e7f025606fd106bc21dba05af0aaa4",
+      "load_before": {
+        "monotonic_seconds": 34111.935877497,
+        "load_average": [
+          10.474609375,
+          6.69140625,
+          5.00537109375
+        ],
+        "visible_processes": 3,
+        "producer_cpu_seconds": 19.809836813,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "load_after": {
+        "monotonic_seconds": 34123.721940361,
+        "load_average": [
+          10.80712890625,
+          6.95166015625,
+          5.1181640625
+        ],
+        "visible_processes": 3,
+        "producer_cpu_seconds": 20.094541996,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "repeat": 3,
+      "dataset": "HumanEval",
+      "scope": "humaneval",
+      "left": "stock",
+      "right": "s1",
+      "target": "J",
+      "method": "independent",
+      "policy": "independent_joint_width",
+      "ordinal": 22,
+      "directory": "22-r3-humaneval-stock-s1-J-independent",
+      "denominator": 492,
+      "initial_reference_groups": 3,
+      "candidate_suite_queries": 429,
+      "decision": "left_strict",
+      "final_bounds": {
+        "lower": 1,
+        "upper": 6,
+        "units": "joint_count_difference",
+        "decision": "left_strict",
+        "defined_all": true
+      },
+      "phase_seconds": {
+        "register_seconds": 0.005173277997528203,
+        "select_seconds": 0.0014414819088415243,
+        "bounds_seconds": 0.0031756050084368326,
+        "worker_seconds": 23.59837564402551,
+        "receive_seconds": 0.06879740197473438,
+        "record_seconds": 0.2857813199807424
+      },
+      "audit_total_seconds": 23.970579472996178,
+      "unallocated_loop_seconds": 0.007834742100385483,
+      "trace_sha256": "5aa72531d93a29a714b9091c01d0f8b1bcea95ff61ebd1ba90acac2cd69922ce",
+      "load_before": {
+        "monotonic_seconds": 34123.72971497,
+        "load_average": [
+          10.80712890625,
+          6.95166015625,
+          5.1181640625
+        ],
+        "visible_processes": 3,
+        "producer_cpu_seconds": 20.096361554,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "load_after": {
+        "monotonic_seconds": 34147.700413372,
+        "load_average": [
+          10.740234375,
+          7.1962890625,
+          5.23876953125
+        ],
+        "visible_processes": 3,
+        "producer_cpu_seconds": 20.902167792,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "repeat": 3,
+      "dataset": "HumanEval",
+      "scope": "humaneval",
+      "left": "stock",
+      "right": "s1",
+      "target": "C",
+      "method": "independent",
+      "policy": "independent_conditional_minimax_width",
+      "ordinal": 23,
+      "directory": "23-r3-humaneval-stock-s1-C-independent",
+      "denominator": 492,
+      "initial_reference_groups": 3,
+      "candidate_suite_queries": 532,
+      "decision": "left_strict",
+      "final_bounds": {
+        "lower": "79/236652",
+        "upper": "1/164",
+        "units": "conditional_rate_difference",
+        "decision": "left_strict",
+        "defined_all": true
+      },
+      "phase_seconds": {
+        "register_seconds": 0.004446434999408666,
+        "select_seconds": 0.12346739402710227,
+        "bounds_seconds": 0.04436637397157028,
+        "worker_seconds": 29.26013435299683,
+        "receive_seconds": 0.11188241906347685,
+        "record_seconds": 0.4058574509981554
+      },
+      "audit_total_seconds": 29.96422006600187,
+      "unallocated_loop_seconds": 0.014065639945329167,
+      "trace_sha256": "f68781370af759efddd02ab7d579a4be34e9d721f31a62e26631366ce51684e2",
+      "load_before": {
+        "monotonic_seconds": 34147.70329211,
+        "load_average": [
+          10.740234375,
+          7.1962890625,
+          5.23876953125
+        ],
+        "visible_processes": 3,
+        "producer_cpu_seconds": 20.905107236,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "load_after": {
+        "monotonic_seconds": 34177.667695552,
+        "load_average": [
+          9.75,
+          7.27783203125,
+          5.328125
+        ],
+        "visible_processes": 3,
+        "producer_cpu_seconds": 22.070720192,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "repeat": 3,
+      "dataset": "HumanEval",
+      "scope": "humaneval",
+      "left": "stock",
+      "right": "s1",
+      "target": "C",
+      "method": "coupled",
+      "policy": "conditional_differences_first",
+      "ordinal": 24,
+      "directory": "24-r3-humaneval-stock-s1-C-coupled",
+      "denominator": 492,
+      "initial_reference_groups": 3,
+      "candidate_suite_queries": 160,
+      "decision": "left_strict",
+      "final_bounds": {
+        "lower": 249,
+        "upper": 1476,
+        "units": "conditional_cross_product_count_margin",
+        "decision": "left_strict",
+        "defined_all": true
+      },
+      "phase_seconds": {
+        "register_seconds": 0.014860440998745617,
+        "select_seconds": 0.00042225903598591685,
+        "bounds_seconds": 0.00804715199774364,
+        "worker_seconds": 9.638858832033293,
+        "receive_seconds": 0.02493300697824452,
+        "record_seconds": 0.1127239089764771
+      },
+      "audit_total_seconds": 9.803176946996246,
+      "unallocated_loop_seconds": 0.003331346975755878,
+      "trace_sha256": "d2f39f239bbb17a4480c3e91a60eab06695f020b595e06df5d2098996d796a64",
+      "load_before": {
+        "monotonic_seconds": 34177.682296924,
+        "load_average": [
+          9.75,
+          7.27783203125,
+          5.328125
+        ],
+        "visible_processes": 3,
+        "producer_cpu_seconds": 22.077244551,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "load_after": {
+        "monotonic_seconds": 34187.485534942,
+        "load_average": [
+          10.3173828125,
+          7.48291015625,
+          5.416015625
+        ],
+        "visible_processes": 3,
+        "producer_cpu_seconds": 22.389701263,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    }
+  ],
+  "total_candidate_suite_queries": 9663,
+  "load_after": {
+    "monotonic_seconds": 34187.489681882,
+    "load_average": [
+      10.3173828125,
+      7.48291015625,
+      5.416015625
+    ],
+    "visible_processes": 3,
+    "producer_cpu_seconds": 22.39242104,
+    "cpu_affinity": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "independent_receiving_required": true
+}

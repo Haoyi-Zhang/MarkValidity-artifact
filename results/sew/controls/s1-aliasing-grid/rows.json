@@ -1,0 +1,2858 @@
+[
+  {
+    "case_id": "aliased_list_augmented",
+    "key_id": "upstream_default",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 7,
+      "n_grades": 5,
+      "n_edits": 9,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 1.300000000000001e-06,
+      "p_all": 6.500000000000006e-07,
+      "p_syntax": 0.05,
+      "n_grades": 5,
+      "k_grades": 5,
+      "n_syntax": 1,
+      "k_syntax": 1,
+      "n_sites": 7
+    },
+    "source_path": "programs/aliased_list_augmented__upstream_default.py",
+    "candidate_sha256": "1ffb323fc78f2cb4d3d4141d17fdd09e7dcef5289bf72efb7d810787839485bd",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_list_augmented",
+    "key_id": "integer_00",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 7,
+      "n_grades": 5,
+      "n_edits": 8,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 0.0089167,
+      "p_all": 0.00445835,
+      "p_syntax": 0.95,
+      "n_grades": 5,
+      "k_grades": 5,
+      "n_syntax": 1,
+      "k_syntax": 1,
+      "n_sites": 7
+    },
+    "source_path": "programs/aliased_list_augmented__integer_00.py",
+    "candidate_sha256": "367cac2b4560bffa74276493af776376ca9bd452f0d5c691b67c35c6eb5bf5b4",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_list_augmented",
+    "key_id": "integer_01",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 7,
+      "n_grades": 5,
+      "n_edits": 8,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 0.0089167,
+      "p_all": 0.00445835,
+      "p_syntax": 0.95,
+      "n_grades": 5,
+      "k_grades": 5,
+      "n_syntax": 1,
+      "k_syntax": 1,
+      "n_sites": 7
+    },
+    "source_path": "programs/aliased_list_augmented__integer_01.py",
+    "candidate_sha256": "367cac2b4560bffa74276493af776376ca9bd452f0d5c691b67c35c6eb5bf5b4",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_list_augmented",
+    "key_id": "integer_02",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 7,
+      "n_grades": 5,
+      "n_edits": 2,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 0.0002128000000000002,
+      "p_all": 0.0001064000000000001,
+      "p_syntax": 0.05,
+      "n_grades": 5,
+      "k_grades": 5,
+      "n_syntax": 1,
+      "k_syntax": 1,
+      "n_sites": 7
+    },
+    "source_path": "programs/aliased_list_augmented__integer_02.py",
+    "candidate_sha256": "215554f32a5a030bda60ea5e5a69bf957ac6895e4adf29a839e97f79100c4094",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_list_augmented",
+    "key_id": "integer_03",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 7,
+      "n_grades": 5,
+      "n_edits": 0,
+      "iterations": 0
+    },
+    "detector": {
+      "verdict": "No watermark evidence",
+      "p": 0.07682080000000006,
+      "p_all": 0.03841040000000003,
+      "p_syntax": 0.95,
+      "n_grades": 5,
+      "k_grades": 5,
+      "n_syntax": 1,
+      "k_syntax": 1,
+      "n_sites": 7
+    },
+    "source_path": "programs/aliased_list_augmented__integer_03.py",
+    "candidate_sha256": "b1bdc28cbbb5820fcdc9d5b6fc639aa4443c8569bcd6b162d556c3adcc16e905",
+    "behavior_valid": true,
+    "detected": false,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_list_augmented",
+    "key_id": "integer_04",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 7,
+      "n_grades": 5,
+      "n_edits": 8,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 2.470000000000002e-05,
+      "p_all": 1.235000000000001e-05,
+      "p_syntax": 0.05,
+      "n_grades": 5,
+      "k_grades": 5,
+      "n_syntax": 1,
+      "k_syntax": 1,
+      "n_sites": 7
+    },
+    "source_path": "programs/aliased_list_augmented__integer_04.py",
+    "candidate_sha256": "0a2f0337318cab5d7e08d41995faf3aa3eb6672ad4fa0925fa5dae1f892b9d8f",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_list_augmented",
+    "key_id": "integer_05",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 7,
+      "n_grades": 5,
+      "n_edits": 8,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 0.0089167,
+      "p_all": 0.00445835,
+      "p_syntax": 0.95,
+      "n_grades": 5,
+      "k_grades": 5,
+      "n_syntax": 1,
+      "k_syntax": 1,
+      "n_sites": 7
+    },
+    "source_path": "programs/aliased_list_augmented__integer_05.py",
+    "candidate_sha256": "367cac2b4560bffa74276493af776376ca9bd452f0d5c691b67c35c6eb5bf5b4",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_list_augmented",
+    "key_id": "integer_06",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 7,
+      "n_grades": 5,
+      "n_edits": 8,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 0.0089167,
+      "p_all": 0.00445835,
+      "p_syntax": 0.95,
+      "n_grades": 5,
+      "k_grades": 5,
+      "n_syntax": 1,
+      "k_syntax": 1,
+      "n_sites": 7
+    },
+    "source_path": "programs/aliased_list_augmented__integer_06.py",
+    "candidate_sha256": "367cac2b4560bffa74276493af776376ca9bd452f0d5c691b67c35c6eb5bf5b4",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_list_augmented",
+    "key_id": "integer_07",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 7,
+      "n_grades": 5,
+      "n_edits": 8,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 0.008916699999999998,
+      "p_all": 0.004458349999999999,
+      "p_syntax": 0.95,
+      "n_grades": 5,
+      "k_grades": 5,
+      "n_syntax": 1,
+      "k_syntax": 1,
+      "n_sites": 7
+    },
+    "source_path": "programs/aliased_list_augmented__integer_07.py",
+    "candidate_sha256": "ef4a09e86c690008420c5cb012a3e2e1697b9fdfea8ed30335efb709401055ff",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_list_augmented",
+    "key_id": "integer_08",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 7,
+      "n_grades": 5,
+      "n_edits": 3,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 0.004043200000000001,
+      "p_all": 0.0020216000000000006,
+      "p_syntax": 0.95,
+      "n_grades": 5,
+      "k_grades": 5,
+      "n_syntax": 1,
+      "k_syntax": 1,
+      "n_sites": 7
+    },
+    "source_path": "programs/aliased_list_augmented__integer_08.py",
+    "candidate_sha256": "285baff75d05cde254e619770e9fb3dd77198f93ccb8e6e2b7795c0005ab6907",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_list_augmented",
+    "key_id": "integer_09",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 7,
+      "n_grades": 5,
+      "n_edits": 0,
+      "iterations": 0
+    },
+    "detector": {
+      "verdict": "No watermark evidence",
+      "p": 0.07682080000000006,
+      "p_all": 0.03841040000000003,
+      "p_syntax": 0.95,
+      "n_grades": 5,
+      "k_grades": 5,
+      "n_syntax": 1,
+      "k_syntax": 1,
+      "n_sites": 7
+    },
+    "source_path": "programs/aliased_list_augmented__integer_09.py",
+    "candidate_sha256": "b1bdc28cbbb5820fcdc9d5b6fc639aa4443c8569bcd6b162d556c3adcc16e905",
+    "behavior_valid": true,
+    "detected": false,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_list_augmented",
+    "key_id": "integer_10",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 7,
+      "n_grades": 5,
+      "n_edits": 1,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 0.004043200000000003,
+      "p_all": 0.0020216000000000014,
+      "p_syntax": 0.05,
+      "n_grades": 5,
+      "k_grades": 5,
+      "n_syntax": 1,
+      "k_syntax": 1,
+      "n_sites": 7
+    },
+    "source_path": "programs/aliased_list_augmented__integer_10.py",
+    "candidate_sha256": "c8bf78406207a828c08a08c07299503adaec7490b76aa560ba895b2f41475e27",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_list_augmented",
+    "key_id": "integer_11",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 7,
+      "n_grades": 5,
+      "n_edits": 9,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 0.00046929999999999997,
+      "p_all": 0.00023464999999999998,
+      "p_syntax": 0.05,
+      "n_grades": 5,
+      "k_grades": 5,
+      "n_syntax": 1,
+      "k_syntax": 1,
+      "n_sites": 7
+    },
+    "source_path": "programs/aliased_list_augmented__integer_11.py",
+    "candidate_sha256": "6845da43032ef8c4acf7587ae78e976af41ef600cd0da6b805d1b0349d17b724",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_list_augmented",
+    "key_id": "integer_12",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 7,
+      "n_grades": 5,
+      "n_edits": 0,
+      "iterations": 0
+    },
+    "detector": {
+      "verdict": "No watermark evidence",
+      "p": 0.07682080000000006,
+      "p_all": 0.03841040000000003,
+      "p_syntax": 0.95,
+      "n_grades": 5,
+      "k_grades": 5,
+      "n_syntax": 1,
+      "k_syntax": 1,
+      "n_sites": 7
+    },
+    "source_path": "programs/aliased_list_augmented__integer_12.py",
+    "candidate_sha256": "b1bdc28cbbb5820fcdc9d5b6fc639aa4443c8569bcd6b162d556c3adcc16e905",
+    "behavior_valid": true,
+    "detected": false,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_list_augmented",
+    "key_id": "integer_13",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 7,
+      "n_grades": 5,
+      "n_edits": 9,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 0.00046929999999999997,
+      "p_all": 0.00023464999999999998,
+      "p_syntax": 0.95,
+      "n_grades": 5,
+      "k_grades": 5,
+      "n_syntax": 1,
+      "k_syntax": 1,
+      "n_sites": 7
+    },
+    "source_path": "programs/aliased_list_augmented__integer_13.py",
+    "candidate_sha256": "866cb53c7e5944d490325989db34dc9ec7380cfc77f34e1f8bc0fff8c7058726",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_list_augmented",
+    "key_id": "integer_14",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 7,
+      "n_grades": 5,
+      "n_edits": 8,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 2.470000000000002e-05,
+      "p_all": 1.235000000000001e-05,
+      "p_syntax": 0.05,
+      "n_grades": 5,
+      "k_grades": 5,
+      "n_syntax": 1,
+      "k_syntax": 1,
+      "n_sites": 7
+    },
+    "source_path": "programs/aliased_list_augmented__integer_14.py",
+    "candidate_sha256": "0a2f0337318cab5d7e08d41995faf3aa3eb6672ad4fa0925fa5dae1f892b9d8f",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_list_augmented",
+    "key_id": "integer_15",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 7,
+      "n_grades": 5,
+      "n_edits": 1,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 0.004043200000000003,
+      "p_all": 0.0020216000000000014,
+      "p_syntax": 0.95,
+      "n_grades": 5,
+      "k_grades": 5,
+      "n_syntax": 1,
+      "k_syntax": 1,
+      "n_sites": 7
+    },
+    "source_path": "programs/aliased_list_augmented__integer_15.py",
+    "candidate_sha256": "861bec9d49df94e6874c8075af4af5b9cbdf4fac622eca8661737ca7a594f04c",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_list_assigned",
+    "key_id": "upstream_default",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 8,
+      "n_grades": 6,
+      "n_edits": 10,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 1.8772000000000017e-07,
+      "p_all": 9.386000000000009e-08,
+      "p_syntax": 0.007220000000000001,
+      "n_grades": 6,
+      "k_grades": 6,
+      "n_syntax": 2,
+      "k_syntax": 2,
+      "n_sites": 8
+    },
+    "source_path": "programs/aliased_list_assigned__upstream_default.py",
+    "candidate_sha256": "eaeeb9ea2056b4535e2766df57e0533d57988ff0eb385494e1abf6fd9ad7fdc5",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_list_assigned",
+    "key_id": "integer_00",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 8,
+      "n_grades": 6,
+      "n_edits": 8,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 0.007629128519999999,
+      "p_all": 0.0038145642599999993,
+      "p_syntax": 0.81282,
+      "n_grades": 6,
+      "k_grades": 6,
+      "n_syntax": 2,
+      "k_syntax": 2,
+      "n_sites": 8
+    },
+    "source_path": "programs/aliased_list_assigned__integer_00.py",
+    "candidate_sha256": "74296aa6c17e57bc4228dfd6f9ec94bf30da8a50ec27a2866fdceaa0bc432c10",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_list_assigned",
+    "key_id": "integer_01",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 8,
+      "n_grades": 6,
+      "n_edits": 8,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 0.007629128519999999,
+      "p_all": 0.0038145642599999993,
+      "p_syntax": 0.81282,
+      "n_grades": 6,
+      "k_grades": 6,
+      "n_syntax": 2,
+      "k_syntax": 2,
+      "n_sites": 8
+    },
+    "source_path": "programs/aliased_list_assigned__integer_01.py",
+    "candidate_sha256": "74296aa6c17e57bc4228dfd6f9ec94bf30da8a50ec27a2866fdceaa0bc432c10",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_list_assigned",
+    "key_id": "integer_02",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 8,
+      "n_grades": 6,
+      "n_edits": 3,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 3.072832000000003e-05,
+      "p_all": 1.5364160000000015e-05,
+      "p_syntax": 0.007220000000000001,
+      "n_grades": 6,
+      "k_grades": 6,
+      "n_syntax": 2,
+      "k_syntax": 2,
+      "n_sites": 8
+    },
+    "source_path": "programs/aliased_list_assigned__integer_02.py",
+    "candidate_sha256": "99143cd814fb435ba34e2f81069114108998b4db37f6423ef2a234dac62cedf9",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_list_assigned",
+    "key_id": "integer_03",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 8,
+      "n_grades": 6,
+      "n_edits": 0,
+      "iterations": 0
+    },
+    "detector": {
+      "verdict": "No watermark evidence",
+      "p": 0.06572787648000004,
+      "p_all": 0.03286393824000002,
+      "p_syntax": 0.81282,
+      "n_grades": 6,
+      "k_grades": 6,
+      "n_syntax": 2,
+      "k_syntax": 2,
+      "n_sites": 8
+    },
+    "source_path": "programs/aliased_list_assigned__integer_03.py",
+    "candidate_sha256": "952ab894beb575ac91c3b8517583a1be47477afcab68e7730cb30f02f58454dc",
+    "behavior_valid": true,
+    "detected": false,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_list_assigned",
+    "key_id": "integer_04",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 8,
+      "n_grades": 6,
+      "n_edits": 8,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 2.1133320000000018e-05,
+      "p_all": 1.0566660000000009e-05,
+      "p_syntax": 0.042780000000000006,
+      "n_grades": 6,
+      "k_grades": 6,
+      "n_syntax": 2,
+      "k_syntax": 2,
+      "n_sites": 8
+    },
+    "source_path": "programs/aliased_list_assigned__integer_04.py",
+    "candidate_sha256": "b5aea11af91f34f204341e817ad2a20c64d0c3361ceeb2435eba76f668f8a0f5",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_list_assigned",
+    "key_id": "integer_05",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 8,
+      "n_grades": 6,
+      "n_edits": 9,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 0.0012875714799999998,
+      "p_all": 0.0006437857399999999,
+      "p_syntax": 0.13718,
+      "n_grades": 6,
+      "k_grades": 6,
+      "n_syntax": 2,
+      "k_syntax": 2,
+      "n_sites": 8
+    },
+    "source_path": "programs/aliased_list_assigned__integer_05.py",
+    "candidate_sha256": "f2c92acdb29737b74b01ffd9c9377edfb61bb03ad04c11c5b23473df8a4cdcb5",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_list_assigned",
+    "key_id": "integer_06",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 8,
+      "n_grades": 6,
+      "n_edits": 9,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 0.0012875714799999998,
+      "p_all": 0.0006437857399999999,
+      "p_syntax": 0.13718,
+      "n_grades": 6,
+      "k_grades": 6,
+      "n_syntax": 2,
+      "k_syntax": 2,
+      "n_sites": 8
+    },
+    "source_path": "programs/aliased_list_assigned__integer_06.py",
+    "candidate_sha256": "f2c92acdb29737b74b01ffd9c9377edfb61bb03ad04c11c5b23473df8a4cdcb5",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_list_assigned",
+    "key_id": "integer_07",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 8,
+      "n_grades": 6,
+      "n_edits": 9,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 0.0012875714799999998,
+      "p_all": 0.0006437857399999999,
+      "p_syntax": 0.13718,
+      "n_grades": 6,
+      "k_grades": 6,
+      "n_syntax": 2,
+      "k_syntax": 2,
+      "n_sites": 8
+    },
+    "source_path": "programs/aliased_list_assigned__integer_07.py",
+    "candidate_sha256": "1c11e90c2ee0092b200e4d52bd172a1a49ad2d0ad350d9d6097e793029cdc2d8",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_list_assigned",
+    "key_id": "integer_08",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 8,
+      "n_grades": 6,
+      "n_edits": 3,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 0.0034593619200000004,
+      "p_all": 0.0017296809600000002,
+      "p_syntax": 0.81282,
+      "n_grades": 6,
+      "k_grades": 6,
+      "n_syntax": 2,
+      "k_syntax": 2,
+      "n_sites": 8
+    },
+    "source_path": "programs/aliased_list_assigned__integer_08.py",
+    "candidate_sha256": "31e264f3d3569ce419b4d1e949901fa328af41b132b7b4b78bc525258333edcc",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_list_assigned",
+    "key_id": "integer_09",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 8,
+      "n_grades": 6,
+      "n_edits": 1,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "No watermark evidence",
+      "p": 0.01109292352000001,
+      "p_all": 0.005546461760000005,
+      "p_syntax": 0.13718,
+      "n_grades": 6,
+      "k_grades": 6,
+      "n_syntax": 2,
+      "k_syntax": 2,
+      "n_sites": 8
+    },
+    "source_path": "programs/aliased_list_assigned__integer_09.py",
+    "candidate_sha256": "5fcacfef37ab00190892e088a7b6e8d12371e6f348941854a69402c13f3cfd14",
+    "behavior_valid": true,
+    "detected": false,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_list_assigned",
+    "key_id": "integer_10",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 8,
+      "n_grades": 6,
+      "n_edits": 2,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 0.0005838380800000005,
+      "p_all": 0.00029191904000000024,
+      "p_syntax": 0.007220000000000001,
+      "n_grades": 6,
+      "k_grades": 6,
+      "n_syntax": 2,
+      "k_syntax": 2,
+      "n_sites": 8
+    },
+    "source_path": "programs/aliased_list_assigned__integer_10.py",
+    "candidate_sha256": "7d37ffeeda1241c42dfa67b309a757dc143ac656b76e4ec69a2570a6cd505237",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_list_assigned",
+    "key_id": "integer_11",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 8,
+      "n_grades": 6,
+      "n_edits": 9,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 0.00040153307999999993,
+      "p_all": 0.00020076653999999997,
+      "p_syntax": 0.042780000000000006,
+      "n_grades": 6,
+      "k_grades": 6,
+      "n_syntax": 2,
+      "k_syntax": 2,
+      "n_sites": 8
+    },
+    "source_path": "programs/aliased_list_assigned__integer_11.py",
+    "candidate_sha256": "a8c59fdb8fc87fda4dd6c6be8e7af0d0e76b3678b2c91ea1142710509e6cec3d",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_list_assigned",
+    "key_id": "integer_12",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 8,
+      "n_grades": 6,
+      "n_edits": 1,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "No watermark evidence",
+      "p": 0.01109292352000001,
+      "p_all": 0.005546461760000005,
+      "p_syntax": 0.13718,
+      "n_grades": 6,
+      "k_grades": 6,
+      "n_syntax": 2,
+      "k_syntax": 2,
+      "n_sites": 8
+    },
+    "source_path": "programs/aliased_list_assigned__integer_12.py",
+    "candidate_sha256": "5fcacfef37ab00190892e088a7b6e8d12371e6f348941854a69402c13f3cfd14",
+    "behavior_valid": true,
+    "detected": false,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_list_assigned",
+    "key_id": "integer_13",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 8,
+      "n_grades": 6,
+      "n_edits": 9,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 0.00040153308,
+      "p_all": 0.00020076654,
+      "p_syntax": 0.81282,
+      "n_grades": 6,
+      "k_grades": 6,
+      "n_syntax": 2,
+      "k_syntax": 2,
+      "n_sites": 8
+    },
+    "source_path": "programs/aliased_list_assigned__integer_13.py",
+    "candidate_sha256": "0ebee221a55a8835c1e77445c3bc34c6ca7c029567a9ca25869ba54c58d01b81",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_list_assigned",
+    "key_id": "integer_14",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 8,
+      "n_grades": 6,
+      "n_edits": 9,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 3.5666800000000025e-06,
+      "p_all": 1.7833400000000013e-06,
+      "p_syntax": 0.007220000000000001,
+      "n_grades": 6,
+      "k_grades": 6,
+      "n_syntax": 2,
+      "k_syntax": 2,
+      "n_sites": 8
+    },
+    "source_path": "programs/aliased_list_assigned__integer_14.py",
+    "candidate_sha256": "188462712c52ca9696e0c0dbd5f54e32792afc9a2c0efc79a46fdd9eb8067cd0",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_list_assigned",
+    "key_id": "integer_15",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 8,
+      "n_grades": 6,
+      "n_edits": 1,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 0.003459361920000003,
+      "p_all": 0.0017296809600000015,
+      "p_syntax": 0.81282,
+      "n_grades": 6,
+      "k_grades": 6,
+      "n_syntax": 2,
+      "k_syntax": 2,
+      "n_sites": 8
+    },
+    "source_path": "programs/aliased_list_assigned__integer_15.py",
+    "candidate_sha256": "f436c2803a6da62279c4a26eee4b734f7195a1d15888d375bc5e51b9e7f06ffa",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "unaliased_list_augmented",
+    "key_id": "upstream_default",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 6,
+      "n_grades": 5,
+      "n_edits": 7,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 1.300000000000001e-06,
+      "p_all": 6.500000000000006e-07,
+      "p_syntax": 0.05,
+      "n_grades": 5,
+      "k_grades": 5,
+      "n_syntax": 1,
+      "k_syntax": 1,
+      "n_sites": 6
+    },
+    "source_path": "programs/unaliased_list_augmented__upstream_default.py",
+    "candidate_sha256": "b0ca70a6e3ee72609ecb3b1d5e80b1f76c1c32c2d5c228c25b43537f1cb5d4f0",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "unaliased_list_augmented",
+    "key_id": "integer_00",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 6,
+      "n_grades": 5,
+      "n_edits": 6,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 0.0089167,
+      "p_all": 0.00445835,
+      "p_syntax": 0.95,
+      "n_grades": 5,
+      "k_grades": 5,
+      "n_syntax": 1,
+      "k_syntax": 1,
+      "n_sites": 6
+    },
+    "source_path": "programs/unaliased_list_augmented__integer_00.py",
+    "candidate_sha256": "9923c6040c1f915c6588e470eef8c116784881d796a05c2cb161211a6ca16ed3",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "unaliased_list_augmented",
+    "key_id": "integer_01",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 6,
+      "n_grades": 5,
+      "n_edits": 6,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 0.0089167,
+      "p_all": 0.00445835,
+      "p_syntax": 0.95,
+      "n_grades": 5,
+      "k_grades": 5,
+      "n_syntax": 1,
+      "k_syntax": 1,
+      "n_sites": 6
+    },
+    "source_path": "programs/unaliased_list_augmented__integer_01.py",
+    "candidate_sha256": "9923c6040c1f915c6588e470eef8c116784881d796a05c2cb161211a6ca16ed3",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "unaliased_list_augmented",
+    "key_id": "integer_02",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 6,
+      "n_grades": 5,
+      "n_edits": 2,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 0.0002128000000000002,
+      "p_all": 0.0001064000000000001,
+      "p_syntax": 0.05,
+      "n_grades": 5,
+      "k_grades": 5,
+      "n_syntax": 1,
+      "k_syntax": 1,
+      "n_sites": 6
+    },
+    "source_path": "programs/unaliased_list_augmented__integer_02.py",
+    "candidate_sha256": "bf5cad07e5bf54c382f88732ea2efc129bfc4ceaa75ca8c3cb3faa63997eac30",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "unaliased_list_augmented",
+    "key_id": "integer_03",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 6,
+      "n_grades": 5,
+      "n_edits": 0,
+      "iterations": 0
+    },
+    "detector": {
+      "verdict": "No watermark evidence",
+      "p": 0.07682080000000006,
+      "p_all": 0.03841040000000003,
+      "p_syntax": 0.95,
+      "n_grades": 5,
+      "k_grades": 5,
+      "n_syntax": 1,
+      "k_syntax": 1,
+      "n_sites": 6
+    },
+    "source_path": "programs/unaliased_list_augmented__integer_03.py",
+    "candidate_sha256": "131ae7213095f9760ab48403412c44262d4fb487aea38e6fc26239954d664408",
+    "behavior_valid": true,
+    "detected": false,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "unaliased_list_augmented",
+    "key_id": "integer_04",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 6,
+      "n_grades": 5,
+      "n_edits": 6,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 2.470000000000002e-05,
+      "p_all": 1.235000000000001e-05,
+      "p_syntax": 0.05,
+      "n_grades": 5,
+      "k_grades": 5,
+      "n_syntax": 1,
+      "k_syntax": 1,
+      "n_sites": 6
+    },
+    "source_path": "programs/unaliased_list_augmented__integer_04.py",
+    "candidate_sha256": "d88c20919b8fd75054f4ac6a51f8651e9ca669a480455f467043be8b8f1b9e89",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "unaliased_list_augmented",
+    "key_id": "integer_05",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 6,
+      "n_grades": 5,
+      "n_edits": 6,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 0.0089167,
+      "p_all": 0.00445835,
+      "p_syntax": 0.95,
+      "n_grades": 5,
+      "k_grades": 5,
+      "n_syntax": 1,
+      "k_syntax": 1,
+      "n_sites": 6
+    },
+    "source_path": "programs/unaliased_list_augmented__integer_05.py",
+    "candidate_sha256": "9923c6040c1f915c6588e470eef8c116784881d796a05c2cb161211a6ca16ed3",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "unaliased_list_augmented",
+    "key_id": "integer_06",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 6,
+      "n_grades": 5,
+      "n_edits": 6,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 0.0089167,
+      "p_all": 0.00445835,
+      "p_syntax": 0.95,
+      "n_grades": 5,
+      "k_grades": 5,
+      "n_syntax": 1,
+      "k_syntax": 1,
+      "n_sites": 6
+    },
+    "source_path": "programs/unaliased_list_augmented__integer_06.py",
+    "candidate_sha256": "9923c6040c1f915c6588e470eef8c116784881d796a05c2cb161211a6ca16ed3",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "unaliased_list_augmented",
+    "key_id": "integer_07",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 6,
+      "n_grades": 5,
+      "n_edits": 6,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 0.008916699999999998,
+      "p_all": 0.004458349999999999,
+      "p_syntax": 0.95,
+      "n_grades": 5,
+      "k_grades": 5,
+      "n_syntax": 1,
+      "k_syntax": 1,
+      "n_sites": 6
+    },
+    "source_path": "programs/unaliased_list_augmented__integer_07.py",
+    "candidate_sha256": "eef90a80f0605916229700fe9c899e36bc36fdd5a2943063c81340f096d8f518",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "unaliased_list_augmented",
+    "key_id": "integer_08",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 6,
+      "n_grades": 5,
+      "n_edits": 3,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 0.004043200000000001,
+      "p_all": 0.0020216000000000006,
+      "p_syntax": 0.95,
+      "n_grades": 5,
+      "k_grades": 5,
+      "n_syntax": 1,
+      "k_syntax": 1,
+      "n_sites": 6
+    },
+    "source_path": "programs/unaliased_list_augmented__integer_08.py",
+    "candidate_sha256": "b9897c68090fa0e114768b487f15957b5997af4b2bfc2bd3930b861aa5c2ed62",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "unaliased_list_augmented",
+    "key_id": "integer_09",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 6,
+      "n_grades": 5,
+      "n_edits": 0,
+      "iterations": 0
+    },
+    "detector": {
+      "verdict": "No watermark evidence",
+      "p": 0.07682080000000006,
+      "p_all": 0.03841040000000003,
+      "p_syntax": 0.95,
+      "n_grades": 5,
+      "k_grades": 5,
+      "n_syntax": 1,
+      "k_syntax": 1,
+      "n_sites": 6
+    },
+    "source_path": "programs/unaliased_list_augmented__integer_09.py",
+    "candidate_sha256": "131ae7213095f9760ab48403412c44262d4fb487aea38e6fc26239954d664408",
+    "behavior_valid": true,
+    "detected": false,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "unaliased_list_augmented",
+    "key_id": "integer_10",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 6,
+      "n_grades": 5,
+      "n_edits": 1,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 0.004043200000000003,
+      "p_all": 0.0020216000000000014,
+      "p_syntax": 0.05,
+      "n_grades": 5,
+      "k_grades": 5,
+      "n_syntax": 1,
+      "k_syntax": 1,
+      "n_sites": 6
+    },
+    "source_path": "programs/unaliased_list_augmented__integer_10.py",
+    "candidate_sha256": "456f25a1aa7823e170e7a3e797574158ad86382af2a3dddb4382d396a215505a",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "unaliased_list_augmented",
+    "key_id": "integer_11",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 6,
+      "n_grades": 5,
+      "n_edits": 7,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 0.00046929999999999997,
+      "p_all": 0.00023464999999999998,
+      "p_syntax": 0.05,
+      "n_grades": 5,
+      "k_grades": 5,
+      "n_syntax": 1,
+      "k_syntax": 1,
+      "n_sites": 6
+    },
+    "source_path": "programs/unaliased_list_augmented__integer_11.py",
+    "candidate_sha256": "2b830e629b7648a9e18bfb461ab44c6d8456493e454273e0e50f4b20e5eb730a",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "unaliased_list_augmented",
+    "key_id": "integer_12",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 6,
+      "n_grades": 5,
+      "n_edits": 0,
+      "iterations": 0
+    },
+    "detector": {
+      "verdict": "No watermark evidence",
+      "p": 0.07682080000000006,
+      "p_all": 0.03841040000000003,
+      "p_syntax": 0.95,
+      "n_grades": 5,
+      "k_grades": 5,
+      "n_syntax": 1,
+      "k_syntax": 1,
+      "n_sites": 6
+    },
+    "source_path": "programs/unaliased_list_augmented__integer_12.py",
+    "candidate_sha256": "131ae7213095f9760ab48403412c44262d4fb487aea38e6fc26239954d664408",
+    "behavior_valid": true,
+    "detected": false,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "unaliased_list_augmented",
+    "key_id": "integer_13",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 6,
+      "n_grades": 5,
+      "n_edits": 7,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 0.00046929999999999997,
+      "p_all": 0.00023464999999999998,
+      "p_syntax": 0.95,
+      "n_grades": 5,
+      "k_grades": 5,
+      "n_syntax": 1,
+      "k_syntax": 1,
+      "n_sites": 6
+    },
+    "source_path": "programs/unaliased_list_augmented__integer_13.py",
+    "candidate_sha256": "dd154e7535972b00f27172652c6427b893fa7384c97f4852ac61e46419f21831",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "unaliased_list_augmented",
+    "key_id": "integer_14",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 6,
+      "n_grades": 5,
+      "n_edits": 6,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 2.470000000000002e-05,
+      "p_all": 1.235000000000001e-05,
+      "p_syntax": 0.05,
+      "n_grades": 5,
+      "k_grades": 5,
+      "n_syntax": 1,
+      "k_syntax": 1,
+      "n_sites": 6
+    },
+    "source_path": "programs/unaliased_list_augmented__integer_14.py",
+    "candidate_sha256": "d88c20919b8fd75054f4ac6a51f8651e9ca669a480455f467043be8b8f1b9e89",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "unaliased_list_augmented",
+    "key_id": "integer_15",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 6,
+      "n_grades": 5,
+      "n_edits": 1,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 0.004043200000000003,
+      "p_all": 0.0020216000000000014,
+      "p_syntax": 0.95,
+      "n_grades": 5,
+      "k_grades": 5,
+      "n_syntax": 1,
+      "k_syntax": 1,
+      "n_sites": 6
+    },
+    "source_path": "programs/unaliased_list_augmented__integer_15.py",
+    "candidate_sha256": "5e437c53c816e87b891c2e368248f7abdb1d7d3798bebf21d5bf52ec832a5cd0",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "unaliased_list_assigned",
+    "key_id": "upstream_default",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 7,
+      "n_grades": 6,
+      "n_edits": 8,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 1.8772000000000017e-07,
+      "p_all": 9.386000000000009e-08,
+      "p_syntax": 0.007220000000000001,
+      "n_grades": 6,
+      "k_grades": 6,
+      "n_syntax": 2,
+      "k_syntax": 2,
+      "n_sites": 7
+    },
+    "source_path": "programs/unaliased_list_assigned__upstream_default.py",
+    "candidate_sha256": "3e4161cb2cf99760cfe2ec8fb00de697b9909d7883d392745c7673d5cbc09f6d",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "unaliased_list_assigned",
+    "key_id": "integer_00",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 7,
+      "n_grades": 6,
+      "n_edits": 6,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 0.007629128519999999,
+      "p_all": 0.0038145642599999993,
+      "p_syntax": 0.81282,
+      "n_grades": 6,
+      "k_grades": 6,
+      "n_syntax": 2,
+      "k_syntax": 2,
+      "n_sites": 7
+    },
+    "source_path": "programs/unaliased_list_assigned__integer_00.py",
+    "candidate_sha256": "430b46e004b9a256396bb661667332094487075abebc0af3760b08a7f997f679",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "unaliased_list_assigned",
+    "key_id": "integer_01",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 7,
+      "n_grades": 6,
+      "n_edits": 6,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 0.007629128519999999,
+      "p_all": 0.0038145642599999993,
+      "p_syntax": 0.81282,
+      "n_grades": 6,
+      "k_grades": 6,
+      "n_syntax": 2,
+      "k_syntax": 2,
+      "n_sites": 7
+    },
+    "source_path": "programs/unaliased_list_assigned__integer_01.py",
+    "candidate_sha256": "430b46e004b9a256396bb661667332094487075abebc0af3760b08a7f997f679",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "unaliased_list_assigned",
+    "key_id": "integer_02",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 7,
+      "n_grades": 6,
+      "n_edits": 3,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 3.072832000000003e-05,
+      "p_all": 1.5364160000000015e-05,
+      "p_syntax": 0.007220000000000001,
+      "n_grades": 6,
+      "k_grades": 6,
+      "n_syntax": 2,
+      "k_syntax": 2,
+      "n_sites": 7
+    },
+    "source_path": "programs/unaliased_list_assigned__integer_02.py",
+    "candidate_sha256": "4ec832a2cfb419045a9400d7d45a564cdad7bf32c20c1673b037d87d22de1844",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "unaliased_list_assigned",
+    "key_id": "integer_03",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 7,
+      "n_grades": 6,
+      "n_edits": 0,
+      "iterations": 0
+    },
+    "detector": {
+      "verdict": "No watermark evidence",
+      "p": 0.06572787648000004,
+      "p_all": 0.03286393824000002,
+      "p_syntax": 0.81282,
+      "n_grades": 6,
+      "k_grades": 6,
+      "n_syntax": 2,
+      "k_syntax": 2,
+      "n_sites": 7
+    },
+    "source_path": "programs/unaliased_list_assigned__integer_03.py",
+    "candidate_sha256": "d1f503baff1b882a8dd2a5535bb244391f8ed7e0f659ac7da95a2c8b69c6f436",
+    "behavior_valid": true,
+    "detected": false,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "unaliased_list_assigned",
+    "key_id": "integer_04",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 7,
+      "n_grades": 6,
+      "n_edits": 6,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 2.1133320000000018e-05,
+      "p_all": 1.0566660000000009e-05,
+      "p_syntax": 0.042780000000000006,
+      "n_grades": 6,
+      "k_grades": 6,
+      "n_syntax": 2,
+      "k_syntax": 2,
+      "n_sites": 7
+    },
+    "source_path": "programs/unaliased_list_assigned__integer_04.py",
+    "candidate_sha256": "66286ffbe1ce18133b20710a16c77b6cdbdb759b06408c3ec8c6cca0038f585b",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "unaliased_list_assigned",
+    "key_id": "integer_05",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 7,
+      "n_grades": 6,
+      "n_edits": 7,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 0.0012875714799999998,
+      "p_all": 0.0006437857399999999,
+      "p_syntax": 0.13718,
+      "n_grades": 6,
+      "k_grades": 6,
+      "n_syntax": 2,
+      "k_syntax": 2,
+      "n_sites": 7
+    },
+    "source_path": "programs/unaliased_list_assigned__integer_05.py",
+    "candidate_sha256": "ba13f405bf4d65b3c3394998050f50fd9bfad637278c3fcab4fc8d4d358bc7aa",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "unaliased_list_assigned",
+    "key_id": "integer_06",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 7,
+      "n_grades": 6,
+      "n_edits": 7,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 0.0012875714799999998,
+      "p_all": 0.0006437857399999999,
+      "p_syntax": 0.13718,
+      "n_grades": 6,
+      "k_grades": 6,
+      "n_syntax": 2,
+      "k_syntax": 2,
+      "n_sites": 7
+    },
+    "source_path": "programs/unaliased_list_assigned__integer_06.py",
+    "candidate_sha256": "ba13f405bf4d65b3c3394998050f50fd9bfad637278c3fcab4fc8d4d358bc7aa",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "unaliased_list_assigned",
+    "key_id": "integer_07",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 7,
+      "n_grades": 6,
+      "n_edits": 7,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 0.0012875714799999998,
+      "p_all": 0.0006437857399999999,
+      "p_syntax": 0.13718,
+      "n_grades": 6,
+      "k_grades": 6,
+      "n_syntax": 2,
+      "k_syntax": 2,
+      "n_sites": 7
+    },
+    "source_path": "programs/unaliased_list_assigned__integer_07.py",
+    "candidate_sha256": "defa2feeac9700a54ac58c1a04570169f91d2c7230832d47188d32c080c83d3c",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "unaliased_list_assigned",
+    "key_id": "integer_08",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 7,
+      "n_grades": 6,
+      "n_edits": 3,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 0.0034593619200000004,
+      "p_all": 0.0017296809600000002,
+      "p_syntax": 0.81282,
+      "n_grades": 6,
+      "k_grades": 6,
+      "n_syntax": 2,
+      "k_syntax": 2,
+      "n_sites": 7
+    },
+    "source_path": "programs/unaliased_list_assigned__integer_08.py",
+    "candidate_sha256": "97a40746f91035e09eda074c1f57a82d042d72e1ebc6e0b1a09749c695eb3268",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "unaliased_list_assigned",
+    "key_id": "integer_09",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 7,
+      "n_grades": 6,
+      "n_edits": 1,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "No watermark evidence",
+      "p": 0.01109292352000001,
+      "p_all": 0.005546461760000005,
+      "p_syntax": 0.13718,
+      "n_grades": 6,
+      "k_grades": 6,
+      "n_syntax": 2,
+      "k_syntax": 2,
+      "n_sites": 7
+    },
+    "source_path": "programs/unaliased_list_assigned__integer_09.py",
+    "candidate_sha256": "83812eed2266569145e8871b00a51ca56b2c043b3aca585660fe3557ab29ed44",
+    "behavior_valid": true,
+    "detected": false,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "unaliased_list_assigned",
+    "key_id": "integer_10",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 7,
+      "n_grades": 6,
+      "n_edits": 2,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 0.0005838380800000005,
+      "p_all": 0.00029191904000000024,
+      "p_syntax": 0.007220000000000001,
+      "n_grades": 6,
+      "k_grades": 6,
+      "n_syntax": 2,
+      "k_syntax": 2,
+      "n_sites": 7
+    },
+    "source_path": "programs/unaliased_list_assigned__integer_10.py",
+    "candidate_sha256": "5c58e5885d039abf242248929cd379202f893dad896a64221a152a07863d12e1",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "unaliased_list_assigned",
+    "key_id": "integer_11",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 7,
+      "n_grades": 6,
+      "n_edits": 7,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 0.00040153307999999993,
+      "p_all": 0.00020076653999999997,
+      "p_syntax": 0.042780000000000006,
+      "n_grades": 6,
+      "k_grades": 6,
+      "n_syntax": 2,
+      "k_syntax": 2,
+      "n_sites": 7
+    },
+    "source_path": "programs/unaliased_list_assigned__integer_11.py",
+    "candidate_sha256": "a86f5d197ff0e7a85436ed10e5dde10532494633d0cef392bc6bad5496fdd455",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "unaliased_list_assigned",
+    "key_id": "integer_12",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 7,
+      "n_grades": 6,
+      "n_edits": 1,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "No watermark evidence",
+      "p": 0.01109292352000001,
+      "p_all": 0.005546461760000005,
+      "p_syntax": 0.13718,
+      "n_grades": 6,
+      "k_grades": 6,
+      "n_syntax": 2,
+      "k_syntax": 2,
+      "n_sites": 7
+    },
+    "source_path": "programs/unaliased_list_assigned__integer_12.py",
+    "candidate_sha256": "83812eed2266569145e8871b00a51ca56b2c043b3aca585660fe3557ab29ed44",
+    "behavior_valid": true,
+    "detected": false,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "unaliased_list_assigned",
+    "key_id": "integer_13",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 7,
+      "n_grades": 6,
+      "n_edits": 7,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 0.00040153308,
+      "p_all": 0.00020076654,
+      "p_syntax": 0.81282,
+      "n_grades": 6,
+      "k_grades": 6,
+      "n_syntax": 2,
+      "k_syntax": 2,
+      "n_sites": 7
+    },
+    "source_path": "programs/unaliased_list_assigned__integer_13.py",
+    "candidate_sha256": "c08719482272fc222b7a4ed515ecafa263826d0f6dcf7e942fa83da087450e62",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "unaliased_list_assigned",
+    "key_id": "integer_14",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 7,
+      "n_grades": 6,
+      "n_edits": 7,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 3.5666800000000025e-06,
+      "p_all": 1.7833400000000013e-06,
+      "p_syntax": 0.007220000000000001,
+      "n_grades": 6,
+      "k_grades": 6,
+      "n_syntax": 2,
+      "k_syntax": 2,
+      "n_sites": 7
+    },
+    "source_path": "programs/unaliased_list_assigned__integer_14.py",
+    "candidate_sha256": "240faee5ef1a106983c57d95cacb24a8090b15fe8335ecd349968ea8f87ad240",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "unaliased_list_assigned",
+    "key_id": "integer_15",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 7,
+      "n_grades": 6,
+      "n_edits": 1,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 0.003459361920000003,
+      "p_all": 0.0017296809600000015,
+      "p_syntax": 0.81282,
+      "n_grades": 6,
+      "k_grades": 6,
+      "n_syntax": 2,
+      "k_syntax": 2,
+      "n_sites": 7
+    },
+    "source_path": "programs/unaliased_list_assigned__integer_15.py",
+    "candidate_sha256": "e3d3951852c2ce76edbe02a0e8340ce916d38904cd5d5eee4a3a7082b2621fad",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_integer_augmented",
+    "key_id": "upstream_default",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 6,
+      "n_grades": 4,
+      "n_edits": 8,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Insufficient evidence",
+      "p": 2.6000000000000022e-05,
+      "p_all": 1.3000000000000011e-05,
+      "p_syntax": 1.0,
+      "n_grades": 4,
+      "k_grades": 4,
+      "n_syntax": 0,
+      "k_syntax": 0,
+      "n_sites": 6
+    },
+    "source_path": "programs/aliased_integer_augmented__upstream_default.py",
+    "candidate_sha256": "db7509c927366acbea89c7460e8d1d299303d5a301e2b61330746451fc87a8aa",
+    "behavior_valid": true,
+    "detected": false,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_integer_augmented",
+    "key_id": "integer_00",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 6,
+      "n_grades": 4,
+      "n_edits": 8,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Insufficient evidence",
+      "p": 0.009386,
+      "p_all": 0.004693,
+      "p_syntax": 1.0,
+      "n_grades": 4,
+      "k_grades": 4,
+      "n_syntax": 0,
+      "k_syntax": 0,
+      "n_sites": 6
+    },
+    "source_path": "programs/aliased_integer_augmented__integer_00.py",
+    "candidate_sha256": "d36e7b697c075b4d9d5815392a6e7764443fef68a1a0c620e60e7fd7830dffce",
+    "behavior_valid": true,
+    "detected": false,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_integer_augmented",
+    "key_id": "integer_01",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 6,
+      "n_grades": 4,
+      "n_edits": 8,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Insufficient evidence",
+      "p": 0.009386,
+      "p_all": 0.004693,
+      "p_syntax": 1.0,
+      "n_grades": 4,
+      "k_grades": 4,
+      "n_syntax": 0,
+      "k_syntax": 0,
+      "n_sites": 6
+    },
+    "source_path": "programs/aliased_integer_augmented__integer_01.py",
+    "candidate_sha256": "d36e7b697c075b4d9d5815392a6e7764443fef68a1a0c620e60e7fd7830dffce",
+    "behavior_valid": true,
+    "detected": false,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_integer_augmented",
+    "key_id": "integer_02",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 6,
+      "n_grades": 4,
+      "n_edits": 1,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Insufficient evidence",
+      "p": 0.004256000000000004,
+      "p_all": 0.002128000000000002,
+      "p_syntax": 1.0,
+      "n_grades": 4,
+      "k_grades": 4,
+      "n_syntax": 0,
+      "k_syntax": 0,
+      "n_sites": 6
+    },
+    "source_path": "programs/aliased_integer_augmented__integer_02.py",
+    "candidate_sha256": "820587638189e9a07d9fd09beb092cc726847d57ab50ba7a724de02ba1622cf4",
+    "behavior_valid": true,
+    "detected": false,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_integer_augmented",
+    "key_id": "integer_03",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 6,
+      "n_grades": 4,
+      "n_edits": 0,
+      "iterations": 0
+    },
+    "detector": {
+      "verdict": "Insufficient evidence",
+      "p": 0.08086400000000006,
+      "p_all": 0.04043200000000003,
+      "p_syntax": 1.0,
+      "n_grades": 4,
+      "k_grades": 4,
+      "n_syntax": 0,
+      "k_syntax": 0,
+      "n_sites": 6
+    },
+    "source_path": "programs/aliased_integer_augmented__integer_03.py",
+    "candidate_sha256": "ed103603d9522803fccc9bb6eb22cb38cdac4a5cf2da4fa995796ee63661cb3c",
+    "behavior_valid": true,
+    "detected": false,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_integer_augmented",
+    "key_id": "integer_04",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 6,
+      "n_grades": 4,
+      "n_edits": 7,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Insufficient evidence",
+      "p": 0.0004940000000000004,
+      "p_all": 0.0002470000000000002,
+      "p_syntax": 1.0,
+      "n_grades": 4,
+      "k_grades": 4,
+      "n_syntax": 0,
+      "k_syntax": 0,
+      "n_sites": 6
+    },
+    "source_path": "programs/aliased_integer_augmented__integer_04.py",
+    "candidate_sha256": "c68a92f87890aee9be96567e8441e69a5638236bdee3c696ca500796aa6d9ff2",
+    "behavior_valid": true,
+    "detected": false,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_integer_augmented",
+    "key_id": "integer_05",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 6,
+      "n_grades": 4,
+      "n_edits": 8,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Insufficient evidence",
+      "p": 0.009386,
+      "p_all": 0.004693,
+      "p_syntax": 1.0,
+      "n_grades": 4,
+      "k_grades": 4,
+      "n_syntax": 0,
+      "k_syntax": 0,
+      "n_sites": 6
+    },
+    "source_path": "programs/aliased_integer_augmented__integer_05.py",
+    "candidate_sha256": "d36e7b697c075b4d9d5815392a6e7764443fef68a1a0c620e60e7fd7830dffce",
+    "behavior_valid": true,
+    "detected": false,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_integer_augmented",
+    "key_id": "integer_06",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 6,
+      "n_grades": 4,
+      "n_edits": 8,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Insufficient evidence",
+      "p": 0.009386,
+      "p_all": 0.004693,
+      "p_syntax": 1.0,
+      "n_grades": 4,
+      "k_grades": 4,
+      "n_syntax": 0,
+      "k_syntax": 0,
+      "n_sites": 6
+    },
+    "source_path": "programs/aliased_integer_augmented__integer_06.py",
+    "candidate_sha256": "d36e7b697c075b4d9d5815392a6e7764443fef68a1a0c620e60e7fd7830dffce",
+    "behavior_valid": true,
+    "detected": false,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_integer_augmented",
+    "key_id": "integer_07",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 6,
+      "n_grades": 4,
+      "n_edits": 8,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Insufficient evidence",
+      "p": 0.009386,
+      "p_all": 0.004693,
+      "p_syntax": 1.0,
+      "n_grades": 4,
+      "k_grades": 4,
+      "n_syntax": 0,
+      "k_syntax": 0,
+      "n_sites": 6
+    },
+    "source_path": "programs/aliased_integer_augmented__integer_07.py",
+    "candidate_sha256": "5bdc4b5e407b0e024c6c5e1f989febabda256b53534f3749088cb506581e58ac",
+    "behavior_valid": true,
+    "detected": false,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_integer_augmented",
+    "key_id": "integer_08",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 6,
+      "n_grades": 4,
+      "n_edits": 3,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Insufficient evidence",
+      "p": 0.004256,
+      "p_all": 0.002128,
+      "p_syntax": 1.0,
+      "n_grades": 4,
+      "k_grades": 4,
+      "n_syntax": 0,
+      "k_syntax": 0,
+      "n_sites": 6
+    },
+    "source_path": "programs/aliased_integer_augmented__integer_08.py",
+    "candidate_sha256": "720ba589eb95ed392c1a74d4a21a6d91a5045f8906c970ec0870105a6aed0bc9",
+    "behavior_valid": true,
+    "detected": false,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_integer_augmented",
+    "key_id": "integer_09",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 6,
+      "n_grades": 4,
+      "n_edits": 0,
+      "iterations": 0
+    },
+    "detector": {
+      "verdict": "Insufficient evidence",
+      "p": 0.08086400000000006,
+      "p_all": 0.04043200000000003,
+      "p_syntax": 1.0,
+      "n_grades": 4,
+      "k_grades": 4,
+      "n_syntax": 0,
+      "k_syntax": 0,
+      "n_sites": 6
+    },
+    "source_path": "programs/aliased_integer_augmented__integer_09.py",
+    "candidate_sha256": "ed103603d9522803fccc9bb6eb22cb38cdac4a5cf2da4fa995796ee63661cb3c",
+    "behavior_valid": true,
+    "detected": false,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_integer_augmented",
+    "key_id": "integer_10",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 6,
+      "n_grades": 4,
+      "n_edits": 0,
+      "iterations": 0
+    },
+    "detector": {
+      "verdict": "Insufficient evidence",
+      "p": 0.08086400000000006,
+      "p_all": 0.04043200000000003,
+      "p_syntax": 1.0,
+      "n_grades": 4,
+      "k_grades": 4,
+      "n_syntax": 0,
+      "k_syntax": 0,
+      "n_sites": 6
+    },
+    "source_path": "programs/aliased_integer_augmented__integer_10.py",
+    "candidate_sha256": "ed103603d9522803fccc9bb6eb22cb38cdac4a5cf2da4fa995796ee63661cb3c",
+    "behavior_valid": true,
+    "detected": false,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_integer_augmented",
+    "key_id": "integer_11",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 6,
+      "n_grades": 4,
+      "n_edits": 8,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Insufficient evidence",
+      "p": 0.009386,
+      "p_all": 0.004693,
+      "p_syntax": 1.0,
+      "n_grades": 4,
+      "k_grades": 4,
+      "n_syntax": 0,
+      "k_syntax": 0,
+      "n_sites": 6
+    },
+    "source_path": "programs/aliased_integer_augmented__integer_11.py",
+    "candidate_sha256": "d36e7b697c075b4d9d5815392a6e7764443fef68a1a0c620e60e7fd7830dffce",
+    "behavior_valid": true,
+    "detected": false,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_integer_augmented",
+    "key_id": "integer_12",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 6,
+      "n_grades": 4,
+      "n_edits": 0,
+      "iterations": 0
+    },
+    "detector": {
+      "verdict": "Insufficient evidence",
+      "p": 0.08086400000000006,
+      "p_all": 0.04043200000000003,
+      "p_syntax": 1.0,
+      "n_grades": 4,
+      "k_grades": 4,
+      "n_syntax": 0,
+      "k_syntax": 0,
+      "n_sites": 6
+    },
+    "source_path": "programs/aliased_integer_augmented__integer_12.py",
+    "candidate_sha256": "ed103603d9522803fccc9bb6eb22cb38cdac4a5cf2da4fa995796ee63661cb3c",
+    "behavior_valid": true,
+    "detected": false,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_integer_augmented",
+    "key_id": "integer_13",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 6,
+      "n_grades": 4,
+      "n_edits": 9,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Insufficient evidence",
+      "p": 0.000494,
+      "p_all": 0.000247,
+      "p_syntax": 1.0,
+      "n_grades": 4,
+      "k_grades": 4,
+      "n_syntax": 0,
+      "k_syntax": 0,
+      "n_sites": 6
+    },
+    "source_path": "programs/aliased_integer_augmented__integer_13.py",
+    "candidate_sha256": "b950724f20acbb48422fda9bac91369e2368854a6ea0b6b22f760523d4f5a966",
+    "behavior_valid": true,
+    "detected": false,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_integer_augmented",
+    "key_id": "integer_14",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 6,
+      "n_grades": 4,
+      "n_edits": 7,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Insufficient evidence",
+      "p": 0.0004940000000000004,
+      "p_all": 0.0002470000000000002,
+      "p_syntax": 1.0,
+      "n_grades": 4,
+      "k_grades": 4,
+      "n_syntax": 0,
+      "k_syntax": 0,
+      "n_sites": 6
+    },
+    "source_path": "programs/aliased_integer_augmented__integer_14.py",
+    "candidate_sha256": "c68a92f87890aee9be96567e8441e69a5638236bdee3c696ca500796aa6d9ff2",
+    "behavior_valid": true,
+    "detected": false,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_integer_augmented",
+    "key_id": "integer_15",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 6,
+      "n_grades": 4,
+      "n_edits": 1,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Insufficient evidence",
+      "p": 0.004256000000000004,
+      "p_all": 0.002128000000000002,
+      "p_syntax": 1.0,
+      "n_grades": 4,
+      "k_grades": 4,
+      "n_syntax": 0,
+      "k_syntax": 0,
+      "n_sites": 6
+    },
+    "source_path": "programs/aliased_integer_augmented__integer_15.py",
+    "candidate_sha256": "820587638189e9a07d9fd09beb092cc726847d57ab50ba7a724de02ba1622cf4",
+    "behavior_valid": true,
+    "detected": false,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_integer_assigned",
+    "key_id": "upstream_default",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 7,
+      "n_grades": 5,
+      "n_edits": 9,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 3.754400000000004e-06,
+      "p_all": 1.877200000000002e-06,
+      "p_syntax": 0.1444,
+      "n_grades": 5,
+      "k_grades": 5,
+      "n_syntax": 1,
+      "k_syntax": 1,
+      "n_sites": 7
+    },
+    "source_path": "programs/aliased_integer_assigned__upstream_default.py",
+    "candidate_sha256": "5477b6b60d2aabe19bd4c1d59b266a14d24bc0cf76ef6d2d4d0f7d0d0c3a4c0e",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_integer_assigned",
+    "key_id": "integer_00",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 7,
+      "n_grades": 5,
+      "n_edits": 8,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 0.008030661599999999,
+      "p_all": 0.0040153307999999995,
+      "p_syntax": 0.8556,
+      "n_grades": 5,
+      "k_grades": 5,
+      "n_syntax": 1,
+      "k_syntax": 1,
+      "n_sites": 7
+    },
+    "source_path": "programs/aliased_integer_assigned__integer_00.py",
+    "candidate_sha256": "9ceb6b0f7f1cf8e906dca6a533d118f130cefc0593c795c7ea6d9187ec244b7e",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_integer_assigned",
+    "key_id": "integer_01",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 7,
+      "n_grades": 5,
+      "n_edits": 8,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 0.008030661599999999,
+      "p_all": 0.0040153307999999995,
+      "p_syntax": 0.8556,
+      "n_grades": 5,
+      "k_grades": 5,
+      "n_syntax": 1,
+      "k_syntax": 1,
+      "n_sites": 7
+    },
+    "source_path": "programs/aliased_integer_assigned__integer_01.py",
+    "candidate_sha256": "9ceb6b0f7f1cf8e906dca6a533d118f130cefc0593c795c7ea6d9187ec244b7e",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_integer_assigned",
+    "key_id": "integer_02",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 7,
+      "n_grades": 5,
+      "n_edits": 2,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 0.0006145664000000006,
+      "p_all": 0.0003072832000000003,
+      "p_syntax": 0.1444,
+      "n_grades": 5,
+      "k_grades": 5,
+      "n_syntax": 1,
+      "k_syntax": 1,
+      "n_sites": 7
+    },
+    "source_path": "programs/aliased_integer_assigned__integer_02.py",
+    "candidate_sha256": "52bc91050d3ad927814c8d848b539c78518bdefc61e1b15d37e6a41dcc757a54",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_integer_assigned",
+    "key_id": "integer_03",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 7,
+      "n_grades": 5,
+      "n_edits": 0,
+      "iterations": 0
+    },
+    "detector": {
+      "verdict": "No watermark evidence",
+      "p": 0.06918723840000006,
+      "p_all": 0.03459361920000003,
+      "p_syntax": 0.8556,
+      "n_grades": 5,
+      "k_grades": 5,
+      "n_syntax": 1,
+      "k_syntax": 1,
+      "n_sites": 7
+    },
+    "source_path": "programs/aliased_integer_assigned__integer_03.py",
+    "candidate_sha256": "359a47d42403df9121891012c9e65718bd1751693b79dada2c0c20c361d5babf",
+    "behavior_valid": true,
+    "detected": false,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_integer_assigned",
+    "key_id": "integer_04",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 7,
+      "n_grades": 5,
+      "n_edits": 7,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 0.00042266640000000033,
+      "p_all": 0.00021133320000000017,
+      "p_syntax": 0.8556,
+      "n_grades": 5,
+      "k_grades": 5,
+      "n_syntax": 1,
+      "k_syntax": 1,
+      "n_sites": 7
+    },
+    "source_path": "programs/aliased_integer_assigned__integer_04.py",
+    "candidate_sha256": "7075e2d5d8216cf0091a2ccec9870f59ecb110ff94d1b2b7aec10d1a51e699e2",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_integer_assigned",
+    "key_id": "integer_05",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 7,
+      "n_grades": 5,
+      "n_edits": 9,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 0.0013553384,
+      "p_all": 0.0006776692,
+      "p_syntax": 0.1444,
+      "n_grades": 5,
+      "k_grades": 5,
+      "n_syntax": 1,
+      "k_syntax": 1,
+      "n_sites": 7
+    },
+    "source_path": "programs/aliased_integer_assigned__integer_05.py",
+    "candidate_sha256": "dc00462ea3ae46cda3ac4f77980b0a8bb7ebbc9169aa380abb3c6abe6c0466af",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_integer_assigned",
+    "key_id": "integer_06",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 7,
+      "n_grades": 5,
+      "n_edits": 9,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 0.0013553384,
+      "p_all": 0.0006776692,
+      "p_syntax": 0.1444,
+      "n_grades": 5,
+      "k_grades": 5,
+      "n_syntax": 1,
+      "k_syntax": 1,
+      "n_sites": 7
+    },
+    "source_path": "programs/aliased_integer_assigned__integer_06.py",
+    "candidate_sha256": "dc00462ea3ae46cda3ac4f77980b0a8bb7ebbc9169aa380abb3c6abe6c0466af",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_integer_assigned",
+    "key_id": "integer_07",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 7,
+      "n_grades": 5,
+      "n_edits": 9,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 0.0013553384,
+      "p_all": 0.0006776692,
+      "p_syntax": 0.1444,
+      "n_grades": 5,
+      "k_grades": 5,
+      "n_syntax": 1,
+      "k_syntax": 1,
+      "n_sites": 7
+    },
+    "source_path": "programs/aliased_integer_assigned__integer_07.py",
+    "candidate_sha256": "46ea49eef85f811b6c7d01eba71d567b0fa2ac924ccf10ffebe5b1f1aa4bae48",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_integer_assigned",
+    "key_id": "integer_08",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 7,
+      "n_grades": 5,
+      "n_edits": 3,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 0.0036414336000000005,
+      "p_all": 0.0018207168000000003,
+      "p_syntax": 0.8556,
+      "n_grades": 5,
+      "k_grades": 5,
+      "n_syntax": 1,
+      "k_syntax": 1,
+      "n_sites": 7
+    },
+    "source_path": "programs/aliased_integer_assigned__integer_08.py",
+    "candidate_sha256": "58a83aaad607d9b38b8635526410b2d095f88ed2dec853566acc75bc755800c1",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_integer_assigned",
+    "key_id": "integer_09",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 7,
+      "n_grades": 5,
+      "n_edits": 1,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "No watermark evidence",
+      "p": 0.011676761600000009,
+      "p_all": 0.005838380800000004,
+      "p_syntax": 0.1444,
+      "n_grades": 5,
+      "k_grades": 5,
+      "n_syntax": 1,
+      "k_syntax": 1,
+      "n_sites": 7
+    },
+    "source_path": "programs/aliased_integer_assigned__integer_09.py",
+    "candidate_sha256": "5e4d63effcece3e664d01869c5c20a8c9838b15959acb215901c2aa38795ce6c",
+    "behavior_valid": true,
+    "detected": false,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_integer_assigned",
+    "key_id": "integer_10",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 7,
+      "n_grades": 5,
+      "n_edits": 1,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "No watermark evidence",
+      "p": 0.011676761600000009,
+      "p_all": 0.005838380800000004,
+      "p_syntax": 0.1444,
+      "n_grades": 5,
+      "k_grades": 5,
+      "n_syntax": 1,
+      "k_syntax": 1,
+      "n_sites": 7
+    },
+    "source_path": "programs/aliased_integer_assigned__integer_10.py",
+    "candidate_sha256": "5e4d63effcece3e664d01869c5c20a8c9838b15959acb215901c2aa38795ce6c",
+    "behavior_valid": true,
+    "detected": false,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_integer_assigned",
+    "key_id": "integer_11",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 7,
+      "n_grades": 5,
+      "n_edits": 8,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 0.008030661599999999,
+      "p_all": 0.0040153307999999995,
+      "p_syntax": 0.8556,
+      "n_grades": 5,
+      "k_grades": 5,
+      "n_syntax": 1,
+      "k_syntax": 1,
+      "n_sites": 7
+    },
+    "source_path": "programs/aliased_integer_assigned__integer_11.py",
+    "candidate_sha256": "9ceb6b0f7f1cf8e906dca6a533d118f130cefc0593c795c7ea6d9187ec244b7e",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_integer_assigned",
+    "key_id": "integer_12",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 7,
+      "n_grades": 5,
+      "n_edits": 1,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "No watermark evidence",
+      "p": 0.011676761600000009,
+      "p_all": 0.005838380800000004,
+      "p_syntax": 0.1444,
+      "n_grades": 5,
+      "k_grades": 5,
+      "n_syntax": 1,
+      "k_syntax": 1,
+      "n_sites": 7
+    },
+    "source_path": "programs/aliased_integer_assigned__integer_12.py",
+    "candidate_sha256": "5e4d63effcece3e664d01869c5c20a8c9838b15959acb215901c2aa38795ce6c",
+    "behavior_valid": true,
+    "detected": false,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_integer_assigned",
+    "key_id": "integer_13",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 7,
+      "n_grades": 5,
+      "n_edits": 9,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 0.00042266639999999996,
+      "p_all": 0.00021133319999999998,
+      "p_syntax": 0.8556,
+      "n_grades": 5,
+      "k_grades": 5,
+      "n_syntax": 1,
+      "k_syntax": 1,
+      "n_sites": 7
+    },
+    "source_path": "programs/aliased_integer_assigned__integer_13.py",
+    "candidate_sha256": "72d4081af308e6d906977f61fbb11bb9d44b6c5b72903ff4ada4ff30b0618626",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_integer_assigned",
+    "key_id": "integer_14",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 7,
+      "n_grades": 5,
+      "n_edits": 8,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 7.133360000000006e-05,
+      "p_all": 3.566680000000003e-05,
+      "p_syntax": 0.1444,
+      "n_grades": 5,
+      "k_grades": 5,
+      "n_syntax": 1,
+      "k_syntax": 1,
+      "n_sites": 7
+    },
+    "source_path": "programs/aliased_integer_assigned__integer_14.py",
+    "candidate_sha256": "1f8a61bb4d495ffc83a499553820fb293df31dc0ad9d3b5fadccbadb9fd2eb43",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  },
+  {
+    "case_id": "aliased_integer_assigned",
+    "key_id": "integer_15",
+    "embedding": {
+      "status": "ok",
+      "n_sites": 7,
+      "n_grades": 5,
+      "n_edits": 1,
+      "iterations": 1
+    },
+    "detector": {
+      "verdict": "Watermark detected",
+      "p": 0.003641433600000003,
+      "p_all": 0.0018207168000000016,
+      "p_syntax": 0.8556,
+      "n_grades": 5,
+      "k_grades": 5,
+      "n_syntax": 1,
+      "k_syntax": 1,
+      "n_sites": 7
+    },
+    "source_path": "programs/aliased_integer_assigned__integer_15.py",
+    "candidate_sha256": "91c1649072c79e34c5cdf6937549a09d079b8fab5f1e2b06788d1fe3ed7eb5c8",
+    "behavior_valid": true,
+    "detected": true,
+    "mismatch_count": 0,
+    "first_mismatch": null
+  }
+]

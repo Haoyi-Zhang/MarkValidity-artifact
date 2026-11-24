@@ -1,0 +1,13 @@
+{
+  "stdout": "{\"elapsed_seconds\":0.002027,\"error\":null,\"observations\":[{\"after\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"3\"],[\"int\",\"2\"],[\"int\",\"3\"]]],[\"int\",\"9\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"3\"],[\"int\",\"2\"],[\"int\",\"3\"]]],[\"int\",\"9\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"bool\",true]]},{\"after\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"1\"],[\"int\",\"2\"]]],[\"int\",\"5\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"1\"],[\"int\",\"2\"]]],[\"int\",\"5\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"bool\",false]]},{\"after\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"3\"]]],[\"int\",\"5\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"3\"]]],[\"int\",\"5\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"bool\",true]]},{\"after\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"3\"],[\"int\",\"2\"],[\"int\",\"3\"]]],[\"int\",\"1\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"3\"],[\"int\",\"2\"],[\"int\",\"3\"]]],[\"int\",\"1\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"bool\",false]]},{\"after\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"1\"],[\"int\",\"2\"],[\"int\",\"3\"]]],[\"int\",\"6\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"1\"],[\"int\",\"2\"],[\"int\",\"3\"]]],[\"int\",\"6\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"bool\",false]]},{\"after\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"5\"]]],[\"int\",\"5\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"5\"]]],[\"int\",\"5\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"bool\",true]]}],\"status\":\"passed\",\"stderr\":\"\",\"stdout\":\"\"}\n",
+  "stderr": "",
+  "returncode": 0,
+  "interruption": null,
+  "child_user_cpu_seconds": 0.026510999999999285,
+  "child_system_cpu_seconds": 0.0,
+  "group": "f3f92b44fd7be9b55e06cdfc17d16b6fef4be05f298363454dc45c37c7baf951",
+  "received_label": true,
+  "source_sha256": "572ff4e298d7aa2f6d12b6a85ca11c3b131846ee81080f857f8102f79d7caa7f",
+  "contract_sha256": "167d09005451fe4a7d8d9b629f8632300912b0faa92dcc933499e89989216edd",
+  "worker_seconds": 0.027129890004289337
+}

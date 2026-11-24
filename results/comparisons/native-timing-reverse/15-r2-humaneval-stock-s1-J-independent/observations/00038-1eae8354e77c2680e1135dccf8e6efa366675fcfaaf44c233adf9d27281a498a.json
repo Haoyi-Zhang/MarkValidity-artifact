@@ -1,0 +1,13 @@
+{
+  "stdout": "{\"elapsed_seconds\":0.002461,\"error\":null,\"observations\":[{\"after\":{\"args\":[\"tuple\",[[\"str\",\"Hi, my name is John\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"Hi, my name is John\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"list\",[[\"str\",\"Hi\"],[\"str\",\"my\"],[\"str\",\"name\"],[\"str\",\"is\"],[\"str\",\"John\"]]]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"One, two, three, four, five, six\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"One, two, three, four, five, six\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"list\",[[\"str\",\"One\"],[\"str\",\"two\"],[\"str\",\"three\"],[\"str\",\"four\"],[\"str\",\"five\"],[\"str\",\"six\"]]]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"Hi, my name\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"Hi, my name\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"list\",[[\"str\",\"Hi\"],[\"str\",\"my\"],[\"str\",\"name\"]]]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"One,, two, three, four, five, six,\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"One,, two, three, four, five, six,\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"list\",[[\"str\",\"One\"],[\"str\",\"two\"],[\"str\",\"three\"],[\"str\",\"four\"],[\"str\",\"five\"],[\"str\",\"six\"]]]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"list\",[]]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"ahmed     , gamal\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"ahmed     , gamal\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"list\",[[\"str\",\"ahmed\"],[\"str\",\"gamal\"]]]]}],\"status\":\"passed\",\"stderr\":\"\",\"stdout\":\"\"}\n",
+  "stderr": "",
+  "returncode": 0,
+  "interruption": null,
+  "child_user_cpu_seconds": 0.02572799999998665,
+  "child_system_cpu_seconds": 0.00819800000000015,
+  "group": "1eae8354e77c2680e1135dccf8e6efa366675fcfaaf44c233adf9d27281a498a",
+  "received_label": true,
+  "source_sha256": "9cd6946f30d22f502e8709a226e978b96215fa164a73aa60c97e495c25b796bd",
+  "contract_sha256": "726bbeba5a1131c0b7a239265f4586898b1bcd6b6a279c6c159e30beb23c6a11",
+  "worker_seconds": 0.03717143999529071
+}

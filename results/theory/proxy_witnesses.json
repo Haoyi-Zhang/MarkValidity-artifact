@@ -1,0 +1,98 @@
+{
+  "source_file_sha256": "765aec9442c3758ec1f9f294994282eb342ec68cfdf5ae8acccbf3db5c318c60",
+  "scope": "retained finite contrast; exact score values and recorded validity labels, not new executions",
+  "mutant": {
+    "pair_id": "mutant::leap_year::python::1",
+    "task": "leap_year",
+    "language": "python",
+    "pair_class": "mutant",
+    "bounded_equivalent": "0",
+    "nominal_test_pass": "1",
+    "character_similarity": "0.9820359281437125",
+    "token_similarity": "0.9615384615384616",
+    "identifier_normalized_similarity": "1.0",
+    "ast_type_similarity": "1.0",
+    "control_profile_similarity": "1.0",
+    "identifier_multiset_similarity": "1.0",
+    "identifier_style_similarity": "1.0"
+  },
+  "witnesses": {
+    "character_similarity": {
+      "low_valid_pair": "audit::leap_year::python::structural::format",
+      "low_valid_score": 0.06608969315499606,
+      "invalid_pair": "mutant::leap_year::python::1",
+      "invalid_score": 0.9820359281437125,
+      "high_valid_pair": "audit::leap_year::python::lexical::strip",
+      "high_valid_score": 1.0,
+      "higher_is_valid_threshold_impossible": true,
+      "lower_is_valid_threshold_impossible": true,
+      "exact_opposite_label_collision": false
+    },
+    "token_similarity": {
+      "low_valid_pair": "audit::leap_year::python::structural::carrier_only",
+      "low_valid_score": 0.2694300518134715,
+      "invalid_pair": "mutant::leap_year::python::1",
+      "invalid_score": 0.9615384615384616,
+      "high_valid_pair": "audit::leap_year::python::lexical::strip",
+      "high_valid_score": 1.0,
+      "higher_is_valid_threshold_impossible": true,
+      "lower_is_valid_threshold_impossible": true,
+      "exact_opposite_label_collision": false
+    },
+    "identifier_normalized_similarity": {
+      "low_valid_pair": "audit::leap_year::python::structural::carrier_only",
+      "low_valid_score": 0.2694300518134715,
+      "invalid_pair": "mutant::leap_year::python::1",
+      "invalid_score": 1.0,
+      "high_valid_pair": "audit::leap_year::python::lexical::strip",
+      "high_valid_score": 1.0,
+      "higher_is_valid_threshold_impossible": true,
+      "lower_is_valid_threshold_impossible": true,
+      "exact_opposite_label_collision": true
+    },
+    "ast_type_similarity": {
+      "low_valid_pair": "audit::leap_year::python::structural::carrier_only",
+      "low_valid_score": 0.22,
+      "invalid_pair": "mutant::leap_year::python::1",
+      "invalid_score": 1.0,
+      "high_valid_pair": "audit::leap_year::python::lexical::strip",
+      "high_valid_score": 1.0,
+      "higher_is_valid_threshold_impossible": true,
+      "lower_is_valid_threshold_impossible": true,
+      "exact_opposite_label_collision": true
+    },
+    "control_profile_similarity": {
+      "low_valid_pair": "audit::leap_year::python::structural::carrier_only",
+      "low_valid_score": 0.04,
+      "invalid_pair": "mutant::leap_year::python::1",
+      "invalid_score": 1.0,
+      "high_valid_pair": "audit::leap_year::python::lexical::carrier_only",
+      "high_valid_score": 1.0,
+      "higher_is_valid_threshold_impossible": true,
+      "lower_is_valid_threshold_impossible": true,
+      "exact_opposite_label_collision": true
+    },
+    "identifier_multiset_similarity": {
+      "low_valid_pair": "audit::leap_year::python::lexical::carrier_only",
+      "low_valid_score": 0.1724137931034483,
+      "invalid_pair": "mutant::leap_year::python::1",
+      "invalid_score": 1.0,
+      "high_valid_pair": "audit::leap_year::python::lexical::strip",
+      "high_valid_score": 1.0,
+      "higher_is_valid_threshold_impossible": true,
+      "lower_is_valid_threshold_impossible": true,
+      "exact_opposite_label_collision": true
+    },
+    "identifier_style_similarity": {
+      "low_valid_pair": "audit::leap_year::python::lexical::carrier_only",
+      "low_valid_score": 0.1724137931034483,
+      "invalid_pair": "mutant::leap_year::python::1",
+      "invalid_score": 1.0,
+      "high_valid_pair": "audit::leap_year::python::lexical::strip",
+      "high_valid_score": 1.0,
+      "higher_is_valid_threshold_impossible": true,
+      "lower_is_valid_threshold_impossible": true,
+      "exact_opposite_label_collision": true
+    }
+  }
+}

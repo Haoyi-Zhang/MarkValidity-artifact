@@ -1,0 +1,59 @@
+{
+  "status": "PASS",
+  "numeric_byte_round_trips": 9,
+  "rejected_nonnumeric_encodings": 2,
+  "native_controls": [
+    {
+      "request": {
+        "source": "import numpy as np\ndef f():\n    return np.float64(-0.0)",
+        "test": "def check(candidate):\n    assert type(candidate()) is np.float64\n    assert np.signbit(candidate())",
+        "entry_point": "f"
+      },
+      "expected_label": true,
+      "receipt": {
+        "label": true,
+        "evidence_rejected": null,
+        "stdout": "{\"elapsed_seconds\":0.28065,\"error\":null,\"observations\":[{\"after\":{\"args\":[\"tuple\",[]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"numpy_scalar\",\"<f8\",\"0000000000000080\"]]},{\"after\":{\"args\":[\"tuple\",[]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"numpy_scalar\",\"<f8\",\"0000000000000080\"]]}],\"status\":\"passed\",\"stderr\":\"\",\"stdout\":\"\"}\n",
+        "stderr": "",
+        "returncode": 0,
+        "interruption": null,
+        "elapsed_seconds": 0.562105700999382
+      }
+    },
+    {
+      "request": {
+        "source": "import numpy as np\ndef f():\n    return np.float64(float(\"nan\"))",
+        "test": "def check(candidate):\n    assert type(candidate()) is np.float64\n    assert np.isnan(candidate())",
+        "entry_point": "f"
+      },
+      "expected_label": true,
+      "receipt": {
+        "label": true,
+        "evidence_rejected": null,
+        "stdout": "{\"elapsed_seconds\":0.23832,\"error\":null,\"observations\":[{\"after\":{\"args\":[\"tuple\",[]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"numpy_scalar\",\"<f8\",\"000000000000f87f\"]]},{\"after\":{\"args\":[\"tuple\",[]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"numpy_scalar\",\"<f8\",\"000000000000f87f\"]]}],\"status\":\"passed\",\"stderr\":\"\",\"stdout\":\"\"}\n",
+        "stderr": "",
+        "returncode": 0,
+        "interruption": null,
+        "elapsed_seconds": 0.37837380899873096
+      }
+    },
+    {
+      "request": {
+        "source": "import numpy as np\ndef f():\n    return np.str_(\"x\")",
+        "test": "def check(candidate):\n    assert candidate() == \"x\"",
+        "entry_point": "f"
+      },
+      "expected_label": null,
+      "receipt": {
+        "label": null,
+        "evidence_rejected": null,
+        "stdout": "{\"elapsed_seconds\":0.115722,\"error\":{\"message\":\"Unsupported observed builtin type: str_\",\"phase\":\"encode_return_value\",\"reason\":\"observer_error\",\"type\":\"builtins.TypeError\"},\"observations\":[],\"status\":\"unavailable\",\"stderr\":\"\",\"stdout\":\"\"}\n",
+        "stderr": "",
+        "returncode": 0,
+        "interruption": null,
+        "elapsed_seconds": 0.2157421610027086
+      }
+    }
+  ],
+  "scope": "Observer controls only, not additional empirical task observations."
+}

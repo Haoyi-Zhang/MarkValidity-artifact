@@ -1,0 +1,128 @@
+{
+  "repeat": 6,
+  "dataset": "mbpp_sanitized",
+  "scope": "mbpp",
+  "left": "stock",
+  "right": "s4",
+  "target": "C",
+  "method": "paired",
+  "directory": "22-mbpp-paired",
+  "candidate_suite_queries": 1,
+  "denominator": 1281,
+  "initial_reference_groups": 20,
+  "decision": "right_strict",
+  "final_certificate": {
+    "route": "paired_ratio_envelope",
+    "defined_all": true,
+    "anchors": {
+      "left": {
+        "lower": "-3",
+        "upper": "-19/868",
+        "endpoints": [
+          {
+            "q": "1/433",
+            "lower_numerator": -1299,
+            "upper_numerator": -432,
+            "denominator": 433
+          },
+          {
+            "q": "849/868",
+            "lower_numerator": -2604,
+            "upper_numerator": -19,
+            "denominator": 868
+          }
+        ],
+        "different_unknown_groups": 5,
+        "relation_on_relaxation": "right_strict"
+      },
+      "right": {
+        "lower": "-3",
+        "upper": "-19/871",
+        "endpoints": [
+          {
+            "q": "2/431",
+            "lower_numerator": -1293,
+            "upper_numerator": -429,
+            "denominator": 431
+          },
+          {
+            "q": "852/871",
+            "lower_numerator": -2613,
+            "upper_numerator": -19,
+            "denominator": 871
+          }
+        ],
+        "different_unknown_groups": 5,
+        "relation_on_relaxation": "right_strict"
+      }
+    },
+    "decision": "right_strict",
+    "anchor": "left",
+    "decision_source": "paired_ratio_envelope"
+  },
+  "phase_seconds": {
+    "register_seconds": 0.00909422199765686,
+    "select_seconds": 1.442099892301485e-05,
+    "bounds_seconds": 0.00018484899919712916,
+    "worker_seconds": 0.03044349900301313,
+    "receive_seconds": 0.00010221399861620739,
+    "record_seconds": 0.0004292860030545853
+  },
+  "audit_total_seconds": 0.040959660000225995,
+  "unallocated_loop_seconds": 0.0006911689997650683,
+  "queries": [
+    {
+      "step": 1,
+      "group": "0d08449da73913c95dbce2b680548b9901210b9164c44c970f7c9ad9b94f0bb6",
+      "received_label": true,
+      "evidence_file": "22-mbpp-paired/observations/00001.json",
+      "evidence_sha256": "28b756d81afc98e6da29dbf10c6ea0856a31baeeff62891d62d7c234cc030a6e"
+    }
+  ],
+  "load_before": {
+    "monotonic_seconds": 45619.221859978,
+    "load_average": [
+      5.4091796875,
+      8.4169921875,
+      12.4013671875
+    ],
+    "visible_processes": 2,
+    "producer_cpu_seconds": 27.647270822,
+    "cpu_affinity": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "load_after": {
+    "monotonic_seconds": 45619.262836404,
+    "load_average": [
+      5.4091796875,
+      8.4169921875,
+      12.4013671875
+    ],
+    "visible_processes": 2,
+    "producer_cpu_seconds": 27.658873648,
+    "cpu_affinity": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "selection_branches": {
+    "point_interval_minimax": 0,
+    "coefficient_differences": 1
+  }
+}

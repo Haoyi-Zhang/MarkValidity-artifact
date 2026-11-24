@@ -1,0 +1,13 @@
+{
+  "stdout": "{\"elapsed_seconds\":0.001593,\"error\":null,\"observations\":[{\"after\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"3\"],[\"int\",\"1\"],[\"int\",\"2\"],[\"int\",\"4\"],[\"int\",\"5\"]]]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"3\"],[\"int\",\"1\"],[\"int\",\"2\"],[\"int\",\"4\"],[\"int\",\"5\"]]]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"3\"]]},{\"after\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"-10\"],[\"int\",\"4\"],[\"int\",\"6\"],[\"int\",\"1000\"],[\"int\",\"10\"],[\"int\",\"20\"]]]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"-10\"],[\"int\",\"4\"],[\"int\",\"6\"],[\"int\",\"1000\"],[\"int\",\"10\"],[\"int\",\"20\"]]]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"float\",\"0x1.0000000000000p+3\"]]},{\"after\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"5\"]]]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"5\"]]]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"5\"]]},{\"after\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"6\"],[\"int\",\"5\"]]]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"6\"],[\"int\",\"5\"]]]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"float\",\"0x1.6000000000000p+2\"]]},{\"after\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"8\"],[\"int\",\"1\"],[\"int\",\"3\"],[\"int\",\"9\"],[\"int\",\"9\"],[\"int\",\"2\"],[\"int\",\"7\"]]]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"8\"],[\"int\",\"1\"],[\"int\",\"3\"],[\"int\",\"9\"],[\"int\",\"9\"],[\"int\",\"2\"],[\"int\",\"7\"]]]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"7\"]]}],\"status\":\"passed\",\"stderr\":\"\",\"stdout\":\"\"}\n",
+  "stderr": "",
+  "returncode": 0,
+  "interruption": null,
+  "child_user_cpu_seconds": 0.017077000000000453,
+  "child_system_cpu_seconds": 0.004353000000001828,
+  "group": "c625c2db431e7e8c9d678344b8e1ce06deb73e3bdd99c68363f95be14b7aa6e7",
+  "received_label": true,
+  "source_sha256": "6a97997417c21507862a35df6fdc51ea863a79f88d5a6aa731035e202d62e8b7",
+  "contract_sha256": "4c04d106a15d0fe8ffe657a0d7a23d4dfa63d267eb67afbc79f8aa4dea2d6491",
+  "worker_seconds": 0.022061761999793816
+}

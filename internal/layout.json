@@ -1,0 +1,115 @@
+{
+  "directory_map": [
+    [
+      "artifact/results/comparisons",
+      "artifact/results/revision-sew-comparison-costs"
+    ],
+    [
+      "artifact/results/javascript",
+      "artifact/results/revision-native-completion"
+    ],
+    [
+      "artifact/results/project-contracts",
+      "artifact/results/revision-project-contracts"
+    ],
+    [
+      "artifact/studies/aliasing",
+      "artifact/external-studies/sew_aliasing"
+    ],
+    [
+      "artifact/results/source-evidence",
+      "artifact/results/revision-source-joint"
+    ],
+    [
+      "artifact/results/controlled",
+      "artifact/results/revision-reproduction"
+    ],
+    [
+      "artifact/results/python",
+      "artifact/results/revision-python-fresh"
+    ],
+    [
+      "artifact/results/audit-budget",
+      "artifact/results/revision-audit-budget"
+    ],
+    [
+      "artifact/results/aliasing",
+      "artifact/results/revision-sew-aliasing"
+    ],
+    [
+      "artifact/studies/sew",
+      "artifact/external-studies/sew_natural"
+    ],
+    [
+      "artifact/reporting/paper",
+      "artifact/manuscript-reporting/current"
+    ],
+    [
+      "artifact/results/sew",
+      "artifact/results/revision-sew-natural"
+    ],
+    [
+      "artifact/results/detector-null",
+      "artifact/results/revision-exact-null"
+    ],
+    [
+      "artifact/results/evidence-policies",
+      "artifact/results/evidence-policies"
+    ],
+    [
+      "artifact/results/source-detection",
+      "artifact/results/source_detection"
+    ],
+    [
+      "artifact/results/source-admission",
+      "artifact/results/source_admission"
+    ],
+    [
+      "artifact/test-data/reference-contract",
+      "artifact/results/current/results"
+    ],
+    [
+      "artifact/results/theory",
+      "artifact/results/revision-theory"
+    ],
+    [
+      "artifact/citations",
+      "artifact/citation-current"
+    ],
+    [
+      "artifact/results/reference-contract",
+      "artifact/results/current"
+    ],
+    [
+      "artifact/supporting-figure-data",
+      "artifact/figures/data"
+    ]
+  ],
+  "file_map": {
+    "artifact/internal/scientific.make": "artifact/Makefile",
+    "artifact/reporting/scopes.json": "artifact/manuscript-reporting/scopes.json",
+    "artifact/test-data/recorded-root/results_manifest.csv": "artifact/results/results_manifest.csv",
+    "artifact/test-data/recorded-root/recheck_report.json": "artifact/results/recheck_report.json",
+    "artifact/test-data/recorded-root/environment.json": "artifact/results/environment.json"
+  },
+  "runtime_omit": [
+    "artifact/check.py",
+    "artifact/run.py",
+    "artifact/Makefile",
+    "artifact/internal/layout.json",
+    "artifact/internal/verification-plan.json"
+  ],
+  "runtime_aliases": [
+    {
+      "clean_root": "artifact/test-data/reference-contract",
+      "recorded_root": "artifact/results",
+      "original_copy": "artifact/results/current/results",
+      "exclude": [
+        "results_manifest.csv",
+        "recheck_report.json",
+        "environment.json"
+      ]
+    }
+  ],
+  "meaning": "Restore original recording paths in a temporary copy without changing frozen scientific bytes."
+}

@@ -1,0 +1,13 @@
+{
+  "stdout": "{\"elapsed_seconds\":0.006496,\"error\":null,\"observations\":[{\"after\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"1\"],[\"int\",\"2\"],[\"int\",\"4\"],[\"int\",\"10\"]]],[\"int\",\"100\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"1\"],[\"int\",\"2\"],[\"int\",\"4\"],[\"int\",\"10\"]]],[\"int\",\"100\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"bool\",true]]},{\"after\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"1\"],[\"int\",\"20\"],[\"int\",\"4\"],[\"int\",\"10\"]]],[\"int\",\"5\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"1\"],[\"int\",\"20\"],[\"int\",\"4\"],[\"int\",\"10\"]]],[\"int\",\"5\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"bool\",false]]},{\"after\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"1\"],[\"int\",\"20\"],[\"int\",\"4\"],[\"int\",\"10\"]]],[\"int\",\"21\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"1\"],[\"int\",\"20\"],[\"int\",\"4\"],[\"int\",\"10\"]]],[\"int\",\"21\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"bool\",true]]},{\"after\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"1\"],[\"int\",\"20\"],[\"int\",\"4\"],[\"int\",\"10\"]]],[\"int\",\"22\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"1\"],[\"int\",\"20\"],[\"int\",\"4\"],[\"int\",\"10\"]]],[\"int\",\"22\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"bool\",true]]},{\"after\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"1\"],[\"int\",\"8\"],[\"int\",\"4\"],[\"int\",\"10\"]]],[\"int\",\"11\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"1\"],[\"int\",\"8\"],[\"int\",\"4\"],[\"int\",\"10\"]]],[\"int\",\"11\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"bool\",true]]},{\"after\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"1\"],[\"int\",\"8\"],[\"int\",\"4\"],[\"int\",\"10\"]]],[\"int\",\"10\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"1\"],[\"int\",\"8\"],[\"int\",\"4\"],[\"int\",\"10\"]]],[\"int\",\"10\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"bool\",false]]}],\"status\":\"passed\",\"stderr\":\"\",\"stdout\":\"\"}\n",
+  "stderr": "",
+  "returncode": 0,
+  "interruption": null,
+  "child_user_cpu_seconds": 0.028596999999990658,
+  "child_system_cpu_seconds": 0.0,
+  "group": "2fd55572824d6394f664dfaed92f9eed67d3a06df7295c39765482b764c3bb57",
+  "received_label": true,
+  "source_sha256": "142a2b5ef89d8bb727a954bbc580217e587144dbf103aaac6dae574cb019771e",
+  "contract_sha256": "c3760bddc922ead465b1cb79f152eb84b91e1f8bf62969e36b6991acd981d953",
+  "worker_seconds": 0.07195007200061809
+}

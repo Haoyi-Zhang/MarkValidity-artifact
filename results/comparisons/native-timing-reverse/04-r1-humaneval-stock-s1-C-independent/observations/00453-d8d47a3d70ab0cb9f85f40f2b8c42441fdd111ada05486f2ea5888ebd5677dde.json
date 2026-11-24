@@ -1,0 +1,13 @@
+{
+  "stdout": "{\"elapsed_seconds\":0.002762,\"error\":null,\"observations\":[{\"after\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"3\"],[\"int\",\"2\"],[\"int\",\"3\"]]],[\"int\",\"9\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"3\"],[\"int\",\"2\"],[\"int\",\"3\"]]],[\"int\",\"9\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"bool\",true]]},{\"after\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"1\"],[\"int\",\"2\"]]],[\"int\",\"5\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"1\"],[\"int\",\"2\"]]],[\"int\",\"5\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"bool\",false]]},{\"after\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"3\"]]],[\"int\",\"5\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"3\"]]],[\"int\",\"5\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"bool\",true]]},{\"after\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"3\"],[\"int\",\"2\"],[\"int\",\"3\"]]],[\"int\",\"1\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"3\"],[\"int\",\"2\"],[\"int\",\"3\"]]],[\"int\",\"1\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"bool\",false]]},{\"after\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"1\"],[\"int\",\"2\"],[\"int\",\"3\"]]],[\"int\",\"6\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"1\"],[\"int\",\"2\"],[\"int\",\"3\"]]],[\"int\",\"6\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"bool\",false]]},{\"after\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"5\"]]],[\"int\",\"5\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"5\"]]],[\"int\",\"5\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"bool\",true]]}],\"status\":\"passed\",\"stderr\":\"\",\"stdout\":\"\"}\n",
+  "stderr": "",
+  "returncode": 0,
+  "interruption": null,
+  "child_user_cpu_seconds": 0.008896000000000015,
+  "child_system_cpu_seconds": 0.021908999999999068,
+  "group": "d8d47a3d70ab0cb9f85f40f2b8c42441fdd111ada05486f2ea5888ebd5677dde",
+  "received_label": true,
+  "source_sha256": "c389af40d9811096a966876eb7e39937eaa93edab92b65678b6db85621963388",
+  "contract_sha256": "167d09005451fe4a7d8d9b629f8632300912b0faa92dcc933499e89989216edd",
+  "worker_seconds": 0.03389403199980734
+}

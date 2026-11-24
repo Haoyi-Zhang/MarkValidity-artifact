@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "candidate_configurations_reexecuted": 1968,
+  "reference_suite_executions": 656,
+  "reference_tasks": 164,
+  "compared_fields": [
+    "reference_sha256",
+    "candidate_sha256",
+    "detected",
+    "validity_label",
+    "joint",
+    "candidate_status",
+    "full_call_records_equal",
+    "embedding",
+    "detector",
+    "reference_detector",
+    "semantic_observation_sha256",
+    "candidate_function_invocations"
+  ],
+  "candidate_field_differences": [],
+  "all_normal_semantic_observations_unchanged": true,
+  "all_contracts_changed": true,
+  "old_rows_sha256": "21ca06544d4409b2fb7be0ce5f16a5c3fc39c62a47ff65c1e925d0389979754b",
+  "new_rows_sha256": "563d49e53640d8f97a91b416399643f76282de7f45ba16a8be18385774396dd0",
+  "new_observer_sha256": "232a7d6f47011501356a9c9ac07e17bf325bde345d9c707d32c4fae668367012",
+  "elapsed_seconds": 21.565409662998718
+}

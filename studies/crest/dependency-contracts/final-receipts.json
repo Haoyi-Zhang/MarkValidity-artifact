@@ -1,0 +1,160 @@
+[
+  {
+    "cohort": "gpt4o",
+    "dataset": "HumanEval",
+    "task_id": "HumanEval/150",
+    "side": "reference",
+    "native": {
+      "label": true,
+      "evidence_rejected": null,
+      "stdout": "{\"elapsed_seconds\":1.308116,\"error\":null,\"observations\":[{\"after\":{\"args\":[\"tuple\",[[\"int\",\"7\"],[\"int\",\"34\"],[\"int\",\"12\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"7\"],[\"int\",\"34\"],[\"int\",\"12\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"34\"]]},{\"after\":{\"args\":[\"tuple\",[[\"int\",\"15\"],[\"int\",\"8\"],[\"int\",\"5\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"15\"],[\"int\",\"8\"],[\"int\",\"5\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"5\"]]},{\"after\":{\"args\":[\"tuple\",[[\"int\",\"3\"],[\"int\",\"33\"],[\"int\",\"5212\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"3\"],[\"int\",\"33\"],[\"int\",\"5212\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"33\"]]},{\"after\":{\"args\":[\"tuple\",[[\"int\",\"1259\"],[\"int\",\"3\"],[\"int\",\"52\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"1259\"],[\"int\",\"3\"],[\"int\",\"52\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"3\"]]},{\"after\":{\"args\":[\"tuple\",[[\"int\",\"7919\"],[\"int\",\"-1\"],[\"int\",\"12\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"7919\"],[\"int\",\"-1\"],[\"int\",\"12\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"-1\"]]},{\"after\":{\"args\":[\"tuple\",[[\"int\",\"3609\"],[\"int\",\"1245\"],[\"int\",\"583\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"3609\"],[\"int\",\"1245\"],[\"int\",\"583\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"583\"]]},{\"after\":{\"args\":[\"tuple\",[[\"int\",\"91\"],[\"int\",\"56\"],[\"int\",\"129\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"91\"],[\"int\",\"56\"],[\"int\",\"129\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"129\"]]},{\"after\":{\"args\":[\"tuple\",[[\"int\",\"6\"],[\"int\",\"34\"],[\"int\",\"1234\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"6\"],[\"int\",\"34\"],[\"int\",\"1234\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"1234\"]]},{\"after\":{\"args\":[\"tuple\",[[\"int\",\"1\"],[\"int\",\"2\"],[\"int\",\"0\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"1\"],[\"int\",\"2\"],[\"int\",\"0\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"0\"]]},{\"after\":{\"args\":[\"tuple\",[[\"int\",\"2\"],[\"int\",\"2\"],[\"int\",\"0\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"2\"],[\"int\",\"2\"],[\"int\",\"0\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"2\"]]}],\"status\":\"passed\",\"stderr\":\"\",\"stdout\":\"\"}\n",
+      "stderr": "",
+      "returncode": 0,
+      "interruption": null,
+      "elapsed_seconds": 1.7499443020060426,
+      "execution_request": {
+        "source": "\ndef x_or_y(n, x, y):\n    \"\"\"A simple program which should return the value of x if n is \n    a prime number and should return the value of y otherwise.\n\n    Examples:\n    for x_or_y(7, 34, 12) == 34\n    for x_or_y(15, 8, 5) == 5\n    \n    \"\"\"\nfrom sympy import isprime\n\ndef x_or_y(n, x, y):\n    return x if isprime(n) else y",
+        "test": "def check(candidate):\n\n    # Check some simple cases\n    assert candidate(7, 34, 12) == 34\n    assert candidate(15, 8, 5) == 5\n    assert candidate(3, 33, 5212) == 33\n    assert candidate(1259, 3, 52) == 3\n    assert candidate(7919, -1, 12) == -1\n    assert candidate(3609, 1245, 583) == 583\n    assert candidate(91, 56, 129) == 129\n    assert candidate(6, 34, 1234) == 1234\n    \n\n    # Check some edge cases that are easy to work out by hand.\n    assert candidate(1, 2, 0) == 0\n    assert candidate(2, 2, 0) == 2\n\n",
+        "entry_point": "x_or_y"
+      },
+      "observer_source_sha256": "232a7d6f47011501356a9c9ac07e17bf325bde345d9c707d32c4fae668367012",
+      "observer_file": "external-studies/sew_natural/scripts/humaneval/native_runner_v3.py",
+      "execution_environment": {
+        "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+        "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+        "hash_seed": "0",
+        "optimization_disabled": true,
+        "wall_timeout_seconds": 15,
+        "cpu_seconds": 10,
+        "address_space_bytes": 1073741824,
+        "invocation_flags": [
+          "-B"
+        ],
+        "site_initialization": "enabled",
+        "pythonpath_removed": true,
+        "declared_dependencies": {
+          "sympy": "1.14.0"
+        }
+      }
+    }
+  },
+  {
+    "cohort": "gpt4o",
+    "dataset": "HumanEval",
+    "task_id": "HumanEval/150",
+    "side": "candidate",
+    "native": {
+      "label": true,
+      "evidence_rejected": null,
+      "stdout": "{\"elapsed_seconds\":0.60851,\"error\":null,\"observations\":[{\"after\":{\"args\":[\"tuple\",[[\"int\",\"7\"],[\"int\",\"34\"],[\"int\",\"12\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"7\"],[\"int\",\"34\"],[\"int\",\"12\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"34\"]]},{\"after\":{\"args\":[\"tuple\",[[\"int\",\"15\"],[\"int\",\"8\"],[\"int\",\"5\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"15\"],[\"int\",\"8\"],[\"int\",\"5\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"5\"]]},{\"after\":{\"args\":[\"tuple\",[[\"int\",\"3\"],[\"int\",\"33\"],[\"int\",\"5212\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"3\"],[\"int\",\"33\"],[\"int\",\"5212\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"33\"]]},{\"after\":{\"args\":[\"tuple\",[[\"int\",\"1259\"],[\"int\",\"3\"],[\"int\",\"52\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"1259\"],[\"int\",\"3\"],[\"int\",\"52\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"3\"]]},{\"after\":{\"args\":[\"tuple\",[[\"int\",\"7919\"],[\"int\",\"-1\"],[\"int\",\"12\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"7919\"],[\"int\",\"-1\"],[\"int\",\"12\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"-1\"]]},{\"after\":{\"args\":[\"tuple\",[[\"int\",\"3609\"],[\"int\",\"1245\"],[\"int\",\"583\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"3609\"],[\"int\",\"1245\"],[\"int\",\"583\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"583\"]]},{\"after\":{\"args\":[\"tuple\",[[\"int\",\"91\"],[\"int\",\"56\"],[\"int\",\"129\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"91\"],[\"int\",\"56\"],[\"int\",\"129\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"129\"]]},{\"after\":{\"args\":[\"tuple\",[[\"int\",\"6\"],[\"int\",\"34\"],[\"int\",\"1234\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"6\"],[\"int\",\"34\"],[\"int\",\"1234\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"1234\"]]},{\"after\":{\"args\":[\"tuple\",[[\"int\",\"1\"],[\"int\",\"2\"],[\"int\",\"0\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"1\"],[\"int\",\"2\"],[\"int\",\"0\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"0\"]]},{\"after\":{\"args\":[\"tuple\",[[\"int\",\"2\"],[\"int\",\"2\"],[\"int\",\"0\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"2\"],[\"int\",\"2\"],[\"int\",\"0\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"2\"]]}],\"status\":\"passed\",\"stderr\":\"\",\"stdout\":\"\"}\n",
+      "stderr": "",
+      "returncode": 0,
+      "interruption": null,
+      "elapsed_seconds": 0.920545018001576,
+      "execution_request": {
+        "source": "\ndef x_or_y(n, x, y):\n    \"\"\"A simple program which should return the value of x if n is \n    a prime number and should return the value of y otherwise.\n\n    Examples:\n    for x_or_y(7, 34, 12) == 34\n    for x_or_y(15, 8, 5) == 5\n    \n    \"\"\"\nfrom sympy import isprime\n\n\ndef x_or_y(n, x, y):\n\treturn x if isprime(n) else y\n",
+        "test": "def check(candidate):\n\n    # Check some simple cases\n    assert candidate(7, 34, 12) == 34\n    assert candidate(15, 8, 5) == 5\n    assert candidate(3, 33, 5212) == 33\n    assert candidate(1259, 3, 52) == 3\n    assert candidate(7919, -1, 12) == -1\n    assert candidate(3609, 1245, 583) == 583\n    assert candidate(91, 56, 129) == 129\n    assert candidate(6, 34, 1234) == 1234\n    \n\n    # Check some edge cases that are easy to work out by hand.\n    assert candidate(1, 2, 0) == 0\n    assert candidate(2, 2, 0) == 2\n\n",
+        "entry_point": "x_or_y"
+      },
+      "observer_source_sha256": "232a7d6f47011501356a9c9ac07e17bf325bde345d9c707d32c4fae668367012",
+      "observer_file": "external-studies/sew_natural/scripts/humaneval/native_runner_v3.py",
+      "execution_environment": {
+        "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+        "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+        "hash_seed": "0",
+        "optimization_disabled": true,
+        "wall_timeout_seconds": 15,
+        "cpu_seconds": 10,
+        "address_space_bytes": 1073741824,
+        "invocation_flags": [
+          "-B"
+        ],
+        "site_initialization": "enabled",
+        "pythonpath_removed": true,
+        "declared_dependencies": {
+          "sympy": "1.14.0"
+        }
+      }
+    }
+  },
+  {
+    "cohort": "qwen",
+    "dataset": "HumanEval",
+    "task_id": "HumanEval/32",
+    "side": "reference",
+    "native": {
+      "label": false,
+      "evidence_rejected": null,
+      "stdout": "{\"elapsed_seconds\":0.107227,\"error\":{\"message\":\"\",\"phase\":\"original_suite\",\"type\":\"builtins.AssertionError\"},\"observations\":[{\"after\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"-10\"],[\"int\",\"-2\"]]]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"-10\"],[\"int\",\"-2\"]]]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"numpy_scalar\",\"<f8\",\"9a9999999999c9bf\"]]}],\"status\":\"failed\",\"stderr\":\"\",\"stdout\":\"\"}\n",
+      "stderr": "",
+      "returncode": 0,
+      "interruption": null,
+      "elapsed_seconds": 0.17914946399832843,
+      "execution_request": {
+        "source": "import math\n\n\ndef poly(xs: list, x: float):\n    \"\"\"\n    Evaluates polynomial with coefficients xs at point x.\n    return xs[0] + xs[1] * x + xs[1] * x^2 + .... xs[n] * x^n\n    \"\"\"\n    return sum([coeff * math.pow(x, i) for i, coeff in enumerate(xs)])\n\n\ndef find_zero(xs: list):\n    \"\"\" xs are coefficients of a polynomial.\n    find_zero find x such that poly(x) = 0.\n    find_zero returns only only zero point, even if there are many.\n    Moreover, find_zero only takes list xs having even number of coefficients\n    and largest non zero coefficient as it guarantees\n    a solution.\n    >>> round(find_zero([1, 2]), 2) # f(x) = 1 + 2x\n    -0.5\n    >>> round(find_zero([-6, 11, -6, 1]), 2) # (x - 1) * (x - 2) * (x - 3) = -6 + 11x - 6x^2 + x^3\n    1.0\n    \"\"\"\n\nimport numpy as np\n\ndef find_zero(xs: list):\n    roots = np.roots(xs)\n    return round(roots.real[0], 2) if np.isclose(roots.imag, 0).all() else None\n",
+        "test": "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    import math\n    import random\n    rng = random.Random(42)\n    import copy\n    for _ in range(100):\n        ncoeff = 2 * rng.randint(1, 4)\n        coeffs = []\n        for _ in range(ncoeff):\n            coeff = rng.randint(-10, 10)\n            if coeff == 0:\n                coeff = 1\n            coeffs.append(coeff)\n        solution = candidate(copy.deepcopy(coeffs))\n        assert math.fabs(poly(coeffs, solution)) < 1e-4\n\n",
+        "entry_point": "find_zero"
+      },
+      "observer_source_sha256": "01f069b68059a72e8a704623aaec7a03abaae2d478135af6aa021fe041da1202",
+      "observer_file": "dependency-contracts/native_runner_numpy.py",
+      "execution_environment": {
+        "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+        "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+        "hash_seed": "0",
+        "optimization_disabled": true,
+        "wall_timeout_seconds": 15,
+        "cpu_seconds": 10,
+        "address_space_bytes": 1073741824,
+        "invocation_flags": [
+          "-B"
+        ],
+        "site_initialization": "enabled",
+        "pythonpath_removed": true,
+        "declared_dependencies": {
+          "numpy": "2.3.5"
+        }
+      },
+      "observer_root": "empirical"
+    }
+  },
+  {
+    "cohort": "qwen",
+    "dataset": "HumanEval",
+    "task_id": "HumanEval/32",
+    "side": "candidate",
+    "native": {
+      "label": false,
+      "evidence_rejected": null,
+      "stdout": "{\"elapsed_seconds\":0.099975,\"error\":{\"message\":\"\",\"phase\":\"original_suite\",\"type\":\"builtins.AssertionError\"},\"observations\":[{\"after\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"-10\"],[\"int\",\"-2\"]]]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"-10\"],[\"int\",\"-2\"]]]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"numpy_scalar\",\"<f8\",\"9a9999999999c9bf\"]]}],\"status\":\"failed\",\"stderr\":\"\",\"stdout\":\"\"}\n",
+      "stderr": "",
+      "returncode": 0,
+      "interruption": null,
+      "elapsed_seconds": 0.17411117799929343,
+      "execution_request": {
+        "source": "import math\n\n\ndef poly(xs: list, x: float):\n    \"\"\"\n    Evaluates polynomial with coefficients xs at point x.\n    return xs[0] + xs[1] * x + xs[1] * x^2 + .... xs[n] * x^n\n    \"\"\"\n    return sum([coeff * math.pow(x, i) for i, coeff in enumerate(xs)])\n\n\ndef find_zero(xs: list):\n    \"\"\" xs are coefficients of a polynomial.\n    find_zero find x such that poly(x) = 0.\n    find_zero returns only only zero point, even if there are many.\n    Moreover, find_zero only takes list xs having even number of coefficients\n    and largest non zero coefficient as it guarantees\n    a solution.\n    >>> round(find_zero([1, 2]), 2) # f(x) = 1 + 2x\n    -0.5\n    >>> round(find_zero([-6, 11, -6, 1]), 2) # (x - 1) * (x - 2) * (x - 3) = -6 + 11x - 6x^2 + x^3\n    1.0\n    \"\"\"\n\nimport numpy as np\n\n\ndef find_zero(xs: list):\n\troots = np.roots(xs)\n\treturn round(roots.real[0], 2) if np.isclose(roots.imag, 0).all() else None\n",
+        "test": "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    import math\n    import random\n    rng = random.Random(42)\n    import copy\n    for _ in range(100):\n        ncoeff = 2 * rng.randint(1, 4)\n        coeffs = []\n        for _ in range(ncoeff):\n            coeff = rng.randint(-10, 10)\n            if coeff == 0:\n                coeff = 1\n            coeffs.append(coeff)\n        solution = candidate(copy.deepcopy(coeffs))\n        assert math.fabs(poly(coeffs, solution)) < 1e-4\n\n",
+        "entry_point": "find_zero"
+      },
+      "observer_source_sha256": "01f069b68059a72e8a704623aaec7a03abaae2d478135af6aa021fe041da1202",
+      "observer_file": "dependency-contracts/native_runner_numpy.py",
+      "execution_environment": {
+        "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+        "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+        "hash_seed": "0",
+        "optimization_disabled": true,
+        "wall_timeout_seconds": 15,
+        "cpu_seconds": 10,
+        "address_space_bytes": 1073741824,
+        "invocation_flags": [
+          "-B"
+        ],
+        "site_initialization": "enabled",
+        "pythonpath_removed": true,
+        "declared_dependencies": {
+          "numpy": "2.3.5"
+        }
+      },
+      "observer_root": "empirical"
+    }
+  }
+]

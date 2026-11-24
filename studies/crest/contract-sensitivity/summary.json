@@ -1,0 +1,222 @@
+{
+  "status": "PASS",
+  "source_contract_pairs_received": 4434,
+  "whole_input_population": 2276,
+  "changed_input_pairs": 5,
+  "changed_native_labels": 10,
+  "all_label_changes_are_check_name_collisions": true,
+  "full_difference_set": [
+    {
+      "cohort": "gpt4o",
+      "dataset": "MBPP",
+      "task_id": "MBPP/56",
+      "entry_point": "check",
+      "labels": {
+        "reference": {
+          "literal": false,
+          "separate_bindings": true
+        },
+        "candidate": {
+          "literal": false,
+          "separate_bindings": true
+        }
+      }
+    },
+    {
+      "cohort": "gpt4o",
+      "dataset": "MBPP",
+      "task_id": "MBPP/349",
+      "entry_point": "check",
+      "labels": {
+        "reference": {
+          "literal": false,
+          "separate_bindings": true
+        },
+        "candidate": {
+          "literal": false,
+          "separate_bindings": true
+        }
+      }
+    },
+    {
+      "cohort": "gpt4o",
+      "dataset": "MBPP",
+      "task_id": "MBPP/967",
+      "entry_point": "check",
+      "labels": {
+        "reference": {
+          "literal": false,
+          "separate_bindings": true
+        },
+        "candidate": {
+          "literal": false,
+          "separate_bindings": true
+        }
+      }
+    },
+    {
+      "cohort": "qwen",
+      "dataset": "MBPP",
+      "task_id": "MBPP/56",
+      "entry_point": "check",
+      "labels": {
+        "reference": {
+          "literal": false,
+          "separate_bindings": true
+        },
+        "candidate": {
+          "literal": false,
+          "separate_bindings": true
+        }
+      }
+    },
+    {
+      "cohort": "qwen",
+      "dataset": "MBPP",
+      "task_id": "MBPP/349",
+      "entry_point": "check",
+      "labels": {
+        "reference": {
+          "literal": false,
+          "separate_bindings": true
+        },
+        "candidate": {
+          "literal": false,
+          "separate_bindings": true
+        }
+      }
+    }
+  ],
+  "all_check_collision_task_pairs": [
+    {
+      "cohort": "gpt4o",
+      "dataset": "MBPP",
+      "task_id": "MBPP/56",
+      "entry_point": "check",
+      "labels": {
+        "reference": {
+          "literal": false,
+          "separate_bindings": true
+        },
+        "candidate": {
+          "literal": false,
+          "separate_bindings": true
+        }
+      }
+    },
+    {
+      "cohort": "gpt4o",
+      "dataset": "MBPP",
+      "task_id": "MBPP/349",
+      "entry_point": "check",
+      "labels": {
+        "reference": {
+          "literal": false,
+          "separate_bindings": true
+        },
+        "candidate": {
+          "literal": false,
+          "separate_bindings": true
+        }
+      }
+    },
+    {
+      "cohort": "gpt4o",
+      "dataset": "MBPP",
+      "task_id": "MBPP/899",
+      "entry_point": "check",
+      "labels": {
+        "reference": {
+          "literal": false,
+          "separate_bindings": false
+        },
+        "candidate": {
+          "literal": false,
+          "separate_bindings": false
+        }
+      }
+    },
+    {
+      "cohort": "gpt4o",
+      "dataset": "MBPP",
+      "task_id": "MBPP/967",
+      "entry_point": "check",
+      "labels": {
+        "reference": {
+          "literal": false,
+          "separate_bindings": true
+        },
+        "candidate": {
+          "literal": false,
+          "separate_bindings": true
+        }
+      }
+    },
+    {
+      "cohort": "qwen",
+      "dataset": "MBPP",
+      "task_id": "MBPP/56",
+      "entry_point": "check",
+      "labels": {
+        "reference": {
+          "literal": false,
+          "separate_bindings": true
+        },
+        "candidate": {
+          "literal": false,
+          "separate_bindings": true
+        }
+      }
+    },
+    {
+      "cohort": "qwen",
+      "dataset": "MBPP",
+      "task_id": "MBPP/349",
+      "entry_point": "check",
+      "labels": {
+        "reference": {
+          "literal": false,
+          "separate_bindings": true
+        },
+        "candidate": {
+          "literal": false,
+          "separate_bindings": true
+        }
+      }
+    },
+    {
+      "cohort": "qwen",
+      "dataset": "MBPP",
+      "task_id": "MBPP/899",
+      "entry_point": "check",
+      "labels": {
+        "reference": {
+          "literal": false,
+          "separate_bindings": false
+        },
+        "candidate": {
+          "literal": false,
+          "separate_bindings": false
+        }
+      }
+    },
+    {
+      "cohort": "qwen",
+      "dataset": "MBPP",
+      "task_id": "MBPP/967",
+      "entry_point": "check",
+      "labels": {
+        "reference": {
+          "literal": false,
+          "separate_bindings": false
+        },
+        "candidate": {
+          "literal": false,
+          "separate_bindings": false
+        }
+      }
+    }
+  ],
+  "additional_label_changes_outside_check_tasks": [],
+  "interpretation": "Same original source, candidate source, prompt, test text, detector outcomes and worker environment; only the declared test namespace binding contract changes. Original/candidate labels change together, so no change is a watermark-induced failure. Literal assembly is retained as sensitivity evidence, while uniform separate bindings define primary functional outcomes."
+}

@@ -1,0 +1,50 @@
+{
+  "configuration_order": "first occurrence of exact source in the frozen source-configuration table",
+  "cost_optimality_claim": false,
+  "design": "Retrospective release of already measured complete source labels. Ordering rules are deterministic functions of visible detection coefficients and identities only.",
+  "eligibility": "Unknown JavaScript groups with nonzero coefficient for the fixed pair; all compared orders use the same eligible set.",
+  "initialization_rule": "covewm-fresh-module-instance-per-input-v1",
+  "input_sha256": {
+    "results/revision-native-completion/completed_rows.csv.gz": "3d8e494932c64d142bef02d0fd6adab8018d028a05738056ea4579923425d575",
+    "results/revision-native-completion/registration.json": "69e4101ad97ff64f7e3a9fcc8cb7524c21b3e9f34dc090bc1c29b635f27dd089",
+    "results/revision-native-completion/source_labels.csv": "9dd9941857ecc4cfb998f5689c7f4026282d61d35a69aff27e91cd86349e44bc",
+    "results/revision-native-completion/summary.json": "b8c2eb38ca6f34be75c926c0a4927ecbc3743f29807c38aaba7e896e9ed67173",
+    "results/revision-native-completion/verification.json": "0e59edbcbaa41b10f0adc4da4843a03e48f94d066d0eacb0a1ada71b2b1cac16",
+    "results/revision-reproduction/raw/semantic_audit.csv": "941ee8f5aec0832103b9fd91c5c5ba7bd97a6c2f85d88695e7cb1bbb1e19e80e",
+    "results/revision-source-joint/pairwise_source_bounds.csv": "e199c8266cd2d1b5cb359d44ab21d1c50404bb10e1d4bbdf7a1dead27c03c829",
+    "results/revision-source-joint/rows.csv.gz": "931ddacc3644f6b96d48211a645d58390f2d6ae04d8af82f4ff9142570240ebd",
+    "results/revision-source-joint/sources.jsonl.gz": "ff4283b45a18f8ece7a7005184ba9ede34ca13b17f638822afd517d3f07758e1"
+  },
+  "observation_rule": "covewm-tagged-return-or-exception-type-and-message-canonical-json-v2",
+  "priority": "descending absolute signed source coefficient, ties by task|language|source SHA-256",
+  "producer_sha256": {
+    "audit_source_budget.py": "40b1bcf17bb5e51b5b076fe606d47c737ddfa6d28ac010712a52d6def62c1f7a",
+    "src/covewm/source_admission.py": "375c600e652a8bb83678b4f0aa9771f12a7c021deb4672410e3db4be6311b23b",
+    "src/covewm/tasks.py": "718f39e105291be8a6c08c246175b04bce56d01e57819bf14fdd991952bf45a4"
+  },
+  "query_cost": "one source group per query; additional input-call cost equals that task frozen domain size",
+  "random_order": "ascending SHA256(markvalidity-audit-order-v1|seed|task|language|source_SHA256), ties by full source key",
+  "random_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "random_summary_scope": "16 fixed deterministic orders, descriptive range and median only; no probabilistic significance claim",
+  "schema": "markvalidity-evidence-budget-replay-v1",
+  "seed_policy": "All saved Python sources re-admitted by restricted AST erasure; fresh JavaScript labels for exact source identities selected by the original 252-row execution inventory. Legacy behavioral flags supply no truth labels.",
+  "started_at_utc": "2026-11-19T07:37:57.841467+00:00",
+  "task_program_executions": 0
+}

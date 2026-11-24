@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "single_score_systems": 1536,
+  "common_remainder_pair_systems": 5916,
+  "generic_coefficient_difference_audit_systems": 300,
+  "Boolean_completions_checked": 59319,
+  "undefined_completion_cases_retained": 2091,
+  "invalid_input_and_boundary_controls": [
+    "float weights rejected",
+    "negative mass rejected",
+    "detected mass above total rejected",
+    "inconsistent known masses rejected",
+    "duplicate unresolved identities rejected",
+    "non-Boolean admitted labels rejected",
+    "unequal common coefficients rejected",
+    "all-invalid completion has no conditional score",
+    "identical versions never produce a strict winner",
+    "strict order on defined completions does not erase possible undefinedness"
+  ],
+  "scope": "Independent complete Boolean enumeration for exact score bounds, endpoint witnesses, comparison margins, joint gaps and stopping decisions. These are mathematical controls, not empirical program trials.",
+  "files_sha256": {
+    "conditional_bounds.py": "9d70eb38f560ac3590474414baa9d45b7475e88e29e4e9970782796185c7f8dc",
+    "verify_conditional_bounds.py": "f694a5f4dcba5372b5dbcf8b55cf39d7d15b1c826ad1e332e35ec1bf4b186560",
+    "examples.json": "4cd546683d6e22e64ea998e6f60dc44e13e94e7ddf5340c46fd26605a61cb234"
+  }
+}

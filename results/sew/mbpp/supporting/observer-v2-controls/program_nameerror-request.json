@@ -1,0 +1,7 @@
+{
+  "source": "def f():\n    return missing_value\n",
+  "test_imports": [],
+  "test_list": [
+    "assert f() == 1"
+  ]
+}

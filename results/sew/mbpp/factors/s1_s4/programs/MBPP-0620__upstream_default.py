@@ -1,0 +1,11 @@
+def largest_subset(a):
+	n=len(a)
+	dp=[0 for i in range(0, n)]
+	dp[n-1]=1; 
+	for  i in  range(n-2, -1, -1):
+		mxm = 0;
+		for j in range(1 + i, n):
+			if a[j] % a[i] == 0 or a[i] % a[j] == 0:
+				mxm = max(mxm, dp[j])
+		dp[i] = mxm + 1
+	return max(dp)

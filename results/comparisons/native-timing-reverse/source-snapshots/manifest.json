@@ -1,0 +1,46 @@
+{
+  "schema": "markvalidity-native-source-snapshots-v1",
+  "capture_scope": "Captured before complementary-block candidate execution.",
+  "files": {
+    "native_timing.py": {
+      "original_path": "external-studies/sew_natural/comparison_costs/native_timing.py",
+      "snapshot_file": "native_timing.py",
+      "sha256": "3245f7c1bbb4a6880269108a9c7d3ae7e87a1a41b703fcaef60e8eed23793ec5"
+    },
+    "native_timing_reverse.py": {
+      "original_path": "external-studies/sew_natural/comparison_costs/native_timing_reverse.py",
+      "snapshot_file": "native_timing_reverse.py",
+      "sha256": "843f0f4c8571353b512287fc90c31d18624684cf534828b16f2ddf7baa9821fc"
+    },
+    "policies.py": {
+      "original_path": "external-studies/sew_natural/comparison_costs/policies.py",
+      "snapshot_file": "policies.py",
+      "sha256": "20dcbac920405ef03dc9c74673e18d45a6a7d7cf275094778a4cf5fc7b58f1a7"
+    },
+    "analyze.py": {
+      "original_path": "external-studies/sew_natural/comparison_costs/analyze.py",
+      "snapshot_file": "analyze.py",
+      "sha256": "27a1332dbf08c5a677936f8267cfccad4571e7fa79ff5b163a82ce4f038fd3ab"
+    },
+    "natural_analysis.py": {
+      "original_path": "external-studies/sew_natural/analysis/natural_analysis.py",
+      "snapshot_file": "natural_analysis.py",
+      "sha256": "bcf19e3111d68b43fbb144cff23ad844f7a9aeb9d9af18aff0f24a69e98e3551"
+    },
+    "admission.py": {
+      "original_path": "external-studies/sew_natural/comparison_costs/admission.py",
+      "snapshot_file": "admission.py",
+      "sha256": "cbb5ca5d82ca92b50764430555f3eeb2df895db736e3a1f4854509a4d84c6009"
+    },
+    "humaneval_runner": {
+      "original_path": "external-studies/sew_natural/scripts/humaneval/native_runner_v3.py",
+      "snapshot_file": "humaneval_runner",
+      "sha256": "232a7d6f47011501356a9c9ac07e17bf325bde345d9c707d32c4fae668367012"
+    },
+    "mbpp_runner": {
+      "original_path": "external-studies/sew_natural/mbpp/scripts/native_runner_v2.py",
+      "snapshot_file": "mbpp_runner",
+      "sha256": "003909bf27456960596204a830cfde367f6aa1d95a13423f589c30633192d46a"
+    }
+  }
+}

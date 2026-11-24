@@ -1,0 +1,89 @@
+{
+  "status": "frozen_before_execution",
+  "design": "execution_validation",
+  "created_at_utc": "2026-11-19T14:41:58.698013+00:00",
+  "run_order": [
+    {
+      "repeat": 1,
+      "dataset": "HumanEval",
+      "scope": "humaneval",
+      "left": "stock",
+      "right": "s1",
+      "target": "C",
+      "method": "paired"
+    },
+    {
+      "repeat": 1,
+      "dataset": "HumanEval",
+      "scope": "humaneval",
+      "left": "stock",
+      "right": "s1",
+      "target": "C",
+      "method": "independent"
+    },
+    {
+      "repeat": 1,
+      "dataset": "mbpp_sanitized",
+      "scope": "mbpp",
+      "left": "stock",
+      "right": "s4",
+      "target": "C",
+      "method": "paired"
+    },
+    {
+      "repeat": 1,
+      "dataset": "mbpp_sanitized",
+      "scope": "mbpp",
+      "left": "stock",
+      "right": "s4",
+      "target": "C",
+      "method": "independent"
+    }
+  ],
+  "environment": {
+    "python": "3.12.14",
+    "sys_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "cpu_count_reported": 9,
+    "interpreter_executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7"
+  },
+  "source_sha256": {
+    "run_native_conditional.py": "a631c6c714f93920ecc14d7e33b7a0c120dd7cefae0888fd7fb1271ed5900ecf",
+    "paired_conditional.py": "0341a53ab2b80c0e56ad6515f3ceda18d91bb7701d746d50114984598668a9a6",
+    "native_timing.py": "3245f7c1bbb4a6880269108a9c7d3ae7e87a1a41b703fcaef60e8eed23793ec5",
+    "policies.py": "20dcbac920405ef03dc9c74673e18d45a6a7d7cf275094778a4cf5fc7b58f1a7",
+    "admission.py": "cbb5ca5d82ca92b50764430555f3eeb2df895db736e3a1f4854509a4d84c6009",
+    "natural_analysis.py": "bcf19e3111d68b43fbb144cff23ad844f7a9aeb9d9af18aff0f24a69e98e3551",
+    "humaneval": "232a7d6f47011501356a9c9ac07e17bf325bde345d9c707d32c4fae668367012",
+    "mbpp": "003909bf27456960596204a830cfde367f6aa1d95a13423f589c30633192d46a"
+  },
+  "public_registry_sha256": "b27d496c4cb7dade0ec39d6a5094805e609d3bcf1cdb32654b12db160effce49",
+  "initialization": "qualified_reference_identity_only",
+  "cross_run_candidate_label_reuse": false,
+  "timing_scope": "From per-run coefficient/state construction through selection, comparison inference, native suite execution, admission and raw recording at first certificate. Common registry preparation is separate. Generation, detector evaluation and reference qualification precede this audit.",
+  "method_descriptions": {
+    "paired": "Original coefficient-differences-first policy with the paired ratio-envelope certificate and retained separate-interval rule.",
+    "independent": "Original public minimax next-step separate-conditional-width policy and separate conditional certificate."
+  },
+  "load_before": {
+    "monotonic_seconds": 42299.339358141,
+    "load_average": [
+      13.0693359375,
+      14.61181640625,
+      12.16015625
+    ],
+    "visible_processes": 2,
+    "producer_cpu_seconds": 0.160392739,
+    "cpu_affinity": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  }
+}

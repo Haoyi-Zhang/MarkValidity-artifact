@@ -1,0 +1,13 @@
+{
+  "status": "pass",
+  "counts": {
+    "ledgers": 160,
+    "hidden_response_assignments": 4320,
+    "queries_checked": 12960,
+    "point_choices": 9210,
+    "difference_choices": 3750,
+    "unavailable_replies": 4320,
+    "sequences_with_both_branches": 750
+  },
+  "scope": "All three-group equal-workload unit-incidence ledgers and every Boolean/unavailable hidden response assignment. Each query is independently reconstructed before its selected response is accessed. Both branches and mid-sequence switches are covered."
+}

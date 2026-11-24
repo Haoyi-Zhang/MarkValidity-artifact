@@ -1,0 +1,91 @@
+{
+  "schema": "markvalidity-natural-partial-evidence-v2",
+  "inputs": [
+    {
+      "rows_path": "results/revision-sew-natural/humaneval/rows.json",
+      "asset_root": "results/revision-sew-natural/humaneval",
+      "rows_sha256": "563d49e53640d8f97a91b416399643f76282de7f45ba16a8be18385774396dd0",
+      "rows": 1968,
+      "datasets": [
+        "HumanEval"
+      ]
+    },
+    {
+      "rows_path": "results/revision-sew-natural/mbpp/factors/normalized_rows.json",
+      "asset_root": "results/revision-sew-natural/mbpp",
+      "rows_sha256": "5e7a760cec77f512bab53d2c0812242b7d66959186aeb50f8657c3f7c5fd8a0f",
+      "rows": 5124,
+      "datasets": [
+        "mbpp_sanitized"
+      ]
+    }
+  ],
+  "analysis_source_sha256": "bcf19e3111d68b43fbb144cff23ad844f7a9aeb9d9af18aff0f24a69e98e3551",
+  "total_rows": 7092,
+  "total_source_contract_groups": 1893,
+  "policies": [
+    "configuration_first",
+    "hash_00",
+    "hash_01",
+    "hash_02",
+    "hash_03",
+    "hash_04",
+    "hash_05",
+    "hash_06",
+    "hash_07",
+    "hash_08",
+    "hash_09",
+    "hash_10",
+    "hash_11",
+    "hash_12",
+    "hash_13",
+    "hash_14",
+    "hash_15",
+    "joint_width_per_suite",
+    "behavior_width_per_suite",
+    "conditional_differences_first"
+  ],
+  "initialization": "all_withheld",
+  "initially_admitted_reference_identity_groups": 0,
+  "input_path_base_from_analysis": "../../..",
+  "scope_order": [
+    "humaneval",
+    "mbpp",
+    "pooled"
+  ],
+  "variants": [
+    "stock",
+    "s1",
+    "s4",
+    "s1_s4"
+  ],
+  "original_variant_map": {
+    "stock": "stock",
+    "s1": "s1",
+    "s1_literal_predecessor": "s1",
+    "s4": "s4",
+    "s4_return_boundary": "s4",
+    "s1_s4": "s1_s4"
+  },
+  "seconds": 27.94332424899767,
+  "cost_unit": "one candidate execution of its full declared source-contract suite",
+  "cost_scope": "Additional candidate suites after source generation, detector observation and paired reference qualification. Reference setup is common and excluded. Exact candidate=reference source identities reuse the admitted reference at zero additional candidate cost in the primary initialization.",
+  "design": "Retrospective disclosure of saved labels; no new native suites executed by this script.",
+  "validity": "Passing/failing the exact finite original suite with the bound reference, initialization and runtime contract. No unlimited equivalence claim.",
+  "weights": "Each attempted task-key configuration has equal weight within its scope. Pooled scope weights all task-key rows equally, not corpora equally.",
+  "policies_label_blind": "Public coefficients, identities, declared suite_cost=1 and already disclosed labels only. No unrevealed validity, elapsed time or measured function/test-entry counts enter selection.",
+  "trace_units": {
+    "J_and_A": "integer difference or score counts; divide by the case denominator for rates",
+    "individual_C": "exact rational conditional rate on positive-valid-mass completions",
+    "independent_C": "exact separately attainable rate endpoints, used as sufficient comparison bounds",
+    "coupled_C": "when route=exact_common_remainder: cross-product margin in squared count units, NOT the numeric conditional-rate difference; otherwise same sufficient interval as independent_C"
+  },
+  "certificate_meaning": "Strict or tie decision holds for every completion of remaining source-group labels and, for C, both denominators are positive for every completion.",
+  "known_label_reuse": "Both independent and coupled methods receive exactly the same queried group labels propagated within and across versions. Their differences isolate unresolved-label coupling from memoization.",
+  "stopping": "First certificates are recorded along each schedule. Full suffix disclosure is retained only for retrospective matched-budget comparison; an online receiver stops at its chosen certificate.",
+  "limitations": [
+    "General coupled C difference bounds are not claimed; comparison is sharp after all unequal coefficient-pair groups resolve.",
+    "Unit suite costs make width and width/cost the same ordering; no measured elapsed-cost advantage or earliest-certificate optimality is claimed.",
+    "Hash orders describe sensitivity on these fixed ledgers, not a population confidence interval."
+  ]
+}

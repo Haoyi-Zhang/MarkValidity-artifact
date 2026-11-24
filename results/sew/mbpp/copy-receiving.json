@@ -1,0 +1,117 @@
+{
+  "status": "PASS",
+  "scope": "Observer-v2 canonical copy, received from an unrelated temporary working directory. Every frozen raw file and producer/native observer identity is checked; normalized contract/group identities and A/D/J/C independently reconstructed.",
+  "frozen_files_verified": 15392,
+  "normalized_receipt": {
+    "status": "PASS",
+    "scope": "Numerical estimands and normalized labels independently reconstructed from all frozen raw factor rows.",
+    "definitions": {
+      "A": "valid / attempts",
+      "D": "detected / attempts",
+      "J": "valid-and-detected / attempts",
+      "C": "valid-and-detected / valid; undefined if no valid outputs"
+    },
+    "checks": [
+      {
+        "population": "per_variant_all_attempts",
+        "variant": "stock",
+        "attempts": 1281,
+        "valid": 1278,
+        "detected": 849,
+        "joint": 849,
+        "A": 0.9976580796252927,
+        "D": 0.6627634660421545,
+        "J": 0.6627634660421545,
+        "C": 0.6643192488262911
+      },
+      {
+        "population": "per_variant_reference_passing_subset",
+        "variant": "stock",
+        "attempts": 1281,
+        "valid": 1278,
+        "detected": 849,
+        "joint": 849,
+        "A": 0.9976580796252927,
+        "D": 0.6627634660421545,
+        "J": 0.6627634660421545,
+        "C": 0.6643192488262911
+      },
+      {
+        "population": "per_variant_all_attempts",
+        "variant": "s1_literal_predecessor",
+        "attempts": 1281,
+        "valid": 1278,
+        "detected": 843,
+        "joint": 843,
+        "A": 0.9976580796252927,
+        "D": 0.65807962529274,
+        "J": 0.65807962529274,
+        "C": 0.6596244131455399
+      },
+      {
+        "population": "per_variant_reference_passing_subset",
+        "variant": "s1_literal_predecessor",
+        "attempts": 1281,
+        "valid": 1278,
+        "detected": 843,
+        "joint": 843,
+        "A": 0.9976580796252927,
+        "D": 0.65807962529274,
+        "J": 0.65807962529274,
+        "C": 0.6596244131455399
+      },
+      {
+        "population": "per_variant_all_attempts",
+        "variant": "s4_return_boundary",
+        "attempts": 1281,
+        "valid": 1281,
+        "detected": 852,
+        "joint": 852,
+        "A": 1.0,
+        "D": 0.6651053864168618,
+        "J": 0.6651053864168618,
+        "C": 0.6651053864168618
+      },
+      {
+        "population": "per_variant_reference_passing_subset",
+        "variant": "s4_return_boundary",
+        "attempts": 1281,
+        "valid": 1281,
+        "detected": 852,
+        "joint": 852,
+        "A": 1.0,
+        "D": 0.6651053864168618,
+        "J": 0.6651053864168618,
+        "C": 0.6651053864168618
+      },
+      {
+        "population": "per_variant_all_attempts",
+        "variant": "s1_s4",
+        "attempts": 1281,
+        "valid": 1281,
+        "detected": 846,
+        "joint": 846,
+        "A": 1.0,
+        "D": 0.6604215456674473,
+        "J": 0.6604215456674473,
+        "C": 0.6604215456674473
+      },
+      {
+        "population": "per_variant_reference_passing_subset",
+        "variant": "s1_s4",
+        "attempts": 1281,
+        "valid": 1281,
+        "detected": 846,
+        "joint": 846,
+        "A": 1.0,
+        "D": 0.6604215456674473,
+        "J": 0.6604215456674473,
+        "C": 0.6604215456674473
+      }
+    ],
+    "normalized_rows_checked": 5124,
+    "summary_sha256": "998f9c0f613a3c00b2f4780bbcb2fe137874cc689fcd622239b0a0358d9d11e2",
+    "receiver_sha256": "5f23091cc92c50ff95b3508d2aadf7331c983cec61ddf045ac35463c8313e9bc"
+  },
+  "normalized_rows_sha256": "5e7a760cec77f512bab53d2c0812242b7d66959186aeb50f8657c3f7c5fd8a0f"
+}

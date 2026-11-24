@@ -1,0 +1,37 @@
+{
+  "control_tests": 8,
+  "recorded_at_utc": "2026-11-19T07:47:35.258336+00:00",
+  "result_sha256": {
+    "README.md": "247bb2e91f7adc44492ffa77774d6239b9d094351011d02478ab861474048d8c",
+    "controls.log": "9e94f4291997151f4db8413c8e9d1a2602e5760feb4570202a1ef7bfaa3c7f9c",
+    "fresh_cross_language_parity.csv": "41d99365cc83675430e18134919ebb88d5cbc176f8de3e6b5d0ef403602bdc32",
+    "fresh_cross_language_parity.json": "2fd0199fab409f15c33cb9f968e42d48ac3b8ff5474fd7f9a0395aaa1025fd84",
+    "registration.json": "69e4101ad97ff64f7e3a9fcc8cb7524c21b3e9f34dc090bc1c29b635f27dd089",
+    "summary.json": "b8c2eb38ca6f34be75c926c0a4927ecbc3743f29807c38aaba7e896e9ed67173",
+    "verification.json": "0e59edbcbaa41b10f0adc4da4843a03e48f94d066d0eacb0a1ada71b2b1cac16"
+  },
+  "scope": "Saved-data receiving, numerical reconstruction and concrete adversarial/control tests; native execution scope is recorded separately in the study summary.",
+  "source_sha256": {
+    "tests/test_javascript_completion.py": "0d064902d1a356a118a64660bcfb7e4d69c86deaa1dc0183f763c687b442b91d",
+    "verify_fresh_cross_language.py": "97fef3a43427c496c5a04e766cc156756a92a8a5118fdc05d257664a773f0c0e",
+    "verify_javascript_completion.py": "1f016917b51c353d6596ebd19122cdf9a1e71c4d095a40837cab1b367b93d31e"
+  },
+  "status": "PASS",
+  "verification": {
+    "all_prior_intervals_contain_completion": true,
+    "family_scores_recomputed": 36,
+    "mixture_scores_recomputed": 27,
+    "mutant_controls_verified": 36,
+    "native_candidate_input_calls_recorded": 60758192,
+    "nominal_survivors": 3,
+    "pairwise_gaps_recomputed": 27,
+    "previous_audit_rows_linked": 252,
+    "retained_distinct_output_vectors": 48,
+    "scope": "Actual stored typed observation vectors, complete source/input coverage, frozen reference/source/runtime/contract linkage, new labels and exact weighted targets. Native producer is trusted; hashes are identity checks, not execution attestation.",
+    "source_configurations_verified": 76032,
+    "source_identities_verified": 22095,
+    "status": "PASS",
+    "stored_typed_observations_checked": 132052,
+    "task_program_executions_in_this_verifier": 0
+  }
+}

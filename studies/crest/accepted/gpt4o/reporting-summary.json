@@ -1,0 +1,1586 @@
+{
+  "status": "COMPLETE",
+  "study": "gpt4o",
+  "rows": 1138,
+  "reporting_policy": "All scheduled inputs retained. Primary overall task utility and qualified-input output retention explicitly include emission E: completed no-output rejection has zero operational yield, while raw behavioral V and detector D are N/A. Program-preservation outcomes are also reported on all emitted candidates from passing originals. True unavailability remains unknown.",
+  "reports": [
+    {
+      "study": "gpt4o",
+      "dataset": "HumanEval",
+      "classifier": "rf",
+      "scheduled_attempts": 164,
+      "input_suite_passed": 145,
+      "input_suite_failed": 19,
+      "input_suite_unavailable": 0,
+      "emitted_candidates": 164,
+      "known_emission_rejections": 0,
+      "emission_unavailable": 0,
+      "candidate_suite_passed_all_inputs": 143,
+      "candidate_suite_failed_all_inputs": 21,
+      "candidate_suite_unavailable_or_not_emitted_all_inputs": 0,
+      "detector_positive_all_inputs": 164,
+      "raw_detector_unavailable_on_emitted": 0,
+      "raw_detector_not_applicable_to_rejected_emission": 0,
+      "overall_task_utility": {
+        "attempts": 164,
+        "usable_outputs": 143,
+        "known_unsuccessful_outputs": 21,
+        "output_utility_unknown": 0,
+        "detected_outputs": 164,
+        "detected_output_unknown": 0,
+        "joint_outputs": 143,
+        "joint_output_unknown": 0,
+        "detected_but_suite_failed": 21,
+        "usable_output_rate_bounds": [
+          "143/164",
+          "143/164"
+        ],
+        "detected_output_rate_bounds": [
+          "1",
+          "1"
+        ],
+        "joint_output_rate_bounds": [
+          "143/164",
+          "143/164"
+        ],
+        "conditional_detection_observed": "1",
+        "observed_usable_output_denominator": 143,
+        "conditional_detection_bounds": [
+          "1",
+          "1"
+        ],
+        "C_defined_for_all_completions": true,
+        "C_defined_for_some_completion": true,
+        "estimand": "E times suite-pass, E times detector-positive, and E times suite-pass times detector-positive per scheduled input. Completed E=0 rejections are known zero yields; raw V/D remain N/A."
+      },
+      "qualified_input_output_retention": {
+        "attempts": 145,
+        "usable_outputs": 143,
+        "known_unsuccessful_outputs": 2,
+        "output_utility_unknown": 0,
+        "detected_outputs": 145,
+        "detected_output_unknown": 0,
+        "joint_outputs": 143,
+        "joint_output_unknown": 0,
+        "detected_but_suite_failed": 2,
+        "usable_output_rate_bounds": [
+          "143/145",
+          "143/145"
+        ],
+        "detected_output_rate_bounds": [
+          "1",
+          "1"
+        ],
+        "joint_output_rate_bounds": [
+          "143/145",
+          "143/145"
+        ],
+        "conditional_detection_observed": "1",
+        "observed_usable_output_denominator": 143,
+        "conditional_detection_bounds": [
+          "1",
+          "1"
+        ],
+        "C_defined_for_all_completions": true,
+        "C_defined_for_some_completion": true,
+        "estimand": "E times suite-pass, E times detector-positive, and E times suite-pass times detector-positive per scheduled input. Completed E=0 rejections are known zero yields; raw V/D remain N/A."
+      },
+      "emitted_qualified_preservation": {
+        "attempts": 145,
+        "valid_supported": 143,
+        "valid_contradicted": 2,
+        "valid_unknown": 0,
+        "detected": 145,
+        "detector_unknown": 0,
+        "joint_supported": 143,
+        "joint_unknown": 0,
+        "detected_invalid": 2,
+        "V_bounds": [
+          "143/145",
+          "143/145"
+        ],
+        "D_bounds": [
+          "1",
+          "1"
+        ],
+        "J_bounds": [
+          "143/145",
+          "143/145"
+        ],
+        "C_observed": "1",
+        "C_observed_denominator": 143,
+        "C_bounds": [
+          "1",
+          "1"
+        ],
+        "C_defined_for_all_completions": true,
+        "C_defined_for_some_completion": true
+      },
+      "qualified_inputs": 145,
+      "qualified_emitted_inputs": 145,
+      "qualified_known_emission_rejections": 0,
+      "before_after_transition_matrix": {
+        "passed": {
+          "passed": 143,
+          "failed": 2,
+          "unavailable": 0,
+          "not_emitted": 0
+        },
+        "failed": {
+          "passed": 0,
+          "failed": 19,
+          "unavailable": 0,
+          "not_emitted": 0
+        },
+        "unavailable": {
+          "passed": 0,
+          "failed": 0,
+          "unavailable": 0,
+          "not_emitted": 0
+        }
+      },
+      "before_after_operational_transition_matrix": {
+        "passed": {
+          "passed": 143,
+          "failed": 2,
+          "unavailable": 0
+        },
+        "failed": {
+          "passed": 0,
+          "failed": 19,
+          "unavailable": 0
+        },
+        "unavailable": {
+          "passed": 0,
+          "failed": 0,
+          "unavailable": 0
+        }
+      },
+      "transition_policy": "The native matrix separates no emission from program failure and unavailable execution. The operational matrix counts deterministic no-output as an unsuccessful attempt. Failed inputs that later pass are not counted as watermark-induced failures.",
+      "input_detector_control": {
+        "positive": 0,
+        "observed": 164,
+        "unknown": 0,
+        "scheduled": 164,
+        "observed_positive_fraction": "0",
+        "interpretation": "Fixed released operating-point observations; not a calibrated population false-positive rate."
+      },
+      "source_contract_groups": 164,
+      "emitted_rows_sharing_another_source_contract": 0,
+      "qualified_failure_task_ids": [
+        "HumanEval/38",
+        "HumanEval/44"
+      ]
+    },
+    {
+      "study": "gpt4o",
+      "dataset": "HumanEval",
+      "classifier": "logreg_l1",
+      "scheduled_attempts": 164,
+      "input_suite_passed": 145,
+      "input_suite_failed": 19,
+      "input_suite_unavailable": 0,
+      "emitted_candidates": 164,
+      "known_emission_rejections": 0,
+      "emission_unavailable": 0,
+      "candidate_suite_passed_all_inputs": 143,
+      "candidate_suite_failed_all_inputs": 21,
+      "candidate_suite_unavailable_or_not_emitted_all_inputs": 0,
+      "detector_positive_all_inputs": 164,
+      "raw_detector_unavailable_on_emitted": 0,
+      "raw_detector_not_applicable_to_rejected_emission": 0,
+      "overall_task_utility": {
+        "attempts": 164,
+        "usable_outputs": 143,
+        "known_unsuccessful_outputs": 21,
+        "output_utility_unknown": 0,
+        "detected_outputs": 164,
+        "detected_output_unknown": 0,
+        "joint_outputs": 143,
+        "joint_output_unknown": 0,
+        "detected_but_suite_failed": 21,
+        "usable_output_rate_bounds": [
+          "143/164",
+          "143/164"
+        ],
+        "detected_output_rate_bounds": [
+          "1",
+          "1"
+        ],
+        "joint_output_rate_bounds": [
+          "143/164",
+          "143/164"
+        ],
+        "conditional_detection_observed": "1",
+        "observed_usable_output_denominator": 143,
+        "conditional_detection_bounds": [
+          "1",
+          "1"
+        ],
+        "C_defined_for_all_completions": true,
+        "C_defined_for_some_completion": true,
+        "estimand": "E times suite-pass, E times detector-positive, and E times suite-pass times detector-positive per scheduled input. Completed E=0 rejections are known zero yields; raw V/D remain N/A."
+      },
+      "qualified_input_output_retention": {
+        "attempts": 145,
+        "usable_outputs": 143,
+        "known_unsuccessful_outputs": 2,
+        "output_utility_unknown": 0,
+        "detected_outputs": 145,
+        "detected_output_unknown": 0,
+        "joint_outputs": 143,
+        "joint_output_unknown": 0,
+        "detected_but_suite_failed": 2,
+        "usable_output_rate_bounds": [
+          "143/145",
+          "143/145"
+        ],
+        "detected_output_rate_bounds": [
+          "1",
+          "1"
+        ],
+        "joint_output_rate_bounds": [
+          "143/145",
+          "143/145"
+        ],
+        "conditional_detection_observed": "1",
+        "observed_usable_output_denominator": 143,
+        "conditional_detection_bounds": [
+          "1",
+          "1"
+        ],
+        "C_defined_for_all_completions": true,
+        "C_defined_for_some_completion": true,
+        "estimand": "E times suite-pass, E times detector-positive, and E times suite-pass times detector-positive per scheduled input. Completed E=0 rejections are known zero yields; raw V/D remain N/A."
+      },
+      "emitted_qualified_preservation": {
+        "attempts": 145,
+        "valid_supported": 143,
+        "valid_contradicted": 2,
+        "valid_unknown": 0,
+        "detected": 145,
+        "detector_unknown": 0,
+        "joint_supported": 143,
+        "joint_unknown": 0,
+        "detected_invalid": 2,
+        "V_bounds": [
+          "143/145",
+          "143/145"
+        ],
+        "D_bounds": [
+          "1",
+          "1"
+        ],
+        "J_bounds": [
+          "143/145",
+          "143/145"
+        ],
+        "C_observed": "1",
+        "C_observed_denominator": 143,
+        "C_bounds": [
+          "1",
+          "1"
+        ],
+        "C_defined_for_all_completions": true,
+        "C_defined_for_some_completion": true
+      },
+      "qualified_inputs": 145,
+      "qualified_emitted_inputs": 145,
+      "qualified_known_emission_rejections": 0,
+      "before_after_transition_matrix": {
+        "passed": {
+          "passed": 143,
+          "failed": 2,
+          "unavailable": 0,
+          "not_emitted": 0
+        },
+        "failed": {
+          "passed": 0,
+          "failed": 19,
+          "unavailable": 0,
+          "not_emitted": 0
+        },
+        "unavailable": {
+          "passed": 0,
+          "failed": 0,
+          "unavailable": 0,
+          "not_emitted": 0
+        }
+      },
+      "before_after_operational_transition_matrix": {
+        "passed": {
+          "passed": 143,
+          "failed": 2,
+          "unavailable": 0
+        },
+        "failed": {
+          "passed": 0,
+          "failed": 19,
+          "unavailable": 0
+        },
+        "unavailable": {
+          "passed": 0,
+          "failed": 0,
+          "unavailable": 0
+        }
+      },
+      "transition_policy": "The native matrix separates no emission from program failure and unavailable execution. The operational matrix counts deterministic no-output as an unsuccessful attempt. Failed inputs that later pass are not counted as watermark-induced failures.",
+      "input_detector_control": {
+        "positive": 0,
+        "observed": 164,
+        "unknown": 0,
+        "scheduled": 164,
+        "observed_positive_fraction": "0",
+        "interpretation": "Fixed released operating-point observations; not a calibrated population false-positive rate."
+      },
+      "source_contract_groups": 164,
+      "emitted_rows_sharing_another_source_contract": 0,
+      "qualified_failure_task_ids": [
+        "HumanEval/38",
+        "HumanEval/44"
+      ]
+    },
+    {
+      "study": "gpt4o",
+      "dataset": "HumanEval",
+      "classifier": "logreg_l2",
+      "scheduled_attempts": 164,
+      "input_suite_passed": 145,
+      "input_suite_failed": 19,
+      "input_suite_unavailable": 0,
+      "emitted_candidates": 164,
+      "known_emission_rejections": 0,
+      "emission_unavailable": 0,
+      "candidate_suite_passed_all_inputs": 143,
+      "candidate_suite_failed_all_inputs": 21,
+      "candidate_suite_unavailable_or_not_emitted_all_inputs": 0,
+      "detector_positive_all_inputs": 164,
+      "raw_detector_unavailable_on_emitted": 0,
+      "raw_detector_not_applicable_to_rejected_emission": 0,
+      "overall_task_utility": {
+        "attempts": 164,
+        "usable_outputs": 143,
+        "known_unsuccessful_outputs": 21,
+        "output_utility_unknown": 0,
+        "detected_outputs": 164,
+        "detected_output_unknown": 0,
+        "joint_outputs": 143,
+        "joint_output_unknown": 0,
+        "detected_but_suite_failed": 21,
+        "usable_output_rate_bounds": [
+          "143/164",
+          "143/164"
+        ],
+        "detected_output_rate_bounds": [
+          "1",
+          "1"
+        ],
+        "joint_output_rate_bounds": [
+          "143/164",
+          "143/164"
+        ],
+        "conditional_detection_observed": "1",
+        "observed_usable_output_denominator": 143,
+        "conditional_detection_bounds": [
+          "1",
+          "1"
+        ],
+        "C_defined_for_all_completions": true,
+        "C_defined_for_some_completion": true,
+        "estimand": "E times suite-pass, E times detector-positive, and E times suite-pass times detector-positive per scheduled input. Completed E=0 rejections are known zero yields; raw V/D remain N/A."
+      },
+      "qualified_input_output_retention": {
+        "attempts": 145,
+        "usable_outputs": 143,
+        "known_unsuccessful_outputs": 2,
+        "output_utility_unknown": 0,
+        "detected_outputs": 145,
+        "detected_output_unknown": 0,
+        "joint_outputs": 143,
+        "joint_output_unknown": 0,
+        "detected_but_suite_failed": 2,
+        "usable_output_rate_bounds": [
+          "143/145",
+          "143/145"
+        ],
+        "detected_output_rate_bounds": [
+          "1",
+          "1"
+        ],
+        "joint_output_rate_bounds": [
+          "143/145",
+          "143/145"
+        ],
+        "conditional_detection_observed": "1",
+        "observed_usable_output_denominator": 143,
+        "conditional_detection_bounds": [
+          "1",
+          "1"
+        ],
+        "C_defined_for_all_completions": true,
+        "C_defined_for_some_completion": true,
+        "estimand": "E times suite-pass, E times detector-positive, and E times suite-pass times detector-positive per scheduled input. Completed E=0 rejections are known zero yields; raw V/D remain N/A."
+      },
+      "emitted_qualified_preservation": {
+        "attempts": 145,
+        "valid_supported": 143,
+        "valid_contradicted": 2,
+        "valid_unknown": 0,
+        "detected": 145,
+        "detector_unknown": 0,
+        "joint_supported": 143,
+        "joint_unknown": 0,
+        "detected_invalid": 2,
+        "V_bounds": [
+          "143/145",
+          "143/145"
+        ],
+        "D_bounds": [
+          "1",
+          "1"
+        ],
+        "J_bounds": [
+          "143/145",
+          "143/145"
+        ],
+        "C_observed": "1",
+        "C_observed_denominator": 143,
+        "C_bounds": [
+          "1",
+          "1"
+        ],
+        "C_defined_for_all_completions": true,
+        "C_defined_for_some_completion": true
+      },
+      "qualified_inputs": 145,
+      "qualified_emitted_inputs": 145,
+      "qualified_known_emission_rejections": 0,
+      "before_after_transition_matrix": {
+        "passed": {
+          "passed": 143,
+          "failed": 2,
+          "unavailable": 0,
+          "not_emitted": 0
+        },
+        "failed": {
+          "passed": 0,
+          "failed": 19,
+          "unavailable": 0,
+          "not_emitted": 0
+        },
+        "unavailable": {
+          "passed": 0,
+          "failed": 0,
+          "unavailable": 0,
+          "not_emitted": 0
+        }
+      },
+      "before_after_operational_transition_matrix": {
+        "passed": {
+          "passed": 143,
+          "failed": 2,
+          "unavailable": 0
+        },
+        "failed": {
+          "passed": 0,
+          "failed": 19,
+          "unavailable": 0
+        },
+        "unavailable": {
+          "passed": 0,
+          "failed": 0,
+          "unavailable": 0
+        }
+      },
+      "transition_policy": "The native matrix separates no emission from program failure and unavailable execution. The operational matrix counts deterministic no-output as an unsuccessful attempt. Failed inputs that later pass are not counted as watermark-induced failures.",
+      "input_detector_control": {
+        "positive": 0,
+        "observed": 164,
+        "unknown": 0,
+        "scheduled": 164,
+        "observed_positive_fraction": "0",
+        "interpretation": "Fixed released operating-point observations; not a calibrated population false-positive rate."
+      },
+      "source_contract_groups": 164,
+      "emitted_rows_sharing_another_source_contract": 0,
+      "qualified_failure_task_ids": [
+        "HumanEval/38",
+        "HumanEval/44"
+      ]
+    },
+    {
+      "study": "gpt4o",
+      "dataset": "MBPP",
+      "classifier": "rf",
+      "scheduled_attempts": 974,
+      "input_suite_passed": 803,
+      "input_suite_failed": 171,
+      "input_suite_unavailable": 0,
+      "emitted_candidates": 974,
+      "known_emission_rejections": 0,
+      "emission_unavailable": 0,
+      "candidate_suite_passed_all_inputs": 791,
+      "candidate_suite_failed_all_inputs": 183,
+      "candidate_suite_unavailable_or_not_emitted_all_inputs": 0,
+      "detector_positive_all_inputs": 974,
+      "raw_detector_unavailable_on_emitted": 0,
+      "raw_detector_not_applicable_to_rejected_emission": 0,
+      "overall_task_utility": {
+        "attempts": 974,
+        "usable_outputs": 791,
+        "known_unsuccessful_outputs": 183,
+        "output_utility_unknown": 0,
+        "detected_outputs": 974,
+        "detected_output_unknown": 0,
+        "joint_outputs": 791,
+        "joint_output_unknown": 0,
+        "detected_but_suite_failed": 183,
+        "usable_output_rate_bounds": [
+          "791/974",
+          "791/974"
+        ],
+        "detected_output_rate_bounds": [
+          "1",
+          "1"
+        ],
+        "joint_output_rate_bounds": [
+          "791/974",
+          "791/974"
+        ],
+        "conditional_detection_observed": "1",
+        "observed_usable_output_denominator": 791,
+        "conditional_detection_bounds": [
+          "1",
+          "1"
+        ],
+        "C_defined_for_all_completions": true,
+        "C_defined_for_some_completion": true,
+        "estimand": "E times suite-pass, E times detector-positive, and E times suite-pass times detector-positive per scheduled input. Completed E=0 rejections are known zero yields; raw V/D remain N/A."
+      },
+      "qualified_input_output_retention": {
+        "attempts": 803,
+        "usable_outputs": 791,
+        "known_unsuccessful_outputs": 12,
+        "output_utility_unknown": 0,
+        "detected_outputs": 803,
+        "detected_output_unknown": 0,
+        "joint_outputs": 791,
+        "joint_output_unknown": 0,
+        "detected_but_suite_failed": 12,
+        "usable_output_rate_bounds": [
+          "791/803",
+          "791/803"
+        ],
+        "detected_output_rate_bounds": [
+          "1",
+          "1"
+        ],
+        "joint_output_rate_bounds": [
+          "791/803",
+          "791/803"
+        ],
+        "conditional_detection_observed": "1",
+        "observed_usable_output_denominator": 791,
+        "conditional_detection_bounds": [
+          "1",
+          "1"
+        ],
+        "C_defined_for_all_completions": true,
+        "C_defined_for_some_completion": true,
+        "estimand": "E times suite-pass, E times detector-positive, and E times suite-pass times detector-positive per scheduled input. Completed E=0 rejections are known zero yields; raw V/D remain N/A."
+      },
+      "emitted_qualified_preservation": {
+        "attempts": 803,
+        "valid_supported": 791,
+        "valid_contradicted": 12,
+        "valid_unknown": 0,
+        "detected": 803,
+        "detector_unknown": 0,
+        "joint_supported": 791,
+        "joint_unknown": 0,
+        "detected_invalid": 12,
+        "V_bounds": [
+          "791/803",
+          "791/803"
+        ],
+        "D_bounds": [
+          "1",
+          "1"
+        ],
+        "J_bounds": [
+          "791/803",
+          "791/803"
+        ],
+        "C_observed": "1",
+        "C_observed_denominator": 791,
+        "C_bounds": [
+          "1",
+          "1"
+        ],
+        "C_defined_for_all_completions": true,
+        "C_defined_for_some_completion": true
+      },
+      "qualified_inputs": 803,
+      "qualified_emitted_inputs": 803,
+      "qualified_known_emission_rejections": 0,
+      "before_after_transition_matrix": {
+        "passed": {
+          "passed": 791,
+          "failed": 12,
+          "unavailable": 0,
+          "not_emitted": 0
+        },
+        "failed": {
+          "passed": 0,
+          "failed": 171,
+          "unavailable": 0,
+          "not_emitted": 0
+        },
+        "unavailable": {
+          "passed": 0,
+          "failed": 0,
+          "unavailable": 0,
+          "not_emitted": 0
+        }
+      },
+      "before_after_operational_transition_matrix": {
+        "passed": {
+          "passed": 791,
+          "failed": 12,
+          "unavailable": 0
+        },
+        "failed": {
+          "passed": 0,
+          "failed": 171,
+          "unavailable": 0
+        },
+        "unavailable": {
+          "passed": 0,
+          "failed": 0,
+          "unavailable": 0
+        }
+      },
+      "transition_policy": "The native matrix separates no emission from program failure and unavailable execution. The operational matrix counts deterministic no-output as an unsuccessful attempt. Failed inputs that later pass are not counted as watermark-induced failures.",
+      "input_detector_control": {
+        "positive": 0,
+        "observed": 974,
+        "unknown": 0,
+        "scheduled": 974,
+        "observed_positive_fraction": "0",
+        "interpretation": "Fixed released operating-point observations; not a calibrated population false-positive rate."
+      },
+      "source_contract_groups": 974,
+      "emitted_rows_sharing_another_source_contract": 0,
+      "qualified_failure_task_ids": [
+        "MBPP/37",
+        "MBPP/100",
+        "MBPP/106",
+        "MBPP/240",
+        "MBPP/378",
+        "MBPP/526",
+        "MBPP/619",
+        "MBPP/665",
+        "MBPP/720",
+        "MBPP/783",
+        "MBPP/838",
+        "MBPP/844"
+      ]
+    },
+    {
+      "study": "gpt4o",
+      "dataset": "MBPP",
+      "classifier": "logreg_l1",
+      "scheduled_attempts": 974,
+      "input_suite_passed": 803,
+      "input_suite_failed": 171,
+      "input_suite_unavailable": 0,
+      "emitted_candidates": 974,
+      "known_emission_rejections": 0,
+      "emission_unavailable": 0,
+      "candidate_suite_passed_all_inputs": 791,
+      "candidate_suite_failed_all_inputs": 183,
+      "candidate_suite_unavailable_or_not_emitted_all_inputs": 0,
+      "detector_positive_all_inputs": 974,
+      "raw_detector_unavailable_on_emitted": 0,
+      "raw_detector_not_applicable_to_rejected_emission": 0,
+      "overall_task_utility": {
+        "attempts": 974,
+        "usable_outputs": 791,
+        "known_unsuccessful_outputs": 183,
+        "output_utility_unknown": 0,
+        "detected_outputs": 974,
+        "detected_output_unknown": 0,
+        "joint_outputs": 791,
+        "joint_output_unknown": 0,
+        "detected_but_suite_failed": 183,
+        "usable_output_rate_bounds": [
+          "791/974",
+          "791/974"
+        ],
+        "detected_output_rate_bounds": [
+          "1",
+          "1"
+        ],
+        "joint_output_rate_bounds": [
+          "791/974",
+          "791/974"
+        ],
+        "conditional_detection_observed": "1",
+        "observed_usable_output_denominator": 791,
+        "conditional_detection_bounds": [
+          "1",
+          "1"
+        ],
+        "C_defined_for_all_completions": true,
+        "C_defined_for_some_completion": true,
+        "estimand": "E times suite-pass, E times detector-positive, and E times suite-pass times detector-positive per scheduled input. Completed E=0 rejections are known zero yields; raw V/D remain N/A."
+      },
+      "qualified_input_output_retention": {
+        "attempts": 803,
+        "usable_outputs": 791,
+        "known_unsuccessful_outputs": 12,
+        "output_utility_unknown": 0,
+        "detected_outputs": 803,
+        "detected_output_unknown": 0,
+        "joint_outputs": 791,
+        "joint_output_unknown": 0,
+        "detected_but_suite_failed": 12,
+        "usable_output_rate_bounds": [
+          "791/803",
+          "791/803"
+        ],
+        "detected_output_rate_bounds": [
+          "1",
+          "1"
+        ],
+        "joint_output_rate_bounds": [
+          "791/803",
+          "791/803"
+        ],
+        "conditional_detection_observed": "1",
+        "observed_usable_output_denominator": 791,
+        "conditional_detection_bounds": [
+          "1",
+          "1"
+        ],
+        "C_defined_for_all_completions": true,
+        "C_defined_for_some_completion": true,
+        "estimand": "E times suite-pass, E times detector-positive, and E times suite-pass times detector-positive per scheduled input. Completed E=0 rejections are known zero yields; raw V/D remain N/A."
+      },
+      "emitted_qualified_preservation": {
+        "attempts": 803,
+        "valid_supported": 791,
+        "valid_contradicted": 12,
+        "valid_unknown": 0,
+        "detected": 803,
+        "detector_unknown": 0,
+        "joint_supported": 791,
+        "joint_unknown": 0,
+        "detected_invalid": 12,
+        "V_bounds": [
+          "791/803",
+          "791/803"
+        ],
+        "D_bounds": [
+          "1",
+          "1"
+        ],
+        "J_bounds": [
+          "791/803",
+          "791/803"
+        ],
+        "C_observed": "1",
+        "C_observed_denominator": 791,
+        "C_bounds": [
+          "1",
+          "1"
+        ],
+        "C_defined_for_all_completions": true,
+        "C_defined_for_some_completion": true
+      },
+      "qualified_inputs": 803,
+      "qualified_emitted_inputs": 803,
+      "qualified_known_emission_rejections": 0,
+      "before_after_transition_matrix": {
+        "passed": {
+          "passed": 791,
+          "failed": 12,
+          "unavailable": 0,
+          "not_emitted": 0
+        },
+        "failed": {
+          "passed": 0,
+          "failed": 171,
+          "unavailable": 0,
+          "not_emitted": 0
+        },
+        "unavailable": {
+          "passed": 0,
+          "failed": 0,
+          "unavailable": 0,
+          "not_emitted": 0
+        }
+      },
+      "before_after_operational_transition_matrix": {
+        "passed": {
+          "passed": 791,
+          "failed": 12,
+          "unavailable": 0
+        },
+        "failed": {
+          "passed": 0,
+          "failed": 171,
+          "unavailable": 0
+        },
+        "unavailable": {
+          "passed": 0,
+          "failed": 0,
+          "unavailable": 0
+        }
+      },
+      "transition_policy": "The native matrix separates no emission from program failure and unavailable execution. The operational matrix counts deterministic no-output as an unsuccessful attempt. Failed inputs that later pass are not counted as watermark-induced failures.",
+      "input_detector_control": {
+        "positive": 0,
+        "observed": 974,
+        "unknown": 0,
+        "scheduled": 974,
+        "observed_positive_fraction": "0",
+        "interpretation": "Fixed released operating-point observations; not a calibrated population false-positive rate."
+      },
+      "source_contract_groups": 974,
+      "emitted_rows_sharing_another_source_contract": 0,
+      "qualified_failure_task_ids": [
+        "MBPP/37",
+        "MBPP/100",
+        "MBPP/106",
+        "MBPP/240",
+        "MBPP/378",
+        "MBPP/526",
+        "MBPP/619",
+        "MBPP/665",
+        "MBPP/720",
+        "MBPP/783",
+        "MBPP/838",
+        "MBPP/844"
+      ]
+    },
+    {
+      "study": "gpt4o",
+      "dataset": "MBPP",
+      "classifier": "logreg_l2",
+      "scheduled_attempts": 974,
+      "input_suite_passed": 803,
+      "input_suite_failed": 171,
+      "input_suite_unavailable": 0,
+      "emitted_candidates": 974,
+      "known_emission_rejections": 0,
+      "emission_unavailable": 0,
+      "candidate_suite_passed_all_inputs": 791,
+      "candidate_suite_failed_all_inputs": 183,
+      "candidate_suite_unavailable_or_not_emitted_all_inputs": 0,
+      "detector_positive_all_inputs": 974,
+      "raw_detector_unavailable_on_emitted": 0,
+      "raw_detector_not_applicable_to_rejected_emission": 0,
+      "overall_task_utility": {
+        "attempts": 974,
+        "usable_outputs": 791,
+        "known_unsuccessful_outputs": 183,
+        "output_utility_unknown": 0,
+        "detected_outputs": 974,
+        "detected_output_unknown": 0,
+        "joint_outputs": 791,
+        "joint_output_unknown": 0,
+        "detected_but_suite_failed": 183,
+        "usable_output_rate_bounds": [
+          "791/974",
+          "791/974"
+        ],
+        "detected_output_rate_bounds": [
+          "1",
+          "1"
+        ],
+        "joint_output_rate_bounds": [
+          "791/974",
+          "791/974"
+        ],
+        "conditional_detection_observed": "1",
+        "observed_usable_output_denominator": 791,
+        "conditional_detection_bounds": [
+          "1",
+          "1"
+        ],
+        "C_defined_for_all_completions": true,
+        "C_defined_for_some_completion": true,
+        "estimand": "E times suite-pass, E times detector-positive, and E times suite-pass times detector-positive per scheduled input. Completed E=0 rejections are known zero yields; raw V/D remain N/A."
+      },
+      "qualified_input_output_retention": {
+        "attempts": 803,
+        "usable_outputs": 791,
+        "known_unsuccessful_outputs": 12,
+        "output_utility_unknown": 0,
+        "detected_outputs": 803,
+        "detected_output_unknown": 0,
+        "joint_outputs": 791,
+        "joint_output_unknown": 0,
+        "detected_but_suite_failed": 12,
+        "usable_output_rate_bounds": [
+          "791/803",
+          "791/803"
+        ],
+        "detected_output_rate_bounds": [
+          "1",
+          "1"
+        ],
+        "joint_output_rate_bounds": [
+          "791/803",
+          "791/803"
+        ],
+        "conditional_detection_observed": "1",
+        "observed_usable_output_denominator": 791,
+        "conditional_detection_bounds": [
+          "1",
+          "1"
+        ],
+        "C_defined_for_all_completions": true,
+        "C_defined_for_some_completion": true,
+        "estimand": "E times suite-pass, E times detector-positive, and E times suite-pass times detector-positive per scheduled input. Completed E=0 rejections are known zero yields; raw V/D remain N/A."
+      },
+      "emitted_qualified_preservation": {
+        "attempts": 803,
+        "valid_supported": 791,
+        "valid_contradicted": 12,
+        "valid_unknown": 0,
+        "detected": 803,
+        "detector_unknown": 0,
+        "joint_supported": 791,
+        "joint_unknown": 0,
+        "detected_invalid": 12,
+        "V_bounds": [
+          "791/803",
+          "791/803"
+        ],
+        "D_bounds": [
+          "1",
+          "1"
+        ],
+        "J_bounds": [
+          "791/803",
+          "791/803"
+        ],
+        "C_observed": "1",
+        "C_observed_denominator": 791,
+        "C_bounds": [
+          "1",
+          "1"
+        ],
+        "C_defined_for_all_completions": true,
+        "C_defined_for_some_completion": true
+      },
+      "qualified_inputs": 803,
+      "qualified_emitted_inputs": 803,
+      "qualified_known_emission_rejections": 0,
+      "before_after_transition_matrix": {
+        "passed": {
+          "passed": 791,
+          "failed": 12,
+          "unavailable": 0,
+          "not_emitted": 0
+        },
+        "failed": {
+          "passed": 0,
+          "failed": 171,
+          "unavailable": 0,
+          "not_emitted": 0
+        },
+        "unavailable": {
+          "passed": 0,
+          "failed": 0,
+          "unavailable": 0,
+          "not_emitted": 0
+        }
+      },
+      "before_after_operational_transition_matrix": {
+        "passed": {
+          "passed": 791,
+          "failed": 12,
+          "unavailable": 0
+        },
+        "failed": {
+          "passed": 0,
+          "failed": 171,
+          "unavailable": 0
+        },
+        "unavailable": {
+          "passed": 0,
+          "failed": 0,
+          "unavailable": 0
+        }
+      },
+      "transition_policy": "The native matrix separates no emission from program failure and unavailable execution. The operational matrix counts deterministic no-output as an unsuccessful attempt. Failed inputs that later pass are not counted as watermark-induced failures.",
+      "input_detector_control": {
+        "positive": 0,
+        "observed": 974,
+        "unknown": 0,
+        "scheduled": 974,
+        "observed_positive_fraction": "0",
+        "interpretation": "Fixed released operating-point observations; not a calibrated population false-positive rate."
+      },
+      "source_contract_groups": 974,
+      "emitted_rows_sharing_another_source_contract": 0,
+      "qualified_failure_task_ids": [
+        "MBPP/37",
+        "MBPP/100",
+        "MBPP/106",
+        "MBPP/240",
+        "MBPP/378",
+        "MBPP/526",
+        "MBPP/619",
+        "MBPP/665",
+        "MBPP/720",
+        "MBPP/783",
+        "MBPP/838",
+        "MBPP/844"
+      ]
+    },
+    {
+      "study": "gpt4o",
+      "dataset": "pooled",
+      "classifier": "rf",
+      "scheduled_attempts": 1138,
+      "input_suite_passed": 948,
+      "input_suite_failed": 190,
+      "input_suite_unavailable": 0,
+      "emitted_candidates": 1138,
+      "known_emission_rejections": 0,
+      "emission_unavailable": 0,
+      "candidate_suite_passed_all_inputs": 934,
+      "candidate_suite_failed_all_inputs": 204,
+      "candidate_suite_unavailable_or_not_emitted_all_inputs": 0,
+      "detector_positive_all_inputs": 1138,
+      "raw_detector_unavailable_on_emitted": 0,
+      "raw_detector_not_applicable_to_rejected_emission": 0,
+      "overall_task_utility": {
+        "attempts": 1138,
+        "usable_outputs": 934,
+        "known_unsuccessful_outputs": 204,
+        "output_utility_unknown": 0,
+        "detected_outputs": 1138,
+        "detected_output_unknown": 0,
+        "joint_outputs": 934,
+        "joint_output_unknown": 0,
+        "detected_but_suite_failed": 204,
+        "usable_output_rate_bounds": [
+          "467/569",
+          "467/569"
+        ],
+        "detected_output_rate_bounds": [
+          "1",
+          "1"
+        ],
+        "joint_output_rate_bounds": [
+          "467/569",
+          "467/569"
+        ],
+        "conditional_detection_observed": "1",
+        "observed_usable_output_denominator": 934,
+        "conditional_detection_bounds": [
+          "1",
+          "1"
+        ],
+        "C_defined_for_all_completions": true,
+        "C_defined_for_some_completion": true,
+        "estimand": "E times suite-pass, E times detector-positive, and E times suite-pass times detector-positive per scheduled input. Completed E=0 rejections are known zero yields; raw V/D remain N/A."
+      },
+      "qualified_input_output_retention": {
+        "attempts": 948,
+        "usable_outputs": 934,
+        "known_unsuccessful_outputs": 14,
+        "output_utility_unknown": 0,
+        "detected_outputs": 948,
+        "detected_output_unknown": 0,
+        "joint_outputs": 934,
+        "joint_output_unknown": 0,
+        "detected_but_suite_failed": 14,
+        "usable_output_rate_bounds": [
+          "467/474",
+          "467/474"
+        ],
+        "detected_output_rate_bounds": [
+          "1",
+          "1"
+        ],
+        "joint_output_rate_bounds": [
+          "467/474",
+          "467/474"
+        ],
+        "conditional_detection_observed": "1",
+        "observed_usable_output_denominator": 934,
+        "conditional_detection_bounds": [
+          "1",
+          "1"
+        ],
+        "C_defined_for_all_completions": true,
+        "C_defined_for_some_completion": true,
+        "estimand": "E times suite-pass, E times detector-positive, and E times suite-pass times detector-positive per scheduled input. Completed E=0 rejections are known zero yields; raw V/D remain N/A."
+      },
+      "emitted_qualified_preservation": {
+        "attempts": 948,
+        "valid_supported": 934,
+        "valid_contradicted": 14,
+        "valid_unknown": 0,
+        "detected": 948,
+        "detector_unknown": 0,
+        "joint_supported": 934,
+        "joint_unknown": 0,
+        "detected_invalid": 14,
+        "V_bounds": [
+          "467/474",
+          "467/474"
+        ],
+        "D_bounds": [
+          "1",
+          "1"
+        ],
+        "J_bounds": [
+          "467/474",
+          "467/474"
+        ],
+        "C_observed": "1",
+        "C_observed_denominator": 934,
+        "C_bounds": [
+          "1",
+          "1"
+        ],
+        "C_defined_for_all_completions": true,
+        "C_defined_for_some_completion": true
+      },
+      "qualified_inputs": 948,
+      "qualified_emitted_inputs": 948,
+      "qualified_known_emission_rejections": 0,
+      "before_after_transition_matrix": {
+        "passed": {
+          "passed": 934,
+          "failed": 14,
+          "unavailable": 0,
+          "not_emitted": 0
+        },
+        "failed": {
+          "passed": 0,
+          "failed": 190,
+          "unavailable": 0,
+          "not_emitted": 0
+        },
+        "unavailable": {
+          "passed": 0,
+          "failed": 0,
+          "unavailable": 0,
+          "not_emitted": 0
+        }
+      },
+      "before_after_operational_transition_matrix": {
+        "passed": {
+          "passed": 934,
+          "failed": 14,
+          "unavailable": 0
+        },
+        "failed": {
+          "passed": 0,
+          "failed": 190,
+          "unavailable": 0
+        },
+        "unavailable": {
+          "passed": 0,
+          "failed": 0,
+          "unavailable": 0
+        }
+      },
+      "transition_policy": "The native matrix separates no emission from program failure and unavailable execution. The operational matrix counts deterministic no-output as an unsuccessful attempt. Failed inputs that later pass are not counted as watermark-induced failures.",
+      "input_detector_control": {
+        "positive": 0,
+        "observed": 1138,
+        "unknown": 0,
+        "scheduled": 1138,
+        "observed_positive_fraction": "0",
+        "interpretation": "Fixed released operating-point observations; not a calibrated population false-positive rate."
+      },
+      "source_contract_groups": 1138,
+      "emitted_rows_sharing_another_source_contract": 0,
+      "qualified_failure_task_ids": [
+        "HumanEval/38",
+        "HumanEval/44",
+        "MBPP/37",
+        "MBPP/100",
+        "MBPP/106",
+        "MBPP/240",
+        "MBPP/378",
+        "MBPP/526",
+        "MBPP/619",
+        "MBPP/665",
+        "MBPP/720",
+        "MBPP/783",
+        "MBPP/838",
+        "MBPP/844"
+      ]
+    },
+    {
+      "study": "gpt4o",
+      "dataset": "pooled",
+      "classifier": "logreg_l1",
+      "scheduled_attempts": 1138,
+      "input_suite_passed": 948,
+      "input_suite_failed": 190,
+      "input_suite_unavailable": 0,
+      "emitted_candidates": 1138,
+      "known_emission_rejections": 0,
+      "emission_unavailable": 0,
+      "candidate_suite_passed_all_inputs": 934,
+      "candidate_suite_failed_all_inputs": 204,
+      "candidate_suite_unavailable_or_not_emitted_all_inputs": 0,
+      "detector_positive_all_inputs": 1138,
+      "raw_detector_unavailable_on_emitted": 0,
+      "raw_detector_not_applicable_to_rejected_emission": 0,
+      "overall_task_utility": {
+        "attempts": 1138,
+        "usable_outputs": 934,
+        "known_unsuccessful_outputs": 204,
+        "output_utility_unknown": 0,
+        "detected_outputs": 1138,
+        "detected_output_unknown": 0,
+        "joint_outputs": 934,
+        "joint_output_unknown": 0,
+        "detected_but_suite_failed": 204,
+        "usable_output_rate_bounds": [
+          "467/569",
+          "467/569"
+        ],
+        "detected_output_rate_bounds": [
+          "1",
+          "1"
+        ],
+        "joint_output_rate_bounds": [
+          "467/569",
+          "467/569"
+        ],
+        "conditional_detection_observed": "1",
+        "observed_usable_output_denominator": 934,
+        "conditional_detection_bounds": [
+          "1",
+          "1"
+        ],
+        "C_defined_for_all_completions": true,
+        "C_defined_for_some_completion": true,
+        "estimand": "E times suite-pass, E times detector-positive, and E times suite-pass times detector-positive per scheduled input. Completed E=0 rejections are known zero yields; raw V/D remain N/A."
+      },
+      "qualified_input_output_retention": {
+        "attempts": 948,
+        "usable_outputs": 934,
+        "known_unsuccessful_outputs": 14,
+        "output_utility_unknown": 0,
+        "detected_outputs": 948,
+        "detected_output_unknown": 0,
+        "joint_outputs": 934,
+        "joint_output_unknown": 0,
+        "detected_but_suite_failed": 14,
+        "usable_output_rate_bounds": [
+          "467/474",
+          "467/474"
+        ],
+        "detected_output_rate_bounds": [
+          "1",
+          "1"
+        ],
+        "joint_output_rate_bounds": [
+          "467/474",
+          "467/474"
+        ],
+        "conditional_detection_observed": "1",
+        "observed_usable_output_denominator": 934,
+        "conditional_detection_bounds": [
+          "1",
+          "1"
+        ],
+        "C_defined_for_all_completions": true,
+        "C_defined_for_some_completion": true,
+        "estimand": "E times suite-pass, E times detector-positive, and E times suite-pass times detector-positive per scheduled input. Completed E=0 rejections are known zero yields; raw V/D remain N/A."
+      },
+      "emitted_qualified_preservation": {
+        "attempts": 948,
+        "valid_supported": 934,
+        "valid_contradicted": 14,
+        "valid_unknown": 0,
+        "detected": 948,
+        "detector_unknown": 0,
+        "joint_supported": 934,
+        "joint_unknown": 0,
+        "detected_invalid": 14,
+        "V_bounds": [
+          "467/474",
+          "467/474"
+        ],
+        "D_bounds": [
+          "1",
+          "1"
+        ],
+        "J_bounds": [
+          "467/474",
+          "467/474"
+        ],
+        "C_observed": "1",
+        "C_observed_denominator": 934,
+        "C_bounds": [
+          "1",
+          "1"
+        ],
+        "C_defined_for_all_completions": true,
+        "C_defined_for_some_completion": true
+      },
+      "qualified_inputs": 948,
+      "qualified_emitted_inputs": 948,
+      "qualified_known_emission_rejections": 0,
+      "before_after_transition_matrix": {
+        "passed": {
+          "passed": 934,
+          "failed": 14,
+          "unavailable": 0,
+          "not_emitted": 0
+        },
+        "failed": {
+          "passed": 0,
+          "failed": 190,
+          "unavailable": 0,
+          "not_emitted": 0
+        },
+        "unavailable": {
+          "passed": 0,
+          "failed": 0,
+          "unavailable": 0,
+          "not_emitted": 0
+        }
+      },
+      "before_after_operational_transition_matrix": {
+        "passed": {
+          "passed": 934,
+          "failed": 14,
+          "unavailable": 0
+        },
+        "failed": {
+          "passed": 0,
+          "failed": 190,
+          "unavailable": 0
+        },
+        "unavailable": {
+          "passed": 0,
+          "failed": 0,
+          "unavailable": 0
+        }
+      },
+      "transition_policy": "The native matrix separates no emission from program failure and unavailable execution. The operational matrix counts deterministic no-output as an unsuccessful attempt. Failed inputs that later pass are not counted as watermark-induced failures.",
+      "input_detector_control": {
+        "positive": 0,
+        "observed": 1138,
+        "unknown": 0,
+        "scheduled": 1138,
+        "observed_positive_fraction": "0",
+        "interpretation": "Fixed released operating-point observations; not a calibrated population false-positive rate."
+      },
+      "source_contract_groups": 1138,
+      "emitted_rows_sharing_another_source_contract": 0,
+      "qualified_failure_task_ids": [
+        "HumanEval/38",
+        "HumanEval/44",
+        "MBPP/37",
+        "MBPP/100",
+        "MBPP/106",
+        "MBPP/240",
+        "MBPP/378",
+        "MBPP/526",
+        "MBPP/619",
+        "MBPP/665",
+        "MBPP/720",
+        "MBPP/783",
+        "MBPP/838",
+        "MBPP/844"
+      ]
+    },
+    {
+      "study": "gpt4o",
+      "dataset": "pooled",
+      "classifier": "logreg_l2",
+      "scheduled_attempts": 1138,
+      "input_suite_passed": 948,
+      "input_suite_failed": 190,
+      "input_suite_unavailable": 0,
+      "emitted_candidates": 1138,
+      "known_emission_rejections": 0,
+      "emission_unavailable": 0,
+      "candidate_suite_passed_all_inputs": 934,
+      "candidate_suite_failed_all_inputs": 204,
+      "candidate_suite_unavailable_or_not_emitted_all_inputs": 0,
+      "detector_positive_all_inputs": 1138,
+      "raw_detector_unavailable_on_emitted": 0,
+      "raw_detector_not_applicable_to_rejected_emission": 0,
+      "overall_task_utility": {
+        "attempts": 1138,
+        "usable_outputs": 934,
+        "known_unsuccessful_outputs": 204,
+        "output_utility_unknown": 0,
+        "detected_outputs": 1138,
+        "detected_output_unknown": 0,
+        "joint_outputs": 934,
+        "joint_output_unknown": 0,
+        "detected_but_suite_failed": 204,
+        "usable_output_rate_bounds": [
+          "467/569",
+          "467/569"
+        ],
+        "detected_output_rate_bounds": [
+          "1",
+          "1"
+        ],
+        "joint_output_rate_bounds": [
+          "467/569",
+          "467/569"
+        ],
+        "conditional_detection_observed": "1",
+        "observed_usable_output_denominator": 934,
+        "conditional_detection_bounds": [
+          "1",
+          "1"
+        ],
+        "C_defined_for_all_completions": true,
+        "C_defined_for_some_completion": true,
+        "estimand": "E times suite-pass, E times detector-positive, and E times suite-pass times detector-positive per scheduled input. Completed E=0 rejections are known zero yields; raw V/D remain N/A."
+      },
+      "qualified_input_output_retention": {
+        "attempts": 948,
+        "usable_outputs": 934,
+        "known_unsuccessful_outputs": 14,
+        "output_utility_unknown": 0,
+        "detected_outputs": 948,
+        "detected_output_unknown": 0,
+        "joint_outputs": 934,
+        "joint_output_unknown": 0,
+        "detected_but_suite_failed": 14,
+        "usable_output_rate_bounds": [
+          "467/474",
+          "467/474"
+        ],
+        "detected_output_rate_bounds": [
+          "1",
+          "1"
+        ],
+        "joint_output_rate_bounds": [
+          "467/474",
+          "467/474"
+        ],
+        "conditional_detection_observed": "1",
+        "observed_usable_output_denominator": 934,
+        "conditional_detection_bounds": [
+          "1",
+          "1"
+        ],
+        "C_defined_for_all_completions": true,
+        "C_defined_for_some_completion": true,
+        "estimand": "E times suite-pass, E times detector-positive, and E times suite-pass times detector-positive per scheduled input. Completed E=0 rejections are known zero yields; raw V/D remain N/A."
+      },
+      "emitted_qualified_preservation": {
+        "attempts": 948,
+        "valid_supported": 934,
+        "valid_contradicted": 14,
+        "valid_unknown": 0,
+        "detected": 948,
+        "detector_unknown": 0,
+        "joint_supported": 934,
+        "joint_unknown": 0,
+        "detected_invalid": 14,
+        "V_bounds": [
+          "467/474",
+          "467/474"
+        ],
+        "D_bounds": [
+          "1",
+          "1"
+        ],
+        "J_bounds": [
+          "467/474",
+          "467/474"
+        ],
+        "C_observed": "1",
+        "C_observed_denominator": 934,
+        "C_bounds": [
+          "1",
+          "1"
+        ],
+        "C_defined_for_all_completions": true,
+        "C_defined_for_some_completion": true
+      },
+      "qualified_inputs": 948,
+      "qualified_emitted_inputs": 948,
+      "qualified_known_emission_rejections": 0,
+      "before_after_transition_matrix": {
+        "passed": {
+          "passed": 934,
+          "failed": 14,
+          "unavailable": 0,
+          "not_emitted": 0
+        },
+        "failed": {
+          "passed": 0,
+          "failed": 190,
+          "unavailable": 0,
+          "not_emitted": 0
+        },
+        "unavailable": {
+          "passed": 0,
+          "failed": 0,
+          "unavailable": 0,
+          "not_emitted": 0
+        }
+      },
+      "before_after_operational_transition_matrix": {
+        "passed": {
+          "passed": 934,
+          "failed": 14,
+          "unavailable": 0
+        },
+        "failed": {
+          "passed": 0,
+          "failed": 190,
+          "unavailable": 0
+        },
+        "unavailable": {
+          "passed": 0,
+          "failed": 0,
+          "unavailable": 0
+        }
+      },
+      "transition_policy": "The native matrix separates no emission from program failure and unavailable execution. The operational matrix counts deterministic no-output as an unsuccessful attempt. Failed inputs that later pass are not counted as watermark-induced failures.",
+      "input_detector_control": {
+        "positive": 0,
+        "observed": 1138,
+        "unknown": 0,
+        "scheduled": 1138,
+        "observed_positive_fraction": "0",
+        "interpretation": "Fixed released operating-point observations; not a calibrated population false-positive rate."
+      },
+      "source_contract_groups": 1138,
+      "emitted_rows_sharing_another_source_contract": 0,
+      "qualified_failure_task_ids": [
+        "HumanEval/38",
+        "HumanEval/44",
+        "MBPP/37",
+        "MBPP/100",
+        "MBPP/106",
+        "MBPP/240",
+        "MBPP/378",
+        "MBPP/526",
+        "MBPP/619",
+        "MBPP/665",
+        "MBPP/720",
+        "MBPP/783",
+        "MBPP/838",
+        "MBPP/844"
+      ]
+    }
+  ]
+}

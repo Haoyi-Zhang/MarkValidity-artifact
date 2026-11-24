@@ -1,0 +1,18 @@
+{
+  "status": "FIXED_BEFORE_EXECUTION",
+  "created_at_utc": "2026-11-19T15:07:12.999162+00:00",
+  "study": "catalogue",
+  "generation_origin": "catalogue-ablation",
+  "generation_results_sha256": "ae3a1a85f2f2c67a9110dc47b83a25a6638a53297f523aac513a3c7f1af0e0d6",
+  "input_task_table_sha256": "1d7b0762c9c2151abd748679a4f60768e62eaa2e4f9457402e7f7721aa4b99e8",
+  "producer_files": {
+    "bind_fresh_native_evidence.py": "8f168ad87ea0144d2358f854fa49cf645bca2b91bea7518619c140929df06149",
+    "run_crest_study.py": "42e2b19905af4051ec583466f89b152971aae8fad84492efcd2df1bc74daa12a"
+  },
+  "native_contract": "Every receipt retains the exact request submitted to its fresh worker, worker-source identity, and execution environment. Generated completion requests use exact official prompt context; canonical benchmarks use their original native contract.",
+  "emission_policy": "Completed deterministic upstream rejection has known E=0 and zero operational output yield. Program V and detector D remain N/A. Interrupted/unavailable emission remains unknown.",
+  "historical_native_labels_used_for_new_decisions": false,
+  "comparison_to_earlier_measurement": "Earlier labels are compared only after fresh execution, solely to detect disagreements; they never determine a new label.",
+  "workers": 4,
+  "timing_claim": "Correctness and provenance validation only; not a speed comparison."
+}

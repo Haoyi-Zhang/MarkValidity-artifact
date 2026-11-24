@@ -1,0 +1,13 @@
+{
+  "stdout": "{\"elapsed_seconds\":0.002838,\"error\":null,\"observations\":[{\"after\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"3\"],[\"int\",\"4\"],[\"int\",\"5\"],[\"int\",\"1\"],[\"int\",\"2\"]]]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"3\"],[\"int\",\"4\"],[\"int\",\"5\"],[\"int\",\"1\"],[\"int\",\"2\"]]]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"bool\",true]]},{\"after\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"3\"],[\"int\",\"5\"],[\"int\",\"10\"],[\"int\",\"1\"],[\"int\",\"2\"]]]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"3\"],[\"int\",\"5\"],[\"int\",\"10\"],[\"int\",\"1\"],[\"int\",\"2\"]]]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"bool\",true]]},{\"after\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"4\"],[\"int\",\"3\"],[\"int\",\"1\"],[\"int\",\"2\"]]]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"4\"],[\"int\",\"3\"],[\"int\",\"1\"],[\"int\",\"2\"]]]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"bool\",false]]},{\"after\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"3\"],[\"int\",\"5\"],[\"int\",\"4\"],[\"int\",\"1\"],[\"int\",\"2\"]]]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"3\"],[\"int\",\"5\"],[\"int\",\"4\"],[\"int\",\"1\"],[\"int\",\"2\"]]]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"bool\",false]]},{\"after\":{\"args\":[\"tuple\",[[\"list\",[]]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"list\",[]]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"bool\",true]]}],\"status\":\"passed\",\"stderr\":\"\",\"stdout\":\"\"}\n",
+  "stderr": "",
+  "returncode": 0,
+  "interruption": null,
+  "child_user_cpu_seconds": 0.03183799999999337,
+  "child_system_cpu_seconds": 0.003537999999998931,
+  "group": "9a681a78d4e28afa94669274a8335386108e04b0eeb118e2be4b94649661a693",
+  "received_label": true,
+  "source_sha256": "2c131a5959d1087cb7422bdadd603b328176ea85c2e784e64fc3b6277516aa80",
+  "contract_sha256": "888a155d79c01620d499a9f5e8a701e06dd893b6845b39da8a2416f5a09fd358",
+  "worker_seconds": 0.04502297499857377
+}

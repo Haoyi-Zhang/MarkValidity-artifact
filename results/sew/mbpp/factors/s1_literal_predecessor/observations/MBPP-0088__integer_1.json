@@ -1,0 +1,56 @@
+{
+  "status": "passed",
+  "returncode": 0,
+  "stderr": "",
+  "events": [
+    {
+      "error": null,
+      "event": "source_compile",
+      "status": "passed"
+    },
+    {
+      "assertion_reached": true,
+      "elapsed_seconds": 0.000101,
+      "error": null,
+      "event": "test_result",
+      "status": "passed",
+      "stderr": "",
+      "stdout": "",
+      "test_index": 0
+    },
+    {
+      "assertion_reached": true,
+      "elapsed_seconds": 5.5e-05,
+      "error": null,
+      "event": "test_result",
+      "status": "passed",
+      "stderr": "",
+      "stdout": "",
+      "test_index": 1
+    },
+    {
+      "assertion_reached": true,
+      "elapsed_seconds": 5e-05,
+      "error": null,
+      "event": "test_result",
+      "status": "passed",
+      "stderr": "",
+      "stdout": "",
+      "test_index": 2
+    },
+    {
+      "completed_tests": 3,
+      "elapsed_seconds": 0.002058,
+      "event": "complete",
+      "evidence_schema": "markvalidity-mbpp-original-assertions-v2",
+      "failed_tests": 0,
+      "passed_tests": 3,
+      "rejected_tests": 0,
+      "scheduled_tests": 3,
+      "status": "passed",
+      "unavailable_tests": 0
+    }
+  ],
+  "raw_stdout": null,
+  "elapsed_seconds": 0.044965
+}

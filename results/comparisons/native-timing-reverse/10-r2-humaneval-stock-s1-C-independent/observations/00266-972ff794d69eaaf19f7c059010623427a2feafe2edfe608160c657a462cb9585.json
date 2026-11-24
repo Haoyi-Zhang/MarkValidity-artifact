@@ -1,0 +1,13 @@
+{
+  "stdout": "{\"elapsed_seconds\":0.002883,\"error\":null,\"observations\":[{\"after\":{\"args\":[\"tuple\",[[\"str\",\"5 apples and 6 oranges\"],[\"int\",\"19\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"5 apples and 6 oranges\"],[\"int\",\"19\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"8\"]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"5 apples and 6 oranges\"],[\"int\",\"21\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"5 apples and 6 oranges\"],[\"int\",\"21\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"10\"]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"0 apples and 1 oranges\"],[\"int\",\"3\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"0 apples and 1 oranges\"],[\"int\",\"3\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"2\"]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"1 apples and 0 oranges\"],[\"int\",\"3\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"1 apples and 0 oranges\"],[\"int\",\"3\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"2\"]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"2 apples and 3 oranges\"],[\"int\",\"100\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"2 apples and 3 oranges\"],[\"int\",\"100\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"95\"]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"2 apples and 3 oranges\"],[\"int\",\"5\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"2 apples and 3 oranges\"],[\"int\",\"5\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"0\"]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"1 apples and 100 oranges\"],[\"int\",\"120\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"1 apples and 100 oranges\"],[\"int\",\"120\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"19\"]]}],\"status\":\"passed\",\"stderr\":\"\",\"stdout\":\"\"}\n",
+  "stderr": "",
+  "returncode": 0,
+  "interruption": null,
+  "child_user_cpu_seconds": 0.033496999999997,
+  "child_system_cpu_seconds": 0.0,
+  "group": "972ff794d69eaaf19f7c059010623427a2feafe2edfe608160c657a462cb9585",
+  "received_label": true,
+  "source_sha256": "f8bdbba0957db4225ce302dbd09c489f033fd983016eb5923d8d234ae5952f76",
+  "contract_sha256": "497b32d32d799a82f16b7837ef10940e2694ae2e5395941066825961d84b56bb",
+  "worker_seconds": 0.03470529599871952
+}

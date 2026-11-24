@@ -1,0 +1,27 @@
+{
+  "current": {
+    "status": "Current article and supplement; both watermark studies, paired certificates and native timing.",
+    "passage_root": "manuscript-reporting/current",
+    "snapshot_manifest": "manuscript-reporting/current/manifest.json",
+    "integrated_paper": "../paper",
+    "primary_ledgers": [
+      "results/revision-sew-natural/humaneval/rows.json",
+      "results/revision-sew-natural/mbpp/factors/normalized_rows.json"
+    ],
+    "analysis_root": "results/revision-sew-natural/analysis-primary",
+    "all_withheld_root": "results/revision-sew-natural/analysis-all-withheld",
+    "native_receipt": "results/revision-sew-natural/native-audit/receipt.json",
+    "enhanced_rows": "results/revision-sew-natural/enhanced-humaneval/rows.json",
+    "generator": "external-studies/sew_natural/analysis/generate_paper.py",
+    "analysis_source": "external-studies/sew_natural/analysis/natural_analysis.py",
+    "native_driver": "external-studies/sew_natural/analysis/audit_native.py",
+    "renderer": "external-studies/sew_natural/analysis/plot_comparisons.py",
+    "own_order_root": "results/revision-sew-comparison-costs/retrospective-primary",
+    "own_order_all_withheld_root": "results/revision-sew-comparison-costs/retrospective-all-withheld",
+    "comparison_cost_summary": "results/revision-sew-comparison-costs/summary.json",
+    "regression_modules": [
+      "test_natural_reporting",
+      "test_publication_reporting"
+    ]
+  }
+}

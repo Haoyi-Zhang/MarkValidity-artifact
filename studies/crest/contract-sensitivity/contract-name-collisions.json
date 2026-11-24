@@ -1,0 +1,337 @@
+{
+  "status": "DOCUMENTED",
+  "scanned_official_contracts_per_cohort": 1138,
+  "affected_task_contracts": 4,
+  "cohort_task_rows": 8,
+  "policy": "No source or test repair. Official assembly retained. These are input/candidate outcomes under that contract, not watermark-induced failures or general model-capability estimates.",
+  "records": [
+    {
+      "cohort": "gpt4o",
+      "dataset": "MBPP",
+      "task_id": "MBPP/56",
+      "entry_point": "check",
+      "collision": "The official test defines check(candidate), replacing the program entry of the same name before the official final call check(check). The suite therefore calls its own test function as candidate.",
+      "test_definition_lines": [
+        6
+      ],
+      "source": "def check(n):\n    rev_n = int(str(n)[::-1])\n    return n == 2 * rev_n - 1",
+      "official_test": "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(70) == False\n    assert candidate(23) == False\n    assert candidate(73) == True\n\n",
+      "final_call": "check(check)",
+      "native_outcomes": {
+        "reference": {
+          "label": false,
+          "error": {
+            "message": "'int' object is not callable",
+            "phase": "execute_check_program",
+            "type": "builtins.TypeError"
+          }
+        },
+        "candidate": {
+          "label": false,
+          "error": {
+            "message": "'int' object is not callable",
+            "phase": "execute_check_program",
+            "type": "builtins.TypeError"
+          }
+        }
+      },
+      "typed_to_direct": {
+        "reference": {
+          "typed_label": true,
+          "assertion_label": false
+        },
+        "candidate": {
+          "typed_label": true,
+          "assertion_label": false
+        }
+      }
+    },
+    {
+      "cohort": "gpt4o",
+      "dataset": "MBPP",
+      "task_id": "MBPP/349",
+      "entry_point": "check",
+      "collision": "The official test defines check(candidate), replacing the program entry of the same name before the official final call check(check). The suite therefore calls its own test function as candidate.",
+      "test_definition_lines": [
+        6
+      ],
+      "source": "def check(string):\n    return 'Yes' if all((c in '01' for c in string)) else 'No'",
+      "official_test": "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"01010101010\") == \"Yes\"\n    assert candidate(\"name0\") == \"No\"\n    assert candidate(\"101\") == \"Yes\"\n\n",
+      "final_call": "check(check)",
+      "native_outcomes": {
+        "reference": {
+          "label": false,
+          "error": {
+            "message": "'str' object is not callable",
+            "phase": "execute_check_program",
+            "type": "builtins.TypeError"
+          }
+        },
+        "candidate": {
+          "label": false,
+          "error": {
+            "message": "'str' object is not callable",
+            "phase": "execute_check_program",
+            "type": "builtins.TypeError"
+          }
+        }
+      },
+      "typed_to_direct": {
+        "reference": {
+          "typed_label": true,
+          "assertion_label": false
+        },
+        "candidate": {
+          "typed_label": true,
+          "assertion_label": false
+        }
+      }
+    },
+    {
+      "cohort": "gpt4o",
+      "dataset": "MBPP",
+      "task_id": "MBPP/899",
+      "entry_point": "check",
+      "collision": "The official test defines check(candidate), replacing the program entry of the same name before the official final call check(check). The suite therefore calls its own test function as candidate.",
+      "test_definition_lines": [
+        6
+      ],
+      "source": "def check(arr, n):\n    left, right = (0, n - 1)\n    prev = float('-inf')\n    while left <= right:\n        if arr[left] <= arr[right]:\n            if arr[left] >= prev:\n                prev = arr[left]\n                left += 1\n            else:\n                return False\n        elif arr[right] >= prev:\n            prev = arr[right]\n            right -= 1\n        else:\n            return False\n    return True",
+      "official_test": "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([3,2,1,2,3,4],6) == True\n    assert candidate([2,1,4,5,1],5) == True\n    assert candidate([1,2,2,1,2,3],6) == True\n\n",
+      "final_call": "check(check)",
+      "native_outcomes": {
+        "reference": {
+          "label": false,
+          "error": {
+            "message": "check() takes 1 positional argument but 2 were given",
+            "phase": "execute_check_program",
+            "type": "builtins.TypeError"
+          }
+        },
+        "candidate": {
+          "label": false,
+          "error": {
+            "message": "check() takes 1 positional argument but 2 were given",
+            "phase": "execute_check_program",
+            "type": "builtins.TypeError"
+          }
+        }
+      },
+      "typed_to_direct": {
+        "reference": {
+          "typed_label": false,
+          "assertion_label": false
+        },
+        "candidate": {
+          "typed_label": false,
+          "assertion_label": false
+        }
+      }
+    },
+    {
+      "cohort": "gpt4o",
+      "dataset": "MBPP",
+      "task_id": "MBPP/967",
+      "entry_point": "check",
+      "collision": "The official test defines check(candidate), replacing the program entry of the same name before the official final call check(check). The suite therefore calls its own test function as candidate.",
+      "test_definition_lines": [
+        6
+      ],
+      "source": "def check(string):\n    string = string.lower()\n    vowels = set('aeiou')\n    if vowels.issubset(set(string)):\n        return 'accepted'\n    else:\n        return 'not accepted'",
+      "official_test": "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"SEEquoiaL\") == 'accepted'\n    assert candidate('program') == \"not accepted\"\n    assert candidate('fine') == \"not accepted\"\n\n",
+      "final_call": "check(check)",
+      "native_outcomes": {
+        "reference": {
+          "label": false,
+          "error": {
+            "message": "'str' object is not callable",
+            "phase": "execute_check_program",
+            "type": "builtins.TypeError"
+          }
+        },
+        "candidate": {
+          "label": false,
+          "error": {
+            "message": "'str' object is not callable",
+            "phase": "execute_check_program",
+            "type": "builtins.TypeError"
+          }
+        }
+      },
+      "typed_to_direct": {
+        "reference": {
+          "typed_label": true,
+          "assertion_label": false
+        },
+        "candidate": {
+          "typed_label": true,
+          "assertion_label": false
+        }
+      }
+    },
+    {
+      "cohort": "qwen",
+      "dataset": "MBPP",
+      "task_id": "MBPP/56",
+      "entry_point": "check",
+      "collision": "The official test defines check(candidate), replacing the program entry of the same name before the official final call check(check). The suite therefore calls its own test function as candidate.",
+      "test_definition_lines": [
+        6
+      ],
+      "source": "\ndef check(n):\n    reverse_n = int(str(n)[::-1])\n    return n == 2 * reverse_n - 1\n",
+      "official_test": "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(70) == False\n    assert candidate(23) == False\n    assert candidate(73) == True\n\n",
+      "final_call": "check(check)",
+      "native_outcomes": {
+        "reference": {
+          "label": false,
+          "error": {
+            "message": "'int' object is not callable",
+            "phase": "execute_check_program",
+            "type": "builtins.TypeError"
+          }
+        },
+        "candidate": {
+          "label": false,
+          "error": {
+            "message": "'int' object is not callable",
+            "phase": "execute_check_program",
+            "type": "builtins.TypeError"
+          }
+        }
+      },
+      "typed_to_direct": {
+        "reference": {
+          "typed_label": true,
+          "assertion_label": false
+        },
+        "candidate": {
+          "typed_label": true,
+          "assertion_label": false
+        }
+      }
+    },
+    {
+      "cohort": "qwen",
+      "dataset": "MBPP",
+      "task_id": "MBPP/349",
+      "entry_point": "check",
+      "collision": "The official test defines check(candidate), replacing the program entry of the same name before the official final call check(check). The suite therefore calls its own test function as candidate.",
+      "test_definition_lines": [
+        6
+      ],
+      "source": "\ndef check(string) :\n    if all(char in '01' for char in string):\n        return \"Yes\"\n    else:\n        return \"No\"\n",
+      "official_test": "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"01010101010\") == \"Yes\"\n    assert candidate(\"name0\") == \"No\"\n    assert candidate(\"101\") == \"Yes\"\n\n",
+      "final_call": "check(check)",
+      "native_outcomes": {
+        "reference": {
+          "label": false,
+          "error": {
+            "message": "'str' object is not callable",
+            "phase": "execute_check_program",
+            "type": "builtins.TypeError"
+          }
+        },
+        "candidate": {
+          "label": false,
+          "error": {
+            "message": "'str' object is not callable",
+            "phase": "execute_check_program",
+            "type": "builtins.TypeError"
+          }
+        }
+      },
+      "typed_to_direct": {
+        "reference": {
+          "typed_label": true,
+          "assertion_label": false
+        },
+        "candidate": {
+          "typed_label": true,
+          "assertion_label": false
+        }
+      }
+    },
+    {
+      "cohort": "qwen",
+      "dataset": "MBPP",
+      "task_id": "MBPP/899",
+      "entry_point": "check",
+      "collision": "The official test defines check(candidate), replacing the program entry of the same name before the official final call check(check). The suite therefore calls its own test function as candidate.",
+      "test_definition_lines": [
+        6
+      ],
+      "source": "\ndef check(arr, n):\n    left = 0\n    right = n - 1\n    \n    while left < right and arr[left] <= arr[left + 1]:\n        left += 1\n    \n    if left == n - 1:\n        return True\n    \n    while right > left and arr[right] >= arr[right - 1]:\n        right -= 1\n    \n    if arr[left] <= arr[right]:\n        return True\n    \n    return False\n",
+      "official_test": "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([3,2,1,2,3,4],6) == True\n    assert candidate([2,1,4,5,1],5) == True\n    assert candidate([1,2,2,1,2,3],6) == True\n\n",
+      "final_call": "check(check)",
+      "native_outcomes": {
+        "reference": {
+          "label": false,
+          "error": {
+            "message": "check() takes 1 positional argument but 2 were given",
+            "phase": "execute_check_program",
+            "type": "builtins.TypeError"
+          }
+        },
+        "candidate": {
+          "label": false,
+          "error": {
+            "message": "check() takes 1 positional argument but 2 were given",
+            "phase": "execute_check_program",
+            "type": "builtins.TypeError"
+          }
+        }
+      },
+      "typed_to_direct": {
+        "reference": {
+          "typed_label": false,
+          "assertion_label": false
+        },
+        "candidate": {
+          "typed_label": false,
+          "assertion_label": false
+        }
+      }
+    },
+    {
+      "cohort": "qwen",
+      "dataset": "MBPP",
+      "task_id": "MBPP/967",
+      "entry_point": "check",
+      "collision": "The official test defines check(candidate), replacing the program entry of the same name before the official final call check(check). The suite therefore calls its own test function as candidate.",
+      "test_definition_lines": [
+        6
+      ],
+      "source": "\ndef check(string):\n    vowels = set(\"aeiouAEIOU\")\n    if vowels.issubset(set(string)):\n        return 'accepted'\n    else:\n        return \"not accepted\"\n",
+      "official_test": "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"SEEquoiaL\") == 'accepted'\n    assert candidate('program') == \"not accepted\"\n    assert candidate('fine') == \"not accepted\"\n\n",
+      "final_call": "check(check)",
+      "native_outcomes": {
+        "reference": {
+          "label": false,
+          "error": {
+            "message": "'str' object is not callable",
+            "phase": "execute_check_program",
+            "type": "builtins.TypeError"
+          }
+        },
+        "candidate": {
+          "label": false,
+          "error": {
+            "message": "'str' object is not callable",
+            "phase": "execute_check_program",
+            "type": "builtins.TypeError"
+          }
+        }
+      },
+      "typed_to_direct": {
+        "reference": {
+          "typed_label": false,
+          "assertion_label": false
+        },
+        "candidate": {
+          "typed_label": false,
+          "assertion_label": false
+        }
+      }
+    }
+  ]
+}

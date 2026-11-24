@@ -1,0 +1,2488 @@
+{
+  "schema": "markvalidity-comparison-cost-summary-v1",
+  "status": "COMPLETE",
+  "scope": "Own-order retrospective analyses of fixed actual benchmark observations, plus new serial native audit timing. No embedding/detection-generation speed or population timing inference.",
+  "source_sha256": {
+    "summarize.py": "41fad133b9791a80fccc744fb8249feafc75f4a039adbad090cca68f0324d8be"
+  },
+  "input_sha256": {
+    "retrospective-primary/analysis.json": "8b3532de443335facde2dbb4d453862d7252d9d924851054049059eba0472d4b",
+    "retrospective-all-withheld/analysis.json": "d100493a32a5098d4eceaa45688f17cdeb643d1d806399e3936eca04e042b446",
+    "native-timing/receipt.json": "dd2aee7268114bbf702986375921d1bf9f736c5a91dcfd6bb6e1e79183c544d9",
+    "native-timing/protocol.json": "463c576d6e5a4286ed8701cb8113d591d9acc9cdacf95f8ada7ee7a547398c78",
+    "native-timing/common-registration.json": "1d16da8f5625c0e4dbe2f077964af6db827e59f9f54eea66e84531dcbf0634ce",
+    "native-receiving.json": "3450add28bc94dc772fae50266adea4b651d8d7d37b38470f28c5c078b22c3fc",
+    "native-timing-reverse/receipt.json": "154f082875beb6f2814856fa99cf5eb5522aa3e3668681d8225456c6956d792f",
+    "native-timing-reverse/protocol.json": "ae80645779ce3c3be18f0859ca90d2029fe2df80f9f3490533f378c3dc521301",
+    "native-timing-reverse/common-registration.json": "09afecaa46a9aaa0fed3b1478e6298ecb2041a865914defa10e64092e941bf0c",
+    "native-receiving-reverse.json": "3f8fd910955e2309a483bf479da6cf5fd9f2e9b7ab1ce9e7fe79a0356ea6cec4",
+    "retrospective-receiving.json": "348460542463d4cab1cb38c789459905e7d62d28f3b909decd79a1849df71cde",
+    "policy-controls.json": "f15b66407ddfb9b842f13500750d29a6e16448c556c0b526e921880b89694845",
+    "admission-controls.json": "8a680fcbf6caa0272dedbe55740b839983a0500e0945b19c3c5a677c4a5176c6"
+  },
+  "policies": {
+    "coupled_J": "Descending absolute a_L-a_R, then group identity.",
+    "independent_J": "Descending a_L+a_R, skip zero contribution, then group identity.",
+    "coupled_C": "Resolve coefficient-different H first, then descending absolute common-remainder margin coefficient; deterministic identity tie break.",
+    "independent_C": "Minimize worst Boolean next-response sum of individual conditional interval widths; public coefficient-equivalent groups share calculation but not labels; identity tie break. Empty defined subset has span zero only for this heuristic, never for certification."
+  },
+  "pair_comparisons": [
+    {
+      "case": "humaneval__stock__s1",
+      "initialization": "reference_identity_known",
+      "scope": "humaneval",
+      "left": "stock",
+      "right": "s1",
+      "denominator": 492,
+      "coupled_J_queries": 146,
+      "coupled_C_queries": 160,
+      "independent_J_queries": 429,
+      "independent_C_queries": 532,
+      "coupled_J_hindsight_minimum": 75,
+      "independent_J_hindsight_minimum": 358
+    },
+    {
+      "case": "humaneval__stock__s4",
+      "initialization": "reference_identity_known",
+      "scope": "humaneval",
+      "left": "stock",
+      "right": "s4",
+      "denominator": 492,
+      "coupled_J_queries": 0,
+      "coupled_C_queries": 0,
+      "independent_J_queries": 360,
+      "independent_C_queries": 463,
+      "coupled_J_hindsight_minimum": 0,
+      "independent_J_hindsight_minimum": 360
+    },
+    {
+      "case": "humaneval__stock__s1_s4",
+      "initialization": "reference_identity_known",
+      "scope": "humaneval",
+      "left": "stock",
+      "right": "s1_s4",
+      "denominator": 492,
+      "coupled_J_queries": 146,
+      "coupled_C_queries": 160,
+      "independent_J_queries": 429,
+      "independent_C_queries": 532,
+      "coupled_J_hindsight_minimum": 75,
+      "independent_J_hindsight_minimum": 358
+    },
+    {
+      "case": "humaneval__s1__s4",
+      "initialization": "reference_identity_known",
+      "scope": "humaneval",
+      "left": "s1",
+      "right": "s4",
+      "denominator": 492,
+      "coupled_J_queries": 146,
+      "coupled_C_queries": 160,
+      "independent_J_queries": 429,
+      "independent_C_queries": 532,
+      "coupled_J_hindsight_minimum": 75,
+      "independent_J_hindsight_minimum": 358
+    },
+    {
+      "case": "humaneval__s1__s1_s4",
+      "initialization": "reference_identity_known",
+      "scope": "humaneval",
+      "left": "s1",
+      "right": "s1_s4",
+      "denominator": 492,
+      "coupled_J_queries": 0,
+      "coupled_C_queries": 0,
+      "independent_J_queries": 357,
+      "independent_C_queries": 463,
+      "coupled_J_hindsight_minimum": 0,
+      "independent_J_hindsight_minimum": 357
+    },
+    {
+      "case": "humaneval__s4__s1_s4",
+      "initialization": "reference_identity_known",
+      "scope": "humaneval",
+      "left": "s4",
+      "right": "s1_s4",
+      "denominator": 492,
+      "coupled_J_queries": 146,
+      "coupled_C_queries": 160,
+      "independent_J_queries": 429,
+      "independent_C_queries": 532,
+      "coupled_J_hindsight_minimum": 75,
+      "independent_J_hindsight_minimum": 358
+    },
+    {
+      "case": "mbpp__stock__s1",
+      "initialization": "reference_identity_known",
+      "scope": "mbpp",
+      "left": "stock",
+      "right": "s1",
+      "denominator": 1281,
+      "coupled_J_queries": 347,
+      "coupled_C_queries": 376,
+      "independent_J_queries": 976,
+      "independent_C_queries": 1305,
+      "coupled_J_hindsight_minimum": 176,
+      "independent_J_hindsight_minimum": 805
+    },
+    {
+      "case": "mbpp__stock__s4",
+      "initialization": "reference_identity_known",
+      "scope": "mbpp",
+      "left": "stock",
+      "right": "s4",
+      "denominator": 1281,
+      "coupled_J_queries": 1,
+      "coupled_C_queries": 6,
+      "independent_J_queries": 811,
+      "independent_C_queries": 1136,
+      "coupled_J_hindsight_minimum": 1,
+      "independent_J_hindsight_minimum": 811
+    },
+    {
+      "case": "mbpp__stock__s1_s4",
+      "initialization": "reference_identity_known",
+      "scope": "mbpp",
+      "left": "stock",
+      "right": "s1_s4",
+      "denominator": 1281,
+      "coupled_J_queries": 355,
+      "coupled_C_queries": 382,
+      "independent_J_queries": 984,
+      "independent_C_queries": 1311,
+      "coupled_J_hindsight_minimum": 179,
+      "independent_J_hindsight_minimum": 808
+    },
+    {
+      "case": "mbpp__s1__s4",
+      "initialization": "reference_identity_known",
+      "scope": "mbpp",
+      "left": "s1",
+      "right": "s4",
+      "denominator": 1281,
+      "coupled_J_queries": 347,
+      "coupled_C_queries": 382,
+      "independent_J_queries": 976,
+      "independent_C_queries": 1305,
+      "coupled_J_hindsight_minimum": 176,
+      "independent_J_hindsight_minimum": 805
+    },
+    {
+      "case": "mbpp__s1__s1_s4",
+      "initialization": "reference_identity_known",
+      "scope": "mbpp",
+      "left": "s1",
+      "right": "s1_s4",
+      "denominator": 1281,
+      "coupled_J_queries": 1,
+      "coupled_C_queries": 6,
+      "independent_J_queries": 806,
+      "independent_C_queries": 1136,
+      "coupled_J_hindsight_minimum": 1,
+      "independent_J_hindsight_minimum": 806
+    },
+    {
+      "case": "mbpp__s4__s1_s4",
+      "initialization": "reference_identity_known",
+      "scope": "mbpp",
+      "left": "s4",
+      "right": "s1_s4",
+      "denominator": 1281,
+      "coupled_J_queries": 347,
+      "coupled_C_queries": 376,
+      "independent_J_queries": 979,
+      "independent_C_queries": 1305,
+      "coupled_J_hindsight_minimum": 176,
+      "independent_J_hindsight_minimum": 808
+    },
+    {
+      "case": "pooled__stock__s1",
+      "initialization": "reference_identity_known",
+      "scope": "pooled",
+      "left": "stock",
+      "right": "s1",
+      "denominator": 1773,
+      "coupled_J_queries": 493,
+      "coupled_C_queries": 536,
+      "independent_J_queries": 1405,
+      "independent_C_queries": 1837,
+      "coupled_J_hindsight_minimum": 250,
+      "independent_J_hindsight_minimum": 1162
+    },
+    {
+      "case": "pooled__stock__s4",
+      "initialization": "reference_identity_known",
+      "scope": "pooled",
+      "left": "stock",
+      "right": "s4",
+      "denominator": 1773,
+      "coupled_J_queries": 1,
+      "coupled_C_queries": 6,
+      "independent_J_queries": 1171,
+      "independent_C_queries": 1599,
+      "coupled_J_hindsight_minimum": 1,
+      "independent_J_hindsight_minimum": 1171
+    },
+    {
+      "case": "pooled__stock__s1_s4",
+      "initialization": "reference_identity_known",
+      "scope": "pooled",
+      "left": "stock",
+      "right": "s1_s4",
+      "denominator": 1773,
+      "coupled_J_queries": 500,
+      "coupled_C_queries": 542,
+      "independent_J_queries": 1412,
+      "independent_C_queries": 1843,
+      "coupled_J_hindsight_minimum": 253,
+      "independent_J_hindsight_minimum": 1165
+    },
+    {
+      "case": "pooled__s1__s4",
+      "initialization": "reference_identity_known",
+      "scope": "pooled",
+      "left": "s1",
+      "right": "s4",
+      "denominator": 1773,
+      "coupled_J_queries": 493,
+      "coupled_C_queries": 542,
+      "independent_J_queries": 1405,
+      "independent_C_queries": 1837,
+      "coupled_J_hindsight_minimum": 250,
+      "independent_J_hindsight_minimum": 1162
+    },
+    {
+      "case": "pooled__s1__s1_s4",
+      "initialization": "reference_identity_known",
+      "scope": "pooled",
+      "left": "s1",
+      "right": "s1_s4",
+      "denominator": 1773,
+      "coupled_J_queries": 1,
+      "coupled_C_queries": 6,
+      "independent_J_queries": 1163,
+      "independent_C_queries": 1599,
+      "coupled_J_hindsight_minimum": 1,
+      "independent_J_hindsight_minimum": 1163
+    },
+    {
+      "case": "pooled__s4__s1_s4",
+      "initialization": "reference_identity_known",
+      "scope": "pooled",
+      "left": "s4",
+      "right": "s1_s4",
+      "denominator": 1773,
+      "coupled_J_queries": 493,
+      "coupled_C_queries": 536,
+      "independent_J_queries": 1408,
+      "independent_C_queries": 1837,
+      "coupled_J_hindsight_minimum": 250,
+      "independent_J_hindsight_minimum": 1165
+    },
+    {
+      "case": "humaneval__stock__s1",
+      "initialization": "all_withheld",
+      "scope": "humaneval",
+      "left": "stock",
+      "right": "s1",
+      "denominator": 492,
+      "coupled_J_queries": 146,
+      "coupled_C_queries": 160,
+      "independent_J_queries": 429,
+      "independent_C_queries": 535,
+      "coupled_J_hindsight_minimum": 75,
+      "independent_J_hindsight_minimum": 358
+    },
+    {
+      "case": "humaneval__stock__s4",
+      "initialization": "all_withheld",
+      "scope": "humaneval",
+      "left": "stock",
+      "right": "s4",
+      "denominator": 492,
+      "coupled_J_queries": 0,
+      "coupled_C_queries": 1,
+      "independent_J_queries": 360,
+      "independent_C_queries": 466,
+      "coupled_J_hindsight_minimum": 0,
+      "independent_J_hindsight_minimum": 360
+    },
+    {
+      "case": "humaneval__stock__s1_s4",
+      "initialization": "all_withheld",
+      "scope": "humaneval",
+      "left": "stock",
+      "right": "s1_s4",
+      "denominator": 492,
+      "coupled_J_queries": 146,
+      "coupled_C_queries": 160,
+      "independent_J_queries": 429,
+      "independent_C_queries": 535,
+      "coupled_J_hindsight_minimum": 75,
+      "independent_J_hindsight_minimum": 358
+    },
+    {
+      "case": "humaneval__s1__s4",
+      "initialization": "all_withheld",
+      "scope": "humaneval",
+      "left": "s1",
+      "right": "s4",
+      "denominator": 492,
+      "coupled_J_queries": 146,
+      "coupled_C_queries": 160,
+      "independent_J_queries": 429,
+      "independent_C_queries": 535,
+      "coupled_J_hindsight_minimum": 75,
+      "independent_J_hindsight_minimum": 358
+    },
+    {
+      "case": "humaneval__s1__s1_s4",
+      "initialization": "all_withheld",
+      "scope": "humaneval",
+      "left": "s1",
+      "right": "s1_s4",
+      "denominator": 492,
+      "coupled_J_queries": 0,
+      "coupled_C_queries": 1,
+      "independent_J_queries": 357,
+      "independent_C_queries": 466,
+      "coupled_J_hindsight_minimum": 0,
+      "independent_J_hindsight_minimum": 357
+    },
+    {
+      "case": "humaneval__s4__s1_s4",
+      "initialization": "all_withheld",
+      "scope": "humaneval",
+      "left": "s4",
+      "right": "s1_s4",
+      "denominator": 492,
+      "coupled_J_queries": 146,
+      "coupled_C_queries": 160,
+      "independent_J_queries": 429,
+      "independent_C_queries": 535,
+      "coupled_J_hindsight_minimum": 75,
+      "independent_J_hindsight_minimum": 358
+    },
+    {
+      "case": "mbpp__stock__s1",
+      "initialization": "all_withheld",
+      "scope": "mbpp",
+      "left": "stock",
+      "right": "s1",
+      "denominator": 1281,
+      "coupled_J_queries": 348,
+      "coupled_C_queries": 380,
+      "independent_J_queries": 977,
+      "independent_C_queries": 1327,
+      "coupled_J_hindsight_minimum": 177,
+      "independent_J_hindsight_minimum": 806
+    },
+    {
+      "case": "mbpp__stock__s4",
+      "initialization": "all_withheld",
+      "scope": "mbpp",
+      "left": "stock",
+      "right": "s4",
+      "denominator": 1281,
+      "coupled_J_queries": 1,
+      "coupled_C_queries": 7,
+      "independent_J_queries": 812,
+      "independent_C_queries": 1156,
+      "coupled_J_hindsight_minimum": 1,
+      "independent_J_hindsight_minimum": 812
+    },
+    {
+      "case": "mbpp__stock__s1_s4",
+      "initialization": "all_withheld",
+      "scope": "mbpp",
+      "left": "stock",
+      "right": "s1_s4",
+      "denominator": 1281,
+      "coupled_J_queries": 356,
+      "coupled_C_queries": 386,
+      "independent_J_queries": 985,
+      "independent_C_queries": 1333,
+      "coupled_J_hindsight_minimum": 180,
+      "independent_J_hindsight_minimum": 809
+    },
+    {
+      "case": "mbpp__s1__s4",
+      "initialization": "all_withheld",
+      "scope": "mbpp",
+      "left": "s1",
+      "right": "s4",
+      "denominator": 1281,
+      "coupled_J_queries": 348,
+      "coupled_C_queries": 386,
+      "independent_J_queries": 977,
+      "independent_C_queries": 1327,
+      "coupled_J_hindsight_minimum": 177,
+      "independent_J_hindsight_minimum": 806
+    },
+    {
+      "case": "mbpp__s1__s1_s4",
+      "initialization": "all_withheld",
+      "scope": "mbpp",
+      "left": "s1",
+      "right": "s1_s4",
+      "denominator": 1281,
+      "coupled_J_queries": 1,
+      "coupled_C_queries": 7,
+      "independent_J_queries": 806,
+      "independent_C_queries": 1156,
+      "coupled_J_hindsight_minimum": 1,
+      "independent_J_hindsight_minimum": 806
+    },
+    {
+      "case": "mbpp__s4__s1_s4",
+      "initialization": "all_withheld",
+      "scope": "mbpp",
+      "left": "s4",
+      "right": "s1_s4",
+      "denominator": 1281,
+      "coupled_J_queries": 348,
+      "coupled_C_queries": 380,
+      "independent_J_queries": 980,
+      "independent_C_queries": 1327,
+      "coupled_J_hindsight_minimum": 177,
+      "independent_J_hindsight_minimum": 809
+    },
+    {
+      "case": "pooled__stock__s1",
+      "initialization": "all_withheld",
+      "scope": "pooled",
+      "left": "stock",
+      "right": "s1",
+      "denominator": 1773,
+      "coupled_J_queries": 494,
+      "coupled_C_queries": 540,
+      "independent_J_queries": 1406,
+      "independent_C_queries": 1862,
+      "coupled_J_hindsight_minimum": 251,
+      "independent_J_hindsight_minimum": 1163
+    },
+    {
+      "case": "pooled__stock__s4",
+      "initialization": "all_withheld",
+      "scope": "pooled",
+      "left": "stock",
+      "right": "s4",
+      "denominator": 1773,
+      "coupled_J_queries": 1,
+      "coupled_C_queries": 7,
+      "independent_J_queries": 1172,
+      "independent_C_queries": 1622,
+      "coupled_J_hindsight_minimum": 1,
+      "independent_J_hindsight_minimum": 1172
+    },
+    {
+      "case": "pooled__stock__s1_s4",
+      "initialization": "all_withheld",
+      "scope": "pooled",
+      "left": "stock",
+      "right": "s1_s4",
+      "denominator": 1773,
+      "coupled_J_queries": 501,
+      "coupled_C_queries": 546,
+      "independent_J_queries": 1413,
+      "independent_C_queries": 1868,
+      "coupled_J_hindsight_minimum": 254,
+      "independent_J_hindsight_minimum": 1166
+    },
+    {
+      "case": "pooled__s1__s4",
+      "initialization": "all_withheld",
+      "scope": "pooled",
+      "left": "s1",
+      "right": "s4",
+      "denominator": 1773,
+      "coupled_J_queries": 494,
+      "coupled_C_queries": 546,
+      "independent_J_queries": 1406,
+      "independent_C_queries": 1862,
+      "coupled_J_hindsight_minimum": 251,
+      "independent_J_hindsight_minimum": 1163
+    },
+    {
+      "case": "pooled__s1__s1_s4",
+      "initialization": "all_withheld",
+      "scope": "pooled",
+      "left": "s1",
+      "right": "s1_s4",
+      "denominator": 1773,
+      "coupled_J_queries": 1,
+      "coupled_C_queries": 7,
+      "independent_J_queries": 1163,
+      "independent_C_queries": 1622,
+      "coupled_J_hindsight_minimum": 1,
+      "independent_J_hindsight_minimum": 1163
+    },
+    {
+      "case": "pooled__s4__s1_s4",
+      "initialization": "all_withheld",
+      "scope": "pooled",
+      "left": "s4",
+      "right": "s1_s4",
+      "denominator": 1773,
+      "coupled_J_queries": 494,
+      "coupled_C_queries": 540,
+      "independent_J_queries": 1409,
+      "independent_C_queries": 1862,
+      "coupled_J_hindsight_minimum": 251,
+      "independent_J_hindsight_minimum": 1166
+    }
+  ],
+  "native_timing": {
+    "repeats": 6,
+    "repeats_per_block": 3,
+    "blocks": 2,
+    "runs": 48,
+    "candidate_suite_executions": 19326,
+    "cross_run_candidate_label_reuse": false,
+    "common_preparation": {
+      "block": "native-timing",
+      "load_seconds": 0.038040241997805424,
+      "validate_register_seconds": 2.1053203560004476,
+      "total_seconds": 2.143360597998253,
+      "public_rows": 7092,
+      "public_groups": 1893,
+      "candidate_observation_files_read": 0,
+      "scope": "Parse public rows and verify emitted/reference sources, contracts and qualified reference observations. No candidate result is available to this phase.",
+      "compatibility_note": "First block only; both separately measured preparation times are in common_preparations."
+    },
+    "common_preparations": [
+      {
+        "block": "native-timing",
+        "load_seconds": 0.038040241997805424,
+        "validate_register_seconds": 2.1053203560004476,
+        "total_seconds": 2.143360597998253,
+        "public_rows": 7092,
+        "public_groups": 1893,
+        "candidate_observation_files_read": 0,
+        "scope": "Parse public rows and verify emitted/reference sources, contracts and qualified reference observations. No candidate result is available to this phase."
+      },
+      {
+        "block": "native-timing-reverse",
+        "load_seconds": 0.040494492001016624,
+        "validate_register_seconds": 1.4997845839970978,
+        "total_seconds": 1.5402790759981144,
+        "public_rows": 7092,
+        "public_groups": 1893,
+        "candidate_observation_files_read": 0,
+        "scope": "Parse public rows and verify emitted/reference sources, contracts and qualified reference observations. No candidate result is available to this phase."
+      }
+    ],
+    "phase_definitions": {
+      "common_load_register": "Public registry parsing, source/contract/reference-observation hashing and row registration, performed once and reported separately.",
+      "register_seconds": "Per-run coefficient construction, reference-identity admission, target state and method-specific policy initialization.",
+      "select_seconds": "Choose the next group from public state before executing it.",
+      "bounds_seconds": "Compute only this method and target's current bound and stopping decision.",
+      "worker_seconds": "Build and validate the frozen request, launch the isolated subprocess, capture output and clean its temporary directory; includes launch overhead.",
+      "receive_seconds": "Parse the new stdout and admit its result into the method state.",
+      "record_seconds": "Serialize and write raw observations and trace records.",
+      "audit_total_seconds": "Wall time from per-run registration through the certified stop, including the measured phases and loop overhead."
+    },
+    "environment": {
+      "python": "3.12.14",
+      "sys_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+      "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+      "cpu_count_reported": 9,
+      "interpreter_executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7"
+    },
+    "run_order": [
+      {
+        "repeat": 1,
+        "dataset": "HumanEval",
+        "scope": "humaneval",
+        "left": "stock",
+        "right": "s1",
+        "target": "J",
+        "method": "coupled",
+        "policy": "joint_width_per_suite",
+        "block": "native-timing"
+      },
+      {
+        "repeat": 1,
+        "dataset": "HumanEval",
+        "scope": "humaneval",
+        "left": "stock",
+        "right": "s1",
+        "target": "J",
+        "method": "independent",
+        "policy": "independent_joint_width",
+        "block": "native-timing"
+      },
+      {
+        "repeat": 1,
+        "dataset": "HumanEval",
+        "scope": "humaneval",
+        "left": "stock",
+        "right": "s1",
+        "target": "C",
+        "method": "independent",
+        "policy": "independent_conditional_minimax_width",
+        "block": "native-timing"
+      },
+      {
+        "repeat": 1,
+        "dataset": "HumanEval",
+        "scope": "humaneval",
+        "left": "stock",
+        "right": "s1",
+        "target": "C",
+        "method": "coupled",
+        "policy": "conditional_differences_first",
+        "block": "native-timing"
+      },
+      {
+        "repeat": 1,
+        "dataset": "mbpp_sanitized",
+        "scope": "mbpp",
+        "left": "stock",
+        "right": "s4",
+        "target": "J",
+        "method": "coupled",
+        "policy": "joint_width_per_suite",
+        "block": "native-timing"
+      },
+      {
+        "repeat": 1,
+        "dataset": "mbpp_sanitized",
+        "scope": "mbpp",
+        "left": "stock",
+        "right": "s4",
+        "target": "J",
+        "method": "independent",
+        "policy": "independent_joint_width",
+        "block": "native-timing"
+      },
+      {
+        "repeat": 1,
+        "dataset": "mbpp_sanitized",
+        "scope": "mbpp",
+        "left": "stock",
+        "right": "s4",
+        "target": "C",
+        "method": "independent",
+        "policy": "independent_conditional_minimax_width",
+        "block": "native-timing"
+      },
+      {
+        "repeat": 1,
+        "dataset": "mbpp_sanitized",
+        "scope": "mbpp",
+        "left": "stock",
+        "right": "s4",
+        "target": "C",
+        "method": "coupled",
+        "policy": "conditional_differences_first",
+        "block": "native-timing"
+      },
+      {
+        "repeat": 2,
+        "dataset": "HumanEval",
+        "scope": "humaneval",
+        "left": "stock",
+        "right": "s1",
+        "target": "C",
+        "method": "independent",
+        "policy": "independent_conditional_minimax_width",
+        "block": "native-timing"
+      },
+      {
+        "repeat": 2,
+        "dataset": "HumanEval",
+        "scope": "humaneval",
+        "left": "stock",
+        "right": "s1",
+        "target": "C",
+        "method": "coupled",
+        "policy": "conditional_differences_first",
+        "block": "native-timing"
+      },
+      {
+        "repeat": 2,
+        "dataset": "mbpp_sanitized",
+        "scope": "mbpp",
+        "left": "stock",
+        "right": "s4",
+        "target": "J",
+        "method": "coupled",
+        "policy": "joint_width_per_suite",
+        "block": "native-timing"
+      },
+      {
+        "repeat": 2,
+        "dataset": "mbpp_sanitized",
+        "scope": "mbpp",
+        "left": "stock",
+        "right": "s4",
+        "target": "J",
+        "method": "independent",
+        "policy": "independent_joint_width",
+        "block": "native-timing"
+      },
+      {
+        "repeat": 2,
+        "dataset": "mbpp_sanitized",
+        "scope": "mbpp",
+        "left": "stock",
+        "right": "s4",
+        "target": "C",
+        "method": "independent",
+        "policy": "independent_conditional_minimax_width",
+        "block": "native-timing"
+      },
+      {
+        "repeat": 2,
+        "dataset": "mbpp_sanitized",
+        "scope": "mbpp",
+        "left": "stock",
+        "right": "s4",
+        "target": "C",
+        "method": "coupled",
+        "policy": "conditional_differences_first",
+        "block": "native-timing"
+      },
+      {
+        "repeat": 2,
+        "dataset": "HumanEval",
+        "scope": "humaneval",
+        "left": "stock",
+        "right": "s1",
+        "target": "J",
+        "method": "coupled",
+        "policy": "joint_width_per_suite",
+        "block": "native-timing"
+      },
+      {
+        "repeat": 2,
+        "dataset": "HumanEval",
+        "scope": "humaneval",
+        "left": "stock",
+        "right": "s1",
+        "target": "J",
+        "method": "independent",
+        "policy": "independent_joint_width",
+        "block": "native-timing"
+      },
+      {
+        "repeat": 3,
+        "dataset": "mbpp_sanitized",
+        "scope": "mbpp",
+        "left": "stock",
+        "right": "s4",
+        "target": "J",
+        "method": "coupled",
+        "policy": "joint_width_per_suite",
+        "block": "native-timing"
+      },
+      {
+        "repeat": 3,
+        "dataset": "mbpp_sanitized",
+        "scope": "mbpp",
+        "left": "stock",
+        "right": "s4",
+        "target": "J",
+        "method": "independent",
+        "policy": "independent_joint_width",
+        "block": "native-timing"
+      },
+      {
+        "repeat": 3,
+        "dataset": "mbpp_sanitized",
+        "scope": "mbpp",
+        "left": "stock",
+        "right": "s4",
+        "target": "C",
+        "method": "independent",
+        "policy": "independent_conditional_minimax_width",
+        "block": "native-timing"
+      },
+      {
+        "repeat": 3,
+        "dataset": "mbpp_sanitized",
+        "scope": "mbpp",
+        "left": "stock",
+        "right": "s4",
+        "target": "C",
+        "method": "coupled",
+        "policy": "conditional_differences_first",
+        "block": "native-timing"
+      },
+      {
+        "repeat": 3,
+        "dataset": "HumanEval",
+        "scope": "humaneval",
+        "left": "stock",
+        "right": "s1",
+        "target": "J",
+        "method": "coupled",
+        "policy": "joint_width_per_suite",
+        "block": "native-timing"
+      },
+      {
+        "repeat": 3,
+        "dataset": "HumanEval",
+        "scope": "humaneval",
+        "left": "stock",
+        "right": "s1",
+        "target": "J",
+        "method": "independent",
+        "policy": "independent_joint_width",
+        "block": "native-timing"
+      },
+      {
+        "repeat": 3,
+        "dataset": "HumanEval",
+        "scope": "humaneval",
+        "left": "stock",
+        "right": "s1",
+        "target": "C",
+        "method": "independent",
+        "policy": "independent_conditional_minimax_width",
+        "block": "native-timing"
+      },
+      {
+        "repeat": 3,
+        "dataset": "HumanEval",
+        "scope": "humaneval",
+        "left": "stock",
+        "right": "s1",
+        "target": "C",
+        "method": "coupled",
+        "policy": "conditional_differences_first",
+        "block": "native-timing"
+      },
+      {
+        "repeat": 1,
+        "dataset": "HumanEval",
+        "scope": "humaneval",
+        "left": "stock",
+        "right": "s1",
+        "target": "J",
+        "method": "independent",
+        "policy": "independent_joint_width",
+        "block": "native-timing-reverse"
+      },
+      {
+        "repeat": 1,
+        "dataset": "HumanEval",
+        "scope": "humaneval",
+        "left": "stock",
+        "right": "s1",
+        "target": "J",
+        "method": "coupled",
+        "policy": "joint_width_per_suite",
+        "block": "native-timing-reverse"
+      },
+      {
+        "repeat": 1,
+        "dataset": "HumanEval",
+        "scope": "humaneval",
+        "left": "stock",
+        "right": "s1",
+        "target": "C",
+        "method": "coupled",
+        "policy": "conditional_differences_first",
+        "block": "native-timing-reverse"
+      },
+      {
+        "repeat": 1,
+        "dataset": "HumanEval",
+        "scope": "humaneval",
+        "left": "stock",
+        "right": "s1",
+        "target": "C",
+        "method": "independent",
+        "policy": "independent_conditional_minimax_width",
+        "block": "native-timing-reverse"
+      },
+      {
+        "repeat": 1,
+        "dataset": "mbpp_sanitized",
+        "scope": "mbpp",
+        "left": "stock",
+        "right": "s4",
+        "target": "J",
+        "method": "independent",
+        "policy": "independent_joint_width",
+        "block": "native-timing-reverse"
+      },
+      {
+        "repeat": 1,
+        "dataset": "mbpp_sanitized",
+        "scope": "mbpp",
+        "left": "stock",
+        "right": "s4",
+        "target": "J",
+        "method": "coupled",
+        "policy": "joint_width_per_suite",
+        "block": "native-timing-reverse"
+      },
+      {
+        "repeat": 1,
+        "dataset": "mbpp_sanitized",
+        "scope": "mbpp",
+        "left": "stock",
+        "right": "s4",
+        "target": "C",
+        "method": "coupled",
+        "policy": "conditional_differences_first",
+        "block": "native-timing-reverse"
+      },
+      {
+        "repeat": 1,
+        "dataset": "mbpp_sanitized",
+        "scope": "mbpp",
+        "left": "stock",
+        "right": "s4",
+        "target": "C",
+        "method": "independent",
+        "policy": "independent_conditional_minimax_width",
+        "block": "native-timing-reverse"
+      },
+      {
+        "repeat": 2,
+        "dataset": "HumanEval",
+        "scope": "humaneval",
+        "left": "stock",
+        "right": "s1",
+        "target": "C",
+        "method": "coupled",
+        "policy": "conditional_differences_first",
+        "block": "native-timing-reverse"
+      },
+      {
+        "repeat": 2,
+        "dataset": "HumanEval",
+        "scope": "humaneval",
+        "left": "stock",
+        "right": "s1",
+        "target": "C",
+        "method": "independent",
+        "policy": "independent_conditional_minimax_width",
+        "block": "native-timing-reverse"
+      },
+      {
+        "repeat": 2,
+        "dataset": "mbpp_sanitized",
+        "scope": "mbpp",
+        "left": "stock",
+        "right": "s4",
+        "target": "J",
+        "method": "independent",
+        "policy": "independent_joint_width",
+        "block": "native-timing-reverse"
+      },
+      {
+        "repeat": 2,
+        "dataset": "mbpp_sanitized",
+        "scope": "mbpp",
+        "left": "stock",
+        "right": "s4",
+        "target": "J",
+        "method": "coupled",
+        "policy": "joint_width_per_suite",
+        "block": "native-timing-reverse"
+      },
+      {
+        "repeat": 2,
+        "dataset": "mbpp_sanitized",
+        "scope": "mbpp",
+        "left": "stock",
+        "right": "s4",
+        "target": "C",
+        "method": "coupled",
+        "policy": "conditional_differences_first",
+        "block": "native-timing-reverse"
+      },
+      {
+        "repeat": 2,
+        "dataset": "mbpp_sanitized",
+        "scope": "mbpp",
+        "left": "stock",
+        "right": "s4",
+        "target": "C",
+        "method": "independent",
+        "policy": "independent_conditional_minimax_width",
+        "block": "native-timing-reverse"
+      },
+      {
+        "repeat": 2,
+        "dataset": "HumanEval",
+        "scope": "humaneval",
+        "left": "stock",
+        "right": "s1",
+        "target": "J",
+        "method": "independent",
+        "policy": "independent_joint_width",
+        "block": "native-timing-reverse"
+      },
+      {
+        "repeat": 2,
+        "dataset": "HumanEval",
+        "scope": "humaneval",
+        "left": "stock",
+        "right": "s1",
+        "target": "J",
+        "method": "coupled",
+        "policy": "joint_width_per_suite",
+        "block": "native-timing-reverse"
+      },
+      {
+        "repeat": 3,
+        "dataset": "mbpp_sanitized",
+        "scope": "mbpp",
+        "left": "stock",
+        "right": "s4",
+        "target": "J",
+        "method": "independent",
+        "policy": "independent_joint_width",
+        "block": "native-timing-reverse"
+      },
+      {
+        "repeat": 3,
+        "dataset": "mbpp_sanitized",
+        "scope": "mbpp",
+        "left": "stock",
+        "right": "s4",
+        "target": "J",
+        "method": "coupled",
+        "policy": "joint_width_per_suite",
+        "block": "native-timing-reverse"
+      },
+      {
+        "repeat": 3,
+        "dataset": "mbpp_sanitized",
+        "scope": "mbpp",
+        "left": "stock",
+        "right": "s4",
+        "target": "C",
+        "method": "coupled",
+        "policy": "conditional_differences_first",
+        "block": "native-timing-reverse"
+      },
+      {
+        "repeat": 3,
+        "dataset": "mbpp_sanitized",
+        "scope": "mbpp",
+        "left": "stock",
+        "right": "s4",
+        "target": "C",
+        "method": "independent",
+        "policy": "independent_conditional_minimax_width",
+        "block": "native-timing-reverse"
+      },
+      {
+        "repeat": 3,
+        "dataset": "HumanEval",
+        "scope": "humaneval",
+        "left": "stock",
+        "right": "s1",
+        "target": "J",
+        "method": "independent",
+        "policy": "independent_joint_width",
+        "block": "native-timing-reverse"
+      },
+      {
+        "repeat": 3,
+        "dataset": "HumanEval",
+        "scope": "humaneval",
+        "left": "stock",
+        "right": "s1",
+        "target": "J",
+        "method": "coupled",
+        "policy": "joint_width_per_suite",
+        "block": "native-timing-reverse"
+      },
+      {
+        "repeat": 3,
+        "dataset": "HumanEval",
+        "scope": "humaneval",
+        "left": "stock",
+        "right": "s1",
+        "target": "C",
+        "method": "coupled",
+        "policy": "conditional_differences_first",
+        "block": "native-timing-reverse"
+      },
+      {
+        "repeat": 3,
+        "dataset": "HumanEval",
+        "scope": "humaneval",
+        "left": "stock",
+        "right": "s1",
+        "target": "C",
+        "method": "independent",
+        "policy": "independent_conditional_minimax_width",
+        "block": "native-timing-reverse"
+      }
+    ],
+    "counterbalance": {
+      "status": "PASS",
+      "first_positions_per_case_method": 3,
+      "second_positions_per_case_method": 3,
+      "design": "Two complementary blocks preserve case rotation and reverse each within-case method pair. The first block is retained unchanged; the second block is bound to its exact protocol."
+    },
+    "rows": [
+      {
+        "case": "humaneval__stock__s1",
+        "scope": "humaneval",
+        "left": "stock",
+        "right": "s1",
+        "target": "J",
+        "method": "coupled",
+        "policy": "joint_width_per_suite",
+        "candidate_suite_queries": 146,
+        "repeats": 6,
+        "additional_audit_seconds": {
+          "median": 4.956264495496725,
+          "minimum": 4.382161294997786,
+          "maximum": 11.785996845996124,
+          "values_in_repeat_order": [
+            4.782586683999398,
+            4.382161294997786,
+            11.785996845996124,
+            4.885823999997228,
+            5.260360918000515,
+            5.0267049909962225
+          ]
+        },
+        "phase_seconds": {
+          "register_seconds": {
+            "median": 0.005808514004456811,
+            "minimum": 0.0040783449949231,
+            "maximum": 0.010445885003719013,
+            "values_in_repeat_order": [
+              0.005603355006314814,
+              0.008000760004506446,
+              0.010445885003719013,
+              0.0040783449949231,
+              0.005247758999757934,
+              0.006013673002598807
+            ]
+          },
+          "select_seconds": {
+            "median": 0.0004983414764865302,
+            "minimum": 0.00035607305471785367,
+            "maximum": 0.002623676038638223,
+            "values_in_repeat_order": [
+              0.00035607305471785367,
+              0.00038822501664981246,
+              0.0006608640251215547,
+              0.0005252279588603415,
+              0.002623676038638223,
+              0.00047145499411271885
+            ]
+          },
+          "bounds_seconds": {
+            "median": 0.0008384149623452686,
+            "minimum": 0.000711205015250016,
+            "maximum": 0.001373931001580786,
+            "values_in_repeat_order": [
+              0.0008357039332622662,
+              0.000711205015250016,
+              0.0008411259914282709,
+              0.001373931001580786,
+              0.0013189860474085435,
+              0.0008257650188170373
+            ]
+          },
+          "worker_seconds": {
+            "median": 4.816990637496929,
+            "minimum": 4.275867771968478,
+            "maximum": 11.647227516055864,
+            "values_in_repeat_order": [
+              4.63367230307631,
+              4.275867771968478,
+              11.647227516055864,
+              4.742694104956172,
+              5.0427814969589235,
+              4.891287170037685
+            ]
+          },
+          "receive_seconds": {
+            "median": 0.023011956029222347,
+            "minimum": 0.01744751307705883,
+            "maximum": 0.04259505898517091,
+            "values_in_repeat_order": [
+              0.01744751307705883,
+              0.022293583024293184,
+              0.02335495502484264,
+              0.04259505898517091,
+              0.026581785030430183,
+              0.022668957033602055
+            ]
+          },
+          "record_seconds": {
+            "median": 0.10170893553367932,
+            "minimum": 0.07236453204677673,
+            "maximum": 0.17573968802025774,
+            "values_in_repeat_order": [
+              0.12203087293892168,
+              0.07236453204677673,
+              0.1009362710028654,
+              0.09185695002088323,
+              0.17573968802025774,
+              0.10248160006449325
+            ]
+          }
+        },
+        "unallocated_loop_seconds": {
+          "median": 0.0026706224962254055,
+          "minimum": 0.0025302288922830485,
+          "maximum": 0.00606752690509893,
+          "values_in_repeat_order": [
+            0.002640862912812736,
+            0.002535217921831645,
+            0.0025302288922830485,
+            0.002700382079638075,
+            0.00606752690509893,
+            0.002956370844913181
+          ]
+        },
+        "run_directories": [
+          "native-timing/01-r1-humaneval-stock-s1-J-coupled",
+          "native-timing/15-r2-humaneval-stock-s1-J-coupled",
+          "native-timing/21-r3-humaneval-stock-s1-J-coupled",
+          "native-timing-reverse/02-r1-humaneval-stock-s1-J-coupled",
+          "native-timing-reverse/16-r2-humaneval-stock-s1-J-coupled",
+          "native-timing-reverse/22-r3-humaneval-stock-s1-J-coupled"
+        ],
+        "measurement_order": [
+          {
+            "block": "native-timing",
+            "repeat": 1,
+            "within_case_position": "first",
+            "run_path": "native-timing/01-r1-humaneval-stock-s1-J-coupled"
+          },
+          {
+            "block": "native-timing",
+            "repeat": 2,
+            "within_case_position": "first",
+            "run_path": "native-timing/15-r2-humaneval-stock-s1-J-coupled"
+          },
+          {
+            "block": "native-timing",
+            "repeat": 3,
+            "within_case_position": "first",
+            "run_path": "native-timing/21-r3-humaneval-stock-s1-J-coupled"
+          },
+          {
+            "block": "native-timing-reverse",
+            "repeat": 1,
+            "within_case_position": "second",
+            "run_path": "native-timing-reverse/02-r1-humaneval-stock-s1-J-coupled"
+          },
+          {
+            "block": "native-timing-reverse",
+            "repeat": 2,
+            "within_case_position": "second",
+            "run_path": "native-timing-reverse/16-r2-humaneval-stock-s1-J-coupled"
+          },
+          {
+            "block": "native-timing-reverse",
+            "repeat": 3,
+            "within_case_position": "second",
+            "run_path": "native-timing-reverse/22-r3-humaneval-stock-s1-J-coupled"
+          }
+        ]
+      },
+      {
+        "case": "humaneval__stock__s1",
+        "scope": "humaneval",
+        "left": "stock",
+        "right": "s1",
+        "target": "J",
+        "method": "independent",
+        "policy": "independent_joint_width",
+        "candidate_suite_queries": 429,
+        "repeats": 6,
+        "additional_audit_seconds": {
+          "median": 15.155337555999722,
+          "minimum": 13.686471082000935,
+          "maximum": 23.970579472996178,
+          "values_in_repeat_order": [
+            14.64322629399976,
+            13.858270694996463,
+            23.970579472996178,
+            13.686471082000935,
+            15.667448817999684,
+            15.787056615001347
+          ]
+        },
+        "phase_seconds": {
+          "register_seconds": {
+            "median": 0.0050300524999329355,
+            "minimum": 0.0041924640026991256,
+            "maximum": 0.009324808001110796,
+            "values_in_repeat_order": [
+              0.005535431999305729,
+              0.0041924640026991256,
+              0.005173277997528203,
+              0.004269372999260668,
+              0.009324808001110796,
+              0.004886827002337668
+            ]
+          },
+          "select_seconds": {
+            "median": 0.0014604654606955592,
+            "minimum": 0.001228050998179242,
+            "maximum": 0.0017963010323001072,
+            "values_in_repeat_order": [
+              0.001414594953530468,
+              0.001479449012549594,
+              0.0014414819088415243,
+              0.001228050998179242,
+              0.001791066097212024,
+              0.0017963010323001072
+            ]
+          },
+          "bounds_seconds": {
+            "median": 0.0033676270140858833,
+            "minimum": 0.0022878430390846916,
+            "maximum": 0.004162319070019294,
+            "values_in_repeat_order": [
+              0.0028909730026498437,
+              0.004162319070019294,
+              0.0031756050084368326,
+              0.0022878430390846916,
+              0.003559649019734934,
+              0.0035992799457744695
+            ]
+          },
+          "worker_seconds": {
+            "median": 14.767579476938408,
+            "minimum": 13.442220340046333,
+            "maximum": 23.59837564402551,
+            "values_in_repeat_order": [
+              14.311292690050323,
+              13.505039685980591,
+              23.59837564402551,
+              13.442220340046333,
+              15.223866263826494,
+              15.455871583035332
+            ]
+          },
+          "receive_seconds": {
+            "median": 0.0711914779858489,
+            "minimum": 0.05139688000053866,
+            "maximum": 0.08596623798075598,
+            "values_in_repeat_order": [
+              0.07358555399696343,
+              0.08052589510043617,
+              0.06879740197473438,
+              0.05139688000053866,
+              0.08596623798075598,
+              0.06856014295772184
+            ]
+          },
+          "record_seconds": {
+            "median": 0.2494339805598429,
+            "minimum": 0.17821999398438493,
+            "maximum": 0.33287310293962946,
+            "values_in_repeat_order": [
+              0.23511339900869643,
+              0.25507318207382923,
+              0.2857813199807424,
+              0.17821999398438493,
+              0.33287310293962946,
+              0.24379477904585656
+            ]
+          }
+        },
+        "unallocated_loop_seconds": {
+          "median": 0.008191222041205037,
+          "minimum": 0.006848600933153648,
+          "maximum": 0.013393650988291483,
+          "values_in_repeat_order": [
+            0.013393650988291483,
+            0.007797699756338261,
+            0.007834742100385483,
+            0.006848600933153648,
+            0.010067690134746954,
+            0.008547701982024591
+          ]
+        },
+        "run_directories": [
+          "native-timing/02-r1-humaneval-stock-s1-J-independent",
+          "native-timing/16-r2-humaneval-stock-s1-J-independent",
+          "native-timing/22-r3-humaneval-stock-s1-J-independent",
+          "native-timing-reverse/01-r1-humaneval-stock-s1-J-independent",
+          "native-timing-reverse/15-r2-humaneval-stock-s1-J-independent",
+          "native-timing-reverse/21-r3-humaneval-stock-s1-J-independent"
+        ],
+        "measurement_order": [
+          {
+            "block": "native-timing",
+            "repeat": 1,
+            "within_case_position": "second",
+            "run_path": "native-timing/02-r1-humaneval-stock-s1-J-independent"
+          },
+          {
+            "block": "native-timing",
+            "repeat": 2,
+            "within_case_position": "second",
+            "run_path": "native-timing/16-r2-humaneval-stock-s1-J-independent"
+          },
+          {
+            "block": "native-timing",
+            "repeat": 3,
+            "within_case_position": "second",
+            "run_path": "native-timing/22-r3-humaneval-stock-s1-J-independent"
+          },
+          {
+            "block": "native-timing-reverse",
+            "repeat": 1,
+            "within_case_position": "first",
+            "run_path": "native-timing-reverse/01-r1-humaneval-stock-s1-J-independent"
+          },
+          {
+            "block": "native-timing-reverse",
+            "repeat": 2,
+            "within_case_position": "first",
+            "run_path": "native-timing-reverse/15-r2-humaneval-stock-s1-J-independent"
+          },
+          {
+            "block": "native-timing-reverse",
+            "repeat": 3,
+            "within_case_position": "first",
+            "run_path": "native-timing-reverse/21-r3-humaneval-stock-s1-J-independent"
+          }
+        ]
+      },
+      {
+        "case": "humaneval__stock__s1",
+        "scope": "humaneval",
+        "left": "stock",
+        "right": "s1",
+        "target": "C",
+        "method": "coupled",
+        "policy": "conditional_differences_first",
+        "candidate_suite_queries": 160,
+        "repeats": 6,
+        "additional_audit_seconds": {
+          "median": 5.9242068945022766,
+          "minimum": 4.764996454003267,
+          "maximum": 9.803176946996246,
+          "values_in_repeat_order": [
+            5.006149381995783,
+            6.2330247220015735,
+            9.803176946996246,
+            4.764996454003267,
+            6.383321628003614,
+            5.61538906700298
+          ]
+        },
+        "phase_seconds": {
+          "register_seconds": {
+            "median": 0.00577758100189385,
+            "minimum": 0.003319623996503651,
+            "maximum": 0.014860440998745617,
+            "values_in_repeat_order": [
+              0.003773896998609416,
+              0.003507233996060677,
+              0.014860440998745617,
+              0.003319623996503651,
+              0.008893108999473043,
+              0.007781265005178284
+            ]
+          },
+          "select_seconds": {
+            "median": 0.0004125210107304156,
+            "minimum": 0.00033716803591232747,
+            "maximum": 0.0007514570315834135,
+            "values_in_repeat_order": [
+              0.0004027829854749143,
+              0.0007514570315834135,
+              0.00042225903598591685,
+              0.00033716803591232747,
+              0.0004830060570384376,
+              0.0003472749885986559
+            ]
+          },
+          "bounds_seconds": {
+            "median": 0.009234764529537642,
+            "minimum": 0.00804715199774364,
+            "maximum": 0.011408599995775148,
+            "values_in_repeat_order": [
+              0.008664408938784618,
+              0.011408599995775148,
+              0.00804715199774364,
+              0.009481174987740815,
+              0.009255293029127643,
+              0.009214236029947642
+            ]
+          },
+          "worker_seconds": {
+            "median": 5.762590123522386,
+            "minimum": 4.64064033102477,
+            "maximum": 9.638858832033293,
+            "values_in_repeat_order": [
+              4.840650974030723,
+              6.050167775007139,
+              9.638858832033293,
+              4.64064033102477,
+              6.191514875004941,
+              5.475012472037633
+            ]
+          },
+          "receive_seconds": {
+            "median": 0.02863362403877545,
+            "minimum": 0.02358337095938623,
+            "maximum": 0.03477287401619833,
+            "values_in_repeat_order": [
+              0.02358337095938623,
+              0.030383795012312476,
+              0.02493300697824452,
+              0.02961794002476381,
+              0.03477287401619833,
+              0.02764930805278709
+            ]
+          },
+          "record_seconds": {
+            "median": 0.11948889897030313,
+            "minimum": 0.07901013098307885,
+            "maximum": 0.13484538193733897,
+            "values_in_repeat_order": [
+              0.12625388896412915,
+              0.1321603430696996,
+              0.1127239089764771,
+              0.07901013098307885,
+              0.13484538193733897,
+              0.09197582106571645
+            ]
+          }
+        },
+        "unallocated_loop_seconds": {
+          "median": 0.003370018399436958,
+          "minimum": 0.0025900849504978396,
+          "maximum": 0.004645517889002804,
+          "values_in_repeat_order": [
+            0.0028200591186759993,
+            0.004645517889002804,
+            0.003331346975755878,
+            0.0025900849504978396,
+            0.0035570889594964683,
+            0.0034086898231180385
+          ]
+        },
+        "run_directories": [
+          "native-timing/04-r1-humaneval-stock-s1-C-coupled",
+          "native-timing/10-r2-humaneval-stock-s1-C-coupled",
+          "native-timing/24-r3-humaneval-stock-s1-C-coupled",
+          "native-timing-reverse/03-r1-humaneval-stock-s1-C-coupled",
+          "native-timing-reverse/09-r2-humaneval-stock-s1-C-coupled",
+          "native-timing-reverse/23-r3-humaneval-stock-s1-C-coupled"
+        ],
+        "measurement_order": [
+          {
+            "block": "native-timing",
+            "repeat": 1,
+            "within_case_position": "second",
+            "run_path": "native-timing/04-r1-humaneval-stock-s1-C-coupled"
+          },
+          {
+            "block": "native-timing",
+            "repeat": 2,
+            "within_case_position": "second",
+            "run_path": "native-timing/10-r2-humaneval-stock-s1-C-coupled"
+          },
+          {
+            "block": "native-timing",
+            "repeat": 3,
+            "within_case_position": "second",
+            "run_path": "native-timing/24-r3-humaneval-stock-s1-C-coupled"
+          },
+          {
+            "block": "native-timing-reverse",
+            "repeat": 1,
+            "within_case_position": "first",
+            "run_path": "native-timing-reverse/03-r1-humaneval-stock-s1-C-coupled"
+          },
+          {
+            "block": "native-timing-reverse",
+            "repeat": 2,
+            "within_case_position": "first",
+            "run_path": "native-timing-reverse/09-r2-humaneval-stock-s1-C-coupled"
+          },
+          {
+            "block": "native-timing-reverse",
+            "repeat": 3,
+            "within_case_position": "first",
+            "run_path": "native-timing-reverse/23-r3-humaneval-stock-s1-C-coupled"
+          }
+        ]
+      },
+      {
+        "case": "humaneval__stock__s1",
+        "scope": "humaneval",
+        "left": "stock",
+        "right": "s1",
+        "target": "C",
+        "method": "independent",
+        "policy": "independent_conditional_minimax_width",
+        "candidate_suite_queries": 532,
+        "repeats": 6,
+        "additional_audit_seconds": {
+          "median": 20.202672290004557,
+          "minimum": 17.36550207500113,
+          "maximum": 29.96422006600187,
+          "values_in_repeat_order": [
+            17.748076251002203,
+            17.36550207500113,
+            29.96422006600187,
+            19.66078383000422,
+            21.745942424000532,
+            20.744560750004894
+          ]
+        },
+        "phase_seconds": {
+          "register_seconds": {
+            "median": 0.004506070999923395,
+            "minimum": 0.0035878950002370402,
+            "maximum": 0.005249681002169382,
+            "values_in_repeat_order": [
+              0.0035878950002370402,
+              0.005249681002169382,
+              0.004446434999408666,
+              0.004565707000438124,
+              0.0044035319951944984,
+              0.005209629001910798
+            ]
+          },
+          "select_seconds": {
+            "median": 0.10766056956344983,
+            "minimum": 0.10086858096474316,
+            "maximum": 0.17071218713681446,
+            "values_in_repeat_order": [
+              0.10091909300535917,
+              0.10086858096474316,
+              0.12346739402710227,
+              0.10466318506223615,
+              0.1106579540646635,
+              0.17071218713681446
+            ]
+          },
+          "bounds_seconds": {
+            "median": 0.034484782965591876,
+            "minimum": 0.0264990769646829,
+            "maximum": 0.04436637397157028,
+            "values_in_repeat_order": [
+              0.0264990769646829,
+              0.030782080975768622,
+              0.04436637397157028,
+              0.03061485207581427,
+              0.04412452295218827,
+              0.03818748495541513
+            ]
+          },
+          "worker_seconds": {
+            "median": 19.499286439462594,
+            "minimum": 16.867104167904472,
+            "maximum": 29.26013435299683,
+            "values_in_repeat_order": [
+              17.15988106795703,
+              16.867104167904472,
+              29.26013435299683,
+              19.119106717858813,
+              20.882889862950833,
+              19.879466161066375
+            ]
+          },
+          "receive_seconds": {
+            "median": 0.0960720664334076,
+            "minimum": 0.07094348888495006,
+            "maximum": 0.24571826609462732,
+            "values_in_repeat_order": [
+              0.07094348888495006,
+              0.08084836690250086,
+              0.11188241906347685,
+              0.08507224993081763,
+              0.10707188293599756,
+              0.24571826609462732
+            ]
+          },
+          "record_seconds": {
+            "median": 0.3813246600293496,
+            "minimum": 0.26940306599863106,
+            "maximum": 0.5853734689735575,
+            "values_in_repeat_order": [
+              0.3692677370781894,
+              0.26940306599863106,
+              0.4058574509981554,
+              0.30727675516391173,
+              0.5853734689735575,
+              0.39338158298050985
+            ]
+          }
+        },
+        "unallocated_loop_seconds": {
+          "median": 0.011653319448669208,
+          "minimum": 0.009484362912189681,
+          "maximum": 0.016977892111754045,
+          "values_in_repeat_order": [
+            0.016977892111754045,
+            0.01124613125284668,
+            0.014065639945329167,
+            0.009484362912189681,
+            0.011421200128097553,
+            0.011885438769240864
+          ]
+        },
+        "run_directories": [
+          "native-timing/03-r1-humaneval-stock-s1-C-independent",
+          "native-timing/09-r2-humaneval-stock-s1-C-independent",
+          "native-timing/23-r3-humaneval-stock-s1-C-independent",
+          "native-timing-reverse/04-r1-humaneval-stock-s1-C-independent",
+          "native-timing-reverse/10-r2-humaneval-stock-s1-C-independent",
+          "native-timing-reverse/24-r3-humaneval-stock-s1-C-independent"
+        ],
+        "measurement_order": [
+          {
+            "block": "native-timing",
+            "repeat": 1,
+            "within_case_position": "first",
+            "run_path": "native-timing/03-r1-humaneval-stock-s1-C-independent"
+          },
+          {
+            "block": "native-timing",
+            "repeat": 2,
+            "within_case_position": "first",
+            "run_path": "native-timing/09-r2-humaneval-stock-s1-C-independent"
+          },
+          {
+            "block": "native-timing",
+            "repeat": 3,
+            "within_case_position": "first",
+            "run_path": "native-timing/23-r3-humaneval-stock-s1-C-independent"
+          },
+          {
+            "block": "native-timing-reverse",
+            "repeat": 1,
+            "within_case_position": "second",
+            "run_path": "native-timing-reverse/04-r1-humaneval-stock-s1-C-independent"
+          },
+          {
+            "block": "native-timing-reverse",
+            "repeat": 2,
+            "within_case_position": "second",
+            "run_path": "native-timing-reverse/10-r2-humaneval-stock-s1-C-independent"
+          },
+          {
+            "block": "native-timing-reverse",
+            "repeat": 3,
+            "within_case_position": "second",
+            "run_path": "native-timing-reverse/24-r3-humaneval-stock-s1-C-independent"
+          }
+        ]
+      },
+      {
+        "case": "mbpp__stock__s4",
+        "scope": "mbpp",
+        "left": "stock",
+        "right": "s4",
+        "target": "J",
+        "method": "coupled",
+        "policy": "joint_width_per_suite",
+        "candidate_suite_queries": 1,
+        "repeats": 6,
+        "additional_audit_seconds": {
+          "median": 0.049269884497334715,
+          "minimum": 0.0440956919992459,
+          "maximum": 0.05199504399934085,
+          "values_in_repeat_order": [
+            0.0498175109969452,
+            0.05106423500546953,
+            0.048087846000271384,
+            0.0440956919992459,
+            0.05199504399934085,
+            0.04872225799772423
+          ]
+        },
+        "phase_seconds": {
+          "register_seconds": {
+            "median": 0.012472946003981633,
+            "minimum": 0.00960161599505227,
+            "maximum": 0.01362009700096678,
+            "values_in_repeat_order": [
+              0.012559375005366746,
+              0.00960161599505227,
+              0.01238651700259652,
+              0.01362009700096678,
+              0.012100853004085366,
+              0.013606563996290788
+            ]
+          },
+          "select_seconds": {
+            "median": 1.491996954428032e-06,
+            "minimum": 1.2520031305029988e-06,
+            "maximum": 2.34400067711249e-06,
+            "values_in_repeat_order": [
+              1.8229984561912715e-06,
+              1.2520031305029988e-06,
+              1.381995389238e-06,
+              2.34400067711249e-06,
+              1.581996912136674e-06,
+              1.4019969967193902e-06
+            ]
+          },
+          "bounds_seconds": {
+            "median": 9.599501936463639e-06,
+            "minimum": 8.933006029110402e-06,
+            "maximum": 1.0556010238360614e-05,
+            "values_in_repeat_order": [
+              9.224997484125197e-06,
+              9.404000593349338e-06,
+              9.79500327957794e-06,
+              1.0256000678054988e-05,
+              1.0556010238360614e-05,
+              8.933006029110402e-06
+            ]
+          },
+          "worker_seconds": {
+            "median": 0.03538047800248023,
+            "minimum": 0.02893879399925936,
+            "maximum": 0.039933749998454005,
+            "values_in_repeat_order": [
+              0.036079012003028765,
+              0.039933749998454005,
+              0.0346819440019317,
+              0.02893879399925936,
+              0.037774996999360155,
+              0.03375146300095366
+            ]
+          },
+          "receive_seconds": {
+            "median": 0.00013853850032319315,
+            "minimum": 9.799699910217896e-05,
+            "maximum": 0.00023355099983746186,
+            "values_in_repeat_order": [
+              0.00017127799947047606,
+              0.00023355099983746186,
+              0.00012139300088165328,
+              9.799699910217896e-05,
+              0.0001193490024888888,
+              0.00015568399976473302
+            ]
+          },
+          "record_seconds": {
+            "median": 0.0007511200019507669,
+            "minimum": 0.00045686699741054326,
+            "maximum": 0.0014247720027924515,
+            "values_in_repeat_order": [
+              0.0007586520005133934,
+              0.0008886470022844151,
+              0.0004951249939040281,
+              0.0007435880033881404,
+              0.0014247720027924515,
+              0.00045686699741054326
+            ]
+          }
+        },
+        "unallocated_loop_seconds": {
+          "median": 0.0004794749947905075,
+          "minimum": 0.00023814599262550473,
+          "maximum": 0.0007413450002786703,
+          "values_in_repeat_order": [
+            0.00023814599262550473,
+            0.0003960150061175227,
+            0.00039169000228866935,
+            0.0006826159951742738,
+            0.0005629349834634922,
+            0.0007413450002786703
+          ]
+        },
+        "run_directories": [
+          "native-timing/05-r1-mbpp-stock-s4-J-coupled",
+          "native-timing/11-r2-mbpp-stock-s4-J-coupled",
+          "native-timing/17-r3-mbpp-stock-s4-J-coupled",
+          "native-timing-reverse/06-r1-mbpp-stock-s4-J-coupled",
+          "native-timing-reverse/12-r2-mbpp-stock-s4-J-coupled",
+          "native-timing-reverse/18-r3-mbpp-stock-s4-J-coupled"
+        ],
+        "measurement_order": [
+          {
+            "block": "native-timing",
+            "repeat": 1,
+            "within_case_position": "first",
+            "run_path": "native-timing/05-r1-mbpp-stock-s4-J-coupled"
+          },
+          {
+            "block": "native-timing",
+            "repeat": 2,
+            "within_case_position": "first",
+            "run_path": "native-timing/11-r2-mbpp-stock-s4-J-coupled"
+          },
+          {
+            "block": "native-timing",
+            "repeat": 3,
+            "within_case_position": "first",
+            "run_path": "native-timing/17-r3-mbpp-stock-s4-J-coupled"
+          },
+          {
+            "block": "native-timing-reverse",
+            "repeat": 1,
+            "within_case_position": "second",
+            "run_path": "native-timing-reverse/06-r1-mbpp-stock-s4-J-coupled"
+          },
+          {
+            "block": "native-timing-reverse",
+            "repeat": 2,
+            "within_case_position": "second",
+            "run_path": "native-timing-reverse/12-r2-mbpp-stock-s4-J-coupled"
+          },
+          {
+            "block": "native-timing-reverse",
+            "repeat": 3,
+            "within_case_position": "second",
+            "run_path": "native-timing-reverse/18-r3-mbpp-stock-s4-J-coupled"
+          }
+        ]
+      },
+      {
+        "case": "mbpp__stock__s4",
+        "scope": "mbpp",
+        "left": "stock",
+        "right": "s4",
+        "target": "J",
+        "method": "independent",
+        "policy": "independent_joint_width",
+        "candidate_suite_queries": 811,
+        "repeats": 6,
+        "additional_audit_seconds": {
+          "median": 39.33535398400272,
+          "minimum": 36.57782970500557,
+          "maximum": 44.85905405100493,
+          "values_in_repeat_order": [
+            40.80129570700228,
+            36.57782970500557,
+            39.04626298999938,
+            37.806694665996474,
+            44.85905405100493,
+            39.62444497800607
+          ]
+        },
+        "phase_seconds": {
+          "register_seconds": {
+            "median": 0.012143792500864947,
+            "minimum": 0.008151807000103872,
+            "maximum": 0.01706648999970639,
+            "values_in_repeat_order": [
+              0.010459097000421025,
+              0.01706648999970639,
+              0.013184577001084108,
+              0.008151807000103872,
+              0.011325601000862662,
+              0.012961984000867233
+            ]
+          },
+          "select_seconds": {
+            "median": 0.0028493964709923603,
+            "minimum": 0.0024105219927150756,
+            "maximum": 0.004307521943701431,
+            "values_in_repeat_order": [
+              0.0024582519981777295,
+              0.0024105219927150756,
+              0.0024722939924686216,
+              0.0038337191290338524,
+              0.003226498949516099,
+              0.004307521943701431
+            ]
+          },
+          "bounds_seconds": {
+            "median": 0.006106767996243434,
+            "minimum": 0.005231652976362966,
+            "maximum": 0.00798443415260408,
+            "values_in_repeat_order": [
+              0.005344087119738106,
+              0.005231652976362966,
+              0.0052752511473954655,
+              0.007648390070244204,
+              0.006869448872748762,
+              0.00798443415260408
+            ]
+          },
+          "worker_seconds": {
+            "median": 38.59632991694525,
+            "minimum": 35.94578886389354,
+            "maximum": 43.98913918285689,
+            "values_in_repeat_order": [
+              40.013947975909105,
+              35.94578886389354,
+              38.44532140985393,
+              37.116601326008094,
+              43.98913918285689,
+              38.74733842403657
+            ]
+          },
+          "receive_seconds": {
+            "median": 0.1417883324502327,
+            "minimum": 0.10024816713121254,
+            "maximum": 0.17936487309634686,
+            "values_in_repeat_order": [
+              0.11951160286844242,
+              0.11183457512379391,
+              0.10024816713121254,
+              0.16451896798389498,
+              0.17936487309634686,
+              0.16406506203202298
+            ]
+          },
+          "record_seconds": {
+            "median": 0.5622489494853653,
+            "minimum": 0.46582208589825314,
+            "maximum": 0.6664849499284173,
+            "values_in_repeat_order": [
+              0.6353865650671651,
+              0.4803834520353121,
+              0.46582208589825314,
+              0.48911133390356554,
+              0.6411068148590857,
+              0.6664849499284173
+            ]
+          }
+        },
+        "unallocated_loop_seconds": {
+          "median": 0.015971635442838306,
+          "minimum": 0.013939204975031316,
+          "maximum": 0.028021631369483657,
+          "values_in_repeat_order": [
+            0.014188127039233223,
+            0.01511414898413932,
+            0.013939204975031316,
+            0.01682912190153729,
+            0.028021631369483657,
+            0.021302601911884267
+          ]
+        },
+        "run_directories": [
+          "native-timing/06-r1-mbpp-stock-s4-J-independent",
+          "native-timing/12-r2-mbpp-stock-s4-J-independent",
+          "native-timing/18-r3-mbpp-stock-s4-J-independent",
+          "native-timing-reverse/05-r1-mbpp-stock-s4-J-independent",
+          "native-timing-reverse/11-r2-mbpp-stock-s4-J-independent",
+          "native-timing-reverse/17-r3-mbpp-stock-s4-J-independent"
+        ],
+        "measurement_order": [
+          {
+            "block": "native-timing",
+            "repeat": 1,
+            "within_case_position": "second",
+            "run_path": "native-timing/06-r1-mbpp-stock-s4-J-independent"
+          },
+          {
+            "block": "native-timing",
+            "repeat": 2,
+            "within_case_position": "second",
+            "run_path": "native-timing/12-r2-mbpp-stock-s4-J-independent"
+          },
+          {
+            "block": "native-timing",
+            "repeat": 3,
+            "within_case_position": "second",
+            "run_path": "native-timing/18-r3-mbpp-stock-s4-J-independent"
+          },
+          {
+            "block": "native-timing-reverse",
+            "repeat": 1,
+            "within_case_position": "first",
+            "run_path": "native-timing-reverse/05-r1-mbpp-stock-s4-J-independent"
+          },
+          {
+            "block": "native-timing-reverse",
+            "repeat": 2,
+            "within_case_position": "first",
+            "run_path": "native-timing-reverse/11-r2-mbpp-stock-s4-J-independent"
+          },
+          {
+            "block": "native-timing-reverse",
+            "repeat": 3,
+            "within_case_position": "first",
+            "run_path": "native-timing-reverse/17-r3-mbpp-stock-s4-J-independent"
+          }
+        ]
+      },
+      {
+        "case": "mbpp__stock__s4",
+        "scope": "mbpp",
+        "left": "stock",
+        "right": "s4",
+        "target": "C",
+        "method": "coupled",
+        "policy": "conditional_differences_first",
+        "candidate_suite_queries": 6,
+        "repeats": 6,
+        "additional_audit_seconds": {
+          "median": 0.2278860864971648,
+          "minimum": 0.19964099999924656,
+          "maximum": 0.6481994070054498,
+          "values_in_repeat_order": [
+            0.19964099999924656,
+            0.224372491997201,
+            0.6481994070054498,
+            0.22031678399798693,
+            0.24937574800424045,
+            0.2313996809971286
+          ]
+        },
+        "phase_seconds": {
+          "register_seconds": {
+            "median": 0.010775735998322489,
+            "minimum": 0.008202916003938299,
+            "maximum": 0.025168759995722212,
+            "values_in_repeat_order": [
+              0.010644171998137608,
+              0.011389944003894925,
+              0.025168759995722212,
+              0.008202916003938299,
+              0.01090729999850737,
+              0.00992367799335625
+            ]
+          },
+          "select_seconds": {
+            "median": 1.3651504559675232e-05,
+            "minimum": 1.1667994840536267e-05,
+            "maximum": 1.836897718021646e-05,
+            "values_in_repeat_order": [
+              1.4552002539858222e-05,
+              1.5251993318088353e-05,
+              1.836897718021646e-05,
+              1.1667994840536267e-05,
+              1.2159012840129435e-05,
+              1.2751006579492241e-05
+            ]
+          },
+          "bounds_seconds": {
+            "median": 0.0003239470061089378,
+            "minimum": 0.0002564970054663718,
+            "maximum": 0.00037988999247318134,
+            "values_in_repeat_order": [
+              0.00037988999247318134,
+              0.0003148620089632459,
+              0.00033303200325462967,
+              0.0002564970054663718,
+              0.00029274800908751786,
+              0.00037783700827276334
+            ]
+          },
+          "worker_seconds": {
+            "median": 0.21206812099990202,
+            "minimum": 0.18252879599458538,
+            "maximum": 0.6121108410079614,
+            "values_in_repeat_order": [
+              0.18252879599458538,
+              0.2074183529985021,
+              0.6121108410079614,
+              0.20662892199470662,
+              0.23203121500409907,
+              0.21671788900130196
+            ]
+          },
+          "receive_seconds": {
+            "median": 0.001645809992623981,
+            "minimum": 0.0014654810074716806,
+            "maximum": 0.0017410360014764592,
+            "values_in_repeat_order": [
+              0.0015112020118976943,
+              0.0014654810074716806,
+              0.0016753089948906563,
+              0.0017013679898809642,
+              0.0017410360014764592,
+              0.0016163109903573059
+            ]
+          },
+          "record_seconds": {
+            "median": 0.0034769979974953458,
+            "minimum": 0.0025662469925009646,
+            "maximum": 0.004130124994844664,
+            "values_in_repeat_order": [
+              0.003713573001732584,
+              0.0027864469957421534,
+              0.003666171003715135,
+              0.0032878249912755564,
+              0.004130124994844664,
+              0.0025662469925009646
+            ]
+          }
+        },
+        "unallocated_loop_seconds": {
+          "median": 0.0005549899906327482,
+          "minimum": 0.00018496800475986674,
+          "maximum": 0.0052269250227254815,
+          "values_in_repeat_order": [
+            0.0008488149978802539,
+            0.0009821529893088154,
+            0.0052269250227254815,
+            0.0002275880178785883,
+            0.0002611649833852425,
+            0.00018496800475986674
+          ]
+        },
+        "run_directories": [
+          "native-timing/08-r1-mbpp-stock-s4-C-coupled",
+          "native-timing/14-r2-mbpp-stock-s4-C-coupled",
+          "native-timing/20-r3-mbpp-stock-s4-C-coupled",
+          "native-timing-reverse/07-r1-mbpp-stock-s4-C-coupled",
+          "native-timing-reverse/13-r2-mbpp-stock-s4-C-coupled",
+          "native-timing-reverse/19-r3-mbpp-stock-s4-C-coupled"
+        ],
+        "measurement_order": [
+          {
+            "block": "native-timing",
+            "repeat": 1,
+            "within_case_position": "second",
+            "run_path": "native-timing/08-r1-mbpp-stock-s4-C-coupled"
+          },
+          {
+            "block": "native-timing",
+            "repeat": 2,
+            "within_case_position": "second",
+            "run_path": "native-timing/14-r2-mbpp-stock-s4-C-coupled"
+          },
+          {
+            "block": "native-timing",
+            "repeat": 3,
+            "within_case_position": "second",
+            "run_path": "native-timing/20-r3-mbpp-stock-s4-C-coupled"
+          },
+          {
+            "block": "native-timing-reverse",
+            "repeat": 1,
+            "within_case_position": "first",
+            "run_path": "native-timing-reverse/07-r1-mbpp-stock-s4-C-coupled"
+          },
+          {
+            "block": "native-timing-reverse",
+            "repeat": 2,
+            "within_case_position": "first",
+            "run_path": "native-timing-reverse/13-r2-mbpp-stock-s4-C-coupled"
+          },
+          {
+            "block": "native-timing-reverse",
+            "repeat": 3,
+            "within_case_position": "first",
+            "run_path": "native-timing-reverse/19-r3-mbpp-stock-s4-C-coupled"
+          }
+        ]
+      },
+      {
+        "case": "mbpp__stock__s4",
+        "scope": "mbpp",
+        "left": "stock",
+        "right": "s4",
+        "target": "C",
+        "method": "independent",
+        "policy": "independent_conditional_minimax_width",
+        "candidate_suite_queries": 1136,
+        "repeats": 6,
+        "additional_audit_seconds": {
+          "median": 51.32459998400009,
+          "minimum": 47.751443989996915,
+          "maximum": 99.75570132800203,
+          "values_in_repeat_order": [
+            49.94949202400312,
+            47.751443989996915,
+            99.75570132800203,
+            52.679304823002894,
+            50.31812981099938,
+            52.331070157000795
+          ]
+        },
+        "phase_seconds": {
+          "register_seconds": {
+            "median": 0.009267802499380196,
+            "minimum": 0.007654199995158706,
+            "maximum": 0.013219644002674613,
+            "values_in_repeat_order": [
+              0.008950903997174464,
+              0.009584701001585927,
+              0.01073563400132116,
+              0.007654199995158706,
+              0.013219644002674613,
+              0.007984502997715026
+            ]
+          },
+          "select_seconds": {
+            "median": 0.26289715641905786,
+            "minimum": 0.2484301180447801,
+            "maximum": 0.2855908870260464,
+            "values_in_repeat_order": [
+              0.2519954949748353,
+              0.2512955569764017,
+              0.2786232420767192,
+              0.2484301180447801,
+              0.2737988178632804,
+              0.2855908870260464
+            ]
+          },
+          "bounds_seconds": {
+            "median": 0.06623905493324855,
+            "minimum": 0.061106639965146314,
+            "maximum": 0.08209491697925841,
+            "values_in_repeat_order": [
+              0.06454756292805541,
+              0.06700342986732721,
+              0.061106639965146314,
+              0.0659463719712221,
+              0.066531737895275,
+              0.08209491697925841
+            ]
+          },
+          "worker_seconds": {
+            "median": 49.984943783412746,
+            "minimum": 46.629831536985876,
+            "maximum": 98.50953286909498,
+            "values_in_repeat_order": [
+              48.686215562986035,
+              46.629831536985876,
+              98.50953286909498,
+              51.3603664441398,
+              48.932107196778816,
+              51.037780370046676
+            ]
+          },
+          "receive_seconds": {
+            "median": 0.1933033130299009,
+            "minimum": 0.15161016899946844,
+            "maximum": 0.22748929880617652,
+            "values_in_repeat_order": [
+              0.18783348791475873,
+              0.15161016899946844,
+              0.15678057905461174,
+              0.19877313814504305,
+              0.22748929880617652,
+              0.2016737220037612
+            ]
+          },
+          "record_seconds": {
+            "median": 0.7192382749708486,
+            "minimum": 0.6234752019590815,
+            "maximum": 0.7827093160449294,
+            "values_in_repeat_order": [
+              0.7268698740153923,
+              0.6234752019590815,
+              0.7116066759263049,
+              0.776971476188919,
+              0.7827093160449294,
+              0.6917940630737576
+            ]
+          }
+        },
+        "unallocated_loop_seconds": {
+          "median": 0.022676468397548888,
+          "minimum": 0.018643394207174424,
+          "maximum": 0.027315687882946804,
+          "values_in_repeat_order": [
+            0.023079137186869048,
+            0.018643394207174424,
+            0.027315687882946804,
+            0.021163074517971836,
+            0.022273799608228728,
+            0.02415169487358071
+          ]
+        },
+        "run_directories": [
+          "native-timing/07-r1-mbpp-stock-s4-C-independent",
+          "native-timing/13-r2-mbpp-stock-s4-C-independent",
+          "native-timing/19-r3-mbpp-stock-s4-C-independent",
+          "native-timing-reverse/08-r1-mbpp-stock-s4-C-independent",
+          "native-timing-reverse/14-r2-mbpp-stock-s4-C-independent",
+          "native-timing-reverse/20-r3-mbpp-stock-s4-C-independent"
+        ],
+        "measurement_order": [
+          {
+            "block": "native-timing",
+            "repeat": 1,
+            "within_case_position": "first",
+            "run_path": "native-timing/07-r1-mbpp-stock-s4-C-independent"
+          },
+          {
+            "block": "native-timing",
+            "repeat": 2,
+            "within_case_position": "first",
+            "run_path": "native-timing/13-r2-mbpp-stock-s4-C-independent"
+          },
+          {
+            "block": "native-timing",
+            "repeat": 3,
+            "within_case_position": "first",
+            "run_path": "native-timing/19-r3-mbpp-stock-s4-C-independent"
+          },
+          {
+            "block": "native-timing-reverse",
+            "repeat": 1,
+            "within_case_position": "second",
+            "run_path": "native-timing-reverse/08-r1-mbpp-stock-s4-C-independent"
+          },
+          {
+            "block": "native-timing-reverse",
+            "repeat": 2,
+            "within_case_position": "second",
+            "run_path": "native-timing-reverse/14-r2-mbpp-stock-s4-C-independent"
+          },
+          {
+            "block": "native-timing-reverse",
+            "repeat": 3,
+            "within_case_position": "second",
+            "run_path": "native-timing-reverse/20-r3-mbpp-stock-s4-C-independent"
+          }
+        ]
+      }
+    ],
+    "accounting": "Additional audit totals exclude public preparation, measured once in each of two blocks and reported separately. They include per-run coefficient/state/policy registration, query selection, requested bounds, real worker execution, admission, raw-record I/O and loop overhead. A fresh whole-audit invocation adds its preparation to either method. Medians of separate phases need not sum to the median total.",
+    "interpretation": "Six serial repeats per case and method, in two complementary blocks, describe these native executions on this recorded host. All 48 runs remain in the ranges. Public source/contract data are reused in memory within a block; candidate labels are not reused across runs, and OS caches are not claimed to be cleared. No statistical significance claim is made."
+  },
+  "receiving": {
+    "status": "PASS",
+    "runs_received": 48,
+    "candidate_suite_records_received": 19326,
+    "prefixes_received": 19374,
+    "historical_candidate_labels_read": 0,
+    "historical_candidate_observation_files_read": 0,
+    "arithmetic_prefixes_reconstructed_across_blocks": 6458,
+    "arithmetic_count_scope": "Distinct histories are counted within each independently received block; a history repeated in the other block is reconstructed again.",
+    "by_block": [
+      {
+        "block": "native-timing",
+        "runs_received": 24,
+        "candidate_suite_records_received": 9663,
+        "prefixes_received": 9687,
+        "historical_candidate_labels_read": 0,
+        "historical_candidate_observation_files_read": 0,
+        "distinct_arithmetic_prefixes_reconstructed": 3229,
+        "source_snapshots_received": 7
+      },
+      {
+        "block": "native-timing-reverse",
+        "runs_received": 24,
+        "candidate_suite_records_received": 9663,
+        "prefixes_received": 9687,
+        "historical_candidate_labels_read": 0,
+        "historical_candidate_observation_files_read": 0,
+        "distinct_arithmetic_prefixes_reconstructed": 3229,
+        "source_snapshots_received": 8
+      }
+    ]
+  },
+  "retrospective_receiving": {
+    "status": "PASS",
+    "case_initializations_received": 36,
+    "schedules_received": 144,
+    "prefixes_received": 161154,
+    "historical_disclosures_received": 161010,
+    "joint_hindsight_minima_received": 72,
+    "new_candidate_program_executions": 0
+  },
+  "hindsight_scope": "Exact minimum number of additional unit-cost group queries for the stated joint endpoint certificate, with fixed initial admissions and all realized labels known. This is a post hoc witness diagnostic, not an executable query strategy or a claim about additional semantic inference.",
+  "nonoptimal_policy_example": {
+    "case": "humaneval__stock__s1",
+    "method": "coupled",
+    "target": "J",
+    "observed_policy_queries": 146,
+    "hindsight_minimum_queries": 75,
+    "meaning": "The width-based shared policy does not minimize first-certificate queries on this actual finite ledger."
+  },
+  "structural_controls": "HumanEval stock/S4 and S1/S1+S4 have identical output relations; their zero-query shared certificates are structural identity controls, not independent empirical speedup cases."
+}

@@ -1,0 +1,7 @@
+{
+  "source": "def f():\n    raise OSError(5, \"ordinary I/O error\")\n",
+  "test_imports": [],
+  "test_list": [
+    "assert f() == 1"
+  ]
+}

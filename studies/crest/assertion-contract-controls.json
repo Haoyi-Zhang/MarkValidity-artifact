@@ -1,0 +1,355 @@
+{
+  "status": "PASS",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "hash_seed": "0",
+    "optimization_disabled": true,
+    "invocation_flags": [
+      "-B"
+    ],
+    "site_initialization": "enabled",
+    "pythonpath_removed": true,
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "declared_dependencies": {
+      "numpy": "2.3.5",
+      "sympy": "1.14.0"
+    },
+    "wall_timeout_seconds": 15,
+    "cpu_seconds": 10,
+    "address_space_bytes": 1073741824
+  },
+  "native_controls": [
+    {
+      "name": "native_values_without_encoding",
+      "expected": true,
+      "receipt": {
+        "label": true,
+        "evidence_rejected": null,
+        "stdout": "{\"check_finished\":true,\"elapsed_seconds\":0.002454,\"error\":null,\"schema\":\"crest-original-assertion-suite\",\"status\":\"passed\",\"stderr\":\"\",\"stdout\":\"\"}\n",
+        "stderr": "",
+        "returncode": 0,
+        "interruption": null,
+        "elapsed_seconds": 0.02883214200119255,
+        "execution_request": {
+          "source": "from collections import namedtuple, Counter\nPair=namedtuple(\"Pair\", \"x y\")\ndef f():\n    return (1+2j, int, Pair(1,2), Counter({\"a\":2}))",
+          "test": "def check(candidate):\n    z,t,p,c=candidate()\n    assert z==1+2j and t is int\n    assert type(p) is Pair and p.x==1\n    assert type(c) is Counter and c[\"a\"]==2",
+          "entry_point": "f"
+        },
+        "observer_root": "empirical",
+        "observer_file": "assertion_native_runner.py",
+        "observer_source_sha256": "10adf8fb784498940748dd426169269538ff903a5b1d412246bae6405194c56a",
+        "execution_environment": {
+          "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+          "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+          "hash_seed": "0",
+          "optimization_disabled": true,
+          "invocation_flags": [
+            "-B"
+          ],
+          "site_initialization": "enabled",
+          "pythonpath_removed": true,
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "declared_dependencies": {
+            "numpy": "2.3.5",
+            "sympy": "1.14.0"
+          },
+          "wall_timeout_seconds": 15,
+          "cpu_seconds": 10,
+          "address_space_bytes": 1073741824
+        }
+      }
+    },
+    {
+      "name": "numpy_values_keep_type",
+      "expected": true,
+      "receipt": {
+        "label": true,
+        "evidence_rejected": null,
+        "stdout": "{\"check_finished\":true,\"elapsed_seconds\":0.045607,\"error\":null,\"schema\":\"crest-original-assertion-suite\",\"status\":\"passed\",\"stderr\":\"\",\"stdout\":\"\"}\n",
+        "stderr": "",
+        "returncode": 0,
+        "interruption": null,
+        "elapsed_seconds": 0.08078789799765218,
+        "execution_request": {
+          "source": "import numpy as np\ndef f():\n    return np.float64(-0.0), np.float64(float(\"nan\"))",
+          "test": "def check(candidate):\n    a,b=candidate()\n    assert type(a) is np.float64\n    assert np.signbit(a) and np.isnan(b)",
+          "entry_point": "f"
+        },
+        "observer_root": "empirical",
+        "observer_file": "assertion_native_runner.py",
+        "observer_source_sha256": "10adf8fb784498940748dd426169269538ff903a5b1d412246bae6405194c56a",
+        "execution_environment": {
+          "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+          "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+          "hash_seed": "0",
+          "optimization_disabled": true,
+          "invocation_flags": [
+            "-B"
+          ],
+          "site_initialization": "enabled",
+          "pythonpath_removed": true,
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "declared_dependencies": {
+            "numpy": "2.3.5",
+            "sympy": "1.14.0"
+          },
+          "wall_timeout_seconds": 15,
+          "cpu_seconds": 10,
+          "address_space_bytes": 1073741824
+        }
+      }
+    },
+    {
+      "name": "sympy_import_available",
+      "expected": true,
+      "receipt": {
+        "label": true,
+        "evidence_rejected": null,
+        "stdout": "{\"check_finished\":true,\"elapsed_seconds\":0.33718,\"error\":null,\"schema\":\"crest-original-assertion-suite\",\"status\":\"passed\",\"stderr\":\"\",\"stdout\":\"\"}\n",
+        "stderr": "",
+        "returncode": 0,
+        "interruption": null,
+        "elapsed_seconds": 0.42178511199745117,
+        "execution_request": {
+          "source": "from sympy import isprime\ndef f():\n    return isprime(7)",
+          "test": "def check(candidate):\n    assert candidate() is True",
+          "entry_point": "f"
+        },
+        "observer_root": "empirical",
+        "observer_file": "assertion_native_runner.py",
+        "observer_source_sha256": "10adf8fb784498940748dd426169269538ff903a5b1d412246bae6405194c56a",
+        "execution_environment": {
+          "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+          "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+          "hash_seed": "0",
+          "optimization_disabled": true,
+          "invocation_flags": [
+            "-B"
+          ],
+          "site_initialization": "enabled",
+          "pythonpath_removed": true,
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "declared_dependencies": {
+            "numpy": "2.3.5",
+            "sympy": "1.14.0"
+          },
+          "wall_timeout_seconds": 15,
+          "cpu_seconds": 10,
+          "address_space_bytes": 1073741824
+        }
+      }
+    },
+    {
+      "name": "original_assertion_failure",
+      "expected": false,
+      "receipt": {
+        "label": false,
+        "evidence_rejected": null,
+        "stdout": "{\"check_finished\":false,\"elapsed_seconds\":0.002101,\"error\":{\"message\":\"\",\"phase\":\"execute_check_program\",\"type\":\"builtins.AssertionError\"},\"schema\":\"crest-original-assertion-suite\",\"status\":\"failed\",\"stderr\":\"\",\"stdout\":\"\"}\n",
+        "stderr": "",
+        "returncode": 0,
+        "interruption": null,
+        "elapsed_seconds": 0.030842486004985403,
+        "execution_request": {
+          "source": "def f():\n    return 1",
+          "test": "def check(candidate):\n    assert candidate()==2",
+          "entry_point": "f"
+        },
+        "observer_root": "empirical",
+        "observer_file": "assertion_native_runner.py",
+        "observer_source_sha256": "10adf8fb784498940748dd426169269538ff903a5b1d412246bae6405194c56a",
+        "execution_environment": {
+          "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+          "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+          "hash_seed": "0",
+          "optimization_disabled": true,
+          "invocation_flags": [
+            "-B"
+          ],
+          "site_initialization": "enabled",
+          "pythonpath_removed": true,
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "declared_dependencies": {
+            "numpy": "2.3.5",
+            "sympy": "1.14.0"
+          },
+          "wall_timeout_seconds": 15,
+          "cpu_seconds": 10,
+          "address_space_bytes": 1073741824
+        }
+      }
+    },
+    {
+      "name": "source_compile_failure",
+      "expected": false,
+      "receipt": {
+        "label": false,
+        "evidence_rejected": null,
+        "stdout": "{\"check_finished\":false,\"elapsed_seconds\":0.001711,\"error\":{\"message\":\"invalid syntax (<original-mxeval-check-program>, line 1)\",\"phase\":\"compile_check_program\",\"type\":\"builtins.SyntaxError\"},\"schema\":\"crest-original-assertion-suite\",\"status\":\"failed\",\"stderr\":\"\",\"stdout\":\"\"}\n",
+        "stderr": "",
+        "returncode": 0,
+        "interruption": null,
+        "elapsed_seconds": 0.021818055996845942,
+        "execution_request": {
+          "source": "def f(:\n    return 1",
+          "test": "def check(candidate):\n    assert candidate()==1",
+          "entry_point": "f"
+        },
+        "observer_root": "empirical",
+        "observer_file": "assertion_native_runner.py",
+        "observer_source_sha256": "10adf8fb784498940748dd426169269538ff903a5b1d412246bae6405194c56a",
+        "execution_environment": {
+          "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+          "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+          "hash_seed": "0",
+          "optimization_disabled": true,
+          "invocation_flags": [
+            "-B"
+          ],
+          "site_initialization": "enabled",
+          "pythonpath_removed": true,
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "declared_dependencies": {
+            "numpy": "2.3.5",
+            "sympy": "1.14.0"
+          },
+          "wall_timeout_seconds": 15,
+          "cpu_seconds": 10,
+          "address_space_bytes": 1073741824
+        }
+      }
+    },
+    {
+      "name": "missing_required_entry",
+      "expected": false,
+      "receipt": {
+        "label": false,
+        "evidence_rejected": null,
+        "stdout": "{\"check_finished\":false,\"elapsed_seconds\":0.001876,\"error\":{\"message\":\"name 'f' is not defined\",\"phase\":\"execute_check_program\",\"type\":\"builtins.NameError\"},\"schema\":\"crest-original-assertion-suite\",\"status\":\"failed\",\"stderr\":\"\",\"stdout\":\"\"}\n",
+        "stderr": "",
+        "returncode": 0,
+        "interruption": null,
+        "elapsed_seconds": 0.028045588995155413,
+        "execution_request": {
+          "source": "def other():\n    return 1",
+          "test": "def check(candidate):\n    assert candidate()==1",
+          "entry_point": "f"
+        },
+        "observer_root": "empirical",
+        "observer_file": "assertion_native_runner.py",
+        "observer_source_sha256": "10adf8fb784498940748dd426169269538ff903a5b1d412246bae6405194c56a",
+        "execution_environment": {
+          "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+          "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+          "hash_seed": "0",
+          "optimization_disabled": true,
+          "invocation_flags": [
+            "-B"
+          ],
+          "site_initialization": "enabled",
+          "pythonpath_removed": true,
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "declared_dependencies": {
+            "numpy": "2.3.5",
+            "sympy": "1.14.0"
+          },
+          "wall_timeout_seconds": 15,
+          "cpu_seconds": 10,
+          "address_space_bytes": 1073741824
+        }
+      }
+    },
+    {
+      "name": "memory_unavailable",
+      "expected": null,
+      "receipt": {
+        "label": null,
+        "evidence_rejected": null,
+        "stdout": "{\"check_finished\":false,\"elapsed_seconds\":0.002723,\"error\":{\"message\":\"\",\"phase\":\"execute_check_program\",\"reason\":\"resource_unavailable\",\"type\":\"builtins.MemoryError\"},\"schema\":\"crest-original-assertion-suite\",\"status\":\"unavailable\",\"stderr\":\"\",\"stdout\":\"\"}\n",
+        "stderr": "",
+        "returncode": 0,
+        "interruption": null,
+        "elapsed_seconds": 0.029452946000674274,
+        "execution_request": {
+          "source": "def f():\n    raise MemoryError()",
+          "test": "def check(candidate):\n    candidate()",
+          "entry_point": "f"
+        },
+        "observer_root": "empirical",
+        "observer_file": "assertion_native_runner.py",
+        "observer_source_sha256": "10adf8fb784498940748dd426169269538ff903a5b1d412246bae6405194c56a",
+        "execution_environment": {
+          "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+          "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+          "hash_seed": "0",
+          "optimization_disabled": true,
+          "invocation_flags": [
+            "-B"
+          ],
+          "site_initialization": "enabled",
+          "pythonpath_removed": true,
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "declared_dependencies": {
+            "numpy": "2.3.5",
+            "sympy": "1.14.0"
+          },
+          "wall_timeout_seconds": 15,
+          "cpu_seconds": 10,
+          "address_space_bytes": 1073741824
+        }
+      }
+    },
+    {
+      "name": "broken_test_unavailable",
+      "expected": null,
+      "receipt": {
+        "label": null,
+        "evidence_rejected": null,
+        "stdout": "{\"check_finished\":false,\"elapsed_seconds\":0.00157,\"error\":{\"message\":\"invalid syntax (<original-test-validation>, line 1)\",\"phase\":\"validate_original_test\",\"reason\":\"harness_or_contract_error\",\"type\":\"builtins.SyntaxError\"},\"schema\":\"crest-original-assertion-suite\",\"status\":\"unavailable\",\"stderr\":\"\",\"stdout\":\"\"}\n",
+        "stderr": "",
+        "returncode": 0,
+        "interruption": null,
+        "elapsed_seconds": 0.026690054997743573,
+        "execution_request": {
+          "source": "def f():\n    return 1",
+          "test": "def check(:\n    pass",
+          "entry_point": "f"
+        },
+        "observer_root": "empirical",
+        "observer_file": "assertion_native_runner.py",
+        "observer_source_sha256": "10adf8fb784498940748dd426169269538ff903a5b1d412246bae6405194c56a",
+        "execution_environment": {
+          "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+          "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+          "hash_seed": "0",
+          "optimization_disabled": true,
+          "invocation_flags": [
+            "-B"
+          ],
+          "site_initialization": "enabled",
+          "pythonpath_removed": true,
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "declared_dependencies": {
+            "numpy": "2.3.5",
+            "sympy": "1.14.0"
+          },
+          "wall_timeout_seconds": 15,
+          "cpu_seconds": 10,
+          "address_space_bytes": 1073741824
+        }
+      }
+    }
+  ],
+  "nondictionary_envelope_rejected": true,
+  "scope": "Owned contract controls only; no rows are added to the empirical population."
+}

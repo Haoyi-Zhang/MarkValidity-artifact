@@ -1,0 +1,2520 @@
+[
+  {
+    "step": 0,
+    "bounds": {
+      "lower": "0",
+      "upper": "1",
+      "units": "conditional_rate_difference",
+      "decision": "undefined_possible",
+      "defined_all": false
+    },
+    "selected_group": "g0001",
+    "disclosed_label": true
+  },
+  {
+    "step": 1,
+    "bounds": {
+      "lower": "0",
+      "upper": "1",
+      "units": "conditional_rate_difference",
+      "decision": "undefined_possible",
+      "defined_all": false
+    },
+    "selected_group": "g0002",
+    "disclosed_label": true
+  },
+  {
+    "step": 2,
+    "bounds": {
+      "lower": "1/120",
+      "upper": "1",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0005",
+    "disclosed_label": true
+  },
+  {
+    "step": 3,
+    "bounds": {
+      "lower": "1/120",
+      "upper": "45/46",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0003",
+    "disclosed_label": true
+  },
+  {
+    "step": 4,
+    "bounds": {
+      "lower": "2/121",
+      "upper": "45/46",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0014",
+    "disclosed_label": true
+  },
+  {
+    "step": 5,
+    "bounds": {
+      "lower": "3/122",
+      "upper": "45/46",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0016",
+    "disclosed_label": true
+  },
+  {
+    "step": 6,
+    "bounds": {
+      "lower": "4/123",
+      "upper": "45/46",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0019",
+    "disclosed_label": true
+  },
+  {
+    "step": 7,
+    "bounds": {
+      "lower": "5/124",
+      "upper": "45/46",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0020",
+    "disclosed_label": true
+  },
+  {
+    "step": 8,
+    "bounds": {
+      "lower": "6/125",
+      "upper": "45/46",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0022",
+    "disclosed_label": true
+  },
+  {
+    "step": 9,
+    "bounds": {
+      "lower": "1/18",
+      "upper": "45/46",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0027",
+    "disclosed_label": true
+  },
+  {
+    "step": 10,
+    "bounds": {
+      "lower": "8/127",
+      "upper": "45/46",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0006",
+    "disclosed_label": true
+  },
+  {
+    "step": 11,
+    "bounds": {
+      "lower": "8/127",
+      "upper": "45/47",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0030",
+    "disclosed_label": true
+  },
+  {
+    "step": 12,
+    "bounds": {
+      "lower": "9/128",
+      "upper": "45/47",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0031",
+    "disclosed_label": true
+  },
+  {
+    "step": 13,
+    "bounds": {
+      "lower": "10/129",
+      "upper": "45/47",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0037",
+    "disclosed_label": true
+  },
+  {
+    "step": 14,
+    "bounds": {
+      "lower": "11/130",
+      "upper": "45/47",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0039",
+    "disclosed_label": true
+  },
+  {
+    "step": 15,
+    "bounds": {
+      "lower": "12/131",
+      "upper": "45/47",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0042",
+    "disclosed_label": true
+  },
+  {
+    "step": 16,
+    "bounds": {
+      "lower": "13/132",
+      "upper": "45/47",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0044",
+    "disclosed_label": true
+  },
+  {
+    "step": 17,
+    "bounds": {
+      "lower": "2/19",
+      "upper": "45/47",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0047",
+    "disclosed_label": true
+  },
+  {
+    "step": 18,
+    "bounds": {
+      "lower": "15/134",
+      "upper": "45/47",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0051",
+    "disclosed_label": true
+  },
+  {
+    "step": 19,
+    "bounds": {
+      "lower": "16/135",
+      "upper": "45/47",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0055",
+    "disclosed_label": true
+  },
+  {
+    "step": 20,
+    "bounds": {
+      "lower": "1/8",
+      "upper": "45/47",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0007",
+    "disclosed_label": true
+  },
+  {
+    "step": 21,
+    "bounds": {
+      "lower": "1/8",
+      "upper": "15/16",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0058",
+    "disclosed_label": true
+  },
+  {
+    "step": 22,
+    "bounds": {
+      "lower": "18/137",
+      "upper": "15/16",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0060",
+    "disclosed_label": true
+  },
+  {
+    "step": 23,
+    "bounds": {
+      "lower": "19/138",
+      "upper": "15/16",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0062",
+    "disclosed_label": true
+  },
+  {
+    "step": 24,
+    "bounds": {
+      "lower": "20/139",
+      "upper": "15/16",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0071",
+    "disclosed_label": true
+  },
+  {
+    "step": 25,
+    "bounds": {
+      "lower": "3/20",
+      "upper": "15/16",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0074",
+    "disclosed_label": true
+  },
+  {
+    "step": 26,
+    "bounds": {
+      "lower": "22/141",
+      "upper": "15/16",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0086",
+    "disclosed_label": true
+  },
+  {
+    "step": 27,
+    "bounds": {
+      "lower": "23/142",
+      "upper": "15/16",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0088",
+    "disclosed_label": true
+  },
+  {
+    "step": 28,
+    "bounds": {
+      "lower": "24/143",
+      "upper": "15/16",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0090",
+    "disclosed_label": true
+  },
+  {
+    "step": 29,
+    "bounds": {
+      "lower": "25/144",
+      "upper": "15/16",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0094",
+    "disclosed_label": true
+  },
+  {
+    "step": 30,
+    "bounds": {
+      "lower": "26/145",
+      "upper": "15/16",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0098",
+    "disclosed_label": true
+  },
+  {
+    "step": 31,
+    "bounds": {
+      "lower": "27/146",
+      "upper": "15/16",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0100",
+    "disclosed_label": true
+  },
+  {
+    "step": 32,
+    "bounds": {
+      "lower": "4/21",
+      "upper": "15/16",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0104",
+    "disclosed_label": true
+  },
+  {
+    "step": 33,
+    "bounds": {
+      "lower": "29/148",
+      "upper": "15/16",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0008",
+    "disclosed_label": true
+  },
+  {
+    "step": 34,
+    "bounds": {
+      "lower": "29/148",
+      "upper": "45/49",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0107",
+    "disclosed_label": true
+  },
+  {
+    "step": 35,
+    "bounds": {
+      "lower": "30/149",
+      "upper": "45/49",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0110",
+    "disclosed_label": true
+  },
+  {
+    "step": 36,
+    "bounds": {
+      "lower": "31/150",
+      "upper": "45/49",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0116",
+    "disclosed_label": true
+  },
+  {
+    "step": 37,
+    "bounds": {
+      "lower": "32/151",
+      "upper": "45/49",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0120",
+    "disclosed_label": true
+  },
+  {
+    "step": 38,
+    "bounds": {
+      "lower": "33/152",
+      "upper": "45/49",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0129",
+    "disclosed_label": true
+  },
+  {
+    "step": 39,
+    "bounds": {
+      "lower": "2/9",
+      "upper": "45/49",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0136",
+    "disclosed_label": true
+  },
+  {
+    "step": 40,
+    "bounds": {
+      "lower": "5/22",
+      "upper": "45/49",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0140",
+    "disclosed_label": true
+  },
+  {
+    "step": 41,
+    "bounds": {
+      "lower": "36/155",
+      "upper": "45/49",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0143",
+    "disclosed_label": true
+  },
+  {
+    "step": 42,
+    "bounds": {
+      "lower": "37/156",
+      "upper": "45/49",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0153",
+    "disclosed_label": true
+  },
+  {
+    "step": 43,
+    "bounds": {
+      "lower": "38/157",
+      "upper": "45/49",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0155",
+    "disclosed_label": true
+  },
+  {
+    "step": 44,
+    "bounds": {
+      "lower": "39/158",
+      "upper": "45/49",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0158",
+    "disclosed_label": true
+  },
+  {
+    "step": 45,
+    "bounds": {
+      "lower": "40/159",
+      "upper": "45/49",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0159",
+    "disclosed_label": true
+  },
+  {
+    "step": 46,
+    "bounds": {
+      "lower": "41/160",
+      "upper": "45/49",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0162",
+    "disclosed_label": true
+  },
+  {
+    "step": 47,
+    "bounds": {
+      "lower": "6/23",
+      "upper": "45/49",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0172",
+    "disclosed_label": true
+  },
+  {
+    "step": 48,
+    "bounds": {
+      "lower": "43/162",
+      "upper": "45/49",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0177",
+    "disclosed_label": true
+  },
+  {
+    "step": 49,
+    "bounds": {
+      "lower": "44/163",
+      "upper": "45/49",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0180",
+    "disclosed_label": true
+  },
+  {
+    "step": 50,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/49",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0009",
+    "disclosed_label": true
+  },
+  {
+    "step": 51,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "9/10",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0010",
+    "disclosed_label": true
+  },
+  {
+    "step": 52,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "15/17",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0011",
+    "disclosed_label": true
+  },
+  {
+    "step": 53,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/52",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0012",
+    "disclosed_label": true
+  },
+  {
+    "step": 54,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/53",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0017",
+    "disclosed_label": true
+  },
+  {
+    "step": 55,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "5/6",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0024",
+    "disclosed_label": true
+  },
+  {
+    "step": 56,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "9/11",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0025",
+    "disclosed_label": true
+  },
+  {
+    "step": 57,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/56",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0026",
+    "disclosed_label": true
+  },
+  {
+    "step": 58,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "15/19",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0033",
+    "disclosed_label": true
+  },
+  {
+    "step": 59,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/58",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0034",
+    "disclosed_label": true
+  },
+  {
+    "step": 60,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/59",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0035",
+    "disclosed_label": true
+  },
+  {
+    "step": 61,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "3/4",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0038",
+    "disclosed_label": true
+  },
+  {
+    "step": 62,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/61",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0043",
+    "disclosed_label": true
+  },
+  {
+    "step": 63,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/62",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0048",
+    "disclosed_label": true
+  },
+  {
+    "step": 64,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "5/7",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0049",
+    "disclosed_label": true
+  },
+  {
+    "step": 65,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/64",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0052",
+    "disclosed_label": true
+  },
+  {
+    "step": 66,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "9/13",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0053",
+    "disclosed_label": true
+  },
+  {
+    "step": 67,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "15/22",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0056",
+    "disclosed_label": true
+  },
+  {
+    "step": 68,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/67",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0061",
+    "disclosed_label": true
+  },
+  {
+    "step": 69,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/68",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0064",
+    "disclosed_label": true
+  },
+  {
+    "step": 70,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "15/23",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0065",
+    "disclosed_label": true
+  },
+  {
+    "step": 71,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "9/14",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0066",
+    "disclosed_label": true
+  },
+  {
+    "step": 72,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/71",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0067",
+    "disclosed_label": true
+  },
+  {
+    "step": 73,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "5/8",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0068",
+    "disclosed_label": true
+  },
+  {
+    "step": 74,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/73",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0069",
+    "disclosed_label": true
+  },
+  {
+    "step": 75,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/74",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0070",
+    "disclosed_label": true
+  },
+  {
+    "step": 76,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "3/5",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0075",
+    "disclosed_label": true
+  },
+  {
+    "step": 77,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/76",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0076",
+    "disclosed_label": true
+  },
+  {
+    "step": 78,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/77",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0077",
+    "disclosed_label": true
+  },
+  {
+    "step": 79,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "15/26",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0078",
+    "disclosed_label": true
+  },
+  {
+    "step": 80,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/79",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0079",
+    "disclosed_label": true
+  },
+  {
+    "step": 81,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "9/16",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0080",
+    "disclosed_label": true
+  },
+  {
+    "step": 82,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "5/9",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0081",
+    "disclosed_label": true
+  },
+  {
+    "step": 83,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/82",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0082",
+    "disclosed_label": true
+  },
+  {
+    "step": 84,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/83",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0083",
+    "disclosed_label": true
+  },
+  {
+    "step": 85,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "15/28",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0084",
+    "disclosed_label": true
+  },
+  {
+    "step": 86,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "9/17",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0085",
+    "disclosed_label": true
+  },
+  {
+    "step": 87,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/86",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0092",
+    "disclosed_label": true
+  },
+  {
+    "step": 88,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "15/29",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0093",
+    "disclosed_label": true
+  },
+  {
+    "step": 89,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/88",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0096",
+    "disclosed_label": true
+  },
+  {
+    "step": 90,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/89",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0101",
+    "disclosed_label": true
+  },
+  {
+    "step": 91,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "1/2",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0102",
+    "disclosed_label": true
+  },
+  {
+    "step": 92,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/91",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0105",
+    "disclosed_label": true
+  },
+  {
+    "step": 93,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/92",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0108",
+    "disclosed_label": true
+  },
+  {
+    "step": 94,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "15/31",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0109",
+    "disclosed_label": true
+  },
+  {
+    "step": 95,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/94",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0112",
+    "disclosed_label": true
+  },
+  {
+    "step": 96,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "9/19",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0113",
+    "disclosed_label": true
+  },
+  {
+    "step": 97,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "15/32",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0114",
+    "disclosed_label": true
+  },
+  {
+    "step": 98,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/97",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0117",
+    "disclosed_label": true
+  },
+  {
+    "step": 99,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/98",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0118",
+    "disclosed_label": true
+  },
+  {
+    "step": 100,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "5/11",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0121",
+    "disclosed_label": true
+  },
+  {
+    "step": 101,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "9/20",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0122",
+    "disclosed_label": true
+  },
+  {
+    "step": 102,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/101",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0123",
+    "disclosed_label": true
+  },
+  {
+    "step": 103,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "15/34",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0124",
+    "disclosed_label": true
+  },
+  {
+    "step": 104,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/103",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0125",
+    "disclosed_label": true
+  },
+  {
+    "step": 105,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/104",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0126",
+    "disclosed_label": true
+  },
+  {
+    "step": 106,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "3/7",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0127",
+    "disclosed_label": true
+  },
+  {
+    "step": 107,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/106",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0130",
+    "disclosed_label": true
+  },
+  {
+    "step": 108,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/107",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0131",
+    "disclosed_label": true
+  },
+  {
+    "step": 109,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "5/12",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0132",
+    "disclosed_label": true
+  },
+  {
+    "step": 110,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/109",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0133",
+    "disclosed_label": true
+  },
+  {
+    "step": 111,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "9/22",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0134",
+    "disclosed_label": true
+  },
+  {
+    "step": 112,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "15/37",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0137",
+    "disclosed_label": true
+  },
+  {
+    "step": 113,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/112",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0138",
+    "disclosed_label": true
+  },
+  {
+    "step": 114,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/113",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0141",
+    "disclosed_label": true
+  },
+  {
+    "step": 115,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "15/38",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0144",
+    "disclosed_label": true
+  },
+  {
+    "step": 116,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "9/23",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0145",
+    "disclosed_label": true
+  },
+  {
+    "step": 117,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/116",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0146",
+    "disclosed_label": true
+  },
+  {
+    "step": 118,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "5/13",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0147",
+    "disclosed_label": true
+  },
+  {
+    "step": 119,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/118",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0148",
+    "disclosed_label": true
+  },
+  {
+    "step": 120,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/119",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0149",
+    "disclosed_label": true
+  },
+  {
+    "step": 121,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "3/8",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0150",
+    "disclosed_label": true
+  },
+  {
+    "step": 122,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/121",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0151",
+    "disclosed_label": true
+  },
+  {
+    "step": 123,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/122",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0152",
+    "disclosed_label": true
+  },
+  {
+    "step": 124,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "15/41",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0161",
+    "disclosed_label": true
+  },
+  {
+    "step": 125,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/124",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0164",
+    "disclosed_label": true
+  },
+  {
+    "step": 126,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "9/25",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0165",
+    "disclosed_label": true
+  },
+  {
+    "step": 127,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "5/14",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0166",
+    "disclosed_label": true
+  },
+  {
+    "step": 128,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/127",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0167",
+    "disclosed_label": true
+  },
+  {
+    "step": 129,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/128",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0168",
+    "disclosed_label": true
+  },
+  {
+    "step": 130,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "15/43",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0169",
+    "disclosed_label": true
+  },
+  {
+    "step": 131,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "9/26",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0170",
+    "disclosed_label": true
+  },
+  {
+    "step": 132,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/131",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0173",
+    "disclosed_label": true
+  },
+  {
+    "step": 133,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "15/44",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0174",
+    "disclosed_label": true
+  },
+  {
+    "step": 134,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/133",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0175",
+    "disclosed_label": true
+  },
+  {
+    "step": 135,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/134",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0176",
+    "disclosed_label": true
+  },
+  {
+    "step": 136,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "1/3",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0181",
+    "disclosed_label": true
+  },
+  {
+    "step": 137,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/136",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0182",
+    "disclosed_label": true
+  },
+  {
+    "step": 138,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/137",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0183",
+    "disclosed_label": true
+  },
+  {
+    "step": 139,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "15/46",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0184",
+    "disclosed_label": true
+  },
+  {
+    "step": 140,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/139",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0185",
+    "disclosed_label": true
+  },
+  {
+    "step": 141,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "9/28",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0186",
+    "disclosed_label": true
+  },
+  {
+    "step": 142,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "15/47",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0187",
+    "disclosed_label": true
+  },
+  {
+    "step": 143,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/142",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0649",
+    "disclosed_label": true
+  },
+  {
+    "step": 144,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/143",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0650",
+    "disclosed_label": true
+  },
+  {
+    "step": 145,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "5/16",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0651",
+    "disclosed_label": true
+  },
+  {
+    "step": 146,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "9/29",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0652",
+    "disclosed_label": true
+  },
+  {
+    "step": 147,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/146",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0653",
+    "disclosed_label": true
+  },
+  {
+    "step": 148,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "15/49",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0654",
+    "disclosed_label": true
+  },
+  {
+    "step": 149,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/148",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0655",
+    "disclosed_label": true
+  },
+  {
+    "step": 150,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/149",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0656",
+    "disclosed_label": true
+  },
+  {
+    "step": 151,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "3/10",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0657",
+    "disclosed_label": true
+  },
+  {
+    "step": 152,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/151",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0658",
+    "disclosed_label": true
+  },
+  {
+    "step": 153,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/152",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0659",
+    "disclosed_label": true
+  },
+  {
+    "step": 154,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "5/17",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0660",
+    "disclosed_label": true
+  },
+  {
+    "step": 155,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/154",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0661",
+    "disclosed_label": true
+  },
+  {
+    "step": 156,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "9/31",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0662",
+    "disclosed_label": true
+  },
+  {
+    "step": 157,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "15/52",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0663",
+    "disclosed_label": true
+  },
+  {
+    "step": 158,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/157",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0664",
+    "disclosed_label": true
+  },
+  {
+    "step": 159,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/158",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0665",
+    "disclosed_label": true
+  },
+  {
+    "step": 160,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "15/53",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0666",
+    "disclosed_label": true
+  },
+  {
+    "step": 161,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "9/32",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0667",
+    "disclosed_label": true
+  },
+  {
+    "step": 162,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/161",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0668",
+    "disclosed_label": true
+  },
+  {
+    "step": 163,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "5/18",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0669",
+    "disclosed_label": true
+  },
+  {
+    "step": 164,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/163",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0685",
+    "disclosed_label": true
+  },
+  {
+    "step": 165,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/164",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0004",
+    "disclosed_label": true
+  },
+  {
+    "step": 166,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/164",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0013",
+    "disclosed_label": true
+  },
+  {
+    "step": 167,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/164",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0015",
+    "disclosed_label": true
+  },
+  {
+    "step": 168,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/164",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0018",
+    "disclosed_label": true
+  },
+  {
+    "step": 169,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/164",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0021",
+    "disclosed_label": true
+  },
+  {
+    "step": 170,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/164",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0023",
+    "disclosed_label": true
+  },
+  {
+    "step": 171,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/164",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0028",
+    "disclosed_label": true
+  },
+  {
+    "step": 172,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/164",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0029",
+    "disclosed_label": true
+  },
+  {
+    "step": 173,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/164",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0032",
+    "disclosed_label": false
+  },
+  {
+    "step": 174,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/164",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0036",
+    "disclosed_label": true
+  },
+  {
+    "step": 175,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/164",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0040",
+    "disclosed_label": true
+  },
+  {
+    "step": 176,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/164",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0041",
+    "disclosed_label": true
+  },
+  {
+    "step": 177,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/164",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0045",
+    "disclosed_label": true
+  },
+  {
+    "step": 178,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/164",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0046",
+    "disclosed_label": true
+  },
+  {
+    "step": 179,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/164",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0050",
+    "disclosed_label": true
+  },
+  {
+    "step": 180,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/164",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0054",
+    "disclosed_label": true
+  },
+  {
+    "step": 181,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/164",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0057",
+    "disclosed_label": true
+  },
+  {
+    "step": 182,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/164",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0059",
+    "disclosed_label": true
+  },
+  {
+    "step": 183,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/164",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0063",
+    "disclosed_label": true
+  },
+  {
+    "step": 184,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/164",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0072",
+    "disclosed_label": true
+  },
+  {
+    "step": 185,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/164",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0073",
+    "disclosed_label": true
+  },
+  {
+    "step": 186,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/164",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0087",
+    "disclosed_label": true
+  },
+  {
+    "step": 187,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/164",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0089",
+    "disclosed_label": true
+  },
+  {
+    "step": 188,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/164",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0091",
+    "disclosed_label": false
+  },
+  {
+    "step": 189,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/164",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0095",
+    "disclosed_label": false
+  },
+  {
+    "step": 190,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/164",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0097",
+    "disclosed_label": true
+  },
+  {
+    "step": 191,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/164",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0099",
+    "disclosed_label": true
+  },
+  {
+    "step": 192,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/164",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0103",
+    "disclosed_label": true
+  },
+  {
+    "step": 193,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/164",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0106",
+    "disclosed_label": true
+  },
+  {
+    "step": 194,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/164",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0111",
+    "disclosed_label": false
+  },
+  {
+    "step": 195,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/164",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0115",
+    "disclosed_label": true
+  },
+  {
+    "step": 196,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/164",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0119",
+    "disclosed_label": true
+  },
+  {
+    "step": 197,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/164",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0128",
+    "disclosed_label": true
+  },
+  {
+    "step": 198,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/164",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0135",
+    "disclosed_label": false
+  },
+  {
+    "step": 199,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/164",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0139",
+    "disclosed_label": true
+  },
+  {
+    "step": 200,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/164",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0142",
+    "disclosed_label": true
+  },
+  {
+    "step": 201,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/164",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0154",
+    "disclosed_label": true
+  },
+  {
+    "step": 202,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/164",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0156",
+    "disclosed_label": true
+  },
+  {
+    "step": 203,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/164",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0157",
+    "disclosed_label": true
+  },
+  {
+    "step": 204,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/164",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0160",
+    "disclosed_label": true
+  },
+  {
+    "step": 205,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/164",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0163",
+    "disclosed_label": true
+  },
+  {
+    "step": 206,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/164",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0171",
+    "disclosed_label": true
+  },
+  {
+    "step": 207,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/164",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0178",
+    "disclosed_label": true
+  },
+  {
+    "step": 208,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/164",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    },
+    "selected_group": "g0179",
+    "disclosed_label": true
+  },
+  {
+    "step": 209,
+    "bounds": {
+      "lower": "45/164",
+      "upper": "45/164",
+      "units": "conditional_rate_difference",
+      "decision": "left_strict",
+      "defined_all": true
+    }
+  }
+]

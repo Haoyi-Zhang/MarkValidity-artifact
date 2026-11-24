@@ -1,0 +1,32 @@
+{
+  "status": "COMPLETE",
+  "tasks": 164,
+  "labels": {
+    "supported": 155,
+    "unavailable": 9
+  },
+  "expected_pairs": 124253,
+  "recorded_pairs": 124253,
+  "missing_pairs": 0,
+  "unavailable_pairs": 95,
+  "return_mismatches": 0,
+  "post_argument_mismatches": 0,
+  "stream_mismatches": 0,
+  "detected": 122,
+  "joint_numerator_lower": 113,
+  "joint_numerator_upper": 122,
+  "joint_denominator": 164,
+  "detected_contradictions": 0,
+  "elapsed_seconds": 199.977,
+  "non_supported_tasks": [
+    "HumanEval/31",
+    "HumanEval/32",
+    "HumanEval/39",
+    "HumanEval/55",
+    "HumanEval/63",
+    "HumanEval/96",
+    "HumanEval/100",
+    "HumanEval/127",
+    "HumanEval/130"
+  ]
+}

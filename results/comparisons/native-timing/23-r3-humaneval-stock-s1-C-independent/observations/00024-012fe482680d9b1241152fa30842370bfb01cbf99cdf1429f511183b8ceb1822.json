@@ -1,0 +1,13 @@
+{
+  "stdout": "{\"elapsed_seconds\":0.004416,\"error\":null,\"observations\":[{\"after\":{\"args\":[\"tuple\",[[\"str\",\"Hello world\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"Hello world\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"str\",\"3e25960a79dbc69b674cd4ec67a72c62\"]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"none\"]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"A B C\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"A B C\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"str\",\"0ef78513b0cb8cef12743f5aeb35f888\"]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"password\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"password\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"str\",\"5f4dcc3b5aa765d61d8327deb882cf99\"]]}],\"status\":\"passed\",\"stderr\":\"\",\"stdout\":\"\"}\n",
+  "stderr": "",
+  "returncode": 0,
+  "interruption": null,
+  "child_user_cpu_seconds": 0.022238000000015745,
+  "child_system_cpu_seconds": 0.008905999999996084,
+  "group": "012fe482680d9b1241152fa30842370bfb01cbf99cdf1429f511183b8ceb1822",
+  "received_label": true,
+  "source_sha256": "b712b49e4d80274e3b465d8e63b26310d5399b7fad99d1b7c86ae4d9360bb24a",
+  "contract_sha256": "afa35de213d7dbf66b6ff7d05dc26c500a77596b9cb6ef98708fda8680182c38",
+  "worker_seconds": 0.03329471599863609
+}

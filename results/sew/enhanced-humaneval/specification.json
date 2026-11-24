@@ -1,0 +1,12 @@
+{
+  "schema": "markvalidity-normalized-enhanced-humaneval-v3",
+  "data_sha256": "b796127e635a67f93fb35c04f4cb03cf06f38c8072ee7cee8833d7bee06979ef",
+  "plus_data_sha256": "272720b90ac375502c8ed23cd791c2a93dfb22a911641a494da74a426c09f101",
+  "observer_sha256": "7bddddcc0f58593e38345c8150eb104b726424af96b0fac116ef332109bc8670",
+  "normalizer_sha256": "1a2d2848befe9ca5d84d63ef8e4f5798b39157f57cd4a450884e169bd6465c8d",
+  "contract_identity": "SHA-256 of UTF-8 JSON with ensure_ascii=False, sort_keys=True, separators=(',', ':'), including the actual input lists.",
+  "source_contract_identity": "SHA-256 of the same canonical JSON containing reference_sha256, candidate_sha256, and contract_sha256.",
+  "selection": "All 164 tasks and every input tuple in the full frozen v0.1.10 asset; all unknown outcomes retained.",
+  "primary_study_separation": "This is a distinct expanded-input contract. It is never pooled with the original-suite four-factor labels.",
+  "verification": "Every retained pair record was reopened; exact outcome, poststate, and stream equalities and every task label were independently reconstructed."
+}

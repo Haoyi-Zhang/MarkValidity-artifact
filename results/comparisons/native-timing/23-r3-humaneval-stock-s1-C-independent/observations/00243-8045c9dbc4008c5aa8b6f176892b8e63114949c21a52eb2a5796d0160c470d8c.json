@@ -1,0 +1,13 @@
+{
+  "stdout": "{\"elapsed_seconds\":0.002348,\"error\":null,\"observations\":[{\"after\":{\"args\":[\"tuple\",[[\"str\",\"Hello world\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"Hello world\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"0\"]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"Is the sky blue?\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"Is the sky blue?\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"0\"]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"I love It !\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"I love It !\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"1\"]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"bIt\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"bIt\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"0\"]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"I feel good today. I will be productive. will kill It\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"I feel good today. I will be productive. will kill It\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"2\"]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"You and I are going for a walk\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"You and I are going for a walk\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"0\"]]}],\"status\":\"passed\",\"stderr\":\"\",\"stdout\":\"\"}\n",
+  "stderr": "",
+  "returncode": 0,
+  "interruption": null,
+  "child_user_cpu_seconds": 0.01855199999999968,
+  "child_system_cpu_seconds": 0.011945999999994683,
+  "group": "8045c9dbc4008c5aa8b6f176892b8e63114949c21a52eb2a5796d0160c470d8c",
+  "received_label": true,
+  "source_sha256": "90ad9efd8a88c995e64b9a0297a98fb49e17b4f1b43f42c74e1ade974a41d37b",
+  "contract_sha256": "8cb0bb7e0550268c997a466d7fd239aa8d1edc05fb3ab6cc16954dcf3055f033",
+  "worker_seconds": 0.04225600000063423
+}

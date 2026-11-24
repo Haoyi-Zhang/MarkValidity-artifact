@@ -1,0 +1,85 @@
+{
+  "repeat": 3,
+  "dataset": "mbpp_sanitized",
+  "scope": "mbpp",
+  "left": "stock",
+  "right": "s4",
+  "target": "J",
+  "method": "coupled",
+  "policy": "joint_width_per_suite",
+  "ordinal": 18,
+  "directory": "18-r3-mbpp-stock-s4-J-coupled",
+  "denominator": 1281,
+  "initial_reference_groups": 20,
+  "candidate_suite_queries": 1,
+  "decision": "right_strict",
+  "final_bounds": {
+    "lower": -3,
+    "upper": -1,
+    "units": "joint_count_difference",
+    "decision": "right_strict",
+    "defined_all": true
+  },
+  "phase_seconds": {
+    "register_seconds": 0.013606563996290788,
+    "select_seconds": 1.4019969967193902e-06,
+    "bounds_seconds": 8.933006029110402e-06,
+    "worker_seconds": 0.03375146300095366,
+    "receive_seconds": 0.00015568399976473302,
+    "record_seconds": 0.00045686699741054326
+  },
+  "audit_total_seconds": 0.04872225799772423,
+  "unallocated_loop_seconds": 0.0007413450002786703,
+  "queries": [
+    {
+      "step": 1,
+      "group": "0d08449da73913c95dbce2b680548b9901210b9164c44c970f7c9ad9b94f0bb6",
+      "received_label": true,
+      "evidence_file": "18-r3-mbpp-stock-s4-J-coupled/observations/00001-0d08449da73913c95dbce2b680548b9901210b9164c44c970f7c9ad9b94f0bb6.json",
+      "evidence_sha256": "f22abc5a3ca78faff6046f0468023e7d9dd5b07d6b9f90a87745e23c73e4cb3d"
+    }
+  ],
+  "trace_sha256": "f6a269a3ae3d7a9db5534463137fd7f00aa6fbbea0d877c6314db861fca73751",
+  "load_before": {
+    "monotonic_seconds": 35450.266348582,
+    "load_average": [
+      5.33056640625,
+      6.8076171875,
+      6.732421875
+    ],
+    "visible_processes": 3,
+    "producer_cpu_seconds": 20.418826831,
+    "cpu_affinity": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "load_after": {
+    "monotonic_seconds": 35450.315091171,
+    "load_average": [
+      5.33056640625,
+      6.8076171875,
+      6.732421875
+    ],
+    "visible_processes": 3,
+    "producer_cpu_seconds": 20.434429941,
+    "cpu_affinity": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  }
+}

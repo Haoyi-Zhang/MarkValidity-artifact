@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "scope": "All frozen primary sources, embeddings, detector decisions and original-test observations; diagnostic time/traceback paths and explicit v2 admission metadata excluded.",
+  "comparisons": [
+    {
+      "variant": "stock",
+      "reference_sources": 427,
+      "candidate_sources": 1281,
+      "original_test_observations": 5296,
+      "v1_rows_sha256": "b2f7c00e98a467f1b434350900215e8bd9eb39237c43c95db86ccaa8905862c3",
+      "v2_rows_sha256": "98ea7e8edc36e97428e2a3313618c25bab3e8e18b0433e552d4299f24dd37d4f"
+    },
+    {
+      "variant": "s1_literal_predecessor",
+      "reference_sources": 427,
+      "candidate_sources": 1281,
+      "original_test_observations": 5296,
+      "v1_rows_sha256": "f66bdfbb21e891fde8b343cb409dfc5bae74d7e08143afbf410ea04316e1b89f",
+      "v2_rows_sha256": "95412f86c450f070238535a43b8e78e5b5fdeb0a34d689d88539e99ceaf3fa48"
+    },
+    {
+      "variant": "s4_return_boundary",
+      "reference_sources": 427,
+      "candidate_sources": 1281,
+      "original_test_observations": 5296,
+      "v1_rows_sha256": "bcff736ecc4ae6dbd8af347b80cbc917c938535a519019617a8a2e6f109f53a4",
+      "v2_rows_sha256": "c6b528c4d8e7930563345c721fb239d66f36c1fc33d1228b05c1ac6d63b89646"
+    },
+    {
+      "variant": "s1_s4",
+      "reference_sources": 427,
+      "candidate_sources": 1281,
+      "original_test_observations": 5296,
+      "v1_rows_sha256": "cecfe7f718261a892deee3af3bf730c360c4bb60747f47cf4910ac6497344662",
+      "v2_rows_sha256": "c2146e36f8af731b132a6333d23803f6f5551b2bc412721538c4fe4ae2e34b72"
+    }
+  ],
+  "checker_sha256": "e5c0c88b9e6c5407c7cda621eaa16403dd8119d539b853c0e3ab05955fe555a6"
+}

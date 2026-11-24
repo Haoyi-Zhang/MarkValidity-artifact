@@ -1,0 +1,14 @@
+from collections import defaultdict
+
+
+def count_Substrings(s):
+	n = len(s)
+	mp = defaultdict(lambda : 0)
+	mp[0] += 1
+	count = 0
+	sum = 0
+	for i in range(n):
+		sum += ord(s[i]) - ord('0')
+		count += mp[sum - (i + 1)]
+		mp[sum - (i + 1)] += 1
+	return count

@@ -1,0 +1,120 @@
+{
+  "repeat": 2,
+  "dataset": "mbpp_sanitized",
+  "scope": "mbpp",
+  "left": "stock",
+  "right": "s4",
+  "target": "C",
+  "method": "coupled",
+  "policy": "conditional_differences_first",
+  "ordinal": 13,
+  "directory": "13-r2-mbpp-stock-s4-C-coupled",
+  "denominator": 1281,
+  "initial_reference_groups": 20,
+  "candidate_suite_queries": 6,
+  "decision": "right_strict",
+  "final_bounds": {
+    "lower": -1287,
+    "upper": -57,
+    "units": "conditional_cross_product_count_margin",
+    "decision": "right_strict",
+    "defined_all": true
+  },
+  "phase_seconds": {
+    "register_seconds": 0.01090729999850737,
+    "select_seconds": 1.2159012840129435e-05,
+    "bounds_seconds": 0.00029274800908751786,
+    "worker_seconds": 0.23203121500409907,
+    "receive_seconds": 0.0017410360014764592,
+    "record_seconds": 0.004130124994844664
+  },
+  "audit_total_seconds": 0.24937574800424045,
+  "unallocated_loop_seconds": 0.0002611649833852425,
+  "queries": [
+    {
+      "step": 1,
+      "group": "0d08449da73913c95dbce2b680548b9901210b9164c44c970f7c9ad9b94f0bb6",
+      "received_label": true,
+      "evidence_file": "13-r2-mbpp-stock-s4-C-coupled/observations/00001-0d08449da73913c95dbce2b680548b9901210b9164c44c970f7c9ad9b94f0bb6.json",
+      "evidence_sha256": "803c9bd6beaa4db02e1681dd6f67e7f4a484ffb2ded8207dd02ca70f24b28aa5"
+    },
+    {
+      "step": 2,
+      "group": "57353c4804c21ba8a8c06af2c6dc581d78e7b52ceb48aeff1d161d7b7c65ab3f",
+      "received_label": true,
+      "evidence_file": "13-r2-mbpp-stock-s4-C-coupled/observations/00002-57353c4804c21ba8a8c06af2c6dc581d78e7b52ceb48aeff1d161d7b7c65ab3f.json",
+      "evidence_sha256": "3deb6fc7e42fd2e15214b9339ae841f5c678150b70188c5e76fd8f53f0ab0979"
+    },
+    {
+      "step": 3,
+      "group": "fe901d4c7f3968ee1d87c1a9d402a2a215f641c7ba84f3f2ed406fefd0fbe226",
+      "received_label": true,
+      "evidence_file": "13-r2-mbpp-stock-s4-C-coupled/observations/00003-fe901d4c7f3968ee1d87c1a9d402a2a215f641c7ba84f3f2ed406fefd0fbe226.json",
+      "evidence_sha256": "69e1b260fb6ba1ab2bd5199c204e30019af0cabebe1bca706339547b6f0b7c55"
+    },
+    {
+      "step": 4,
+      "group": "7414287c4af3c3cea6fa4110e046e606c8a446b58b6e137770f3eef5e0937d5e",
+      "received_label": false,
+      "evidence_file": "13-r2-mbpp-stock-s4-C-coupled/observations/00004-7414287c4af3c3cea6fa4110e046e606c8a446b58b6e137770f3eef5e0937d5e.json",
+      "evidence_sha256": "a563dc698dca8dcbe3cc4e1a5bf27640bb182705f5606a87f50715010e1ad12e"
+    },
+    {
+      "step": 5,
+      "group": "a1e0ef3489295b5a489cb5037b399cafbb7d875d308ef287630831941bc539d0",
+      "received_label": false,
+      "evidence_file": "13-r2-mbpp-stock-s4-C-coupled/observations/00005-a1e0ef3489295b5a489cb5037b399cafbb7d875d308ef287630831941bc539d0.json",
+      "evidence_sha256": "4c245a7dd0c5c44157531cce61546ac1299ed755715dabd533d6211e6022c229"
+    },
+    {
+      "step": 6,
+      "group": "cc742ed4488165527a3748192696b19bdd3de48f4c307c9f3617d5047caecbda",
+      "received_label": false,
+      "evidence_file": "13-r2-mbpp-stock-s4-C-coupled/observations/00006-cc742ed4488165527a3748192696b19bdd3de48f4c307c9f3617d5047caecbda.json",
+      "evidence_sha256": "e67af8b753508b267ed4330fb729ae267528ee1fdb5f92264962ea60c7addcf2"
+    }
+  ],
+  "trace_sha256": "be430d5ee890507bb9518bfbcaa94847b3447bc8f95ee033e265d46d33d6cab4",
+  "load_before": {
+    "monotonic_seconds": 35339.111938686,
+    "load_average": [
+      7.45361328125,
+      7.58935546875,
+      6.94580078125
+    ],
+    "visible_processes": 3,
+    "producer_cpu_seconds": 13.17560629,
+    "cpu_affinity": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "load_after": {
+    "monotonic_seconds": 35339.361340453,
+    "load_average": [
+      7.45361328125,
+      7.58935546875,
+      6.94580078125
+    ],
+    "visible_processes": 3,
+    "producer_cpu_seconds": 13.200818395,
+    "cpu_affinity": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  }
+}

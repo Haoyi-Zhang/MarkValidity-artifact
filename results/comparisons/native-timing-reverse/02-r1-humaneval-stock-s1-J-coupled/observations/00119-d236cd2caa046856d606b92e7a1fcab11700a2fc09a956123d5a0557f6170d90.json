@@ -1,0 +1,13 @@
+{
+  "stdout": "{\"elapsed_seconds\":0.002667,\"error\":null,\"observations\":[{\"after\":{\"args\":[\"tuple\",[[\"str\",\"Mary had a little lamb\"],[\"int\",\"4\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"Mary had a little lamb\"],[\"int\",\"4\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"list\",[[\"str\",\"little\"]]]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"Mary had a little lamb\"],[\"int\",\"3\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"Mary had a little lamb\"],[\"int\",\"3\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"list\",[[\"str\",\"Mary\"],[\"str\",\"lamb\"]]]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"simple white space\"],[\"int\",\"2\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"simple white space\"],[\"int\",\"2\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"list\",[]]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"Hello world\"],[\"int\",\"4\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"Hello world\"],[\"int\",\"4\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"list\",[[\"str\",\"world\"]]]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"Uncle sam\"],[\"int\",\"3\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"Uncle sam\"],[\"int\",\"3\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"list\",[[\"str\",\"Uncle\"]]]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"\"],[\"int\",\"4\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"\"],[\"int\",\"4\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"list\",[]]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"a b c d e f\"],[\"int\",\"1\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"a b c d e f\"],[\"int\",\"1\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"list\",[[\"str\",\"b\"],[\"str\",\"c\"],[\"str\",\"d\"],[\"str\",\"f\"]]]]}],\"status\":\"passed\",\"stderr\":\"\",\"stdout\":\"\"}\n",
+  "stderr": "",
+  "returncode": 0,
+  "interruption": null,
+  "child_user_cpu_seconds": 0.023604999999999876,
+  "child_system_cpu_seconds": 0.007398000000000238,
+  "group": "d236cd2caa046856d606b92e7a1fcab11700a2fc09a956123d5a0557f6170d90",
+  "received_label": true,
+  "source_sha256": "778960df8b95904dfe42551eff744b075c819d67dc27f0d401393a73d4229c0a",
+  "contract_sha256": "5d5f924a1c24ed21dd4dd76d446d532267bfc9a1fcadcfd185036ec1a05bb7e5",
+  "worker_seconds": 0.031762042999616824
+}

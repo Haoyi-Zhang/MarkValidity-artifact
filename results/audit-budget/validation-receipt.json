@@ -1,0 +1,30 @@
+{
+  "control_tests": 6,
+  "recorded_at_utc": "2026-11-19T07:47:35.258893+00:00",
+  "result_sha256": {
+    "README.md": "a6af38b6d5755b37d020d6b222541069dda9a31076551f04c1476defabae6436",
+    "controls.log": "88f87f3b2c0d3477a154ceb39d115a148a01deea3db0140dd38f5d4ee3e2f19e",
+    "registration.json": "62fcf192243036495d5995e8a6b92b7dba1aaad48d2008f87ca027e20e916e0b",
+    "summary.json": "ab1de7c1d31448a0b52b8f39bb102e9f0e9e63ebc8902b3bdda1fc251bd60e3e",
+    "verification.json": "20c4c4a3094763a4f16f8d2cdb97fe6e88cf8b2a7d138eaeaf94937e08d11d7a"
+  },
+  "scope": "Saved-data receiving, numerical reconstruction and concrete adversarial/control tests; native execution scope is recorded separately in the study summary.",
+  "source_sha256": {
+    "tests/test_source_budget.py": "6779b6f107819c63b01e9b7bbc3d766ff7a2da3b5883aca4e5485b8321535190",
+    "verify_source_budget.py": "a0fa72c33299873d941353e5827f42044d3ded54f238fb318ca5d6d9c80e8f06"
+  },
+  "status": "PASS",
+  "verification": {
+    "contrasts": 9,
+    "fresh_javascript_seed_sources": 204,
+    "independent_closed_form_endpoint_checks": 3454,
+    "per_query_width_comparisons": 420696,
+    "schedules": 162,
+    "scope": "Source coefficients independently rebuilt from configuration-level detection; exact v2 label linkage, repeated AST admission, all disclosure orders, every bound/cost/certificate transition and descriptive seed summaries checked. No claim of execution attestation or input-cost optimality.",
+    "source_group_proofs_rechecked": 22054,
+    "status": "PASS",
+    "task_program_executions": 0,
+    "trace_rows_reconstructed": 420858,
+    "unknown_javascript_source_groups": 21891
+  }
+}

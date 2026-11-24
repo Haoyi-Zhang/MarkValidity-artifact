@@ -1,0 +1,14 @@
+def is_nested(string):
+    open_count = 0
+    nest_found = False
+    for char in string:
+        if char == '[':
+            open_count += 1
+        elif char == ']':
+            if open_count > 0:
+                open_count -= 1
+                if open_count > 0:
+                    nest_found = True
+            else:
+                return False
+    return nest_found if open_count == 0 else False

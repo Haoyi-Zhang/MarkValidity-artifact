@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "analysis": "results/revision-sew-natural/analysis-all-withheld",
+  "cases": 18,
+  "schedules": 360,
+  "trace_states_checked": 432920,
+  "first_certificates_checked": 2160,
+  "independently_reconstructed_states": 1993,
+  "method": "Rebuilt coefficient/known-label models from original normalized rows at every first-certificate prefix; compared against the nonincremental exact-Fraction prototype; inspected every trace prefix for truth containment and cross-version interval nesting.",
+  "files_sha256": {
+    "manifest.json": "a45b644d58bdb8b45481ca3e24e108319fc0823283049eb97a2d73600b123a96",
+    "comparisons.json": "044e9151e7f4290628dd93847b80521e15c1ed529a15e27541203ffbc9c5c1ed",
+    "group_index.json": "383ca3ea38579a4493eb20b6ef8fd4dc38698cabee6c0744481678c16a719238",
+    "comparison_summary.csv": "63be933104bb1623cbf1307f8a1f172dab6fc13605d7ebcde7d8b693ac5606d3"
+  },
+  "verifier_sha256": "d7dc9adf83fa0aefa3f0b60782de505566764e0c57e7304fffe683aa2b774fa3",
+  "prototype_sha256": "9d70eb38f560ac3590474414baa9d45b7475e88e29e4e9970782796185c7f8dc"
+}

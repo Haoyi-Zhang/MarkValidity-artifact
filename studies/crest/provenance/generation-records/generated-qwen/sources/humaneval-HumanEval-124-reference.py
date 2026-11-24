@@ -1,0 +1,20 @@
+
+import re
+
+def valid_date(date):
+    if not date:
+        return False
+
+    match = re.match(r'^(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])-\d{4}$', date)
+    if not match:
+        return False
+
+    month, day, year = map(int, date.split('-'))
+
+    days_in_month = {1: 31, 2: 29, 3: 31, 4: 30, 5: 31, 6: 30,
+                    7: 31, 8: 31, 9: 30, 10: 31, 11: 30, 12: 31}
+
+    if day < 1 or day > days_in_month[month]:
+        return False
+
+    return True

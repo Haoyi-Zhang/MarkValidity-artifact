@@ -1,0 +1,650 @@
+{
+  "steps": [
+    {
+      "name": "humaneval-observations",
+      "groups": [
+        "primary"
+      ],
+      "argv": [
+        "{python}",
+        "-B",
+        "-S",
+        "external-studies/sew_natural/scripts/humaneval/verify_humaneval.py",
+        "--main-results",
+        "results/revision-sew-natural/humaneval",
+        "--enhanced-results",
+        "results/revision-sew-natural/enhanced-humaneval",
+        "--data",
+        "external-studies/sew_natural/data/HumanEval.jsonl.gz",
+        "--plus-data",
+        "external-studies/sew_natural/data/HumanEvalPlus-v0.1.10.jsonl.gz",
+        "--primary-runner",
+        "external-studies/sew_natural/scripts/humaneval/native_runner_v3.py",
+        "--enhanced-runner",
+        "external-studies/sew_natural/scripts/humaneval/native_pairs_v3.py",
+        "--variants-root",
+        "external-studies/sew_natural/variants"
+      ]
+    },
+    {
+      "name": "mbpp-observations",
+      "groups": [
+        "primary"
+      ],
+      "argv": [
+        "{python}",
+        "-B",
+        "-S",
+        "external-studies/sew_natural/mbpp/scripts/verify_normalized.py",
+        "--results-root",
+        "results/revision-sew-natural/mbpp"
+      ]
+    },
+    {
+      "name": "algorithm-branches",
+      "groups": [
+        "primary"
+      ],
+      "argv": [
+        "{python}",
+        "-B",
+        "-S",
+        "scripts/check_algorithm_branches.py"
+      ]
+    },
+    {
+      "name": "conditional-bounds",
+      "groups": [
+        "primary"
+      ],
+      "argv": [
+        "{python}",
+        "-B",
+        "-S",
+        "external-studies/sew_natural/analysis/verify_conditional_bounds.py"
+      ]
+    },
+    {
+      "name": "comparison-arithmetic",
+      "groups": [
+        "primary"
+      ],
+      "argv": [
+        "{python}",
+        "-B",
+        "-S",
+        "external-studies/sew_natural/analysis/verify_natural_analysis.py"
+      ]
+    },
+    {
+      "name": "matched-disclosure-primary",
+      "groups": [
+        "primary"
+      ],
+      "argv": [
+        "{python}",
+        "-B",
+        "-S",
+        "external-studies/sew_natural/analysis/verify_natural_results.py",
+        "--analysis",
+        "results/revision-sew-natural/analysis-primary"
+      ]
+    },
+    {
+      "name": "matched-disclosure-all-withheld",
+      "groups": [
+        "primary"
+      ],
+      "argv": [
+        "{python}",
+        "-B",
+        "-S",
+        "external-studies/sew_natural/analysis/verify_natural_results.py",
+        "--analysis",
+        "results/revision-sew-natural/analysis-all-withheld"
+      ]
+    },
+    {
+      "name": "independent-query-policies",
+      "groups": [
+        "primary"
+      ],
+      "argv": [
+        "{python}",
+        "-B",
+        "-S",
+        "external-studies/sew_natural/comparison_costs/verify.py",
+        "--artifact",
+        ".",
+        "--results",
+        "results/revision-sew-comparison-costs"
+      ]
+    },
+    {
+      "name": "native-stopping-records",
+      "groups": [
+        "primary"
+      ],
+      "argv": [
+        "{python}",
+        "-B",
+        "-S",
+        "external-studies/sew_natural/analysis/verify_native_audit.py",
+        "--artifact",
+        ".",
+        "--registry",
+        "results/revision-sew-natural/public-registry.json",
+        "--audit",
+        "results/revision-sew-natural/native-audit"
+      ]
+    },
+    {
+      "name": "native-and-ledger-agreement",
+      "groups": [
+        "primary"
+      ],
+      "argv": [
+        "{python}",
+        "-B",
+        "-S",
+        "external-studies/sew_natural/analysis/compare_native_retrospective.py",
+        "--audit",
+        "results/revision-sew-natural/native-audit",
+        "--analysis",
+        "results/revision-sew-natural/analysis-primary"
+      ]
+    },
+    {
+      "name": "python-evidence",
+      "groups": [
+        "supporting"
+      ],
+      "argv": [
+        "{python}",
+        "-B",
+        "-S",
+        "verify_python_fresh.py",
+        "--fresh",
+        "results/revision-python-fresh",
+        "--results",
+        "results/revision-reproduction",
+        "--evidence",
+        "results/revision-source-joint"
+      ]
+    },
+    {
+      "name": "detector-null-enumeration",
+      "groups": [
+        "supporting"
+      ],
+      "argv": [
+        "{python}",
+        "-B",
+        "-S",
+        "scripts/exact_detector_null.py",
+        "--verify",
+        "results/revision-exact-null/full-word-enumeration.json"
+      ]
+    },
+    {
+      "name": "javascript-evidence",
+      "groups": [
+        "supporting"
+      ],
+      "argv": [
+        "{python}",
+        "-B",
+        "-S",
+        "verify_javascript_completion.py",
+        "--out",
+        "results/revision-native-completion",
+        "--retained",
+        "results/revision-reproduction",
+        "--evidence",
+        "results/revision-source-joint"
+      ]
+    },
+    {
+      "name": "source-query-budgets",
+      "groups": [
+        "supporting"
+      ],
+      "argv": [
+        "{python}",
+        "-B",
+        "-S",
+        "verify_source_budget.py",
+        "--out",
+        "results/revision-audit-budget",
+        "--native",
+        "results/revision-native-completion",
+        "--retained",
+        "results/revision-reproduction",
+        "--evidence",
+        "results/revision-source-joint"
+      ]
+    },
+    {
+      "name": "aliasing-witnesses",
+      "groups": [
+        "supporting"
+      ],
+      "argv": [
+        "{python}",
+        "-B",
+        "-S",
+        "external-studies/sew_aliasing/verify_study.py",
+        "--results",
+        "results/revision-sew-aliasing"
+      ]
+    },
+    {
+      "name": "project-invocation-contracts",
+      "groups": [
+        "supporting"
+      ],
+      "argv": [
+        "{python}",
+        "-B",
+        "-S",
+        "check_project_contracts.py",
+        "--out",
+        "results/revision-project-contracts",
+        "--verify"
+      ]
+    },
+    {
+      "name": "implementation-tests",
+      "groups": [
+        "tests"
+      ],
+      "argv": [
+        "{python}",
+        "-B",
+        "-S",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test*.py",
+        "-v"
+      ],
+      "pythonpath": "src",
+      "unit_tests": true
+    },
+    {
+      "name": "paper-data-consistency",
+      "groups": [
+        "tests"
+      ],
+      "argv": [
+        "{python}",
+        "-B",
+        "-S",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "regressions",
+        "-p",
+        "test*.py",
+        "-v"
+      ],
+      "unit_tests": true
+    },
+    {
+      "name": "citation-source-bindings",
+      "groups": [
+        "tests"
+      ],
+      "argv": [
+        "{python}",
+        "-B",
+        "-S",
+        "scripts/audit_citations.py",
+        "--check"
+      ]
+    },
+    {
+      "name": "paired-conditional-mathematics",
+      "groups": [
+        "primary"
+      ],
+      "argv": [
+        "{python}",
+        "-B",
+        "-S",
+        "studies/conditional/verify_paired_conditional.py",
+        "--out",
+        "receiving-paired-mathematics.json"
+      ]
+    },
+    {
+      "name": "paired-conditional-index",
+      "groups": [
+        "primary"
+      ],
+      "argv": [
+        "{python}",
+        "-B",
+        "-S",
+        "studies/conditional/verify_index.py",
+        "--artifact",
+        ".",
+        "--out",
+        "receiving-paired-index.json"
+      ]
+    },
+    {
+      "name": "paired-adaptive-policy",
+      "groups": [
+        "primary"
+      ],
+      "argv": [
+        "{python}",
+        "-B",
+        "-S",
+        "studies/conditional/verify_adaptive_policy.py",
+        "--artifact",
+        ".",
+        "--out",
+        "receiving-paired-policy.json"
+      ]
+    },
+    {
+      "name": "emission-accounting",
+      "groups": [
+        "primary"
+      ],
+      "argv": [
+        "{python}",
+        "-B",
+        "-S",
+        "studies/conditional/verify_emission_model.py",
+        "--artifact",
+        ".",
+        "--out",
+        "receiving-emission-accounting.json"
+      ]
+    },
+    {
+      "name": "conditional-native-validation",
+      "groups": [
+        "primary"
+      ],
+      "argv": [
+        "{python}",
+        "-B",
+        "-S",
+        "studies/conditional/verify_native_conditional.py",
+        "--artifact",
+        ".",
+        "--registry",
+        "results/revision-sew-natural/public-registry.json",
+        "--native",
+        "studies/conditional/native-validation",
+        "--out",
+        "receiving-conditional-validation.json"
+      ]
+    },
+    {
+      "name": "conditional-native-timing",
+      "groups": [
+        "primary"
+      ],
+      "argv": [
+        "{python}",
+        "-B",
+        "-S",
+        "studies/conditional/verify_native_conditional.py",
+        "--artifact",
+        ".",
+        "--registry",
+        "results/revision-sew-natural/public-registry.json",
+        "--native",
+        "studies/conditional/native-timing",
+        "--out",
+        "receiving-conditional-timing.json"
+      ]
+    },
+    {
+      "name": "crest-upstream-identity",
+      "groups": [
+        "primary"
+      ],
+      "argv": [
+        "{python}",
+        "-B",
+        "studies/crest/acquire_crest_upstream.py",
+        "--evidence",
+        "studies/crest",
+        "--output",
+        "studies/crest/upstream"
+      ]
+    },
+    {
+      "name": "crest-source-contract-reference",
+      "groups": [
+        "primary"
+      ],
+      "argv": [
+        "{python}",
+        "-B",
+        "studies/crest/receive_crest_provenance.py",
+        "--study",
+        "studies/crest/accepted/reference",
+        "--kind",
+        "reference",
+        "--artifact",
+        ".",
+        "--inputs",
+        "studies/crest",
+        "--upstream",
+        "studies/crest/upstream",
+        "--output",
+        "receiving-crest-source-reference.json"
+      ]
+    },
+    {
+      "name": "crest-native-model-reference",
+      "groups": [
+        "primary"
+      ],
+      "argv": [
+        "{python}",
+        "-B",
+        "studies/crest/verify_crest_study.py",
+        "--study",
+        "studies/crest/accepted/reference",
+        "--upstream",
+        "studies/crest/upstream",
+        "--output",
+        "receiving-crest-numeric-reference.json"
+      ]
+    },
+    {
+      "name": "crest-source-contract-catalogue",
+      "groups": [
+        "primary"
+      ],
+      "argv": [
+        "{python}",
+        "-B",
+        "studies/crest/receive_crest_provenance.py",
+        "--study",
+        "studies/crest/accepted/catalogue",
+        "--kind",
+        "catalogue",
+        "--artifact",
+        ".",
+        "--inputs",
+        "studies/crest",
+        "--upstream",
+        "studies/crest/upstream",
+        "--output",
+        "receiving-crest-source-catalogue.json"
+      ]
+    },
+    {
+      "name": "crest-native-model-catalogue",
+      "groups": [
+        "primary"
+      ],
+      "argv": [
+        "{python}",
+        "-B",
+        "studies/crest/verify_crest_study.py",
+        "--study",
+        "studies/crest/accepted/catalogue",
+        "--upstream",
+        "studies/crest/upstream",
+        "--output",
+        "receiving-crest-numeric-catalogue.json"
+      ]
+    },
+    {
+      "name": "crest-source-contract-gpt4o",
+      "groups": [
+        "primary"
+      ],
+      "argv": [
+        "{python}",
+        "-B",
+        "studies/crest/receive_crest_provenance.py",
+        "--study",
+        "studies/crest/accepted/gpt4o",
+        "--kind",
+        "gpt4o",
+        "--artifact",
+        ".",
+        "--inputs",
+        "studies/crest",
+        "--upstream",
+        "studies/crest/upstream",
+        "--output",
+        "receiving-crest-source-gpt4o.json"
+      ]
+    },
+    {
+      "name": "crest-native-model-gpt4o",
+      "groups": [
+        "primary"
+      ],
+      "argv": [
+        "{python}",
+        "-B",
+        "studies/crest/verify_crest_study.py",
+        "--study",
+        "studies/crest/accepted/gpt4o",
+        "--upstream",
+        "studies/crest/upstream",
+        "--output",
+        "receiving-crest-numeric-gpt4o.json"
+      ]
+    },
+    {
+      "name": "crest-source-contract-qwen",
+      "groups": [
+        "primary"
+      ],
+      "argv": [
+        "{python}",
+        "-B",
+        "studies/crest/receive_crest_provenance.py",
+        "--study",
+        "studies/crest/accepted/qwen",
+        "--kind",
+        "qwen",
+        "--artifact",
+        ".",
+        "--inputs",
+        "studies/crest",
+        "--upstream",
+        "studies/crest/upstream",
+        "--output",
+        "receiving-crest-source-qwen.json"
+      ]
+    },
+    {
+      "name": "crest-native-model-qwen",
+      "groups": [
+        "primary"
+      ],
+      "argv": [
+        "{python}",
+        "-B",
+        "studies/crest/verify_crest_study.py",
+        "--study",
+        "studies/crest/accepted/qwen",
+        "--upstream",
+        "studies/crest/upstream",
+        "--output",
+        "receiving-crest-numeric-qwen.json"
+      ]
+    },
+    {
+      "name": "crest-contract-sensitivity",
+      "groups": [
+        "primary"
+      ],
+      "argv": [
+        "{python}",
+        "-B",
+        "studies/crest/verify_crest_contract_sensitivity.py",
+        "--evidence",
+        "studies/crest",
+        "--output",
+        "receiving-crest-contracts.json"
+      ]
+    },
+    {
+      "name": "crest-causal-observations",
+      "groups": [
+        "primary"
+      ],
+      "argv": [
+        "{python}",
+        "-B",
+        "studies/crest/verify_crest_causes.py",
+        "--evidence",
+        "studies/crest",
+        "--artifact",
+        ".",
+        "--output",
+        "receiving-crest-causes.json"
+      ]
+    },
+    {
+      "name": "crest-paired-comparison",
+      "groups": [
+        "primary"
+      ],
+      "argv": [
+        "{python}",
+        "-B",
+        "studies/crest/verify_crest_comparison.py",
+        "--study-root",
+        "studies/crest/accepted",
+        "--artifact",
+        ".",
+        "--methods",
+        "studies/conditional",
+        "--output",
+        "receiving-crest-comparison.json"
+      ]
+    },
+    {
+      "name": "crest-execution-contract-controls",
+      "groups": [
+        "tests"
+      ],
+      "argv": [
+        "{python}",
+        "-B",
+        "studies/crest/check_isolated_assertion_contract.py"
+      ]
+    }
+  ]
+}

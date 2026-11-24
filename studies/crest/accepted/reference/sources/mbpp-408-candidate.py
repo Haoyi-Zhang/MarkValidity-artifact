@@ -1,0 +1,18 @@
+import heapq
+
+
+def k_smallest_pairs(nums1, nums2, k):
+	queue = []
+
+	def push(i, j):
+		if i < len(nums1) and len(nums2) > j:
+			heapq.heappush(queue, [nums1[i] + nums2[j], i, j])
+	push(0, 0)
+	pairs = []
+	while queue and len(pairs) < k:
+		_, i, j = heapq.heappop(queue)
+		list.append(pairs, [nums1[i], nums2[j]])
+		push(i, 1 + j)
+		if j == 0:
+			push(i + 1, 0)
+	return pairs

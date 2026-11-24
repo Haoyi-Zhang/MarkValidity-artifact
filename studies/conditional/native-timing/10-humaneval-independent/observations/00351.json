@@ -1,0 +1,13 @@
+{
+  "stdout": "{\"elapsed_seconds\":0.002628,\"error\":null,\"observations\":[{\"after\":{\"args\":[\"tuple\",[[\"str\",\"Hi, my name is John\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"Hi, my name is John\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"list\",[[\"str\",\"Hi\"],[\"str\",\"my\"],[\"str\",\"name\"],[\"str\",\"is\"],[\"str\",\"John\"]]]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"One, two, three, four, five, six\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"One, two, three, four, five, six\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"list\",[[\"str\",\"One\"],[\"str\",\"two\"],[\"str\",\"three\"],[\"str\",\"four\"],[\"str\",\"five\"],[\"str\",\"six\"]]]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"Hi, my name\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"Hi, my name\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"list\",[[\"str\",\"Hi\"],[\"str\",\"my\"],[\"str\",\"name\"]]]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"One,, two, three, four, five, six,\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"One,, two, three, four, five, six,\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"list\",[[\"str\",\"One\"],[\"str\",\"two\"],[\"str\",\"three\"],[\"str\",\"four\"],[\"str\",\"five\"],[\"str\",\"six\"]]]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"list\",[]]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"ahmed     , gamal\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"ahmed     , gamal\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"list\",[[\"str\",\"ahmed\"],[\"str\",\"gamal\"]]]]}],\"status\":\"passed\",\"stderr\":\"\",\"stdout\":\"\"}\n",
+  "stderr": "",
+  "returncode": 0,
+  "interruption": null,
+  "child_user_cpu_seconds": 0.024628000000006978,
+  "child_system_cpu_seconds": 0.0041099999999971715,
+  "group": "db73eeb906cf530e62fe69d3b8d24e063e4eb0cb731b77b0a96cfaf24afbf249",
+  "received_label": true,
+  "source_sha256": "e40ed6c227e44df47a873dff8c0b95b6dcd860c818abb58b911bd307c57283af",
+  "contract_sha256": "726bbeba5a1131c0b7a239265f4586898b1bcd6b6a279c6c159e30beb23c6a11",
+  "worker_seconds": 0.029649623000295833
+}

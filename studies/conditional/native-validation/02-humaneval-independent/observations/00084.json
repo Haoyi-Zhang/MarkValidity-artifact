@@ -1,0 +1,13 @@
+{
+  "stdout": "{\"elapsed_seconds\":0.003314,\"error\":null,\"observations\":[{\"after\":{\"args\":[\"tuple\",[[\"int\",\"5\"],[\"int\",\"6\"],[\"int\",\"10\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"5\"],[\"int\",\"6\"],[\"int\",\"10\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"list\",[[\"int\",\"11\"],[\"int\",\"4\"]]]]},{\"after\":{\"args\":[\"tuple\",[[\"int\",\"4\"],[\"int\",\"8\"],[\"int\",\"9\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"4\"],[\"int\",\"8\"],[\"int\",\"9\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"list\",[[\"int\",\"12\"],[\"int\",\"1\"]]]]},{\"after\":{\"args\":[\"tuple\",[[\"int\",\"1\"],[\"int\",\"10\"],[\"int\",\"10\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"1\"],[\"int\",\"10\"],[\"int\",\"10\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"list\",[[\"int\",\"11\"],[\"int\",\"0\"]]]]},{\"after\":{\"args\":[\"tuple\",[[\"int\",\"2\"],[\"int\",\"11\"],[\"int\",\"5\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"2\"],[\"int\",\"11\"],[\"int\",\"5\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"list\",[[\"int\",\"7\"],[\"int\",\"0\"]]]]},{\"after\":{\"args\":[\"tuple\",[[\"int\",\"4\"],[\"int\",\"5\"],[\"int\",\"7\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"4\"],[\"int\",\"5\"],[\"int\",\"7\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"list\",[[\"int\",\"9\"],[\"int\",\"2\"]]]]},{\"after\":{\"args\":[\"tuple\",[[\"int\",\"4\"],[\"int\",\"5\"],[\"int\",\"1\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"4\"],[\"int\",\"5\"],[\"int\",\"1\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"list\",[[\"int\",\"5\"],[\"int\",\"0\"]]]]}],\"status\":\"passed\",\"stderr\":\"\",\"stdout\":\"\"}\n",
+  "stderr": "",
+  "returncode": 0,
+  "interruption": null,
+  "child_user_cpu_seconds": 0.02877200000000002,
+  "child_system_cpu_seconds": 0.008324999999999694,
+  "group": "b5413d2d78aae166aaf8fdd3f3a0e793814f66b0dd60d3db44acdb4907ef3a04",
+  "received_label": true,
+  "source_sha256": "e2f4caa33fde80bc81adccd84f765f1039f4e7c3401ac9c07c948246e51c0a89",
+  "contract_sha256": "adb3f1bdd229f6854b352f0410ac1d11417592dedd1b92a655aacf6c14b06cf7",
+  "worker_seconds": 0.11787965599796735
+}

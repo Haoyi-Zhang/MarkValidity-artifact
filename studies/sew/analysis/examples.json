@@ -1,0 +1,159 @@
+{
+  "coupled_conditional_certificate_despite_overlap": {
+    "left": {
+      "known_joint": "4",
+      "known_valid": "5",
+      "unknown": [
+        {
+          "identity": "shared-undetected",
+          "mass": "5",
+          "detected_mass": "0"
+        }
+      ]
+    },
+    "right": {
+      "known_joint": "3",
+      "known_valid": "5",
+      "unknown": [
+        {
+          "identity": "shared-undetected",
+          "mass": "5",
+          "detected_mass": "0"
+        }
+      ]
+    },
+    "left_C_bounds": {
+      "lower": "2/5",
+      "upper": "4/5",
+      "defined_for_all_completions": true,
+      "defined_for_some_completion": true,
+      "undefined_possible": false,
+      "lower_completion": {
+        "shared-undetected": true
+      },
+      "upper_completion": {
+        "shared-undetected": false
+      }
+    },
+    "right_C_bounds": {
+      "lower": "3/10",
+      "upper": "3/5",
+      "defined_for_all_completions": true,
+      "defined_for_some_completion": true,
+      "undefined_possible": false,
+      "lower_completion": {
+        "shared-undetected": true
+      },
+      "upper_completion": {
+        "shared-undetected": false
+      }
+    },
+    "separate_interval_difference": [
+      "-1/5",
+      "1/2"
+    ],
+    "coupled_margin": {
+      "margin_lower": "5",
+      "margin_upper": "10",
+      "relation_on_defined_completions": "left_strict",
+      "decision": "left_strict",
+      "defined_for_all_completions": true,
+      "defined_for_some_completion": true,
+      "can_stop_for_strict_ordering": true,
+      "can_stop_for_equal_scores": false,
+      "lower_completion": {
+        "shared-undetected": false
+      },
+      "upper_completion": {
+        "shared-undetected": true
+      }
+    },
+    "actual_C_gap_values": [
+      "1/10",
+      "1/5"
+    ]
+  },
+  "same_joint_winner_but_conditional_order_reverses": {
+    "left": {
+      "known_joint": "2",
+      "known_valid": "8",
+      "unknown": [
+        {
+          "identity": "shared-detected",
+          "mass": "2",
+          "detected_mass": "2"
+        }
+      ]
+    },
+    "right": {
+      "known_joint": "1",
+      "known_valid": "5",
+      "unknown": [
+        {
+          "identity": "shared-detected",
+          "mass": "2",
+          "detected_mass": "2"
+        }
+      ]
+    },
+    "joint": {
+      "lower": "1",
+      "upper": "1",
+      "relation": "left_strict",
+      "lower_completion": {
+        "shared-detected": false
+      },
+      "upper_completion": {
+        "shared-detected": false
+      }
+    },
+    "conditional": {
+      "margin_lower": "-2",
+      "margin_upper": "2",
+      "relation_on_defined_completions": "unresolved",
+      "decision": "unresolved",
+      "defined_for_all_completions": true,
+      "defined_for_some_completion": true,
+      "can_stop_for_strict_ordering": false,
+      "can_stop_for_equal_scores": false,
+      "lower_completion": {
+        "shared-detected": true
+      },
+      "upper_completion": {
+        "shared-detected": false
+      }
+    },
+    "completions": [
+      {
+        "labels": {
+          "shared-detected": false
+        },
+        "left_C": "1/4",
+        "right_C": "1/5"
+      },
+      {
+        "labels": {
+          "shared-detected": true
+        },
+        "left_C": "2/5",
+        "right_C": "3/7"
+      }
+    ]
+  },
+  "conditional_order_when_defined_is_not_an_unconditional_certificate": {
+    "margin_lower": "4",
+    "margin_upper": "4",
+    "relation_on_defined_completions": "left_strict",
+    "decision": "undefined_possible",
+    "defined_for_all_completions": false,
+    "defined_for_some_completion": true,
+    "can_stop_for_strict_ordering": false,
+    "can_stop_for_equal_scores": false,
+    "lower_completion": {
+      "shared-detected": true
+    },
+    "upper_completion": {
+      "shared-detected": true
+    }
+  }
+}

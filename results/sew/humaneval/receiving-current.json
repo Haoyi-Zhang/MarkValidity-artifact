@@ -1,0 +1,235 @@
+{
+  "status": "PASS",
+  "mode": "read-only receiving; no source execution",
+  "receiver_sha256": "47e85488a92729dd9e49b59d3cb17fde304ed1c66901ccf73f2fad7643655e40",
+  "candidate_execution_performed": false,
+  "reference_execution_performed": false,
+  "emitter_execution_performed": false,
+  "detector_execution_performed": false,
+  "normalizer_execution_performed": false,
+  "detector_check": "Reconstructed p=min(1,2*min(p_all,p_syntax)), minimum five grades, strict p<0.01, and verdict from retained statistics; no re-estimation of tail probabilities or calibration.",
+  "vendor_tree_verification": "verified",
+  "data_sha256": "b796127e635a67f93fb35c04f4cb03cf06f38c8072ee7cee8833d7bee06979ef",
+  "plus_data_sha256": "272720b90ac375502c8ed23cd791c2a93dfb22a911641a494da74a426c09f101",
+  "primary": {
+    "rows_sha256": "563d49e53640d8f97a91b416399643f76282de7f45ba16a8be18385774396dd0",
+    "specification_sha256": "2fa9b00ffb020edca05c571020d9b64ddc2e4d34bab3cb8be4bd1a771cbe730e",
+    "tasks": 164,
+    "rows": 1968,
+    "unique_source_contracts": 546,
+    "reference_function_invocations": 1534,
+    "observer_sha256": "232a7d6f47011501356a9c9ac07e17bf325bde345d9c707d32c4fae668367012",
+    "variants": [
+      {
+        "variant": "stock",
+        "configurations": 492,
+        "validity_labels": {
+          "supported": 492
+        },
+        "detected": 368,
+        "joint": 368,
+        "detected_contradicted": 0,
+        "reference_detections": 0,
+        "candidate_function_invocations": 4602,
+        "complete_call_record_agreement": 492,
+        "candidate_suite_executions": 492
+      },
+      {
+        "variant": "s1",
+        "configurations": 492,
+        "validity_labels": {
+          "supported": 492
+        },
+        "detected": 365,
+        "joint": 365,
+        "detected_contradicted": 0,
+        "reference_detections": 0,
+        "candidate_function_invocations": 4602,
+        "complete_call_record_agreement": 492,
+        "candidate_suite_executions": 492
+      },
+      {
+        "variant": "s4",
+        "configurations": 492,
+        "validity_labels": {
+          "supported": 492
+        },
+        "detected": 368,
+        "joint": 368,
+        "detected_contradicted": 0,
+        "reference_detections": 0,
+        "candidate_function_invocations": 4602,
+        "complete_call_record_agreement": 492,
+        "candidate_suite_executions": 492
+      },
+      {
+        "variant": "s1_s4",
+        "configurations": 492,
+        "validity_labels": {
+          "supported": 492
+        },
+        "detected": 365,
+        "joint": 365,
+        "detected_contradicted": 0,
+        "reference_detections": 0,
+        "candidate_function_invocations": 4602,
+        "complete_call_record_agreement": 492,
+        "candidate_suite_executions": 492
+      }
+    ],
+    "pairwise_checks": [
+      {
+        "left": "stock",
+        "right": "s1",
+        "unique_source_contracts": 546,
+        "nonzero_gap_source_groups": 151,
+        "withheld_gap_interval": [
+          "-37/246",
+          "77/492"
+        ],
+        "complete_gap": "1/164"
+      },
+      {
+        "left": "stock",
+        "right": "s4",
+        "unique_source_contracts": 466,
+        "nonzero_gap_source_groups": 0,
+        "withheld_gap_interval": [
+          "0",
+          "0"
+        ],
+        "complete_gap": "0"
+      },
+      {
+        "left": "stock",
+        "right": "s1_s4",
+        "unique_source_contracts": 546,
+        "nonzero_gap_source_groups": 151,
+        "withheld_gap_interval": [
+          "-37/246",
+          "77/492"
+        ],
+        "complete_gap": "1/164"
+      },
+      {
+        "left": "s1",
+        "right": "s4",
+        "unique_source_contracts": 546,
+        "nonzero_gap_source_groups": 151,
+        "withheld_gap_interval": [
+          "-77/492",
+          "37/246"
+        ],
+        "complete_gap": "-1/164"
+      },
+      {
+        "left": "s1",
+        "right": "s1_s4",
+        "unique_source_contracts": 466,
+        "nonzero_gap_source_groups": 0,
+        "withheld_gap_interval": [
+          "0",
+          "0"
+        ],
+        "complete_gap": "0"
+      },
+      {
+        "left": "s4",
+        "right": "s1_s4",
+        "unique_source_contracts": 546,
+        "nonzero_gap_source_groups": 151,
+        "withheld_gap_interval": [
+          "-37/246",
+          "77/492"
+        ],
+        "complete_gap": "1/164"
+      }
+    ]
+  },
+  "enhanced": {
+    "tasks": 164,
+    "labels": {
+      "supported": 155,
+      "unavailable": 9
+    },
+    "declared_input_pairs": 124253,
+    "recorded_input_pairs": 124253,
+    "comparable_input_pairs": 124158,
+    "unavailable_input_pairs": 95,
+    "missing_input_pairs": 0,
+    "return_mismatches": 0,
+    "post_argument_mismatches": 0,
+    "stream_mismatches": 0,
+    "detected": 122,
+    "joint_numerator_lower": 113,
+    "joint_numerator_upper": 122,
+    "joint_denominator": 164,
+    "rows_sha256": "f7b7c0794dca2856944b559305b46ce9bf951d683b70a57c60bb4566bad82745",
+    "specification_sha256": "eb99dfeba150e0528067fb953b58f6e9570bfe51ef4fe867f992798eacc47d2e",
+    "observer_sha256": "7bddddcc0f58593e38345c8150eb104b726424af96b0fac116ef332109bc8670",
+    "unavailable_tasks": [
+      "HumanEval/31",
+      "HumanEval/32",
+      "HumanEval/39",
+      "HumanEval/55",
+      "HumanEval/63",
+      "HumanEval/96",
+      "HumanEval/100",
+      "HumanEval/127",
+      "HumanEval/130"
+    ],
+    "program_exception_counts": [
+      {
+        "side": "candidate",
+        "type": "builtins.IndexError",
+        "message": "string index out of range",
+        "count": 1
+      },
+      {
+        "side": "candidate",
+        "type": "builtins.OverflowError",
+        "message": "math range error",
+        "count": 7
+      },
+      {
+        "side": "reference",
+        "type": "builtins.IndexError",
+        "message": "string index out of range",
+        "count": 1
+      },
+      {
+        "side": "reference",
+        "type": "builtins.OverflowError",
+        "message": "math range error",
+        "count": 7
+      }
+    ],
+    "unavailable_observation_counts": [
+      {
+        "side": "candidate",
+        "reason": "per_invocation_guard",
+        "phase": "encode_return_value",
+        "count": 11
+      },
+      {
+        "side": "candidate",
+        "reason": "per_invocation_guard",
+        "phase": "invoke_program",
+        "count": 83
+      },
+      {
+        "side": "reference",
+        "reason": "per_invocation_guard",
+        "phase": "encode_return_value",
+        "count": 11
+      },
+      {
+        "side": "reference",
+        "reason": "per_invocation_guard",
+        "phase": "invoke_program",
+        "count": 80
+      }
+    ]
+  },
+  "trust_boundary": "Checks retained-byte bindings, complete coverage, typed observations, label consistency, and aggregation. It does not attest that an external producer executed the programs."
+}

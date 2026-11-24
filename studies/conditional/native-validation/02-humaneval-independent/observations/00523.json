@@ -1,0 +1,13 @@
+{
+  "stdout": "{\"elapsed_seconds\":0.003091,\"error\":null,\"observations\":[{\"after\":{\"args\":[\"tuple\",[[\"int\",\"123\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"123\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"tuple\",[[\"int\",\"8\"],[\"int\",\"13\"]]]]},{\"after\":{\"args\":[\"tuple\",[[\"int\",\"12\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"12\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"tuple\",[[\"int\",\"4\"],[\"int\",\"6\"]]]]},{\"after\":{\"args\":[\"tuple\",[[\"int\",\"3\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"3\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"tuple\",[[\"int\",\"1\"],[\"int\",\"2\"]]]]},{\"after\":{\"args\":[\"tuple\",[[\"int\",\"63\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"63\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"tuple\",[[\"int\",\"6\"],[\"int\",\"8\"]]]]},{\"after\":{\"args\":[\"tuple\",[[\"int\",\"25\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"25\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"tuple\",[[\"int\",\"5\"],[\"int\",\"6\"]]]]},{\"after\":{\"args\":[\"tuple\",[[\"int\",\"19\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"19\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"tuple\",[[\"int\",\"4\"],[\"int\",\"6\"]]]]},{\"after\":{\"args\":[\"tuple\",[[\"int\",\"9\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"9\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"tuple\",[[\"int\",\"4\"],[\"int\",\"5\"]]]]},{\"after\":{\"args\":[\"tuple\",[[\"int\",\"1\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"1\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"tuple\",[[\"int\",\"0\"],[\"int\",\"1\"]]]]}],\"status\":\"passed\",\"stderr\":\"\",\"stdout\":\"\"}\n",
+  "stderr": "",
+  "returncode": 0,
+  "interruption": null,
+  "child_user_cpu_seconds": 0.013937000000002087,
+  "child_system_cpu_seconds": 0.010182999999999609,
+  "group": "c0d69b9dd2bf2be811406dd65038dfa87454a9270cb477d7b6994c965edddf1f",
+  "received_label": true,
+  "source_sha256": "8bfd5c100e29dd12a96c3293839807a96388861d2225e0edb21ce206e7db6174",
+  "contract_sha256": "41a3d0623f3b069e4f63b6859730cdd0cabb0b541771a273ac114ee661d511b0",
+  "worker_seconds": 0.04572200099937618
+}

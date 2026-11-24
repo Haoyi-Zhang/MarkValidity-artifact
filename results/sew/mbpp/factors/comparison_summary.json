@@ -1,0 +1,347 @@
+{
+  "scope": "Complete sanitized MBPP427 x three fixed keys x four named factors. Pilots are repeatability checks, not extra samples.",
+  "programs": 427,
+  "factor_configurations": 5124,
+  "keys_per_factor": 3,
+  "per_variant_all_attempts": {
+    "stock": {
+      "attempts": 1281,
+      "tasks": 427,
+      "reference_statuses": {
+        "passed": 1281
+      },
+      "candidate_statuses": {
+        "passed": 1278,
+        "failed": 3
+      },
+      "detected": 849,
+      "valid": 1278,
+      "joint": 849,
+      "invalid": 3,
+      "detected_invalid": 0,
+      "unknown_validity": 0,
+      "unknown_detection": 0,
+      "unknown_joint": 0,
+      "A": 0.9976580796252927,
+      "D": 0.6627634660421545,
+      "J": 0.6627634660421545,
+      "C": 0.6643192488262911,
+      "distinct_candidate_bytes": 1152,
+      "distinct_source_contracts": 1155,
+      "suite_cost_per_attempt": 1,
+      "scheduled_original_assertion_entries": 3972,
+      "observed_original_assertion_entries": 3972
+    },
+    "s1_literal_predecessor": {
+      "attempts": 1281,
+      "tasks": 427,
+      "reference_statuses": {
+        "passed": 1281
+      },
+      "candidate_statuses": {
+        "passed": 1278,
+        "failed": 3
+      },
+      "detected": 843,
+      "valid": 1278,
+      "joint": 843,
+      "invalid": 3,
+      "detected_invalid": 0,
+      "unknown_validity": 0,
+      "unknown_detection": 0,
+      "unknown_joint": 0,
+      "A": 0.9976580796252927,
+      "D": 0.65807962529274,
+      "J": 0.65807962529274,
+      "C": 0.6596244131455399,
+      "distinct_candidate_bytes": 1152,
+      "distinct_source_contracts": 1155,
+      "suite_cost_per_attempt": 1,
+      "scheduled_original_assertion_entries": 3972,
+      "observed_original_assertion_entries": 3972
+    },
+    "s4_return_boundary": {
+      "attempts": 1281,
+      "tasks": 427,
+      "reference_statuses": {
+        "passed": 1281
+      },
+      "candidate_statuses": {
+        "passed": 1281
+      },
+      "detected": 852,
+      "valid": 1281,
+      "joint": 852,
+      "invalid": 0,
+      "detected_invalid": 0,
+      "unknown_validity": 0,
+      "unknown_detection": 0,
+      "unknown_joint": 0,
+      "A": 1.0,
+      "D": 0.6651053864168618,
+      "J": 0.6651053864168618,
+      "C": 0.6651053864168618,
+      "distinct_candidate_bytes": 1152,
+      "distinct_source_contracts": 1155,
+      "suite_cost_per_attempt": 1,
+      "scheduled_original_assertion_entries": 3972,
+      "observed_original_assertion_entries": 3972
+    },
+    "s1_s4": {
+      "attempts": 1281,
+      "tasks": 427,
+      "reference_statuses": {
+        "passed": 1281
+      },
+      "candidate_statuses": {
+        "passed": 1281
+      },
+      "detected": 846,
+      "valid": 1281,
+      "joint": 846,
+      "invalid": 0,
+      "detected_invalid": 0,
+      "unknown_validity": 0,
+      "unknown_detection": 0,
+      "unknown_joint": 0,
+      "A": 1.0,
+      "D": 0.6604215456674473,
+      "J": 0.6604215456674473,
+      "C": 0.6604215456674473,
+      "distinct_candidate_bytes": 1152,
+      "distinct_source_contracts": 1155,
+      "suite_cost_per_attempt": 1,
+      "scheduled_original_assertion_entries": 3972,
+      "observed_original_assertion_entries": 3972
+    }
+  },
+  "per_variant_reference_passing_subset": {
+    "stock": {
+      "attempts": 1281,
+      "tasks": 427,
+      "reference_statuses": {
+        "passed": 1281
+      },
+      "candidate_statuses": {
+        "passed": 1278,
+        "failed": 3
+      },
+      "detected": 849,
+      "valid": 1278,
+      "joint": 849,
+      "invalid": 3,
+      "detected_invalid": 0,
+      "unknown_validity": 0,
+      "unknown_detection": 0,
+      "unknown_joint": 0,
+      "A": 0.9976580796252927,
+      "D": 0.6627634660421545,
+      "J": 0.6627634660421545,
+      "C": 0.6643192488262911,
+      "distinct_candidate_bytes": 1152,
+      "distinct_source_contracts": 1155,
+      "suite_cost_per_attempt": 1,
+      "scheduled_original_assertion_entries": 3972,
+      "observed_original_assertion_entries": 3972
+    },
+    "s1_literal_predecessor": {
+      "attempts": 1281,
+      "tasks": 427,
+      "reference_statuses": {
+        "passed": 1281
+      },
+      "candidate_statuses": {
+        "passed": 1278,
+        "failed": 3
+      },
+      "detected": 843,
+      "valid": 1278,
+      "joint": 843,
+      "invalid": 3,
+      "detected_invalid": 0,
+      "unknown_validity": 0,
+      "unknown_detection": 0,
+      "unknown_joint": 0,
+      "A": 0.9976580796252927,
+      "D": 0.65807962529274,
+      "J": 0.65807962529274,
+      "C": 0.6596244131455399,
+      "distinct_candidate_bytes": 1152,
+      "distinct_source_contracts": 1155,
+      "suite_cost_per_attempt": 1,
+      "scheduled_original_assertion_entries": 3972,
+      "observed_original_assertion_entries": 3972
+    },
+    "s4_return_boundary": {
+      "attempts": 1281,
+      "tasks": 427,
+      "reference_statuses": {
+        "passed": 1281
+      },
+      "candidate_statuses": {
+        "passed": 1281
+      },
+      "detected": 852,
+      "valid": 1281,
+      "joint": 852,
+      "invalid": 0,
+      "detected_invalid": 0,
+      "unknown_validity": 0,
+      "unknown_detection": 0,
+      "unknown_joint": 0,
+      "A": 1.0,
+      "D": 0.6651053864168618,
+      "J": 0.6651053864168618,
+      "C": 0.6651053864168618,
+      "distinct_candidate_bytes": 1152,
+      "distinct_source_contracts": 1155,
+      "suite_cost_per_attempt": 1,
+      "scheduled_original_assertion_entries": 3972,
+      "observed_original_assertion_entries": 3972
+    },
+    "s1_s4": {
+      "attempts": 1281,
+      "tasks": 427,
+      "reference_statuses": {
+        "passed": 1281
+      },
+      "candidate_statuses": {
+        "passed": 1281
+      },
+      "detected": 846,
+      "valid": 1281,
+      "joint": 846,
+      "invalid": 0,
+      "detected_invalid": 0,
+      "unknown_validity": 0,
+      "unknown_detection": 0,
+      "unknown_joint": 0,
+      "A": 1.0,
+      "D": 0.6604215456674473,
+      "J": 0.6604215456674473,
+      "C": 0.6604215456674473,
+      "distinct_candidate_bytes": 1152,
+      "distinct_source_contracts": 1155,
+      "suite_cost_per_attempt": 1,
+      "scheduled_original_assertion_entries": 3972,
+      "observed_original_assertion_entries": 3972
+    }
+  },
+  "paired_comparisons_to_stock": {
+    "s1_literal_predecessor": {
+      "same_candidate_bytes": 1092,
+      "changed_candidate_bytes": 189,
+      "paired_transitions": [
+        {
+          "stock_validity": 1,
+          "variant_validity": 1,
+          "stock_detected": false,
+          "variant_detected": false,
+          "count": 426
+        },
+        {
+          "stock_validity": 1,
+          "variant_validity": 1,
+          "stock_detected": true,
+          "variant_detected": true,
+          "count": 840
+        },
+        {
+          "stock_validity": 1,
+          "variant_validity": 1,
+          "stock_detected": false,
+          "variant_detected": true,
+          "count": 3
+        },
+        {
+          "stock_validity": 1,
+          "variant_validity": 1,
+          "stock_detected": true,
+          "variant_detected": false,
+          "count": 9
+        },
+        {
+          "stock_validity": 0,
+          "variant_validity": 0,
+          "stock_detected": false,
+          "variant_detected": false,
+          "count": 3
+        }
+      ]
+    },
+    "s4_return_boundary": {
+      "same_candidate_bytes": 1278,
+      "changed_candidate_bytes": 3,
+      "paired_transitions": [
+        {
+          "stock_validity": 1,
+          "variant_validity": 1,
+          "stock_detected": false,
+          "variant_detected": false,
+          "count": 429
+        },
+        {
+          "stock_validity": 1,
+          "variant_validity": 1,
+          "stock_detected": true,
+          "variant_detected": true,
+          "count": 849
+        },
+        {
+          "stock_validity": 0,
+          "variant_validity": 1,
+          "stock_detected": false,
+          "variant_detected": true,
+          "count": 3
+        }
+      ]
+    },
+    "s1_s4": {
+      "same_candidate_bytes": 1089,
+      "changed_candidate_bytes": 192,
+      "paired_transitions": [
+        {
+          "stock_validity": 1,
+          "variant_validity": 1,
+          "stock_detected": false,
+          "variant_detected": false,
+          "count": 426
+        },
+        {
+          "stock_validity": 1,
+          "variant_validity": 1,
+          "stock_detected": true,
+          "variant_detected": true,
+          "count": 840
+        },
+        {
+          "stock_validity": 1,
+          "variant_validity": 1,
+          "stock_detected": false,
+          "variant_detected": true,
+          "count": 3
+        },
+        {
+          "stock_validity": 1,
+          "variant_validity": 1,
+          "stock_detected": true,
+          "variant_detected": false,
+          "count": 9
+        },
+        {
+          "stock_validity": 0,
+          "variant_validity": 1,
+          "stock_detected": false,
+          "variant_detected": true,
+          "count": 3
+        }
+      ]
+    }
+  },
+  "source_contract_groups": 1347,
+  "shared_source_contract_groups": 1347,
+  "maximum_configurations_in_shared_group": 12,
+  "conflicting_observations_in_shared_groups": 0,
+  "stock_pilot_source_and_outcome_repetition": "NOT_REQUESTED",
+  "same_contract_across_variants": true
+}

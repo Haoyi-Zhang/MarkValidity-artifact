@@ -1,0 +1,31 @@
+{
+  "status": "failed",
+  "returncode": 0,
+  "stderr": "",
+  "events": [
+    {
+      "error": {
+        "message": "invalid syntax (<mbpp-candidate>, line 1)",
+        "phase": "compile_source",
+        "traceback": "Traceback (most recent call last):\n  File \"/workspace/scratch/3d557313f143/qa/round3/mbpp-v2/scripts/native_runner.py\", line 115, in main\n    source_code = compile(request['source'], '<mbpp-candidate>', 'exec')\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<mbpp-candidate>\", line 1\n    def f(:\n          ^\nSyntaxError: invalid syntax\n",
+        "type": "builtins.SyntaxError"
+      },
+      "event": "source_compile",
+      "status": "failed"
+    },
+    {
+      "completed_tests": 0,
+      "elapsed_seconds": 0.002511,
+      "event": "complete",
+      "evidence_schema": "markvalidity-mbpp-original-assertions-v2",
+      "failed_tests": 0,
+      "passed_tests": 0,
+      "rejected_tests": 0,
+      "scheduled_tests": 1,
+      "status": "failed",
+      "unavailable_tests": 0
+    }
+  ],
+  "raw_stdout": null,
+  "elapsed_seconds": 0.026511
+}

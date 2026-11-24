@@ -1,0 +1,227 @@
+{
+  "variants": [
+    {
+      "variant": "stock",
+      "configurations": 492,
+      "validity_labels": {
+        "supported": 492
+      },
+      "detected": 368,
+      "joint": 368,
+      "detected_contradicted": 0,
+      "reference_detections": 0,
+      "candidate_function_invocations": 4602,
+      "candidate_suite_executions": 492,
+      "complete_call_record_agreement": 492
+    },
+    {
+      "variant": "s1",
+      "configurations": 492,
+      "validity_labels": {
+        "supported": 492
+      },
+      "detected": 365,
+      "joint": 365,
+      "detected_contradicted": 0,
+      "reference_detections": 0,
+      "candidate_function_invocations": 4602,
+      "candidate_suite_executions": 492,
+      "complete_call_record_agreement": 492
+    },
+    {
+      "variant": "s4",
+      "configurations": 492,
+      "validity_labels": {
+        "supported": 492
+      },
+      "detected": 368,
+      "joint": 368,
+      "detected_contradicted": 0,
+      "reference_detections": 0,
+      "candidate_function_invocations": 4602,
+      "candidate_suite_executions": 492,
+      "complete_call_record_agreement": 492
+    },
+    {
+      "variant": "s1_s4",
+      "configurations": 492,
+      "validity_labels": {
+        "supported": 492
+      },
+      "detected": 365,
+      "joint": 365,
+      "detected_contradicted": 0,
+      "reference_detections": 0,
+      "candidate_function_invocations": 4602,
+      "candidate_suite_executions": 492,
+      "complete_call_record_agreement": 492
+    }
+  ],
+  "tasks": 164,
+  "rows": 1968,
+  "unique_source_contracts": 546,
+  "pairwise_comparisons": [
+    {
+      "left": "stock",
+      "right": "s1",
+      "configurations_per_variant": 492,
+      "unique_source_contracts": 546,
+      "nonzero_gap_source_groups": 151,
+      "zero_gap_source_groups": 395,
+      "grouped_gap_interval_if_all_labels_withheld": [
+        "-37/246",
+        "77/492"
+      ],
+      "grouped_width": "151/492",
+      "separate_score_subtraction_width": "733/492",
+      "complete_gap": "1/164",
+      "native_function_calls_all_source_contracts_once": 5160,
+      "native_function_calls_nonzero_gap_groups_once": 1559,
+      "raw_row_candidate_function_invocations": 9204,
+      "suite_queries_all_source_contracts_once": 546,
+      "suite_queries_nonzero_gap_groups_once": 151,
+      "raw_row_suite_queries": 984,
+      "coefficient_distribution": {
+        "1": 77,
+        "-1": 74
+      },
+      "paired_byte_identical_outputs": 412,
+      "paired_detector_disagreements": 5,
+      "scope": "Exact reconstruction from retained observations under deliberate label withholding; no new online query policy or prevalence inference is claimed."
+    },
+    {
+      "left": "stock",
+      "right": "s4",
+      "configurations_per_variant": 492,
+      "unique_source_contracts": 466,
+      "nonzero_gap_source_groups": 0,
+      "zero_gap_source_groups": 466,
+      "grouped_gap_interval_if_all_labels_withheld": [
+        "0",
+        "0"
+      ],
+      "grouped_width": "0",
+      "separate_score_subtraction_width": "184/123",
+      "complete_gap": "0",
+      "native_function_calls_all_source_contracts_once": 4348,
+      "native_function_calls_nonzero_gap_groups_once": 0,
+      "raw_row_candidate_function_invocations": 9204,
+      "suite_queries_all_source_contracts_once": 466,
+      "suite_queries_nonzero_gap_groups_once": 0,
+      "raw_row_suite_queries": 984,
+      "coefficient_distribution": {},
+      "paired_byte_identical_outputs": 492,
+      "paired_detector_disagreements": 0,
+      "scope": "Exact reconstruction from retained observations under deliberate label withholding; no new online query policy or prevalence inference is claimed."
+    },
+    {
+      "left": "stock",
+      "right": "s1_s4",
+      "configurations_per_variant": 492,
+      "unique_source_contracts": 546,
+      "nonzero_gap_source_groups": 151,
+      "zero_gap_source_groups": 395,
+      "grouped_gap_interval_if_all_labels_withheld": [
+        "-37/246",
+        "77/492"
+      ],
+      "grouped_width": "151/492",
+      "separate_score_subtraction_width": "733/492",
+      "complete_gap": "1/164",
+      "native_function_calls_all_source_contracts_once": 5160,
+      "native_function_calls_nonzero_gap_groups_once": 1559,
+      "raw_row_candidate_function_invocations": 9204,
+      "suite_queries_all_source_contracts_once": 546,
+      "suite_queries_nonzero_gap_groups_once": 151,
+      "raw_row_suite_queries": 984,
+      "coefficient_distribution": {
+        "1": 77,
+        "-1": 74
+      },
+      "paired_byte_identical_outputs": 412,
+      "paired_detector_disagreements": 5,
+      "scope": "Exact reconstruction from retained observations under deliberate label withholding; no new online query policy or prevalence inference is claimed."
+    },
+    {
+      "left": "s1",
+      "right": "s4",
+      "configurations_per_variant": 492,
+      "unique_source_contracts": 546,
+      "nonzero_gap_source_groups": 151,
+      "zero_gap_source_groups": 395,
+      "grouped_gap_interval_if_all_labels_withheld": [
+        "-77/492",
+        "37/246"
+      ],
+      "grouped_width": "151/492",
+      "separate_score_subtraction_width": "733/492",
+      "complete_gap": "-1/164",
+      "native_function_calls_all_source_contracts_once": 5160,
+      "native_function_calls_nonzero_gap_groups_once": 1559,
+      "raw_row_candidate_function_invocations": 9204,
+      "suite_queries_all_source_contracts_once": 546,
+      "suite_queries_nonzero_gap_groups_once": 151,
+      "raw_row_suite_queries": 984,
+      "coefficient_distribution": {
+        "1": 74,
+        "-1": 77
+      },
+      "paired_byte_identical_outputs": 412,
+      "paired_detector_disagreements": 5,
+      "scope": "Exact reconstruction from retained observations under deliberate label withholding; no new online query policy or prevalence inference is claimed."
+    },
+    {
+      "left": "s1",
+      "right": "s1_s4",
+      "configurations_per_variant": 492,
+      "unique_source_contracts": 466,
+      "nonzero_gap_source_groups": 0,
+      "zero_gap_source_groups": 466,
+      "grouped_gap_interval_if_all_labels_withheld": [
+        "0",
+        "0"
+      ],
+      "grouped_width": "0",
+      "separate_score_subtraction_width": "365/246",
+      "complete_gap": "0",
+      "native_function_calls_all_source_contracts_once": 4348,
+      "native_function_calls_nonzero_gap_groups_once": 0,
+      "raw_row_candidate_function_invocations": 9204,
+      "suite_queries_all_source_contracts_once": 466,
+      "suite_queries_nonzero_gap_groups_once": 0,
+      "raw_row_suite_queries": 984,
+      "coefficient_distribution": {},
+      "paired_byte_identical_outputs": 492,
+      "paired_detector_disagreements": 0,
+      "scope": "Exact reconstruction from retained observations under deliberate label withholding; no new online query policy or prevalence inference is claimed."
+    },
+    {
+      "left": "s4",
+      "right": "s1_s4",
+      "configurations_per_variant": 492,
+      "unique_source_contracts": 546,
+      "nonzero_gap_source_groups": 151,
+      "zero_gap_source_groups": 395,
+      "grouped_gap_interval_if_all_labels_withheld": [
+        "-37/246",
+        "77/492"
+      ],
+      "grouped_width": "151/492",
+      "separate_score_subtraction_width": "733/492",
+      "complete_gap": "1/164",
+      "native_function_calls_all_source_contracts_once": 5160,
+      "native_function_calls_nonzero_gap_groups_once": 1559,
+      "raw_row_candidate_function_invocations": 9204,
+      "suite_queries_all_source_contracts_once": 546,
+      "suite_queries_nonzero_gap_groups_once": 151,
+      "raw_row_suite_queries": 984,
+      "coefficient_distribution": {
+        "1": 77,
+        "-1": 74
+      },
+      "paired_byte_identical_outputs": 412,
+      "paired_detector_disagreements": 5,
+      "scope": "Exact reconstruction from retained observations under deliberate label withholding; no new online query policy or prevalence inference is claimed."
+    }
+  ]
+}

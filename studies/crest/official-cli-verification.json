@@ -1,0 +1,208 @@
+{
+  "status": "PASS",
+  "official_cli_files": 4,
+  "embedding_invocations": 4,
+  "detection_invocations": 21,
+  "model_classes": {
+    "rf": [
+      0,
+      1
+    ],
+    "logreg_l1": [
+      0,
+      1
+    ],
+    "logreg_l2": [
+      0,
+      1
+    ]
+  },
+  "records": [
+    {
+      "dataset": "HumanEval",
+      "task_id": "HumanEval/10",
+      "embedding_returncode": 0,
+      "embedding_stdout": "Embedding watermark: 'humaneval-HumanEval-10.py' -> 'humaneval-HumanEval-10-marked.py'\n  [1/1] humaneval-HumanEval-10-marked.py...\n  [1/1] completed\nWatermark successfully embedded: 'humaneval-HumanEval-10-marked.py'\n",
+      "embedding_stderr": "",
+      "detections": [
+        {
+          "side": "reference",
+          "classifier": "rf",
+          "returncode": 0,
+          "stdout": "  [1/1] Processing: humaneval-HumanEval-10.py...\n  [1/1] completed\nLoading model....\n----------------------------------------\nClassifier: Random Forest\nWatermark probability: 0.040\nThreshold: 0.605\nVerdict: NOT WATERMARKED\n",
+          "stderr": ""
+        },
+        {
+          "side": "reference",
+          "classifier": "logreg_l1",
+          "returncode": 0,
+          "stdout": "  [1/1] Processing: humaneval-HumanEval-10.py...\n  [1/1] completed\nLoading model....\n----------------------------------------\nClassifier: LogReg L1 (Lasso)\nWatermark probability: 0.050\nThreshold: 0.975\nVerdict: NOT WATERMARKED\n",
+          "stderr": ""
+        },
+        {
+          "side": "reference",
+          "classifier": "logreg_l2",
+          "returncode": 0,
+          "stdout": "  [1/1] Processing: humaneval-HumanEval-10.py...\n  [1/1] completed\nLoading model....\n----------------------------------------\nClassifier: LogReg L2 (Ridge)\nWatermark probability: 0.081\nThreshold: 0.971\nVerdict: NOT WATERMARKED\n",
+          "stderr": ""
+        },
+        {
+          "side": "candidate",
+          "classifier": "rf",
+          "returncode": 0,
+          "stdout": "  [1/1] Processing: humaneval-HumanEval-10-marked.py...\n  [1/1] completed\nLoading model....\n----------------------------------------\nClassifier: Random Forest\nWatermark probability: 0.997\nThreshold: 0.605\nVerdict: WATERMARKED\n",
+          "stderr": ""
+        },
+        {
+          "side": "candidate",
+          "classifier": "logreg_l1",
+          "returncode": 0,
+          "stdout": "  [1/1] Processing: humaneval-HumanEval-10-marked.py...\n  [1/1] completed\nLoading model....\n----------------------------------------\nClassifier: LogReg L1 (Lasso)\nWatermark probability: 0.979\nThreshold: 0.975\nVerdict: WATERMARKED\n",
+          "stderr": ""
+        },
+        {
+          "side": "candidate",
+          "classifier": "logreg_l2",
+          "returncode": 0,
+          "stdout": "  [1/1] Processing: humaneval-HumanEval-10-marked.py...\n  [1/1] completed\nLoading model....\n----------------------------------------\nClassifier: LogReg L2 (Ridge)\nWatermark probability: 0.973\nThreshold: 0.971\nVerdict: WATERMARKED\n",
+          "stderr": ""
+        }
+      ],
+      "emission_identical": true
+    },
+    {
+      "dataset": "MBPP",
+      "task_id": 126,
+      "embedding_returncode": 0,
+      "embedding_stdout": "Embedding watermark: 'mbpp-126.py' -> 'mbpp-126-marked.py'\n  [1/1] mbpp-126-marked.py...\n  [1/1] completed\nWatermark successfully embedded: 'mbpp-126-marked.py'\n",
+      "embedding_stderr": "",
+      "detections": [
+        {
+          "side": "reference",
+          "classifier": "rf",
+          "returncode": 0,
+          "stdout": "  [1/1] Processing: mbpp-126.py...\n  [1/1] completed\nLoading model....\n----------------------------------------\nClassifier: Random Forest\nWatermark probability: 0.000\nThreshold: 0.605\nVerdict: NOT WATERMARKED\n",
+          "stderr": ""
+        },
+        {
+          "side": "reference",
+          "classifier": "logreg_l1",
+          "returncode": 0,
+          "stdout": "  [1/1] Processing: mbpp-126.py...\n  [1/1] completed\nLoading model....\n----------------------------------------\nClassifier: LogReg L1 (Lasso)\nWatermark probability: 0.000\nThreshold: 0.975\nVerdict: NOT WATERMARKED\n",
+          "stderr": ""
+        },
+        {
+          "side": "reference",
+          "classifier": "logreg_l2",
+          "returncode": 0,
+          "stdout": "  [1/1] Processing: mbpp-126.py...\n  [1/1] completed\nLoading model....\n----------------------------------------\nClassifier: LogReg L2 (Ridge)\nWatermark probability: 0.000\nThreshold: 0.971\nVerdict: NOT WATERMARKED\n",
+          "stderr": ""
+        },
+        {
+          "side": "candidate",
+          "classifier": "rf",
+          "returncode": 0,
+          "stdout": "  [1/1] Processing: mbpp-126-marked.py...\n  [1/1] completed\nLoading model....\n----------------------------------------\nClassifier: Random Forest\nWatermark probability: 0.997\nThreshold: 0.605\nVerdict: WATERMARKED\n",
+          "stderr": ""
+        },
+        {
+          "side": "candidate",
+          "classifier": "logreg_l1",
+          "returncode": 0,
+          "stdout": "  [1/1] Processing: mbpp-126-marked.py...\n  [1/1] completed\nLoading model....\n----------------------------------------\nClassifier: LogReg L1 (Lasso)\nWatermark probability: 0.979\nThreshold: 0.975\nVerdict: WATERMARKED\n",
+          "stderr": ""
+        },
+        {
+          "side": "candidate",
+          "classifier": "logreg_l2",
+          "returncode": 0,
+          "stdout": "  [1/1] Processing: mbpp-126-marked.py...\n  [1/1] completed\nLoading model....\n----------------------------------------\nClassifier: LogReg L2 (Ridge)\nWatermark probability: 0.973\nThreshold: 0.971\nVerdict: WATERMARKED\n",
+          "stderr": ""
+        }
+      ],
+      "emission_identical": true
+    },
+    {
+      "dataset": "MBPP",
+      "task_id": 264,
+      "embedding_returncode": 1,
+      "embedding_stdout": "Embedding watermark: 'mbpp-264.py' -> 'mbpp-264-marked.py'\nError: '/workspace/scratch/3d557313f143/qa/substantive/empirical/cli-check/crest/files/mbpp-264.py' is not a valid Python file.\n",
+      "embedding_stderr": "",
+      "detections": [
+        {
+          "side": "reference",
+          "classifier": "rf",
+          "returncode": 1,
+          "stdout": "Error: '/workspace/scratch/3d557313f143/qa/substantive/empirical/cli-check/crest/files/mbpp-264.py' is not a valid Python file.\n",
+          "stderr": ""
+        },
+        {
+          "side": "reference",
+          "classifier": "logreg_l1",
+          "returncode": 1,
+          "stdout": "Error: '/workspace/scratch/3d557313f143/qa/substantive/empirical/cli-check/crest/files/mbpp-264.py' is not a valid Python file.\n",
+          "stderr": ""
+        },
+        {
+          "side": "reference",
+          "classifier": "logreg_l2",
+          "returncode": 1,
+          "stdout": "Error: '/workspace/scratch/3d557313f143/qa/substantive/empirical/cli-check/crest/files/mbpp-264.py' is not a valid Python file.\n",
+          "stderr": ""
+        }
+      ]
+    },
+    {
+      "dataset": "MBPP",
+      "task_id": 6,
+      "embedding_returncode": 0,
+      "embedding_stdout": "Embedding watermark: 'mbpp-6.py' -> 'mbpp-6-marked.py'\n  [1/1] mbpp-6-marked.py...\n  [1/1] completed\nWatermark successfully embedded: 'mbpp-6-marked.py'\n",
+      "embedding_stderr": "",
+      "detections": [
+        {
+          "side": "reference",
+          "classifier": "rf",
+          "returncode": 0,
+          "stdout": "  [1/1] Processing: mbpp-6.py...\n  [1/1] completed\nLoading model....\n----------------------------------------\nClassifier: Random Forest\nWatermark probability: 0.995\nThreshold: 0.605\nVerdict: WATERMARKED\n",
+          "stderr": ""
+        },
+        {
+          "side": "reference",
+          "classifier": "logreg_l1",
+          "returncode": 0,
+          "stdout": "  [1/1] Processing: mbpp-6.py...\n  [1/1] completed\nLoading model....\n----------------------------------------\nClassifier: LogReg L1 (Lasso)\nWatermark probability: 0.987\nThreshold: 0.975\nVerdict: WATERMARKED\n",
+          "stderr": ""
+        },
+        {
+          "side": "reference",
+          "classifier": "logreg_l2",
+          "returncode": 0,
+          "stdout": "  [1/1] Processing: mbpp-6.py...\n  [1/1] completed\nLoading model....\n----------------------------------------\nClassifier: LogReg L2 (Ridge)\nWatermark probability: 0.981\nThreshold: 0.971\nVerdict: WATERMARKED\n",
+          "stderr": ""
+        },
+        {
+          "side": "candidate",
+          "classifier": "rf",
+          "returncode": 0,
+          "stdout": "  [1/1] Processing: mbpp-6-marked.py...\n  [1/1] completed\nLoading model....\n----------------------------------------\nClassifier: Random Forest\nWatermark probability: 0.997\nThreshold: 0.605\nVerdict: WATERMARKED\n",
+          "stderr": ""
+        },
+        {
+          "side": "candidate",
+          "classifier": "logreg_l1",
+          "returncode": 0,
+          "stdout": "  [1/1] Processing: mbpp-6-marked.py...\n  [1/1] completed\nLoading model....\n----------------------------------------\nClassifier: LogReg L1 (Lasso)\nWatermark probability: 0.979\nThreshold: 0.975\nVerdict: WATERMARKED\n",
+          "stderr": ""
+        },
+        {
+          "side": "candidate",
+          "classifier": "logreg_l2",
+          "returncode": 0,
+          "stdout": "  [1/1] Processing: mbpp-6-marked.py...\n  [1/1] completed\nLoading model....\n----------------------------------------\nClassifier: LogReg L2 (Ridge)\nWatermark probability: 0.973\nThreshold: 0.971\nVerdict: WATERMARKED\n",
+          "stderr": ""
+        }
+      ],
+      "emission_identical": true
+    }
+  ]
+}

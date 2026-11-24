@@ -1,0 +1,2392 @@
+{
+  "status": "complete",
+  "runs": [
+    {
+      "repeat": 1,
+      "dataset": "HumanEval",
+      "scope": "humaneval",
+      "left": "stock",
+      "right": "s1",
+      "target": "C",
+      "method": "paired",
+      "directory": "01-humaneval-paired",
+      "candidate_suite_queries": 154,
+      "denominator": 492,
+      "initial_reference_groups": 3,
+      "decision": "left_strict",
+      "final_certificate": {
+        "route": "paired_ratio_envelope",
+        "defined_all": true,
+        "anchors": {
+          "left": {
+            "lower": "9/371",
+            "upper": "2217/371",
+            "endpoints": [
+              {
+                "q": "77/201",
+                "lower_numerator": 372,
+                "upper_numerator": 834,
+                "denominator": 201
+              },
+              {
+                "q": "368/371",
+                "lower_numerator": 9,
+                "upper_numerator": 2217,
+                "denominator": 371
+              }
+            ],
+            "different_unknown_groups": 6,
+            "relation_on_relaxation": "left_strict"
+          },
+          "right": {
+            "lower": "18/371",
+            "upper": "2208/371",
+            "endpoints": [
+              {
+                "q": "74/201",
+                "lower_numerator": 381,
+                "upper_numerator": 825,
+                "denominator": 201
+              },
+              {
+                "q": "365/371",
+                "lower_numerator": 18,
+                "upper_numerator": 2208,
+                "denominator": 371
+              }
+            ],
+            "different_unknown_groups": 6,
+            "relation_on_relaxation": "left_strict"
+          }
+        },
+        "decision": "left_strict",
+        "anchor": "left",
+        "decision_source": "paired_ratio_envelope"
+      },
+      "phase_seconds": {
+        "register_seconds": 0.009359739000501577,
+        "select_seconds": 0.0030309280773508362,
+        "bounds_seconds": 0.03240497098158812,
+        "worker_seconds": 9.267304804008745,
+        "receive_seconds": 0.02963967900723219,
+        "record_seconds": 0.10726017194974702
+      },
+      "audit_total_seconds": 9.455926457005262,
+      "unallocated_loop_seconds": 0.006926163980097044,
+      "load_before": {
+        "monotonic_seconds": 45145.435515109,
+        "load_average": [
+          15.17626953125,
+          14.4794921875,
+          15.60888671875
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 2.02527706,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "load_after": {
+        "monotonic_seconds": 45154.89148426,
+        "load_average": [
+          15.2548828125,
+          14.51416015625,
+          15.60791015625
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 2.340818192,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "selection_branches": {
+        "point_interval_minimax": 0,
+        "coefficient_differences": 154
+      }
+    },
+    {
+      "repeat": 1,
+      "dataset": "HumanEval",
+      "scope": "humaneval",
+      "left": "stock",
+      "right": "s1",
+      "target": "C",
+      "method": "independent",
+      "directory": "02-humaneval-independent",
+      "candidate_suite_queries": 532,
+      "denominator": 492,
+      "initial_reference_groups": 3,
+      "decision": "left_strict",
+      "final_certificate": {
+        "lower": "79/236652",
+        "upper": "1/164",
+        "units": "conditional_rate_difference",
+        "decision": "left_strict",
+        "defined_all": true
+      },
+      "phase_seconds": {
+        "register_seconds": 0.0049493100013933145,
+        "select_seconds": 0.1543667780861142,
+        "bounds_seconds": 0.04319335897889687,
+        "worker_seconds": 35.90700983894931,
+        "receive_seconds": 0.16351758195378352,
+        "record_seconds": 0.34036891799769364
+      },
+      "audit_total_seconds": 36.630257291995804,
+      "unallocated_loop_seconds": 0.016851506028615404,
+      "load_before": {
+        "monotonic_seconds": 45154.893184416,
+        "load_average": [
+          15.2548828125,
+          14.51416015625,
+          15.60791015625
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 2.34239508,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "load_after": {
+        "monotonic_seconds": 45191.523458263,
+        "load_average": [
+          13.326171875,
+          14.04541015625,
+          15.40625
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 3.71914684,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "repeat": 1,
+      "dataset": "mbpp_sanitized",
+      "scope": "mbpp",
+      "left": "stock",
+      "right": "s4",
+      "target": "C",
+      "method": "paired",
+      "directory": "03-mbpp-paired",
+      "candidate_suite_queries": 1,
+      "denominator": 1281,
+      "initial_reference_groups": 20,
+      "decision": "right_strict",
+      "final_certificate": {
+        "route": "paired_ratio_envelope",
+        "defined_all": true,
+        "anchors": {
+          "left": {
+            "lower": "-3",
+            "upper": "-19/868",
+            "endpoints": [
+              {
+                "q": "1/433",
+                "lower_numerator": -1299,
+                "upper_numerator": -432,
+                "denominator": 433
+              },
+              {
+                "q": "849/868",
+                "lower_numerator": -2604,
+                "upper_numerator": -19,
+                "denominator": 868
+              }
+            ],
+            "different_unknown_groups": 5,
+            "relation_on_relaxation": "right_strict"
+          },
+          "right": {
+            "lower": "-3",
+            "upper": "-19/871",
+            "endpoints": [
+              {
+                "q": "2/431",
+                "lower_numerator": -1293,
+                "upper_numerator": -429,
+                "denominator": 431
+              },
+              {
+                "q": "852/871",
+                "lower_numerator": -2613,
+                "upper_numerator": -19,
+                "denominator": 871
+              }
+            ],
+            "different_unknown_groups": 5,
+            "relation_on_relaxation": "right_strict"
+          }
+        },
+        "decision": "right_strict",
+        "anchor": "left",
+        "decision_source": "paired_ratio_envelope"
+      },
+      "phase_seconds": {
+        "register_seconds": 0.031087160998140462,
+        "select_seconds": 1.452199649065733e-05,
+        "bounds_seconds": 0.0001686629984760657,
+        "worker_seconds": 0.0684214580032858,
+        "receive_seconds": 0.00012065100600011647,
+        "record_seconds": 0.0006133520000730641
+      },
+      "audit_total_seconds": 0.1076486020028824,
+      "unallocated_loop_seconds": 0.007222795000416227,
+      "load_before": {
+        "monotonic_seconds": 45191.531360629,
+        "load_average": [
+          13.326171875,
+          14.04541015625,
+          15.40625
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 3.722615551,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "load_after": {
+        "monotonic_seconds": 45191.639026948,
+        "load_average": [
+          13.38037109375,
+          14.04443359375,
+          15.3984375
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 3.736065305,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "selection_branches": {
+        "point_interval_minimax": 0,
+        "coefficient_differences": 1
+      }
+    },
+    {
+      "repeat": 1,
+      "dataset": "mbpp_sanitized",
+      "scope": "mbpp",
+      "left": "stock",
+      "right": "s4",
+      "target": "C",
+      "method": "independent",
+      "directory": "04-mbpp-independent",
+      "candidate_suite_queries": 1136,
+      "denominator": 1281,
+      "initial_reference_groups": 20,
+      "decision": "right_strict",
+      "final_certificate": {
+        "lower": "-143/181902",
+        "upper": "-143/544854",
+        "units": "conditional_rate_difference",
+        "decision": "right_strict",
+        "defined_all": true
+      },
+      "phase_seconds": {
+        "register_seconds": 0.03220832299848553,
+        "select_seconds": 0.48818991315783933,
+        "bounds_seconds": 0.1059874890561332,
+        "worker_seconds": 80.28466179203679,
+        "receive_seconds": 0.36883414995099884,
+        "record_seconds": 0.7986681200709427
+      },
+      "audit_total_seconds": 82.13990918899799,
+      "unallocated_loop_seconds": 0.06135940172680421,
+      "load_before": {
+        "monotonic_seconds": 45191.640060022,
+        "load_average": [
+          13.38037109375,
+          14.04443359375,
+          15.3984375
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 3.737078002,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "load_after": {
+        "monotonic_seconds": 45273.779989881,
+        "load_average": [
+          12.4111328125,
+          13.7763671875,
+          15.203125
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 7.074899265,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "repeat": 2,
+      "dataset": "mbpp_sanitized",
+      "scope": "mbpp",
+      "left": "stock",
+      "right": "s4",
+      "target": "C",
+      "method": "independent",
+      "directory": "05-mbpp-independent",
+      "candidate_suite_queries": 1136,
+      "denominator": 1281,
+      "initial_reference_groups": 20,
+      "decision": "right_strict",
+      "final_certificate": {
+        "lower": "-143/181902",
+        "upper": "-143/544854",
+        "units": "conditional_rate_difference",
+        "decision": "right_strict",
+        "defined_all": true
+      },
+      "phase_seconds": {
+        "register_seconds": 0.01613329500105465,
+        "select_seconds": 0.33820159795868676,
+        "bounds_seconds": 0.09442259683419252,
+        "worker_seconds": 55.04979409498628,
+        "receive_seconds": 0.23111384302319493,
+        "record_seconds": 0.6531818689109059
+      },
+      "audit_total_seconds": 56.408227930995054,
+      "unallocated_loop_seconds": 0.025380634280736558,
+      "load_before": {
+        "monotonic_seconds": 45273.794459124,
+        "load_average": [
+          12.4111328125,
+          13.7763671875,
+          15.203125
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 7.084404237,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "load_after": {
+        "monotonic_seconds": 45330.202734106,
+        "load_average": [
+          11.00390625,
+          13.1171875,
+          14.8916015625
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 10.059719064,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "repeat": 2,
+      "dataset": "mbpp_sanitized",
+      "scope": "mbpp",
+      "left": "stock",
+      "right": "s4",
+      "target": "C",
+      "method": "paired",
+      "directory": "06-mbpp-paired",
+      "candidate_suite_queries": 1,
+      "denominator": 1281,
+      "initial_reference_groups": 20,
+      "decision": "right_strict",
+      "final_certificate": {
+        "route": "paired_ratio_envelope",
+        "defined_all": true,
+        "anchors": {
+          "left": {
+            "lower": "-3",
+            "upper": "-19/868",
+            "endpoints": [
+              {
+                "q": "1/433",
+                "lower_numerator": -1299,
+                "upper_numerator": -432,
+                "denominator": 433
+              },
+              {
+                "q": "849/868",
+                "lower_numerator": -2604,
+                "upper_numerator": -19,
+                "denominator": 868
+              }
+            ],
+            "different_unknown_groups": 5,
+            "relation_on_relaxation": "right_strict"
+          },
+          "right": {
+            "lower": "-3",
+            "upper": "-19/871",
+            "endpoints": [
+              {
+                "q": "2/431",
+                "lower_numerator": -1293,
+                "upper_numerator": -429,
+                "denominator": 431
+              },
+              {
+                "q": "852/871",
+                "lower_numerator": -2613,
+                "upper_numerator": -19,
+                "denominator": 871
+              }
+            ],
+            "different_unknown_groups": 5,
+            "relation_on_relaxation": "right_strict"
+          }
+        },
+        "decision": "right_strict",
+        "anchor": "left",
+        "decision_source": "paired_ratio_envelope"
+      },
+      "phase_seconds": {
+        "register_seconds": 0.020410338998772204,
+        "select_seconds": 2.2754997189622372e-05,
+        "bounds_seconds": 0.0007748860007268377,
+        "worker_seconds": 0.05102200099645415,
+        "receive_seconds": 0.00017436299822293222,
+        "record_seconds": 0.000811661004263442
+      },
+      "audit_total_seconds": 0.07451906299684197,
+      "unallocated_loop_seconds": 0.0013030580012127757,
+      "load_before": {
+        "monotonic_seconds": 45330.217070179,
+        "load_average": [
+          11.00390625,
+          13.1171875,
+          14.8916015625
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 10.069188324,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "load_after": {
+        "monotonic_seconds": 45330.291618155,
+        "load_average": [
+          11.00390625,
+          13.1171875,
+          14.8916015625
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 10.088276087,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "selection_branches": {
+        "point_interval_minimax": 0,
+        "coefficient_differences": 1
+      }
+    },
+    {
+      "repeat": 2,
+      "dataset": "HumanEval",
+      "scope": "humaneval",
+      "left": "stock",
+      "right": "s1",
+      "target": "C",
+      "method": "independent",
+      "directory": "07-humaneval-independent",
+      "candidate_suite_queries": 532,
+      "denominator": 492,
+      "initial_reference_groups": 3,
+      "decision": "left_strict",
+      "final_certificate": {
+        "lower": "79/236652",
+        "upper": "1/164",
+        "units": "conditional_rate_difference",
+        "decision": "left_strict",
+        "defined_all": true
+      },
+      "phase_seconds": {
+        "register_seconds": 0.009354339999845251,
+        "select_seconds": 0.15910309506580234,
+        "bounds_seconds": 0.05926609002199257,
+        "worker_seconds": 21.593387472021277,
+        "receive_seconds": 0.14655681505973917,
+        "record_seconds": 0.3280691879845108
+      },
+      "audit_total_seconds": 22.31505431199912,
+      "unallocated_loop_seconds": 0.019317311845952645,
+      "load_before": {
+        "monotonic_seconds": 45330.293040364,
+        "load_average": [
+          11.00390625,
+          13.1171875,
+          14.8916015625
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 10.089684954,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "load_after": {
+        "monotonic_seconds": 45352.608106824,
+        "load_average": [
+          10.693359375,
+          12.88037109375,
+          14.765625
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 11.593651716,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "repeat": 2,
+      "dataset": "HumanEval",
+      "scope": "humaneval",
+      "left": "stock",
+      "right": "s1",
+      "target": "C",
+      "method": "paired",
+      "directory": "08-humaneval-paired",
+      "candidate_suite_queries": 154,
+      "denominator": 492,
+      "initial_reference_groups": 3,
+      "decision": "left_strict",
+      "final_certificate": {
+        "route": "paired_ratio_envelope",
+        "defined_all": true,
+        "anchors": {
+          "left": {
+            "lower": "9/371",
+            "upper": "2217/371",
+            "endpoints": [
+              {
+                "q": "77/201",
+                "lower_numerator": 372,
+                "upper_numerator": 834,
+                "denominator": 201
+              },
+              {
+                "q": "368/371",
+                "lower_numerator": 9,
+                "upper_numerator": 2217,
+                "denominator": 371
+              }
+            ],
+            "different_unknown_groups": 6,
+            "relation_on_relaxation": "left_strict"
+          },
+          "right": {
+            "lower": "18/371",
+            "upper": "2208/371",
+            "endpoints": [
+              {
+                "q": "74/201",
+                "lower_numerator": 381,
+                "upper_numerator": 825,
+                "denominator": 201
+              },
+              {
+                "q": "365/371",
+                "lower_numerator": 18,
+                "upper_numerator": 2208,
+                "denominator": 371
+              }
+            ],
+            "different_unknown_groups": 6,
+            "relation_on_relaxation": "left_strict"
+          }
+        },
+        "decision": "left_strict",
+        "anchor": "left",
+        "decision_source": "paired_ratio_envelope"
+      },
+      "phase_seconds": {
+        "register_seconds": 0.003955323998525273,
+        "select_seconds": 0.004097556025953963,
+        "bounds_seconds": 0.021953926974674687,
+        "worker_seconds": 5.064506958027778,
+        "receive_seconds": 0.030121161973511335,
+        "record_seconds": 0.0696205800268217
+      },
+      "audit_total_seconds": 5.201007051000488,
+      "unallocated_loop_seconds": 0.006751543973223306,
+      "load_before": {
+        "monotonic_seconds": 45352.610714784,
+        "load_average": [
+          10.693359375,
+          12.88037109375,
+          14.765625
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 11.596209842,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "load_after": {
+        "monotonic_seconds": 45357.811759181,
+        "load_average": [
+          10.3974609375,
+          12.78271484375,
+          14.7236328125
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 11.896329689,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "selection_branches": {
+        "point_interval_minimax": 0,
+        "coefficient_differences": 154
+      }
+    },
+    {
+      "repeat": 3,
+      "dataset": "HumanEval",
+      "scope": "humaneval",
+      "left": "stock",
+      "right": "s1",
+      "target": "C",
+      "method": "paired",
+      "directory": "09-humaneval-paired",
+      "candidate_suite_queries": 154,
+      "denominator": 492,
+      "initial_reference_groups": 3,
+      "decision": "left_strict",
+      "final_certificate": {
+        "route": "paired_ratio_envelope",
+        "defined_all": true,
+        "anchors": {
+          "left": {
+            "lower": "9/371",
+            "upper": "2217/371",
+            "endpoints": [
+              {
+                "q": "77/201",
+                "lower_numerator": 372,
+                "upper_numerator": 834,
+                "denominator": 201
+              },
+              {
+                "q": "368/371",
+                "lower_numerator": 9,
+                "upper_numerator": 2217,
+                "denominator": 371
+              }
+            ],
+            "different_unknown_groups": 6,
+            "relation_on_relaxation": "left_strict"
+          },
+          "right": {
+            "lower": "18/371",
+            "upper": "2208/371",
+            "endpoints": [
+              {
+                "q": "74/201",
+                "lower_numerator": 381,
+                "upper_numerator": 825,
+                "denominator": 201
+              },
+              {
+                "q": "365/371",
+                "lower_numerator": 18,
+                "upper_numerator": 2208,
+                "denominator": 371
+              }
+            ],
+            "different_unknown_groups": 6,
+            "relation_on_relaxation": "left_strict"
+          }
+        },
+        "decision": "left_strict",
+        "anchor": "left",
+        "decision_source": "paired_ratio_envelope"
+      },
+      "phase_seconds": {
+        "register_seconds": 0.00511171299876878,
+        "select_seconds": 0.014514702015731018,
+        "bounds_seconds": 0.08022444699599873,
+        "worker_seconds": 6.362962622988562,
+        "receive_seconds": 0.05411409697990166,
+        "record_seconds": 0.1086521449542488
+      },
+      "audit_total_seconds": 6.669949609000469,
+      "unallocated_loop_seconds": 0.044369882067258004,
+      "load_before": {
+        "monotonic_seconds": 45357.813449422,
+        "load_average": [
+          10.3974609375,
+          12.78271484375,
+          14.7236328125
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 11.898001316,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "load_after": {
+        "monotonic_seconds": 45364.483431139,
+        "load_average": [
+          10.205078125,
+          12.703125,
+          14.6875
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 12.426862956,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "selection_branches": {
+        "point_interval_minimax": 0,
+        "coefficient_differences": 154
+      }
+    },
+    {
+      "repeat": 3,
+      "dataset": "HumanEval",
+      "scope": "humaneval",
+      "left": "stock",
+      "right": "s1",
+      "target": "C",
+      "method": "independent",
+      "directory": "10-humaneval-independent",
+      "candidate_suite_queries": 532,
+      "denominator": 492,
+      "initial_reference_groups": 3,
+      "decision": "left_strict",
+      "final_certificate": {
+        "lower": "79/236652",
+        "upper": "1/164",
+        "units": "conditional_rate_difference",
+        "decision": "left_strict",
+        "defined_all": true
+      },
+      "phase_seconds": {
+        "register_seconds": 0.0051945590021205135,
+        "select_seconds": 0.11168047202227172,
+        "bounds_seconds": 0.0318839200263028,
+        "worker_seconds": 19.16003105793061,
+        "receive_seconds": 0.15211959290172672,
+        "record_seconds": 0.281020056012494
+      },
+      "audit_total_seconds": 19.756482371005404,
+      "unallocated_loop_seconds": 0.014552713109878823,
+      "load_before": {
+        "monotonic_seconds": 45364.485673561,
+        "load_average": [
+          10.205078125,
+          12.703125,
+          14.6875
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 12.428301208,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "load_after": {
+        "monotonic_seconds": 45384.242170675,
+        "load_average": [
+          9.2265625,
+          12.3173828125,
+          14.51708984375
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 13.706455691,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "repeat": 3,
+      "dataset": "mbpp_sanitized",
+      "scope": "mbpp",
+      "left": "stock",
+      "right": "s4",
+      "target": "C",
+      "method": "paired",
+      "directory": "11-mbpp-paired",
+      "candidate_suite_queries": 1,
+      "denominator": 1281,
+      "initial_reference_groups": 20,
+      "decision": "right_strict",
+      "final_certificate": {
+        "route": "paired_ratio_envelope",
+        "defined_all": true,
+        "anchors": {
+          "left": {
+            "lower": "-3",
+            "upper": "-19/868",
+            "endpoints": [
+              {
+                "q": "1/433",
+                "lower_numerator": -1299,
+                "upper_numerator": -432,
+                "denominator": 433
+              },
+              {
+                "q": "849/868",
+                "lower_numerator": -2604,
+                "upper_numerator": -19,
+                "denominator": 868
+              }
+            ],
+            "different_unknown_groups": 5,
+            "relation_on_relaxation": "right_strict"
+          },
+          "right": {
+            "lower": "-3",
+            "upper": "-19/871",
+            "endpoints": [
+              {
+                "q": "2/431",
+                "lower_numerator": -1293,
+                "upper_numerator": -429,
+                "denominator": 431
+              },
+              {
+                "q": "852/871",
+                "lower_numerator": -2613,
+                "upper_numerator": -19,
+                "denominator": 871
+              }
+            ],
+            "different_unknown_groups": 5,
+            "relation_on_relaxation": "right_strict"
+          }
+        },
+        "decision": "right_strict",
+        "anchor": "left",
+        "decision_source": "paired_ratio_envelope"
+      },
+      "phase_seconds": {
+        "register_seconds": 0.015218722997815348,
+        "select_seconds": 2.0421000954229385e-05,
+        "bounds_seconds": 0.0001612920023035258,
+        "worker_seconds": 0.025161137004033662,
+        "receive_seconds": 8.86229972820729e-05,
+        "record_seconds": 0.00042292499711038545
+      },
+      "audit_total_seconds": 0.043250554997939616,
+      "unallocated_loop_seconds": 0.0021774339984403923,
+      "load_before": {
+        "monotonic_seconds": 45384.248620118,
+        "load_average": [
+          9.2265625,
+          12.3173828125,
+          14.51708984375
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 13.710514647,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "load_after": {
+        "monotonic_seconds": 45384.291887207,
+        "load_average": [
+          9.2265625,
+          12.3173828125,
+          14.51708984375
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 13.724389733,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "selection_branches": {
+        "point_interval_minimax": 0,
+        "coefficient_differences": 1
+      }
+    },
+    {
+      "repeat": 3,
+      "dataset": "mbpp_sanitized",
+      "scope": "mbpp",
+      "left": "stock",
+      "right": "s4",
+      "target": "C",
+      "method": "independent",
+      "directory": "12-mbpp-independent",
+      "candidate_suite_queries": 1136,
+      "denominator": 1281,
+      "initial_reference_groups": 20,
+      "decision": "right_strict",
+      "final_certificate": {
+        "lower": "-143/181902",
+        "upper": "-143/544854",
+        "units": "conditional_rate_difference",
+        "decision": "right_strict",
+        "defined_all": true
+      },
+      "phase_seconds": {
+        "register_seconds": 0.014778231001400854,
+        "select_seconds": 0.26645760893734405,
+        "bounds_seconds": 0.06869506700604688,
+        "worker_seconds": 45.673913939026534,
+        "receive_seconds": 0.21317796724906657,
+        "record_seconds": 0.588032581981679
+      },
+      "audit_total_seconds": 46.86638486200536,
+      "unallocated_loop_seconds": 0.041329466803290416,
+      "load_before": {
+        "monotonic_seconds": 45384.296694162,
+        "load_average": [
+          9.2265625,
+          12.3173828125,
+          14.51708984375
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 13.725251095,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "load_after": {
+        "monotonic_seconds": 45431.163093075,
+        "load_average": [
+          6.3896484375,
+          11.14794921875,
+          14.01708984375
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 16.425601937,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "repeat": 4,
+      "dataset": "mbpp_sanitized",
+      "scope": "mbpp",
+      "left": "stock",
+      "right": "s4",
+      "target": "C",
+      "method": "independent",
+      "directory": "13-mbpp-independent",
+      "candidate_suite_queries": 1136,
+      "denominator": 1281,
+      "initial_reference_groups": 20,
+      "decision": "right_strict",
+      "final_certificate": {
+        "lower": "-143/181902",
+        "upper": "-143/544854",
+        "units": "conditional_rate_difference",
+        "decision": "right_strict",
+        "defined_all": true
+      },
+      "phase_seconds": {
+        "register_seconds": 0.007404889998724684,
+        "select_seconds": 0.24407706907368265,
+        "bounds_seconds": 0.06770826999854762,
+        "worker_seconds": 44.3442510369714,
+        "receive_seconds": 0.1875429280771641,
+        "record_seconds": 0.5511532560631167
+      },
+      "audit_total_seconds": 45.42409068399866,
+      "unallocated_loop_seconds": 0.021953233816020656,
+      "load_before": {
+        "monotonic_seconds": 45431.168564298,
+        "load_average": [
+          6.3896484375,
+          11.14794921875,
+          14.01708984375
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 16.431042603,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "load_after": {
+        "monotonic_seconds": 45476.592668572,
+        "load_average": [
+          5.4345703125,
+          10.19970703125,
+          13.55712890625
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 18.970032361,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "repeat": 4,
+      "dataset": "mbpp_sanitized",
+      "scope": "mbpp",
+      "left": "stock",
+      "right": "s4",
+      "target": "C",
+      "method": "paired",
+      "directory": "14-mbpp-paired",
+      "candidate_suite_queries": 1,
+      "denominator": 1281,
+      "initial_reference_groups": 20,
+      "decision": "right_strict",
+      "final_certificate": {
+        "route": "paired_ratio_envelope",
+        "defined_all": true,
+        "anchors": {
+          "left": {
+            "lower": "-3",
+            "upper": "-19/868",
+            "endpoints": [
+              {
+                "q": "1/433",
+                "lower_numerator": -1299,
+                "upper_numerator": -432,
+                "denominator": 433
+              },
+              {
+                "q": "849/868",
+                "lower_numerator": -2604,
+                "upper_numerator": -19,
+                "denominator": 868
+              }
+            ],
+            "different_unknown_groups": 5,
+            "relation_on_relaxation": "right_strict"
+          },
+          "right": {
+            "lower": "-3",
+            "upper": "-19/871",
+            "endpoints": [
+              {
+                "q": "2/431",
+                "lower_numerator": -1293,
+                "upper_numerator": -429,
+                "denominator": 431
+              },
+              {
+                "q": "852/871",
+                "lower_numerator": -2613,
+                "upper_numerator": -19,
+                "denominator": 871
+              }
+            ],
+            "different_unknown_groups": 5,
+            "relation_on_relaxation": "right_strict"
+          }
+        },
+        "decision": "right_strict",
+        "anchor": "left",
+        "decision_source": "paired_ratio_envelope"
+      },
+      "phase_seconds": {
+        "register_seconds": 0.011459045002993662,
+        "select_seconds": 2.0159997802693397e-05,
+        "bounds_seconds": 0.00032011100120143965,
+        "worker_seconds": 0.024156791994755622,
+        "receive_seconds": 9.970999963115901e-05,
+        "record_seconds": 0.0005193100005271845
+      },
+      "audit_total_seconds": 0.03737726499821292,
+      "unallocated_loop_seconds": 0.0008021370013011619,
+      "load_before": {
+        "monotonic_seconds": 45476.599106819,
+        "load_average": [
+          5.4345703125,
+          10.19970703125,
+          13.55712890625
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 18.976124858,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "load_after": {
+        "monotonic_seconds": 45476.63650103,
+        "load_average": [
+          5.4345703125,
+          10.19970703125,
+          13.55712890625
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 18.990184741,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "selection_branches": {
+        "point_interval_minimax": 0,
+        "coefficient_differences": 1
+      }
+    },
+    {
+      "repeat": 4,
+      "dataset": "HumanEval",
+      "scope": "humaneval",
+      "left": "stock",
+      "right": "s1",
+      "target": "C",
+      "method": "independent",
+      "directory": "15-humaneval-independent",
+      "candidate_suite_queries": 532,
+      "denominator": 492,
+      "initial_reference_groups": 3,
+      "decision": "left_strict",
+      "final_certificate": {
+        "lower": "79/236652",
+        "upper": "1/164",
+        "units": "conditional_rate_difference",
+        "decision": "left_strict",
+        "defined_all": true
+      },
+      "phase_seconds": {
+        "register_seconds": 0.003911719999450725,
+        "select_seconds": 0.0988313349953387,
+        "bounds_seconds": 0.030464014947938267,
+        "worker_seconds": 15.689604729879647,
+        "receive_seconds": 0.08012355696700979,
+        "record_seconds": 0.256163917016238
+      },
+      "audit_total_seconds": 16.167015348997666,
+      "unallocated_loop_seconds": 0.007916075192042626,
+      "load_before": {
+        "monotonic_seconds": 45476.637384497,
+        "load_average": [
+          5.4345703125,
+          10.19970703125,
+          13.55712890625
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 18.991027014,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "load_after": {
+        "monotonic_seconds": 45492.804411054,
+        "load_average": [
+          5.73046875,
+          9.958984375,
+          13.40576171875
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 20.042863421,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "repeat": 4,
+      "dataset": "HumanEval",
+      "scope": "humaneval",
+      "left": "stock",
+      "right": "s1",
+      "target": "C",
+      "method": "paired",
+      "directory": "16-humaneval-paired",
+      "candidate_suite_queries": 154,
+      "denominator": 492,
+      "initial_reference_groups": 3,
+      "decision": "left_strict",
+      "final_certificate": {
+        "route": "paired_ratio_envelope",
+        "defined_all": true,
+        "anchors": {
+          "left": {
+            "lower": "9/371",
+            "upper": "2217/371",
+            "endpoints": [
+              {
+                "q": "77/201",
+                "lower_numerator": 372,
+                "upper_numerator": 834,
+                "denominator": 201
+              },
+              {
+                "q": "368/371",
+                "lower_numerator": 9,
+                "upper_numerator": 2217,
+                "denominator": 371
+              }
+            ],
+            "different_unknown_groups": 6,
+            "relation_on_relaxation": "left_strict"
+          },
+          "right": {
+            "lower": "18/371",
+            "upper": "2208/371",
+            "endpoints": [
+              {
+                "q": "74/201",
+                "lower_numerator": 381,
+                "upper_numerator": 825,
+                "denominator": 201
+              },
+              {
+                "q": "365/371",
+                "lower_numerator": 18,
+                "upper_numerator": 2208,
+                "denominator": 371
+              }
+            ],
+            "different_unknown_groups": 6,
+            "relation_on_relaxation": "left_strict"
+          }
+        },
+        "decision": "left_strict",
+        "anchor": "left",
+        "decision_source": "paired_ratio_envelope"
+      },
+      "phase_seconds": {
+        "register_seconds": 0.003885439997247886,
+        "select_seconds": 0.004401712016260717,
+        "bounds_seconds": 0.01806798399775289,
+        "worker_seconds": 4.543977243985864,
+        "receive_seconds": 0.031797909025044646,
+        "record_seconds": 0.08620192797388881
+      },
+      "audit_total_seconds": 4.694536328002869,
+      "unallocated_loop_seconds": 0.0062041110068093985,
+      "load_before": {
+        "monotonic_seconds": 45492.807339316,
+        "load_average": [
+          5.73046875,
+          9.958984375,
+          13.40576171875
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 20.045597629,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "load_after": {
+        "monotonic_seconds": 45497.50190642,
+        "load_average": [
+          5.671875,
+          9.87646484375,
+          13.3603515625
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 20.407559181,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "selection_branches": {
+        "point_interval_minimax": 0,
+        "coefficient_differences": 154
+      }
+    },
+    {
+      "repeat": 5,
+      "dataset": "HumanEval",
+      "scope": "humaneval",
+      "left": "stock",
+      "right": "s1",
+      "target": "C",
+      "method": "paired",
+      "directory": "17-humaneval-paired",
+      "candidate_suite_queries": 154,
+      "denominator": 492,
+      "initial_reference_groups": 3,
+      "decision": "left_strict",
+      "final_certificate": {
+        "route": "paired_ratio_envelope",
+        "defined_all": true,
+        "anchors": {
+          "left": {
+            "lower": "9/371",
+            "upper": "2217/371",
+            "endpoints": [
+              {
+                "q": "77/201",
+                "lower_numerator": 372,
+                "upper_numerator": 834,
+                "denominator": 201
+              },
+              {
+                "q": "368/371",
+                "lower_numerator": 9,
+                "upper_numerator": 2217,
+                "denominator": 371
+              }
+            ],
+            "different_unknown_groups": 6,
+            "relation_on_relaxation": "left_strict"
+          },
+          "right": {
+            "lower": "18/371",
+            "upper": "2208/371",
+            "endpoints": [
+              {
+                "q": "74/201",
+                "lower_numerator": 381,
+                "upper_numerator": 825,
+                "denominator": 201
+              },
+              {
+                "q": "365/371",
+                "lower_numerator": 18,
+                "upper_numerator": 2208,
+                "denominator": 371
+              }
+            ],
+            "different_unknown_groups": 6,
+            "relation_on_relaxation": "left_strict"
+          }
+        },
+        "decision": "left_strict",
+        "anchor": "left",
+        "decision_source": "paired_ratio_envelope"
+      },
+      "phase_seconds": {
+        "register_seconds": 0.004828688994166441,
+        "select_seconds": 0.007456546991306823,
+        "bounds_seconds": 0.02564408402395202,
+        "worker_seconds": 4.823168711976905,
+        "receive_seconds": 0.025891844961734023,
+        "record_seconds": 0.07972912800323684
+      },
+      "audit_total_seconds": 4.972858173998247,
+      "unallocated_loop_seconds": 0.006139169046946336,
+      "load_before": {
+        "monotonic_seconds": 45497.503637292,
+        "load_average": [
+          5.671875,
+          9.87646484375,
+          13.3603515625
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 20.409054677,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "load_after": {
+        "monotonic_seconds": 45502.476531401,
+        "load_average": [
+          5.61767578125,
+          9.79541015625,
+          13.3154296875
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 20.754094899,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "selection_branches": {
+        "point_interval_minimax": 0,
+        "coefficient_differences": 154
+      }
+    },
+    {
+      "repeat": 5,
+      "dataset": "HumanEval",
+      "scope": "humaneval",
+      "left": "stock",
+      "right": "s1",
+      "target": "C",
+      "method": "independent",
+      "directory": "18-humaneval-independent",
+      "candidate_suite_queries": 532,
+      "denominator": 492,
+      "initial_reference_groups": 3,
+      "decision": "left_strict",
+      "final_certificate": {
+        "lower": "79/236652",
+        "upper": "1/164",
+        "units": "conditional_rate_difference",
+        "decision": "left_strict",
+        "defined_all": true
+      },
+      "phase_seconds": {
+        "register_seconds": 0.0049442419986007735,
+        "select_seconds": 0.11950749199604616,
+        "bounds_seconds": 0.03612387595057953,
+        "worker_seconds": 20.275838933965133,
+        "receive_seconds": 0.13144160688534612,
+        "record_seconds": 0.343831777034211
+      },
+      "audit_total_seconds": 20.935609925996687,
+      "unallocated_loop_seconds": 0.02392199816677021,
+      "load_before": {
+        "monotonic_seconds": 45502.478072487,
+        "load_average": [
+          5.61767578125,
+          9.79541015625,
+          13.3154296875
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 20.755572698,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "load_after": {
+        "monotonic_seconds": 45523.41369354,
+        "load_average": [
+          5.65185546875,
+          9.5322265625,
+          13.15283203125
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 22.327620077,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "repeat": 5,
+      "dataset": "mbpp_sanitized",
+      "scope": "mbpp",
+      "left": "stock",
+      "right": "s4",
+      "target": "C",
+      "method": "paired",
+      "directory": "19-mbpp-paired",
+      "candidate_suite_queries": 1,
+      "denominator": 1281,
+      "initial_reference_groups": 20,
+      "decision": "right_strict",
+      "final_certificate": {
+        "route": "paired_ratio_envelope",
+        "defined_all": true,
+        "anchors": {
+          "left": {
+            "lower": "-3",
+            "upper": "-19/868",
+            "endpoints": [
+              {
+                "q": "1/433",
+                "lower_numerator": -1299,
+                "upper_numerator": -432,
+                "denominator": 433
+              },
+              {
+                "q": "849/868",
+                "lower_numerator": -2604,
+                "upper_numerator": -19,
+                "denominator": 868
+              }
+            ],
+            "different_unknown_groups": 5,
+            "relation_on_relaxation": "right_strict"
+          },
+          "right": {
+            "lower": "-3",
+            "upper": "-19/871",
+            "endpoints": [
+              {
+                "q": "2/431",
+                "lower_numerator": -1293,
+                "upper_numerator": -429,
+                "denominator": 431
+              },
+              {
+                "q": "852/871",
+                "lower_numerator": -2613,
+                "upper_numerator": -19,
+                "denominator": 871
+              }
+            ],
+            "different_unknown_groups": 5,
+            "relation_on_relaxation": "right_strict"
+          }
+        },
+        "decision": "right_strict",
+        "anchor": "left",
+        "decision_source": "paired_ratio_envelope"
+      },
+      "phase_seconds": {
+        "register_seconds": 0.008056630002101883,
+        "select_seconds": 1.4200995792634785e-05,
+        "bounds_seconds": 0.00013397100701695308,
+        "worker_seconds": 0.024643782002385706,
+        "receive_seconds": 9.129699901677668e-05,
+        "record_seconds": 0.00044962499669054523
+      },
+      "audit_total_seconds": 0.033714687000610866,
+      "unallocated_loop_seconds": 0.00032518099760636687,
+      "load_before": {
+        "monotonic_seconds": 45523.417602686,
+        "load_average": [
+          5.65185546875,
+          9.5322265625,
+          13.15283203125
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 22.330684537,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "load_after": {
+        "monotonic_seconds": 45523.451334539,
+        "load_average": [
+          5.65185546875,
+          9.5322265625,
+          13.15283203125
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 22.34069726,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "selection_branches": {
+        "point_interval_minimax": 0,
+        "coefficient_differences": 1
+      }
+    },
+    {
+      "repeat": 5,
+      "dataset": "mbpp_sanitized",
+      "scope": "mbpp",
+      "left": "stock",
+      "right": "s4",
+      "target": "C",
+      "method": "independent",
+      "directory": "20-mbpp-independent",
+      "candidate_suite_queries": 1136,
+      "denominator": 1281,
+      "initial_reference_groups": 20,
+      "decision": "right_strict",
+      "final_certificate": {
+        "lower": "-143/181902",
+        "upper": "-143/544854",
+        "units": "conditional_rate_difference",
+        "decision": "right_strict",
+        "defined_all": true
+      },
+      "phase_seconds": {
+        "register_seconds": 0.007670920000236947,
+        "select_seconds": 0.2487840809772024,
+        "bounds_seconds": 0.06687861814134521,
+        "worker_seconds": 47.279168995177315,
+        "receive_seconds": 0.1786479659640463,
+        "record_seconds": 0.6065162520608283
+      },
+      "audit_total_seconds": 48.407000651001,
+      "unallocated_loop_seconds": 0.019333818680024706,
+      "load_before": {
+        "monotonic_seconds": 45523.452108702,
+        "load_average": [
+          5.65185546875,
+          9.5322265625,
+          13.15283203125
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 22.341439564,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "load_after": {
+        "monotonic_seconds": 45571.859135173,
+        "load_average": [
+          5.556640625,
+          8.958984375,
+          12.7861328125
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 25.070126948,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "repeat": 6,
+      "dataset": "mbpp_sanitized",
+      "scope": "mbpp",
+      "left": "stock",
+      "right": "s4",
+      "target": "C",
+      "method": "independent",
+      "directory": "21-mbpp-independent",
+      "candidate_suite_queries": 1136,
+      "denominator": 1281,
+      "initial_reference_groups": 20,
+      "decision": "right_strict",
+      "final_certificate": {
+        "lower": "-143/181902",
+        "upper": "-143/544854",
+        "units": "conditional_rate_difference",
+        "decision": "right_strict",
+        "defined_all": true
+      },
+      "phase_seconds": {
+        "register_seconds": 0.012831350999476854,
+        "select_seconds": 0.26896149311505724,
+        "bounds_seconds": 0.06600834179698722,
+        "worker_seconds": 46.25501362587238,
+        "receive_seconds": 0.18906821918062633,
+        "record_seconds": 0.5324301990185631
+      },
+      "audit_total_seconds": 47.34758129200054,
+      "unallocated_loop_seconds": 0.023268062017450575,
+      "load_before": {
+        "monotonic_seconds": 45571.867824216,
+        "load_average": [
+          5.556640625,
+          8.958984375,
+          12.7861328125
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 25.078577592,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "load_after": {
+        "monotonic_seconds": 45619.215418127,
+        "load_average": [
+          5.4091796875,
+          8.4169921875,
+          12.4013671875
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 27.640888805,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "repeat": 6,
+      "dataset": "mbpp_sanitized",
+      "scope": "mbpp",
+      "left": "stock",
+      "right": "s4",
+      "target": "C",
+      "method": "paired",
+      "directory": "22-mbpp-paired",
+      "candidate_suite_queries": 1,
+      "denominator": 1281,
+      "initial_reference_groups": 20,
+      "decision": "right_strict",
+      "final_certificate": {
+        "route": "paired_ratio_envelope",
+        "defined_all": true,
+        "anchors": {
+          "left": {
+            "lower": "-3",
+            "upper": "-19/868",
+            "endpoints": [
+              {
+                "q": "1/433",
+                "lower_numerator": -1299,
+                "upper_numerator": -432,
+                "denominator": 433
+              },
+              {
+                "q": "849/868",
+                "lower_numerator": -2604,
+                "upper_numerator": -19,
+                "denominator": 868
+              }
+            ],
+            "different_unknown_groups": 5,
+            "relation_on_relaxation": "right_strict"
+          },
+          "right": {
+            "lower": "-3",
+            "upper": "-19/871",
+            "endpoints": [
+              {
+                "q": "2/431",
+                "lower_numerator": -1293,
+                "upper_numerator": -429,
+                "denominator": 431
+              },
+              {
+                "q": "852/871",
+                "lower_numerator": -2613,
+                "upper_numerator": -19,
+                "denominator": 871
+              }
+            ],
+            "different_unknown_groups": 5,
+            "relation_on_relaxation": "right_strict"
+          }
+        },
+        "decision": "right_strict",
+        "anchor": "left",
+        "decision_source": "paired_ratio_envelope"
+      },
+      "phase_seconds": {
+        "register_seconds": 0.00909422199765686,
+        "select_seconds": 1.442099892301485e-05,
+        "bounds_seconds": 0.00018484899919712916,
+        "worker_seconds": 0.03044349900301313,
+        "receive_seconds": 0.00010221399861620739,
+        "record_seconds": 0.0004292860030545853
+      },
+      "audit_total_seconds": 0.040959660000225995,
+      "unallocated_loop_seconds": 0.0006911689997650683,
+      "load_before": {
+        "monotonic_seconds": 45619.221859978,
+        "load_average": [
+          5.4091796875,
+          8.4169921875,
+          12.4013671875
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 27.647270822,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "load_after": {
+        "monotonic_seconds": 45619.262836404,
+        "load_average": [
+          5.4091796875,
+          8.4169921875,
+          12.4013671875
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 27.658873648,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "selection_branches": {
+        "point_interval_minimax": 0,
+        "coefficient_differences": 1
+      }
+    },
+    {
+      "repeat": 6,
+      "dataset": "HumanEval",
+      "scope": "humaneval",
+      "left": "stock",
+      "right": "s1",
+      "target": "C",
+      "method": "independent",
+      "directory": "23-humaneval-independent",
+      "candidate_suite_queries": 532,
+      "denominator": 492,
+      "initial_reference_groups": 3,
+      "decision": "left_strict",
+      "final_certificate": {
+        "lower": "79/236652",
+        "upper": "1/164",
+        "units": "conditional_rate_difference",
+        "decision": "left_strict",
+        "defined_all": true
+      },
+      "phase_seconds": {
+        "register_seconds": 0.004826149997825269,
+        "select_seconds": 0.10726701297971886,
+        "bounds_seconds": 0.051600577899080236,
+        "worker_seconds": 16.409985144870006,
+        "receive_seconds": 0.09709945189388236,
+        "record_seconds": 0.30539838912227424
+      },
+      "audit_total_seconds": 16.98921601299662,
+      "unallocated_loop_seconds": 0.013039286233833991,
+      "load_before": {
+        "monotonic_seconds": 45619.263885232,
+        "load_average": [
+          5.4091796875,
+          8.4169921875,
+          12.4013671875
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 27.65990286,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "load_after": {
+        "monotonic_seconds": 45636.253113333,
+        "load_average": [
+          5.17041015625,
+          8.2158203125,
+          12.271484375
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 28.839046882,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "repeat": 6,
+      "dataset": "HumanEval",
+      "scope": "humaneval",
+      "left": "stock",
+      "right": "s1",
+      "target": "C",
+      "method": "paired",
+      "directory": "24-humaneval-paired",
+      "candidate_suite_queries": 154,
+      "denominator": 492,
+      "initial_reference_groups": 3,
+      "decision": "left_strict",
+      "final_certificate": {
+        "route": "paired_ratio_envelope",
+        "defined_all": true,
+        "anchors": {
+          "left": {
+            "lower": "9/371",
+            "upper": "2217/371",
+            "endpoints": [
+              {
+                "q": "77/201",
+                "lower_numerator": 372,
+                "upper_numerator": 834,
+                "denominator": 201
+              },
+              {
+                "q": "368/371",
+                "lower_numerator": 9,
+                "upper_numerator": 2217,
+                "denominator": 371
+              }
+            ],
+            "different_unknown_groups": 6,
+            "relation_on_relaxation": "left_strict"
+          },
+          "right": {
+            "lower": "18/371",
+            "upper": "2208/371",
+            "endpoints": [
+              {
+                "q": "74/201",
+                "lower_numerator": 381,
+                "upper_numerator": 825,
+                "denominator": 201
+              },
+              {
+                "q": "365/371",
+                "lower_numerator": 18,
+                "upper_numerator": 2208,
+                "denominator": 371
+              }
+            ],
+            "different_unknown_groups": 6,
+            "relation_on_relaxation": "left_strict"
+          }
+        },
+        "decision": "left_strict",
+        "anchor": "left",
+        "decision_source": "paired_ratio_envelope"
+      },
+      "phase_seconds": {
+        "register_seconds": 0.005449196003610268,
+        "select_seconds": 0.003705757058924064,
+        "bounds_seconds": 0.020664790994487703,
+        "worker_seconds": 4.940134038974065,
+        "receive_seconds": 0.030093211033090483,
+        "record_seconds": 0.08564697694964707
+      },
+      "audit_total_seconds": 5.091603372995451,
+      "unallocated_loop_seconds": 0.005909401981625706,
+      "load_before": {
+        "monotonic_seconds": 45636.256512555,
+        "load_average": [
+          5.17041015625,
+          8.2158203125,
+          12.271484375
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 28.842450527,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "load_after": {
+        "monotonic_seconds": 45641.348140675,
+        "load_average": [
+          5.07666015625,
+          8.1455078125,
+          12.22705078125
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 29.185076621,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "selection_branches": {
+        "point_interval_minimax": 0,
+        "coefficient_differences": 154
+      }
+    }
+  ],
+  "summaries": [
+    {
+      "scope": "humaneval",
+      "method": "paired",
+      "repetitions": 6,
+      "queries": [
+        154
+      ],
+      "median_seconds": 5.146305211997969,
+      "minimum_seconds": 4.694536328002869,
+      "maximum_seconds": 9.455926457005262,
+      "phase_medians": {
+        "register_seconds": 0.004970200996467611,
+        "select_seconds": 0.00424963402110734,
+        "bounds_seconds": 0.023799005499313353,
+        "worker_seconds": 5.0023204985009215,
+        "receive_seconds": 0.03010718650330091,
+        "record_seconds": 0.08592445246176794
+      }
+    },
+    {
+      "scope": "humaneval",
+      "method": "independent",
+      "repetitions": 6,
+      "queries": [
+        532
+      ],
+      "median_seconds": 20.346046148501046,
+      "minimum_seconds": 16.167015348997666,
+      "maximum_seconds": 36.630257291995804,
+      "phase_medians": {
+        "register_seconds": 0.004946775999997044,
+        "select_seconds": 0.11559398200915894,
+        "bounds_seconds": 0.0396586174647382,
+        "worker_seconds": 19.71793499594787,
+        "receive_seconds": 0.13899921097254264,
+        "record_seconds": 0.3167337885533925
+      }
+    },
+    {
+      "scope": "mbpp",
+      "method": "paired",
+      "repetitions": 6,
+      "queries": [
+        1
+      ],
+      "median_seconds": 0.042105107499082806,
+      "minimum_seconds": 0.033714687000610866,
+      "maximum_seconds": 0.1076486020028824,
+      "phase_medians": {
+        "register_seconds": 0.013338884000404505,
+        "select_seconds": 1.7340997146675363e-05,
+        "bounds_seconds": 0.00017675599883659743,
+        "worker_seconds": 0.027802318003523396,
+        "receive_seconds": 0.0001009619991236832,
+        "record_seconds": 0.00048446749860886484
+      }
+    },
+    {
+      "scope": "mbpp",
+      "method": "independent",
+      "repetitions": 6,
+      "queries": [
+        1136
+      ],
+      "median_seconds": 47.87729097150077,
+      "minimum_seconds": 45.42409068399866,
+      "maximum_seconds": 82.13990918899799,
+      "phase_medians": {
+        "register_seconds": 0.013804791000438854,
+        "select_seconds": 0.26770955102620064,
+        "bounds_seconds": 0.06820166850229725,
+        "worker_seconds": 46.76709131052485,
+        "receive_seconds": 0.20112309321484645,
+        "record_seconds": 0.5972744170212536
+      }
+    }
+  ],
+  "total_candidate_suites": 10938,
+  "candidate_observation_files_read_before_selection": 0,
+  "cross_run_candidate_label_reuse": false,
+  "common_preparation_seconds": 4.283813074995123,
+  "independent_receiving_required": true
+}

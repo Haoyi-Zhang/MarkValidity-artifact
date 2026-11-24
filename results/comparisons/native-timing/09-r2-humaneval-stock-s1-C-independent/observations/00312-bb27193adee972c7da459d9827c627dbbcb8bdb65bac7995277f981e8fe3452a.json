@@ -1,0 +1,13 @@
+{
+  "stdout": "{\"elapsed_seconds\":0.001586,\"error\":null,\"observations\":[{\"after\":{\"args\":[\"tuple\",[[\"list\",[[\"str\",\"1234567\"]]]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"list\",[[\"str\",\"1234567\"]]]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"list\",[[\"str\",\"the number of odd elements 4n the str4ng 4 of the 4nput.\"]]]]},{\"after\":{\"args\":[\"tuple\",[[\"list\",[[\"str\",\"3\"],[\"str\",\"11111111\"]]]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"list\",[[\"str\",\"3\"],[\"str\",\"11111111\"]]]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"list\",[[\"str\",\"the number of odd elements 1n the str1ng 1 of the 1nput.\"],[\"str\",\"the number of odd elements 8n the str8ng 8 of the 8nput.\"]]]]},{\"after\":{\"args\":[\"tuple\",[[\"list\",[[\"str\",\"271\"],[\"str\",\"137\"],[\"str\",\"314\"]]]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"list\",[[\"str\",\"271\"],[\"str\",\"137\"],[\"str\",\"314\"]]]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"list\",[[\"str\",\"the number of odd elements 2n the str2ng 2 of the 2nput.\"],[\"str\",\"the number of odd elements 3n the str3ng 3 of the 3nput.\"],[\"str\",\"the number of odd elements 2n the str2ng 2 of the 2nput.\"]]]]}],\"status\":\"passed\",\"stderr\":\"\",\"stdout\":\"\"}\n",
+  "stderr": "",
+  "returncode": 0,
+  "interruption": null,
+  "child_user_cpu_seconds": 0.008822999999992476,
+  "child_system_cpu_seconds": 0.013389000000000095,
+  "group": "bb27193adee972c7da459d9827c627dbbcb8bdb65bac7995277f981e8fe3452a",
+  "received_label": true,
+  "source_sha256": "bf046b8a215630724f7e5d57bf6c45ff87d632eadcb2876e07e5212971cf205c",
+  "contract_sha256": "013602110d13007ac2b61c7f0cd8b6e6675383758defbc9007667a1b74c7d994",
+  "worker_seconds": 0.023044092005875427
+}

@@ -1,0 +1,90 @@
+{
+  "status": "PASS",
+  "controls": 12,
+  "rows": [
+    {
+      "case": "local_integer",
+      "source": "def f(n):\n    x = 0\n    x += n\n    return x\n",
+      "matched_sites": 1,
+      "admitted_sites": 1,
+      "expected_any_admission": true
+    },
+    {
+      "case": "local_float",
+      "source": "def f(n):\n    x = 0.0\n    x = x * n\n    return x\n",
+      "matched_sites": 1,
+      "admitted_sites": 1,
+      "expected_any_admission": true
+    },
+    {
+      "case": "local_integer_semicolon",
+      "source": "def f(n):\n    x = 0; x += n\n    return x\n",
+      "matched_sites": 1,
+      "admitted_sites": 1,
+      "expected_any_admission": true
+    },
+    {
+      "case": "parameter_annotation",
+      "source": "def f(x: int):\n    x += 1\n    return x\n",
+      "matched_sites": 1,
+      "admitted_sites": 0,
+      "expected_any_admission": false
+    },
+    {
+      "case": "list_alias",
+      "source": "def f(n):\n    x = list(range(n))\n    y = x\n    x *= 2\n    return y\n",
+      "matched_sites": 1,
+      "admitted_sites": 0,
+      "expected_any_admission": false
+    },
+    {
+      "case": "nonadjacent_integer",
+      "source": "def f(n):\n    x = 0\n    print(n)\n    x += n\n    return x\n",
+      "matched_sites": 1,
+      "admitted_sites": 0,
+      "expected_any_admission": false
+    },
+    {
+      "case": "global",
+      "source": "x = 3\ndef f(n):\n    global x\n    x = 0\n    x += n\n    return x\n",
+      "matched_sites": 1,
+      "admitted_sites": 0,
+      "expected_any_admission": false
+    },
+    {
+      "case": "module_scope",
+      "source": "x = 0\nx += 1\n",
+      "matched_sites": 1,
+      "admitted_sites": 0,
+      "expected_any_admission": false
+    },
+    {
+      "case": "class_scope",
+      "source": "class C:\n    x = 0\n    x += 1\n",
+      "matched_sites": 1,
+      "admitted_sites": 0,
+      "expected_any_admission": false
+    },
+    {
+      "case": "nested_class_scope",
+      "source": "def f(n):\n    class C:\n        x = 0\n        x += n\n    return C.x\n",
+      "matched_sites": 1,
+      "admitted_sites": 0,
+      "expected_any_admission": false
+    },
+    {
+      "case": "conditional_assignment",
+      "source": "def f(n):\n    if n:\n        x = 0\n    x += n\n    return x\n",
+      "matched_sites": 1,
+      "admitted_sites": 0,
+      "expected_any_admission": false
+    },
+    {
+      "case": "same_branch_literal",
+      "source": "def f(n):\n    if n:\n        x = 0\n        x += n\n        return x\n    return 0\n",
+      "matched_sites": 1,
+      "admitted_sites": 1,
+      "expected_any_admission": true
+    }
+  ]
+}

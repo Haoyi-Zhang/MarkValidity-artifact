@@ -1,0 +1,56 @@
+{
+  "status": "failed",
+  "returncode": 0,
+  "stderr": "",
+  "events": [
+    {
+      "error": null,
+      "event": "source_compile",
+      "status": "passed"
+    },
+    {
+      "assertion_reached": true,
+      "elapsed_seconds": 0.004353,
+      "error": {
+        "message": "name 'missing_value' is not defined",
+        "phase": "original_assertion",
+        "traceback": "Traceback (most recent call last):\n  File \"/workspace/scratch/3d557313f143/work/MarkValidity_TOSEM/artifact/external-studies/sew_natural/mbpp/scripts/native_runner.py\", line 143, in main\n    exec(test_code, namespace)\n  File \"<mbpp-original-test-0>\", line 1, in <module>\n  File \"<mbpp-candidate>\", line 3, in f\nNameError: name 'missing_value' is not defined\n",
+        "type": "builtins.NameError"
+      },
+      "event": "test_result",
+      "status": "failed",
+      "stderr": "",
+      "stdout": "",
+      "test_index": 0
+    },
+    {
+      "assertion_reached": true,
+      "elapsed_seconds": 0.000162,
+      "error": {
+        "message": "",
+        "phase": "original_assertion",
+        "traceback": "Traceback (most recent call last):\n  File \"/workspace/scratch/3d557313f143/work/MarkValidity_TOSEM/artifact/external-studies/sew_natural/mbpp/scripts/native_runner.py\", line 143, in main\n    exec(test_code, namespace)\n  File \"<mbpp-original-test-1>\", line 1, in <module>\n  File \"<mbpp-candidate>\", line 5, in f\nMemoryError\n",
+        "type": "builtins.MemoryError"
+      },
+      "event": "test_result",
+      "status": "unavailable",
+      "stderr": "",
+      "stdout": "",
+      "test_index": 1
+    },
+    {
+      "completed_tests": 2,
+      "elapsed_seconds": 0.007247,
+      "event": "complete",
+      "evidence_schema": "markvalidity-mbpp-original-assertions-v2",
+      "failed_tests": 1,
+      "passed_tests": 0,
+      "rejected_tests": 0,
+      "scheduled_tests": 2,
+      "status": "failed",
+      "unavailable_tests": 1
+    }
+  ],
+  "raw_stdout": null,
+  "elapsed_seconds": 0.048676
+}

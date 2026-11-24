@@ -1,0 +1,13 @@
+{
+  "stdout": "{\"elapsed_seconds\":0.004916,\"error\":null,\"observations\":[{\"after\":{\"args\":[\"tuple\",[[\"list\",[[\"float\",\"0x1.0000000000000p+0\"],[\"float\",\"0x1.0000000000000p+1\"],[\"float\",\"0x1.8000000000000p+1\"]]]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"list\",[[\"float\",\"0x1.0000000000000p+0\"],[\"float\",\"0x1.0000000000000p+1\"],[\"float\",\"0x1.8000000000000p+1\"]]]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"float\",\"0x1.5555555555555p-1\"]]},{\"after\":{\"args\":[\"tuple\",[[\"list\",[[\"float\",\"0x1.0000000000000p+0\"],[\"float\",\"0x1.0000000000000p+1\"],[\"float\",\"0x1.8000000000000p+1\"],[\"float\",\"0x1.0000000000000p+2\"]]]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"list\",[[\"float\",\"0x1.0000000000000p+0\"],[\"float\",\"0x1.0000000000000p+1\"],[\"float\",\"0x1.8000000000000p+1\"],[\"float\",\"0x1.0000000000000p+2\"]]]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"float\",\"0x1.0000000000000p+0\"]]},{\"after\":{\"args\":[\"tuple\",[[\"list\",[[\"float\",\"0x1.0000000000000p+0\"],[\"float\",\"0x1.0000000000000p+1\"],[\"float\",\"0x1.8000000000000p+1\"],[\"float\",\"0x1.0000000000000p+2\"],[\"float\",\"0x1.4000000000000p+2\"]]]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"list\",[[\"float\",\"0x1.0000000000000p+0\"],[\"float\",\"0x1.0000000000000p+1\"],[\"float\",\"0x1.8000000000000p+1\"],[\"float\",\"0x1.0000000000000p+2\"],[\"float\",\"0x1.4000000000000p+2\"]]]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"float\",\"0x1.3333333333333p+0\"]]}],\"status\":\"passed\",\"stderr\":\"\",\"stdout\":\"\"}\n",
+  "stderr": "",
+  "returncode": 0,
+  "interruption": null,
+  "child_user_cpu_seconds": 0.02145899999999301,
+  "child_system_cpu_seconds": 0.008665999999998064,
+  "group": "fe9ac6df42d09f98ef8daad37a4e7199eaf2807cece916c38b45251923c55d6e",
+  "received_label": true,
+  "source_sha256": "bd22e19d3f86b45486757bed549437702c13bd6b4cabcc1e292491bc401ded5d",
+  "contract_sha256": "af17d3ce24fbaf1a3da8c0501946885d05b8cf8ac93313095acce4d301ce6141",
+  "worker_seconds": 0.03115100399736548
+}

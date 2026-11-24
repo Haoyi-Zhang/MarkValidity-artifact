@@ -1,0 +1,14 @@
+{
+  "schema": "markvalidity-manuscript-figure-layout-v1",
+  "documentclass": "\\documentclass[manuscript,screen,review]{acmart}",
+  "class_sha256": "2f949e6e3f2a79f2cdc218b9dcdbaa7dd451adb4ee0be1af6dc7ebe00b318ea7",
+  "linewidth_tex_pt": 430.00462,
+  "linewidth_bp": 428.3981270236613,
+  "tex_points_per_inch": 72.27,
+  "pdf_points_per_inch": 72,
+  "measurement": "Minimal document using the same documentclass and unmodified local acmart.cls; TeX typeout of the top-level linewidth.",
+  "probe_source": "\\documentclass[manuscript,screen,review]{acmart}\n\\begin{document}\n\\typeout{ATLAS-LINEWIDTH=\\the\\linewidth}\n\\null\n\\end{document}\n",
+  "probe_source_sha256": "249eb92fa8a44e27f3e7a3a11d0cca3422d081eb22db97d24a957f8ebefec123",
+  "probe_output": "ATLAS-LINEWIDTH=430.00462pt",
+  "additional_layout_commands": []
+}

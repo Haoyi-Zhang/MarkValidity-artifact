@@ -1,0 +1,71 @@
+{
+  "status": "failed",
+  "returncode": 0,
+  "stderr": "",
+  "events": [
+    {
+      "error": null,
+      "event": "source_compile",
+      "status": "passed"
+    },
+    {
+      "assertion_reached": true,
+      "elapsed_seconds": 0.004984,
+      "error": {
+        "message": "name 'returnmax_length' is not defined",
+        "phase": "original_assertion",
+        "traceback": "Traceback (most recent call last):\n  File \"/workspace/scratch/3d557313f143/qa/round3/mbpp-v2/scripts/native_runner_v2.py\", line 143, in main\n    exec(test_code, namespace)\n  File \"<mbpp-original-test-0>\", line 1, in <module>\n  File \"<mbpp-candidate>\", line 4, in max_length\nNameError: name 'returnmax_length' is not defined\n",
+        "type": "builtins.NameError"
+      },
+      "event": "test_result",
+      "status": "failed",
+      "stderr": "",
+      "stdout": "",
+      "test_index": 0
+    },
+    {
+      "assertion_reached": true,
+      "elapsed_seconds": 0.003348,
+      "error": {
+        "message": "name 'returnmax_length' is not defined",
+        "phase": "original_assertion",
+        "traceback": "Traceback (most recent call last):\n  File \"/workspace/scratch/3d557313f143/qa/round3/mbpp-v2/scripts/native_runner_v2.py\", line 143, in main\n    exec(test_code, namespace)\n  File \"<mbpp-original-test-1>\", line 1, in <module>\n  File \"<mbpp-candidate>\", line 4, in max_length\nNameError: name 'returnmax_length' is not defined\n",
+        "type": "builtins.NameError"
+      },
+      "event": "test_result",
+      "status": "failed",
+      "stderr": "",
+      "stdout": "",
+      "test_index": 1
+    },
+    {
+      "assertion_reached": true,
+      "elapsed_seconds": 0.00269,
+      "error": {
+        "message": "name 'returnmax_length' is not defined",
+        "phase": "original_assertion",
+        "traceback": "Traceback (most recent call last):\n  File \"/workspace/scratch/3d557313f143/qa/round3/mbpp-v2/scripts/native_runner_v2.py\", line 143, in main\n    exec(test_code, namespace)\n  File \"<mbpp-original-test-2>\", line 1, in <module>\n  File \"<mbpp-candidate>\", line 4, in max_length\nNameError: name 'returnmax_length' is not defined\n",
+        "type": "builtins.NameError"
+      },
+      "event": "test_result",
+      "status": "failed",
+      "stderr": "",
+      "stdout": "",
+      "test_index": 2
+    },
+    {
+      "completed_tests": 3,
+      "elapsed_seconds": 0.013891,
+      "event": "complete",
+      "evidence_schema": "markvalidity-mbpp-original-assertions-v2",
+      "failed_tests": 3,
+      "passed_tests": 0,
+      "rejected_tests": 0,
+      "scheduled_tests": 3,
+      "status": "failed",
+      "unavailable_tests": 0
+    }
+  ],
+  "raw_stdout": null,
+  "elapsed_seconds": 0.071227
+}

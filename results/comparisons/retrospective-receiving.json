@@ -1,0 +1,202 @@
+{
+  "schema": "markvalidity-independent-own-order-receiving-v1",
+  "status": "PASS",
+  "scope": "Every saved own-order prefix and selection, including full plotting suffixes, reconstructed independently from public coefficients and the admitted prefix; each disclosed label checked against unchanged completed benchmark ledgers. The hindsight witnesses are received separately as label-informed diagnostics.",
+  "case_initializations_received": 36,
+  "schedules_received": 144,
+  "prefixes_received": 161154,
+  "historical_disclosures_received": 161010,
+  "joint_hindsight_minima_received": 72,
+  "new_candidate_program_executions": 0,
+  "input_sha256": {
+    "retrospective-primary/analysis.json": "8b3532de443335facde2dbb4d453862d7252d9d924851054049059eba0472d4b",
+    "retrospective-all-withheld/analysis.json": "d100493a32a5098d4eceaa45688f17cdeb643d1d806399e3936eca04e042b446"
+  },
+  "source_sha256": {
+    "verify_replay.py": "76e7512c2cb4b77893dd230dcdffd945097414a476048f3e63b863cef65759dd",
+    "independent.py": "12379f9df993e9b2a5f7cb65ee348556934fe220b1012d71fa6af9326daa3e8d"
+  },
+  "reference_math_sha256": "9d70eb38f560ac3590474414baa9d45b7475e88e29e4e9970782796185c7f8dc",
+  "cases": [
+    {
+      "initialization": "reference_identity_known",
+      "case": "humaneval__stock__s1",
+      "schedules_received": 4
+    },
+    {
+      "initialization": "reference_identity_known",
+      "case": "humaneval__stock__s4",
+      "schedules_received": 4
+    },
+    {
+      "initialization": "reference_identity_known",
+      "case": "humaneval__stock__s1_s4",
+      "schedules_received": 4
+    },
+    {
+      "initialization": "reference_identity_known",
+      "case": "humaneval__s1__s4",
+      "schedules_received": 4
+    },
+    {
+      "initialization": "reference_identity_known",
+      "case": "humaneval__s1__s1_s4",
+      "schedules_received": 4
+    },
+    {
+      "initialization": "reference_identity_known",
+      "case": "humaneval__s4__s1_s4",
+      "schedules_received": 4
+    },
+    {
+      "initialization": "reference_identity_known",
+      "case": "mbpp__stock__s1",
+      "schedules_received": 4
+    },
+    {
+      "initialization": "reference_identity_known",
+      "case": "mbpp__stock__s4",
+      "schedules_received": 4
+    },
+    {
+      "initialization": "reference_identity_known",
+      "case": "mbpp__stock__s1_s4",
+      "schedules_received": 4
+    },
+    {
+      "initialization": "reference_identity_known",
+      "case": "mbpp__s1__s4",
+      "schedules_received": 4
+    },
+    {
+      "initialization": "reference_identity_known",
+      "case": "mbpp__s1__s1_s4",
+      "schedules_received": 4
+    },
+    {
+      "initialization": "reference_identity_known",
+      "case": "mbpp__s4__s1_s4",
+      "schedules_received": 4
+    },
+    {
+      "initialization": "reference_identity_known",
+      "case": "pooled__stock__s1",
+      "schedules_received": 4
+    },
+    {
+      "initialization": "reference_identity_known",
+      "case": "pooled__stock__s4",
+      "schedules_received": 4
+    },
+    {
+      "initialization": "reference_identity_known",
+      "case": "pooled__stock__s1_s4",
+      "schedules_received": 4
+    },
+    {
+      "initialization": "reference_identity_known",
+      "case": "pooled__s1__s4",
+      "schedules_received": 4
+    },
+    {
+      "initialization": "reference_identity_known",
+      "case": "pooled__s1__s1_s4",
+      "schedules_received": 4
+    },
+    {
+      "initialization": "reference_identity_known",
+      "case": "pooled__s4__s1_s4",
+      "schedules_received": 4
+    },
+    {
+      "initialization": "all_withheld",
+      "case": "humaneval__stock__s1",
+      "schedules_received": 4
+    },
+    {
+      "initialization": "all_withheld",
+      "case": "humaneval__stock__s4",
+      "schedules_received": 4
+    },
+    {
+      "initialization": "all_withheld",
+      "case": "humaneval__stock__s1_s4",
+      "schedules_received": 4
+    },
+    {
+      "initialization": "all_withheld",
+      "case": "humaneval__s1__s4",
+      "schedules_received": 4
+    },
+    {
+      "initialization": "all_withheld",
+      "case": "humaneval__s1__s1_s4",
+      "schedules_received": 4
+    },
+    {
+      "initialization": "all_withheld",
+      "case": "humaneval__s4__s1_s4",
+      "schedules_received": 4
+    },
+    {
+      "initialization": "all_withheld",
+      "case": "mbpp__stock__s1",
+      "schedules_received": 4
+    },
+    {
+      "initialization": "all_withheld",
+      "case": "mbpp__stock__s4",
+      "schedules_received": 4
+    },
+    {
+      "initialization": "all_withheld",
+      "case": "mbpp__stock__s1_s4",
+      "schedules_received": 4
+    },
+    {
+      "initialization": "all_withheld",
+      "case": "mbpp__s1__s4",
+      "schedules_received": 4
+    },
+    {
+      "initialization": "all_withheld",
+      "case": "mbpp__s1__s1_s4",
+      "schedules_received": 4
+    },
+    {
+      "initialization": "all_withheld",
+      "case": "mbpp__s4__s1_s4",
+      "schedules_received": 4
+    },
+    {
+      "initialization": "all_withheld",
+      "case": "pooled__stock__s1",
+      "schedules_received": 4
+    },
+    {
+      "initialization": "all_withheld",
+      "case": "pooled__stock__s4",
+      "schedules_received": 4
+    },
+    {
+      "initialization": "all_withheld",
+      "case": "pooled__stock__s1_s4",
+      "schedules_received": 4
+    },
+    {
+      "initialization": "all_withheld",
+      "case": "pooled__s1__s4",
+      "schedules_received": 4
+    },
+    {
+      "initialization": "all_withheld",
+      "case": "pooled__s1__s1_s4",
+      "schedules_received": 4
+    },
+    {
+      "initialization": "all_withheld",
+      "case": "pooled__s4__s1_s4",
+      "schedules_received": 4
+    }
+  ]
+}

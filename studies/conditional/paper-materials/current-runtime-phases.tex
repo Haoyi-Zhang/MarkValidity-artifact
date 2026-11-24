@@ -1,0 +1,22 @@
+\begin{table}[t]
+\caption{Nonworker audit phases: median milliseconds over six executions.}
+\label{tab:natural-runtime-phases}
+\centering\small
+\begin{tabular}{@{}llrrrrr@{}}
+\toprule
+Target & Method & Register & Select & Bounds & Receive & Record\\
+\midrule
+\multicolumn{7}{@{}l}{\textit{HumanEval: stock / S1}}\\
+$J$ & Shared & 5.809 & 0.498 & 0.838 & 23.012 & 101.709\\
+$J$ & Separate & 5.030 & 1.460 & 3.368 & 71.191 & 249.434\\
+$C$ & Shared & 4.970 & 4.250 & 23.799 & 30.107 & 85.924\\
+$C$ & Separate & 4.947 & 115.594 & 39.659 & 138.999 & 316.734\\
+\addlinespace
+\multicolumn{7}{@{}l}{\textit{MBPP: stock / S4}}\\
+$J$ & Shared & 12.473 & 0.001 & 0.010 & 0.139 & 0.751\\
+$J$ & Separate & 12.144 & 2.849 & 6.107 & 141.788 & 562.249\\
+$C$ & Shared & 13.339 & 0.017 & 0.177 & 0.101 & 0.484\\
+$C$ & Separate & 13.805 & 267.710 & 68.202 & 201.123 & 597.274\\
+\bottomrule\end{tabular}
+\par\smallskip\begin{minipage}{\linewidth}\footnotesize $J$ uses retained matched blocks; $C$ uses a separate balanced serial block. Each method occupies the first and second position three times per comparison.\end{minipage}
+\end{table}

@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "receiver_sha256": "52db6ed60052f985bd36e833526ca5eb1e12cb1ae4e065e4fbd5c681dbdb691e",
+  "study_spec_sha256": "5601953376effdc8382a21c51e8e42558429bed14a1385cfe4207e521a79bed1",
+  "summary_sha256": "38b45f68e3d4c85e1900a7fda6fabce9788c93b74c2557c04351ca72005bbb00",
+  "native_source_runs": 108,
+  "native_input_evaluations": 3564,
+  "case_key_pairs": 102,
+  "paired_input_comparisons": 3366,
+  "reference_cases_checked_against_independent_closed_form": 6,
+  "upstream_embedding_detection_pairs_replayed": 102,
+  "detector_replay_independence": "Uses upstream code when requested; the native receiver and closed-form reference checks do not import it or the producer.",
+  "summary_counts": {
+    "configurations": 102,
+    "behavior_valid": 85,
+    "detected": 90,
+    "joint_success": 75,
+    "input_mismatches": 544,
+    "detected_but_invalid": 15
+  },
+  "elapsed_seconds": 2.709649
+}

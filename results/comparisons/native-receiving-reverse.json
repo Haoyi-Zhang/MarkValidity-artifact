@@ -1,0 +1,170 @@
+{
+  "schema": "markvalidity-independent-native-cost-receiving-v1",
+  "status": "PASS",
+  "scope": "Every raw new candidate execution and every prefix checked from public coefficients and admitted replies. Exact Fraction reconstruction and public-policy choice are independent of producer state and policy code.",
+  "public_registry_sha256": "b27d496c4cb7dade0ec39d6a5094805e609d3bcf1cdb32654b12db160effce49",
+  "native_receipt_sha256": "154f082875beb6f2814856fa99cf5eb5522aa3e3668681d8225456c6956d792f",
+  "runs_received": 24,
+  "candidate_suite_records_received": 9663,
+  "prefixes_received": 9687,
+  "distinct_arithmetic_prefixes_reconstructed": 3229,
+  "historical_candidate_labels_read": 0,
+  "historical_candidate_observation_files_read": 0,
+  "candidate_programs_executed_by_receiver": 0,
+  "counterbalance_block": "complementary_reverse_order",
+  "source_snapshots_received": 8,
+  "source_snapshot_manifest_sha256": "d5b57bbff6e89bfad4dd0d905b7646fdbadc6b204b4f7be64d82f8b4ad25c74a",
+  "identical_history_cache": "An already independently reconstructed public/history state is reused across repetitions; every new raw stdout and its identity is still checked.",
+  "source_sha256": {
+    "verify_native.py": "0ae826a55db2a74394c53e626c121b1193d9a566d9c4f320477f386db51a5432",
+    "independent.py": "12379f9df993e9b2a5f7cb65ee348556934fe220b1012d71fa6af9326daa3e8d"
+  },
+  "reference_math_sha256": "9d70eb38f560ac3590474414baa9d45b7475e88e29e4e9970782796185c7f8dc",
+  "independent_admission_reference_sha256": "3295786a2e3b9f4853565296585756b331617e568e31c9631a03cec52af2e51d",
+  "runs": [
+    {
+      "directory": "01-r1-humaneval-stock-s1-J-independent",
+      "candidate_suite_queries": 429,
+      "first_certificate": "left_strict",
+      "all_query_identities_and_prefixes_checked": true
+    },
+    {
+      "directory": "02-r1-humaneval-stock-s1-J-coupled",
+      "candidate_suite_queries": 146,
+      "first_certificate": "left_strict",
+      "all_query_identities_and_prefixes_checked": true
+    },
+    {
+      "directory": "03-r1-humaneval-stock-s1-C-coupled",
+      "candidate_suite_queries": 160,
+      "first_certificate": "left_strict",
+      "all_query_identities_and_prefixes_checked": true
+    },
+    {
+      "directory": "04-r1-humaneval-stock-s1-C-independent",
+      "candidate_suite_queries": 532,
+      "first_certificate": "left_strict",
+      "all_query_identities_and_prefixes_checked": true
+    },
+    {
+      "directory": "05-r1-mbpp-stock-s4-J-independent",
+      "candidate_suite_queries": 811,
+      "first_certificate": "right_strict",
+      "all_query_identities_and_prefixes_checked": true
+    },
+    {
+      "directory": "06-r1-mbpp-stock-s4-J-coupled",
+      "candidate_suite_queries": 1,
+      "first_certificate": "right_strict",
+      "all_query_identities_and_prefixes_checked": true
+    },
+    {
+      "directory": "07-r1-mbpp-stock-s4-C-coupled",
+      "candidate_suite_queries": 6,
+      "first_certificate": "right_strict",
+      "all_query_identities_and_prefixes_checked": true
+    },
+    {
+      "directory": "08-r1-mbpp-stock-s4-C-independent",
+      "candidate_suite_queries": 1136,
+      "first_certificate": "right_strict",
+      "all_query_identities_and_prefixes_checked": true
+    },
+    {
+      "directory": "09-r2-humaneval-stock-s1-C-coupled",
+      "candidate_suite_queries": 160,
+      "first_certificate": "left_strict",
+      "all_query_identities_and_prefixes_checked": true
+    },
+    {
+      "directory": "10-r2-humaneval-stock-s1-C-independent",
+      "candidate_suite_queries": 532,
+      "first_certificate": "left_strict",
+      "all_query_identities_and_prefixes_checked": true
+    },
+    {
+      "directory": "11-r2-mbpp-stock-s4-J-independent",
+      "candidate_suite_queries": 811,
+      "first_certificate": "right_strict",
+      "all_query_identities_and_prefixes_checked": true
+    },
+    {
+      "directory": "12-r2-mbpp-stock-s4-J-coupled",
+      "candidate_suite_queries": 1,
+      "first_certificate": "right_strict",
+      "all_query_identities_and_prefixes_checked": true
+    },
+    {
+      "directory": "13-r2-mbpp-stock-s4-C-coupled",
+      "candidate_suite_queries": 6,
+      "first_certificate": "right_strict",
+      "all_query_identities_and_prefixes_checked": true
+    },
+    {
+      "directory": "14-r2-mbpp-stock-s4-C-independent",
+      "candidate_suite_queries": 1136,
+      "first_certificate": "right_strict",
+      "all_query_identities_and_prefixes_checked": true
+    },
+    {
+      "directory": "15-r2-humaneval-stock-s1-J-independent",
+      "candidate_suite_queries": 429,
+      "first_certificate": "left_strict",
+      "all_query_identities_and_prefixes_checked": true
+    },
+    {
+      "directory": "16-r2-humaneval-stock-s1-J-coupled",
+      "candidate_suite_queries": 146,
+      "first_certificate": "left_strict",
+      "all_query_identities_and_prefixes_checked": true
+    },
+    {
+      "directory": "17-r3-mbpp-stock-s4-J-independent",
+      "candidate_suite_queries": 811,
+      "first_certificate": "right_strict",
+      "all_query_identities_and_prefixes_checked": true
+    },
+    {
+      "directory": "18-r3-mbpp-stock-s4-J-coupled",
+      "candidate_suite_queries": 1,
+      "first_certificate": "right_strict",
+      "all_query_identities_and_prefixes_checked": true
+    },
+    {
+      "directory": "19-r3-mbpp-stock-s4-C-coupled",
+      "candidate_suite_queries": 6,
+      "first_certificate": "right_strict",
+      "all_query_identities_and_prefixes_checked": true
+    },
+    {
+      "directory": "20-r3-mbpp-stock-s4-C-independent",
+      "candidate_suite_queries": 1136,
+      "first_certificate": "right_strict",
+      "all_query_identities_and_prefixes_checked": true
+    },
+    {
+      "directory": "21-r3-humaneval-stock-s1-J-independent",
+      "candidate_suite_queries": 429,
+      "first_certificate": "left_strict",
+      "all_query_identities_and_prefixes_checked": true
+    },
+    {
+      "directory": "22-r3-humaneval-stock-s1-J-coupled",
+      "candidate_suite_queries": 146,
+      "first_certificate": "left_strict",
+      "all_query_identities_and_prefixes_checked": true
+    },
+    {
+      "directory": "23-r3-humaneval-stock-s1-C-coupled",
+      "candidate_suite_queries": 160,
+      "first_certificate": "left_strict",
+      "all_query_identities_and_prefixes_checked": true
+    },
+    {
+      "directory": "24-r3-humaneval-stock-s1-C-independent",
+      "candidate_suite_queries": 532,
+      "first_certificate": "left_strict",
+      "all_query_identities_and_prefixes_checked": true
+    }
+  ]
+}

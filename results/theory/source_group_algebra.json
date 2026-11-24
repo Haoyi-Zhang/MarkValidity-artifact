@@ -1,0 +1,79 @@
+{
+  "combined_gap_witnesses": [
+    {
+      "left": "lexical",
+      "lower": "-1319/7040",
+      "mixture": "balanced",
+      "right": "structural",
+      "upper": "3997/21120"
+    },
+    {
+      "left": "lexical",
+      "lower": "-669/7040",
+      "mixture": "balanced",
+      "right": "hybrid",
+      "upper": "77/320"
+    },
+    {
+      "left": "structural",
+      "lower": "-2033/21120",
+      "mixture": "balanced",
+      "right": "hybrid",
+      "upper": "1267/5280"
+    },
+    {
+      "left": "lexical",
+      "lower": "-22549/42240",
+      "mixture": "rename-heavy",
+      "right": "structural",
+      "upper": "-1687/17600"
+    },
+    {
+      "left": "lexical",
+      "lower": "-7109/35200",
+      "mixture": "rename-heavy",
+      "right": "hybrid",
+      "upper": "17953/211200"
+    },
+    {
+      "left": "structural",
+      "lower": "3757/211200",
+      "mixture": "rename-heavy",
+      "right": "hybrid",
+      "upper": "104531/211200"
+    },
+    {
+      "left": "lexical",
+      "lower": "1871/19200",
+      "mixture": "structure-heavy",
+      "right": "structural",
+      "upper": "37559/70400"
+    },
+    {
+      "left": "lexical",
+      "lower": "821/70400",
+      "mixture": "structure-heavy",
+      "right": "hybrid",
+      "upper": "103489/211200"
+    },
+    {
+      "left": "structural",
+      "lower": "-21949/105600",
+      "mixture": "structure-heavy",
+      "right": "hybrid",
+      "upper": "1037/13200"
+    }
+  ],
+  "exactly_reconstructed_pairwise_bounds": 27,
+  "exactly_reconstructed_scores": 27,
+  "input_sha256": {
+    "mixture_scores.csv": "264f167fa196520c4da8de2255630c0adbcff32c753dc417830ec7d829beb229",
+    "pairwise_source_bounds.csv": "e199c8266cd2d1b5cb359d44ab21d1c50404bb10e1d4bbdf7a1dead27c03c829",
+    "rows.csv.gz": "931ddacc3644f6b96d48211a645d58390f2d6ae04d8af82f4ff9142570240ebd"
+  },
+  "scope": "Algebra on admitted source rows, not execution attestation or new trials",
+  "source_groups": 44149,
+  "source_program_executions": 0,
+  "source_rows": 76032,
+  "status": "PASS"
+}

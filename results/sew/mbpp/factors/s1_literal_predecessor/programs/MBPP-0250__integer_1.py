@@ -1,0 +1,6 @@
+def  count_X(tup, x): 
+    count = 0
+    for ele in tup: 
+        if  (ele == x): 
+            count = 1 + count
+    return count 

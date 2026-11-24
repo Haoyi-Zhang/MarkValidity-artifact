@@ -1,0 +1,967 @@
+{
+  "status": "PASS",
+  "controls": 24,
+  "observer_sha256": "232a7d6f47011501356a9c9ac07e17bf325bde345d9c707d32c4fae668367012",
+  "records": [
+    {
+      "family": "primary",
+      "control": "normal_return",
+      "passed": true,
+      "expected": "passed",
+      "source": "def f(): return 4\n",
+      "request": {
+        "source": "def f(): return 4\n",
+        "test": "def check(candidate): assert candidate() == 4\n",
+        "entry_point": "f"
+      },
+      "wall_limit": 15,
+      "wall_timeout": false,
+      "returncode": 0,
+      "stderr": "",
+      "records": [
+        {
+          "elapsed_seconds": 0.003049,
+          "error": null,
+          "observations": [
+            {
+              "after": {
+                "args": [
+                  "tuple",
+                  []
+                ],
+                "kwargs": [
+                  "dict",
+                  []
+                ]
+              },
+              "before": {
+                "args": [
+                  "tuple",
+                  []
+                ],
+                "kwargs": [
+                  "dict",
+                  []
+                ]
+              },
+              "result": [
+                "return",
+                [
+                  "int",
+                  "4"
+                ]
+              ]
+            }
+          ],
+          "status": "passed",
+          "stderr": "",
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "family": "primary",
+      "control": "large_integer",
+      "passed": true,
+      "expected": "passed",
+      "source": "def f(): return 2 ** 20000\n",
+      "request": {
+        "source": "def f(): return 2 ** 20000\n",
+        "test": "def check(candidate): assert candidate().bit_length() == 20001\n",
+        "entry_point": "f"
+      },
+      "wall_limit": 15,
+      "wall_timeout": false,
+      "returncode": 0,
+      "stderr": "",
+      "records": [
+        {
+          "elapsed_seconds": 0.003033,
+          "error": null,
+          "observations": [
+            {
+              "after": {
+                "args": [
+                  "tuple",
+                  []
+                ],
+                "kwargs": [
+                  "dict",
+                  []
+                ]
+              },
+              "before": {
+                "args": [
+                  "tuple",
+                  []
+                ],
+                "kwargs": [
+                  "dict",
+                  []
+                ]
+              },
+              "result": [
+                "return",
+                [
+                  "int_hex",
+                  "0x100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+                ]
+              ]
+            }
+          ],
+          "status": "passed",
+          "stderr": "",
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "family": "primary",
+      "control": "exception_shaped_return",
+      "passed": true,
+      "expected": "passed",
+      "source": "def f(): return ['exception', 'builtins.ValueError', 'payload']\n",
+      "request": {
+        "source": "def f(): return ['exception', 'builtins.ValueError', 'payload']\n",
+        "test": "def check(candidate): assert candidate()[0] == 'exception'\n",
+        "entry_point": "f"
+      },
+      "wall_limit": 15,
+      "wall_timeout": false,
+      "returncode": 0,
+      "stderr": "",
+      "records": [
+        {
+          "elapsed_seconds": 0.002292,
+          "error": null,
+          "observations": [
+            {
+              "after": {
+                "args": [
+                  "tuple",
+                  []
+                ],
+                "kwargs": [
+                  "dict",
+                  []
+                ]
+              },
+              "before": {
+                "args": [
+                  "tuple",
+                  []
+                ],
+                "kwargs": [
+                  "dict",
+                  []
+                ]
+              },
+              "result": [
+                "return",
+                [
+                  "list",
+                  [
+                    [
+                      "str",
+                      "exception"
+                    ],
+                    [
+                      "str",
+                      "builtins.ValueError"
+                    ],
+                    [
+                      "str",
+                      "payload"
+                    ]
+                  ]
+                ]
+              ]
+            }
+          ],
+          "status": "passed",
+          "stderr": "",
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "family": "primary",
+      "control": "program_name_error",
+      "passed": true,
+      "expected": "failed",
+      "source": "def f(): return nonexistent_name\n",
+      "request": {
+        "source": "def f(): return nonexistent_name\n",
+        "test": "def check(candidate): candidate()\n",
+        "entry_point": "f"
+      },
+      "wall_limit": 15,
+      "wall_timeout": false,
+      "returncode": 0,
+      "stderr": "",
+      "records": [
+        {
+          "elapsed_seconds": 0.002631,
+          "error": {
+            "message": "name 'nonexistent_name' is not defined",
+            "phase": "original_suite",
+            "type": "builtins.NameError"
+          },
+          "observations": [
+            {
+              "after": {
+                "args": [
+                  "tuple",
+                  []
+                ],
+                "kwargs": [
+                  "dict",
+                  []
+                ]
+              },
+              "before": {
+                "args": [
+                  "tuple",
+                  []
+                ],
+                "kwargs": [
+                  "dict",
+                  []
+                ]
+              },
+              "result": [
+                "exception",
+                "builtins.NameError",
+                "name 'nonexistent_name' is not defined"
+              ]
+            }
+          ],
+          "status": "failed",
+          "stderr": "",
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "family": "primary",
+      "control": "program_assertion_failure",
+      "passed": true,
+      "expected": "failed",
+      "source": "def f(): return 4\n",
+      "request": {
+        "source": "def f(): return 4\n",
+        "test": "def check(candidate): assert candidate() == 5\n",
+        "entry_point": "f"
+      },
+      "wall_limit": 15,
+      "wall_timeout": false,
+      "returncode": 0,
+      "stderr": "",
+      "records": [
+        {
+          "elapsed_seconds": 0.003013,
+          "error": {
+            "message": "",
+            "phase": "original_suite",
+            "type": "builtins.AssertionError"
+          },
+          "observations": [
+            {
+              "after": {
+                "args": [
+                  "tuple",
+                  []
+                ],
+                "kwargs": [
+                  "dict",
+                  []
+                ]
+              },
+              "before": {
+                "args": [
+                  "tuple",
+                  []
+                ],
+                "kwargs": [
+                  "dict",
+                  []
+                ]
+              },
+              "result": [
+                "return",
+                [
+                  "int",
+                  "4"
+                ]
+              ]
+            }
+          ],
+          "status": "failed",
+          "stderr": "",
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "family": "primary",
+      "control": "ordinary_oserror",
+      "passed": true,
+      "expected": "failed",
+      "source": "def f(): raise OSError(5, 'ordinary I/O error')\n",
+      "request": {
+        "source": "def f(): raise OSError(5, 'ordinary I/O error')\n",
+        "test": "def check(candidate): candidate()\n",
+        "entry_point": "f"
+      },
+      "wall_limit": 15,
+      "wall_timeout": false,
+      "returncode": 0,
+      "stderr": "",
+      "records": [
+        {
+          "elapsed_seconds": 0.002428,
+          "error": {
+            "message": "[Errno 5] ordinary I/O error",
+            "phase": "original_suite",
+            "type": "builtins.OSError"
+          },
+          "observations": [
+            {
+              "after": {
+                "args": [
+                  "tuple",
+                  []
+                ],
+                "kwargs": [
+                  "dict",
+                  []
+                ]
+              },
+              "before": {
+                "args": [
+                  "tuple",
+                  []
+                ],
+                "kwargs": [
+                  "dict",
+                  []
+                ]
+              },
+              "result": [
+                "exception",
+                "builtins.OSError",
+                "[Errno 5] ordinary I/O error"
+              ]
+            }
+          ],
+          "status": "failed",
+          "stderr": "",
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "family": "primary",
+      "control": "program_value_error",
+      "passed": true,
+      "expected": "failed",
+      "source": "def f(): raise ValueError('program sentinel')\n",
+      "request": {
+        "source": "def f(): raise ValueError('program sentinel')\n",
+        "test": "def check(candidate): candidate()\n",
+        "entry_point": "f"
+      },
+      "wall_limit": 15,
+      "wall_timeout": false,
+      "returncode": 0,
+      "stderr": "",
+      "records": [
+        {
+          "elapsed_seconds": 0.003901,
+          "error": {
+            "message": "program sentinel",
+            "phase": "original_suite",
+            "type": "builtins.ValueError"
+          },
+          "observations": [
+            {
+              "after": {
+                "args": [
+                  "tuple",
+                  []
+                ],
+                "kwargs": [
+                  "dict",
+                  []
+                ]
+              },
+              "before": {
+                "args": [
+                  "tuple",
+                  []
+                ],
+                "kwargs": [
+                  "dict",
+                  []
+                ]
+              },
+              "result": [
+                "exception",
+                "builtins.ValueError",
+                "program sentinel"
+              ]
+            }
+          ],
+          "status": "failed",
+          "stderr": "",
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "family": "primary",
+      "control": "expected_program_exception",
+      "passed": true,
+      "expected": "passed",
+      "source": "def f(): raise ValueError('program sentinel')\n",
+      "request": {
+        "source": "def f(): raise ValueError('program sentinel')\n",
+        "test": "def check(candidate):\n    try: candidate()\n    except ValueError: pass\n    else: assert False\n",
+        "entry_point": "f"
+      },
+      "wall_limit": 15,
+      "wall_timeout": false,
+      "returncode": 0,
+      "stderr": "",
+      "records": [
+        {
+          "elapsed_seconds": 0.002478,
+          "error": null,
+          "observations": [
+            {
+              "after": {
+                "args": [
+                  "tuple",
+                  []
+                ],
+                "kwargs": [
+                  "dict",
+                  []
+                ]
+              },
+              "before": {
+                "args": [
+                  "tuple",
+                  []
+                ],
+                "kwargs": [
+                  "dict",
+                  []
+                ]
+              },
+              "result": [
+                "exception",
+                "builtins.ValueError",
+                "program sentinel"
+              ]
+            }
+          ],
+          "status": "passed",
+          "stderr": "",
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "family": "primary",
+      "control": "source_syntax_error",
+      "passed": true,
+      "expected": "failed",
+      "source": "def f(: pass\n",
+      "request": {
+        "source": "def f(: pass\n",
+        "test": "def check(candidate): candidate()\n",
+        "entry_point": "f"
+      },
+      "wall_limit": 15,
+      "wall_timeout": false,
+      "returncode": 0,
+      "stderr": "",
+      "records": [
+        {
+          "elapsed_seconds": 0.001478,
+          "error": {
+            "message": "invalid syntax (<frozen-humaneval-source>, line 1)",
+            "phase": "compile_source",
+            "type": "builtins.SyntaxError"
+          },
+          "observations": [],
+          "status": "failed",
+          "stderr": "",
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "family": "primary",
+      "control": "test_syntax_error",
+      "passed": true,
+      "expected": "unavailable",
+      "source": "def f(): return 4\n",
+      "request": {
+        "source": "def f(): return 4\n",
+        "test": "def check(: pass\n",
+        "entry_point": "f"
+      },
+      "wall_limit": 15,
+      "wall_timeout": false,
+      "returncode": 0,
+      "stderr": "",
+      "records": [
+        {
+          "elapsed_seconds": 0.002531,
+          "error": {
+            "message": "invalid syntax (<original-humaneval-tests>, line 1)",
+            "phase": "compile_tests",
+            "reason": "test_or_entry_setup_error",
+            "type": "builtins.SyntaxError"
+          },
+          "observations": [],
+          "status": "unavailable",
+          "stderr": "",
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "family": "primary",
+      "control": "initialization_error",
+      "passed": true,
+      "expected": "failed",
+      "source": "raise ValueError('initialization')\ndef f(): return 4\n",
+      "request": {
+        "source": "raise ValueError('initialization')\ndef f(): return 4\n",
+        "test": "def check(candidate): candidate()\n",
+        "entry_point": "f"
+      },
+      "wall_limit": 15,
+      "wall_timeout": false,
+      "returncode": 0,
+      "stderr": "",
+      "records": [
+        {
+          "elapsed_seconds": 0.001336,
+          "error": {
+            "message": "initialization",
+            "phase": "initialize_source",
+            "type": "builtins.ValueError"
+          },
+          "observations": [],
+          "status": "failed",
+          "stderr": "",
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "family": "primary",
+      "control": "real_memory_error",
+      "passed": true,
+      "expected": "unavailable",
+      "source": "def f(): return bytearray(2**31)\n",
+      "request": {
+        "source": "def f(): return bytearray(2**31)\n",
+        "test": "def check(candidate): candidate()\n",
+        "entry_point": "f"
+      },
+      "wall_limit": 15,
+      "wall_timeout": false,
+      "returncode": 0,
+      "stderr": "",
+      "records": [
+        {
+          "elapsed_seconds": 0.001345,
+          "error": {
+            "message": "",
+            "phase": "invoke_program",
+            "reason": "resource_unavailable",
+            "type": "builtins.MemoryError"
+          },
+          "observations": [],
+          "status": "unavailable",
+          "stderr": "",
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "family": "primary",
+      "control": "real_os_enomem",
+      "passed": true,
+      "expected": "unavailable",
+      "source": "import mmap\ndef f(): return mmap.mmap(-1, 2**31)\n",
+      "request": {
+        "source": "import mmap\ndef f(): return mmap.mmap(-1, 2**31)\n",
+        "test": "def check(candidate): candidate()\n",
+        "entry_point": "f"
+      },
+      "wall_limit": 15,
+      "wall_timeout": false,
+      "returncode": 0,
+      "stderr": "",
+      "records": [
+        {
+          "elapsed_seconds": 0.001648,
+          "error": {
+            "message": "[Errno 12] Cannot allocate memory",
+            "phase": "invoke_program",
+            "reason": "resource_unavailable",
+            "type": "builtins.OSError"
+          },
+          "observations": [],
+          "status": "unavailable",
+          "stderr": "",
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "family": "primary",
+      "control": "keyboard_interrupt",
+      "passed": true,
+      "expected": "unavailable",
+      "source": "def f(): raise KeyboardInterrupt()\n",
+      "request": {
+        "source": "def f(): raise KeyboardInterrupt()\n",
+        "test": "def check(candidate): candidate()\n",
+        "entry_point": "f"
+      },
+      "wall_limit": 15,
+      "wall_timeout": false,
+      "returncode": 0,
+      "stderr": "",
+      "records": [
+        {
+          "elapsed_seconds": 0.001769,
+          "error": {
+            "message": "",
+            "phase": "invoke_program",
+            "reason": "interrupted",
+            "type": "builtins.KeyboardInterrupt"
+          },
+          "observations": [],
+          "status": "unavailable",
+          "stderr": "",
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "family": "primary",
+      "control": "resource_caught_inside_program",
+      "passed": true,
+      "expected": "passed",
+      "source": "import mmap\ndef f():\n    try: mmap.mmap(-1, 2**31)\n    except OSError: return 7\n",
+      "request": {
+        "source": "import mmap\ndef f():\n    try: mmap.mmap(-1, 2**31)\n    except OSError: return 7\n",
+        "test": "def check(candidate): assert candidate() == 7\n",
+        "entry_point": "f"
+      },
+      "wall_limit": 15,
+      "wall_timeout": false,
+      "returncode": 0,
+      "stderr": "",
+      "records": [
+        {
+          "elapsed_seconds": 0.001592,
+          "error": null,
+          "observations": [
+            {
+              "after": {
+                "args": [
+                  "tuple",
+                  []
+                ],
+                "kwargs": [
+                  "dict",
+                  []
+                ]
+              },
+              "before": {
+                "args": [
+                  "tuple",
+                  []
+                ],
+                "kwargs": [
+                  "dict",
+                  []
+                ]
+              },
+              "result": [
+                "return",
+                [
+                  "int",
+                  "7"
+                ]
+              ]
+            }
+          ],
+          "status": "passed",
+          "stderr": "",
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "family": "primary",
+      "control": "resource_caught_by_original_suite",
+      "passed": true,
+      "expected": "unavailable",
+      "source": "import mmap\ndef f(): return mmap.mmap(-1, 2**31)\n",
+      "request": {
+        "source": "import mmap\ndef f(): return mmap.mmap(-1, 2**31)\n",
+        "test": "def check(candidate):\n    try: candidate()\n    except BaseException: pass\n",
+        "entry_point": "f"
+      },
+      "wall_limit": 15,
+      "wall_timeout": false,
+      "returncode": 0,
+      "stderr": "",
+      "records": [
+        {
+          "elapsed_seconds": 0.0015,
+          "error": {
+            "message": "[Errno 12] Cannot allocate memory",
+            "phase": "invoke_program",
+            "reason": "resource_unavailable",
+            "type": "builtins.OSError"
+          },
+          "observations": [],
+          "status": "unavailable",
+          "stderr": "",
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "family": "primary",
+      "control": "before_encoding_failure",
+      "passed": true,
+      "expected": "unavailable",
+      "source": "def f(x): return 1\n",
+      "request": {
+        "source": "def f(x): return 1\n",
+        "test": "def check(candidate): assert candidate(object()) == 1\n",
+        "entry_point": "f"
+      },
+      "wall_limit": 15,
+      "wall_timeout": false,
+      "returncode": 0,
+      "stderr": "",
+      "records": [
+        {
+          "elapsed_seconds": 0.001395,
+          "error": {
+            "message": "Unsupported observed builtin type: object",
+            "phase": "encode_arguments_before",
+            "reason": "observer_error",
+            "type": "builtins.TypeError"
+          },
+          "observations": [],
+          "status": "unavailable",
+          "stderr": "",
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "family": "primary",
+      "control": "copy_failure",
+      "passed": true,
+      "expected": "unavailable",
+      "source": "class Uncopyable:\n    def __deepcopy__(self,memo): raise ValueError('copy failed')\ndef f(x): return 1\n",
+      "request": {
+        "source": "class Uncopyable:\n    def __deepcopy__(self,memo): raise ValueError('copy failed')\ndef f(x): return 1\n",
+        "test": "def check(candidate): assert candidate(Uncopyable()) == 1\n",
+        "entry_point": "f"
+      },
+      "wall_limit": 15,
+      "wall_timeout": false,
+      "returncode": 0,
+      "stderr": "",
+      "records": [
+        {
+          "elapsed_seconds": 0.001903,
+          "error": {
+            "message": "copy failed",
+            "phase": "encode_arguments_before",
+            "reason": "observer_error",
+            "type": "builtins.ValueError"
+          },
+          "observations": [],
+          "status": "unavailable",
+          "stderr": "",
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "family": "primary",
+      "control": "post_encoding_failure",
+      "passed": true,
+      "expected": "unavailable",
+      "source": "def f(x):\n    x.append(object())\n    return 1\n",
+      "request": {
+        "source": "def f(x):\n    x.append(object())\n    return 1\n",
+        "test": "def check(candidate): assert candidate([]) == 1\n",
+        "entry_point": "f"
+      },
+      "wall_limit": 15,
+      "wall_timeout": false,
+      "returncode": 0,
+      "stderr": "",
+      "records": [
+        {
+          "elapsed_seconds": 0.001489,
+          "error": {
+            "message": "Unsupported observed builtin type: object",
+            "phase": "encode_argument_poststate",
+            "reason": "observer_error",
+            "type": "builtins.TypeError"
+          },
+          "observations": [],
+          "status": "unavailable",
+          "stderr": "",
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "family": "primary",
+      "control": "return_encoding_failure",
+      "passed": true,
+      "expected": "unavailable",
+      "source": "def f(): return object()\n",
+      "request": {
+        "source": "def f(): return object()\n",
+        "test": "def check(candidate): assert candidate() is not None\n",
+        "entry_point": "f"
+      },
+      "wall_limit": 15,
+      "wall_timeout": false,
+      "returncode": 0,
+      "stderr": "",
+      "records": [
+        {
+          "elapsed_seconds": 0.002138,
+          "error": {
+            "message": "Unsupported observed builtin type: object",
+            "phase": "encode_return_value",
+            "reason": "observer_error",
+            "type": "builtins.TypeError"
+          },
+          "observations": [],
+          "status": "unavailable",
+          "stderr": "",
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "family": "primary",
+      "control": "exception_message_encoding_failure",
+      "passed": true,
+      "expected": "unavailable",
+      "source": "class Bad(Exception):\n    def __str__(self): raise ValueError('message observer failed')\ndef f(): raise Bad()\n",
+      "request": {
+        "source": "class Bad(Exception):\n    def __str__(self): raise ValueError('message observer failed')\ndef f(): raise Bad()\n",
+        "test": "def check(candidate): candidate()\n",
+        "entry_point": "f"
+      },
+      "wall_limit": 15,
+      "wall_timeout": false,
+      "returncode": 0,
+      "stderr": "",
+      "records": [
+        {
+          "elapsed_seconds": 0.002188,
+          "error": {
+            "message": "message observer failed",
+            "phase": "encode_program_exception",
+            "reason": "observer_error",
+            "type": "builtins.ValueError"
+          },
+          "observations": [],
+          "status": "unavailable",
+          "stderr": "",
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "family": "primary",
+      "control": "observer_failure_caught_broadly",
+      "passed": true,
+      "expected": "unavailable",
+      "source": "def f(x): return 1\n",
+      "request": {
+        "source": "def f(x): return 1\n",
+        "test": "def check(candidate):\n    try: candidate(object())\n    except BaseException: pass\n",
+        "entry_point": "f"
+      },
+      "wall_limit": 15,
+      "wall_timeout": false,
+      "returncode": 0,
+      "stderr": "",
+      "records": [
+        {
+          "elapsed_seconds": 0.001758,
+          "error": {
+            "message": "Unsupported observed builtin type: object",
+            "phase": "encode_arguments_before",
+            "reason": "observer_error",
+            "type": "builtins.TypeError"
+          },
+          "observations": [],
+          "status": "unavailable",
+          "stderr": "",
+          "stdout": ""
+        }
+      ]
+    },
+    {
+      "family": "primary",
+      "control": "cpu_limit",
+      "passed": true,
+      "expected": "process_unavailable",
+      "source": "def f():\n    while True: pass\n",
+      "request": {
+        "source": "def f():\n    while True: pass\n",
+        "test": "def check(candidate): candidate()\n",
+        "entry_point": "f"
+      },
+      "wall_limit": 15,
+      "wall_timeout": false,
+      "returncode": -9,
+      "stderr": "",
+      "records": []
+    },
+    {
+      "family": "primary",
+      "control": "wall_limit",
+      "passed": true,
+      "expected": "wall_unavailable",
+      "source": "import time\ndef f(): time.sleep(30)\n",
+      "request": {
+        "source": "import time\ndef f(): time.sleep(30)\n",
+        "test": "def check(candidate): candidate()\n",
+        "entry_point": "f"
+      },
+      "wall_limit": 15,
+      "wall_timeout": true,
+      "returncode": -9,
+      "stderr": "",
+      "records": []
+    }
+  ]
+}

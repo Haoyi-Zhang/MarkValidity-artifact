@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "scope": "Constructed controls, not additional public-benchmark samples.",
+  "cases": 11,
+  "producer_sha256": "e35c9ab0b2794e969e7d6be5145d7e9090b9802112e1dd8f75844c273e6a4d40",
+  "results": [
+    {
+      "case": "normal",
+      "status": "passed"
+    },
+    {
+      "case": "program_nameerror",
+      "status": "failed"
+    },
+    {
+      "case": "address_space_exhaustion",
+      "status": "unavailable"
+    },
+    {
+      "case": "caught_memoryerror",
+      "status": "passed"
+    },
+    {
+      "case": "source_syntaxerror",
+      "status": "failed"
+    },
+    {
+      "case": "test_syntaxerror",
+      "status": "evidence_rejected"
+    },
+    {
+      "case": "imports_syntaxerror",
+      "status": "evidence_rejected"
+    },
+    {
+      "case": "observer_exception_serialization",
+      "status": "unavailable"
+    },
+    {
+      "case": "failure_before_memory_exhaustion",
+      "status": "failed"
+    },
+    {
+      "case": "cpu_exhaustion",
+      "status": "process_error"
+    },
+    {
+      "case": "failure_before_cpu_exhaustion",
+      "status": "failed"
+    }
+  ]
+}

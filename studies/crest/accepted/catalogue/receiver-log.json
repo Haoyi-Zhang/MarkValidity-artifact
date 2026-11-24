@@ -1,0 +1,20 @@
+[
+  {
+    "script": "receive_crest_provenance.py",
+    "exitcode": 0,
+    "stdout": "{\"status\": \"PASS\", \"study\": \"catalogue\", \"input_rows\": 591, \"archive_or_benchmark_source_bindings\": 591, \"official_contract_bindings\": 591, \"native_request_bindings\": 1180, \"decoded_input_files_with_line_ending_normalization\": 0, \"input_text_policy\": \"UTF-8 with Python universal-newline decoding. Archived bytes and actual submitted text are verified as separate objects; no token-level edits.\", \"verified_completed_emission_rejections\": 2, \"paired_execution_contracts_verified\": true, \"original_assertions_without_value_instrumentation\": false, \"declared_dependency_amendments\": 0, \"upstream_core_model_threshold_bindings\": 17, \"feature_reextraction_scope\": \"Separate official CLI checks cover selected input/candidate pairs; this receiver does not claim all-source feature re-extraction.\", \"scope\": \"Actual request/source/contract/observer/environment identity, source decoding, complete declared input mapping, and valid terminal no-output events. Numerical outcomes and classifier scores have a separate receiver.\"}\n",
+    "stderr": ""
+  },
+  {
+    "script": "verify_crest_study.py",
+    "exitcode": 0,
+    "stdout": "{\"status\": \"PASS\", \"task_rows\": 591, \"native_suites_received\": 1180, \"saved_probabilities_verified\": 3534, \"actual_classifier_evaluations\": 870, \"distinct_feature_vectors\": 290, \"training_compatible_sklearn\": \"1.7.2\", \"model_loading_warnings\": 0, \"probabilities_bitwise_equal_to_saved_python_floats\": true, \"summary\": \"Native outcome envelopes, retained reference text, all saved classifier scores and upstream thresholds received without output-based exclusion. Exact archived input/contract/native-request/observer binding is checked by the separate provenance receiver; feature re-extraction is not claimed here.\"}\n",
+    "stderr": ""
+  },
+  {
+    "script": "summarize_crest_evidence.py",
+    "exitcode": 0,
+    "stdout": "{\"status\": \"COMPLETE\", \"study\": \"catalogue\", \"rows\": 591, \"reports\": 9}\n",
+    "stderr": ""
+  }
+]

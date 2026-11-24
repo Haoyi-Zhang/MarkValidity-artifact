@@ -1,0 +1,13 @@
+{
+  "stdout": "{\"error\": null, \"event\": \"source_compile\", \"status\": \"passed\"}\n{\"assertion_reached\": true, \"elapsed_seconds\": 0.000114, \"error\": null, \"event\": \"test_result\", \"status\": \"passed\", \"stderr\": \"\", \"stdout\": \"\", \"test_index\": 0}\n{\"assertion_reached\": true, \"elapsed_seconds\": 4.2e-05, \"error\": null, \"event\": \"test_result\", \"status\": \"passed\", \"stderr\": \"\", \"stdout\": \"\", \"test_index\": 1}\n{\"assertion_reached\": true, \"elapsed_seconds\": 0.000121, \"error\": null, \"event\": \"test_result\", \"status\": \"passed\", \"stderr\": \"\", \"stdout\": \"\", \"test_index\": 2}\n{\"completed_tests\": 3, \"elapsed_seconds\": 0.007326, \"event\": \"complete\", \"evidence_schema\": \"markvalidity-mbpp-original-assertions-v2\", \"failed_tests\": 0, \"passed_tests\": 3, \"rejected_tests\": 0, \"scheduled_tests\": 3, \"status\": \"passed\", \"unavailable_tests\": 0}\n",
+  "stderr": "",
+  "returncode": 0,
+  "interruption": null,
+  "child_user_cpu_seconds": 0.012168000000031043,
+  "child_system_cpu_seconds": 0.016000999999995713,
+  "group": "ced14f9d7a792240cbc3a520052b0c98fb7feb5c42a651e18015bdbd681d1b46",
+  "received_label": true,
+  "source_sha256": "2d3849d6d3448c9a845916026a6c182ffc1e45b234e767b8c2194ddc83b0ef51",
+  "contract_sha256": "f8a75fc673e33f2fa4ed80808cfe05ba1a53c7bfb1d535217e2a3be75f78a3f9",
+  "worker_seconds": 0.044054402998881415
+}

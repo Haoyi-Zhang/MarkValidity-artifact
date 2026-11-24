@@ -1,0 +1,728 @@
+{
+  "combined_mixture_bounds": [
+    {
+      "joint_lower": "0.207717803030",
+      "joint_lower_exact": "4387/21120",
+      "joint_upper": "0.395738636364",
+      "joint_upper_exact": "1393/3520",
+      "language": "combined",
+      "mixture": "balanced",
+      "point_identified": false,
+      "scheme": "lexical"
+    },
+    {
+      "joint_lower": "0.206486742424",
+      "joint_lower_exact": "4361/21120",
+      "joint_upper": "0.395075757576",
+      "joint_upper_exact": "1043/2640",
+      "language": "combined",
+      "mixture": "balanced",
+      "point_identified": false,
+      "scheme": "structural"
+    },
+    {
+      "joint_lower": "0.155113636364",
+      "joint_lower_exact": "273/1760",
+      "joint_upper": "0.302746212121",
+      "joint_upper_exact": "3197/10560",
+      "language": "combined",
+      "mixture": "balanced",
+      "point_identified": false,
+      "scheme": "hybrid"
+    },
+    {
+      "joint_lower": "0.131709280303",
+      "joint_lower_exact": "27817/211200",
+      "joint_upper": "0.255606060606",
+      "joint_upper_exact": "1687/6600",
+      "language": "combined",
+      "mixture": "rename-heavy",
+      "point_identified": false,
+      "scheme": "lexical"
+    },
+    {
+      "joint_lower": "0.351458333333",
+      "joint_lower_exact": "1687/4800",
+      "joint_upper": "0.665539772727",
+      "joint_upper_exact": "23427/35200",
+      "language": "combined",
+      "mixture": "rename-heavy",
+      "point_identified": false,
+      "scheme": "structural"
+    },
+    {
+      "joint_lower": "0.170601325758",
+      "joint_lower_exact": "36031/211200",
+      "joint_upper": "0.333669507576",
+      "joint_upper_exact": "70471/211200",
+      "language": "combined",
+      "mixture": "rename-heavy",
+      "point_identified": false,
+      "scheme": "hybrid"
+    },
+    {
+      "joint_lower": "0.351084280303",
+      "joint_lower_exact": "74149/211200",
+      "joint_upper": "0.665080492424",
+      "joint_upper_exact": "28093/42240",
+      "language": "combined",
+      "mixture": "structure-heavy",
+      "point_identified": false,
+      "scheme": "lexical"
+    },
+    {
+      "joint_lower": "0.131571969697",
+      "joint_lower_exact": "6947/52800",
+      "joint_upper": "0.253636363636",
+      "joint_upper_exact": "279/1100",
+      "language": "combined",
+      "mixture": "structure-heavy",
+      "point_identified": false,
+      "scheme": "structural"
+    },
+    {
+      "joint_lower": "0.175075757576",
+      "joint_lower_exact": "2311/13200",
+      "joint_upper": "0.339422348485",
+      "joint_upper_exact": "35843/105600",
+      "language": "combined",
+      "mixture": "structure-heavy",
+      "point_identified": false,
+      "scheme": "hybrid"
+    }
+  ],
+  "distinct_task_language_source_identities": 44149,
+  "evidence_policies": [
+    {
+      "denominator": 76032,
+      "lower_count": 122,
+      "policy": "historical source subset",
+      "source_decisions_known": 432,
+      "upper_count": 75722,
+      "validity_known": 432
+    },
+    {
+      "denominator": 76032,
+      "lower_count": 122,
+      "policy": "all-source extraction, retained executions only",
+      "source_decisions_known": 76032,
+      "upper_count": 35768,
+      "validity_known": 432
+    },
+    {
+      "denominator": 76032,
+      "lower_count": 1710,
+      "policy": "all-source extraction, exact-source execution closure",
+      "source_decisions_known": 76032,
+      "upper_count": 35768,
+      "validity_known": 5856
+    },
+    {
+      "denominator": 76032,
+      "lower_count": 17955,
+      "policy": "all-source extraction, Python erasure plus directly linked executions",
+      "source_decisions_known": 76032,
+      "upper_count": 35768,
+      "validity_known": 38232
+    },
+    {
+      "denominator": 76032,
+      "lower_count": 18756,
+      "policy": "all-source extraction, Python erasure plus exact-source execution closure",
+      "source_decisions_known": 76032,
+      "upper_count": 35768,
+      "validity_known": 40962
+    }
+  ],
+  "historical_execution_labels_changed": false,
+  "joint_yield_full_universe": {
+    "configurations": 76032,
+    "lower": {
+      "decimal": "0.246685606061",
+      "denominator": 2112,
+      "exact": "521/2112",
+      "numerator": 521
+    },
+    "lower_count": 18756,
+    "upper": {
+      "decimal": "0.470433501684",
+      "denominator": 9504,
+      "exact": "4471/9504",
+      "numerator": 4471
+    },
+    "upper_count": 35768
+  },
+  "languages": {
+    "javascript": {
+      "configurations": 38016,
+      "direct_execution_configurations": 216,
+      "distinct_task_source_identities": 22095,
+      "execution_supported_configurations_after_identity_closure": 2946,
+      "identity_reused_execution_configurations": 2730,
+      "joint_lower_count": 863,
+      "joint_upper_count": 17875,
+      "known_validity": 2946,
+      "per_scheme": {
+        "hybrid": {
+          "configurations": 12672,
+          "detected": 5326
+        },
+        "lexical": {
+          "configurations": 12672,
+          "detected": 6267
+        },
+        "structural": {
+          "configurations": 12672,
+          "detected": 6282
+        }
+      },
+      "positive_source_decisions": 17875,
+      "unknown_validity": 35070
+    },
+    "python": {
+      "configurations": 38016,
+      "direct_execution_configurations": 216,
+      "distinct_task_source_identities": 22054,
+      "execution_supported_configurations_after_identity_closure": 2910,
+      "identity_reused_execution_configurations": 2694,
+      "joint_lower_count": 17893,
+      "joint_upper_count": 17893,
+      "known_validity": 38016,
+      "per_scheme": {
+        "hybrid": {
+          "configurations": 12672,
+          "detected": 5292
+        },
+        "lexical": {
+          "configurations": 12672,
+          "detected": 6315
+        },
+        "structural": {
+          "configurations": 12672,
+          "detected": 6286
+        }
+      },
+      "positive_source_decisions": 17893,
+      "unknown_validity": 0
+    }
+  },
+  "outputs_sha256": {
+    "combined_joint_table.tex": "3853664b6e246bbece5f25fe0389853504b2eba23686eb81bc50640e0ec91cc1",
+    "family_scores.csv": "bd92bfdfb07703ca57d56c1ee2b472d374fd0b7a22adf047e0d25735450b6cfb",
+    "mixture_scores.csv": "264f167fa196520c4da8de2255630c0adbcff32c753dc417830ec7d829beb229",
+    "pairwise_source_bounds.csv": "e199c8266cd2d1b5cb359d44ab21d1c50404bb10e1d4bbdf7a1dead27c03c829",
+    "paper_summary.json": "f85435cb7b6be4be8949c5ff19c88eb8ec4de5e1fac2fc64c9b1ca1ba1ad665a",
+    "python_joint_table.tex": "0c39ae1b3d00fea8afd089cadea9fe316660e0f43499fb4f024665c53ec5f154",
+    "registration.json": "0ffc21cb3af7c84ba644e4944d2671b216901cde6284ccb4873d5774def03a12",
+    "rows.csv.gz": "931ddacc3644f6b96d48211a645d58390f2d6ae04d8af82f4ff9142570240ebd",
+    "source_coverage_table.tex": "caec93ff91e6406bc82b579403866de6cfd65130b72c1f8cbf7c081780fec087",
+    "sources.jsonl.gz": "ff4283b45a18f8ece7a7005184ba9ede34ca13b17f638822afd517d3f07758e1"
+  },
+  "pairwise_source_bounds": [
+    {
+      "distinct_source_groups": 14103,
+      "language": "python",
+      "left": "lexical",
+      "lower": "0.002746212121",
+      "lower_exact": "29/10560",
+      "mixture": "balanced",
+      "preferred": "lexical",
+      "right": "structural",
+      "unknown_source_groups": 0,
+      "upper": "0.002746212121",
+      "upper_exact": "29/10560"
+    },
+    {
+      "distinct_source_groups": 15001,
+      "language": "python",
+      "left": "lexical",
+      "lower": "0.096875000000",
+      "lower_exact": "31/320",
+      "mixture": "balanced",
+      "preferred": "lexical",
+      "right": "hybrid",
+      "unknown_source_groups": 0,
+      "upper": "0.096875000000",
+      "upper_exact": "31/320"
+    },
+    {
+      "distinct_source_groups": 15034,
+      "language": "python",
+      "left": "structural",
+      "lower": "0.094128787879",
+      "lower_exact": "497/5280",
+      "mixture": "balanced",
+      "preferred": "structural",
+      "right": "hybrid",
+      "unknown_source_groups": 0,
+      "upper": "0.094128787879",
+      "upper_exact": "497/5280"
+    },
+    {
+      "distinct_source_groups": 14103,
+      "language": "python",
+      "left": "lexical",
+      "lower": "-0.409441287879",
+      "lower_exact": "-43237/105600",
+      "mixture": "rename-heavy",
+      "preferred": "structural",
+      "right": "structural",
+      "unknown_source_groups": 0,
+      "upper": "-0.409441287879",
+      "upper_exact": "-43237/105600"
+    },
+    {
+      "distinct_source_groups": 15001,
+      "language": "python",
+      "left": "lexical",
+      "lower": "-0.074498106061",
+      "lower_exact": "-7867/105600",
+      "mixture": "rename-heavy",
+      "preferred": "hybrid",
+      "right": "hybrid",
+      "unknown_source_groups": 0,
+      "upper": "-0.074498106061",
+      "upper_exact": "-7867/105600"
+    },
+    {
+      "distinct_source_groups": 15034,
+      "language": "python",
+      "left": "structural",
+      "lower": "0.334943181818",
+      "lower_exact": "1179/3520",
+      "mixture": "rename-heavy",
+      "preferred": "structural",
+      "right": "hybrid",
+      "unknown_source_groups": 0,
+      "upper": "0.334943181818",
+      "upper_exact": "1179/3520"
+    },
+    {
+      "distinct_source_groups": 14103,
+      "language": "python",
+      "left": "lexical",
+      "lower": "0.409507575758",
+      "lower_exact": "10811/26400",
+      "mixture": "structure-heavy",
+      "preferred": "lexical",
+      "right": "structural",
+      "unknown_source_groups": 0,
+      "upper": "0.409507575758",
+      "upper_exact": "10811/26400"
+    },
+    {
+      "distinct_source_groups": 15001,
+      "language": "python",
+      "left": "lexical",
+      "lower": "0.326410984848",
+      "lower_exact": "34469/105600",
+      "mixture": "structure-heavy",
+      "preferred": "lexical",
+      "right": "hybrid",
+      "unknown_source_groups": 0,
+      "upper": "0.326410984848",
+      "upper_exact": "34469/105600"
+    },
+    {
+      "distinct_source_groups": 15034,
+      "language": "python",
+      "left": "structural",
+      "lower": "-0.083096590909",
+      "lower_exact": "-117/1408",
+      "mixture": "structure-heavy",
+      "preferred": "hybrid",
+      "right": "hybrid",
+      "unknown_source_groups": 0,
+      "upper": "-0.083096590909",
+      "upper_exact": "-117/1408"
+    },
+    {
+      "distinct_source_groups": 14124,
+      "language": "javascript",
+      "left": "lexical",
+      "lower": "-0.377462121212",
+      "lower_exact": "-1993/5280",
+      "mixture": "balanced",
+      "preferred": "",
+      "right": "structural",
+      "unknown_source_groups": 13992,
+      "upper": "0.375757575758",
+      "upper_exact": "62/165"
+    },
+    {
+      "distinct_source_groups": 15040,
+      "language": "javascript",
+      "left": "lexical",
+      "lower": "-0.286931818182",
+      "lower_exact": "-101/352",
+      "mixture": "balanced",
+      "preferred": "",
+      "right": "hybrid",
+      "unknown_source_groups": 14896,
+      "upper": "0.384375000000",
+      "upper_exact": "123/320"
+    },
+    {
+      "distinct_source_groups": 15044,
+      "language": "javascript",
+      "left": "structural",
+      "lower": "-0.286647727273",
+      "lower_exact": "-1009/3520",
+      "mixture": "balanced",
+      "preferred": "",
+      "right": "hybrid",
+      "unknown_source_groups": 14900,
+      "upper": "0.385795454545",
+      "upper_exact": "679/1760"
+    },
+    {
+      "distinct_source_groups": 14124,
+      "language": "javascript",
+      "left": "lexical",
+      "lower": "-0.658219696970",
+      "lower_exact": "-17377/26400",
+      "mixture": "rename-heavy",
+      "preferred": "",
+      "right": "structural",
+      "unknown_source_groups": 13992,
+      "upper": "0.217736742424",
+      "upper_exact": "22993/105600"
+    },
+    {
+      "distinct_source_groups": 15040,
+      "language": "javascript",
+      "left": "lexical",
+      "lower": "-0.329422348485",
+      "lower_exact": "-34787/105600",
+      "mixture": "rename-heavy",
+      "preferred": "",
+      "right": "hybrid",
+      "unknown_source_groups": 14896,
+      "upper": "0.244507575758",
+      "upper_exact": "1291/5280"
+    },
+    {
+      "distinct_source_groups": 15044,
+      "language": "javascript",
+      "left": "structural",
+      "lower": "-0.299365530303",
+      "lower_exact": "-31613/105600",
+      "mixture": "rename-heavy",
+      "preferred": "",
+      "right": "hybrid",
+      "unknown_source_groups": 14900,
+      "upper": "0.654933712121",
+      "upper_exact": "69161/105600"
+    },
+    {
+      "distinct_source_groups": 14124,
+      "language": "javascript",
+      "left": "lexical",
+      "lower": "-0.214611742424",
+      "lower_exact": "-22663/105600",
+      "mixture": "structure-heavy",
+      "preferred": "",
+      "right": "structural",
+      "unknown_source_groups": 13992,
+      "upper": "0.657509469697",
+      "upper_exact": "69433/105600"
+    },
+    {
+      "distinct_source_groups": 15040,
+      "language": "javascript",
+      "left": "lexical",
+      "lower": "-0.303087121212",
+      "lower_exact": "-16003/52800",
+      "mixture": "structure-heavy",
+      "preferred": "",
+      "right": "hybrid",
+      "unknown_source_groups": 14896,
+      "upper": "0.653598484848",
+      "upper_exact": "3451/5280"
+    },
+    {
+      "distinct_source_groups": 15044,
+      "language": "javascript",
+      "left": "structural",
+      "lower": "-0.332604166667",
+      "lower_exact": "-3193/9600",
+      "mixture": "structure-heavy",
+      "preferred": "",
+      "right": "hybrid",
+      "unknown_source_groups": 14900,
+      "upper": "0.240217803030",
+      "upper_exact": "25367/105600"
+    },
+    {
+      "distinct_source_groups": 28227,
+      "language": "combined",
+      "left": "lexical",
+      "lower": "-0.187357954545",
+      "lower_exact": "-1319/7040",
+      "mixture": "balanced",
+      "preferred": "",
+      "right": "structural",
+      "unknown_source_groups": 13992,
+      "upper": "0.189251893939",
+      "upper_exact": "3997/21120"
+    },
+    {
+      "distinct_source_groups": 30041,
+      "language": "combined",
+      "left": "lexical",
+      "lower": "-0.095028409091",
+      "lower_exact": "-669/7040",
+      "mixture": "balanced",
+      "preferred": "",
+      "right": "hybrid",
+      "unknown_source_groups": 14896,
+      "upper": "0.240625000000",
+      "upper_exact": "77/320"
+    },
+    {
+      "distinct_source_groups": 30078,
+      "language": "combined",
+      "left": "structural",
+      "lower": "-0.096259469697",
+      "lower_exact": "-2033/21120",
+      "mixture": "balanced",
+      "preferred": "",
+      "right": "hybrid",
+      "unknown_source_groups": 14900,
+      "upper": "0.239962121212",
+      "upper_exact": "1267/5280"
+    },
+    {
+      "distinct_source_groups": 28227,
+      "language": "combined",
+      "left": "lexical",
+      "lower": "-0.533830492424",
+      "lower_exact": "-22549/42240",
+      "mixture": "rename-heavy",
+      "preferred": "structural",
+      "right": "structural",
+      "unknown_source_groups": 13992,
+      "upper": "-0.095852272727",
+      "upper_exact": "-1687/17600"
+    },
+    {
+      "distinct_source_groups": 30041,
+      "language": "combined",
+      "left": "lexical",
+      "lower": "-0.201960227273",
+      "lower_exact": "-7109/35200",
+      "mixture": "rename-heavy",
+      "preferred": "",
+      "right": "hybrid",
+      "unknown_source_groups": 14896,
+      "upper": "0.085004734848",
+      "upper_exact": "17953/211200"
+    },
+    {
+      "distinct_source_groups": 30078,
+      "language": "combined",
+      "left": "structural",
+      "lower": "0.017788825758",
+      "lower_exact": "3757/211200",
+      "mixture": "rename-heavy",
+      "preferred": "structural",
+      "right": "hybrid",
+      "unknown_source_groups": 14900,
+      "upper": "0.494938446970",
+      "upper_exact": "104531/211200"
+    },
+    {
+      "distinct_source_groups": 28227,
+      "language": "combined",
+      "left": "lexical",
+      "lower": "0.097447916667",
+      "lower_exact": "1871/19200",
+      "mixture": "structure-heavy",
+      "preferred": "lexical",
+      "right": "structural",
+      "unknown_source_groups": 13992,
+      "upper": "0.533508522727",
+      "upper_exact": "37559/70400"
+    },
+    {
+      "distinct_source_groups": 30041,
+      "language": "combined",
+      "left": "lexical",
+      "lower": "0.011661931818",
+      "lower_exact": "821/70400",
+      "mixture": "structure-heavy",
+      "preferred": "lexical",
+      "right": "hybrid",
+      "unknown_source_groups": 14896,
+      "upper": "0.490004734848",
+      "upper_exact": "103489/211200"
+    },
+    {
+      "distinct_source_groups": 30078,
+      "language": "combined",
+      "left": "structural",
+      "lower": "-0.207850378788",
+      "lower_exact": "-21949/105600",
+      "mixture": "structure-heavy",
+      "preferred": "",
+      "right": "hybrid",
+      "unknown_source_groups": 14900,
+      "upper": "0.078560606061",
+      "upper_exact": "1037/13200"
+    }
+  ],
+  "producer_sha256": {
+    "check_source_detection.py": "d54cfb0db3fb10894595bcaaee6202f79ab36fb271e6160509a4823c2e718aa2",
+    "check_source_joint.py": "d637e32ce61ead60a61146c1edc899eb2ec0caa9753274b858de016e4b4e1db7",
+    "src/covewm/benchmark.py": "5fc5664b48970f9929bc397a5d2bcaf162c46467ef38e2269b379d80a869b750",
+    "src/covewm/evidence_status.py": "68dc68b9d969e50c6f904a0fdc4809a003428bca5056e927f30675455b25b1ea",
+    "src/covewm/source_admission.py": "375c600e652a8bb83678b4f0aa9771f12a7c021deb4672410e3db4be6311b23b",
+    "src/covewm/source_groups.py": "348bf02cc0afebd40fbebc2412f7c79401771430e42ae674b107a2f767305cf4",
+    "src/covewm/tasks.py": "718f39e105291be8a6c08c246175b04bce56d01e57819bf14fdd991952bf45a4"
+  },
+  "python_mixture_scores": [
+    {
+      "joint_lower": "0.398011363636",
+      "joint_lower_exact": "1401/3520",
+      "joint_upper": "0.398011363636",
+      "joint_upper_exact": "1401/3520",
+      "language": "python",
+      "mixture": "balanced",
+      "point_identified": true,
+      "scheme": "lexical"
+    },
+    {
+      "joint_lower": "0.395265151515",
+      "joint_lower_exact": "2087/5280",
+      "joint_upper": "0.395265151515",
+      "joint_upper_exact": "2087/5280",
+      "language": "python",
+      "mixture": "balanced",
+      "point_identified": true,
+      "scheme": "structural"
+    },
+    {
+      "joint_lower": "0.301136363636",
+      "joint_lower_exact": "53/176",
+      "joint_upper": "0.301136363636",
+      "joint_upper_exact": "53/176",
+      "language": "python",
+      "mixture": "balanced",
+      "point_identified": true,
+      "scheme": "hybrid"
+    },
+    {
+      "joint_lower": "0.257111742424",
+      "joint_lower_exact": "27151/105600",
+      "joint_upper": "0.257111742424",
+      "joint_upper_exact": "27151/105600",
+      "language": "python",
+      "mixture": "rename-heavy",
+      "point_identified": true,
+      "scheme": "lexical"
+    },
+    {
+      "joint_lower": "0.666553030303",
+      "joint_lower_exact": "17597/26400",
+      "joint_upper": "0.666553030303",
+      "joint_upper_exact": "17597/26400",
+      "language": "python",
+      "mixture": "rename-heavy",
+      "point_identified": true,
+      "scheme": "structural"
+    },
+    {
+      "joint_lower": "0.331609848485",
+      "joint_lower_exact": "17509/52800",
+      "joint_upper": "0.331609848485",
+      "joint_upper_exact": "17509/52800",
+      "language": "python",
+      "mixture": "rename-heavy",
+      "point_identified": true,
+      "scheme": "hybrid"
+    },
+    {
+      "joint_lower": "0.665691287879",
+      "joint_lower_exact": "70297/105600",
+      "joint_upper": "0.665691287879",
+      "joint_upper_exact": "70297/105600",
+      "language": "python",
+      "mixture": "structure-heavy",
+      "point_identified": true,
+      "scheme": "lexical"
+    },
+    {
+      "joint_lower": "0.256183712121",
+      "joint_lower_exact": "27053/105600",
+      "joint_upper": "0.256183712121",
+      "joint_upper_exact": "27053/105600",
+      "language": "python",
+      "mixture": "structure-heavy",
+      "point_identified": true,
+      "scheme": "structural"
+    },
+    {
+      "joint_lower": "0.339280303030",
+      "joint_lower_exact": "8957/26400",
+      "joint_upper": "0.339280303030",
+      "joint_upper_exact": "8957/26400",
+      "language": "python",
+      "mixture": "structure-heavy",
+      "point_identified": true,
+      "scheme": "hybrid"
+    }
+  ],
+  "registration": {
+    "configurations": 76032,
+    "input_sha256": {
+      "environment.json": "8d13d93f44248e62f0e217ef2e4f95c8eabca8465af359020b4e75360077c1b0",
+      "raw/robustness.csv": "f42970e2dd73f1fb790a5697be032e835ba1686df97bf80843fbe46427ca368c",
+      "raw/semantic_audit.csv": "941ee8f5aec0832103b9fd91c5c5ba7bd97a6c2f85d88695e7cb1bbb1e19e80e"
+    },
+    "javascript_contract": "exact-source closure of all 504 retained bounded execution observations, including carrier-only controls; original directly linked keys remain 216",
+    "missing_validity": "unrestricted binary completion after observing source detection",
+    "mixture_weights": {
+      "balanced": {
+        "mixed": 0.2,
+        "normalize": 0.2,
+        "random_flip": 0.2,
+        "rename": 0.2,
+        "strip": 0.2
+      },
+      "rename-heavy": {
+        "mixed": 0.0,
+        "normalize": 0.0,
+        "random_flip": 0.24,
+        "rename": 0.54,
+        "strip": 0.22
+      },
+      "structure-heavy": {
+        "mixed": 0.0,
+        "normalize": 0.54,
+        "random_flip": 0.24,
+        "rename": 0.0,
+        "strip": 0.22
+      }
+    },
+    "python_contract": "restricted inert-prefix erasure, frozen receiver task, builtin input values, result-only observation",
+    "python_erasure_configurations": 38016,
+    "quantity": "joint yield E[validity AND source detection], not conditional detection",
+    "selection": "entire frozen factorial grid, selected before source-level outcomes",
+    "task_program_executions": 0,
+    "upstream_system_executions": 0,
+    "wall_limit_seconds": 480
+  },
+  "retained_execution_links_reused": 432,
+  "source_configurations": 76032,
+  "source_group_sharing": {
+    "group_identity": "task, language, receiver observation/runtime contract, exact source text",
+    "sharpness_scope": "one binary validity per unlabelled exact source under the fixed contract; no generic program-semantics realizability claim",
+    "unknown_positive_source_groups_shared_across_carriers": 0,
+    "unknown_source_groups_with_positive_decision": 5228
+  },
+  "source_state_detection_disagreements": 0,
+  "source_state_observation_disagreements": 0,
+  "status": "PASS",
+  "task_program_executions": 0,
+  "upstream_system_executions": 0
+}

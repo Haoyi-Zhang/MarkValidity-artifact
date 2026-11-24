@@ -1,0 +1,2 @@
+def median_trapezium(base1, base2, height):
+	return (base2 + base1) / 2

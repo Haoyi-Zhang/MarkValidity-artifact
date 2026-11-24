@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.2",
+  "citation_key": "kitchenham1995",
+  "entry_type": "article",
+  "title": "Towards a Framework for Software Measurement Validation",
+  "authors": "Barbara A. Kitchenham and Shari Lawrence Pfleeger and Norman E. Fenton",
+  "venue": "IEEE Transactions on Software Engineering",
+  "year": "1995",
+  "pages_or_article": "929--943",
+  "verified_scholarly_identifier": "doi:10.1109/32.489070",
+  "source_locator": "https://citeseerx.ist.psu.edu/document?doi=c0cb2b8e826a19567b9e1c356a1d0063fb913e9f&repid=rep1&type=pdf",
+  "verification_status": "VERIFIED_DOI_RECORD",
+  "verification_basis": "Publisher DOI record or formal scholarly proceedings/journal record; metadata cross-checked against the manuscript bibliography during the staged reference audit.",
+  "manuscript_occurrences": [
+    {
+      "file": "paper/main.tex",
+      "line": 202,
+      "claim": "Kitchenham et al. argue that converting measurement vectors to scalars requires a model relating the underlying attributes \\cite{kitchenham1995}.",
+      "paragraph_sha256": "27e2594a1dcf77fb225c49444d90370c1d73b9a2349f942bd4daf1176ca13058",
+      "consumed_by": [
+        "paper/main.pdf"
+      ]
+    }
+  ],
+  "current_source_bindings": {
+    "paper/current-authors.tex": "2f54a9034521b4cf9d60eaa7bbae77113d6a5360ed868bf3f5a5c82c0780036e",
+    "paper/figdata/source-detection.tex": "d46a2ee2afc60f97dfa57dda0e46df8e0a27ab0f28b7dd72d3b30b08e5dc2f2c",
+    "paper/main.tex": "dc471eebfb6f0c06ec65b9172fd15fe38b6b53db98993826208615e180bee45a",
+    "paper/online-supplement.tex": "d6af4e34e0e16160037550602d9f0e316b7174f6f2c764d7d003eba815e56aa1",
+    "paper/project-repository.tex": "9cdd4507256375154cb467b25033e26f0635d433a5460dce9f697c09b9a6608a"
+  },
+  "current_claim_support": {
+    "status": "BODY_SUPPORT_CURRENT_CLAIMS",
+    "scope": "These exact current attributions only; no independent replication or whole-paper reread",
+    "original_source": "https://citeseerx.ist.psu.edu/document?doi=c0cb2b8e826a19567b9e1c356a1d0063fb913e9f&repid=rep1&type=pdf",
+    "version": "Original TSE21(12),929-943,1995,three-author manuscript scan,online body not downloaded whole-PDF identity",
+    "inspected_section": "Original SectionII compound/vector/scalar discussion preceding H and I,printed932-933; implication7 and SectionIII.D.1 attribute definition models",
+    "complete_original_paper_read_claimed": false
+  },
+  "evidence_sha256": "d90a2e34932e622308ebec23e72f86c14a513fd0cb2b6a41ce02020145d57c3c"
+}

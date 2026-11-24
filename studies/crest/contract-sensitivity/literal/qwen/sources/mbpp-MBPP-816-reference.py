@@ -1,0 +1,3 @@
+
+def clear_tuple(test_tup):
+    return ()

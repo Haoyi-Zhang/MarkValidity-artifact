@@ -1,0 +1,13 @@
+{
+  "stdout": "{\"elapsed_seconds\":0.002177,\"error\":null,\"observations\":[{\"after\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"-1\"],[\"int\",\"-2\"],[\"int\",\"4\"],[\"int\",\"5\"],[\"int\",\"6\"]]]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"-1\"],[\"int\",\"-2\"],[\"int\",\"4\"],[\"int\",\"5\"],[\"int\",\"6\"]]]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"list\",[[\"int\",\"4\"],[\"int\",\"5\"],[\"int\",\"6\"]]]]},{\"after\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"5\"],[\"int\",\"3\"],[\"int\",\"-5\"],[\"int\",\"2\"],[\"int\",\"3\"],[\"int\",\"3\"],[\"int\",\"9\"],[\"int\",\"0\"],[\"int\",\"123\"],[\"int\",\"1\"],[\"int\",\"-10\"]]]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"5\"],[\"int\",\"3\"],[\"int\",\"-5\"],[\"int\",\"2\"],[\"int\",\"3\"],[\"int\",\"3\"],[\"int\",\"9\"],[\"int\",\"0\"],[\"int\",\"123\"],[\"int\",\"1\"],[\"int\",\"-10\"]]]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"list\",[[\"int\",\"5\"],[\"int\",\"3\"],[\"int\",\"2\"],[\"int\",\"3\"],[\"int\",\"3\"],[\"int\",\"9\"],[\"int\",\"123\"],[\"int\",\"1\"]]]]},{\"after\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"-1\"],[\"int\",\"-2\"]]]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"-1\"],[\"int\",\"-2\"]]]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"list\",[]]]},{\"after\":{\"args\":[\"tuple\",[[\"list\",[]]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"list\",[]]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"list\",[]]]}],\"status\":\"passed\",\"stderr\":\"\",\"stdout\":\"\"}\n",
+  "stderr": "",
+  "returncode": 0,
+  "interruption": null,
+  "child_user_cpu_seconds": 0.007935000000003356,
+  "child_system_cpu_seconds": 0.016089000000000908,
+  "group": "75d7d3bc1cba430ee271baa0f70b93f84d0f940bdaf1d7460696d530f777a700",
+  "received_label": true,
+  "source_sha256": "3b7741c498e2f12a04457579df79ed286f76b6cfd1821301aa90e20a8d1906c9",
+  "contract_sha256": "f404962cd7bb0cfa37ed530a850c757eebc2eed8115d1309c44e464eca1fe405",
+  "worker_seconds": 0.02459725399967283
+}

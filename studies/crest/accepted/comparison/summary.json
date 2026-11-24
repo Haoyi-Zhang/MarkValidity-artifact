@@ -1,0 +1,2905 @@
+{
+  "status": "PASS",
+  "reports": [
+    {
+      "scope": "HumanEval",
+      "classifier": "rf",
+      "method": "coupled",
+      "target": "J",
+      "policy": "joint_width_per_suite",
+      "certificate": "joint_difference",
+      "emitted_attempts": {
+        "stock": 164,
+        "catalogue_ablation": 164
+      },
+      "scheduled_attempts_per_catalogue": 164,
+      "completed_no_output": {
+        "stock": 0,
+        "catalogue_ablation": 0
+      },
+      "source_contract_groups": 209,
+      "shared_groups": 119,
+      "free_reference_identity_groups": 0,
+      "first_certificate": {
+        "suite_queries": 9,
+        "lower": 1,
+        "upper": 43,
+        "units": "joint_count_difference",
+        "decision": "left_strict",
+        "defined_all": true
+      },
+      "complete_operational_scores": {
+        "stock": {
+          "J_count": 159,
+          "usable_outputs": 159,
+          "N": 164,
+          "emitted": 164,
+          "terminal_no_output": 0,
+          "J": "159/164",
+          "C": "1"
+        },
+        "catalogue_ablation": {
+          "J_count": 125,
+          "usable_outputs": 164,
+          "N": 164,
+          "emitted": 164,
+          "terminal_no_output": 0,
+          "J": "125/164",
+          "C": "125/164"
+        }
+      },
+      "trace": "traces/humaneval-rf-coupled-J.json"
+    },
+    {
+      "scope": "HumanEval",
+      "classifier": "rf",
+      "method": "coupled",
+      "target": "C",
+      "policy": "conditional_differences_first",
+      "certificate": "paired_ratio_envelope_with_separate_fallback",
+      "emitted_attempts": {
+        "stock": 164,
+        "catalogue_ablation": 164
+      },
+      "scheduled_attempts_per_catalogue": 164,
+      "completed_no_output": {
+        "stock": 0,
+        "catalogue_ablation": 0
+      },
+      "source_contract_groups": 209,
+      "shared_groups": 119,
+      "free_reference_identity_groups": 0,
+      "first_certificate": {
+        "suite_queries": 52,
+        "route": "paired_ratio_envelope",
+        "defined_all": true,
+        "anchors": {
+          "left": {
+            "lower": "1",
+            "upper": "39",
+            "endpoints": [
+              {
+                "q": "1",
+                "lower_numerator": 1,
+                "upper_numerator": 39,
+                "denominator": 1
+              }
+            ],
+            "different_unknown_groups": 38,
+            "relation_on_relaxation": "left_strict"
+          },
+          "right": {
+            "lower": "53/42",
+            "upper": "4909/126",
+            "endpoints": [
+              {
+                "q": "2/15",
+                "lower_numerator": 444,
+                "upper_numerator": 520,
+                "denominator": 15
+              },
+              {
+                "q": "125/126",
+                "lower_numerator": 159,
+                "upper_numerator": 4909,
+                "denominator": 126
+              }
+            ],
+            "different_unknown_groups": 38,
+            "relation_on_relaxation": "left_strict"
+          }
+        },
+        "decision": "left_strict",
+        "anchor": "left",
+        "decision_source": "paired_ratio_envelope"
+      },
+      "complete_operational_scores": {
+        "stock": {
+          "J_count": 159,
+          "usable_outputs": 159,
+          "N": 164,
+          "emitted": 164,
+          "terminal_no_output": 0,
+          "J": "159/164",
+          "C": "1"
+        },
+        "catalogue_ablation": {
+          "J_count": 125,
+          "usable_outputs": 164,
+          "N": 164,
+          "emitted": 164,
+          "terminal_no_output": 0,
+          "J": "125/164",
+          "C": "125/164"
+        }
+      },
+      "trace": "traces/humaneval-rf-coupled-C.json"
+    },
+    {
+      "scope": "HumanEval",
+      "classifier": "rf",
+      "method": "independent",
+      "target": "J",
+      "policy": "independent_joint_width",
+      "certificate": "joint_difference",
+      "emitted_attempts": {
+        "stock": 164,
+        "catalogue_ablation": 164
+      },
+      "scheduled_attempts_per_catalogue": 164,
+      "completed_no_output": {
+        "stock": 0,
+        "catalogue_ablation": 0
+      },
+      "source_contract_groups": 209,
+      "shared_groups": 119,
+      "free_reference_identity_groups": 0,
+      "first_certificate": {
+        "suite_queries": 128,
+        "lower": 1,
+        "upper": 43,
+        "units": "joint_count_difference",
+        "decision": "left_strict",
+        "defined_all": true
+      },
+      "complete_operational_scores": {
+        "stock": {
+          "J_count": 159,
+          "usable_outputs": 159,
+          "N": 164,
+          "emitted": 164,
+          "terminal_no_output": 0,
+          "J": "159/164",
+          "C": "1"
+        },
+        "catalogue_ablation": {
+          "J_count": 125,
+          "usable_outputs": 164,
+          "N": 164,
+          "emitted": 164,
+          "terminal_no_output": 0,
+          "J": "125/164",
+          "C": "125/164"
+        }
+      },
+      "trace": "traces/humaneval-rf-independent-J.json"
+    },
+    {
+      "scope": "HumanEval",
+      "classifier": "rf",
+      "method": "independent",
+      "target": "C",
+      "policy": "independent_conditional_minimax_width",
+      "certificate": "separate_conditional_intervals",
+      "emitted_attempts": {
+        "stock": 164,
+        "catalogue_ablation": 164
+      },
+      "scheduled_attempts_per_catalogue": 164,
+      "completed_no_output": {
+        "stock": 0,
+        "catalogue_ablation": 0
+      },
+      "source_contract_groups": 209,
+      "shared_groups": 119,
+      "free_reference_identity_groups": 0,
+      "first_certificate": {
+        "suite_queries": 3,
+        "lower": "1/126",
+        "upper": "39/40",
+        "units": "conditional_rate_difference",
+        "decision": "left_strict",
+        "defined_all": true
+      },
+      "complete_operational_scores": {
+        "stock": {
+          "J_count": 159,
+          "usable_outputs": 159,
+          "N": 164,
+          "emitted": 164,
+          "terminal_no_output": 0,
+          "J": "159/164",
+          "C": "1"
+        },
+        "catalogue_ablation": {
+          "J_count": 125,
+          "usable_outputs": 164,
+          "N": 164,
+          "emitted": 164,
+          "terminal_no_output": 0,
+          "J": "125/164",
+          "C": "125/164"
+        }
+      },
+      "trace": "traces/humaneval-rf-independent-C.json"
+    },
+    {
+      "scope": "HumanEval",
+      "classifier": "rf",
+      "method": "adaptive",
+      "target": "C",
+      "policy": "point_interval_adaptive",
+      "certificate": "paired_ratio_envelope_with_separate_fallback",
+      "emitted_attempts": {
+        "stock": 164,
+        "catalogue_ablation": 164
+      },
+      "scheduled_attempts_per_catalogue": 164,
+      "completed_no_output": {
+        "stock": 0,
+        "catalogue_ablation": 0
+      },
+      "source_contract_groups": 209,
+      "shared_groups": 119,
+      "free_reference_identity_groups": 0,
+      "first_certificate": {
+        "suite_queries": 3,
+        "route": "paired_ratio_envelope",
+        "defined_all": true,
+        "anchors": {
+          "left": {
+            "lower": "1",
+            "upper": "39",
+            "endpoints": [
+              {
+                "q": "1",
+                "lower_numerator": 1,
+                "upper_numerator": 39,
+                "denominator": 1
+              }
+            ],
+            "different_unknown_groups": 87,
+            "relation_on_relaxation": "left_strict"
+          },
+          "right": {
+            "lower": "-97/20",
+            "upper": "351/8",
+            "endpoints": [
+              {
+                "q": "1/40",
+                "lower_numerator": -194,
+                "upper_numerator": 1755,
+                "denominator": 40
+              },
+              {
+                "q": "125/126",
+                "lower_numerator": 120,
+                "upper_numerator": 4919,
+                "denominator": 126
+              }
+            ],
+            "different_unknown_groups": 87,
+            "relation_on_relaxation": "unresolved"
+          }
+        },
+        "decision": "left_strict",
+        "anchor": "left",
+        "decision_source": "paired_ratio_envelope"
+      },
+      "complete_operational_scores": {
+        "stock": {
+          "J_count": 159,
+          "usable_outputs": 159,
+          "N": 164,
+          "emitted": 164,
+          "terminal_no_output": 0,
+          "J": "159/164",
+          "C": "1"
+        },
+        "catalogue_ablation": {
+          "J_count": 125,
+          "usable_outputs": 164,
+          "N": 164,
+          "emitted": 164,
+          "terminal_no_output": 0,
+          "J": "125/164",
+          "C": "125/164"
+        }
+      },
+      "trace": "traces/humaneval-rf-adaptive-C.json",
+      "selection_branch_counts": {
+        "point_interval_minimax": 209,
+        "coefficient_differences": 0
+      }
+    },
+    {
+      "scope": "HumanEval",
+      "classifier": "logreg_l1",
+      "method": "coupled",
+      "target": "J",
+      "policy": "joint_width_per_suite",
+      "certificate": "joint_difference",
+      "emitted_attempts": {
+        "stock": 164,
+        "catalogue_ablation": 164
+      },
+      "scheduled_attempts_per_catalogue": 164,
+      "completed_no_output": {
+        "stock": 0,
+        "catalogue_ablation": 0
+      },
+      "source_contract_groups": 209,
+      "shared_groups": 119,
+      "free_reference_identity_groups": 0,
+      "first_certificate": {
+        "suite_queries": 1,
+        "lower": 1,
+        "upper": 45,
+        "units": "joint_count_difference",
+        "decision": "left_strict",
+        "defined_all": true
+      },
+      "complete_operational_scores": {
+        "stock": {
+          "J_count": 159,
+          "usable_outputs": 159,
+          "N": 164,
+          "emitted": 164,
+          "terminal_no_output": 0,
+          "J": "159/164",
+          "C": "1"
+        },
+        "catalogue_ablation": {
+          "J_count": 119,
+          "usable_outputs": 164,
+          "N": 164,
+          "emitted": 164,
+          "terminal_no_output": 0,
+          "J": "119/164",
+          "C": "119/164"
+        }
+      },
+      "trace": "traces/humaneval-logreg_l1-coupled-J.json"
+    },
+    {
+      "scope": "HumanEval",
+      "classifier": "logreg_l1",
+      "method": "coupled",
+      "target": "C",
+      "policy": "conditional_differences_first",
+      "certificate": "paired_ratio_envelope_with_separate_fallback",
+      "emitted_attempts": {
+        "stock": 164,
+        "catalogue_ablation": 164
+      },
+      "scheduled_attempts_per_catalogue": 164,
+      "completed_no_output": {
+        "stock": 0,
+        "catalogue_ablation": 0
+      },
+      "source_contract_groups": 209,
+      "shared_groups": 119,
+      "free_reference_identity_groups": 0,
+      "first_certificate": {
+        "suite_queries": 46,
+        "route": "paired_ratio_envelope",
+        "defined_all": true,
+        "anchors": {
+          "left": {
+            "lower": "1",
+            "upper": "45",
+            "endpoints": [
+              {
+                "q": "1",
+                "lower_numerator": 1,
+                "upper_numerator": 45,
+                "denominator": 1
+              }
+            ],
+            "different_unknown_groups": 44,
+            "relation_on_relaxation": "left_strict"
+          },
+          "right": {
+            "lower": "53/40",
+            "upper": "1079/24",
+            "endpoints": [
+              {
+                "q": "0",
+                "lower_numerator": 40,
+                "upper_numerator": 40,
+                "denominator": 1
+              },
+              {
+                "q": "119/120",
+                "lower_numerator": 159,
+                "upper_numerator": 5395,
+                "denominator": 120
+              }
+            ],
+            "different_unknown_groups": 44,
+            "relation_on_relaxation": "left_strict"
+          }
+        },
+        "decision": "left_strict",
+        "anchor": "left",
+        "decision_source": "paired_ratio_envelope"
+      },
+      "complete_operational_scores": {
+        "stock": {
+          "J_count": 159,
+          "usable_outputs": 159,
+          "N": 164,
+          "emitted": 164,
+          "terminal_no_output": 0,
+          "J": "159/164",
+          "C": "1"
+        },
+        "catalogue_ablation": {
+          "J_count": 119,
+          "usable_outputs": 164,
+          "N": 164,
+          "emitted": 164,
+          "terminal_no_output": 0,
+          "J": "119/164",
+          "C": "119/164"
+        }
+      },
+      "trace": "traces/humaneval-logreg_l1-coupled-C.json"
+    },
+    {
+      "scope": "HumanEval",
+      "classifier": "logreg_l1",
+      "method": "independent",
+      "target": "J",
+      "policy": "independent_joint_width",
+      "certificate": "joint_difference",
+      "emitted_attempts": {
+        "stock": 164,
+        "catalogue_ablation": 164
+      },
+      "scheduled_attempts_per_catalogue": 164,
+      "completed_no_output": {
+        "stock": 0,
+        "catalogue_ablation": 0
+      },
+      "source_contract_groups": 209,
+      "shared_groups": 119,
+      "free_reference_identity_groups": 0,
+      "first_certificate": {
+        "suite_queries": 120,
+        "lower": 1,
+        "upper": 45,
+        "units": "joint_count_difference",
+        "decision": "left_strict",
+        "defined_all": true
+      },
+      "complete_operational_scores": {
+        "stock": {
+          "J_count": 159,
+          "usable_outputs": 159,
+          "N": 164,
+          "emitted": 164,
+          "terminal_no_output": 0,
+          "J": "159/164",
+          "C": "1"
+        },
+        "catalogue_ablation": {
+          "J_count": 119,
+          "usable_outputs": 164,
+          "N": 164,
+          "emitted": 164,
+          "terminal_no_output": 0,
+          "J": "119/164",
+          "C": "119/164"
+        }
+      },
+      "trace": "traces/humaneval-logreg_l1-independent-J.json"
+    },
+    {
+      "scope": "HumanEval",
+      "classifier": "logreg_l1",
+      "method": "independent",
+      "target": "C",
+      "policy": "independent_conditional_minimax_width",
+      "certificate": "separate_conditional_intervals",
+      "emitted_attempts": {
+        "stock": 164,
+        "catalogue_ablation": 164
+      },
+      "scheduled_attempts_per_catalogue": 164,
+      "completed_no_output": {
+        "stock": 0,
+        "catalogue_ablation": 0
+      },
+      "source_contract_groups": 209,
+      "shared_groups": 119,
+      "free_reference_identity_groups": 0,
+      "first_certificate": {
+        "suite_queries": 2,
+        "lower": "1/120",
+        "upper": "1",
+        "units": "conditional_rate_difference",
+        "decision": "left_strict",
+        "defined_all": true
+      },
+      "complete_operational_scores": {
+        "stock": {
+          "J_count": 159,
+          "usable_outputs": 159,
+          "N": 164,
+          "emitted": 164,
+          "terminal_no_output": 0,
+          "J": "159/164",
+          "C": "1"
+        },
+        "catalogue_ablation": {
+          "J_count": 119,
+          "usable_outputs": 164,
+          "N": 164,
+          "emitted": 164,
+          "terminal_no_output": 0,
+          "J": "119/164",
+          "C": "119/164"
+        }
+      },
+      "trace": "traces/humaneval-logreg_l1-independent-C.json"
+    },
+    {
+      "scope": "HumanEval",
+      "classifier": "logreg_l1",
+      "method": "adaptive",
+      "target": "C",
+      "policy": "point_interval_adaptive",
+      "certificate": "paired_ratio_envelope_with_separate_fallback",
+      "emitted_attempts": {
+        "stock": 164,
+        "catalogue_ablation": 164
+      },
+      "scheduled_attempts_per_catalogue": 164,
+      "completed_no_output": {
+        "stock": 0,
+        "catalogue_ablation": 0
+      },
+      "source_contract_groups": 209,
+      "shared_groups": 119,
+      "free_reference_identity_groups": 0,
+      "first_certificate": {
+        "suite_queries": 2,
+        "route": "paired_ratio_envelope",
+        "defined_all": true,
+        "anchors": {
+          "left": {
+            "lower": "1",
+            "upper": "45",
+            "endpoints": [
+              {
+                "q": "1",
+                "lower_numerator": 1,
+                "upper_numerator": 45,
+                "denominator": 1
+              }
+            ],
+            "different_unknown_groups": 88,
+            "relation_on_relaxation": "left_strict"
+          },
+          "right": {
+            "lower": "1",
+            "upper": "45",
+            "endpoints": [
+              {
+                "q": "0",
+                "lower_numerator": 1,
+                "upper_numerator": 45,
+                "denominator": 1
+              },
+              {
+                "q": "119/120",
+                "lower_numerator": 120,
+                "upper_numerator": 5400,
+                "denominator": 120
+              }
+            ],
+            "different_unknown_groups": 88,
+            "relation_on_relaxation": "left_strict"
+          }
+        },
+        "decision": "left_strict",
+        "anchor": "left",
+        "decision_source": "paired_ratio_envelope"
+      },
+      "complete_operational_scores": {
+        "stock": {
+          "J_count": 159,
+          "usable_outputs": 159,
+          "N": 164,
+          "emitted": 164,
+          "terminal_no_output": 0,
+          "J": "159/164",
+          "C": "1"
+        },
+        "catalogue_ablation": {
+          "J_count": 119,
+          "usable_outputs": 164,
+          "N": 164,
+          "emitted": 164,
+          "terminal_no_output": 0,
+          "J": "119/164",
+          "C": "119/164"
+        }
+      },
+      "trace": "traces/humaneval-logreg_l1-adaptive-C.json",
+      "selection_branch_counts": {
+        "point_interval_minimax": 209,
+        "coefficient_differences": 0
+      }
+    },
+    {
+      "scope": "HumanEval",
+      "classifier": "logreg_l2",
+      "method": "coupled",
+      "target": "J",
+      "policy": "joint_width_per_suite",
+      "certificate": "joint_difference",
+      "emitted_attempts": {
+        "stock": 164,
+        "catalogue_ablation": 164
+      },
+      "scheduled_attempts_per_catalogue": 164,
+      "completed_no_output": {
+        "stock": 0,
+        "catalogue_ablation": 0
+      },
+      "source_contract_groups": 209,
+      "shared_groups": 119,
+      "free_reference_identity_groups": 0,
+      "first_certificate": {
+        "suite_queries": 1,
+        "lower": 1,
+        "upper": 45,
+        "units": "joint_count_difference",
+        "decision": "left_strict",
+        "defined_all": true
+      },
+      "complete_operational_scores": {
+        "stock": {
+          "J_count": 159,
+          "usable_outputs": 159,
+          "N": 164,
+          "emitted": 164,
+          "terminal_no_output": 0,
+          "J": "159/164",
+          "C": "1"
+        },
+        "catalogue_ablation": {
+          "J_count": 119,
+          "usable_outputs": 164,
+          "N": 164,
+          "emitted": 164,
+          "terminal_no_output": 0,
+          "J": "119/164",
+          "C": "119/164"
+        }
+      },
+      "trace": "traces/humaneval-logreg_l2-coupled-J.json"
+    },
+    {
+      "scope": "HumanEval",
+      "classifier": "logreg_l2",
+      "method": "coupled",
+      "target": "C",
+      "policy": "conditional_differences_first",
+      "certificate": "paired_ratio_envelope_with_separate_fallback",
+      "emitted_attempts": {
+        "stock": 164,
+        "catalogue_ablation": 164
+      },
+      "scheduled_attempts_per_catalogue": 164,
+      "completed_no_output": {
+        "stock": 0,
+        "catalogue_ablation": 0
+      },
+      "source_contract_groups": 209,
+      "shared_groups": 119,
+      "free_reference_identity_groups": 0,
+      "first_certificate": {
+        "suite_queries": 46,
+        "route": "paired_ratio_envelope",
+        "defined_all": true,
+        "anchors": {
+          "left": {
+            "lower": "1",
+            "upper": "45",
+            "endpoints": [
+              {
+                "q": "1",
+                "lower_numerator": 1,
+                "upper_numerator": 45,
+                "denominator": 1
+              }
+            ],
+            "different_unknown_groups": 44,
+            "relation_on_relaxation": "left_strict"
+          },
+          "right": {
+            "lower": "53/40",
+            "upper": "1079/24",
+            "endpoints": [
+              {
+                "q": "0",
+                "lower_numerator": 40,
+                "upper_numerator": 40,
+                "denominator": 1
+              },
+              {
+                "q": "119/120",
+                "lower_numerator": 159,
+                "upper_numerator": 5395,
+                "denominator": 120
+              }
+            ],
+            "different_unknown_groups": 44,
+            "relation_on_relaxation": "left_strict"
+          }
+        },
+        "decision": "left_strict",
+        "anchor": "left",
+        "decision_source": "paired_ratio_envelope"
+      },
+      "complete_operational_scores": {
+        "stock": {
+          "J_count": 159,
+          "usable_outputs": 159,
+          "N": 164,
+          "emitted": 164,
+          "terminal_no_output": 0,
+          "J": "159/164",
+          "C": "1"
+        },
+        "catalogue_ablation": {
+          "J_count": 119,
+          "usable_outputs": 164,
+          "N": 164,
+          "emitted": 164,
+          "terminal_no_output": 0,
+          "J": "119/164",
+          "C": "119/164"
+        }
+      },
+      "trace": "traces/humaneval-logreg_l2-coupled-C.json"
+    },
+    {
+      "scope": "HumanEval",
+      "classifier": "logreg_l2",
+      "method": "independent",
+      "target": "J",
+      "policy": "independent_joint_width",
+      "certificate": "joint_difference",
+      "emitted_attempts": {
+        "stock": 164,
+        "catalogue_ablation": 164
+      },
+      "scheduled_attempts_per_catalogue": 164,
+      "completed_no_output": {
+        "stock": 0,
+        "catalogue_ablation": 0
+      },
+      "source_contract_groups": 209,
+      "shared_groups": 119,
+      "free_reference_identity_groups": 0,
+      "first_certificate": {
+        "suite_queries": 120,
+        "lower": 1,
+        "upper": 45,
+        "units": "joint_count_difference",
+        "decision": "left_strict",
+        "defined_all": true
+      },
+      "complete_operational_scores": {
+        "stock": {
+          "J_count": 159,
+          "usable_outputs": 159,
+          "N": 164,
+          "emitted": 164,
+          "terminal_no_output": 0,
+          "J": "159/164",
+          "C": "1"
+        },
+        "catalogue_ablation": {
+          "J_count": 119,
+          "usable_outputs": 164,
+          "N": 164,
+          "emitted": 164,
+          "terminal_no_output": 0,
+          "J": "119/164",
+          "C": "119/164"
+        }
+      },
+      "trace": "traces/humaneval-logreg_l2-independent-J.json"
+    },
+    {
+      "scope": "HumanEval",
+      "classifier": "logreg_l2",
+      "method": "independent",
+      "target": "C",
+      "policy": "independent_conditional_minimax_width",
+      "certificate": "separate_conditional_intervals",
+      "emitted_attempts": {
+        "stock": 164,
+        "catalogue_ablation": 164
+      },
+      "scheduled_attempts_per_catalogue": 164,
+      "completed_no_output": {
+        "stock": 0,
+        "catalogue_ablation": 0
+      },
+      "source_contract_groups": 209,
+      "shared_groups": 119,
+      "free_reference_identity_groups": 0,
+      "first_certificate": {
+        "suite_queries": 2,
+        "lower": "1/120",
+        "upper": "1",
+        "units": "conditional_rate_difference",
+        "decision": "left_strict",
+        "defined_all": true
+      },
+      "complete_operational_scores": {
+        "stock": {
+          "J_count": 159,
+          "usable_outputs": 159,
+          "N": 164,
+          "emitted": 164,
+          "terminal_no_output": 0,
+          "J": "159/164",
+          "C": "1"
+        },
+        "catalogue_ablation": {
+          "J_count": 119,
+          "usable_outputs": 164,
+          "N": 164,
+          "emitted": 164,
+          "terminal_no_output": 0,
+          "J": "119/164",
+          "C": "119/164"
+        }
+      },
+      "trace": "traces/humaneval-logreg_l2-independent-C.json"
+    },
+    {
+      "scope": "HumanEval",
+      "classifier": "logreg_l2",
+      "method": "adaptive",
+      "target": "C",
+      "policy": "point_interval_adaptive",
+      "certificate": "paired_ratio_envelope_with_separate_fallback",
+      "emitted_attempts": {
+        "stock": 164,
+        "catalogue_ablation": 164
+      },
+      "scheduled_attempts_per_catalogue": 164,
+      "completed_no_output": {
+        "stock": 0,
+        "catalogue_ablation": 0
+      },
+      "source_contract_groups": 209,
+      "shared_groups": 119,
+      "free_reference_identity_groups": 0,
+      "first_certificate": {
+        "suite_queries": 2,
+        "route": "paired_ratio_envelope",
+        "defined_all": true,
+        "anchors": {
+          "left": {
+            "lower": "1",
+            "upper": "45",
+            "endpoints": [
+              {
+                "q": "1",
+                "lower_numerator": 1,
+                "upper_numerator": 45,
+                "denominator": 1
+              }
+            ],
+            "different_unknown_groups": 88,
+            "relation_on_relaxation": "left_strict"
+          },
+          "right": {
+            "lower": "1",
+            "upper": "45",
+            "endpoints": [
+              {
+                "q": "0",
+                "lower_numerator": 1,
+                "upper_numerator": 45,
+                "denominator": 1
+              },
+              {
+                "q": "119/120",
+                "lower_numerator": 120,
+                "upper_numerator": 5400,
+                "denominator": 120
+              }
+            ],
+            "different_unknown_groups": 88,
+            "relation_on_relaxation": "left_strict"
+          }
+        },
+        "decision": "left_strict",
+        "anchor": "left",
+        "decision_source": "paired_ratio_envelope"
+      },
+      "complete_operational_scores": {
+        "stock": {
+          "J_count": 159,
+          "usable_outputs": 159,
+          "N": 164,
+          "emitted": 164,
+          "terminal_no_output": 0,
+          "J": "159/164",
+          "C": "1"
+        },
+        "catalogue_ablation": {
+          "J_count": 119,
+          "usable_outputs": 164,
+          "N": 164,
+          "emitted": 164,
+          "terminal_no_output": 0,
+          "J": "119/164",
+          "C": "119/164"
+        }
+      },
+      "trace": "traces/humaneval-logreg_l2-adaptive-C.json",
+      "selection_branch_counts": {
+        "point_interval_minimax": 209,
+        "coefficient_differences": 0
+      }
+    },
+    {
+      "scope": "MBPP",
+      "classifier": "rf",
+      "method": "coupled",
+      "target": "J",
+      "policy": "joint_width_per_suite",
+      "certificate": "joint_difference",
+      "emitted_attempts": {
+        "stock": 425,
+        "catalogue_ablation": 425
+      },
+      "scheduled_attempts_per_catalogue": 427,
+      "completed_no_output": {
+        "stock": 2,
+        "catalogue_ablation": 2
+      },
+      "source_contract_groups": 530,
+      "shared_groups": 320,
+      "free_reference_identity_groups": 0,
+      "first_certificate": {
+        "suite_queries": 16,
+        "lower": 1,
+        "upper": 101,
+        "units": "joint_count_difference",
+        "decision": "left_strict",
+        "defined_all": true
+      },
+      "complete_operational_scores": {
+        "stock": {
+          "J_count": 415,
+          "usable_outputs": 415,
+          "N": 427,
+          "emitted": 425,
+          "terminal_no_output": 2,
+          "J": "415/427",
+          "C": "1"
+        },
+        "catalogue_ablation": {
+          "J_count": 331,
+          "usable_outputs": 425,
+          "N": 427,
+          "emitted": 425,
+          "terminal_no_output": 2,
+          "J": "331/427",
+          "C": "331/425"
+        }
+      },
+      "trace": "traces/mbpp-rf-coupled-J.json"
+    },
+    {
+      "scope": "MBPP",
+      "classifier": "rf",
+      "method": "coupled",
+      "target": "C",
+      "policy": "conditional_differences_first",
+      "certificate": "paired_ratio_envelope_with_separate_fallback",
+      "emitted_attempts": {
+        "stock": 425,
+        "catalogue_ablation": 425
+      },
+      "scheduled_attempts_per_catalogue": 427,
+      "completed_no_output": {
+        "stock": 2,
+        "catalogue_ablation": 2
+      },
+      "source_contract_groups": 530,
+      "shared_groups": 320,
+      "free_reference_identity_groups": 0,
+      "first_certificate": {
+        "suite_queries": 117,
+        "route": "paired_ratio_envelope",
+        "defined_all": true,
+        "anchors": {
+          "left": {
+            "lower": "1",
+            "upper": "94",
+            "endpoints": [
+              {
+                "q": "1",
+                "lower_numerator": 1,
+                "upper_numerator": 94,
+                "denominator": 1
+              }
+            ],
+            "different_unknown_groups": 93,
+            "relation_on_relaxation": "left_strict"
+          },
+          "right": {
+            "lower": "5/4",
+            "upper": "15599/166",
+            "endpoints": [
+              {
+                "q": "11/105",
+                "lower_numerator": 7907,
+                "upper_numerator": 8930,
+                "denominator": 105
+              },
+              {
+                "q": "331/332",
+                "lower_numerator": 415,
+                "upper_numerator": 31198,
+                "denominator": 332
+              }
+            ],
+            "different_unknown_groups": 93,
+            "relation_on_relaxation": "left_strict"
+          }
+        },
+        "decision": "left_strict",
+        "anchor": "left",
+        "decision_source": "paired_ratio_envelope"
+      },
+      "complete_operational_scores": {
+        "stock": {
+          "J_count": 415,
+          "usable_outputs": 415,
+          "N": 427,
+          "emitted": 425,
+          "terminal_no_output": 2,
+          "J": "415/427",
+          "C": "1"
+        },
+        "catalogue_ablation": {
+          "J_count": 331,
+          "usable_outputs": 425,
+          "N": 427,
+          "emitted": 425,
+          "terminal_no_output": 2,
+          "J": "331/427",
+          "C": "331/425"
+        }
+      },
+      "trace": "traces/mbpp-rf-coupled-C.json"
+    },
+    {
+      "scope": "MBPP",
+      "classifier": "rf",
+      "method": "independent",
+      "target": "J",
+      "policy": "independent_joint_width",
+      "certificate": "joint_difference",
+      "emitted_attempts": {
+        "stock": 425,
+        "catalogue_ablation": 425
+      },
+      "scheduled_attempts_per_catalogue": 427,
+      "completed_no_output": {
+        "stock": 2,
+        "catalogue_ablation": 2
+      },
+      "source_contract_groups": 530,
+      "shared_groups": 320,
+      "free_reference_identity_groups": 0,
+      "first_certificate": {
+        "suite_queries": 336,
+        "lower": 1,
+        "upper": 101,
+        "units": "joint_count_difference",
+        "decision": "left_strict",
+        "defined_all": true
+      },
+      "complete_operational_scores": {
+        "stock": {
+          "J_count": 415,
+          "usable_outputs": 415,
+          "N": 427,
+          "emitted": 425,
+          "terminal_no_output": 2,
+          "J": "415/427",
+          "C": "1"
+        },
+        "catalogue_ablation": {
+          "J_count": 331,
+          "usable_outputs": 425,
+          "N": 427,
+          "emitted": 425,
+          "terminal_no_output": 2,
+          "J": "331/427",
+          "C": "331/425"
+        }
+      },
+      "trace": "traces/mbpp-rf-independent-J.json"
+    },
+    {
+      "scope": "MBPP",
+      "classifier": "rf",
+      "method": "independent",
+      "target": "C",
+      "policy": "independent_conditional_minimax_width",
+      "certificate": "separate_conditional_intervals",
+      "emitted_attempts": {
+        "stock": 425,
+        "catalogue_ablation": 425
+      },
+      "scheduled_attempts_per_catalogue": 427,
+      "completed_no_output": {
+        "stock": 2,
+        "catalogue_ablation": 2
+      },
+      "source_contract_groups": 530,
+      "shared_groups": 320,
+      "free_reference_identity_groups": 0,
+      "first_certificate": {
+        "suite_queries": 2,
+        "lower": "1/332",
+        "upper": "94/95",
+        "units": "conditional_rate_difference",
+        "decision": "left_strict",
+        "defined_all": true
+      },
+      "complete_operational_scores": {
+        "stock": {
+          "J_count": 415,
+          "usable_outputs": 415,
+          "N": 427,
+          "emitted": 425,
+          "terminal_no_output": 2,
+          "J": "415/427",
+          "C": "1"
+        },
+        "catalogue_ablation": {
+          "J_count": 331,
+          "usable_outputs": 425,
+          "N": 427,
+          "emitted": 425,
+          "terminal_no_output": 2,
+          "J": "331/427",
+          "C": "331/425"
+        }
+      },
+      "trace": "traces/mbpp-rf-independent-C.json"
+    },
+    {
+      "scope": "MBPP",
+      "classifier": "rf",
+      "method": "adaptive",
+      "target": "C",
+      "policy": "point_interval_adaptive",
+      "certificate": "paired_ratio_envelope_with_separate_fallback",
+      "emitted_attempts": {
+        "stock": 425,
+        "catalogue_ablation": 425
+      },
+      "scheduled_attempts_per_catalogue": 427,
+      "completed_no_output": {
+        "stock": 2,
+        "catalogue_ablation": 2
+      },
+      "source_contract_groups": 530,
+      "shared_groups": 320,
+      "free_reference_identity_groups": 0,
+      "first_certificate": {
+        "suite_queries": 2,
+        "route": "paired_ratio_envelope",
+        "defined_all": true,
+        "anchors": {
+          "left": {
+            "lower": "1",
+            "upper": "94",
+            "endpoints": [
+              {
+                "q": "1",
+                "lower_numerator": 1,
+                "upper_numerator": 94,
+                "denominator": 1
+              }
+            ],
+            "different_unknown_groups": 209,
+            "relation_on_relaxation": "left_strict"
+          },
+          "right": {
+            "lower": "-1033/95",
+            "upper": "9964/95",
+            "endpoints": [
+              {
+                "q": "1/95",
+                "lower_numerator": -1033,
+                "upper_numerator": 9964,
+                "denominator": 95
+              },
+              {
+                "q": "331/332",
+                "lower_numerator": 320,
+                "upper_numerator": 31219,
+                "denominator": 332
+              }
+            ],
+            "different_unknown_groups": 209,
+            "relation_on_relaxation": "unresolved"
+          }
+        },
+        "decision": "left_strict",
+        "anchor": "left",
+        "decision_source": "paired_ratio_envelope"
+      },
+      "complete_operational_scores": {
+        "stock": {
+          "J_count": 415,
+          "usable_outputs": 415,
+          "N": 427,
+          "emitted": 425,
+          "terminal_no_output": 2,
+          "J": "415/427",
+          "C": "1"
+        },
+        "catalogue_ablation": {
+          "J_count": 331,
+          "usable_outputs": 425,
+          "N": 427,
+          "emitted": 425,
+          "terminal_no_output": 2,
+          "J": "331/427",
+          "C": "331/425"
+        }
+      },
+      "trace": "traces/mbpp-rf-adaptive-C.json",
+      "selection_branch_counts": {
+        "point_interval_minimax": 530,
+        "coefficient_differences": 0
+      }
+    },
+    {
+      "scope": "MBPP",
+      "classifier": "logreg_l1",
+      "method": "coupled",
+      "target": "J",
+      "policy": "joint_width_per_suite",
+      "certificate": "joint_difference",
+      "emitted_attempts": {
+        "stock": 425,
+        "catalogue_ablation": 425
+      },
+      "scheduled_attempts_per_catalogue": 427,
+      "completed_no_output": {
+        "stock": 2,
+        "catalogue_ablation": 2
+      },
+      "source_contract_groups": 530,
+      "shared_groups": 320,
+      "free_reference_identity_groups": 0,
+      "first_certificate": {
+        "suite_queries": 1,
+        "lower": 1,
+        "upper": 105,
+        "units": "joint_count_difference",
+        "decision": "left_strict",
+        "defined_all": true
+      },
+      "complete_operational_scores": {
+        "stock": {
+          "J_count": 415,
+          "usable_outputs": 415,
+          "N": 427,
+          "emitted": 425,
+          "terminal_no_output": 2,
+          "J": "415/427",
+          "C": "1"
+        },
+        "catalogue_ablation": {
+          "J_count": 320,
+          "usable_outputs": 425,
+          "N": 427,
+          "emitted": 425,
+          "terminal_no_output": 2,
+          "J": "320/427",
+          "C": "64/85"
+        }
+      },
+      "trace": "traces/mbpp-logreg_l1-coupled-J.json"
+    },
+    {
+      "scope": "MBPP",
+      "classifier": "logreg_l1",
+      "method": "coupled",
+      "target": "C",
+      "policy": "conditional_differences_first",
+      "certificate": "paired_ratio_envelope_with_separate_fallback",
+      "emitted_attempts": {
+        "stock": 425,
+        "catalogue_ablation": 425
+      },
+      "scheduled_attempts_per_catalogue": 427,
+      "completed_no_output": {
+        "stock": 2,
+        "catalogue_ablation": 2
+      },
+      "source_contract_groups": 530,
+      "shared_groups": 320,
+      "free_reference_identity_groups": 0,
+      "first_certificate": {
+        "suite_queries": 106,
+        "route": "paired_ratio_envelope",
+        "defined_all": true,
+        "anchors": {
+          "left": {
+            "lower": "1",
+            "upper": "105",
+            "endpoints": [
+              {
+                "q": "1",
+                "lower_numerator": 1,
+                "upper_numerator": 105,
+                "denominator": 1
+              }
+            ],
+            "different_unknown_groups": 104,
+            "relation_on_relaxation": "left_strict"
+          },
+          "right": {
+            "lower": "415/321",
+            "upper": "33695/321",
+            "endpoints": [
+              {
+                "q": "0",
+                "lower_numerator": 95,
+                "upper_numerator": 95,
+                "denominator": 1
+              },
+              {
+                "q": "320/321",
+                "lower_numerator": 415,
+                "upper_numerator": 33695,
+                "denominator": 321
+              }
+            ],
+            "different_unknown_groups": 104,
+            "relation_on_relaxation": "left_strict"
+          }
+        },
+        "decision": "left_strict",
+        "anchor": "left",
+        "decision_source": "paired_ratio_envelope"
+      },
+      "complete_operational_scores": {
+        "stock": {
+          "J_count": 415,
+          "usable_outputs": 415,
+          "N": 427,
+          "emitted": 425,
+          "terminal_no_output": 2,
+          "J": "415/427",
+          "C": "1"
+        },
+        "catalogue_ablation": {
+          "J_count": 320,
+          "usable_outputs": 425,
+          "N": 427,
+          "emitted": 425,
+          "terminal_no_output": 2,
+          "J": "320/427",
+          "C": "64/85"
+        }
+      },
+      "trace": "traces/mbpp-logreg_l1-coupled-C.json"
+    },
+    {
+      "scope": "MBPP",
+      "classifier": "logreg_l1",
+      "method": "independent",
+      "target": "J",
+      "policy": "independent_joint_width",
+      "certificate": "joint_difference",
+      "emitted_attempts": {
+        "stock": 425,
+        "catalogue_ablation": 425
+      },
+      "scheduled_attempts_per_catalogue": 427,
+      "completed_no_output": {
+        "stock": 2,
+        "catalogue_ablation": 2
+      },
+      "source_contract_groups": 530,
+      "shared_groups": 320,
+      "free_reference_identity_groups": 0,
+      "first_certificate": {
+        "suite_queries": 321,
+        "lower": 1,
+        "upper": 105,
+        "units": "joint_count_difference",
+        "decision": "left_strict",
+        "defined_all": true
+      },
+      "complete_operational_scores": {
+        "stock": {
+          "J_count": 415,
+          "usable_outputs": 415,
+          "N": 427,
+          "emitted": 425,
+          "terminal_no_output": 2,
+          "J": "415/427",
+          "C": "1"
+        },
+        "catalogue_ablation": {
+          "J_count": 320,
+          "usable_outputs": 425,
+          "N": 427,
+          "emitted": 425,
+          "terminal_no_output": 2,
+          "J": "320/427",
+          "C": "64/85"
+        }
+      },
+      "trace": "traces/mbpp-logreg_l1-independent-J.json"
+    },
+    {
+      "scope": "MBPP",
+      "classifier": "logreg_l1",
+      "method": "independent",
+      "target": "C",
+      "policy": "independent_conditional_minimax_width",
+      "certificate": "separate_conditional_intervals",
+      "emitted_attempts": {
+        "stock": 425,
+        "catalogue_ablation": 425
+      },
+      "scheduled_attempts_per_catalogue": 427,
+      "completed_no_output": {
+        "stock": 2,
+        "catalogue_ablation": 2
+      },
+      "source_contract_groups": 530,
+      "shared_groups": 320,
+      "free_reference_identity_groups": 0,
+      "first_certificate": {
+        "suite_queries": 2,
+        "lower": "1/321",
+        "upper": "105/106",
+        "units": "conditional_rate_difference",
+        "decision": "left_strict",
+        "defined_all": true
+      },
+      "complete_operational_scores": {
+        "stock": {
+          "J_count": 415,
+          "usable_outputs": 415,
+          "N": 427,
+          "emitted": 425,
+          "terminal_no_output": 2,
+          "J": "415/427",
+          "C": "1"
+        },
+        "catalogue_ablation": {
+          "J_count": 320,
+          "usable_outputs": 425,
+          "N": 427,
+          "emitted": 425,
+          "terminal_no_output": 2,
+          "J": "320/427",
+          "C": "64/85"
+        }
+      },
+      "trace": "traces/mbpp-logreg_l1-independent-C.json"
+    },
+    {
+      "scope": "MBPP",
+      "classifier": "logreg_l1",
+      "method": "adaptive",
+      "target": "C",
+      "policy": "point_interval_adaptive",
+      "certificate": "paired_ratio_envelope_with_separate_fallback",
+      "emitted_attempts": {
+        "stock": 425,
+        "catalogue_ablation": 425
+      },
+      "scheduled_attempts_per_catalogue": 427,
+      "completed_no_output": {
+        "stock": 2,
+        "catalogue_ablation": 2
+      },
+      "source_contract_groups": 530,
+      "shared_groups": 320,
+      "free_reference_identity_groups": 0,
+      "first_certificate": {
+        "suite_queries": 2,
+        "route": "paired_ratio_envelope",
+        "defined_all": true,
+        "anchors": {
+          "left": {
+            "lower": "1",
+            "upper": "105",
+            "endpoints": [
+              {
+                "q": "1",
+                "lower_numerator": 1,
+                "upper_numerator": 105,
+                "denominator": 1
+              }
+            ],
+            "different_unknown_groups": 209,
+            "relation_on_relaxation": "left_strict"
+          },
+          "right": {
+            "lower": "1/106",
+            "upper": "105",
+            "endpoints": [
+              {
+                "q": "1/106",
+                "lower_numerator": 1,
+                "upper_numerator": 11130,
+                "denominator": 106
+              },
+              {
+                "q": "320/321",
+                "lower_numerator": 320,
+                "upper_numerator": 33705,
+                "denominator": 321
+              }
+            ],
+            "different_unknown_groups": 209,
+            "relation_on_relaxation": "left_strict"
+          }
+        },
+        "decision": "left_strict",
+        "anchor": "left",
+        "decision_source": "paired_ratio_envelope"
+      },
+      "complete_operational_scores": {
+        "stock": {
+          "J_count": 415,
+          "usable_outputs": 415,
+          "N": 427,
+          "emitted": 425,
+          "terminal_no_output": 2,
+          "J": "415/427",
+          "C": "1"
+        },
+        "catalogue_ablation": {
+          "J_count": 320,
+          "usable_outputs": 425,
+          "N": 427,
+          "emitted": 425,
+          "terminal_no_output": 2,
+          "J": "320/427",
+          "C": "64/85"
+        }
+      },
+      "trace": "traces/mbpp-logreg_l1-adaptive-C.json",
+      "selection_branch_counts": {
+        "point_interval_minimax": 530,
+        "coefficient_differences": 0
+      }
+    },
+    {
+      "scope": "MBPP",
+      "classifier": "logreg_l2",
+      "method": "coupled",
+      "target": "J",
+      "policy": "joint_width_per_suite",
+      "certificate": "joint_difference",
+      "emitted_attempts": {
+        "stock": 425,
+        "catalogue_ablation": 425
+      },
+      "scheduled_attempts_per_catalogue": 427,
+      "completed_no_output": {
+        "stock": 2,
+        "catalogue_ablation": 2
+      },
+      "source_contract_groups": 530,
+      "shared_groups": 320,
+      "free_reference_identity_groups": 0,
+      "first_certificate": {
+        "suite_queries": 1,
+        "lower": 1,
+        "upper": 105,
+        "units": "joint_count_difference",
+        "decision": "left_strict",
+        "defined_all": true
+      },
+      "complete_operational_scores": {
+        "stock": {
+          "J_count": 415,
+          "usable_outputs": 415,
+          "N": 427,
+          "emitted": 425,
+          "terminal_no_output": 2,
+          "J": "415/427",
+          "C": "1"
+        },
+        "catalogue_ablation": {
+          "J_count": 320,
+          "usable_outputs": 425,
+          "N": 427,
+          "emitted": 425,
+          "terminal_no_output": 2,
+          "J": "320/427",
+          "C": "64/85"
+        }
+      },
+      "trace": "traces/mbpp-logreg_l2-coupled-J.json"
+    },
+    {
+      "scope": "MBPP",
+      "classifier": "logreg_l2",
+      "method": "coupled",
+      "target": "C",
+      "policy": "conditional_differences_first",
+      "certificate": "paired_ratio_envelope_with_separate_fallback",
+      "emitted_attempts": {
+        "stock": 425,
+        "catalogue_ablation": 425
+      },
+      "scheduled_attempts_per_catalogue": 427,
+      "completed_no_output": {
+        "stock": 2,
+        "catalogue_ablation": 2
+      },
+      "source_contract_groups": 530,
+      "shared_groups": 320,
+      "free_reference_identity_groups": 0,
+      "first_certificate": {
+        "suite_queries": 106,
+        "route": "paired_ratio_envelope",
+        "defined_all": true,
+        "anchors": {
+          "left": {
+            "lower": "1",
+            "upper": "105",
+            "endpoints": [
+              {
+                "q": "1",
+                "lower_numerator": 1,
+                "upper_numerator": 105,
+                "denominator": 1
+              }
+            ],
+            "different_unknown_groups": 104,
+            "relation_on_relaxation": "left_strict"
+          },
+          "right": {
+            "lower": "415/321",
+            "upper": "33695/321",
+            "endpoints": [
+              {
+                "q": "0",
+                "lower_numerator": 95,
+                "upper_numerator": 95,
+                "denominator": 1
+              },
+              {
+                "q": "320/321",
+                "lower_numerator": 415,
+                "upper_numerator": 33695,
+                "denominator": 321
+              }
+            ],
+            "different_unknown_groups": 104,
+            "relation_on_relaxation": "left_strict"
+          }
+        },
+        "decision": "left_strict",
+        "anchor": "left",
+        "decision_source": "paired_ratio_envelope"
+      },
+      "complete_operational_scores": {
+        "stock": {
+          "J_count": 415,
+          "usable_outputs": 415,
+          "N": 427,
+          "emitted": 425,
+          "terminal_no_output": 2,
+          "J": "415/427",
+          "C": "1"
+        },
+        "catalogue_ablation": {
+          "J_count": 320,
+          "usable_outputs": 425,
+          "N": 427,
+          "emitted": 425,
+          "terminal_no_output": 2,
+          "J": "320/427",
+          "C": "64/85"
+        }
+      },
+      "trace": "traces/mbpp-logreg_l2-coupled-C.json"
+    },
+    {
+      "scope": "MBPP",
+      "classifier": "logreg_l2",
+      "method": "independent",
+      "target": "J",
+      "policy": "independent_joint_width",
+      "certificate": "joint_difference",
+      "emitted_attempts": {
+        "stock": 425,
+        "catalogue_ablation": 425
+      },
+      "scheduled_attempts_per_catalogue": 427,
+      "completed_no_output": {
+        "stock": 2,
+        "catalogue_ablation": 2
+      },
+      "source_contract_groups": 530,
+      "shared_groups": 320,
+      "free_reference_identity_groups": 0,
+      "first_certificate": {
+        "suite_queries": 321,
+        "lower": 1,
+        "upper": 105,
+        "units": "joint_count_difference",
+        "decision": "left_strict",
+        "defined_all": true
+      },
+      "complete_operational_scores": {
+        "stock": {
+          "J_count": 415,
+          "usable_outputs": 415,
+          "N": 427,
+          "emitted": 425,
+          "terminal_no_output": 2,
+          "J": "415/427",
+          "C": "1"
+        },
+        "catalogue_ablation": {
+          "J_count": 320,
+          "usable_outputs": 425,
+          "N": 427,
+          "emitted": 425,
+          "terminal_no_output": 2,
+          "J": "320/427",
+          "C": "64/85"
+        }
+      },
+      "trace": "traces/mbpp-logreg_l2-independent-J.json"
+    },
+    {
+      "scope": "MBPP",
+      "classifier": "logreg_l2",
+      "method": "independent",
+      "target": "C",
+      "policy": "independent_conditional_minimax_width",
+      "certificate": "separate_conditional_intervals",
+      "emitted_attempts": {
+        "stock": 425,
+        "catalogue_ablation": 425
+      },
+      "scheduled_attempts_per_catalogue": 427,
+      "completed_no_output": {
+        "stock": 2,
+        "catalogue_ablation": 2
+      },
+      "source_contract_groups": 530,
+      "shared_groups": 320,
+      "free_reference_identity_groups": 0,
+      "first_certificate": {
+        "suite_queries": 2,
+        "lower": "1/321",
+        "upper": "105/106",
+        "units": "conditional_rate_difference",
+        "decision": "left_strict",
+        "defined_all": true
+      },
+      "complete_operational_scores": {
+        "stock": {
+          "J_count": 415,
+          "usable_outputs": 415,
+          "N": 427,
+          "emitted": 425,
+          "terminal_no_output": 2,
+          "J": "415/427",
+          "C": "1"
+        },
+        "catalogue_ablation": {
+          "J_count": 320,
+          "usable_outputs": 425,
+          "N": 427,
+          "emitted": 425,
+          "terminal_no_output": 2,
+          "J": "320/427",
+          "C": "64/85"
+        }
+      },
+      "trace": "traces/mbpp-logreg_l2-independent-C.json"
+    },
+    {
+      "scope": "MBPP",
+      "classifier": "logreg_l2",
+      "method": "adaptive",
+      "target": "C",
+      "policy": "point_interval_adaptive",
+      "certificate": "paired_ratio_envelope_with_separate_fallback",
+      "emitted_attempts": {
+        "stock": 425,
+        "catalogue_ablation": 425
+      },
+      "scheduled_attempts_per_catalogue": 427,
+      "completed_no_output": {
+        "stock": 2,
+        "catalogue_ablation": 2
+      },
+      "source_contract_groups": 530,
+      "shared_groups": 320,
+      "free_reference_identity_groups": 0,
+      "first_certificate": {
+        "suite_queries": 2,
+        "route": "paired_ratio_envelope",
+        "defined_all": true,
+        "anchors": {
+          "left": {
+            "lower": "1",
+            "upper": "105",
+            "endpoints": [
+              {
+                "q": "1",
+                "lower_numerator": 1,
+                "upper_numerator": 105,
+                "denominator": 1
+              }
+            ],
+            "different_unknown_groups": 209,
+            "relation_on_relaxation": "left_strict"
+          },
+          "right": {
+            "lower": "1/106",
+            "upper": "105",
+            "endpoints": [
+              {
+                "q": "1/106",
+                "lower_numerator": 1,
+                "upper_numerator": 11130,
+                "denominator": 106
+              },
+              {
+                "q": "320/321",
+                "lower_numerator": 320,
+                "upper_numerator": 33705,
+                "denominator": 321
+              }
+            ],
+            "different_unknown_groups": 209,
+            "relation_on_relaxation": "left_strict"
+          }
+        },
+        "decision": "left_strict",
+        "anchor": "left",
+        "decision_source": "paired_ratio_envelope"
+      },
+      "complete_operational_scores": {
+        "stock": {
+          "J_count": 415,
+          "usable_outputs": 415,
+          "N": 427,
+          "emitted": 425,
+          "terminal_no_output": 2,
+          "J": "415/427",
+          "C": "1"
+        },
+        "catalogue_ablation": {
+          "J_count": 320,
+          "usable_outputs": 425,
+          "N": 427,
+          "emitted": 425,
+          "terminal_no_output": 2,
+          "J": "320/427",
+          "C": "64/85"
+        }
+      },
+      "trace": "traces/mbpp-logreg_l2-adaptive-C.json",
+      "selection_branch_counts": {
+        "point_interval_minimax": 530,
+        "coefficient_differences": 0
+      }
+    },
+    {
+      "scope": "pooled",
+      "classifier": "rf",
+      "method": "coupled",
+      "target": "J",
+      "policy": "joint_width_per_suite",
+      "certificate": "joint_difference",
+      "emitted_attempts": {
+        "stock": 589,
+        "catalogue_ablation": 589
+      },
+      "scheduled_attempts_per_catalogue": 591,
+      "completed_no_output": {
+        "stock": 2,
+        "catalogue_ablation": 2
+      },
+      "source_contract_groups": 739,
+      "shared_groups": 439,
+      "free_reference_identity_groups": 0,
+      "first_certificate": {
+        "suite_queries": 22,
+        "lower": 1,
+        "upper": 146,
+        "units": "joint_count_difference",
+        "decision": "left_strict",
+        "defined_all": true
+      },
+      "complete_operational_scores": {
+        "stock": {
+          "J_count": 574,
+          "usable_outputs": 574,
+          "N": 591,
+          "emitted": 589,
+          "terminal_no_output": 2,
+          "J": "574/591",
+          "C": "1"
+        },
+        "catalogue_ablation": {
+          "J_count": 456,
+          "usable_outputs": 589,
+          "N": 591,
+          "emitted": 589,
+          "terminal_no_output": 2,
+          "J": "152/197",
+          "C": "24/31"
+        }
+      },
+      "trace": "traces/pooled-rf-coupled-J.json"
+    },
+    {
+      "scope": "pooled",
+      "classifier": "rf",
+      "method": "coupled",
+      "target": "C",
+      "policy": "conditional_differences_first",
+      "certificate": "paired_ratio_envelope_with_separate_fallback",
+      "emitted_attempts": {
+        "stock": 589,
+        "catalogue_ablation": 589
+      },
+      "scheduled_attempts_per_catalogue": 591,
+      "completed_no_output": {
+        "stock": 2,
+        "catalogue_ablation": 2
+      },
+      "source_contract_groups": 739,
+      "shared_groups": 439,
+      "free_reference_identity_groups": 0,
+      "first_certificate": {
+        "suite_queries": 168,
+        "route": "paired_ratio_envelope",
+        "defined_all": true,
+        "anchors": {
+          "left": {
+            "lower": "1",
+            "upper": "133",
+            "endpoints": [
+              {
+                "q": "1",
+                "lower_numerator": 1,
+                "upper_numerator": 133,
+                "denominator": 1
+              }
+            ],
+            "different_unknown_groups": 132,
+            "relation_on_relaxation": "left_strict"
+          },
+          "right": {
+            "lower": "574/457",
+            "upper": "60766/457",
+            "endpoints": [
+              {
+                "q": "17/150",
+                "lower_numerator": 15711,
+                "upper_numerator": 17955,
+                "denominator": 150
+              },
+              {
+                "q": "456/457",
+                "lower_numerator": 574,
+                "upper_numerator": 60766,
+                "denominator": 457
+              }
+            ],
+            "different_unknown_groups": 132,
+            "relation_on_relaxation": "left_strict"
+          }
+        },
+        "decision": "left_strict",
+        "anchor": "left",
+        "decision_source": "paired_ratio_envelope"
+      },
+      "complete_operational_scores": {
+        "stock": {
+          "J_count": 574,
+          "usable_outputs": 574,
+          "N": 591,
+          "emitted": 589,
+          "terminal_no_output": 2,
+          "J": "574/591",
+          "C": "1"
+        },
+        "catalogue_ablation": {
+          "J_count": 456,
+          "usable_outputs": 589,
+          "N": 591,
+          "emitted": 589,
+          "terminal_no_output": 2,
+          "J": "152/197",
+          "C": "24/31"
+        }
+      },
+      "trace": "traces/pooled-rf-coupled-C.json"
+    },
+    {
+      "scope": "pooled",
+      "classifier": "rf",
+      "method": "independent",
+      "target": "J",
+      "policy": "independent_joint_width",
+      "certificate": "joint_difference",
+      "emitted_attempts": {
+        "stock": 589,
+        "catalogue_ablation": 589
+      },
+      "scheduled_attempts_per_catalogue": 591,
+      "completed_no_output": {
+        "stock": 2,
+        "catalogue_ablation": 2
+      },
+      "source_contract_groups": 739,
+      "shared_groups": 439,
+      "free_reference_identity_groups": 0,
+      "first_certificate": {
+        "suite_queries": 461,
+        "lower": 1,
+        "upper": 146,
+        "units": "joint_count_difference",
+        "decision": "left_strict",
+        "defined_all": true
+      },
+      "complete_operational_scores": {
+        "stock": {
+          "J_count": 574,
+          "usable_outputs": 574,
+          "N": 591,
+          "emitted": 589,
+          "terminal_no_output": 2,
+          "J": "574/591",
+          "C": "1"
+        },
+        "catalogue_ablation": {
+          "J_count": 456,
+          "usable_outputs": 589,
+          "N": 591,
+          "emitted": 589,
+          "terminal_no_output": 2,
+          "J": "152/197",
+          "C": "24/31"
+        }
+      },
+      "trace": "traces/pooled-rf-independent-J.json"
+    },
+    {
+      "scope": "pooled",
+      "classifier": "rf",
+      "method": "independent",
+      "target": "C",
+      "policy": "independent_conditional_minimax_width",
+      "certificate": "separate_conditional_intervals",
+      "emitted_attempts": {
+        "stock": 589,
+        "catalogue_ablation": 589
+      },
+      "scheduled_attempts_per_catalogue": 591,
+      "completed_no_output": {
+        "stock": 2,
+        "catalogue_ablation": 2
+      },
+      "source_contract_groups": 739,
+      "shared_groups": 439,
+      "free_reference_identity_groups": 0,
+      "first_certificate": {
+        "suite_queries": 3,
+        "lower": "1/457",
+        "upper": "133/134",
+        "units": "conditional_rate_difference",
+        "decision": "left_strict",
+        "defined_all": true
+      },
+      "complete_operational_scores": {
+        "stock": {
+          "J_count": 574,
+          "usable_outputs": 574,
+          "N": 591,
+          "emitted": 589,
+          "terminal_no_output": 2,
+          "J": "574/591",
+          "C": "1"
+        },
+        "catalogue_ablation": {
+          "J_count": 456,
+          "usable_outputs": 589,
+          "N": 591,
+          "emitted": 589,
+          "terminal_no_output": 2,
+          "J": "152/197",
+          "C": "24/31"
+        }
+      },
+      "trace": "traces/pooled-rf-independent-C.json"
+    },
+    {
+      "scope": "pooled",
+      "classifier": "rf",
+      "method": "adaptive",
+      "target": "C",
+      "policy": "point_interval_adaptive",
+      "certificate": "paired_ratio_envelope_with_separate_fallback",
+      "emitted_attempts": {
+        "stock": 589,
+        "catalogue_ablation": 589
+      },
+      "scheduled_attempts_per_catalogue": 591,
+      "completed_no_output": {
+        "stock": 2,
+        "catalogue_ablation": 2
+      },
+      "source_contract_groups": 739,
+      "shared_groups": 439,
+      "free_reference_identity_groups": 0,
+      "first_certificate": {
+        "suite_queries": 3,
+        "route": "paired_ratio_envelope",
+        "defined_all": true,
+        "anchors": {
+          "left": {
+            "lower": "1",
+            "upper": "133",
+            "endpoints": [
+              {
+                "q": "1",
+                "lower_numerator": 1,
+                "upper_numerator": 133,
+                "denominator": 1
+              }
+            ],
+            "different_unknown_groups": 297,
+            "relation_on_relaxation": "left_strict"
+          },
+          "right": {
+            "lower": "-2127/134",
+            "upper": "9975/67",
+            "endpoints": [
+              {
+                "q": "1/134",
+                "lower_numerator": -2127,
+                "upper_numerator": 19950,
+                "denominator": 134
+              },
+              {
+                "q": "456/457",
+                "lower_numerator": 440,
+                "upper_numerator": 60797,
+                "denominator": 457
+              }
+            ],
+            "different_unknown_groups": 297,
+            "relation_on_relaxation": "unresolved"
+          }
+        },
+        "decision": "left_strict",
+        "anchor": "left",
+        "decision_source": "paired_ratio_envelope"
+      },
+      "complete_operational_scores": {
+        "stock": {
+          "J_count": 574,
+          "usable_outputs": 574,
+          "N": 591,
+          "emitted": 589,
+          "terminal_no_output": 2,
+          "J": "574/591",
+          "C": "1"
+        },
+        "catalogue_ablation": {
+          "J_count": 456,
+          "usable_outputs": 589,
+          "N": 591,
+          "emitted": 589,
+          "terminal_no_output": 2,
+          "J": "152/197",
+          "C": "24/31"
+        }
+      },
+      "trace": "traces/pooled-rf-adaptive-C.json",
+      "selection_branch_counts": {
+        "point_interval_minimax": 739,
+        "coefficient_differences": 0
+      }
+    },
+    {
+      "scope": "pooled",
+      "classifier": "logreg_l1",
+      "method": "coupled",
+      "target": "J",
+      "policy": "joint_width_per_suite",
+      "certificate": "joint_difference",
+      "emitted_attempts": {
+        "stock": 589,
+        "catalogue_ablation": 589
+      },
+      "scheduled_attempts_per_catalogue": 591,
+      "completed_no_output": {
+        "stock": 2,
+        "catalogue_ablation": 2
+      },
+      "source_contract_groups": 739,
+      "shared_groups": 439,
+      "free_reference_identity_groups": 0,
+      "first_certificate": {
+        "suite_queries": 1,
+        "lower": 1,
+        "upper": 150,
+        "units": "joint_count_difference",
+        "decision": "left_strict",
+        "defined_all": true
+      },
+      "complete_operational_scores": {
+        "stock": {
+          "J_count": 574,
+          "usable_outputs": 574,
+          "N": 591,
+          "emitted": 589,
+          "terminal_no_output": 2,
+          "J": "574/591",
+          "C": "1"
+        },
+        "catalogue_ablation": {
+          "J_count": 439,
+          "usable_outputs": 589,
+          "N": 591,
+          "emitted": 589,
+          "terminal_no_output": 2,
+          "J": "439/591",
+          "C": "439/589"
+        }
+      },
+      "trace": "traces/pooled-logreg_l1-coupled-J.json"
+    },
+    {
+      "scope": "pooled",
+      "classifier": "logreg_l1",
+      "method": "coupled",
+      "target": "C",
+      "policy": "conditional_differences_first",
+      "certificate": "paired_ratio_envelope_with_separate_fallback",
+      "emitted_attempts": {
+        "stock": 589,
+        "catalogue_ablation": 589
+      },
+      "scheduled_attempts_per_catalogue": 591,
+      "completed_no_output": {
+        "stock": 2,
+        "catalogue_ablation": 2
+      },
+      "source_contract_groups": 739,
+      "shared_groups": 439,
+      "free_reference_identity_groups": 0,
+      "first_certificate": {
+        "suite_queries": 151,
+        "route": "paired_ratio_envelope",
+        "defined_all": true,
+        "anchors": {
+          "left": {
+            "lower": "1",
+            "upper": "150",
+            "endpoints": [
+              {
+                "q": "1",
+                "lower_numerator": 1,
+                "upper_numerator": 150,
+                "denominator": 1
+              }
+            ],
+            "different_unknown_groups": 149,
+            "relation_on_relaxation": "left_strict"
+          },
+          "right": {
+            "lower": "287/220",
+            "upper": "13197/88",
+            "endpoints": [
+              {
+                "q": "0",
+                "lower_numerator": 135,
+                "upper_numerator": 135,
+                "denominator": 1
+              },
+              {
+                "q": "439/440",
+                "lower_numerator": 574,
+                "upper_numerator": 65985,
+                "denominator": 440
+              }
+            ],
+            "different_unknown_groups": 149,
+            "relation_on_relaxation": "left_strict"
+          }
+        },
+        "decision": "left_strict",
+        "anchor": "left",
+        "decision_source": "paired_ratio_envelope"
+      },
+      "complete_operational_scores": {
+        "stock": {
+          "J_count": 574,
+          "usable_outputs": 574,
+          "N": 591,
+          "emitted": 589,
+          "terminal_no_output": 2,
+          "J": "574/591",
+          "C": "1"
+        },
+        "catalogue_ablation": {
+          "J_count": 439,
+          "usable_outputs": 589,
+          "N": 591,
+          "emitted": 589,
+          "terminal_no_output": 2,
+          "J": "439/591",
+          "C": "439/589"
+        }
+      },
+      "trace": "traces/pooled-logreg_l1-coupled-C.json"
+    },
+    {
+      "scope": "pooled",
+      "classifier": "logreg_l1",
+      "method": "independent",
+      "target": "J",
+      "policy": "independent_joint_width",
+      "certificate": "joint_difference",
+      "emitted_attempts": {
+        "stock": 589,
+        "catalogue_ablation": 589
+      },
+      "scheduled_attempts_per_catalogue": 591,
+      "completed_no_output": {
+        "stock": 2,
+        "catalogue_ablation": 2
+      },
+      "source_contract_groups": 739,
+      "shared_groups": 439,
+      "free_reference_identity_groups": 0,
+      "first_certificate": {
+        "suite_queries": 440,
+        "lower": 1,
+        "upper": 150,
+        "units": "joint_count_difference",
+        "decision": "left_strict",
+        "defined_all": true
+      },
+      "complete_operational_scores": {
+        "stock": {
+          "J_count": 574,
+          "usable_outputs": 574,
+          "N": 591,
+          "emitted": 589,
+          "terminal_no_output": 2,
+          "J": "574/591",
+          "C": "1"
+        },
+        "catalogue_ablation": {
+          "J_count": 439,
+          "usable_outputs": 589,
+          "N": 591,
+          "emitted": 589,
+          "terminal_no_output": 2,
+          "J": "439/591",
+          "C": "439/589"
+        }
+      },
+      "trace": "traces/pooled-logreg_l1-independent-J.json"
+    },
+    {
+      "scope": "pooled",
+      "classifier": "logreg_l1",
+      "method": "independent",
+      "target": "C",
+      "policy": "independent_conditional_minimax_width",
+      "certificate": "separate_conditional_intervals",
+      "emitted_attempts": {
+        "stock": 589,
+        "catalogue_ablation": 589
+      },
+      "scheduled_attempts_per_catalogue": 591,
+      "completed_no_output": {
+        "stock": 2,
+        "catalogue_ablation": 2
+      },
+      "source_contract_groups": 739,
+      "shared_groups": 439,
+      "free_reference_identity_groups": 0,
+      "first_certificate": {
+        "suite_queries": 2,
+        "lower": "1/440",
+        "upper": "1",
+        "units": "conditional_rate_difference",
+        "decision": "left_strict",
+        "defined_all": true
+      },
+      "complete_operational_scores": {
+        "stock": {
+          "J_count": 574,
+          "usable_outputs": 574,
+          "N": 591,
+          "emitted": 589,
+          "terminal_no_output": 2,
+          "J": "574/591",
+          "C": "1"
+        },
+        "catalogue_ablation": {
+          "J_count": 439,
+          "usable_outputs": 589,
+          "N": 591,
+          "emitted": 589,
+          "terminal_no_output": 2,
+          "J": "439/591",
+          "C": "439/589"
+        }
+      },
+      "trace": "traces/pooled-logreg_l1-independent-C.json"
+    },
+    {
+      "scope": "pooled",
+      "classifier": "logreg_l1",
+      "method": "adaptive",
+      "target": "C",
+      "policy": "point_interval_adaptive",
+      "certificate": "paired_ratio_envelope_with_separate_fallback",
+      "emitted_attempts": {
+        "stock": 589,
+        "catalogue_ablation": 589
+      },
+      "scheduled_attempts_per_catalogue": 591,
+      "completed_no_output": {
+        "stock": 2,
+        "catalogue_ablation": 2
+      },
+      "source_contract_groups": 739,
+      "shared_groups": 439,
+      "free_reference_identity_groups": 0,
+      "first_certificate": {
+        "suite_queries": 2,
+        "route": "paired_ratio_envelope",
+        "defined_all": true,
+        "anchors": {
+          "left": {
+            "lower": "1",
+            "upper": "150",
+            "endpoints": [
+              {
+                "q": "1",
+                "lower_numerator": 1,
+                "upper_numerator": 150,
+                "denominator": 1
+              }
+            ],
+            "different_unknown_groups": 298,
+            "relation_on_relaxation": "left_strict"
+          },
+          "right": {
+            "lower": "1",
+            "upper": "150",
+            "endpoints": [
+              {
+                "q": "0",
+                "lower_numerator": 1,
+                "upper_numerator": 150,
+                "denominator": 1
+              },
+              {
+                "q": "439/440",
+                "lower_numerator": 440,
+                "upper_numerator": 66000,
+                "denominator": 440
+              }
+            ],
+            "different_unknown_groups": 298,
+            "relation_on_relaxation": "left_strict"
+          }
+        },
+        "decision": "left_strict",
+        "anchor": "left",
+        "decision_source": "paired_ratio_envelope"
+      },
+      "complete_operational_scores": {
+        "stock": {
+          "J_count": 574,
+          "usable_outputs": 574,
+          "N": 591,
+          "emitted": 589,
+          "terminal_no_output": 2,
+          "J": "574/591",
+          "C": "1"
+        },
+        "catalogue_ablation": {
+          "J_count": 439,
+          "usable_outputs": 589,
+          "N": 591,
+          "emitted": 589,
+          "terminal_no_output": 2,
+          "J": "439/591",
+          "C": "439/589"
+        }
+      },
+      "trace": "traces/pooled-logreg_l1-adaptive-C.json",
+      "selection_branch_counts": {
+        "point_interval_minimax": 739,
+        "coefficient_differences": 0
+      }
+    },
+    {
+      "scope": "pooled",
+      "classifier": "logreg_l2",
+      "method": "coupled",
+      "target": "J",
+      "policy": "joint_width_per_suite",
+      "certificate": "joint_difference",
+      "emitted_attempts": {
+        "stock": 589,
+        "catalogue_ablation": 589
+      },
+      "scheduled_attempts_per_catalogue": 591,
+      "completed_no_output": {
+        "stock": 2,
+        "catalogue_ablation": 2
+      },
+      "source_contract_groups": 739,
+      "shared_groups": 439,
+      "free_reference_identity_groups": 0,
+      "first_certificate": {
+        "suite_queries": 1,
+        "lower": 1,
+        "upper": 150,
+        "units": "joint_count_difference",
+        "decision": "left_strict",
+        "defined_all": true
+      },
+      "complete_operational_scores": {
+        "stock": {
+          "J_count": 574,
+          "usable_outputs": 574,
+          "N": 591,
+          "emitted": 589,
+          "terminal_no_output": 2,
+          "J": "574/591",
+          "C": "1"
+        },
+        "catalogue_ablation": {
+          "J_count": 439,
+          "usable_outputs": 589,
+          "N": 591,
+          "emitted": 589,
+          "terminal_no_output": 2,
+          "J": "439/591",
+          "C": "439/589"
+        }
+      },
+      "trace": "traces/pooled-logreg_l2-coupled-J.json"
+    },
+    {
+      "scope": "pooled",
+      "classifier": "logreg_l2",
+      "method": "coupled",
+      "target": "C",
+      "policy": "conditional_differences_first",
+      "certificate": "paired_ratio_envelope_with_separate_fallback",
+      "emitted_attempts": {
+        "stock": 589,
+        "catalogue_ablation": 589
+      },
+      "scheduled_attempts_per_catalogue": 591,
+      "completed_no_output": {
+        "stock": 2,
+        "catalogue_ablation": 2
+      },
+      "source_contract_groups": 739,
+      "shared_groups": 439,
+      "free_reference_identity_groups": 0,
+      "first_certificate": {
+        "suite_queries": 151,
+        "route": "paired_ratio_envelope",
+        "defined_all": true,
+        "anchors": {
+          "left": {
+            "lower": "1",
+            "upper": "150",
+            "endpoints": [
+              {
+                "q": "1",
+                "lower_numerator": 1,
+                "upper_numerator": 150,
+                "denominator": 1
+              }
+            ],
+            "different_unknown_groups": 149,
+            "relation_on_relaxation": "left_strict"
+          },
+          "right": {
+            "lower": "287/220",
+            "upper": "13197/88",
+            "endpoints": [
+              {
+                "q": "0",
+                "lower_numerator": 135,
+                "upper_numerator": 135,
+                "denominator": 1
+              },
+              {
+                "q": "439/440",
+                "lower_numerator": 574,
+                "upper_numerator": 65985,
+                "denominator": 440
+              }
+            ],
+            "different_unknown_groups": 149,
+            "relation_on_relaxation": "left_strict"
+          }
+        },
+        "decision": "left_strict",
+        "anchor": "left",
+        "decision_source": "paired_ratio_envelope"
+      },
+      "complete_operational_scores": {
+        "stock": {
+          "J_count": 574,
+          "usable_outputs": 574,
+          "N": 591,
+          "emitted": 589,
+          "terminal_no_output": 2,
+          "J": "574/591",
+          "C": "1"
+        },
+        "catalogue_ablation": {
+          "J_count": 439,
+          "usable_outputs": 589,
+          "N": 591,
+          "emitted": 589,
+          "terminal_no_output": 2,
+          "J": "439/591",
+          "C": "439/589"
+        }
+      },
+      "trace": "traces/pooled-logreg_l2-coupled-C.json"
+    },
+    {
+      "scope": "pooled",
+      "classifier": "logreg_l2",
+      "method": "independent",
+      "target": "J",
+      "policy": "independent_joint_width",
+      "certificate": "joint_difference",
+      "emitted_attempts": {
+        "stock": 589,
+        "catalogue_ablation": 589
+      },
+      "scheduled_attempts_per_catalogue": 591,
+      "completed_no_output": {
+        "stock": 2,
+        "catalogue_ablation": 2
+      },
+      "source_contract_groups": 739,
+      "shared_groups": 439,
+      "free_reference_identity_groups": 0,
+      "first_certificate": {
+        "suite_queries": 440,
+        "lower": 1,
+        "upper": 150,
+        "units": "joint_count_difference",
+        "decision": "left_strict",
+        "defined_all": true
+      },
+      "complete_operational_scores": {
+        "stock": {
+          "J_count": 574,
+          "usable_outputs": 574,
+          "N": 591,
+          "emitted": 589,
+          "terminal_no_output": 2,
+          "J": "574/591",
+          "C": "1"
+        },
+        "catalogue_ablation": {
+          "J_count": 439,
+          "usable_outputs": 589,
+          "N": 591,
+          "emitted": 589,
+          "terminal_no_output": 2,
+          "J": "439/591",
+          "C": "439/589"
+        }
+      },
+      "trace": "traces/pooled-logreg_l2-independent-J.json"
+    },
+    {
+      "scope": "pooled",
+      "classifier": "logreg_l2",
+      "method": "independent",
+      "target": "C",
+      "policy": "independent_conditional_minimax_width",
+      "certificate": "separate_conditional_intervals",
+      "emitted_attempts": {
+        "stock": 589,
+        "catalogue_ablation": 589
+      },
+      "scheduled_attempts_per_catalogue": 591,
+      "completed_no_output": {
+        "stock": 2,
+        "catalogue_ablation": 2
+      },
+      "source_contract_groups": 739,
+      "shared_groups": 439,
+      "free_reference_identity_groups": 0,
+      "first_certificate": {
+        "suite_queries": 2,
+        "lower": "1/440",
+        "upper": "1",
+        "units": "conditional_rate_difference",
+        "decision": "left_strict",
+        "defined_all": true
+      },
+      "complete_operational_scores": {
+        "stock": {
+          "J_count": 574,
+          "usable_outputs": 574,
+          "N": 591,
+          "emitted": 589,
+          "terminal_no_output": 2,
+          "J": "574/591",
+          "C": "1"
+        },
+        "catalogue_ablation": {
+          "J_count": 439,
+          "usable_outputs": 589,
+          "N": 591,
+          "emitted": 589,
+          "terminal_no_output": 2,
+          "J": "439/591",
+          "C": "439/589"
+        }
+      },
+      "trace": "traces/pooled-logreg_l2-independent-C.json"
+    },
+    {
+      "scope": "pooled",
+      "classifier": "logreg_l2",
+      "method": "adaptive",
+      "target": "C",
+      "policy": "point_interval_adaptive",
+      "certificate": "paired_ratio_envelope_with_separate_fallback",
+      "emitted_attempts": {
+        "stock": 589,
+        "catalogue_ablation": 589
+      },
+      "scheduled_attempts_per_catalogue": 591,
+      "completed_no_output": {
+        "stock": 2,
+        "catalogue_ablation": 2
+      },
+      "source_contract_groups": 739,
+      "shared_groups": 439,
+      "free_reference_identity_groups": 0,
+      "first_certificate": {
+        "suite_queries": 2,
+        "route": "paired_ratio_envelope",
+        "defined_all": true,
+        "anchors": {
+          "left": {
+            "lower": "1",
+            "upper": "150",
+            "endpoints": [
+              {
+                "q": "1",
+                "lower_numerator": 1,
+                "upper_numerator": 150,
+                "denominator": 1
+              }
+            ],
+            "different_unknown_groups": 298,
+            "relation_on_relaxation": "left_strict"
+          },
+          "right": {
+            "lower": "1",
+            "upper": "150",
+            "endpoints": [
+              {
+                "q": "0",
+                "lower_numerator": 1,
+                "upper_numerator": 150,
+                "denominator": 1
+              },
+              {
+                "q": "439/440",
+                "lower_numerator": 440,
+                "upper_numerator": 66000,
+                "denominator": 440
+              }
+            ],
+            "different_unknown_groups": 298,
+            "relation_on_relaxation": "left_strict"
+          }
+        },
+        "decision": "left_strict",
+        "anchor": "left",
+        "decision_source": "paired_ratio_envelope"
+      },
+      "complete_operational_scores": {
+        "stock": {
+          "J_count": 574,
+          "usable_outputs": 574,
+          "N": 591,
+          "emitted": 589,
+          "terminal_no_output": 2,
+          "J": "574/591",
+          "C": "1"
+        },
+        "catalogue_ablation": {
+          "J_count": 439,
+          "usable_outputs": 589,
+          "N": 591,
+          "emitted": 589,
+          "terminal_no_output": 2,
+          "J": "439/591",
+          "C": "439/589"
+        }
+      },
+      "trace": "traces/pooled-logreg_l2-adaptive-C.json",
+      "selection_branch_counts": {
+        "point_interval_minimax": 739,
+        "coefficient_differences": 0
+      }
+    }
+  ],
+  "independent_prefix_checks": 21349,
+  "independent_selection_checks": 21349,
+  "candidate_executions_by_this_analysis": 0,
+  "scope": "Retrospective disclosure of fresh measured emitted-program outcomes over the complete scheduled population. Completed no-output attempts have known zero operational yield and remain in N; they do not create artificial behavioral labels. Shared source groups also bind observer and execution environment.",
+  "source": {
+    "state": "external-studies/sew_natural/analysis/natural_analysis.py",
+    "policies": "external-studies/sew_natural/comparison_costs/policies.py",
+    "receiver": "external-studies/sew_natural/comparison_costs/independent.py",
+    "conditional_certificate": "paired_conditional.py",
+    "conditional_certificate_receiver": "verify_native_conditional.py:independent_paired"
+  }
+}

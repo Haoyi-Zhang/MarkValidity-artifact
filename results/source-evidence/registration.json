@@ -1,0 +1,40 @@
+{
+  "configurations": 76032,
+  "input_sha256": {
+    "environment.json": "8d13d93f44248e62f0e217ef2e4f95c8eabca8465af359020b4e75360077c1b0",
+    "raw/robustness.csv": "f42970e2dd73f1fb790a5697be032e835ba1686df97bf80843fbe46427ca368c",
+    "raw/semantic_audit.csv": "941ee8f5aec0832103b9fd91c5c5ba7bd97a6c2f85d88695e7cb1bbb1e19e80e"
+  },
+  "javascript_contract": "exact-source closure of all 504 retained bounded execution observations, including carrier-only controls; original directly linked keys remain 216",
+  "missing_validity": "unrestricted binary completion after observing source detection",
+  "mixture_weights": {
+    "balanced": {
+      "mixed": 0.2,
+      "normalize": 0.2,
+      "random_flip": 0.2,
+      "rename": 0.2,
+      "strip": 0.2
+    },
+    "rename-heavy": {
+      "mixed": 0.0,
+      "normalize": 0.0,
+      "random_flip": 0.24,
+      "rename": 0.54,
+      "strip": 0.22
+    },
+    "structure-heavy": {
+      "mixed": 0.0,
+      "normalize": 0.54,
+      "random_flip": 0.24,
+      "rename": 0.0,
+      "strip": 0.22
+    }
+  },
+  "python_contract": "restricted inert-prefix erasure, frozen receiver task, builtin input values, result-only observation",
+  "python_erasure_configurations": 38016,
+  "quantity": "joint yield E[validity AND source detection], not conditional detection",
+  "selection": "entire frozen factorial grid, selected before source-level outcomes",
+  "task_program_executions": 0,
+  "upstream_system_executions": 0,
+  "wall_limit_seconds": 480
+}

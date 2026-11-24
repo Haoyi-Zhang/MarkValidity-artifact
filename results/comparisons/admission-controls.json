@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "scope": "Owned lifecycle/record controls, not empirical candidates.",
+  "checked": 13,
+  "controls": [
+    "HE complete support",
+    "HE truncated interrupted observation",
+    "HE explicit unavailable",
+    "MBPP retained failure before truncated tail",
+    "MBPP resource-only unavailable",
+    "HE invalid completed JSON",
+    "HE passing status with error",
+    "HE MemoryError false contradiction",
+    "MBPP duplicate assertion",
+    "MBPP invalid complete JSON",
+    "MBPP ENOMEM false contradiction",
+    "MBPP rejected evidence",
+    "MBPP terminal counter contradiction"
+  ],
+  "admission_sha256": "cbb5ca5d82ca92b50764430555f3eeb2df895db736e3a1f4854509a4d84c6009"
+}

@@ -1,0 +1,41 @@
+{
+  "status": "evidence_rejected",
+  "returncode": 0,
+  "stderr": "",
+  "events": [
+    {
+      "error": null,
+      "event": "source_compile",
+      "status": "passed"
+    },
+    {
+      "assertion_reached": false,
+      "elapsed_seconds": 0.001596,
+      "error": {
+        "message": "invalid syntax (<mbpp-original-test-imports>, line 1)",
+        "phase": "compile_test_imports",
+        "traceback": "Traceback (most recent call last):\n  File \"/workspace/scratch/3d557313f143/qa/round3/mbpp-v2/scripts/native_runner.py\", line 134, in main\n    import_code = compile(imports, '<mbpp-original-test-imports>', 'exec')\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<mbpp-original-test-imports>\", line 1\n    import (\n           ^\nSyntaxError: invalid syntax\n",
+        "type": "builtins.SyntaxError"
+      },
+      "event": "test_result",
+      "status": "evidence_rejected",
+      "stderr": "",
+      "stdout": "",
+      "test_index": 0
+    },
+    {
+      "completed_tests": 1,
+      "elapsed_seconds": 0.00374,
+      "event": "complete",
+      "evidence_schema": "markvalidity-mbpp-original-assertions-v2",
+      "failed_tests": 0,
+      "passed_tests": 0,
+      "rejected_tests": 1,
+      "scheduled_tests": 1,
+      "status": "evidence_rejected",
+      "unavailable_tests": 0
+    }
+  ],
+  "raw_stdout": null,
+  "elapsed_seconds": 0.032064
+}

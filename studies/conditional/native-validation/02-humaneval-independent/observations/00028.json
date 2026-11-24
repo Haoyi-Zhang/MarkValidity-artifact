@@ -1,0 +1,13 @@
+{
+  "stdout": "{\"elapsed_seconds\":0.006277,\"error\":null,\"observations\":[{\"after\":{\"args\":[\"tuple\",[[\"list\",[]],[\"str\",\"john\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"list\",[]],[\"str\",\"john\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"list\",[]]]},{\"after\":{\"args\":[\"tuple\",[[\"list\",[[\"str\",\"xxx\"],[\"str\",\"asd\"],[\"str\",\"xxy\"],[\"str\",\"john doe\"],[\"str\",\"xxxAAA\"],[\"str\",\"xxx\"]]],[\"str\",\"xxx\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"list\",[[\"str\",\"xxx\"],[\"str\",\"asd\"],[\"str\",\"xxy\"],[\"str\",\"john doe\"],[\"str\",\"xxxAAA\"],[\"str\",\"xxx\"]]],[\"str\",\"xxx\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"list\",[[\"str\",\"xxx\"],[\"str\",\"xxxAAA\"],[\"str\",\"xxx\"]]]]},{\"after\":{\"args\":[\"tuple\",[[\"list\",[[\"str\",\"xxx\"],[\"str\",\"asd\"],[\"str\",\"aaaxxy\"],[\"str\",\"john doe\"],[\"str\",\"xxxAAA\"],[\"str\",\"xxx\"]]],[\"str\",\"xx\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"list\",[[\"str\",\"xxx\"],[\"str\",\"asd\"],[\"str\",\"aaaxxy\"],[\"str\",\"john doe\"],[\"str\",\"xxxAAA\"],[\"str\",\"xxx\"]]],[\"str\",\"xx\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"list\",[[\"str\",\"xxx\"],[\"str\",\"aaaxxy\"],[\"str\",\"xxxAAA\"],[\"str\",\"xxx\"]]]]},{\"after\":{\"args\":[\"tuple\",[[\"list\",[[\"str\",\"grunt\"],[\"str\",\"trumpet\"],[\"str\",\"prune\"],[\"str\",\"gruesome\"]]],[\"str\",\"run\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"list\",[[\"str\",\"grunt\"],[\"str\",\"trumpet\"],[\"str\",\"prune\"],[\"str\",\"gruesome\"]]],[\"str\",\"run\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"list\",[[\"str\",\"grunt\"],[\"str\",\"prune\"]]]]}],\"status\":\"passed\",\"stderr\":\"\",\"stdout\":\"\"}\n",
+  "stderr": "",
+  "returncode": 0,
+  "interruption": null,
+  "child_user_cpu_seconds": 0.03477799999999931,
+  "child_system_cpu_seconds": 0.003390999999999922,
+  "group": "08b3179f35e0eefca423f5a9498c0cce2f2b54803a20d338651ebd16afd265df",
+  "received_label": true,
+  "source_sha256": "11602ca653a15079f836978eba22e7d4fda7ad12cd010f54e64d344bd8e41b78",
+  "contract_sha256": "15780a079899258c3c784521e5ed739cb1d52bd27e3071ce2f4e76e24bfdb6fd",
+  "worker_seconds": 0.04214865500398446
+}

@@ -1,0 +1,132 @@
+{
+  "status": "pass",
+  "runs_received": 24,
+  "candidate_suite_records_received": 10938,
+  "prefixes_received": 10962,
+  "distinct_arithmetic_histories": 1827,
+  "historical_candidate_observations_read": 0,
+  "source_snapshots_received": 10,
+  "scope": "Every fresh stdout, source/contract binding, public policy choice, prefix certificate and first stopping point independently received. Reference Fraction models and per-group calculations do not import producer certificate or state implementations.",
+  "runs": [
+    {
+      "directory": "01-humaneval-paired",
+      "queries_received": 154,
+      "first_certificate": "left_strict"
+    },
+    {
+      "directory": "02-humaneval-independent",
+      "queries_received": 532,
+      "first_certificate": "left_strict"
+    },
+    {
+      "directory": "03-mbpp-paired",
+      "queries_received": 1,
+      "first_certificate": "right_strict"
+    },
+    {
+      "directory": "04-mbpp-independent",
+      "queries_received": 1136,
+      "first_certificate": "right_strict"
+    },
+    {
+      "directory": "05-mbpp-independent",
+      "queries_received": 1136,
+      "first_certificate": "right_strict"
+    },
+    {
+      "directory": "06-mbpp-paired",
+      "queries_received": 1,
+      "first_certificate": "right_strict"
+    },
+    {
+      "directory": "07-humaneval-independent",
+      "queries_received": 532,
+      "first_certificate": "left_strict"
+    },
+    {
+      "directory": "08-humaneval-paired",
+      "queries_received": 154,
+      "first_certificate": "left_strict"
+    },
+    {
+      "directory": "09-humaneval-paired",
+      "queries_received": 154,
+      "first_certificate": "left_strict"
+    },
+    {
+      "directory": "10-humaneval-independent",
+      "queries_received": 532,
+      "first_certificate": "left_strict"
+    },
+    {
+      "directory": "11-mbpp-paired",
+      "queries_received": 1,
+      "first_certificate": "right_strict"
+    },
+    {
+      "directory": "12-mbpp-independent",
+      "queries_received": 1136,
+      "first_certificate": "right_strict"
+    },
+    {
+      "directory": "13-mbpp-independent",
+      "queries_received": 1136,
+      "first_certificate": "right_strict"
+    },
+    {
+      "directory": "14-mbpp-paired",
+      "queries_received": 1,
+      "first_certificate": "right_strict"
+    },
+    {
+      "directory": "15-humaneval-independent",
+      "queries_received": 532,
+      "first_certificate": "left_strict"
+    },
+    {
+      "directory": "16-humaneval-paired",
+      "queries_received": 154,
+      "first_certificate": "left_strict"
+    },
+    {
+      "directory": "17-humaneval-paired",
+      "queries_received": 154,
+      "first_certificate": "left_strict"
+    },
+    {
+      "directory": "18-humaneval-independent",
+      "queries_received": 532,
+      "first_certificate": "left_strict"
+    },
+    {
+      "directory": "19-mbpp-paired",
+      "queries_received": 1,
+      "first_certificate": "right_strict"
+    },
+    {
+      "directory": "20-mbpp-independent",
+      "queries_received": 1136,
+      "first_certificate": "right_strict"
+    },
+    {
+      "directory": "21-mbpp-independent",
+      "queries_received": 1136,
+      "first_certificate": "right_strict"
+    },
+    {
+      "directory": "22-mbpp-paired",
+      "queries_received": 1,
+      "first_certificate": "right_strict"
+    },
+    {
+      "directory": "23-humaneval-independent",
+      "queries_received": 532,
+      "first_certificate": "left_strict"
+    },
+    {
+      "directory": "24-humaneval-paired",
+      "queries_received": 154,
+      "first_certificate": "left_strict"
+    }
+  ]
+}

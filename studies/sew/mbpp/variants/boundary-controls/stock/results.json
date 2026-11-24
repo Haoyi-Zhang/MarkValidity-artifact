@@ -1,0 +1,392 @@
+{
+  "scope": "Nineteen manually specified lexical-boundary controls, not benchmark samples or a global S4 soundness claim.",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "vendor": "/workspace/scratch/3d557313f143/work/MarkValidity_TOSEM/artifact/external-studies/sew_aliasing/vendor",
+  "s4_match_sha256": "bdff747b15fa1018b4950df72df0fa2067a34cfdf1b6d9e2b407ec101de0ee90",
+  "s4_guard_sha256": "60511b667f563194b136d85be716e4ab79fd37d651de97af7949d3e20f2a0dfa",
+  "s4_emitter_sha256": "2d7278fa8525b6e6a27a23ce6ce8e79a594da75543ac1745782c86f785eb82e4",
+  "cases": 19,
+  "preserved": 9,
+  "records": [
+    {
+      "case": "identifier",
+      "reference_sha256": "28edf2f1587e5e00f98ed8fdeee0e163561a080f4e158f846db00337773a5b74",
+      "candidate_sha256": "d409e20e0c63cb0234f1a574b90f6066b89d7f16b8dc9b5f1d4a538156aac572",
+      "site_span": [
+        61,
+        67
+      ],
+      "reference": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "(1, 2)"
+      },
+      "candidate": {
+        "status": "runtime_error",
+        "type": "NameError",
+        "message": "name 'returnx' is not defined"
+      },
+      "preserved": false
+    },
+    {
+      "case": "integer",
+      "reference_sha256": "95e7dd8b47d359ed62969360e9b51596b0b50f2ded892b8633534a247c7a37ba",
+      "candidate_sha256": "26cb48dbd5db418a6cd41a5d7ba34cef3d7e3ff3be44f9c6d0f348ff0929a225",
+      "site_span": [
+        61,
+        67
+      ],
+      "reference": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "(1, 2)"
+      },
+      "candidate": {
+        "status": "runtime_error",
+        "type": "NameError",
+        "message": "name 'return1' is not defined"
+      },
+      "preserved": false
+    },
+    {
+      "case": "negative",
+      "reference_sha256": "e389e36f6acf986d686f7bc068fb3fd5d7267d429068fd95a693d643b024c296",
+      "candidate_sha256": "b25a384966c86f3057f7a1dd0a419f9d4d3a19b259dc761d8ba97a25db2ea9e6",
+      "site_span": [
+        61,
+        68
+      ],
+      "reference": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "(-1, 2)"
+      },
+      "candidate": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "(-1, 2)"
+      },
+      "preserved": true
+    },
+    {
+      "case": "decimal",
+      "reference_sha256": "d8285a47dc12a478c1feb3fc5a42bd666de6a442f1b9c6d40f50fcac8fb6103e",
+      "candidate_sha256": "67847c44060543253ca29ed27da401f6561a13ea642139f831bd870ffad2ec33",
+      "site_span": [
+        61,
+        68
+      ],
+      "reference": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "(0.5, 2)"
+      },
+      "candidate": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "(0.5, 2)"
+      },
+      "preserved": true
+    },
+    {
+      "case": "string",
+      "reference_sha256": "25435ea87138cc5c6fcde9853c0aeab8f29b06bff115b83c29840a8b8f53a04f",
+      "candidate_sha256": "e4066c11772f9ab908ff5b71b7eca1f15f9be922a07891930fa53be5b9ccf916",
+      "site_span": [
+        61,
+        69
+      ],
+      "reference": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "('x', 2)"
+      },
+      "candidate": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "('x', 2)"
+      },
+      "preserved": true
+    },
+    {
+      "case": "format_string",
+      "reference_sha256": "10827faf76b1e2496055913b9ab33e797f947764ea4531eec1cda8bd2417464c",
+      "candidate_sha256": "b82268007e7dc9ede5957287d3471f061c6b8e8a08e01414af5f0860826b96e2",
+      "site_span": [
+        61,
+        72
+      ],
+      "reference": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "('1', 2)"
+      },
+      "candidate": {
+        "status": "compile_error",
+        "type": "SyntaxError",
+        "message": "invalid syntax (<s4-boundary-control>, line 6)"
+      },
+      "preserved": false
+    },
+    {
+      "case": "raw_string",
+      "reference_sha256": "c0375b1023d64753d825f82422e9412d9bd9f47d8be60c0fa9e08fbb00ffd908",
+      "candidate_sha256": "495928f0256f5c5509e6bd70ed80a5da2c3a1f45e57ffa0d4ceb13bdf32871a0",
+      "site_span": [
+        61,
+        70
+      ],
+      "reference": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "('x', 2)"
+      },
+      "candidate": {
+        "status": "compile_error",
+        "type": "SyntaxError",
+        "message": "invalid syntax (<s4-boundary-control>, line 6)"
+      },
+      "preserved": false
+    },
+    {
+      "case": "byte_string",
+      "reference_sha256": "54fb21dd4527cf72d280e4a58a697bdb4810be30df84147ff161980e87dc7efd",
+      "candidate_sha256": "5258651955a006ef70839619f01a1822105a167ce7eaf51f1cd85b416a52ed2f",
+      "site_span": [
+        61,
+        70
+      ],
+      "reference": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "(b'x', 2)"
+      },
+      "candidate": {
+        "status": "compile_error",
+        "type": "SyntaxError",
+        "message": "invalid syntax (<s4-boundary-control>, line 6)"
+      },
+      "preserved": false
+    },
+    {
+      "case": "unicode_identifier",
+      "reference_sha256": "aba20f89b5211fd00137108624cd6f913b02d3396902aa940853e7d2526612da",
+      "candidate_sha256": "f400bb1916c2717a694cb3a2c599cdac91995eb71bf11c06633e19620b143414",
+      "site_span": [
+        61,
+        68
+      ],
+      "reference": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "(3, 2)"
+      },
+      "candidate": {
+        "status": "runtime_error",
+        "type": "NameError",
+        "message": "name 'returnλ' is not defined"
+      },
+      "preserved": false
+    },
+    {
+      "case": "existing_space",
+      "reference_sha256": "16569035d20c27c8ddd43002ba3e46cec9d0486f5fa266c362fc0bbe513f4f92",
+      "candidate_sha256": "e05b4c03a7c1248f9e57f10a9e678222b53b597aa735edcae3aa89d3ebde6f25",
+      "site_span": [
+        62,
+        68
+      ],
+      "reference": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "(1, 2)"
+      },
+      "candidate": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "(1, 2)"
+      },
+      "preserved": true
+    },
+    {
+      "case": "existing_tab",
+      "reference_sha256": "d08929f95802b3000d940e48936ba7d33e7b3a0b702933e21312039ed4594aef",
+      "candidate_sha256": "b083c856a669759d6a5e01b96a0c1b985818c4f3ac75c820930b0e4d863b6dd3",
+      "site_span": [
+        62,
+        68
+      ],
+      "reference": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "(1, 2)"
+      },
+      "candidate": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "(1, 2)"
+      },
+      "preserved": true
+    },
+    {
+      "case": "inner_space",
+      "reference_sha256": "4acdb9fdd3b1d35918f9d425c3df747a4c69a0876ed9635e0a543c4dc9991ad9",
+      "candidate_sha256": "e05b4c03a7c1248f9e57f10a9e678222b53b597aa735edcae3aa89d3ebde6f25",
+      "site_span": [
+        61,
+        68
+      ],
+      "reference": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "(1, 2)"
+      },
+      "candidate": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "(1, 2)"
+      },
+      "preserved": true
+    },
+    {
+      "case": "parenthesized_first",
+      "reference_sha256": "21a09af440f037a35994d21327e5e6de5e229c829f81182877fcef47ac7be6a2",
+      "candidate_sha256": "4f212701637da770f3fdfedd24dc04d0c04d51c0f904f867c00293b4c8d15ff9",
+      "site_span": [
+        61,
+        73
+      ],
+      "reference": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "(2, 2)"
+      },
+      "candidate": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "(2, 2)"
+      },
+      "preserved": true
+    },
+    {
+      "case": "list_first",
+      "reference_sha256": "bb0f99485bf2ea3104d6f240ad1e1045f11face1b773717559c0880e24baea0e",
+      "candidate_sha256": "f3a40abf769972fc18e0ca7141866cf4d0df5f8c91802dc98e394d546b5c0dd2",
+      "site_span": [
+        61,
+        69
+      ],
+      "reference": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "([1], 2)"
+      },
+      "candidate": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "([1], 2)"
+      },
+      "preserved": true
+    },
+    {
+      "case": "dict_first",
+      "reference_sha256": "753032e385e169463eb6e02f56728b3ba50a6a33e568aafca759aaaad2afdcc7",
+      "candidate_sha256": "f004a43149c166c331a307f50803bfd930b53360ea58d8e8a1ab8370870f2ed0",
+      "site_span": [
+        61,
+        74
+      ],
+      "reference": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "({'x': 1}, 2)"
+      },
+      "candidate": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "({'x': 1}, 2)"
+      },
+      "preserved": true
+    },
+    {
+      "case": "none_first",
+      "reference_sha256": "64d67c78cbcfe1c0954504649fbeacc78b1695122b8a99d99d0db99ada940144",
+      "candidate_sha256": "ef55e6119b5dfe4d5321c4b5899387ef6b086245db1296fcffae251949381d0f",
+      "site_span": [
+        61,
+        70
+      ],
+      "reference": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "(None, 2)"
+      },
+      "candidate": {
+        "status": "runtime_error",
+        "type": "NameError",
+        "message": "name 'returnNone' is not defined"
+      },
+      "preserved": false
+    },
+    {
+      "case": "true_first",
+      "reference_sha256": "4344d964977a5e7306e364ee1af5e5cf109e75a68dcaad30d0dea142ab6a6836",
+      "candidate_sha256": "b5f5e868277a8f5d0eaf3388801f195adbfaf5875ff28c561f021e5bab65ac74",
+      "site_span": [
+        61,
+        70
+      ],
+      "reference": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "(True, 2)"
+      },
+      "candidate": {
+        "status": "runtime_error",
+        "type": "NameError",
+        "message": "name 'returnTrue' is not defined"
+      },
+      "preserved": false
+    },
+    {
+      "case": "underscore",
+      "reference_sha256": "9c084f1af73fb0b29d3bcec90540c6204ac2f67509c69ee1a386d5ef8120d1f7",
+      "candidate_sha256": "574c9eff2ee549dbb7be2db7748b56f7f2483cb67a43169b6e351b24c9b2c557",
+      "site_span": [
+        61,
+        68
+      ],
+      "reference": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "(4, 2)"
+      },
+      "candidate": {
+        "status": "runtime_error",
+        "type": "NameError",
+        "message": "name 'return_x' is not defined"
+      },
+      "preserved": false
+    },
+    {
+      "case": "exponent",
+      "reference_sha256": "60dff4e70352dfcf5f3268b9480235b8e57ea14b278b933e057e1759d28d6821",
+      "candidate_sha256": "02492d56140a7a19d2fb14f809f7978150fed244b9b0738f3c4fefa282aa2d90",
+      "site_span": [
+        61,
+        69
+      ],
+      "reference": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "(100.0, 2)"
+      },
+      "candidate": {
+        "status": "runtime_error",
+        "type": "NameError",
+        "message": "name 'return1e2' is not defined"
+      },
+      "preserved": false
+    }
+  ]
+}

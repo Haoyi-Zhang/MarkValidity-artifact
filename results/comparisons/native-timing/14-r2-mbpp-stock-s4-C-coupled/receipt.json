@@ -1,0 +1,120 @@
+{
+  "repeat": 2,
+  "dataset": "mbpp_sanitized",
+  "scope": "mbpp",
+  "left": "stock",
+  "right": "s4",
+  "target": "C",
+  "method": "coupled",
+  "policy": "conditional_differences_first",
+  "ordinal": 14,
+  "directory": "14-r2-mbpp-stock-s4-C-coupled",
+  "denominator": 1281,
+  "initial_reference_groups": 20,
+  "candidate_suite_queries": 6,
+  "decision": "right_strict",
+  "final_bounds": {
+    "lower": -1287,
+    "upper": -57,
+    "units": "conditional_cross_product_count_margin",
+    "decision": "right_strict",
+    "defined_all": true
+  },
+  "phase_seconds": {
+    "register_seconds": 0.011389944003894925,
+    "select_seconds": 1.5251993318088353e-05,
+    "bounds_seconds": 0.0003148620089632459,
+    "worker_seconds": 0.2074183529985021,
+    "receive_seconds": 0.0014654810074716806,
+    "record_seconds": 0.0027864469957421534
+  },
+  "audit_total_seconds": 0.224372491997201,
+  "unallocated_loop_seconds": 0.0009821529893088154,
+  "queries": [
+    {
+      "step": 1,
+      "group": "0d08449da73913c95dbce2b680548b9901210b9164c44c970f7c9ad9b94f0bb6",
+      "received_label": true,
+      "evidence_file": "14-r2-mbpp-stock-s4-C-coupled/observations/00001-0d08449da73913c95dbce2b680548b9901210b9164c44c970f7c9ad9b94f0bb6.json",
+      "evidence_sha256": "b53fad6677eaa3e032822eae351395e8b36612aad835ce40107e0eeed95f5eb7"
+    },
+    {
+      "step": 2,
+      "group": "57353c4804c21ba8a8c06af2c6dc581d78e7b52ceb48aeff1d161d7b7c65ab3f",
+      "received_label": true,
+      "evidence_file": "14-r2-mbpp-stock-s4-C-coupled/observations/00002-57353c4804c21ba8a8c06af2c6dc581d78e7b52ceb48aeff1d161d7b7c65ab3f.json",
+      "evidence_sha256": "8533b19fd2d2149a0e7b409f1901a7d8acfd936051c00b89ae762b2fde8439c4"
+    },
+    {
+      "step": 3,
+      "group": "fe901d4c7f3968ee1d87c1a9d402a2a215f641c7ba84f3f2ed406fefd0fbe226",
+      "received_label": true,
+      "evidence_file": "14-r2-mbpp-stock-s4-C-coupled/observations/00003-fe901d4c7f3968ee1d87c1a9d402a2a215f641c7ba84f3f2ed406fefd0fbe226.json",
+      "evidence_sha256": "d427f250793a06c8ad0d0f208630c2b057047ef3d3a4262ac05951128bdd8b2a"
+    },
+    {
+      "step": 4,
+      "group": "7414287c4af3c3cea6fa4110e046e606c8a446b58b6e137770f3eef5e0937d5e",
+      "received_label": false,
+      "evidence_file": "14-r2-mbpp-stock-s4-C-coupled/observations/00004-7414287c4af3c3cea6fa4110e046e606c8a446b58b6e137770f3eef5e0937d5e.json",
+      "evidence_sha256": "af71fa0678709926f86d812b4487b6580ee74ac4c719dde45f5f175858eb3411"
+    },
+    {
+      "step": 5,
+      "group": "a1e0ef3489295b5a489cb5037b399cafbb7d875d308ef287630831941bc539d0",
+      "received_label": false,
+      "evidence_file": "14-r2-mbpp-stock-s4-C-coupled/observations/00005-a1e0ef3489295b5a489cb5037b399cafbb7d875d308ef287630831941bc539d0.json",
+      "evidence_sha256": "7c0f8171d2009156363b8d1b3ffce3ff76c2c76afd5daddf6972728dcb56b6c4"
+    },
+    {
+      "step": 6,
+      "group": "cc742ed4488165527a3748192696b19bdd3de48f4c307c9f3617d5047caecbda",
+      "received_label": false,
+      "evidence_file": "14-r2-mbpp-stock-s4-C-coupled/observations/00006-cc742ed4488165527a3748192696b19bdd3de48f4c307c9f3617d5047caecbda.json",
+      "evidence_sha256": "23617ba2b538975fc01fc25b740a9863dcbf2ff2c1c423591b5273d0ee1e0c68"
+    }
+  ],
+  "trace_sha256": "be430d5ee890507bb9518bfbcaa94847b3447bc8f95ee033e265d46d33d6cab4",
+  "load_before": {
+    "monotonic_seconds": 33953.934458579,
+    "load_average": [
+      5.33447265625,
+      4.6689453125,
+      4.19482421875
+    ],
+    "visible_processes": 3,
+    "producer_cpu_seconds": 14.646854842,
+    "cpu_affinity": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "load_after": {
+    "monotonic_seconds": 33954.158850771,
+    "load_average": [
+      5.33447265625,
+      4.6689453125,
+      4.19482421875
+    ],
+    "visible_processes": 3,
+    "producer_cpu_seconds": 14.669978197,
+    "cpu_affinity": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  }
+}

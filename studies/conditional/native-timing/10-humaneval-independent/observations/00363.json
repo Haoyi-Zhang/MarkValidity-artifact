@@ -1,0 +1,13 @@
+{
+  "stdout": "{\"elapsed_seconds\":0.002214,\"error\":null,\"observations\":[{\"after\":{\"args\":[\"tuple\",[[\"int\",\"5\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"5\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"list\",[[\"int\",\"1\"],[\"int\",\"2\"],[\"int\",\"6\"],[\"int\",\"24\"],[\"int\",\"15\"]]]]},{\"after\":{\"args\":[\"tuple\",[[\"int\",\"7\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"7\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"list\",[[\"int\",\"1\"],[\"int\",\"2\"],[\"int\",\"6\"],[\"int\",\"24\"],[\"int\",\"15\"],[\"int\",\"720\"],[\"int\",\"28\"]]]]},{\"after\":{\"args\":[\"tuple\",[[\"int\",\"1\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"1\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"list\",[[\"int\",\"1\"]]]]},{\"after\":{\"args\":[\"tuple\",[[\"int\",\"3\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"3\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"list\",[[\"int\",\"1\"],[\"int\",\"2\"],[\"int\",\"6\"]]]]}],\"status\":\"passed\",\"stderr\":\"\",\"stdout\":\"\"}\n",
+  "stderr": "",
+  "returncode": 0,
+  "interruption": null,
+  "child_user_cpu_seconds": 0.028322000000002845,
+  "child_system_cpu_seconds": 0.0,
+  "group": "e438ef578cba46f35ee10f26d496b4124841d0146915d71ce552a54574d421ee",
+  "received_label": true,
+  "source_sha256": "fb778760384548c9e51280868582d6ba403f8dbb364bc85b049664d1df98c9d3",
+  "contract_sha256": "42e9f96131abdd29873222ec2483b976ec4c00a1a52ae82dcf3d46928d594183",
+  "worker_seconds": 0.029017272994678933
+}

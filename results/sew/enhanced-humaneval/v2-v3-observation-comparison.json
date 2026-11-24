@@ -1,0 +1,100 @@
+{
+  "status": "PASS",
+  "scope": "All declared inputs compared across the independently executed v2 and v3 contracts; timeout changes are retained rather than relabeled.",
+  "old_rows_sha256": "f035e4904e03c55cfb78d32b0d55fda06e6719868419e1cb0182b234c8116485",
+  "new_rows_sha256": "f7b7c0794dca2856944b559305b46ce9bf951d683b70a57c60bb4566bad82745",
+  "pairs_checked": 124253,
+  "comparable_both_versions": 124154,
+  "previously_unavailable_now_comparable": 4,
+  "previously_comparable_now_unavailable": 1,
+  "comparable_side_observations_both_versions": 248312,
+  "both_sides_unavailable_during_return_encoding": 11,
+  "common_observed_value_differences": [],
+  "per_task_unavailable": [
+    {
+      "task_id": "HumanEval/31",
+      "unavailable_pairs": 1,
+      "detected": true
+    },
+    {
+      "task_id": "HumanEval/32",
+      "unavailable_pairs": 2,
+      "detected": true
+    },
+    {
+      "task_id": "HumanEval/39",
+      "unavailable_pairs": 1,
+      "detected": true
+    },
+    {
+      "task_id": "HumanEval/55",
+      "unavailable_pairs": 22,
+      "detected": true
+    },
+    {
+      "task_id": "HumanEval/63",
+      "unavailable_pairs": 37,
+      "detected": true
+    },
+    {
+      "task_id": "HumanEval/96",
+      "unavailable_pairs": 12,
+      "detected": true
+    },
+    {
+      "task_id": "HumanEval/100",
+      "unavailable_pairs": 1,
+      "detected": true
+    },
+    {
+      "task_id": "HumanEval/127",
+      "unavailable_pairs": 9,
+      "detected": true
+    },
+    {
+      "task_id": "HumanEval/130",
+      "unavailable_pairs": 10,
+      "detected": true
+    }
+  ],
+  "matching_program_exception_pairs": [
+    {
+      "task_id": "HumanEval/32",
+      "type": "builtins.OverflowError",
+      "message": "math range error",
+      "pairs": 7
+    },
+    {
+      "task_id": "HumanEval/64",
+      "type": "builtins.IndexError",
+      "message": "string index out of range",
+      "pairs": 1
+    }
+  ],
+  "unavailable_observation_counts": [
+    {
+      "side": "candidate",
+      "reason": "per_invocation_guard",
+      "phase": "encode_return_value",
+      "count": 11
+    },
+    {
+      "side": "candidate",
+      "reason": "per_invocation_guard",
+      "phase": "invoke_program",
+      "count": 83
+    },
+    {
+      "side": "reference",
+      "reason": "per_invocation_guard",
+      "phase": "encode_return_value",
+      "count": 11
+    },
+    {
+      "side": "reference",
+      "reason": "per_invocation_guard",
+      "phase": "invoke_program",
+      "count": 80
+    }
+  ]
+}

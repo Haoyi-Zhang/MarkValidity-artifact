@@ -1,0 +1,84 @@
+{
+  "status": "PASS",
+  "schema": "markvalidity-stock-sew-aliasing-v1",
+  "meaning_of_pass": "All fixed grid configurations were embedded, detected, executed and recorded completely; PASS does not mean all transformed programs preserved behavior.",
+  "recorded_at_utc": "2026-11-19T07:28:55.781306+00:00",
+  "elapsed_seconds": 2.616618,
+  "upstream_commit": "3c873186a56033e73347391b7aedebce1f7f71d0",
+  "study_spec_sha256": "5601953376effdc8382a21c51e8e42558429bed14a1385cfe4207e521a79bed1",
+  "runner_sha256": "ccf25b212e056cc56dcdd6540893f2f70de8e68901b6eabc39a2f04d80ec800d",
+  "native_runner_sha256": "c31d7e136806e7196172c5b8b9a5617e992eca7ebe7cc6e6005c20662343de7a",
+  "environment": {
+    "python": "3.12.14",
+    "implementation": "CPython",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "tree-sitter": "0.23.2",
+    "tree-sitter-python": "0.23.6"
+  },
+  "upstream_python_environment_note": "Upstream environment.yaml declares Python 3.10; this run uses the recorded Python version with its pinned parser dependencies.",
+  "cases": 6,
+  "keys": 17,
+  "inputs_per_source": 33,
+  "candidate_configurations": 102,
+  "native_source_runs_including_references": 108,
+  "native_input_evaluations_including_references": 3564,
+  "paired_input_comparisons": 3366,
+  "distinct_candidate_source_bytes": 37,
+  "embedding_statuses": {
+    "ok": 102
+  },
+  "behavior_valid_configurations": 85,
+  "detected_configurations": 90,
+  "joint_success_configurations": 75,
+  "detected_but_invalid_configurations": 15,
+  "case_summaries": {
+    "aliased_list_augmented": {
+      "configurations": 17,
+      "behavior_valid": 9,
+      "detected": 15,
+      "joint_success": 7,
+      "input_mismatches": 256
+    },
+    "aliased_list_assigned": {
+      "configurations": 17,
+      "behavior_valid": 8,
+      "detected": 15,
+      "joint_success": 8,
+      "input_mismatches": 288
+    },
+    "unaliased_list_augmented": {
+      "configurations": 17,
+      "behavior_valid": 17,
+      "detected": 15,
+      "joint_success": 15,
+      "input_mismatches": 0
+    },
+    "unaliased_list_assigned": {
+      "configurations": 17,
+      "behavior_valid": 17,
+      "detected": 15,
+      "joint_success": 15,
+      "input_mismatches": 0
+    },
+    "aliased_integer_augmented": {
+      "configurations": 17,
+      "behavior_valid": 17,
+      "detected": 15,
+      "joint_success": 15,
+      "input_mismatches": 0
+    },
+    "aliased_integer_assigned": {
+      "configurations": 17,
+      "behavior_valid": 17,
+      "detected": 15,
+      "joint_success": 15,
+      "input_mismatches": 0
+    }
+  },
+  "scope": "Targeted constructed counterexamples and controls under fixed keys and finite builtin input domains. This is not an estimate of SEW benchmark failure prevalence, a calibrated false-positive study, or a reproduction of its training or full evaluation.",
+  "files_sha256": {
+    "rows.json": "ce044cf2910880f8c04e2e93c969a4211eb78c53119519d22a70518d5f1e0165",
+    "rows.csv": "31cd773bd31b65c88dc0151816e785b342bfb848df5f746bde8a4e5d1018b1d2",
+    "native-observations.jsonl.gz": "7c6fa57025c25bb75ac8650fff928222d372adfff6f79126bfd6e6eee4736242"
+  }
+}

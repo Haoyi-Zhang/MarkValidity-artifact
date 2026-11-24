@@ -1,0 +1,85 @@
+{
+  "repeat": 1,
+  "dataset": "mbpp_sanitized",
+  "scope": "mbpp",
+  "left": "stock",
+  "right": "s4",
+  "target": "J",
+  "method": "coupled",
+  "policy": "joint_width_per_suite",
+  "ordinal": 5,
+  "directory": "05-r1-mbpp-stock-s4-J-coupled",
+  "denominator": 1281,
+  "initial_reference_groups": 20,
+  "candidate_suite_queries": 1,
+  "decision": "right_strict",
+  "final_bounds": {
+    "lower": -3,
+    "upper": -1,
+    "units": "joint_count_difference",
+    "decision": "right_strict",
+    "defined_all": true
+  },
+  "phase_seconds": {
+    "register_seconds": 0.012559375005366746,
+    "select_seconds": 1.8229984561912715e-06,
+    "bounds_seconds": 9.224997484125197e-06,
+    "worker_seconds": 0.036079012003028765,
+    "receive_seconds": 0.00017127799947047606,
+    "record_seconds": 0.0007586520005133934
+  },
+  "audit_total_seconds": 0.0498175109969452,
+  "unallocated_loop_seconds": 0.00023814599262550473,
+  "queries": [
+    {
+      "step": 1,
+      "group": "0d08449da73913c95dbce2b680548b9901210b9164c44c970f7c9ad9b94f0bb6",
+      "received_label": true,
+      "evidence_file": "05-r1-mbpp-stock-s4-J-coupled/observations/00001-0d08449da73913c95dbce2b680548b9901210b9164c44c970f7c9ad9b94f0bb6.json",
+      "evidence_sha256": "abc4f56e8352bbb6bf075dad20eb0eda6833339d04e401bb49a0e63071341370"
+    }
+  ],
+  "trace_sha256": "f6a269a3ae3d7a9db5534463137fd7f00aa6fbbea0d877c6314db861fca73751",
+  "load_before": {
+    "monotonic_seconds": 33754.914931852,
+    "load_average": [
+      5.05517578125,
+      3.89990234375,
+      3.86767578125
+    ],
+    "visible_processes": 3,
+    "producer_cpu_seconds": 4.597756973,
+    "cpu_affinity": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "load_after": {
+    "monotonic_seconds": 33754.964788871,
+    "load_average": [
+      5.05517578125,
+      3.89990234375,
+      3.86767578125
+    ],
+    "visible_processes": 3,
+    "producer_cpu_seconds": 4.612889183,
+    "cpu_affinity": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  }
+}

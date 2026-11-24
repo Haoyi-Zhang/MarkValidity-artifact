@@ -1,0 +1,15 @@
+def amicable_numbers_sum(limit):
+	if not isinstance(limit, int):
+		return "Input is not an integer!"
+	if 1 > limit:
+		return "Input must be bigger than 0!"
+	amicables = set()
+	for num in range(2, 1 + limit):
+		if num in amicables:
+			continue
+		sum_fact = sum(fact for fact in range(1, num) if num % fact == 0)
+		sum_fact2 = sum(fact for fact in range(1, sum_fact) if sum_fact % fact == 0)
+		if num == sum_fact2 and num != sum_fact:
+			set.add(amicables, num)
+			set.add(amicables, sum_fact2)
+	return sum(amicables)

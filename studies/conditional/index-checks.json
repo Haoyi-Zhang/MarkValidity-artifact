@@ -1,0 +1,11 @@
+{
+  "status": "pass",
+  "counts": {
+    "ledgers": 160,
+    "response_sequences": 8640,
+    "prefixes": 34560,
+    "unavailable_responses": 8640,
+    "rejected_responses": 25920
+  },
+  "coverage": "All three-group unit-incidence equal-workload ledgers, all Boolean/unavailable reply sequences, forward/reverse identity orders, and duplicate/unknown/non-Boolean rejection."
+}

@@ -1,0 +1,13 @@
+{
+  "stdout": "{\"elapsed_seconds\":0.007074,\"error\":null,\"observations\":[{\"after\":{\"args\":[\"tuple\",[[\"int\",\"1\"],[\"int\",\"2\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"1\"],[\"int\",\"2\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"2\"]]},{\"after\":{\"args\":[\"tuple\",[[\"int\",\"1\"],[\"float\",\"0x1.4000000000000p+1\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"1\"],[\"float\",\"0x1.4000000000000p+1\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"float\",\"0x1.4000000000000p+1\"]]},{\"after\":{\"args\":[\"tuple\",[[\"int\",\"2\"],[\"int\",\"3\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"2\"],[\"int\",\"3\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"3\"]]},{\"after\":{\"args\":[\"tuple\",[[\"int\",\"5\"],[\"int\",\"6\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"5\"],[\"int\",\"6\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"6\"]]},{\"after\":{\"args\":[\"tuple\",[[\"int\",\"1\"],[\"str\",\"2,3\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"1\"],[\"str\",\"2,3\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"str\",\"2,3\"]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"5,1\"],[\"str\",\"6\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"5,1\"],[\"str\",\"6\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"str\",\"6\"]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"1\"],[\"str\",\"2\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"1\"],[\"str\",\"2\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"str\",\"2\"]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"1\"],[\"int\",\"1\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"1\"],[\"int\",\"1\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"none\"]]}],\"status\":\"passed\",\"stderr\":\"\",\"stdout\":\"\"}\n",
+  "stderr": "",
+  "returncode": 0,
+  "interruption": null,
+  "child_user_cpu_seconds": 0.031136999999944237,
+  "child_system_cpu_seconds": 0.0,
+  "group": "3fac1d23893d450247f5df0f8351a72d00440e19720cbd16988c2bc8996601a8",
+  "received_label": true,
+  "source_sha256": "d4bccf42f463a949bf6d9abe74575f1c7602220a3a7a00c77f1e3b89cbbceecf",
+  "contract_sha256": "39a9e91fbc4bd0dd62d98378cbe521928b94a5ed3595cebc6c2ca67d1d38e9c5",
+  "worker_seconds": 0.06995517299947096
+}

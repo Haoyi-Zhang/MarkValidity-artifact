@@ -1,0 +1,20 @@
+{
+  "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 -B run_all.py --out /workspace/scratch/3d557313f143/review_execution/reproduction",
+  "command_argv": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "-B",
+    "run_all.py",
+    "--out",
+    "/workspace/scratch/3d557313f143/review_execution/reproduction"
+  ],
+  "command_cwd": "/workspace/scratch/3d557313f143/work/MarkValidity_TOSEM/artifact",
+  "command_format": "posix-shell",
+  "command_kind": "actual-cli",
+  "dependencies": "Python standard library and Node.js standard library only.",
+  "executed_at_utc": "2026-11-19T05:54:30+00:00",
+  "machine": "x86_64",
+  "node": "v24.22.3",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "python": "3.12.14",
+  "python_implementation": "CPython"
+}

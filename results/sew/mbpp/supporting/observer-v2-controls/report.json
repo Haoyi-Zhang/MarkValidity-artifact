@@ -1,0 +1,355 @@
+{
+  "status": "PASS",
+  "scope": "Constructed resource, contract, observer, and retained-witness controls; not benchmark samples.",
+  "native_runner_sha256": "003909bf27456960596204a830cfde367f6aa1d95a13423f589c30633192d46a",
+  "producer_sha256": "e35c9ab0b2794e969e7d6be5145d7e9090b9802112e1dd8f75844c273e6a4d40",
+  "records": [
+    {
+      "case": "normal",
+      "expected": "passed",
+      "actual": "passed",
+      "source_sha256": "5b76d0962c09ab4ee309fac65fad3568c97abdec983b405146ae3e86a235e352",
+      "events": [
+        {
+          "event": "source_compile",
+          "status": "passed",
+          "test_index": null,
+          "assertion_reached": null
+        },
+        {
+          "event": "test_result",
+          "status": "passed",
+          "test_index": 0,
+          "assertion_reached": true
+        },
+        {
+          "event": "complete",
+          "status": "passed",
+          "test_index": null,
+          "assertion_reached": null
+        }
+      ]
+    },
+    {
+      "case": "program_nameerror",
+      "expected": "failed",
+      "actual": "failed",
+      "source_sha256": "c2664c62c0eb1ee560c6743e245c07c9f6fa6949364ff9ff10f963696024094f",
+      "events": [
+        {
+          "event": "source_compile",
+          "status": "passed",
+          "test_index": null,
+          "assertion_reached": null
+        },
+        {
+          "event": "test_result",
+          "status": "failed",
+          "test_index": 0,
+          "assertion_reached": true
+        },
+        {
+          "event": "complete",
+          "status": "failed",
+          "test_index": null,
+          "assertion_reached": null
+        }
+      ]
+    },
+    {
+      "case": "address_space_exhaustion",
+      "expected": "unavailable",
+      "actual": "unavailable",
+      "source_sha256": "5eee413849d82d57b961ea3d3b547373491255a5693d2c0e4342ea51f950116e",
+      "events": [
+        {
+          "event": "source_compile",
+          "status": "passed",
+          "test_index": null,
+          "assertion_reached": null
+        },
+        {
+          "event": "test_result",
+          "status": "unavailable",
+          "test_index": 0,
+          "assertion_reached": true
+        },
+        {
+          "event": "complete",
+          "status": "unavailable",
+          "test_index": null,
+          "assertion_reached": null
+        }
+      ]
+    },
+    {
+      "case": "caught_memoryerror",
+      "expected": "passed",
+      "actual": "passed",
+      "source_sha256": "f7b7ba83da9cc5f1d35c8c0c5b2a9d922e1411376dd32e9035b359f70c7c58af",
+      "events": [
+        {
+          "event": "source_compile",
+          "status": "passed",
+          "test_index": null,
+          "assertion_reached": null
+        },
+        {
+          "event": "test_result",
+          "status": "passed",
+          "test_index": 0,
+          "assertion_reached": true
+        },
+        {
+          "event": "complete",
+          "status": "passed",
+          "test_index": null,
+          "assertion_reached": null
+        }
+      ]
+    },
+    {
+      "case": "source_syntaxerror",
+      "expected": "failed",
+      "actual": "failed",
+      "source_sha256": "60b59e7be682d6a9f0f4c211220a0ba47eb7195bdf60a7bf79a94ef768ffd1e3",
+      "events": [
+        {
+          "event": "source_compile",
+          "status": "failed",
+          "test_index": null,
+          "assertion_reached": null
+        },
+        {
+          "event": "complete",
+          "status": "failed",
+          "test_index": null,
+          "assertion_reached": null
+        }
+      ]
+    },
+    {
+      "case": "test_syntaxerror",
+      "expected": "evidence_rejected",
+      "actual": "evidence_rejected",
+      "source_sha256": "5b76d0962c09ab4ee309fac65fad3568c97abdec983b405146ae3e86a235e352",
+      "events": [
+        {
+          "event": "source_compile",
+          "status": "passed",
+          "test_index": null,
+          "assertion_reached": null
+        },
+        {
+          "event": "test_result",
+          "status": "evidence_rejected",
+          "test_index": 0,
+          "assertion_reached": false
+        },
+        {
+          "event": "complete",
+          "status": "evidence_rejected",
+          "test_index": null,
+          "assertion_reached": null
+        }
+      ]
+    },
+    {
+      "case": "imports_syntaxerror",
+      "expected": "evidence_rejected",
+      "actual": "evidence_rejected",
+      "source_sha256": "5b76d0962c09ab4ee309fac65fad3568c97abdec983b405146ae3e86a235e352",
+      "events": [
+        {
+          "event": "source_compile",
+          "status": "passed",
+          "test_index": null,
+          "assertion_reached": null
+        },
+        {
+          "event": "test_result",
+          "status": "evidence_rejected",
+          "test_index": 0,
+          "assertion_reached": false
+        },
+        {
+          "event": "complete",
+          "status": "evidence_rejected",
+          "test_index": null,
+          "assertion_reached": null
+        }
+      ]
+    },
+    {
+      "case": "observer_exception_serialization",
+      "expected": "unavailable",
+      "actual": "unavailable",
+      "source_sha256": "e4804f1f259b1b757b4d677ad2ac6c6f75eaf4e57fad29162394833b61966de0",
+      "events": [
+        {
+          "event": "source_compile",
+          "status": "passed",
+          "test_index": null,
+          "assertion_reached": null
+        },
+        {
+          "event": "test_result",
+          "status": "unavailable",
+          "test_index": 0,
+          "assertion_reached": true
+        },
+        {
+          "event": "complete",
+          "status": "unavailable",
+          "test_index": null,
+          "assertion_reached": null
+        }
+      ]
+    },
+    {
+      "case": "failure_before_memory_exhaustion",
+      "expected": "failed",
+      "actual": "failed",
+      "source_sha256": "83ff8bdfe75f8a205a4a83efe89ef56b079a299760fc7a8597819d60e42ba5ba",
+      "events": [
+        {
+          "event": "source_compile",
+          "status": "passed",
+          "test_index": null,
+          "assertion_reached": null
+        },
+        {
+          "event": "test_result",
+          "status": "failed",
+          "test_index": 0,
+          "assertion_reached": true
+        },
+        {
+          "event": "test_result",
+          "status": "unavailable",
+          "test_index": 1,
+          "assertion_reached": true
+        },
+        {
+          "event": "complete",
+          "status": "failed",
+          "test_index": null,
+          "assertion_reached": null
+        }
+      ]
+    },
+    {
+      "case": "cpu_exhaustion",
+      "expected": "process_error",
+      "actual": "process_error",
+      "source_sha256": "ecd43c883b54636ff32c98a65bf89d20429c9a249c46bc18ef37302a26036a51",
+      "events": [
+        {
+          "event": "source_compile",
+          "status": "passed",
+          "test_index": null,
+          "assertion_reached": null
+        }
+      ]
+    },
+    {
+      "case": "failure_before_cpu_exhaustion",
+      "expected": "failed",
+      "actual": "failed",
+      "source_sha256": "83ff8bdfe75f8a205a4a83efe89ef56b079a299760fc7a8597819d60e42ba5ba",
+      "events": [
+        {
+          "event": "source_compile",
+          "status": "passed",
+          "test_index": null,
+          "assertion_reached": null
+        },
+        {
+          "event": "test_result",
+          "status": "failed",
+          "test_index": 0,
+          "assertion_reached": true
+        }
+      ]
+    },
+    {
+      "case": "mmap_enomem",
+      "expected": "unavailable",
+      "actual": "unavailable",
+      "source_sha256": "29bb309e128474316be9970e366bd6a22024d68f84ca93b6835a88a5a1db25b2",
+      "events": [
+        {
+          "event": "source_compile",
+          "status": "passed",
+          "test_index": null,
+          "assertion_reached": null
+        },
+        {
+          "event": "test_result",
+          "status": "unavailable",
+          "test_index": 0,
+          "assertion_reached": true
+        },
+        {
+          "event": "complete",
+          "status": "unavailable",
+          "test_index": null,
+          "assertion_reached": null
+        }
+      ]
+    },
+    {
+      "case": "keyboard_interrupt",
+      "expected": "unavailable",
+      "actual": "unavailable",
+      "source_sha256": "6db0955ba205b3614d7e28386cafb9397c41c55296f32baa696e3958983c561f",
+      "events": [
+        {
+          "event": "source_compile",
+          "status": "passed",
+          "test_index": null,
+          "assertion_reached": null
+        },
+        {
+          "event": "test_result",
+          "status": "unavailable",
+          "test_index": 0,
+          "assertion_reached": true
+        },
+        {
+          "event": "complete",
+          "status": "unavailable",
+          "test_index": null,
+          "assertion_reached": null
+        }
+      ]
+    },
+    {
+      "case": "ordinary_oserror",
+      "expected": "failed",
+      "actual": "failed",
+      "source_sha256": "9a994645b404be2d98a4f6f321a332cecfcd9b20e1ccc2fbc5a8923394e4b3ee",
+      "events": [
+        {
+          "event": "source_compile",
+          "status": "passed",
+          "test_index": null,
+          "assertion_reached": null
+        },
+        {
+          "event": "test_result",
+          "status": "failed",
+          "test_index": 0,
+          "assertion_reached": true
+        },
+        {
+          "event": "complete",
+          "status": "failed",
+          "test_index": null,
+          "assertion_reached": null
+        }
+      ]
+    }
+  ],
+  "additional_control_scope": "The last three controls independently exercise genuine mmap ENOMEM under RLIMIT_AS, KeyboardInterrupt, and ordinary non-resource OSError using the unchanged v2 producer/observer."
+}

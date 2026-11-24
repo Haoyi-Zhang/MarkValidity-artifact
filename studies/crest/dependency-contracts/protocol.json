@@ -1,0 +1,40 @@
+{
+  "status": "FIXED_BEFORE_EXECUTION",
+  "created_at_utc": "2026-11-19T15:20:58.490265+00:00",
+  "input_scan_rows": 2276,
+  "selection": "All declared non-standard-library imports in the complete two-cohort input population, before paired reexecution. No selection by candidate result.",
+  "packages": {
+    "sympy": "1.14.0",
+    "numpy": "2.3.5"
+  },
+  "invocation_flags": [
+    "-B"
+  ],
+  "pythonpath_removed": true,
+  "native_observer": "unchanged benchmark observer",
+  "contracts": [
+    {
+      "cohort": "gpt4o",
+      "dataset": "HumanEval",
+      "task_id": "HumanEval/150",
+      "imports": [
+        "sympy"
+      ],
+      "external": [
+        "sympy"
+      ]
+    },
+    {
+      "cohort": "qwen",
+      "dataset": "HumanEval",
+      "task_id": "HumanEval/32",
+      "imports": [
+        "math",
+        "numpy"
+      ],
+      "external": [
+        "numpy"
+      ]
+    }
+  ]
+}

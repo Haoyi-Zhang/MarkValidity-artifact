@@ -1,0 +1,182 @@
+{
+  "outcomes": [
+    {
+      "module_id": "attrs-01",
+      "variant": "reference",
+      "calling_convention": "positional",
+      "calls": 2,
+      "matching_observations": 2
+    },
+    {
+      "module_id": "attrs-01",
+      "variant": "reference",
+      "calling_convention": "keyword",
+      "calls": 2,
+      "matching_observations": 2
+    },
+    {
+      "module_id": "attrs-01",
+      "variant": "trailing-comment",
+      "calling_convention": "positional",
+      "calls": 2,
+      "matching_observations": 2
+    },
+    {
+      "module_id": "attrs-01",
+      "variant": "trailing-comment",
+      "calling_convention": "keyword",
+      "calls": 2,
+      "matching_observations": 2
+    },
+    {
+      "module_id": "attrs-01",
+      "variant": "parameter-rename",
+      "calling_convention": "positional",
+      "calls": 2,
+      "matching_observations": 2
+    },
+    {
+      "module_id": "attrs-01",
+      "variant": "parameter-rename",
+      "calling_convention": "keyword",
+      "calls": 2,
+      "matching_observations": 0
+    },
+    {
+      "module_id": "attrs-01",
+      "variant": "signature-preserving-alias",
+      "calling_convention": "positional",
+      "calls": 2,
+      "matching_observations": 2
+    },
+    {
+      "module_id": "attrs-01",
+      "variant": "signature-preserving-alias",
+      "calling_convention": "keyword",
+      "calls": 2,
+      "matching_observations": 2
+    },
+    {
+      "module_id": "idna-02",
+      "variant": "reference",
+      "calling_convention": "positional",
+      "calls": 781,
+      "matching_observations": 781
+    },
+    {
+      "module_id": "idna-02",
+      "variant": "reference",
+      "calling_convention": "keyword",
+      "calls": 781,
+      "matching_observations": 781
+    },
+    {
+      "module_id": "idna-02",
+      "variant": "trailing-comment",
+      "calling_convention": "positional",
+      "calls": 781,
+      "matching_observations": 781
+    },
+    {
+      "module_id": "idna-02",
+      "variant": "trailing-comment",
+      "calling_convention": "keyword",
+      "calls": 781,
+      "matching_observations": 781
+    },
+    {
+      "module_id": "idna-02",
+      "variant": "parameter-rename",
+      "calling_convention": "positional",
+      "calls": 781,
+      "matching_observations": 781
+    },
+    {
+      "module_id": "idna-02",
+      "variant": "parameter-rename",
+      "calling_convention": "keyword",
+      "calls": 781,
+      "matching_observations": 0
+    },
+    {
+      "module_id": "idna-02",
+      "variant": "signature-preserving-alias",
+      "calling_convention": "positional",
+      "calls": 781,
+      "matching_observations": 781
+    },
+    {
+      "module_id": "idna-02",
+      "variant": "signature-preserving-alias",
+      "calling_convention": "keyword",
+      "calls": 781,
+      "matching_observations": 781
+    },
+    {
+      "module_id": "jmespath-01",
+      "variant": "reference",
+      "calling_convention": "positional",
+      "calls": 54,
+      "matching_observations": 54
+    },
+    {
+      "module_id": "jmespath-01",
+      "variant": "reference",
+      "calling_convention": "keyword",
+      "calls": 54,
+      "matching_observations": 54
+    },
+    {
+      "module_id": "jmespath-01",
+      "variant": "trailing-comment",
+      "calling_convention": "positional",
+      "calls": 54,
+      "matching_observations": 54
+    },
+    {
+      "module_id": "jmespath-01",
+      "variant": "trailing-comment",
+      "calling_convention": "keyword",
+      "calls": 54,
+      "matching_observations": 54
+    },
+    {
+      "module_id": "jmespath-01",
+      "variant": "parameter-rename",
+      "calling_convention": "positional",
+      "calls": 54,
+      "matching_observations": 54
+    },
+    {
+      "module_id": "jmespath-01",
+      "variant": "parameter-rename",
+      "calling_convention": "keyword",
+      "calls": 54,
+      "matching_observations": 0
+    },
+    {
+      "module_id": "jmespath-01",
+      "variant": "signature-preserving-alias",
+      "calling_convention": "positional",
+      "calls": 54,
+      "matching_observations": 54
+    },
+    {
+      "module_id": "jmespath-01",
+      "variant": "signature-preserving-alias",
+      "calling_convention": "keyword",
+      "calls": 54,
+      "matching_observations": 54
+    }
+  ],
+  "observation_rows": 6696,
+  "status": "PASS",
+  "scope": "Finite call-contract counterexamples on frozen module bytes, not a sample estimate of defect prevalence or whole-project behavior.",
+  "module_count": 3,
+  "case_count": 837,
+  "actual_native_invocations": 6696,
+  "elapsed_seconds": 0.223,
+  "producer_sha256": "d00ec829000aa7d562572639c8c8dd016f1de0e7be11d6223d29f8d5c10b89a4",
+  "contracts_sha256": "dba6604a1d55187ab7e9334d1054a44cf76a44ac09b04a1161eeb5f580c79b56",
+  "observations_sha256": "bb7c3ad7db603b2f1bdd093a1a129b81952a159de377f277526473060711e730"
+}

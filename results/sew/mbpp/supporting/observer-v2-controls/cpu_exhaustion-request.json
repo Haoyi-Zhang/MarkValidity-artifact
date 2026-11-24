@@ -1,0 +1,7 @@
+{
+  "source": "def f():\n    while True:\n        pass\n",
+  "test_imports": [],
+  "test_list": [
+    "assert f() == 1"
+  ]
+}

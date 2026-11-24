@@ -1,0 +1,13 @@
+{
+  "stdout": "{\"elapsed_seconds\":0.002505,\"error\":null,\"observations\":[{\"after\":{\"args\":[\"tuple\",[[\"str\",\"\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"str\",\"\"]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"abcdef\\nghijklm\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"abcdef\\nghijklm\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"str\",\"bcdf\\nghjklm\"]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"fedcba\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"fedcba\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"str\",\"fdcb\"]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"eeeee\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"eeeee\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"str\",\"\"]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"acBAA\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"acBAA\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"str\",\"cB\"]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"EcBOO\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"EcBOO\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"str\",\"cB\"]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"ybcd\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"ybcd\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"str\",\"ybcd\"]]}],\"status\":\"passed\",\"stderr\":\"\",\"stdout\":\"\"}\n",
+  "stderr": "",
+  "returncode": 0,
+  "interruption": null,
+  "child_user_cpu_seconds": 0.02124000000000592,
+  "child_system_cpu_seconds": 0.015159999999998064,
+  "group": "3b2ee8db1d0d0be47825f7a2ed9bb5a2bb56670a1eb3dbc65bde59b8545c425d",
+  "received_label": true,
+  "source_sha256": "f2aae3a217c4f22f1c6496e87f8fe8b0bb79dc37957fc2e9aa28fcb19ab0a0f1",
+  "contract_sha256": "83f0c732163345b7730b21d1edfa7e8faf7ef0e64b913924c5746a4e3b20587e",
+  "worker_seconds": 0.050671108001552057
+}

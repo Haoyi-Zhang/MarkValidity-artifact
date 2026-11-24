@@ -1,0 +1,13 @@
+{
+  "stdout": "{\"elapsed_seconds\":0.001511,\"error\":null,\"observations\":[{\"after\":{\"args\":[\"tuple\",[[\"str\",\"Hi\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"Hi\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"str\",\"Hi\"]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"hello\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"hello\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"str\",\"ehllo\"]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"number\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"number\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"str\",\"bemnru\"]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"abcd\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"abcd\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"str\",\"abcd\"]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"Hello World!!!\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"Hello World!!!\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"str\",\"Hello !!!Wdlor\"]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"str\",\"\"]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"Hi. My name is Mister Robot. How are you?\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"Hi. My name is Mister Robot. How are you?\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"str\",\".Hi My aemn is Meirst .Rboot How aer ?ouy\"]]}],\"status\":\"passed\",\"stderr\":\"\",\"stdout\":\"\"}\n",
+  "stderr": "",
+  "returncode": 0,
+  "interruption": null,
+  "child_user_cpu_seconds": 0.022157000000007088,
+  "child_system_cpu_seconds": 0.0,
+  "group": "bb6f3085bece0788a60a91f44354b349ffc60b9cfd8c9947c7afb1b186606882",
+  "received_label": true,
+  "source_sha256": "4a7520ea13a7a76f7bce351f983531e068ec99b31f18ca6b4ed1d545a9766b1a",
+  "contract_sha256": "60c61d687a227e3e4b5823670654e1a6993f1207ef747c3aa525c7d1205acd05",
+  "worker_seconds": 0.022845352003059816
+}

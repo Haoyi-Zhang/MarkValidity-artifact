@@ -1,0 +1,7 @@
+{
+  "source": "def f():\n    try:\n        value = [0] * 200_000_000\n    except MemoryError:\n        return 1\n    return 0\n",
+  "test_imports": [],
+  "test_list": [
+    "assert f() == 1"
+  ]
+}

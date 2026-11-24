@@ -1,0 +1,10 @@
+mixture,left,right,orders,queries_min,queries_median,queries_max,input_calls_min,input_calls_median,input_calls_max
+balanced,lexical,structural,16,2688,2717.5,2724,7375564,7534100.0,7551272
+balanced,lexical,hybrid,16,1540,1673.0,1817,4394915,4605206.5,5120663
+balanced,structural,hybrid,16,1511,1699.5,1793,4151676,4602380.5,4949608
+rename-heavy,lexical,structural,16,0,0.0,0,0,0.0,0
+rename-heavy,lexical,hybrid,16,1275,1336.5,1389,3501885,3618881.5,3798459
+rename-heavy,structural,hybrid,16,0,0.0,0,0,0.0,0
+structure-heavy,lexical,structural,16,0,0.0,0,0,0.0,0
+structure-heavy,lexical,hybrid,16,0,0.0,0,0,0.0,0
+structure-heavy,structural,hybrid,16,1108,1217.0,1287,3162296,3364618.0,3517395

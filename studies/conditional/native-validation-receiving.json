@@ -1,0 +1,32 @@
+{
+  "status": "pass",
+  "runs_received": 4,
+  "candidate_suite_records_received": 1823,
+  "prefixes_received": 1827,
+  "distinct_arithmetic_histories": 1827,
+  "historical_candidate_observations_read": 0,
+  "source_snapshots_received": 8,
+  "scope": "Every fresh stdout, source/contract binding, public policy choice, prefix certificate and first stopping point independently received. Reference Fraction models and per-group calculations do not import producer certificate or state implementations.",
+  "runs": [
+    {
+      "directory": "01-humaneval-paired",
+      "queries_received": 154,
+      "first_certificate": "left_strict"
+    },
+    {
+      "directory": "02-humaneval-independent",
+      "queries_received": 532,
+      "first_certificate": "left_strict"
+    },
+    {
+      "directory": "03-mbpp-paired",
+      "queries_received": 1,
+      "first_certificate": "right_strict"
+    },
+    {
+      "directory": "04-mbpp-independent",
+      "queries_received": 1136,
+      "first_certificate": "right_strict"
+    }
+  ]
+}

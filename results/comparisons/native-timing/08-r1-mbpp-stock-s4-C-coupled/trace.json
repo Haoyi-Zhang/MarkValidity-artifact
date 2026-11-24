@@ -1,0 +1,79 @@
+[
+  {
+    "step": 0,
+    "bounds": {
+      "lower": "-368045/377143",
+      "upper": "182101/186620",
+      "units": "conditional_rate_difference",
+      "decision": "unresolved",
+      "defined_all": true
+    },
+    "groups_admitted": 20
+  },
+  {
+    "step": 1,
+    "bounds": {
+      "lower": "-368045/377143",
+      "upper": "364183/374108",
+      "units": "conditional_rate_difference",
+      "decision": "unresolved",
+      "defined_all": true
+    },
+    "groups_admitted": 21
+  },
+  {
+    "step": 2,
+    "bounds": {
+      "lower": "-368045/377143",
+      "upper": "30347/31248",
+      "units": "conditional_rate_difference",
+      "decision": "unresolved",
+      "defined_all": true
+    },
+    "groups_admitted": 22
+  },
+  {
+    "step": 3,
+    "bounds": {
+      "lower": "-368045/377143",
+      "upper": "364145/375844",
+      "units": "conditional_rate_difference",
+      "decision": "unresolved",
+      "defined_all": true
+    },
+    "groups_admitted": 23
+  },
+  {
+    "step": 4,
+    "bounds": {
+      "lower": "-367193/376272",
+      "upper": "364145/375844",
+      "units": "conditional_rate_difference",
+      "decision": "unresolved",
+      "defined_all": true
+    },
+    "groups_admitted": 24
+  },
+  {
+    "step": 5,
+    "bounds": {
+      "lower": "-366341/375401",
+      "upper": "364145/375844",
+      "units": "conditional_rate_difference",
+      "decision": "unresolved",
+      "defined_all": true
+    },
+    "groups_admitted": 25
+  },
+  {
+    "step": 6,
+    "bounds": {
+      "lower": -1287,
+      "upper": -57,
+      "units": "conditional_cross_product_count_margin",
+      "decision": "right_strict",
+      "defined_all": true
+    },
+    "groups_admitted": 26
+  }
+]

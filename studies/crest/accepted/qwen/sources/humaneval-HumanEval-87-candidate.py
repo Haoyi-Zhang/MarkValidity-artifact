@@ -1,0 +1,8 @@
+
+def get_row(lst, x):
+	result = []
+	for r, row in enumerate(lst):
+		indices = [c for c, val in enumerate(row) if val == x]
+		indices = sorted(indices, reverse=True)
+		list.extend(result, [(r, i) for i in indices])
+	return sorted(result)

@@ -1,0 +1,15 @@
+
+def find_first_occurrence(A, x):
+	right = len(A) - 1
+	result = -1
+	left = 0
+	while left <= right:
+		mid = (left + right) // 2
+		if A[mid] == x:
+			result = mid
+			right = mid - 1
+		elif A[mid] < x:
+			left = mid + 1
+		else:
+			right = mid - 1
+	return result

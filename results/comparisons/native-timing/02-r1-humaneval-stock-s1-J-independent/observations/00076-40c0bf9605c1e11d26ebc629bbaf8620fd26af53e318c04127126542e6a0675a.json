@@ -1,0 +1,13 @@
+{
+  "stdout": "{\"elapsed_seconds\":0.006063,\"error\":null,\"observations\":[{\"after\":{\"args\":[\"tuple\",[[\"list\",[]]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"list\",[]]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"none\"]]},{\"after\":{\"args\":[\"tuple\",[[\"list\",[[\"str\",\"x\"],[\"str\",\"y\"],[\"str\",\"z\"]]]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"list\",[[\"str\",\"x\"],[\"str\",\"y\"],[\"str\",\"z\"]]]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"str\",\"x\"]]},{\"after\":{\"args\":[\"tuple\",[[\"list\",[[\"str\",\"x\"],[\"str\",\"yyy\"],[\"str\",\"zzzz\"],[\"str\",\"www\"],[\"str\",\"kkkk\"],[\"str\",\"abc\"]]]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"list\",[[\"str\",\"x\"],[\"str\",\"yyy\"],[\"str\",\"zzzz\"],[\"str\",\"www\"],[\"str\",\"kkkk\"],[\"str\",\"abc\"]]]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"str\",\"zzzz\"]]}],\"status\":\"passed\",\"stderr\":\"\",\"stdout\":\"\"}\n",
+  "stderr": "",
+  "returncode": 0,
+  "interruption": null,
+  "child_user_cpu_seconds": 0.03203699999999987,
+  "child_system_cpu_seconds": 0.004010000000000069,
+  "group": "40c0bf9605c1e11d26ebc629bbaf8620fd26af53e318c04127126542e6a0675a",
+  "received_label": true,
+  "source_sha256": "8dacabc813470a18e52a2fdcbf1f97e49e284c7f4bb9598a2a83f49d9a03de95",
+  "contract_sha256": "f16e8e4b89fc17a283641a5b855b7683c29e3e1465cae8c254bb239a7edeff9f",
+  "worker_seconds": 0.03696428500552429
+}

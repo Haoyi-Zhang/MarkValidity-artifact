@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "analysis": "results/revision-sew-natural/analysis-primary",
+  "cases": 18,
+  "schedules": 360,
+  "trace_states_checked": 427080,
+  "first_certificates_checked": 2160,
+  "independently_reconstructed_states": 1944,
+  "method": "Rebuilt coefficient/known-label models from original normalized rows at every first-certificate prefix; compared against the nonincremental exact-Fraction prototype; inspected every trace prefix for truth containment and cross-version interval nesting.",
+  "files_sha256": {
+    "manifest.json": "fdfc482914abc0fb43e0e4f435ee97edeec10e14c40177129a76d370dbab6956",
+    "comparisons.json": "2c10357d8e03333f897aeb472c732509dd153cc394930831aa428fa93e96799f",
+    "group_index.json": "383ca3ea38579a4493eb20b6ef8fd4dc38698cabee6c0744481678c16a719238",
+    "comparison_summary.csv": "3fc66ea52cd2fdd8fc78c3631cb984a250880359c94a5a087cd4e611deee0b4b"
+  },
+  "verifier_sha256": "d7dc9adf83fa0aefa3f0b60782de505566764e0c57e7304fffe683aa2b774fa3",
+  "prototype_sha256": "9d70eb38f560ac3590474414baa9d45b7475e88e29e4e9970782796185c7f8dc"
+}

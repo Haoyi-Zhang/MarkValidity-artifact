@@ -1,0 +1,41 @@
+{
+  "schema": "markvalidity-python-fresh-execution-v2",
+  "status": "PASS",
+  "started_at_utc": "2026-11-19T07:27:49.783267+00:00",
+  "elapsed_seconds": 9.282,
+  "observation_rule": "covewm-tagged-return-or-exception-type-and-message-canonical-json-v2",
+  "initialization_rule": "covewm-fresh-module-instance-per-input-v1",
+  "runtime": {
+    "implementation": "CPython",
+    "version": "3.12.14",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41"
+  },
+  "execution_scope": "Fresh module instance for each declared input; owned terminating task registry and exact restricted prefixes, without ambient external-state dependence.",
+  "reference_programs": 12,
+  "original_semantic_pairs_executed": 252,
+  "distinct_semantic_sources_executed": 204,
+  "frozen_mutant_programs_executed": 36,
+  "program_records": 300,
+  "domain_function_calls": 825325,
+  "nominal_function_calls": 1525,
+  "semantic_pairs_equivalent": 252,
+  "effective_mutants": 36,
+  "effective_mutants_passing_nominal": 3,
+  "historical_outcome_differences": [],
+  "input_sha256": {
+    "semantic_audit.csv": "941ee8f5aec0832103b9fd91c5c5ba7bd97a6c2f85d88695e7cb1bbb1e19e80e",
+    "mutants.csv": "88eb06945b2ca598df3d15e5f687189c073fd1c72f8339c96edf1b37210e8fcd",
+    "sources.jsonl.gz": "ff4283b45a18f8ece7a7005184ba9ede34ca13b17f638822afd517d3f07758e1"
+  },
+  "code_sha256": {
+    "recheck_python_fresh.py": "a986bd9708fea418febde5e7bc231fd0092b77cd4cef398a21322c30b550b7ef",
+    "src/covewm/observations.py": "1a40936f7cda2aa21c120221957e08503c006d087084c99ce80709dbf128098d",
+    "src/covewm/tasks.py": "718f39e105291be8a6c08c246175b04bce56d01e57819bf14fdd991952bf45a4",
+    "src/covewm/source_admission.py": "375c600e652a8bb83678b4f0aa9771f12a7c021deb4672410e3db4be6311b23b"
+  },
+  "output_sha256": {
+    "executions.csv": "7eeb27748bdc60cf47dd4a5f058c76bfbebf4785a2cce5a8ab4e1b6834ae6ffe",
+    "observations.jsonl.gz": "61b7da5f6161ea6c89351c4deb8900822781f345676aa9af1ddf3cbbcfc3abed",
+    "references.csv": "0e6699223be53388b6821ac956307a6fb2bc8aeaea0750ca1126df12c13f11e4"
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "constructs": {
+    "attack_conditioned_robustness": {
+      "aggregation": "full response curves plus explicitly declared mixture functionals",
+      "falsifier": "ranking or conclusion changes under a substantively plausible declared mixture",
+      "indicator": "detector success by scheme, attack family, severity, task, language, and payload",
+      "scope": "dense rows evaluate indexed states directly; they do not assert per-row source extraction, parsing, or execution",
+      "unit": "one indexed carrier-state configuration"
+    },
+    "bounded_executable_semantics": {
+      "falsifier": "any parse failure or unequal normalized observation",
+      "indicator": "parse success plus exhaustive differential execution over each task's frozen finite domain",
+      "scope": "declared domain and frozen runtime only",
+      "unit": "reference/transformed program pair"
+    },
+    "evaluation_protocol_transfer": {
+      "falsifier": "all admissible functionals preserve one ordering and every required component maps without changing construct",
+      "indicator": "local reimplementations or adaptations of pinned public evaluation definitions on one common 76,032-row indexed-state matrix",
+      "scope": "scoring-contract sensitivity; not external-system performance",
+      "unit": "one carrier-specific score under one named evaluation functional"
+    },
+    "false_positive_control": {
+      "indicator": "exact binomial null tail plus exact binomial uncertainty intervals",
+      "scope": "24 independent fair null bits and frozen acceptance threshold",
+      "unit": "one independent null payload trial"
+    },
+    "structural_distortion": {
+      "exclusion": "human readability, naturalness, and imperceptibility",
+      "indicator": [
+        "character similarity",
+        "token similarity",
+        "identifier-normalized similarity",
+        "AST-type similarity",
+        "control-profile similarity",
+        "identifier-multiset similarity",
+        "identifier-style similarity"
+      ],
+      "scope": "machine-observable source structure",
+      "unit": "source pair"
+    }
+  },
+  "detector": {
+    "accepted_matches": 22,
+    "exact_null_probability": 1.7940998077392578e-05,
+    "nominal_alpha": 0.0001,
+    "payload_bits": 24
+  },
+  "execution_class": "IMPLEMENTATION_EVALUATION",
+  "external_protocol_replay": {
+    "common_outcomes": 76032,
+    "edge_policies": {
+      "CodeIP": "Local indexed-survivor agreement accepts iff every surviving site matches its original indexed target; zero survivors are accepted vacuously. Interior erasures select indexed targets rather than the pinned repository check's contiguous prefix. Historical available_prefix output keys retain their names for compatibility and do not denote literal repository-prefix scores.",
+      "STONE": "not computed because the required model-based perplexity component is absent; the published construct is imperceptibility, distinct from this study's human-naturalness interpretation",
+      "SWEET": "zero-survivor rows have undefined z score and are omitted with counts reported",
+      "SrcMarker": "deleted payload sites count as incorrect"
+    },
+    "execution_boundary": "full external embedding systems are not run because they require learned-model inference, trained checkpoints, or CUDA outside the frozen resource profile",
+    "numeric_functionals": [
+      "native exact-tail detection",
+      "SrcMarker per-bit agreement",
+      "SrcMarker exact message recovery",
+      "CodeIP-inspired indexed-survivor agreement",
+      "SWEET exact-null AUROC",
+      "SWEET TPR at FPR <= 0.01",
+      "SWEET TPR at FPR <= 0.05"
+    ],
+    "provenance": "artifact/external-baselines/protocol-sources.csv and artifact/external-baselines/evidence/*.json",
+    "systems": [
+      "SWEET",
+      "CodeIP",
+      "SrcMarker",
+      "STONE"
+    ]
+  },
+  "factors": {
+    "attacks": [
+      "format",
+      "rename",
+      "normalize",
+      "random_flip",
+      "strip",
+      "mixed"
+    ],
+    "languages": [
+      "python",
+      "javascript"
+    ],
+    "metric_profiles_per_scheme_task_language": 18,
+    "mutants_per_task_language": 3,
+    "payload_bits": 24,
+    "payloads_per_stratum": 16,
+    "schemes": [
+      "lexical",
+      "structural",
+      "hybrid"
+    ],
+    "severity_levels": [
+      0,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1
+    ],
+    "task_families": [
+      "leap_year",
+      "collatz_steps",
+      "raindrops",
+      "grains",
+      "hamming",
+      "isogram",
+      "triangle",
+      "luhn",
+      "darts",
+      "armstrong",
+      "nucleotide_count",
+      "reverse_text"
+    ]
+  },
+  "failure_semantics": "parse, runtime, extraction, and bounded-observation mismatches are retained as failures",
+  "mixtures": {
+    "balanced": {
+      "mixed": 0.2,
+      "normalize": 0.2,
+      "random_flip": 0.2,
+      "rename": 0.2,
+      "strip": 0.2
+    },
+    "rename-heavy": {
+      "random_flip": 0.24,
+      "rename": 0.54,
+      "strip": 0.22
+    },
+    "structure-heavy": {
+      "normalize": 0.54,
+      "random_flip": 0.24,
+      "strip": 0.22
+    }
+  },
+  "protocol_version": "COVE-WM-1.1",
+  "randomness": {
+    "false_positive_monte_carlo_seed": 69,
+    "parser_path_seed": 2,
+    "payloads_and_attacks": "SHA-256-derived deterministic values"
+  },
+  "resource_profile": "CPU_ONLY_NO_GPU_NO_MODEL_API_NO_LLM",
+  "subsequent_joint_evidence_diagnostic": {
+    "bound": "sharp finite joint-count interval over unrestricted missing binary-label completions",
+    "comparator": "separately implemented feasible-table enumeration receiving identical observations and optional same-universe marginal",
+    "mapping": "432 of 504 semantic-audit rows link to dense payload-zero/full-severity keys under the reviewed producer; 72 carrier-only rows are outside the dense grid; dense rows lack source hashes and extraction observations",
+    "non_claims": "no upstream reproduction, external-system defect, source-level robustness result, accuracy gain, or general probability-bound novelty",
+    "output": "results/joint_diagnostic/",
+    "runner": "check_joint_evidence.py",
+    "status": "data-only subsequent analysis; no new watermark/attack/detection trials",
+    "unit": "one dense configuration with observed state-model decision and known or unknown bounded semantic label"
+  },
+  "subsequent_source_joint_analysis": {
+    "bound_method": "one unknown binary validity per exact source group; signed coefficient aggregation before minimizing/maximizing a carrier contrast",
+    "direct_executed_dense_configurations": 432,
+    "distinct_python_task_sources": 22054,
+    "distinct_task_language_source_identities": 44149,
+    "javascript_valid_configurations_after_exact_source_reuse": 2946,
+    "joint_full_grid_count_bounds": [
+      18756,
+      35768
+    ],
+    "known_validity_after_python_proof_and_source_identity_closure": 40962,
+    "native_evidence": "results/revision-reproduction/",
+    "native_program_executions_by_source_analysis": 0,
+    "python_erasure_configurations": 38016,
+    "quantity": "joint yield E[validity AND source detection], not P(detection | validity)",
+    "receiver": "verify_source_joint.py",
+    "results": "results/revision-source-joint/",
+    "runner": "check_source_joint.py",
+    "selection": "complete frozen grid; subsequent revision analysis, not a new population sample",
+    "sharpness": "exact over source-label completions under the stated contract, not a statistical confidence interval or arbitrary-program realizability claim",
+    "source_configurations": 76032,
+    "source_group": "task, language, receiver reference/domain/observation/runtime contract, exact source bytes",
+    "three_state_receiver": "supported by restricted proof or source-bound complete execution; contradicted by syntax failure or complete execution mismatch; unavailable when evidence is absent; stale or malformed evidence is an error",
+    "unit": "configuration with actual source extraction, source-bound validity evidence and detector decision",
+    "unknown_validity": 35070
+  },
+  "uncertainty": "response-curve Clopper-Pearson fields are two-sided 95% homogeneous independent-Bernoulli reference-model intervals, not confidence intervals for deterministic state enumeration; empirical null intervals and one-sided 95% exact zero-failure bounds require their separately stated independent null-trial model"
+}

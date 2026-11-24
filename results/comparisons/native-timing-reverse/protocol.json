@@ -1,0 +1,304 @@
+{
+  "schema": "markvalidity-serial-comparison-cost-protocol-v1",
+  "status": "FROZEN_BEFORE_EXECUTION",
+  "counterbalance_block": "complementary_reverse_order",
+  "complement_of_protocol_sha256": "463c576d6e5a4286ed8701cb8113d591d9acc9cdacf95f8ada7ee7a547398c78",
+  "source_snapshot_manifest_sha256": "d5b57bbff6e89bfad4dd0d905b7646fdbadc6b204b4f7be64d82f8b4ad25c74a",
+  "created_at_utc": "2026-11-19T12:42:30.088783+00:00",
+  "source_sha256": {
+    "native_timing.py": "3245f7c1bbb4a6880269108a9c7d3ae7e87a1a41b703fcaef60e8eed23793ec5",
+    "native_timing_reverse.py": "843f0f4c8571353b512287fc90c31d18624684cf534828b16f2ddf7baa9821fc",
+    "policies.py": "20dcbac920405ef03dc9c74673e18d45a6a7d7cf275094778a4cf5fc7b58f1a7",
+    "analyze.py": "27a1332dbf08c5a677936f8267cfccad4571e7fa79ff5b163a82ce4f038fd3ab",
+    "natural_analysis.py": "bcf19e3111d68b43fbb144cff23ad844f7a9aeb9d9af18aff0f24a69e98e3551",
+    "admission.py": "cbb5ca5d82ca92b50764430555f3eeb2df895db736e3a1f4854509a4d84c6009",
+    "humaneval_runner": "232a7d6f47011501356a9c9ac07e17bf325bde345d9c707d32c4fae668367012",
+    "mbpp_runner": "003909bf27456960596204a830cfde367f6aa1d95a13423f589c30633192d46a"
+  },
+  "public_registry_sha256": "b27d496c4cb7dade0ec39d6a5094805e609d3bcf1cdb32654b12db160effce49",
+  "environment": {
+    "python": "3.12.14",
+    "sys_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "cpu_count_reported": 9,
+    "interpreter_executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7"
+  },
+  "run_order": [
+    {
+      "repeat": 1,
+      "dataset": "HumanEval",
+      "scope": "humaneval",
+      "left": "stock",
+      "right": "s1",
+      "target": "J",
+      "method": "independent",
+      "policy": "independent_joint_width"
+    },
+    {
+      "repeat": 1,
+      "dataset": "HumanEval",
+      "scope": "humaneval",
+      "left": "stock",
+      "right": "s1",
+      "target": "J",
+      "method": "coupled",
+      "policy": "joint_width_per_suite"
+    },
+    {
+      "repeat": 1,
+      "dataset": "HumanEval",
+      "scope": "humaneval",
+      "left": "stock",
+      "right": "s1",
+      "target": "C",
+      "method": "coupled",
+      "policy": "conditional_differences_first"
+    },
+    {
+      "repeat": 1,
+      "dataset": "HumanEval",
+      "scope": "humaneval",
+      "left": "stock",
+      "right": "s1",
+      "target": "C",
+      "method": "independent",
+      "policy": "independent_conditional_minimax_width"
+    },
+    {
+      "repeat": 1,
+      "dataset": "mbpp_sanitized",
+      "scope": "mbpp",
+      "left": "stock",
+      "right": "s4",
+      "target": "J",
+      "method": "independent",
+      "policy": "independent_joint_width"
+    },
+    {
+      "repeat": 1,
+      "dataset": "mbpp_sanitized",
+      "scope": "mbpp",
+      "left": "stock",
+      "right": "s4",
+      "target": "J",
+      "method": "coupled",
+      "policy": "joint_width_per_suite"
+    },
+    {
+      "repeat": 1,
+      "dataset": "mbpp_sanitized",
+      "scope": "mbpp",
+      "left": "stock",
+      "right": "s4",
+      "target": "C",
+      "method": "coupled",
+      "policy": "conditional_differences_first"
+    },
+    {
+      "repeat": 1,
+      "dataset": "mbpp_sanitized",
+      "scope": "mbpp",
+      "left": "stock",
+      "right": "s4",
+      "target": "C",
+      "method": "independent",
+      "policy": "independent_conditional_minimax_width"
+    },
+    {
+      "repeat": 2,
+      "dataset": "HumanEval",
+      "scope": "humaneval",
+      "left": "stock",
+      "right": "s1",
+      "target": "C",
+      "method": "coupled",
+      "policy": "conditional_differences_first"
+    },
+    {
+      "repeat": 2,
+      "dataset": "HumanEval",
+      "scope": "humaneval",
+      "left": "stock",
+      "right": "s1",
+      "target": "C",
+      "method": "independent",
+      "policy": "independent_conditional_minimax_width"
+    },
+    {
+      "repeat": 2,
+      "dataset": "mbpp_sanitized",
+      "scope": "mbpp",
+      "left": "stock",
+      "right": "s4",
+      "target": "J",
+      "method": "independent",
+      "policy": "independent_joint_width"
+    },
+    {
+      "repeat": 2,
+      "dataset": "mbpp_sanitized",
+      "scope": "mbpp",
+      "left": "stock",
+      "right": "s4",
+      "target": "J",
+      "method": "coupled",
+      "policy": "joint_width_per_suite"
+    },
+    {
+      "repeat": 2,
+      "dataset": "mbpp_sanitized",
+      "scope": "mbpp",
+      "left": "stock",
+      "right": "s4",
+      "target": "C",
+      "method": "coupled",
+      "policy": "conditional_differences_first"
+    },
+    {
+      "repeat": 2,
+      "dataset": "mbpp_sanitized",
+      "scope": "mbpp",
+      "left": "stock",
+      "right": "s4",
+      "target": "C",
+      "method": "independent",
+      "policy": "independent_conditional_minimax_width"
+    },
+    {
+      "repeat": 2,
+      "dataset": "HumanEval",
+      "scope": "humaneval",
+      "left": "stock",
+      "right": "s1",
+      "target": "J",
+      "method": "independent",
+      "policy": "independent_joint_width"
+    },
+    {
+      "repeat": 2,
+      "dataset": "HumanEval",
+      "scope": "humaneval",
+      "left": "stock",
+      "right": "s1",
+      "target": "J",
+      "method": "coupled",
+      "policy": "joint_width_per_suite"
+    },
+    {
+      "repeat": 3,
+      "dataset": "mbpp_sanitized",
+      "scope": "mbpp",
+      "left": "stock",
+      "right": "s4",
+      "target": "J",
+      "method": "independent",
+      "policy": "independent_joint_width"
+    },
+    {
+      "repeat": 3,
+      "dataset": "mbpp_sanitized",
+      "scope": "mbpp",
+      "left": "stock",
+      "right": "s4",
+      "target": "J",
+      "method": "coupled",
+      "policy": "joint_width_per_suite"
+    },
+    {
+      "repeat": 3,
+      "dataset": "mbpp_sanitized",
+      "scope": "mbpp",
+      "left": "stock",
+      "right": "s4",
+      "target": "C",
+      "method": "coupled",
+      "policy": "conditional_differences_first"
+    },
+    {
+      "repeat": 3,
+      "dataset": "mbpp_sanitized",
+      "scope": "mbpp",
+      "left": "stock",
+      "right": "s4",
+      "target": "C",
+      "method": "independent",
+      "policy": "independent_conditional_minimax_width"
+    },
+    {
+      "repeat": 3,
+      "dataset": "HumanEval",
+      "scope": "humaneval",
+      "left": "stock",
+      "right": "s1",
+      "target": "J",
+      "method": "independent",
+      "policy": "independent_joint_width"
+    },
+    {
+      "repeat": 3,
+      "dataset": "HumanEval",
+      "scope": "humaneval",
+      "left": "stock",
+      "right": "s1",
+      "target": "J",
+      "method": "coupled",
+      "policy": "joint_width_per_suite"
+    },
+    {
+      "repeat": 3,
+      "dataset": "HumanEval",
+      "scope": "humaneval",
+      "left": "stock",
+      "right": "s1",
+      "target": "C",
+      "method": "coupled",
+      "policy": "conditional_differences_first"
+    },
+    {
+      "repeat": 3,
+      "dataset": "HumanEval",
+      "scope": "humaneval",
+      "left": "stock",
+      "right": "s1",
+      "target": "C",
+      "method": "independent",
+      "policy": "independent_conditional_minimax_width"
+    }
+  ],
+  "repeats": 3,
+  "runs": 24,
+  "initialization": "qualified_reference_identity_only",
+  "candidate_label_cache_between_runs": false,
+  "scope": "Additional comparison audit from frozen emitted sources and detector decisions, with common qualified reference evidence. No embedding/detection generation speed or population timing inference.",
+  "phase_definitions": {
+    "common_load_register": "Public registry parsing, source/contract/reference-observation hashing and row registration, performed once and reported separately.",
+    "register_seconds": "Per-run coefficient construction, reference-identity admission, target state and method-specific policy initialization.",
+    "select_seconds": "Choose the next group from public state before executing it.",
+    "bounds_seconds": "Compute only this method and target's current bound and stopping decision.",
+    "worker_seconds": "Build and validate the frozen request, launch the isolated subprocess, capture output and clean its temporary directory; includes launch overhead.",
+    "receive_seconds": "Parse the new stdout and admit its result into the method state.",
+    "record_seconds": "Serialize and write raw observations and trace records.",
+    "audit_total_seconds": "Wall time from per-run registration through the certified stop, including the measured phases and loop overhead."
+  },
+  "load_before": {
+    "monotonic_seconds": 35130.710085176,
+    "load_average": [
+      6.76708984375,
+      7.40576171875,
+      6.7294921875
+    ],
+    "visible_processes": 3,
+    "producer_cpu_seconds": 0.1179389,
+    "cpu_affinity": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  }
+}

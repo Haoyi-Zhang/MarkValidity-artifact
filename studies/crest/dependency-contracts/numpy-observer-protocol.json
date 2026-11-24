@@ -1,0 +1,16 @@
+{
+  "status": "FIXED_BEFORE_EXECUTION",
+  "created_at_utc": "2026-11-19T15:26:27.298704+00:00",
+  "task": {
+    "cohort": "qwen",
+    "dataset": "HumanEval",
+    "task_id": "HumanEval/32"
+  },
+  "base_observer": "external-studies/sew_natural/scripts/humaneval/native_runner_v3.py",
+  "base_observer_sha256": "232a7d6f47011501356a9c9ac07e17bf325bde345d9c707d32c4fae668367012",
+  "observer_file": "dependency-contracts/native_runner_numpy.py",
+  "observer_source_sha256": "01f069b68059a72e8a704623aaec7a03abaae2d478135af6aa021fe041da1202",
+  "producer_file": "replay_numpy_dependency.py",
+  "producer_source_sha256": "83440a5bea71817a9244ad865f458dfe36894cd89495b437dede41c62525ea4e",
+  "amendment": "Extend only observation encoding for numeric NumPy scalars to dtype with explicit byte order and exact raw bytes. Return the original scalar unchanged to the original tests. Unsupported values remain observer-unavailable; no program, prompt, test or watermark changes."
+}

@@ -1,0 +1,164 @@
+{
+  "humaneval": {
+    "rows": 1968,
+    "workload_per_version": 492,
+    "unique_source_contract_groups": 546,
+    "reference_identity_known_groups": 0,
+    "additional_unique_groups_after_reference": 546,
+    "tasks": 164,
+    "complete_scores": {
+      "stock": {
+        "rows": 492,
+        "detected": 368,
+        "valid": 492,
+        "joint": 368,
+        "unavailable_rows": 0,
+        "A": "1",
+        "J": "92/123",
+        "C": "92/123",
+        "C_undefined": false
+      },
+      "s1": {
+        "rows": 492,
+        "detected": 365,
+        "valid": 492,
+        "joint": 365,
+        "unavailable_rows": 0,
+        "A": "1",
+        "J": "365/492",
+        "C": "365/492",
+        "C_undefined": false
+      },
+      "s4": {
+        "rows": 492,
+        "detected": 368,
+        "valid": 492,
+        "joint": 368,
+        "unavailable_rows": 0,
+        "A": "1",
+        "J": "92/123",
+        "C": "92/123",
+        "C_undefined": false
+      },
+      "s1_s4": {
+        "rows": 492,
+        "detected": 365,
+        "valid": 492,
+        "joint": 365,
+        "unavailable_rows": 0,
+        "A": "1",
+        "J": "365/492",
+        "C": "365/492",
+        "C_undefined": false
+      }
+    }
+  },
+  "mbpp": {
+    "rows": 5124,
+    "workload_per_version": 1281,
+    "unique_source_contract_groups": 1347,
+    "reference_identity_known_groups": 0,
+    "additional_unique_groups_after_reference": 1347,
+    "tasks": 427,
+    "complete_scores": {
+      "stock": {
+        "rows": 1281,
+        "detected": 849,
+        "valid": 1278,
+        "joint": 849,
+        "unavailable_rows": 0,
+        "A": "426/427",
+        "J": "283/427",
+        "C": "283/426",
+        "C_undefined": false
+      },
+      "s1": {
+        "rows": 1281,
+        "detected": 843,
+        "valid": 1278,
+        "joint": 843,
+        "unavailable_rows": 0,
+        "A": "426/427",
+        "J": "281/427",
+        "C": "281/426",
+        "C_undefined": false
+      },
+      "s4": {
+        "rows": 1281,
+        "detected": 852,
+        "valid": 1281,
+        "joint": 852,
+        "unavailable_rows": 0,
+        "A": "1",
+        "J": "284/427",
+        "C": "284/427",
+        "C_undefined": false
+      },
+      "s1_s4": {
+        "rows": 1281,
+        "detected": 846,
+        "valid": 1281,
+        "joint": 846,
+        "unavailable_rows": 0,
+        "A": "1",
+        "J": "282/427",
+        "C": "282/427",
+        "C_undefined": false
+      }
+    }
+  },
+  "pooled": {
+    "rows": 7092,
+    "workload_per_version": 1773,
+    "unique_source_contract_groups": 1893,
+    "reference_identity_known_groups": 0,
+    "additional_unique_groups_after_reference": 1893,
+    "tasks": 591,
+    "complete_scores": {
+      "stock": {
+        "rows": 1773,
+        "detected": 1217,
+        "valid": 1770,
+        "joint": 1217,
+        "unavailable_rows": 0,
+        "A": "590/591",
+        "J": "1217/1773",
+        "C": "1217/1770",
+        "C_undefined": false
+      },
+      "s1": {
+        "rows": 1773,
+        "detected": 1208,
+        "valid": 1770,
+        "joint": 1208,
+        "unavailable_rows": 0,
+        "A": "590/591",
+        "J": "1208/1773",
+        "C": "604/885",
+        "C_undefined": false
+      },
+      "s4": {
+        "rows": 1773,
+        "detected": 1220,
+        "valid": 1773,
+        "joint": 1220,
+        "unavailable_rows": 0,
+        "A": "1",
+        "J": "1220/1773",
+        "C": "1220/1773",
+        "C_undefined": false
+      },
+      "s1_s4": {
+        "rows": 1773,
+        "detected": 1211,
+        "valid": 1773,
+        "joint": 1211,
+        "unavailable_rows": 0,
+        "A": "1",
+        "J": "1211/1773",
+        "C": "1211/1773",
+        "C_undefined": false
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "study": "reference",
+  "input_rows": 591,
+  "archive_or_benchmark_source_bindings": 591,
+  "official_contract_bindings": 591,
+  "native_request_bindings": 1180,
+  "decoded_input_files_with_line_ending_normalization": 0,
+  "input_text_policy": "UTF-8 with Python universal-newline decoding. Archived bytes and actual submitted text are verified as separate objects; no token-level edits.",
+  "verified_completed_emission_rejections": 2,
+  "observers": {
+    "external-studies/sew_natural/scripts/humaneval/native_runner_v3.py": "232a7d6f47011501356a9c9ac07e17bf325bde345d9c707d32c4fae668367012",
+    "external-studies/sew_natural/mbpp/scripts/native_runner_v2.py": "003909bf27456960596204a830cfde367f6aa1d95a13423f589c30633192d46a"
+  },
+  "execution_environments": [
+    {
+      "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+      "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+      "hash_seed": "0",
+      "optimization_disabled": true,
+      "wall_timeout_seconds": 15,
+      "cpu_seconds": 10,
+      "address_space_bytes": 1073741824
+    }
+  ],
+  "paired_execution_contracts_verified": true,
+  "original_assertions_without_value_instrumentation": false,
+  "literal_official_executor_assembly": false,
+  "namespace_bindings_separated": false,
+  "declared_dependency_amendments": 0,
+  "upstream_core_model_threshold_bindings": 17,
+  "feature_reextraction_scope": "Separate official CLI checks cover selected input/candidate pairs; this receiver does not claim all-source feature re-extraction.",
+  "scope": "Actual request/source/contract/observer/environment identity, source decoding, complete declared input mapping, and valid terminal no-output events. Numerical outcomes and classifier scores have a separate receiver."
+}

@@ -1,0 +1,366 @@
+{
+  "evidence_policies": [
+    {
+      "denominator": 76032,
+      "lower_count": 122,
+      "policy": "historical source subset",
+      "source_decisions_known": 432,
+      "upper_count": 75722,
+      "validity_known": 432
+    },
+    {
+      "denominator": 76032,
+      "lower_count": 122,
+      "policy": "all-source extraction, retained executions only",
+      "source_decisions_known": 76032,
+      "upper_count": 35768,
+      "validity_known": 432
+    },
+    {
+      "denominator": 76032,
+      "lower_count": 1710,
+      "policy": "all-source extraction, exact-source execution closure",
+      "source_decisions_known": 76032,
+      "upper_count": 35768,
+      "validity_known": 5856
+    },
+    {
+      "denominator": 76032,
+      "lower_count": 17955,
+      "policy": "all-source extraction, Python erasure plus directly linked executions",
+      "source_decisions_known": 76032,
+      "upper_count": 35768,
+      "validity_known": 38232
+    },
+    {
+      "denominator": 76032,
+      "lower_count": 18756,
+      "policy": "all-source extraction, Python erasure plus exact-source execution closure",
+      "source_decisions_known": 76032,
+      "upper_count": 35768,
+      "validity_known": 40962
+    }
+  ],
+  "mixtures": [
+    {
+      "certified_combined_winners": [],
+      "combined": [
+        {
+          "joint_lower": "0.207717803030",
+          "joint_lower_exact": "4387/21120",
+          "joint_upper": "0.395738636364",
+          "joint_upper_exact": "1393/3520",
+          "language": "combined",
+          "mixture": "balanced",
+          "point_identified": false,
+          "scheme": "lexical"
+        },
+        {
+          "joint_lower": "0.206486742424",
+          "joint_lower_exact": "4361/21120",
+          "joint_upper": "0.395075757576",
+          "joint_upper_exact": "1043/2640",
+          "language": "combined",
+          "mixture": "balanced",
+          "point_identified": false,
+          "scheme": "structural"
+        },
+        {
+          "joint_lower": "0.155113636364",
+          "joint_lower_exact": "273/1760",
+          "joint_upper": "0.302746212121",
+          "joint_upper_exact": "3197/10560",
+          "language": "combined",
+          "mixture": "balanced",
+          "point_identified": false,
+          "scheme": "hybrid"
+        }
+      ],
+      "lower_minus_largest_competitor_upper": {
+        "hybrid": {
+          "decimal": "-0.240625000000",
+          "denominator": 320,
+          "exact": "-77/320",
+          "numerator": -77
+        },
+        "lexical": {
+          "decimal": "-0.187357954545",
+          "denominator": 7040,
+          "exact": "-1319/7040",
+          "numerator": -1319
+        },
+        "structural": {
+          "decimal": "-0.189251893939",
+          "denominator": 21120,
+          "exact": "-3997/21120",
+          "numerator": -3997
+        }
+      },
+      "mixture": "balanced",
+      "python": [
+        {
+          "joint_lower": "0.398011363636",
+          "joint_lower_exact": "1401/3520",
+          "joint_upper": "0.398011363636",
+          "joint_upper_exact": "1401/3520",
+          "language": "python",
+          "mixture": "balanced",
+          "point_identified": true,
+          "scheme": "lexical"
+        },
+        {
+          "joint_lower": "0.395265151515",
+          "joint_lower_exact": "2087/5280",
+          "joint_upper": "0.395265151515",
+          "joint_upper_exact": "2087/5280",
+          "language": "python",
+          "mixture": "balanced",
+          "point_identified": true,
+          "scheme": "structural"
+        },
+        {
+          "joint_lower": "0.301136363636",
+          "joint_lower_exact": "53/176",
+          "joint_upper": "0.301136363636",
+          "joint_upper_exact": "53/176",
+          "language": "python",
+          "mixture": "balanced",
+          "point_identified": true,
+          "scheme": "hybrid"
+        }
+      ]
+    },
+    {
+      "certified_combined_winners": [
+        "structural"
+      ],
+      "combined": [
+        {
+          "joint_lower": "0.131709280303",
+          "joint_lower_exact": "27817/211200",
+          "joint_upper": "0.255606060606",
+          "joint_upper_exact": "1687/6600",
+          "language": "combined",
+          "mixture": "rename-heavy",
+          "point_identified": false,
+          "scheme": "lexical"
+        },
+        {
+          "joint_lower": "0.351458333333",
+          "joint_lower_exact": "1687/4800",
+          "joint_upper": "0.665539772727",
+          "joint_upper_exact": "23427/35200",
+          "language": "combined",
+          "mixture": "rename-heavy",
+          "point_identified": false,
+          "scheme": "structural"
+        },
+        {
+          "joint_lower": "0.170601325758",
+          "joint_lower_exact": "36031/211200",
+          "joint_upper": "0.333669507576",
+          "joint_upper_exact": "70471/211200",
+          "language": "combined",
+          "mixture": "rename-heavy",
+          "point_identified": false,
+          "scheme": "hybrid"
+        }
+      ],
+      "lower_minus_largest_competitor_upper": {
+        "hybrid": {
+          "decimal": "-0.494938446970",
+          "denominator": 211200,
+          "exact": "-104531/211200",
+          "numerator": -104531
+        },
+        "lexical": {
+          "decimal": "-0.533830492424",
+          "denominator": 42240,
+          "exact": "-22549/42240",
+          "numerator": -22549
+        },
+        "structural": {
+          "decimal": "0.017788825758",
+          "denominator": 211200,
+          "exact": "3757/211200",
+          "numerator": 3757
+        }
+      },
+      "mixture": "rename-heavy",
+      "python": [
+        {
+          "joint_lower": "0.257111742424",
+          "joint_lower_exact": "27151/105600",
+          "joint_upper": "0.257111742424",
+          "joint_upper_exact": "27151/105600",
+          "language": "python",
+          "mixture": "rename-heavy",
+          "point_identified": true,
+          "scheme": "lexical"
+        },
+        {
+          "joint_lower": "0.666553030303",
+          "joint_lower_exact": "17597/26400",
+          "joint_upper": "0.666553030303",
+          "joint_upper_exact": "17597/26400",
+          "language": "python",
+          "mixture": "rename-heavy",
+          "point_identified": true,
+          "scheme": "structural"
+        },
+        {
+          "joint_lower": "0.331609848485",
+          "joint_lower_exact": "17509/52800",
+          "joint_upper": "0.331609848485",
+          "joint_upper_exact": "17509/52800",
+          "language": "python",
+          "mixture": "rename-heavy",
+          "point_identified": true,
+          "scheme": "hybrid"
+        }
+      ]
+    },
+    {
+      "certified_combined_winners": [
+        "lexical"
+      ],
+      "combined": [
+        {
+          "joint_lower": "0.351084280303",
+          "joint_lower_exact": "74149/211200",
+          "joint_upper": "0.665080492424",
+          "joint_upper_exact": "28093/42240",
+          "language": "combined",
+          "mixture": "structure-heavy",
+          "point_identified": false,
+          "scheme": "lexical"
+        },
+        {
+          "joint_lower": "0.131571969697",
+          "joint_lower_exact": "6947/52800",
+          "joint_upper": "0.253636363636",
+          "joint_upper_exact": "279/1100",
+          "language": "combined",
+          "mixture": "structure-heavy",
+          "point_identified": false,
+          "scheme": "structural"
+        },
+        {
+          "joint_lower": "0.175075757576",
+          "joint_lower_exact": "2311/13200",
+          "joint_upper": "0.339422348485",
+          "joint_upper_exact": "35843/105600",
+          "language": "combined",
+          "mixture": "structure-heavy",
+          "point_identified": false,
+          "scheme": "hybrid"
+        }
+      ],
+      "lower_minus_largest_competitor_upper": {
+        "hybrid": {
+          "decimal": "-0.490004734848",
+          "denominator": 211200,
+          "exact": "-103489/211200",
+          "numerator": -103489
+        },
+        "lexical": {
+          "decimal": "0.011661931818",
+          "denominator": 70400,
+          "exact": "821/70400",
+          "numerator": 821
+        },
+        "structural": {
+          "decimal": "-0.533508522727",
+          "denominator": 70400,
+          "exact": "-37559/70400",
+          "numerator": -37559
+        }
+      },
+      "mixture": "structure-heavy",
+      "python": [
+        {
+          "joint_lower": "0.665691287879",
+          "joint_lower_exact": "70297/105600",
+          "joint_upper": "0.665691287879",
+          "joint_upper_exact": "70297/105600",
+          "language": "python",
+          "mixture": "structure-heavy",
+          "point_identified": true,
+          "scheme": "lexical"
+        },
+        {
+          "joint_lower": "0.256183712121",
+          "joint_lower_exact": "27053/105600",
+          "joint_upper": "0.256183712121",
+          "joint_upper_exact": "27053/105600",
+          "language": "python",
+          "mixture": "structure-heavy",
+          "point_identified": true,
+          "scheme": "structural"
+        },
+        {
+          "joint_lower": "0.339280303030",
+          "joint_lower_exact": "8957/26400",
+          "joint_upper": "0.339280303030",
+          "joint_upper_exact": "8957/26400",
+          "language": "python",
+          "mixture": "structure-heavy",
+          "point_identified": true,
+          "scheme": "hybrid"
+        }
+      ]
+    }
+  ],
+  "program_executions_in_this_analysis": 0,
+  "quantity": "joint yield E[validity AND source detection]",
+  "source_coverage": [
+    {
+      "behavioral_basis": "restricted AST erasure",
+      "configurations": 38016,
+      "distinct_task_source_identities": 22054,
+      "joint_lower": {
+        "decimal": "0.470670244108",
+        "denominator": 38016,
+        "exact": "17893/38016",
+        "numerator": 17893
+      },
+      "joint_lower_count": 17893,
+      "joint_upper": {
+        "decimal": "0.470670244108",
+        "denominator": 38016,
+        "exact": "17893/38016",
+        "numerator": 17893
+      },
+      "joint_upper_count": 17893,
+      "known_validity": 38016,
+      "language": "python",
+      "source_detections": 17893,
+      "unknown_validity": 0
+    },
+    {
+      "behavioral_basis": "retained bounded execution",
+      "configurations": 38016,
+      "distinct_task_source_identities": 22095,
+      "joint_lower": {
+        "decimal": "0.022700968013",
+        "denominator": 38016,
+        "exact": "863/38016",
+        "numerator": 863
+      },
+      "joint_lower_count": 863,
+      "joint_upper": {
+        "decimal": "0.470196759259",
+        "denominator": 3456,
+        "exact": "1625/3456",
+        "numerator": 1625
+      },
+      "joint_upper_count": 17875,
+      "known_validity": 2946,
+      "language": "javascript",
+      "source_detections": 17875,
+      "unknown_validity": 35070
+    }
+  ],
+  "source_identity_unit": "task and language and exact candidate source",
+  "source_state_disagreements": 0
+}

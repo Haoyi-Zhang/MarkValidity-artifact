@@ -1,0 +1,108 @@
+[
+  {
+    "step": 0,
+    "bounds": {
+      "route": "paired_ratio_envelope",
+      "defined_all": true,
+      "anchors": {
+        "left": {
+          "lower": "-3",
+          "upper": "0",
+          "endpoints": [
+            {
+              "q": "1/433",
+              "lower_numerator": -1299,
+              "upper_numerator": 0,
+              "denominator": 433
+            },
+            {
+              "q": "849/868",
+              "lower_numerator": -2604,
+              "upper_numerator": 0,
+              "denominator": 868
+            }
+          ],
+          "different_unknown_groups": 6,
+          "relation_on_relaxation": "unresolved"
+        },
+        "right": {
+          "lower": "-3",
+          "upper": "0",
+          "endpoints": [
+            {
+              "q": "1/430",
+              "lower_numerator": -1290,
+              "upper_numerator": 0,
+              "denominator": 430
+            },
+            {
+              "q": "852/871",
+              "lower_numerator": -2613,
+              "upper_numerator": 0,
+              "denominator": 871
+            }
+          ],
+          "different_unknown_groups": 6,
+          "relation_on_relaxation": "unresolved"
+        }
+      },
+      "decision": "unresolved",
+      "anchor": null,
+      "decision_source": null
+    },
+    "groups_admitted": 20
+  },
+  {
+    "step": 1,
+    "bounds": {
+      "route": "paired_ratio_envelope",
+      "defined_all": true,
+      "anchors": {
+        "left": {
+          "lower": "-3",
+          "upper": "-19/868",
+          "endpoints": [
+            {
+              "q": "1/433",
+              "lower_numerator": -1299,
+              "upper_numerator": -432,
+              "denominator": 433
+            },
+            {
+              "q": "849/868",
+              "lower_numerator": -2604,
+              "upper_numerator": -19,
+              "denominator": 868
+            }
+          ],
+          "different_unknown_groups": 5,
+          "relation_on_relaxation": "right_strict"
+        },
+        "right": {
+          "lower": "-3",
+          "upper": "-19/871",
+          "endpoints": [
+            {
+              "q": "2/431",
+              "lower_numerator": -1293,
+              "upper_numerator": -429,
+              "denominator": 431
+            },
+            {
+              "q": "852/871",
+              "lower_numerator": -2613,
+              "upper_numerator": -19,
+              "denominator": 871
+            }
+          ],
+          "different_unknown_groups": 5,
+          "relation_on_relaxation": "right_strict"
+        }
+      },
+      "decision": "right_strict",
+      "anchor": "left",
+      "decision_source": "paired_ratio_envelope"
+    },
+    "groups_admitted": 21
+  }
+]

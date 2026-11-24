@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.2",
+  "citation_key": "yang2023",
+  "entry_type": "inproceedings",
+  "title": "{SrcMarker}: Dual-Channel Source Code Watermarking via Scalable Code Transformations",
+  "authors": "Borui Yang and Wei Li and Liyao Xiang and Bo Li",
+  "venue": "Proceedings of the 45th IEEE Symposium on Security and Privacy",
+  "year": "2024",
+  "pages_or_article": "4088--4106",
+  "verified_scholarly_identifier": "doi:10.1109/SP54263.2024.00097",
+  "source_locator": "https://arxiv.org/html/2309.00860v2",
+  "verification_status": "VERIFIED_DOI_RECORD",
+  "verification_basis": "Final IEEE Symposium on Security and Privacy proceedings record and DOI metadata; repository title and authors cross-checked against the formal publication.",
+  "manuscript_occurrences": [
+    {
+      "file": "paper/main.tex",
+      "line": 117,
+      "claim": "SrcMarker embeds messages through lexical and syntactic transformations \\cite{yang2023}.",
+      "paragraph_sha256": "11ac76cfb070b012d036c647db6d96b503d999b459843f33c2db67dfa16ae3e8",
+      "consumed_by": [
+        "paper/main.pdf"
+      ]
+    },
+    {
+      "file": "paper/main.tex",
+      "line": 394,
+      "claim": "SrcMarker reports per-bit agreement and exact payload recovery \\cite{yang2023}.",
+      "paragraph_sha256": "60e2bd67091b0abfb4e63a9e4f0c18ad69790da72fe3867bd4203e8719012018",
+      "consumed_by": [
+        "paper/main.pdf"
+      ]
+    }
+  ],
+  "current_source_bindings": {
+    "paper/current-authors.tex": "2f54a9034521b4cf9d60eaa7bbae77113d6a5360ed868bf3f5a5c82c0780036e",
+    "paper/figdata/source-detection.tex": "d46a2ee2afc60f97dfa57dda0e46df8e0a27ab0f28b7dd72d3b30b08e5dc2f2c",
+    "paper/main.tex": "dc471eebfb6f0c06ec65b9172fd15fe38b6b53db98993826208615e180bee45a",
+    "paper/online-supplement.tex": "d6af4e34e0e16160037550602d9f0e316b7174f6f2c764d7d003eba815e56aa1",
+    "paper/project-repository.tex": "9cdd4507256375154cb467b25033e26f0635d433a5460dce9f697c09b9a6608a"
+  },
+  "current_claim_support": {
+    "status": "BODY_SUPPORT_CURRENT_CLAIMS",
+    "scope": "These exact current attributions only; no independent replication or whole-paper reread",
+    "original_source": "https://arxiv.org/html/2309.00860v2",
+    "version": "Author preprint arXiv2309.00860v2 plus pinned SrcMarker code; final IEEE2024 body not separately read",
+    "inspected_section": "Sections III, IV-B, IV-C, IV-E",
+    "complete_original_paper_read_claimed": false
+  },
+  "evidence_sha256": "a16ef52cd935b81418b0c0096a18eea511efff95dde349476739c921c02b8e64"
+}

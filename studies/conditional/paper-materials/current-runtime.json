@@ -1,0 +1,1853 @@
+{
+  "status": "complete",
+  "runs": 48,
+  "candidate_suite_executions": 19260,
+  "repetitions_per_case_method": 6,
+  "design": "Joint timings use retained complementary matched blocks. Conditional timings use a separate fresh balanced serial block. Each case/target/method has six observations, three in each within-pair position. These are separate collections, not one execution batch.",
+  "timing_scope": "From per-run coefficient/state construction through selection, comparison inference, native suite execution, admission and raw recording at first certificate. Common registry preparation is separate. Generation, detector evaluation and reference qualification precede this audit.",
+  "joint_runs": 24,
+  "conditional_runs": 24,
+  "joint_suites": 8322,
+  "conditional_suites": 10938,
+  "common_registration": {
+    "joint_blocks": [
+      {
+        "block": "native-timing",
+        "load_seconds": 0.038040241997805424,
+        "validate_register_seconds": 2.1053203560004476,
+        "total_seconds": 2.143360597998253,
+        "public_rows": 7092,
+        "public_groups": 1893,
+        "candidate_observation_files_read": 0,
+        "scope": "Parse public rows and verify emitted/reference sources, contracts and qualified reference observations. No candidate result is available to this phase."
+      },
+      {
+        "block": "native-timing-reverse",
+        "load_seconds": 0.040494492001016624,
+        "validate_register_seconds": 1.4997845839970978,
+        "total_seconds": 1.5402790759981144,
+        "public_rows": 7092,
+        "public_groups": 1893,
+        "candidate_observation_files_read": 0,
+        "scope": "Parse public rows and verify emitted/reference sources, contracts and qualified reference observations. No candidate result is available to this phase."
+      }
+    ],
+    "conditional_block_seconds": 4.283813074995123
+  },
+  "excluded_from_current_timing": "All common-remainder conditional observations in the retained joint source; all four execution-validation durations.",
+  "rows": [
+    {
+      "scope": "humaneval",
+      "target": "J",
+      "method": "shared",
+      "repetitions": 6,
+      "candidate_suite_queries": 146,
+      "audit_seconds": {
+        "median": 4.956264495496725,
+        "minimum": 4.382161294997786,
+        "maximum": 11.785996845996124,
+        "values_in_repeat_order": [
+          4.782586683999398,
+          4.382161294997786,
+          11.785996845996124,
+          4.885823999997228,
+          5.260360918000515,
+          5.0267049909962225
+        ]
+      },
+      "phases": {
+        "register_seconds": {
+          "median": 0.005808514004456811,
+          "minimum": 0.0040783449949231,
+          "maximum": 0.010445885003719013,
+          "values_in_repeat_order": [
+            0.005603355006314814,
+            0.008000760004506446,
+            0.010445885003719013,
+            0.0040783449949231,
+            0.005247758999757934,
+            0.006013673002598807
+          ]
+        },
+        "select_seconds": {
+          "median": 0.0004983414764865302,
+          "minimum": 0.00035607305471785367,
+          "maximum": 0.002623676038638223,
+          "values_in_repeat_order": [
+            0.00035607305471785367,
+            0.00038822501664981246,
+            0.0006608640251215547,
+            0.0005252279588603415,
+            0.002623676038638223,
+            0.00047145499411271885
+          ]
+        },
+        "bounds_seconds": {
+          "median": 0.0008384149623452686,
+          "minimum": 0.000711205015250016,
+          "maximum": 0.001373931001580786,
+          "values_in_repeat_order": [
+            0.0008357039332622662,
+            0.000711205015250016,
+            0.0008411259914282709,
+            0.001373931001580786,
+            0.0013189860474085435,
+            0.0008257650188170373
+          ]
+        },
+        "worker_seconds": {
+          "median": 4.816990637496929,
+          "minimum": 4.275867771968478,
+          "maximum": 11.647227516055864,
+          "values_in_repeat_order": [
+            4.63367230307631,
+            4.275867771968478,
+            11.647227516055864,
+            4.742694104956172,
+            5.0427814969589235,
+            4.891287170037685
+          ]
+        },
+        "receive_seconds": {
+          "median": 0.023011956029222347,
+          "minimum": 0.01744751307705883,
+          "maximum": 0.04259505898517091,
+          "values_in_repeat_order": [
+            0.01744751307705883,
+            0.022293583024293184,
+            0.02335495502484264,
+            0.04259505898517091,
+            0.026581785030430183,
+            0.022668957033602055
+          ]
+        },
+        "record_seconds": {
+          "median": 0.10170893553367932,
+          "minimum": 0.07236453204677673,
+          "maximum": 0.17573968802025774,
+          "values_in_repeat_order": [
+            0.12203087293892168,
+            0.07236453204677673,
+            0.1009362710028654,
+            0.09185695002088323,
+            0.17573968802025774,
+            0.10248160006449325
+          ]
+        }
+      },
+      "origin": "retained_joint_blocks"
+    },
+    {
+      "scope": "humaneval",
+      "target": "J",
+      "method": "separate",
+      "repetitions": 6,
+      "candidate_suite_queries": 429,
+      "audit_seconds": {
+        "median": 15.155337555999722,
+        "minimum": 13.686471082000935,
+        "maximum": 23.970579472996178,
+        "values_in_repeat_order": [
+          14.64322629399976,
+          13.858270694996463,
+          23.970579472996178,
+          13.686471082000935,
+          15.667448817999684,
+          15.787056615001347
+        ]
+      },
+      "phases": {
+        "register_seconds": {
+          "median": 0.0050300524999329355,
+          "minimum": 0.0041924640026991256,
+          "maximum": 0.009324808001110796,
+          "values_in_repeat_order": [
+            0.005535431999305729,
+            0.0041924640026991256,
+            0.005173277997528203,
+            0.004269372999260668,
+            0.009324808001110796,
+            0.004886827002337668
+          ]
+        },
+        "select_seconds": {
+          "median": 0.0014604654606955592,
+          "minimum": 0.001228050998179242,
+          "maximum": 0.0017963010323001072,
+          "values_in_repeat_order": [
+            0.001414594953530468,
+            0.001479449012549594,
+            0.0014414819088415243,
+            0.001228050998179242,
+            0.001791066097212024,
+            0.0017963010323001072
+          ]
+        },
+        "bounds_seconds": {
+          "median": 0.0033676270140858833,
+          "minimum": 0.0022878430390846916,
+          "maximum": 0.004162319070019294,
+          "values_in_repeat_order": [
+            0.0028909730026498437,
+            0.004162319070019294,
+            0.0031756050084368326,
+            0.0022878430390846916,
+            0.003559649019734934,
+            0.0035992799457744695
+          ]
+        },
+        "worker_seconds": {
+          "median": 14.767579476938408,
+          "minimum": 13.442220340046333,
+          "maximum": 23.59837564402551,
+          "values_in_repeat_order": [
+            14.311292690050323,
+            13.505039685980591,
+            23.59837564402551,
+            13.442220340046333,
+            15.223866263826494,
+            15.455871583035332
+          ]
+        },
+        "receive_seconds": {
+          "median": 0.0711914779858489,
+          "minimum": 0.05139688000053866,
+          "maximum": 0.08596623798075598,
+          "values_in_repeat_order": [
+            0.07358555399696343,
+            0.08052589510043617,
+            0.06879740197473438,
+            0.05139688000053866,
+            0.08596623798075598,
+            0.06856014295772184
+          ]
+        },
+        "record_seconds": {
+          "median": 0.2494339805598429,
+          "minimum": 0.17821999398438493,
+          "maximum": 0.33287310293962946,
+          "values_in_repeat_order": [
+            0.23511339900869643,
+            0.25507318207382923,
+            0.2857813199807424,
+            0.17821999398438493,
+            0.33287310293962946,
+            0.24379477904585656
+          ]
+        }
+      },
+      "origin": "retained_joint_blocks"
+    },
+    {
+      "scope": "humaneval",
+      "target": "C",
+      "method": "shared",
+      "repetitions": 6,
+      "candidate_suite_queries": 154,
+      "audit_seconds": {
+        "median": 5.146305211997969,
+        "minimum": 4.694536328002869,
+        "maximum": 9.455926457005262,
+        "values_in_repeat_order": [
+          9.455926457005262,
+          5.201007051000488,
+          6.669949609000469,
+          4.694536328002869,
+          4.972858173998247,
+          5.091603372995451
+        ]
+      },
+      "phases": {
+        "register_seconds": {
+          "median": 0.004970200996467611,
+          "minimum": 0.003885439997247886,
+          "maximum": 0.009359739000501577,
+          "values_in_repeat_order": [
+            0.009359739000501577,
+            0.003955323998525273,
+            0.00511171299876878,
+            0.003885439997247886,
+            0.004828688994166441,
+            0.005449196003610268
+          ]
+        },
+        "select_seconds": {
+          "median": 0.00424963402110734,
+          "minimum": 0.0030309280773508362,
+          "maximum": 0.014514702015731018,
+          "values_in_repeat_order": [
+            0.0030309280773508362,
+            0.004097556025953963,
+            0.014514702015731018,
+            0.004401712016260717,
+            0.007456546991306823,
+            0.003705757058924064
+          ]
+        },
+        "bounds_seconds": {
+          "median": 0.023799005499313353,
+          "minimum": 0.01806798399775289,
+          "maximum": 0.08022444699599873,
+          "values_in_repeat_order": [
+            0.03240497098158812,
+            0.021953926974674687,
+            0.08022444699599873,
+            0.01806798399775289,
+            0.02564408402395202,
+            0.020664790994487703
+          ]
+        },
+        "worker_seconds": {
+          "median": 5.0023204985009215,
+          "minimum": 4.543977243985864,
+          "maximum": 9.267304804008745,
+          "values_in_repeat_order": [
+            9.267304804008745,
+            5.064506958027778,
+            6.362962622988562,
+            4.543977243985864,
+            4.823168711976905,
+            4.940134038974065
+          ]
+        },
+        "receive_seconds": {
+          "median": 0.03010718650330091,
+          "minimum": 0.025891844961734023,
+          "maximum": 0.05411409697990166,
+          "values_in_repeat_order": [
+            0.02963967900723219,
+            0.030121161973511335,
+            0.05411409697990166,
+            0.031797909025044646,
+            0.025891844961734023,
+            0.030093211033090483
+          ]
+        },
+        "record_seconds": {
+          "median": 0.08592445246176794,
+          "minimum": 0.0696205800268217,
+          "maximum": 0.1086521449542488,
+          "values_in_repeat_order": [
+            0.10726017194974702,
+            0.0696205800268217,
+            0.1086521449542488,
+            0.08620192797388881,
+            0.07972912800323684,
+            0.08564697694964707
+          ]
+        }
+      },
+      "origin": "current_conditional_block"
+    },
+    {
+      "scope": "humaneval",
+      "target": "C",
+      "method": "separate",
+      "repetitions": 6,
+      "candidate_suite_queries": 532,
+      "audit_seconds": {
+        "median": 20.346046148501046,
+        "minimum": 16.167015348997666,
+        "maximum": 36.630257291995804,
+        "values_in_repeat_order": [
+          36.630257291995804,
+          22.31505431199912,
+          19.756482371005404,
+          16.167015348997666,
+          20.935609925996687,
+          16.98921601299662
+        ]
+      },
+      "phases": {
+        "register_seconds": {
+          "median": 0.004946775999997044,
+          "minimum": 0.003911719999450725,
+          "maximum": 0.009354339999845251,
+          "values_in_repeat_order": [
+            0.0049493100013933145,
+            0.009354339999845251,
+            0.0051945590021205135,
+            0.003911719999450725,
+            0.0049442419986007735,
+            0.004826149997825269
+          ]
+        },
+        "select_seconds": {
+          "median": 0.11559398200915894,
+          "minimum": 0.0988313349953387,
+          "maximum": 0.15910309506580234,
+          "values_in_repeat_order": [
+            0.1543667780861142,
+            0.15910309506580234,
+            0.11168047202227172,
+            0.0988313349953387,
+            0.11950749199604616,
+            0.10726701297971886
+          ]
+        },
+        "bounds_seconds": {
+          "median": 0.0396586174647382,
+          "minimum": 0.030464014947938267,
+          "maximum": 0.05926609002199257,
+          "values_in_repeat_order": [
+            0.04319335897889687,
+            0.05926609002199257,
+            0.0318839200263028,
+            0.030464014947938267,
+            0.03612387595057953,
+            0.051600577899080236
+          ]
+        },
+        "worker_seconds": {
+          "median": 19.71793499594787,
+          "minimum": 15.689604729879647,
+          "maximum": 35.90700983894931,
+          "values_in_repeat_order": [
+            35.90700983894931,
+            21.593387472021277,
+            19.16003105793061,
+            15.689604729879647,
+            20.275838933965133,
+            16.409985144870006
+          ]
+        },
+        "receive_seconds": {
+          "median": 0.13899921097254264,
+          "minimum": 0.08012355696700979,
+          "maximum": 0.16351758195378352,
+          "values_in_repeat_order": [
+            0.16351758195378352,
+            0.14655681505973917,
+            0.15211959290172672,
+            0.08012355696700979,
+            0.13144160688534612,
+            0.09709945189388236
+          ]
+        },
+        "record_seconds": {
+          "median": 0.3167337885533925,
+          "minimum": 0.256163917016238,
+          "maximum": 0.343831777034211,
+          "values_in_repeat_order": [
+            0.34036891799769364,
+            0.3280691879845108,
+            0.281020056012494,
+            0.256163917016238,
+            0.343831777034211,
+            0.30539838912227424
+          ]
+        }
+      },
+      "origin": "current_conditional_block"
+    },
+    {
+      "scope": "mbpp",
+      "target": "J",
+      "method": "shared",
+      "repetitions": 6,
+      "candidate_suite_queries": 1,
+      "audit_seconds": {
+        "median": 0.049269884497334715,
+        "minimum": 0.0440956919992459,
+        "maximum": 0.05199504399934085,
+        "values_in_repeat_order": [
+          0.0498175109969452,
+          0.05106423500546953,
+          0.048087846000271384,
+          0.0440956919992459,
+          0.05199504399934085,
+          0.04872225799772423
+        ]
+      },
+      "phases": {
+        "register_seconds": {
+          "median": 0.012472946003981633,
+          "minimum": 0.00960161599505227,
+          "maximum": 0.01362009700096678,
+          "values_in_repeat_order": [
+            0.012559375005366746,
+            0.00960161599505227,
+            0.01238651700259652,
+            0.01362009700096678,
+            0.012100853004085366,
+            0.013606563996290788
+          ]
+        },
+        "select_seconds": {
+          "median": 1.491996954428032e-06,
+          "minimum": 1.2520031305029988e-06,
+          "maximum": 2.34400067711249e-06,
+          "values_in_repeat_order": [
+            1.8229984561912715e-06,
+            1.2520031305029988e-06,
+            1.381995389238e-06,
+            2.34400067711249e-06,
+            1.581996912136674e-06,
+            1.4019969967193902e-06
+          ]
+        },
+        "bounds_seconds": {
+          "median": 9.599501936463639e-06,
+          "minimum": 8.933006029110402e-06,
+          "maximum": 1.0556010238360614e-05,
+          "values_in_repeat_order": [
+            9.224997484125197e-06,
+            9.404000593349338e-06,
+            9.79500327957794e-06,
+            1.0256000678054988e-05,
+            1.0556010238360614e-05,
+            8.933006029110402e-06
+          ]
+        },
+        "worker_seconds": {
+          "median": 0.03538047800248023,
+          "minimum": 0.02893879399925936,
+          "maximum": 0.039933749998454005,
+          "values_in_repeat_order": [
+            0.036079012003028765,
+            0.039933749998454005,
+            0.0346819440019317,
+            0.02893879399925936,
+            0.037774996999360155,
+            0.03375146300095366
+          ]
+        },
+        "receive_seconds": {
+          "median": 0.00013853850032319315,
+          "minimum": 9.799699910217896e-05,
+          "maximum": 0.00023355099983746186,
+          "values_in_repeat_order": [
+            0.00017127799947047606,
+            0.00023355099983746186,
+            0.00012139300088165328,
+            9.799699910217896e-05,
+            0.0001193490024888888,
+            0.00015568399976473302
+          ]
+        },
+        "record_seconds": {
+          "median": 0.0007511200019507669,
+          "minimum": 0.00045686699741054326,
+          "maximum": 0.0014247720027924515,
+          "values_in_repeat_order": [
+            0.0007586520005133934,
+            0.0008886470022844151,
+            0.0004951249939040281,
+            0.0007435880033881404,
+            0.0014247720027924515,
+            0.00045686699741054326
+          ]
+        }
+      },
+      "origin": "retained_joint_blocks"
+    },
+    {
+      "scope": "mbpp",
+      "target": "J",
+      "method": "separate",
+      "repetitions": 6,
+      "candidate_suite_queries": 811,
+      "audit_seconds": {
+        "median": 39.33535398400272,
+        "minimum": 36.57782970500557,
+        "maximum": 44.85905405100493,
+        "values_in_repeat_order": [
+          40.80129570700228,
+          36.57782970500557,
+          39.04626298999938,
+          37.806694665996474,
+          44.85905405100493,
+          39.62444497800607
+        ]
+      },
+      "phases": {
+        "register_seconds": {
+          "median": 0.012143792500864947,
+          "minimum": 0.008151807000103872,
+          "maximum": 0.01706648999970639,
+          "values_in_repeat_order": [
+            0.010459097000421025,
+            0.01706648999970639,
+            0.013184577001084108,
+            0.008151807000103872,
+            0.011325601000862662,
+            0.012961984000867233
+          ]
+        },
+        "select_seconds": {
+          "median": 0.0028493964709923603,
+          "minimum": 0.0024105219927150756,
+          "maximum": 0.004307521943701431,
+          "values_in_repeat_order": [
+            0.0024582519981777295,
+            0.0024105219927150756,
+            0.0024722939924686216,
+            0.0038337191290338524,
+            0.003226498949516099,
+            0.004307521943701431
+          ]
+        },
+        "bounds_seconds": {
+          "median": 0.006106767996243434,
+          "minimum": 0.005231652976362966,
+          "maximum": 0.00798443415260408,
+          "values_in_repeat_order": [
+            0.005344087119738106,
+            0.005231652976362966,
+            0.0052752511473954655,
+            0.007648390070244204,
+            0.006869448872748762,
+            0.00798443415260408
+          ]
+        },
+        "worker_seconds": {
+          "median": 38.59632991694525,
+          "minimum": 35.94578886389354,
+          "maximum": 43.98913918285689,
+          "values_in_repeat_order": [
+            40.013947975909105,
+            35.94578886389354,
+            38.44532140985393,
+            37.116601326008094,
+            43.98913918285689,
+            38.74733842403657
+          ]
+        },
+        "receive_seconds": {
+          "median": 0.1417883324502327,
+          "minimum": 0.10024816713121254,
+          "maximum": 0.17936487309634686,
+          "values_in_repeat_order": [
+            0.11951160286844242,
+            0.11183457512379391,
+            0.10024816713121254,
+            0.16451896798389498,
+            0.17936487309634686,
+            0.16406506203202298
+          ]
+        },
+        "record_seconds": {
+          "median": 0.5622489494853653,
+          "minimum": 0.46582208589825314,
+          "maximum": 0.6664849499284173,
+          "values_in_repeat_order": [
+            0.6353865650671651,
+            0.4803834520353121,
+            0.46582208589825314,
+            0.48911133390356554,
+            0.6411068148590857,
+            0.6664849499284173
+          ]
+        }
+      },
+      "origin": "retained_joint_blocks"
+    },
+    {
+      "scope": "mbpp",
+      "target": "C",
+      "method": "shared",
+      "repetitions": 6,
+      "candidate_suite_queries": 1,
+      "audit_seconds": {
+        "median": 0.042105107499082806,
+        "minimum": 0.033714687000610866,
+        "maximum": 0.1076486020028824,
+        "values_in_repeat_order": [
+          0.1076486020028824,
+          0.07451906299684197,
+          0.043250554997939616,
+          0.03737726499821292,
+          0.033714687000610866,
+          0.040959660000225995
+        ]
+      },
+      "phases": {
+        "register_seconds": {
+          "median": 0.013338884000404505,
+          "minimum": 0.008056630002101883,
+          "maximum": 0.031087160998140462,
+          "values_in_repeat_order": [
+            0.031087160998140462,
+            0.020410338998772204,
+            0.015218722997815348,
+            0.011459045002993662,
+            0.008056630002101883,
+            0.00909422199765686
+          ]
+        },
+        "select_seconds": {
+          "median": 1.7340997146675363e-05,
+          "minimum": 1.4200995792634785e-05,
+          "maximum": 2.2754997189622372e-05,
+          "values_in_repeat_order": [
+            1.452199649065733e-05,
+            2.2754997189622372e-05,
+            2.0421000954229385e-05,
+            2.0159997802693397e-05,
+            1.4200995792634785e-05,
+            1.442099892301485e-05
+          ]
+        },
+        "bounds_seconds": {
+          "median": 0.00017675599883659743,
+          "minimum": 0.00013397100701695308,
+          "maximum": 0.0007748860007268377,
+          "values_in_repeat_order": [
+            0.0001686629984760657,
+            0.0007748860007268377,
+            0.0001612920023035258,
+            0.00032011100120143965,
+            0.00013397100701695308,
+            0.00018484899919712916
+          ]
+        },
+        "worker_seconds": {
+          "median": 0.027802318003523396,
+          "minimum": 0.024156791994755622,
+          "maximum": 0.0684214580032858,
+          "values_in_repeat_order": [
+            0.0684214580032858,
+            0.05102200099645415,
+            0.025161137004033662,
+            0.024156791994755622,
+            0.024643782002385706,
+            0.03044349900301313
+          ]
+        },
+        "receive_seconds": {
+          "median": 0.0001009619991236832,
+          "minimum": 8.86229972820729e-05,
+          "maximum": 0.00017436299822293222,
+          "values_in_repeat_order": [
+            0.00012065100600011647,
+            0.00017436299822293222,
+            8.86229972820729e-05,
+            9.970999963115901e-05,
+            9.129699901677668e-05,
+            0.00010221399861620739
+          ]
+        },
+        "record_seconds": {
+          "median": 0.00048446749860886484,
+          "minimum": 0.00042292499711038545,
+          "maximum": 0.000811661004263442,
+          "values_in_repeat_order": [
+            0.0006133520000730641,
+            0.000811661004263442,
+            0.00042292499711038545,
+            0.0005193100005271845,
+            0.00044962499669054523,
+            0.0004292860030545853
+          ]
+        }
+      },
+      "origin": "current_conditional_block"
+    },
+    {
+      "scope": "mbpp",
+      "target": "C",
+      "method": "separate",
+      "repetitions": 6,
+      "candidate_suite_queries": 1136,
+      "audit_seconds": {
+        "median": 47.87729097150077,
+        "minimum": 45.42409068399866,
+        "maximum": 82.13990918899799,
+        "values_in_repeat_order": [
+          82.13990918899799,
+          56.408227930995054,
+          46.86638486200536,
+          45.42409068399866,
+          48.407000651001,
+          47.34758129200054
+        ]
+      },
+      "phases": {
+        "register_seconds": {
+          "median": 0.013804791000438854,
+          "minimum": 0.007404889998724684,
+          "maximum": 0.03220832299848553,
+          "values_in_repeat_order": [
+            0.03220832299848553,
+            0.01613329500105465,
+            0.014778231001400854,
+            0.007404889998724684,
+            0.007670920000236947,
+            0.012831350999476854
+          ]
+        },
+        "select_seconds": {
+          "median": 0.26770955102620064,
+          "minimum": 0.24407706907368265,
+          "maximum": 0.48818991315783933,
+          "values_in_repeat_order": [
+            0.48818991315783933,
+            0.33820159795868676,
+            0.26645760893734405,
+            0.24407706907368265,
+            0.2487840809772024,
+            0.26896149311505724
+          ]
+        },
+        "bounds_seconds": {
+          "median": 0.06820166850229725,
+          "minimum": 0.06600834179698722,
+          "maximum": 0.1059874890561332,
+          "values_in_repeat_order": [
+            0.1059874890561332,
+            0.09442259683419252,
+            0.06869506700604688,
+            0.06770826999854762,
+            0.06687861814134521,
+            0.06600834179698722
+          ]
+        },
+        "worker_seconds": {
+          "median": 46.76709131052485,
+          "minimum": 44.3442510369714,
+          "maximum": 80.28466179203679,
+          "values_in_repeat_order": [
+            80.28466179203679,
+            55.04979409498628,
+            45.673913939026534,
+            44.3442510369714,
+            47.279168995177315,
+            46.25501362587238
+          ]
+        },
+        "receive_seconds": {
+          "median": 0.20112309321484645,
+          "minimum": 0.1786479659640463,
+          "maximum": 0.36883414995099884,
+          "values_in_repeat_order": [
+            0.36883414995099884,
+            0.23111384302319493,
+            0.21317796724906657,
+            0.1875429280771641,
+            0.1786479659640463,
+            0.18906821918062633
+          ]
+        },
+        "record_seconds": {
+          "median": 0.5972744170212536,
+          "minimum": 0.5324301990185631,
+          "maximum": 0.7986681200709427,
+          "values_in_repeat_order": [
+            0.7986681200709427,
+            0.6531818689109059,
+            0.588032581981679,
+            0.5511532560631167,
+            0.6065162520608283,
+            0.5324301990185631
+          ]
+        }
+      },
+      "origin": "current_conditional_block"
+    }
+  ],
+  "raw_run_summaries": [
+    {
+      "scope": "humaneval",
+      "target": "J",
+      "method": "shared",
+      "repeat": 1,
+      "position": "first",
+      "origin": "retained_joint_blocks",
+      "native_record": "native-timing/01-r1-humaneval-stock-s1-J-coupled/receipt.json",
+      "candidate_suite_queries": 146,
+      "audit_total_seconds": 4.782586683999398,
+      "phase_seconds": {
+        "register_seconds": 0.005603355006314814,
+        "select_seconds": 0.00035607305471785367,
+        "bounds_seconds": 0.0008357039332622662,
+        "worker_seconds": 4.63367230307631,
+        "receive_seconds": 0.01744751307705883,
+        "record_seconds": 0.12203087293892168
+      },
+      "unallocated_loop_seconds": 0.002640862912812736
+    },
+    {
+      "scope": "humaneval",
+      "target": "J",
+      "method": "shared",
+      "repeat": 2,
+      "position": "first",
+      "origin": "retained_joint_blocks",
+      "native_record": "native-timing/15-r2-humaneval-stock-s1-J-coupled/receipt.json",
+      "candidate_suite_queries": 146,
+      "audit_total_seconds": 4.382161294997786,
+      "phase_seconds": {
+        "register_seconds": 0.008000760004506446,
+        "select_seconds": 0.00038822501664981246,
+        "bounds_seconds": 0.000711205015250016,
+        "worker_seconds": 4.275867771968478,
+        "receive_seconds": 0.022293583024293184,
+        "record_seconds": 0.07236453204677673
+      },
+      "unallocated_loop_seconds": 0.002535217921831645
+    },
+    {
+      "scope": "humaneval",
+      "target": "J",
+      "method": "shared",
+      "repeat": 3,
+      "position": "first",
+      "origin": "retained_joint_blocks",
+      "native_record": "native-timing/21-r3-humaneval-stock-s1-J-coupled/receipt.json",
+      "candidate_suite_queries": 146,
+      "audit_total_seconds": 11.785996845996124,
+      "phase_seconds": {
+        "register_seconds": 0.010445885003719013,
+        "select_seconds": 0.0006608640251215547,
+        "bounds_seconds": 0.0008411259914282709,
+        "worker_seconds": 11.647227516055864,
+        "receive_seconds": 0.02335495502484264,
+        "record_seconds": 0.1009362710028654
+      },
+      "unallocated_loop_seconds": 0.0025302288922830485
+    },
+    {
+      "scope": "humaneval",
+      "target": "J",
+      "method": "shared",
+      "repeat": 4,
+      "position": "second",
+      "origin": "retained_joint_blocks",
+      "native_record": "native-timing-reverse/02-r1-humaneval-stock-s1-J-coupled/receipt.json",
+      "candidate_suite_queries": 146,
+      "audit_total_seconds": 4.885823999997228,
+      "phase_seconds": {
+        "register_seconds": 0.0040783449949231,
+        "select_seconds": 0.0005252279588603415,
+        "bounds_seconds": 0.001373931001580786,
+        "worker_seconds": 4.742694104956172,
+        "receive_seconds": 0.04259505898517091,
+        "record_seconds": 0.09185695002088323
+      },
+      "unallocated_loop_seconds": 0.002700382079638075
+    },
+    {
+      "scope": "humaneval",
+      "target": "J",
+      "method": "shared",
+      "repeat": 5,
+      "position": "second",
+      "origin": "retained_joint_blocks",
+      "native_record": "native-timing-reverse/16-r2-humaneval-stock-s1-J-coupled/receipt.json",
+      "candidate_suite_queries": 146,
+      "audit_total_seconds": 5.260360918000515,
+      "phase_seconds": {
+        "register_seconds": 0.005247758999757934,
+        "select_seconds": 0.002623676038638223,
+        "bounds_seconds": 0.0013189860474085435,
+        "worker_seconds": 5.0427814969589235,
+        "receive_seconds": 0.026581785030430183,
+        "record_seconds": 0.17573968802025774
+      },
+      "unallocated_loop_seconds": 0.00606752690509893
+    },
+    {
+      "scope": "humaneval",
+      "target": "J",
+      "method": "shared",
+      "repeat": 6,
+      "position": "second",
+      "origin": "retained_joint_blocks",
+      "native_record": "native-timing-reverse/22-r3-humaneval-stock-s1-J-coupled/receipt.json",
+      "candidate_suite_queries": 146,
+      "audit_total_seconds": 5.0267049909962225,
+      "phase_seconds": {
+        "register_seconds": 0.006013673002598807,
+        "select_seconds": 0.00047145499411271885,
+        "bounds_seconds": 0.0008257650188170373,
+        "worker_seconds": 4.891287170037685,
+        "receive_seconds": 0.022668957033602055,
+        "record_seconds": 0.10248160006449325
+      },
+      "unallocated_loop_seconds": 0.002956370844913181
+    },
+    {
+      "scope": "humaneval",
+      "target": "J",
+      "method": "separate",
+      "repeat": 1,
+      "position": "second",
+      "origin": "retained_joint_blocks",
+      "native_record": "native-timing/02-r1-humaneval-stock-s1-J-independent/receipt.json",
+      "candidate_suite_queries": 429,
+      "audit_total_seconds": 14.64322629399976,
+      "phase_seconds": {
+        "register_seconds": 0.005535431999305729,
+        "select_seconds": 0.001414594953530468,
+        "bounds_seconds": 0.0028909730026498437,
+        "worker_seconds": 14.311292690050323,
+        "receive_seconds": 0.07358555399696343,
+        "record_seconds": 0.23511339900869643
+      },
+      "unallocated_loop_seconds": 0.013393650988291483
+    },
+    {
+      "scope": "humaneval",
+      "target": "J",
+      "method": "separate",
+      "repeat": 2,
+      "position": "second",
+      "origin": "retained_joint_blocks",
+      "native_record": "native-timing/16-r2-humaneval-stock-s1-J-independent/receipt.json",
+      "candidate_suite_queries": 429,
+      "audit_total_seconds": 13.858270694996463,
+      "phase_seconds": {
+        "register_seconds": 0.0041924640026991256,
+        "select_seconds": 0.001479449012549594,
+        "bounds_seconds": 0.004162319070019294,
+        "worker_seconds": 13.505039685980591,
+        "receive_seconds": 0.08052589510043617,
+        "record_seconds": 0.25507318207382923
+      },
+      "unallocated_loop_seconds": 0.007797699756338261
+    },
+    {
+      "scope": "humaneval",
+      "target": "J",
+      "method": "separate",
+      "repeat": 3,
+      "position": "second",
+      "origin": "retained_joint_blocks",
+      "native_record": "native-timing/22-r3-humaneval-stock-s1-J-independent/receipt.json",
+      "candidate_suite_queries": 429,
+      "audit_total_seconds": 23.970579472996178,
+      "phase_seconds": {
+        "register_seconds": 0.005173277997528203,
+        "select_seconds": 0.0014414819088415243,
+        "bounds_seconds": 0.0031756050084368326,
+        "worker_seconds": 23.59837564402551,
+        "receive_seconds": 0.06879740197473438,
+        "record_seconds": 0.2857813199807424
+      },
+      "unallocated_loop_seconds": 0.007834742100385483
+    },
+    {
+      "scope": "humaneval",
+      "target": "J",
+      "method": "separate",
+      "repeat": 4,
+      "position": "first",
+      "origin": "retained_joint_blocks",
+      "native_record": "native-timing-reverse/01-r1-humaneval-stock-s1-J-independent/receipt.json",
+      "candidate_suite_queries": 429,
+      "audit_total_seconds": 13.686471082000935,
+      "phase_seconds": {
+        "register_seconds": 0.004269372999260668,
+        "select_seconds": 0.001228050998179242,
+        "bounds_seconds": 0.0022878430390846916,
+        "worker_seconds": 13.442220340046333,
+        "receive_seconds": 0.05139688000053866,
+        "record_seconds": 0.17821999398438493
+      },
+      "unallocated_loop_seconds": 0.006848600933153648
+    },
+    {
+      "scope": "humaneval",
+      "target": "J",
+      "method": "separate",
+      "repeat": 5,
+      "position": "first",
+      "origin": "retained_joint_blocks",
+      "native_record": "native-timing-reverse/15-r2-humaneval-stock-s1-J-independent/receipt.json",
+      "candidate_suite_queries": 429,
+      "audit_total_seconds": 15.667448817999684,
+      "phase_seconds": {
+        "register_seconds": 0.009324808001110796,
+        "select_seconds": 0.001791066097212024,
+        "bounds_seconds": 0.003559649019734934,
+        "worker_seconds": 15.223866263826494,
+        "receive_seconds": 0.08596623798075598,
+        "record_seconds": 0.33287310293962946
+      },
+      "unallocated_loop_seconds": 0.010067690134746954
+    },
+    {
+      "scope": "humaneval",
+      "target": "J",
+      "method": "separate",
+      "repeat": 6,
+      "position": "first",
+      "origin": "retained_joint_blocks",
+      "native_record": "native-timing-reverse/21-r3-humaneval-stock-s1-J-independent/receipt.json",
+      "candidate_suite_queries": 429,
+      "audit_total_seconds": 15.787056615001347,
+      "phase_seconds": {
+        "register_seconds": 0.004886827002337668,
+        "select_seconds": 0.0017963010323001072,
+        "bounds_seconds": 0.0035992799457744695,
+        "worker_seconds": 15.455871583035332,
+        "receive_seconds": 0.06856014295772184,
+        "record_seconds": 0.24379477904585656
+      },
+      "unallocated_loop_seconds": 0.008547701982024591
+    },
+    {
+      "scope": "mbpp",
+      "target": "J",
+      "method": "shared",
+      "repeat": 1,
+      "position": "first",
+      "origin": "retained_joint_blocks",
+      "native_record": "native-timing/05-r1-mbpp-stock-s4-J-coupled/receipt.json",
+      "candidate_suite_queries": 1,
+      "audit_total_seconds": 0.0498175109969452,
+      "phase_seconds": {
+        "register_seconds": 0.012559375005366746,
+        "select_seconds": 1.8229984561912715e-06,
+        "bounds_seconds": 9.224997484125197e-06,
+        "worker_seconds": 0.036079012003028765,
+        "receive_seconds": 0.00017127799947047606,
+        "record_seconds": 0.0007586520005133934
+      },
+      "unallocated_loop_seconds": 0.00023814599262550473
+    },
+    {
+      "scope": "mbpp",
+      "target": "J",
+      "method": "shared",
+      "repeat": 2,
+      "position": "first",
+      "origin": "retained_joint_blocks",
+      "native_record": "native-timing/11-r2-mbpp-stock-s4-J-coupled/receipt.json",
+      "candidate_suite_queries": 1,
+      "audit_total_seconds": 0.05106423500546953,
+      "phase_seconds": {
+        "register_seconds": 0.00960161599505227,
+        "select_seconds": 1.2520031305029988e-06,
+        "bounds_seconds": 9.404000593349338e-06,
+        "worker_seconds": 0.039933749998454005,
+        "receive_seconds": 0.00023355099983746186,
+        "record_seconds": 0.0008886470022844151
+      },
+      "unallocated_loop_seconds": 0.0003960150061175227
+    },
+    {
+      "scope": "mbpp",
+      "target": "J",
+      "method": "shared",
+      "repeat": 3,
+      "position": "first",
+      "origin": "retained_joint_blocks",
+      "native_record": "native-timing/17-r3-mbpp-stock-s4-J-coupled/receipt.json",
+      "candidate_suite_queries": 1,
+      "audit_total_seconds": 0.048087846000271384,
+      "phase_seconds": {
+        "register_seconds": 0.01238651700259652,
+        "select_seconds": 1.381995389238e-06,
+        "bounds_seconds": 9.79500327957794e-06,
+        "worker_seconds": 0.0346819440019317,
+        "receive_seconds": 0.00012139300088165328,
+        "record_seconds": 0.0004951249939040281
+      },
+      "unallocated_loop_seconds": 0.00039169000228866935
+    },
+    {
+      "scope": "mbpp",
+      "target": "J",
+      "method": "shared",
+      "repeat": 4,
+      "position": "second",
+      "origin": "retained_joint_blocks",
+      "native_record": "native-timing-reverse/06-r1-mbpp-stock-s4-J-coupled/receipt.json",
+      "candidate_suite_queries": 1,
+      "audit_total_seconds": 0.0440956919992459,
+      "phase_seconds": {
+        "register_seconds": 0.01362009700096678,
+        "select_seconds": 2.34400067711249e-06,
+        "bounds_seconds": 1.0256000678054988e-05,
+        "worker_seconds": 0.02893879399925936,
+        "receive_seconds": 9.799699910217896e-05,
+        "record_seconds": 0.0007435880033881404
+      },
+      "unallocated_loop_seconds": 0.0006826159951742738
+    },
+    {
+      "scope": "mbpp",
+      "target": "J",
+      "method": "shared",
+      "repeat": 5,
+      "position": "second",
+      "origin": "retained_joint_blocks",
+      "native_record": "native-timing-reverse/12-r2-mbpp-stock-s4-J-coupled/receipt.json",
+      "candidate_suite_queries": 1,
+      "audit_total_seconds": 0.05199504399934085,
+      "phase_seconds": {
+        "register_seconds": 0.012100853004085366,
+        "select_seconds": 1.581996912136674e-06,
+        "bounds_seconds": 1.0556010238360614e-05,
+        "worker_seconds": 0.037774996999360155,
+        "receive_seconds": 0.0001193490024888888,
+        "record_seconds": 0.0014247720027924515
+      },
+      "unallocated_loop_seconds": 0.0005629349834634922
+    },
+    {
+      "scope": "mbpp",
+      "target": "J",
+      "method": "shared",
+      "repeat": 6,
+      "position": "second",
+      "origin": "retained_joint_blocks",
+      "native_record": "native-timing-reverse/18-r3-mbpp-stock-s4-J-coupled/receipt.json",
+      "candidate_suite_queries": 1,
+      "audit_total_seconds": 0.04872225799772423,
+      "phase_seconds": {
+        "register_seconds": 0.013606563996290788,
+        "select_seconds": 1.4019969967193902e-06,
+        "bounds_seconds": 8.933006029110402e-06,
+        "worker_seconds": 0.03375146300095366,
+        "receive_seconds": 0.00015568399976473302,
+        "record_seconds": 0.00045686699741054326
+      },
+      "unallocated_loop_seconds": 0.0007413450002786703
+    },
+    {
+      "scope": "mbpp",
+      "target": "J",
+      "method": "separate",
+      "repeat": 1,
+      "position": "second",
+      "origin": "retained_joint_blocks",
+      "native_record": "native-timing/06-r1-mbpp-stock-s4-J-independent/receipt.json",
+      "candidate_suite_queries": 811,
+      "audit_total_seconds": 40.80129570700228,
+      "phase_seconds": {
+        "register_seconds": 0.010459097000421025,
+        "select_seconds": 0.0024582519981777295,
+        "bounds_seconds": 0.005344087119738106,
+        "worker_seconds": 40.013947975909105,
+        "receive_seconds": 0.11951160286844242,
+        "record_seconds": 0.6353865650671651
+      },
+      "unallocated_loop_seconds": 0.014188127039233223
+    },
+    {
+      "scope": "mbpp",
+      "target": "J",
+      "method": "separate",
+      "repeat": 2,
+      "position": "second",
+      "origin": "retained_joint_blocks",
+      "native_record": "native-timing/12-r2-mbpp-stock-s4-J-independent/receipt.json",
+      "candidate_suite_queries": 811,
+      "audit_total_seconds": 36.57782970500557,
+      "phase_seconds": {
+        "register_seconds": 0.01706648999970639,
+        "select_seconds": 0.0024105219927150756,
+        "bounds_seconds": 0.005231652976362966,
+        "worker_seconds": 35.94578886389354,
+        "receive_seconds": 0.11183457512379391,
+        "record_seconds": 0.4803834520353121
+      },
+      "unallocated_loop_seconds": 0.01511414898413932
+    },
+    {
+      "scope": "mbpp",
+      "target": "J",
+      "method": "separate",
+      "repeat": 3,
+      "position": "second",
+      "origin": "retained_joint_blocks",
+      "native_record": "native-timing/18-r3-mbpp-stock-s4-J-independent/receipt.json",
+      "candidate_suite_queries": 811,
+      "audit_total_seconds": 39.04626298999938,
+      "phase_seconds": {
+        "register_seconds": 0.013184577001084108,
+        "select_seconds": 0.0024722939924686216,
+        "bounds_seconds": 0.0052752511473954655,
+        "worker_seconds": 38.44532140985393,
+        "receive_seconds": 0.10024816713121254,
+        "record_seconds": 0.46582208589825314
+      },
+      "unallocated_loop_seconds": 0.013939204975031316
+    },
+    {
+      "scope": "mbpp",
+      "target": "J",
+      "method": "separate",
+      "repeat": 4,
+      "position": "first",
+      "origin": "retained_joint_blocks",
+      "native_record": "native-timing-reverse/05-r1-mbpp-stock-s4-J-independent/receipt.json",
+      "candidate_suite_queries": 811,
+      "audit_total_seconds": 37.806694665996474,
+      "phase_seconds": {
+        "register_seconds": 0.008151807000103872,
+        "select_seconds": 0.0038337191290338524,
+        "bounds_seconds": 0.007648390070244204,
+        "worker_seconds": 37.116601326008094,
+        "receive_seconds": 0.16451896798389498,
+        "record_seconds": 0.48911133390356554
+      },
+      "unallocated_loop_seconds": 0.01682912190153729
+    },
+    {
+      "scope": "mbpp",
+      "target": "J",
+      "method": "separate",
+      "repeat": 5,
+      "position": "first",
+      "origin": "retained_joint_blocks",
+      "native_record": "native-timing-reverse/11-r2-mbpp-stock-s4-J-independent/receipt.json",
+      "candidate_suite_queries": 811,
+      "audit_total_seconds": 44.85905405100493,
+      "phase_seconds": {
+        "register_seconds": 0.011325601000862662,
+        "select_seconds": 0.003226498949516099,
+        "bounds_seconds": 0.006869448872748762,
+        "worker_seconds": 43.98913918285689,
+        "receive_seconds": 0.17936487309634686,
+        "record_seconds": 0.6411068148590857
+      },
+      "unallocated_loop_seconds": 0.028021631369483657
+    },
+    {
+      "scope": "mbpp",
+      "target": "J",
+      "method": "separate",
+      "repeat": 6,
+      "position": "first",
+      "origin": "retained_joint_blocks",
+      "native_record": "native-timing-reverse/17-r3-mbpp-stock-s4-J-independent/receipt.json",
+      "candidate_suite_queries": 811,
+      "audit_total_seconds": 39.62444497800607,
+      "phase_seconds": {
+        "register_seconds": 0.012961984000867233,
+        "select_seconds": 0.004307521943701431,
+        "bounds_seconds": 0.00798443415260408,
+        "worker_seconds": 38.74733842403657,
+        "receive_seconds": 0.16406506203202298,
+        "record_seconds": 0.6664849499284173
+      },
+      "unallocated_loop_seconds": 0.021302601911884267
+    },
+    {
+      "scope": "humaneval",
+      "target": "C",
+      "method": "shared",
+      "repeat": 1,
+      "position": "first",
+      "origin": "current_conditional_block",
+      "native_record": "01-humaneval-paired/receipt.json",
+      "candidate_suite_queries": 154,
+      "audit_total_seconds": 9.455926457005262,
+      "phase_seconds": {
+        "register_seconds": 0.009359739000501577,
+        "select_seconds": 0.0030309280773508362,
+        "bounds_seconds": 0.03240497098158812,
+        "worker_seconds": 9.267304804008745,
+        "receive_seconds": 0.02963967900723219,
+        "record_seconds": 0.10726017194974702
+      },
+      "unallocated_loop_seconds": 0.006926163980097044
+    },
+    {
+      "scope": "humaneval",
+      "target": "C",
+      "method": "separate",
+      "repeat": 1,
+      "position": "second",
+      "origin": "current_conditional_block",
+      "native_record": "02-humaneval-independent/receipt.json",
+      "candidate_suite_queries": 532,
+      "audit_total_seconds": 36.630257291995804,
+      "phase_seconds": {
+        "register_seconds": 0.0049493100013933145,
+        "select_seconds": 0.1543667780861142,
+        "bounds_seconds": 0.04319335897889687,
+        "worker_seconds": 35.90700983894931,
+        "receive_seconds": 0.16351758195378352,
+        "record_seconds": 0.34036891799769364
+      },
+      "unallocated_loop_seconds": 0.016851506028615404
+    },
+    {
+      "scope": "mbpp",
+      "target": "C",
+      "method": "shared",
+      "repeat": 1,
+      "position": "first",
+      "origin": "current_conditional_block",
+      "native_record": "03-mbpp-paired/receipt.json",
+      "candidate_suite_queries": 1,
+      "audit_total_seconds": 0.1076486020028824,
+      "phase_seconds": {
+        "register_seconds": 0.031087160998140462,
+        "select_seconds": 1.452199649065733e-05,
+        "bounds_seconds": 0.0001686629984760657,
+        "worker_seconds": 0.0684214580032858,
+        "receive_seconds": 0.00012065100600011647,
+        "record_seconds": 0.0006133520000730641
+      },
+      "unallocated_loop_seconds": 0.007222795000416227
+    },
+    {
+      "scope": "mbpp",
+      "target": "C",
+      "method": "separate",
+      "repeat": 1,
+      "position": "second",
+      "origin": "current_conditional_block",
+      "native_record": "04-mbpp-independent/receipt.json",
+      "candidate_suite_queries": 1136,
+      "audit_total_seconds": 82.13990918899799,
+      "phase_seconds": {
+        "register_seconds": 0.03220832299848553,
+        "select_seconds": 0.48818991315783933,
+        "bounds_seconds": 0.1059874890561332,
+        "worker_seconds": 80.28466179203679,
+        "receive_seconds": 0.36883414995099884,
+        "record_seconds": 0.7986681200709427
+      },
+      "unallocated_loop_seconds": 0.06135940172680421
+    },
+    {
+      "scope": "mbpp",
+      "target": "C",
+      "method": "separate",
+      "repeat": 2,
+      "position": "first",
+      "origin": "current_conditional_block",
+      "native_record": "05-mbpp-independent/receipt.json",
+      "candidate_suite_queries": 1136,
+      "audit_total_seconds": 56.408227930995054,
+      "phase_seconds": {
+        "register_seconds": 0.01613329500105465,
+        "select_seconds": 0.33820159795868676,
+        "bounds_seconds": 0.09442259683419252,
+        "worker_seconds": 55.04979409498628,
+        "receive_seconds": 0.23111384302319493,
+        "record_seconds": 0.6531818689109059
+      },
+      "unallocated_loop_seconds": 0.025380634280736558
+    },
+    {
+      "scope": "mbpp",
+      "target": "C",
+      "method": "shared",
+      "repeat": 2,
+      "position": "second",
+      "origin": "current_conditional_block",
+      "native_record": "06-mbpp-paired/receipt.json",
+      "candidate_suite_queries": 1,
+      "audit_total_seconds": 0.07451906299684197,
+      "phase_seconds": {
+        "register_seconds": 0.020410338998772204,
+        "select_seconds": 2.2754997189622372e-05,
+        "bounds_seconds": 0.0007748860007268377,
+        "worker_seconds": 0.05102200099645415,
+        "receive_seconds": 0.00017436299822293222,
+        "record_seconds": 0.000811661004263442
+      },
+      "unallocated_loop_seconds": 0.0013030580012127757
+    },
+    {
+      "scope": "humaneval",
+      "target": "C",
+      "method": "separate",
+      "repeat": 2,
+      "position": "first",
+      "origin": "current_conditional_block",
+      "native_record": "07-humaneval-independent/receipt.json",
+      "candidate_suite_queries": 532,
+      "audit_total_seconds": 22.31505431199912,
+      "phase_seconds": {
+        "register_seconds": 0.009354339999845251,
+        "select_seconds": 0.15910309506580234,
+        "bounds_seconds": 0.05926609002199257,
+        "worker_seconds": 21.593387472021277,
+        "receive_seconds": 0.14655681505973917,
+        "record_seconds": 0.3280691879845108
+      },
+      "unallocated_loop_seconds": 0.019317311845952645
+    },
+    {
+      "scope": "humaneval",
+      "target": "C",
+      "method": "shared",
+      "repeat": 2,
+      "position": "second",
+      "origin": "current_conditional_block",
+      "native_record": "08-humaneval-paired/receipt.json",
+      "candidate_suite_queries": 154,
+      "audit_total_seconds": 5.201007051000488,
+      "phase_seconds": {
+        "register_seconds": 0.003955323998525273,
+        "select_seconds": 0.004097556025953963,
+        "bounds_seconds": 0.021953926974674687,
+        "worker_seconds": 5.064506958027778,
+        "receive_seconds": 0.030121161973511335,
+        "record_seconds": 0.0696205800268217
+      },
+      "unallocated_loop_seconds": 0.006751543973223306
+    },
+    {
+      "scope": "humaneval",
+      "target": "C",
+      "method": "shared",
+      "repeat": 3,
+      "position": "first",
+      "origin": "current_conditional_block",
+      "native_record": "09-humaneval-paired/receipt.json",
+      "candidate_suite_queries": 154,
+      "audit_total_seconds": 6.669949609000469,
+      "phase_seconds": {
+        "register_seconds": 0.00511171299876878,
+        "select_seconds": 0.014514702015731018,
+        "bounds_seconds": 0.08022444699599873,
+        "worker_seconds": 6.362962622988562,
+        "receive_seconds": 0.05411409697990166,
+        "record_seconds": 0.1086521449542488
+      },
+      "unallocated_loop_seconds": 0.044369882067258004
+    },
+    {
+      "scope": "humaneval",
+      "target": "C",
+      "method": "separate",
+      "repeat": 3,
+      "position": "second",
+      "origin": "current_conditional_block",
+      "native_record": "10-humaneval-independent/receipt.json",
+      "candidate_suite_queries": 532,
+      "audit_total_seconds": 19.756482371005404,
+      "phase_seconds": {
+        "register_seconds": 0.0051945590021205135,
+        "select_seconds": 0.11168047202227172,
+        "bounds_seconds": 0.0318839200263028,
+        "worker_seconds": 19.16003105793061,
+        "receive_seconds": 0.15211959290172672,
+        "record_seconds": 0.281020056012494
+      },
+      "unallocated_loop_seconds": 0.014552713109878823
+    },
+    {
+      "scope": "mbpp",
+      "target": "C",
+      "method": "shared",
+      "repeat": 3,
+      "position": "first",
+      "origin": "current_conditional_block",
+      "native_record": "11-mbpp-paired/receipt.json",
+      "candidate_suite_queries": 1,
+      "audit_total_seconds": 0.043250554997939616,
+      "phase_seconds": {
+        "register_seconds": 0.015218722997815348,
+        "select_seconds": 2.0421000954229385e-05,
+        "bounds_seconds": 0.0001612920023035258,
+        "worker_seconds": 0.025161137004033662,
+        "receive_seconds": 8.86229972820729e-05,
+        "record_seconds": 0.00042292499711038545
+      },
+      "unallocated_loop_seconds": 0.0021774339984403923
+    },
+    {
+      "scope": "mbpp",
+      "target": "C",
+      "method": "separate",
+      "repeat": 3,
+      "position": "second",
+      "origin": "current_conditional_block",
+      "native_record": "12-mbpp-independent/receipt.json",
+      "candidate_suite_queries": 1136,
+      "audit_total_seconds": 46.86638486200536,
+      "phase_seconds": {
+        "register_seconds": 0.014778231001400854,
+        "select_seconds": 0.26645760893734405,
+        "bounds_seconds": 0.06869506700604688,
+        "worker_seconds": 45.673913939026534,
+        "receive_seconds": 0.21317796724906657,
+        "record_seconds": 0.588032581981679
+      },
+      "unallocated_loop_seconds": 0.041329466803290416
+    },
+    {
+      "scope": "mbpp",
+      "target": "C",
+      "method": "separate",
+      "repeat": 4,
+      "position": "first",
+      "origin": "current_conditional_block",
+      "native_record": "13-mbpp-independent/receipt.json",
+      "candidate_suite_queries": 1136,
+      "audit_total_seconds": 45.42409068399866,
+      "phase_seconds": {
+        "register_seconds": 0.007404889998724684,
+        "select_seconds": 0.24407706907368265,
+        "bounds_seconds": 0.06770826999854762,
+        "worker_seconds": 44.3442510369714,
+        "receive_seconds": 0.1875429280771641,
+        "record_seconds": 0.5511532560631167
+      },
+      "unallocated_loop_seconds": 0.021953233816020656
+    },
+    {
+      "scope": "mbpp",
+      "target": "C",
+      "method": "shared",
+      "repeat": 4,
+      "position": "second",
+      "origin": "current_conditional_block",
+      "native_record": "14-mbpp-paired/receipt.json",
+      "candidate_suite_queries": 1,
+      "audit_total_seconds": 0.03737726499821292,
+      "phase_seconds": {
+        "register_seconds": 0.011459045002993662,
+        "select_seconds": 2.0159997802693397e-05,
+        "bounds_seconds": 0.00032011100120143965,
+        "worker_seconds": 0.024156791994755622,
+        "receive_seconds": 9.970999963115901e-05,
+        "record_seconds": 0.0005193100005271845
+      },
+      "unallocated_loop_seconds": 0.0008021370013011619
+    },
+    {
+      "scope": "humaneval",
+      "target": "C",
+      "method": "separate",
+      "repeat": 4,
+      "position": "first",
+      "origin": "current_conditional_block",
+      "native_record": "15-humaneval-independent/receipt.json",
+      "candidate_suite_queries": 532,
+      "audit_total_seconds": 16.167015348997666,
+      "phase_seconds": {
+        "register_seconds": 0.003911719999450725,
+        "select_seconds": 0.0988313349953387,
+        "bounds_seconds": 0.030464014947938267,
+        "worker_seconds": 15.689604729879647,
+        "receive_seconds": 0.08012355696700979,
+        "record_seconds": 0.256163917016238
+      },
+      "unallocated_loop_seconds": 0.007916075192042626
+    },
+    {
+      "scope": "humaneval",
+      "target": "C",
+      "method": "shared",
+      "repeat": 4,
+      "position": "second",
+      "origin": "current_conditional_block",
+      "native_record": "16-humaneval-paired/receipt.json",
+      "candidate_suite_queries": 154,
+      "audit_total_seconds": 4.694536328002869,
+      "phase_seconds": {
+        "register_seconds": 0.003885439997247886,
+        "select_seconds": 0.004401712016260717,
+        "bounds_seconds": 0.01806798399775289,
+        "worker_seconds": 4.543977243985864,
+        "receive_seconds": 0.031797909025044646,
+        "record_seconds": 0.08620192797388881
+      },
+      "unallocated_loop_seconds": 0.0062041110068093985
+    },
+    {
+      "scope": "humaneval",
+      "target": "C",
+      "method": "shared",
+      "repeat": 5,
+      "position": "first",
+      "origin": "current_conditional_block",
+      "native_record": "17-humaneval-paired/receipt.json",
+      "candidate_suite_queries": 154,
+      "audit_total_seconds": 4.972858173998247,
+      "phase_seconds": {
+        "register_seconds": 0.004828688994166441,
+        "select_seconds": 0.007456546991306823,
+        "bounds_seconds": 0.02564408402395202,
+        "worker_seconds": 4.823168711976905,
+        "receive_seconds": 0.025891844961734023,
+        "record_seconds": 0.07972912800323684
+      },
+      "unallocated_loop_seconds": 0.006139169046946336
+    },
+    {
+      "scope": "humaneval",
+      "target": "C",
+      "method": "separate",
+      "repeat": 5,
+      "position": "second",
+      "origin": "current_conditional_block",
+      "native_record": "18-humaneval-independent/receipt.json",
+      "candidate_suite_queries": 532,
+      "audit_total_seconds": 20.935609925996687,
+      "phase_seconds": {
+        "register_seconds": 0.0049442419986007735,
+        "select_seconds": 0.11950749199604616,
+        "bounds_seconds": 0.03612387595057953,
+        "worker_seconds": 20.275838933965133,
+        "receive_seconds": 0.13144160688534612,
+        "record_seconds": 0.343831777034211
+      },
+      "unallocated_loop_seconds": 0.02392199816677021
+    },
+    {
+      "scope": "mbpp",
+      "target": "C",
+      "method": "shared",
+      "repeat": 5,
+      "position": "first",
+      "origin": "current_conditional_block",
+      "native_record": "19-mbpp-paired/receipt.json",
+      "candidate_suite_queries": 1,
+      "audit_total_seconds": 0.033714687000610866,
+      "phase_seconds": {
+        "register_seconds": 0.008056630002101883,
+        "select_seconds": 1.4200995792634785e-05,
+        "bounds_seconds": 0.00013397100701695308,
+        "worker_seconds": 0.024643782002385706,
+        "receive_seconds": 9.129699901677668e-05,
+        "record_seconds": 0.00044962499669054523
+      },
+      "unallocated_loop_seconds": 0.00032518099760636687
+    },
+    {
+      "scope": "mbpp",
+      "target": "C",
+      "method": "separate",
+      "repeat": 5,
+      "position": "second",
+      "origin": "current_conditional_block",
+      "native_record": "20-mbpp-independent/receipt.json",
+      "candidate_suite_queries": 1136,
+      "audit_total_seconds": 48.407000651001,
+      "phase_seconds": {
+        "register_seconds": 0.007670920000236947,
+        "select_seconds": 0.2487840809772024,
+        "bounds_seconds": 0.06687861814134521,
+        "worker_seconds": 47.279168995177315,
+        "receive_seconds": 0.1786479659640463,
+        "record_seconds": 0.6065162520608283
+      },
+      "unallocated_loop_seconds": 0.019333818680024706
+    },
+    {
+      "scope": "mbpp",
+      "target": "C",
+      "method": "separate",
+      "repeat": 6,
+      "position": "first",
+      "origin": "current_conditional_block",
+      "native_record": "21-mbpp-independent/receipt.json",
+      "candidate_suite_queries": 1136,
+      "audit_total_seconds": 47.34758129200054,
+      "phase_seconds": {
+        "register_seconds": 0.012831350999476854,
+        "select_seconds": 0.26896149311505724,
+        "bounds_seconds": 0.06600834179698722,
+        "worker_seconds": 46.25501362587238,
+        "receive_seconds": 0.18906821918062633,
+        "record_seconds": 0.5324301990185631
+      },
+      "unallocated_loop_seconds": 0.023268062017450575
+    },
+    {
+      "scope": "mbpp",
+      "target": "C",
+      "method": "shared",
+      "repeat": 6,
+      "position": "second",
+      "origin": "current_conditional_block",
+      "native_record": "22-mbpp-paired/receipt.json",
+      "candidate_suite_queries": 1,
+      "audit_total_seconds": 0.040959660000225995,
+      "phase_seconds": {
+        "register_seconds": 0.00909422199765686,
+        "select_seconds": 1.442099892301485e-05,
+        "bounds_seconds": 0.00018484899919712916,
+        "worker_seconds": 0.03044349900301313,
+        "receive_seconds": 0.00010221399861620739,
+        "record_seconds": 0.0004292860030545853
+      },
+      "unallocated_loop_seconds": 0.0006911689997650683
+    },
+    {
+      "scope": "humaneval",
+      "target": "C",
+      "method": "separate",
+      "repeat": 6,
+      "position": "first",
+      "origin": "current_conditional_block",
+      "native_record": "23-humaneval-independent/receipt.json",
+      "candidate_suite_queries": 532,
+      "audit_total_seconds": 16.98921601299662,
+      "phase_seconds": {
+        "register_seconds": 0.004826149997825269,
+        "select_seconds": 0.10726701297971886,
+        "bounds_seconds": 0.051600577899080236,
+        "worker_seconds": 16.409985144870006,
+        "receive_seconds": 0.09709945189388236,
+        "record_seconds": 0.30539838912227424
+      },
+      "unallocated_loop_seconds": 0.013039286233833991
+    },
+    {
+      "scope": "humaneval",
+      "target": "C",
+      "method": "shared",
+      "repeat": 6,
+      "position": "second",
+      "origin": "current_conditional_block",
+      "native_record": "24-humaneval-paired/receipt.json",
+      "candidate_suite_queries": 154,
+      "audit_total_seconds": 5.091603372995451,
+      "phase_seconds": {
+        "register_seconds": 0.005449196003610268,
+        "select_seconds": 0.003705757058924064,
+        "bounds_seconds": 0.020664790994487703,
+        "worker_seconds": 4.940134038974065,
+        "receive_seconds": 0.030093211033090483,
+        "record_seconds": 0.08564697694964707
+      },
+      "unallocated_loop_seconds": 0.005909401981625706
+    }
+  ],
+  "execution_validation": {
+    "runs": 4,
+    "suites": 1823,
+    "prefixes": 1827,
+    "rows": [
+      {
+        "scope": "humaneval",
+        "method": "shared",
+        "suites": 154,
+        "entries": 1578,
+        "entry_unit": "function entries",
+        "certificate": "left_strict",
+        "native_directory": "01-humaneval-paired"
+      },
+      {
+        "scope": "humaneval",
+        "method": "separate",
+        "suites": 532,
+        "entries": 5066,
+        "entry_unit": "function entries",
+        "certificate": "left_strict",
+        "native_directory": "02-humaneval-independent"
+      },
+      {
+        "scope": "mbpp",
+        "method": "shared",
+        "suites": 1,
+        "entries": 3,
+        "entry_unit": "assertion entries",
+        "certificate": "right_strict",
+        "native_directory": "03-mbpp-paired"
+      },
+      {
+        "scope": "mbpp",
+        "method": "separate",
+        "suites": 1136,
+        "entries": 3532,
+        "entry_unit": "assertion entries",
+        "certificate": "right_strict",
+        "native_directory": "04-mbpp-independent"
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+name: artifact
+
+# Paths are relative to this repository. The paper-binding components
+# (paper-data-consistency, citation-source-bindings) need the paper LaTeX
+# sources, which are not part of this repository, so they are not run here.
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      full:
+        description: Run the complete evidence receivers
+        required: false
+        default: false
+        type: boolean
+
+jobs:
+  supporting:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: make verify-supporting PYTHON=python
+  full:
+    if: github.event_name == 'workflow_dispatch' && inputs.full
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: sudo apt-get update && sudo apt-get install -y libarchive-dev
+      - run: python -m pip install -r studies/crest/requirements.txt
+      - run: make verify-primary PYTHON=python

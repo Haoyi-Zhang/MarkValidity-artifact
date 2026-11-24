@@ -1,0 +1,41 @@
+{
+  "status": "unavailable",
+  "returncode": 0,
+  "stderr": "",
+  "events": [
+    {
+      "error": null,
+      "event": "source_compile",
+      "status": "passed"
+    },
+    {
+      "assertion_reached": true,
+      "elapsed_seconds": 0.001332,
+      "error": {
+        "message": "",
+        "phase": "original_assertion",
+        "traceback": "Traceback (most recent call last):\n  File \"/workspace/scratch/3d557313f143/work/MarkValidity_TOSEM/artifact/external-studies/sew_natural/mbpp/scripts/native_runner.py\", line 143, in main\n    exec(test_code, namespace)\n  File \"<mbpp-original-test-0>\", line 1, in <module>\n  File \"<mbpp-candidate>\", line 2, in f\nKeyboardInterrupt\n",
+        "type": "builtins.KeyboardInterrupt"
+      },
+      "event": "test_result",
+      "status": "unavailable",
+      "stderr": "",
+      "stdout": "",
+      "test_index": 0
+    },
+    {
+      "completed_tests": 1,
+      "elapsed_seconds": 0.003211,
+      "event": "complete",
+      "evidence_schema": "markvalidity-mbpp-original-assertions-v2",
+      "failed_tests": 0,
+      "passed_tests": 0,
+      "rejected_tests": 0,
+      "scheduled_tests": 1,
+      "status": "unavailable",
+      "unavailable_tests": 1
+    }
+  ],
+  "raw_stdout": null,
+  "elapsed_seconds": 0.026063
+}

@@ -1,0 +1,464 @@
+{
+  "status": "complete",
+  "runs": [
+    {
+      "repeat": 1,
+      "dataset": "HumanEval",
+      "scope": "humaneval",
+      "left": "stock",
+      "right": "s1",
+      "target": "C",
+      "method": "paired",
+      "directory": "01-humaneval-paired",
+      "candidate_suite_queries": 154,
+      "denominator": 492,
+      "initial_reference_groups": 3,
+      "decision": "left_strict",
+      "final_certificate": {
+        "route": "paired_ratio_envelope",
+        "defined_all": true,
+        "anchors": {
+          "left": {
+            "lower": "9/371",
+            "upper": "2217/371",
+            "endpoints": [
+              {
+                "q": "77/201",
+                "lower_numerator": 372,
+                "upper_numerator": 834,
+                "denominator": 201
+              },
+              {
+                "q": "368/371",
+                "lower_numerator": 9,
+                "upper_numerator": 2217,
+                "denominator": 371
+              }
+            ],
+            "different_unknown_groups": 6,
+            "relation_on_relaxation": "left_strict"
+          },
+          "right": {
+            "lower": "18/371",
+            "upper": "2208/371",
+            "endpoints": [
+              {
+                "q": "74/201",
+                "lower_numerator": 381,
+                "upper_numerator": 825,
+                "denominator": 201
+              },
+              {
+                "q": "365/371",
+                "lower_numerator": 18,
+                "upper_numerator": 2208,
+                "denominator": 371
+              }
+            ],
+            "different_unknown_groups": 6,
+            "relation_on_relaxation": "left_strict"
+          }
+        },
+        "decision": "left_strict",
+        "anchor": "left",
+        "decision_source": "paired_ratio_envelope"
+      },
+      "phase_seconds": {
+        "register_seconds": 0.0041067850033869036,
+        "select_seconds": 0.0006006049588904716,
+        "bounds_seconds": 0.023268387056305073,
+        "worker_seconds": 13.59848556201905,
+        "receive_seconds": 0.025018103064212482,
+        "record_seconds": 0.113104091011337
+      },
+      "audit_total_seconds": 13.770264346996555,
+      "unallocated_loop_seconds": 0.005680813883373048,
+      "load_before": {
+        "monotonic_seconds": 42301.473089267,
+        "load_average": [
+          13.0693359375,
+          14.61181640625,
+          12.16015625
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 1.781206555,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "load_after": {
+        "monotonic_seconds": 42315.24340408,
+        "load_average": [
+          14.5009765625,
+          14.85888671875,
+          12.28125
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 2.126185988,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "repeat": 1,
+      "dataset": "HumanEval",
+      "scope": "humaneval",
+      "left": "stock",
+      "right": "s1",
+      "target": "C",
+      "method": "independent",
+      "directory": "02-humaneval-independent",
+      "candidate_suite_queries": 532,
+      "denominator": 492,
+      "initial_reference_groups": 3,
+      "decision": "left_strict",
+      "final_certificate": {
+        "lower": "79/236652",
+        "upper": "1/164",
+        "units": "conditional_rate_difference",
+        "decision": "left_strict",
+        "defined_all": true
+      },
+      "phase_seconds": {
+        "register_seconds": 0.015791773999808356,
+        "select_seconds": 0.1519296390688396,
+        "bounds_seconds": 0.03147354112297762,
+        "worker_seconds": 50.876081384994905,
+        "receive_seconds": 0.11343303890316747,
+        "record_seconds": 0.6241764149817755
+      },
+      "audit_total_seconds": 51.82299333099945,
+      "unallocated_loop_seconds": 0.010107537927979138,
+      "load_before": {
+        "monotonic_seconds": 42315.245417045,
+        "load_average": [
+          14.5009765625,
+          14.85888671875,
+          12.28125
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 2.127872357,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "load_after": {
+        "monotonic_seconds": 42367.068438378,
+        "load_average": [
+          17.81884765625,
+          15.701171875,
+          12.7041015625
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 3.642653341,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "repeat": 1,
+      "dataset": "mbpp_sanitized",
+      "scope": "mbpp",
+      "left": "stock",
+      "right": "s4",
+      "target": "C",
+      "method": "paired",
+      "directory": "03-mbpp-paired",
+      "candidate_suite_queries": 1,
+      "denominator": 1281,
+      "initial_reference_groups": 20,
+      "decision": "right_strict",
+      "final_certificate": {
+        "route": "paired_ratio_envelope",
+        "defined_all": true,
+        "anchors": {
+          "left": {
+            "lower": "-3",
+            "upper": "-19/868",
+            "endpoints": [
+              {
+                "q": "1/433",
+                "lower_numerator": -1299,
+                "upper_numerator": -432,
+                "denominator": 433
+              },
+              {
+                "q": "849/868",
+                "lower_numerator": -2604,
+                "upper_numerator": -19,
+                "denominator": 868
+              }
+            ],
+            "different_unknown_groups": 5,
+            "relation_on_relaxation": "right_strict"
+          },
+          "right": {
+            "lower": "-3",
+            "upper": "-19/871",
+            "endpoints": [
+              {
+                "q": "2/431",
+                "lower_numerator": -1293,
+                "upper_numerator": -429,
+                "denominator": 431
+              },
+              {
+                "q": "852/871",
+                "lower_numerator": -2613,
+                "upper_numerator": -19,
+                "denominator": 871
+              }
+            ],
+            "different_unknown_groups": 5,
+            "relation_on_relaxation": "right_strict"
+          }
+        },
+        "decision": "right_strict",
+        "anchor": "left",
+        "decision_source": "paired_ratio_envelope"
+      },
+      "phase_seconds": {
+        "register_seconds": 0.021022052998887375,
+        "select_seconds": 1.863001671154052e-06,
+        "bounds_seconds": 0.0001722579909255728,
+        "worker_seconds": 0.06678038300015032,
+        "receive_seconds": 0.00015841799904592335,
+        "record_seconds": 0.00044384699867805466
+      },
+      "audit_total_seconds": 0.08907611000176985,
+      "unallocated_loop_seconds": 0.0004972880124114454,
+      "load_before": {
+        "monotonic_seconds": 42367.073121854,
+        "load_average": [
+          17.81884765625,
+          15.701171875,
+          12.7041015625
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 3.647249711,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "load_after": {
+        "monotonic_seconds": 42367.162239446,
+        "load_average": [
+          17.81884765625,
+          15.701171875,
+          12.7041015625
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 3.660574979,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    },
+    {
+      "repeat": 1,
+      "dataset": "mbpp_sanitized",
+      "scope": "mbpp",
+      "left": "stock",
+      "right": "s4",
+      "target": "C",
+      "method": "independent",
+      "directory": "04-mbpp-independent",
+      "candidate_suite_queries": 1136,
+      "denominator": 1281,
+      "initial_reference_groups": 20,
+      "decision": "right_strict",
+      "final_certificate": {
+        "lower": "-143/181902",
+        "upper": "-143/544854",
+        "units": "conditional_rate_difference",
+        "decision": "right_strict",
+        "defined_all": true
+      },
+      "phase_seconds": {
+        "register_seconds": 0.011343828002281953,
+        "select_seconds": 0.3806427659801557,
+        "bounds_seconds": 0.09585955191141693,
+        "worker_seconds": 148.57005106699216,
+        "receive_seconds": 0.20707893302460434,
+        "record_seconds": 1.0282672129906132
+      },
+      "audit_total_seconds": 150.3144897989987,
+      "unallocated_loop_seconds": 0.021246440097456798,
+      "load_before": {
+        "monotonic_seconds": 42367.16292113,
+        "load_average": [
+          17.81884765625,
+          15.701171875,
+          12.7041015625
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 3.661231096,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "load_after": {
+        "monotonic_seconds": 42517.477432973,
+        "load_average": [
+          20.80517578125,
+          17.7265625,
+          13.91259765625
+        ],
+        "visible_processes": 2,
+        "producer_cpu_seconds": 6.560358646,
+        "cpu_affinity": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    }
+  ],
+  "summaries": [
+    {
+      "scope": "humaneval",
+      "method": "paired",
+      "repetitions": 1,
+      "queries": [
+        154
+      ],
+      "median_seconds": 13.770264346996555,
+      "minimum_seconds": 13.770264346996555,
+      "maximum_seconds": 13.770264346996555,
+      "phase_medians": {
+        "register_seconds": 0.0041067850033869036,
+        "select_seconds": 0.0006006049588904716,
+        "bounds_seconds": 0.023268387056305073,
+        "worker_seconds": 13.59848556201905,
+        "receive_seconds": 0.025018103064212482,
+        "record_seconds": 0.113104091011337
+      }
+    },
+    {
+      "scope": "humaneval",
+      "method": "independent",
+      "repetitions": 1,
+      "queries": [
+        532
+      ],
+      "median_seconds": 51.82299333099945,
+      "minimum_seconds": 51.82299333099945,
+      "maximum_seconds": 51.82299333099945,
+      "phase_medians": {
+        "register_seconds": 0.015791773999808356,
+        "select_seconds": 0.1519296390688396,
+        "bounds_seconds": 0.03147354112297762,
+        "worker_seconds": 50.876081384994905,
+        "receive_seconds": 0.11343303890316747,
+        "record_seconds": 0.6241764149817755
+      }
+    },
+    {
+      "scope": "mbpp",
+      "method": "paired",
+      "repetitions": 1,
+      "queries": [
+        1
+      ],
+      "median_seconds": 0.08907611000176985,
+      "minimum_seconds": 0.08907611000176985,
+      "maximum_seconds": 0.08907611000176985,
+      "phase_medians": {
+        "register_seconds": 0.021022052998887375,
+        "select_seconds": 1.863001671154052e-06,
+        "bounds_seconds": 0.0001722579909255728,
+        "worker_seconds": 0.06678038300015032,
+        "receive_seconds": 0.00015841799904592335,
+        "record_seconds": 0.00044384699867805466
+      }
+    },
+    {
+      "scope": "mbpp",
+      "method": "independent",
+      "repetitions": 1,
+      "queries": [
+        1136
+      ],
+      "median_seconds": 150.3144897989987,
+      "minimum_seconds": 150.3144897989987,
+      "maximum_seconds": 150.3144897989987,
+      "phase_medians": {
+        "register_seconds": 0.011343828002281953,
+        "select_seconds": 0.3806427659801557,
+        "bounds_seconds": 0.09585955191141693,
+        "worker_seconds": 148.57005106699216,
+        "receive_seconds": 0.20707893302460434,
+        "record_seconds": 1.0282672129906132
+      }
+    }
+  ],
+  "total_candidate_suites": 1823,
+  "candidate_observation_files_read_before_selection": 0,
+  "cross_run_candidate_label_reuse": false,
+  "common_preparation_seconds": 2.123095844995987,
+  "independent_receiving_required": true
+}

@@ -1,0 +1,177 @@
+{
+  "status": "pass",
+  "counts": {
+    "models": 62856,
+    "label_completions": 324468,
+    "asymmetric_total_mass_models": 48948,
+    "undefined_possible_models": 19206,
+    "certified_models": 18880,
+    "anchor_envelopes": 125280,
+    "relaxed_endpoint_completions": 1293816,
+    "common_remainder_equivalences": 900,
+    "pre_H_certificates_beyond_separate": 2976,
+    "sufficient_but_not_complete_models": 112,
+    "exact_residual_models": 43650,
+    "class_complete_endpoints": 18992,
+    "class_early_unresolved_decisions": 24658,
+    "singleton_exact_models": 16366,
+    "exact_cap_controls": 3,
+    "class_budget_controls": 2
+  },
+  "witnesses": {
+    "pre_H": [
+      {
+        "known_left": [
+          1,
+          1
+        ],
+        "known_right": [
+          1,
+          2
+        ],
+        "pairs": [
+          [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        ],
+        "decision": "left_strict",
+        "true_gap_endpoints": [
+          "1/6",
+          "2/3"
+        ]
+      },
+      {
+        "known_left": [
+          1,
+          2
+        ],
+        "known_right": [
+          2,
+          2
+        ],
+        "pairs": [
+          [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        ],
+        "decision": "right_strict",
+        "true_gap_endpoints": [
+          "-1/2",
+          "-1/6"
+        ]
+      },
+      {
+        "known_left": [
+          0,
+          1
+        ],
+        "known_right": [
+          1,
+          1
+        ],
+        "pairs": [
+          [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        ],
+        "decision": "right_strict",
+        "true_gap_endpoints": [
+          "-1",
+          "-1/6"
+        ]
+      }
+    ],
+    "not_complete": [
+      {
+        "known_left": [
+          1,
+          2
+        ],
+        "known_right": [
+          2,
+          2
+        ],
+        "pairs": [
+          [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ]
+        ],
+        "actual_decision": "unresolved",
+        "true_gap_endpoints": [
+          "-1/2",
+          "-1/15"
+        ]
+      }
+    ]
+  },
+  "method": "Independent direct Boolean-completion enumeration. No signed-coefficient formula or production score range routine is used to construct the reference results.",
+  "meaning": "Finite implementation checks support the accompanying all-size algebraic proof; these models are mathematical verification inputs, not program experiments."
+}

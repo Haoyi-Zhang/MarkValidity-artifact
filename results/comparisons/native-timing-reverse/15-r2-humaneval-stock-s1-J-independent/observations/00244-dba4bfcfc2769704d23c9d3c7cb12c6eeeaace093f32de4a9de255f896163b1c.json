@@ -1,0 +1,13 @@
+{
+  "stdout": "{\"elapsed_seconds\":0.00557,\"error\":null,\"observations\":[{\"after\":{\"args\":[\"tuple\",[[\"list\",[]],[\"int\",\"7\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"list\",[]],[\"int\",\"7\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"list\",[]]]},{\"after\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"5\"],[\"int\",\"6\"],[\"int\",\"3\"],[\"int\",\"2\"]]],[\"int\",\"8\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"5\"],[\"int\",\"6\"],[\"int\",\"3\"],[\"int\",\"2\"]]],[\"int\",\"8\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"list\",[[\"int\",\"5\"],[\"int\",\"8\"],[\"int\",\"6\"],[\"int\",\"8\"],[\"int\",\"3\"],[\"int\",\"8\"],[\"int\",\"2\"]]]]},{\"after\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"2\"],[\"int\",\"2\"],[\"int\",\"2\"]]],[\"int\",\"2\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"list\",[[\"int\",\"2\"],[\"int\",\"2\"],[\"int\",\"2\"]]],[\"int\",\"2\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"list\",[[\"int\",\"2\"],[\"int\",\"2\"],[\"int\",\"2\"],[\"int\",\"2\"],[\"int\",\"2\"]]]]}],\"status\":\"passed\",\"stderr\":\"\",\"stdout\":\"\"}\n",
+  "stderr": "",
+  "returncode": 0,
+  "interruption": null,
+  "child_user_cpu_seconds": 0.02639700000000289,
+  "child_system_cpu_seconds": 0.007542000000000826,
+  "group": "dba4bfcfc2769704d23c9d3c7cb12c6eeeaace093f32de4a9de255f896163b1c",
+  "received_label": true,
+  "source_sha256": "b92585d26129c0b3a45dad2e3e1a2038114315f4e88bc6e1627dabc6bad6148e",
+  "contract_sha256": "eb1d0779acf592a6a8776e2280a8a809b2dbdb2fedcbfd9143a6fddacd249afc",
+  "worker_seconds": 0.03572494599939091
+}

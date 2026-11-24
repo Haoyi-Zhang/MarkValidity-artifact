@@ -1,0 +1,16 @@
+--- stock/sew/rules/python_rules_extra.py
++++ s4_return_boundary/sew/rules/python_rules_extra.py
+@@ -674,7 +674,12 @@
+         s, e = site.span
+         if target == 1:
+             return [Edit(s, e, b"(" + src[s:e] + b")")]
+-        return [Edit(s, e, src[s + 1:e - 1])]
++        new = src[s + 1:e - 1]
++        # Removing the tuple's opening parenthesis must keep the return token.
++        if src[max(0, s - 6):s] == b"return" and new:
++            if ("return" + new.decode("utf-8")[0]).isidentifier():
++                new = b" " + new
++        return [Edit(s, e, new)]
+ 
+     def erase_bytes(self, site, src):
+         return self.write_bytes(site, src, 0) if site.variant == 1 else []

@@ -1,0 +1,32 @@
+\begin{table}[t]
+\centering
+\caption{Conditional suite queries under the same public order.}
+\label{tab:paired-all-comparisons}
+\small
+\begin{tabular}{@{}llrrrr@{}}
+\toprule
+ & & \multicolumn{2}{c}{Reference identity known} & \multicolumn{2}{c}{All withheld} \\
+Corpus & Pair & Paired & Common & Paired & Common \\
+\midrule
+HumanEval & stock / S1 & 154 & 160 & 154 & 160 \\
+HumanEval & stock / S4 & 0 & 0 & 1 & 1 \\
+HumanEval & stock / both & 154 & 160 & 154 & 160 \\
+HumanEval & S1 / S4 & 154 & 160 & 154 & 160 \\
+HumanEval & S1 / both & 0 & 0 & 1 & 1 \\
+HumanEval & S4 / both & 154 & 160 & 154 & 160 \\
+MBPP & stock / S1 & 367 & 376 & 371 & 380 \\
+MBPP & stock / S4 & 1 & 6 & 7 & 7 \\
+MBPP & stock / both & 373 & 382 & 377 & 386 \\
+MBPP & S1 / S4 & 371 & 382 & 375 & 386 \\
+MBPP & S1 / both & 1 & 6 & 7 & 7 \\
+MBPP & S4 / both & 367 & 376 & 371 & 380 \\
+Pooled & stock / S1 & 521 & 536 & 525 & 540 \\
+Pooled & stock / S4 & 1 & 6 & 7 & 7 \\
+Pooled & stock / both & 527 & 542 & 531 & 546 \\
+Pooled & S1 / S4 & 525 & 542 & 529 & 546 \\
+Pooled & S1 / both & 1 & 6 & 7 & 7 \\
+Pooled & S4 / both & 521 & 536 & 525 & 540 \\
+\bottomrule
+\end{tabular}
+\par\smallskip\begin{minipage}{\linewidth}\footnotesize Paired: the ratio-envelope certificate with the separate-interval fallback. Common: the common-remainder certificate enabled after coefficient differences are resolved, with the same separate-interval fallback. Both receive the same public query sequence.\end{minipage}
+\end{table}

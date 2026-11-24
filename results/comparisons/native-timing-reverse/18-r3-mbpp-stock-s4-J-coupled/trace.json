@@ -1,0 +1,24 @@
+[
+  {
+    "step": 0,
+    "bounds": {
+      "lower": -3,
+      "upper": 0,
+      "units": "joint_count_difference",
+      "decision": "unresolved",
+      "defined_all": true
+    },
+    "groups_admitted": 20
+  },
+  {
+    "step": 1,
+    "bounds": {
+      "lower": -3,
+      "upper": -1,
+      "units": "joint_count_difference",
+      "decision": "right_strict",
+      "defined_all": true
+    },
+    "groups_admitted": 21
+  }
+]

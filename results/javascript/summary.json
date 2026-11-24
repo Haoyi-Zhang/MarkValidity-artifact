@@ -1,0 +1,157 @@
+{
+  "all_source_configurations": 76032,
+  "candidate_statuses": {
+    "supported": 22095
+  },
+  "combined_mixtures": [
+    {
+      "contained_in_earlier_interval": true,
+      "earlier_lower_exact": "4387/21120",
+      "earlier_upper_exact": "1393/3520",
+      "joint": "0.395738636364",
+      "joint_exact": "1393/3520",
+      "language": "combined",
+      "mixture": "balanced",
+      "scheme": "lexical"
+    },
+    {
+      "contained_in_earlier_interval": true,
+      "earlier_lower_exact": "4361/21120",
+      "earlier_upper_exact": "1043/2640",
+      "joint": "0.395075757576",
+      "joint_exact": "1043/2640",
+      "language": "combined",
+      "mixture": "balanced",
+      "scheme": "structural"
+    },
+    {
+      "contained_in_earlier_interval": true,
+      "earlier_lower_exact": "273/1760",
+      "earlier_upper_exact": "3197/10560",
+      "joint": "0.302746212121",
+      "joint_exact": "3197/10560",
+      "language": "combined",
+      "mixture": "balanced",
+      "scheme": "hybrid"
+    },
+    {
+      "contained_in_earlier_interval": true,
+      "earlier_lower_exact": "27817/211200",
+      "earlier_upper_exact": "1687/6600",
+      "joint": "0.255606060606",
+      "joint_exact": "1687/6600",
+      "language": "combined",
+      "mixture": "rename-heavy",
+      "scheme": "lexical"
+    },
+    {
+      "contained_in_earlier_interval": true,
+      "earlier_lower_exact": "1687/4800",
+      "earlier_upper_exact": "23427/35200",
+      "joint": "0.665539772727",
+      "joint_exact": "23427/35200",
+      "language": "combined",
+      "mixture": "rename-heavy",
+      "scheme": "structural"
+    },
+    {
+      "contained_in_earlier_interval": true,
+      "earlier_lower_exact": "36031/211200",
+      "earlier_upper_exact": "70471/211200",
+      "joint": "0.333669507576",
+      "joint_exact": "70471/211200",
+      "language": "combined",
+      "mixture": "rename-heavy",
+      "scheme": "hybrid"
+    },
+    {
+      "contained_in_earlier_interval": true,
+      "earlier_lower_exact": "74149/211200",
+      "earlier_upper_exact": "28093/42240",
+      "joint": "0.665080492424",
+      "joint_exact": "28093/42240",
+      "language": "combined",
+      "mixture": "structure-heavy",
+      "scheme": "lexical"
+    },
+    {
+      "contained_in_earlier_interval": true,
+      "earlier_lower_exact": "6947/52800",
+      "earlier_upper_exact": "279/1100",
+      "joint": "0.253636363636",
+      "joint_exact": "279/1100",
+      "language": "combined",
+      "mixture": "structure-heavy",
+      "scheme": "structural"
+    },
+    {
+      "contained_in_earlier_interval": true,
+      "earlier_lower_exact": "2311/13200",
+      "earlier_upper_exact": "35843/105600",
+      "joint": "0.339422348485",
+      "joint_exact": "35843/105600",
+      "language": "combined",
+      "mixture": "structure-heavy",
+      "scheme": "hybrid"
+    }
+  ],
+  "combined_winners": {
+    "balanced": "lexical",
+    "rename-heavy": "structural",
+    "structure-heavy": "lexical"
+  },
+  "complete_frozen_design": true,
+  "completed_scores_contained_in_prior_intervals": true,
+  "contract_relationship": "The fresh-input tagged contract is explicit. Comparison with earlier intervals is empirical on these frozen sources; it does not assume arbitrary stateful programs retain legacy labels.",
+  "execution_scope": "All JavaScript source identities executed. Python labels in the combined completion are the retained restricted proofs, not new executions in this command.",
+  "initialization_rule": "covewm-fresh-module-instance-per-input-v1",
+  "javascript_candidate_input_calls": 60758192,
+  "javascript_candidate_sources_executed": 22095,
+  "javascript_configurations": 38016,
+  "javascript_mutant_control_input_calls": 99039,
+  "javascript_mutant_control_sources_executed": 36,
+  "javascript_mutant_nominal_survivors": 3,
+  "javascript_reference_input_calls": 33013,
+  "javascript_reference_sources_executed": 12,
+  "joint_count": 35768,
+  "joint_exact": "4471/9504",
+  "mutant_control_statuses": {
+    "contradicted": 36
+  },
+  "nominal_input_calls": 244,
+  "observation_rule": "covewm-tagged-return-or-exception-type-and-message-canonical-json-v2",
+  "old_mixture_intervals_checked": 27,
+  "old_pairwise_intervals_checked": 27,
+  "outputs_sha256": {
+    "completed_rows.csv.gz": "3d8e494932c64d142bef02d0fd6adab8018d028a05738056ea4579923425d575",
+    "execution.json": "f43e5b127869ba1d8ab63cfd213137e6814eac8a8a3ac8aaafb2a7b9e06bd8ed",
+    "family_scores.csv": "6e02c29c17903cd8a8913fade2fe82020a4061b4ffffe7b316a7fed0ea93dcbc",
+    "mixture_scores.csv": "9199b81adcb1f9d055062af4a6ad8d1220caece4fcccd0acb62414cdb48281ce",
+    "mutant_controls.csv": "e70e212cfe86af96d56d7abeb8805788c18b4185616274012e6e3ea0b7e4270f",
+    "pairwise_gaps.csv": "71e5151fcccdf397352731cec4569af06da556b185d109b1f09e37edbd8fad29",
+    "previous_execution_links.csv": "b34a54419dc451941d32f2e74733f385611861bf2980ab538c3e1775432767cf",
+    "raw/armstrong.jsonl.gz": "e4e8839316cdc77374e90a785b47a465e1d0e5ded53e9a054dcc32b3fa3e3979",
+    "raw/collatz_steps.jsonl.gz": "d185d13d9c0badf16ef4a25105598f3690ace2c9801587301113463387137eb9",
+    "raw/darts.jsonl.gz": "5be9311b4bd249e51904471f3f18ef029928ef94cc350e2031a9f247a511acc2",
+    "raw/grains.jsonl.gz": "d88979a51b8f461efbedff335eba70ad19bb56e7b04d325bcb7875c2aeaad479",
+    "raw/hamming.jsonl.gz": "0871c9456707bb505460bd50da083b7735f9d4c56f1ac75df245e54f5410c75e",
+    "raw/isogram.jsonl.gz": "6b16fe24ad6b712e4ba5f04c9421a04d2ab9f9cf6f5ed669fa963187a7f0b94e",
+    "raw/leap_year.jsonl.gz": "212dbaad8e9cd2b1f61fc9992ab83cef48aef7110116d5e0c817873a3f5abfcd",
+    "raw/luhn.jsonl.gz": "31be3d0959f8f84ece193e9c39d6837577cfa50ebdb4c0aa26cf9313ca85ccda",
+    "raw/nucleotide_count.jsonl.gz": "fd214f05743dca03b6a27f1b62f5f7048ade65485fb6bd0129ad030a056df1d5",
+    "raw/raindrops.jsonl.gz": "72a4227e2178be39a36b49f39db5d85e1882442a9182618692793d95b207c5af",
+    "raw/reverse_text.jsonl.gz": "38ec1870136e93ad6dc109ebef9b6ec1c3d4fc0eeb039c58fac6fcf78d319d3b",
+    "raw/triangle.jsonl.gz": "e5c7e14bcbcf63ebca4447fc7b5dc699fa68e9e248da3088f764c652901e5431",
+    "reference-domains.json.gz": "93b9d08ccdc7386de1e0da6e1132b62e10fd7698f7177086b2fbada26ce6d370",
+    "registration.json": "69e4101ad97ff64f7e3a9fcc8cb7524c21b3e9f34dc090bc1c29b635f27dd089",
+    "source_labels.csv": "9dd9941857ecc4cfb998f5689c7f4026282d61d35a69aff27e91cd86349e44bc",
+    "task_coverage.csv": "190924f8de4cb82c6c6b4cbc493e8338adcd9b4099d84c7de2feac88b3efa418"
+  },
+  "previous_executed_javascript_rows_linked": 252,
+  "prior_unknown_javascript_configurations_completed": 35070,
+  "quantity": "joint yield E[validity AND detection]",
+  "source_output_vector_storage": "Full typed per-input observations retained once per identical vector only after direct execution and equality comparison; every source binds to its measured vector.",
+  "source_selection": "Every stored JavaScript source identity; no outcome-based source selection",
+  "status": "PASS",
+  "wall_seconds": 77.270838
+}

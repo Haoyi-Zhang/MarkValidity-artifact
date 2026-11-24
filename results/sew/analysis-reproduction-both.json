@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "mode": "both",
+  "driver_sha256": "9f5ca49cc638dd72b3d9f34162d6caddbeeb631c1c6b3d8c4abdea46a22d51a0",
+  "analysis_module_sha256": "bcf19e3111d68b43fbb144cff23ad844f7a9aeb9d9af18aff0f24a69e98e3551",
+  "input_ledgers": [
+    {
+      "rows_path": "results/revision-sew-natural/humaneval/rows.json",
+      "asset_root": "results/revision-sew-natural/humaneval",
+      "rows_sha256": "563d49e53640d8f97a91b416399643f76282de7f45ba16a8be18385774396dd0",
+      "rows": 1968,
+      "datasets": [
+        "HumanEval"
+      ]
+    },
+    {
+      "rows_path": "results/revision-sew-natural/mbpp/factors/normalized_rows.json",
+      "asset_root": "results/revision-sew-natural/mbpp",
+      "rows_sha256": "5e7a760cec77f512bab53d2c0812242b7d66959186aeb50f8657c3f7c5fd8a0f",
+      "rows": 5124,
+      "datasets": [
+        "mbpp_sanitized"
+      ]
+    }
+  ],
+  "analyses": [
+    {
+      "name": "analysis-primary",
+      "initialization": "reference_identity_known",
+      "manifest_sha256": "fdfc482914abc0fb43e0e4f435ee97edeec10e14c40177129a76d370dbab6956",
+      "certificate_receiving_sha256": "db63b6f25eb3d9bf57859db59dc75e868d8cc11f4da22bc0708ea6ac0d889f2e",
+      "schedules": 360,
+      "first_certificates_checked": 2160,
+      "trace_states_checked": 427080
+    },
+    {
+      "name": "analysis-all-withheld",
+      "initialization": "all_withheld",
+      "manifest_sha256": "a45b644d58bdb8b45481ca3e24e108319fc0823283049eb97a2d73600b123a96",
+      "certificate_receiving_sha256": "5098661aaa48433fabcc7e8820169bd10d7e6666b978f6d62a76bc46f8ad4f94",
+      "schedules": 360,
+      "first_certificates_checked": 2160,
+      "trace_states_checked": 432920
+    }
+  ],
+  "candidate_native_suites_executed": 0
+}

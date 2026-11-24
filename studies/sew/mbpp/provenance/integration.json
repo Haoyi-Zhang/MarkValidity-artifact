@@ -1,0 +1,35 @@
+{
+  "status": "READY",
+  "normalized_rows_sha256": "5e7a760cec77f512bab53d2c0812242b7d66959186aeb50f8657c3f7c5fd8a0f",
+  "code_root": "external-studies/sew_natural/mbpp",
+  "result_root": "results/revision-sew-natural/mbpp",
+  "variant_mapping": {
+    "stock": "external-studies/sew_natural/variants/stock",
+    "s1_literal_predecessor": "external-studies/sew_natural/variants/s1",
+    "s4_return_boundary": "external-studies/sew_natural/variants/s4",
+    "s1_s4": "external-studies/sew_natural/variants/s1_s4"
+  },
+  "final_rows": 5124,
+  "programs": 427,
+  "source_contract_groups": 1347,
+  "copy_receiving_path": "results/revision-sew-natural/mbpp/copy-receiving.json",
+  "read_only_command_from_artifact_root": "python3 -B external-studies/sew_natural/mbpp/scripts/verify_normalized.py --results-root results/revision-sew-natural/mbpp",
+  "license_notice": "external-studies/sew_natural/mbpp/DATASET_LICENSE_NOTICE.md",
+  "script_hashes": {
+    "scripts/check_observer_v2.py": "09899456b168024e1e67b015165bff77351825acf158cad89812d2e2880821e1",
+    "scripts/compare_observer_versions.py": "e5c0c88b9e6c5407c7cda621eaa16403dd8119d539b853c0e3ab05955fe555a6",
+    "scripts/native_runner.py": "003909bf27456960596204a830cfde367f6aa1d95a13423f589c30633192d46a",
+    "scripts/native_runner_v2.py": "003909bf27456960596204a830cfde367f6aa1d95a13423f589c30633192d46a",
+    "scripts/normalize_factors.py": "305fb1759f98ccb7f3f5cd8e6ae6e88060a5fed4bba954e038971454f7e5d117",
+    "scripts/recheck_s4_failures.py": "fbfeef43de0b317c59e418c902952849a9a1f13bedd2eba5f95d0dae5f6083e9",
+    "scripts/run_factor_portable.py": "e35c9ab0b2794e969e7d6be5145d7e9090b9802112e1dd8f75844c273e6a4d40",
+    "scripts/verify_factor.py": "31edafecc97b3941591c4085144839827218d0c66689e14196684741f9d2534c",
+    "scripts/verify_normalized.py": "5f23091cc92c50ff95b3508d2aadf7331c983cec61ddf045ac35463c8313e9bc"
+  },
+  "evidence_schema": "markvalidity-mbpp-original-assertions-v2",
+  "prior_version": "history/original-suite-v1",
+  "observation_comparison": "results/revision-sew-natural/mbpp/v1-v2-observation-comparison.json",
+  "observer_controls": "results/revision-sew-natural/mbpp/supporting/observer-v2-controls/report.json",
+  "historical_qa_manifest": "history/original-suite-v1/provenance/QA_INTEGRATION_MANIFEST.json",
+  "observer_control_cases": 14
+}

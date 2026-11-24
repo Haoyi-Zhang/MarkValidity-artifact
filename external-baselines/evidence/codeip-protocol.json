@@ -1,0 +1,20 @@
+{
+  "commit": "5f84062064947a0e2137ebda0bd3a9ae8ceb1736",
+  "definition_record": {
+    "definition": "Pinned repository check: compare decoded and target message prefixes using an available-message count derived from the configured generation length.",
+    "replay_mapping": "Local indexed-survivor agreement accepts iff every surviving site matches its original indexed target; zero survivors are accepted vacuously. Interior erasures select indexed targets rather than the pinned repository check's contiguous prefix. Historical available_prefix output keys retain their names for compatibility and do not denote literal repository-prefix scores.",
+    "source_locator": "examples/codeip/src/watermarking/wm.py:127-133"
+  },
+  "full_system_execution": "NO",
+  "imported_definition": "Pinned wm.py prefix-equality check at a message-unit count derived from configured generation length",
+  "official_repository": "https://github.com/CGCL-codes/naturalcc",
+  "paper_doi": "10.18653/v1/2024.findings-emnlp.541",
+  "reason_full_system_not_executed": "Requires a transformer language model and model-generated code outside the frozen no-model contract",
+  "redistributed_source": "NO",
+  "repository_license": "MIT",
+  "retrieved_utc_date": "2026-07-25",
+  "source_blob_sha": "517627a1166be6c468baff304328579bfe03caaa",
+  "source_path": "examples/codeip/src/watermarking/wm.py",
+  "system": "CodeIP",
+  "paper_method_note": "Final paper §3.4 Eq.(6) describes whole-candidate-message argmax; this record imports only the separately pinned implementation check."
+}

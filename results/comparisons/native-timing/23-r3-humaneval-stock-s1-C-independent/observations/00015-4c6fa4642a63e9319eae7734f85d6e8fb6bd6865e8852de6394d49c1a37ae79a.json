@@ -1,0 +1,13 @@
+{
+  "stdout": "{\"elapsed_seconds\":0.001754,\"error\":null,\"observations\":[{\"after\":{\"args\":[\"tuple\",[[\"str\",\"\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"0\"]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"abcde\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"abcde\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"5\"]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"abcdecadeCADE\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"abcdecadeCADE\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"5\"]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"aaaaAAAAaaaa\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"aaaaAAAAaaaa\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"1\"]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"Jerry jERRY JeRRRY\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"Jerry jERRY JeRRRY\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"5\"]]}],\"status\":\"passed\",\"stderr\":\"\",\"stdout\":\"\"}\n",
+  "stderr": "",
+  "returncode": 0,
+  "interruption": null,
+  "child_user_cpu_seconds": 0.021840999999994892,
+  "child_system_cpu_seconds": 0.004503999999997177,
+  "group": "4c6fa4642a63e9319eae7734f85d6e8fb6bd6865e8852de6394d49c1a37ae79a",
+  "received_label": true,
+  "source_sha256": "6171bb9e63db70e9b509e00aa294b491e2541289e01c45ac56ca4d9d7b983e85",
+  "contract_sha256": "08c690ff71859eb5600abc66d9536ae61a64e43cc5b3f0f1409605447011c577",
+  "worker_seconds": 0.028338640004221816
+}

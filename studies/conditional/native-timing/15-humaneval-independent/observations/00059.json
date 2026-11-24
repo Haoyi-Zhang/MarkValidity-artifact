@@ -1,0 +1,13 @@
+{
+  "stdout": "{\"elapsed_seconds\":0.002503,\"error\":null,\"observations\":[{\"after\":{\"args\":[\"tuple\",[[\"int\",\"0\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"0\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"str\",\"0\"]]},{\"after\":{\"args\":[\"tuple\",[[\"int\",\"3\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"3\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"str\",\"0 1 2 3\"]]},{\"after\":{\"args\":[\"tuple\",[[\"int\",\"10\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"10\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"str\",\"0 1 2 3 4 5 6 7 8 9 10\"]]}],\"status\":\"passed\",\"stderr\":\"\",\"stdout\":\"\"}\n",
+  "stderr": "",
+  "returncode": 0,
+  "interruption": null,
+  "child_user_cpu_seconds": 0.02040399999998499,
+  "child_system_cpu_seconds": 0.007639000000004614,
+  "group": "52fddf4fec29a19cc294247156b2b1fac9b782884de761a24b3b73536828f762",
+  "received_label": true,
+  "source_sha256": "a76c72fac81107079b5a1ba26f1a35192cac4883cce00eaf4eafdefdacdbb7e4",
+  "contract_sha256": "bd177dc83e5c6c1ed0e2556745dbb5322e54666a6510b4ee0c4bd4a3fe11e188",
+  "worker_seconds": 0.028926942999532912
+}

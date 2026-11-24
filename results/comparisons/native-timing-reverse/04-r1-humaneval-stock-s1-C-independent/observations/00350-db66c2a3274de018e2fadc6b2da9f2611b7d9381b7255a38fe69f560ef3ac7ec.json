@@ -1,0 +1,13 @@
+{
+  "stdout": "{\"elapsed_seconds\":0.005228,\"error\":null,\"observations\":[{\"after\":{\"args\":[\"tuple\",[[\"str\",\"111000\"],[\"str\",\"101010\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"111000\"],[\"str\",\"101010\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"str\",\"010010\"]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"1\"],[\"str\",\"1\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"1\"],[\"str\",\"1\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"str\",\"0\"]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"0101\"],[\"str\",\"0000\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"0101\"],[\"str\",\"0000\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"str\",\"0101\"]]}],\"status\":\"passed\",\"stderr\":\"\",\"stdout\":\"\"}\n",
+  "stderr": "",
+  "returncode": 0,
+  "interruption": null,
+  "child_user_cpu_seconds": 0.027829000000000548,
+  "child_system_cpu_seconds": 0.004036000000000151,
+  "group": "db66c2a3274de018e2fadc6b2da9f2611b7d9381b7255a38fe69f560ef3ac7ec",
+  "received_label": true,
+  "source_sha256": "ff1a9ec1adf393a3f4c17c04561513f016d9e2b323051257c78e9c179ce8a881",
+  "contract_sha256": "83ee36283da85dfbd5c266eb46a08139917d976dd33eaedc82fe03f9ebdae67c",
+  "worker_seconds": 0.03319072900194442
+}

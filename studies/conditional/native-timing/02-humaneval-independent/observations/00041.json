@@ -1,0 +1,13 @@
+{
+  "stdout": "{\"elapsed_seconds\":0.002435,\"error\":null,\"observations\":[{\"after\":{\"args\":[\"tuple\",[[\"str\",\"\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"str\",\"\"]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"abcdef\\nghijklm\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"abcdef\\nghijklm\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"str\",\"bcdf\\nghjklm\"]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"fedcba\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"fedcba\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"str\",\"fdcb\"]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"eeeee\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"eeeee\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"str\",\"\"]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"acBAA\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"acBAA\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"str\",\"cB\"]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"EcBOO\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"EcBOO\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"str\",\"cB\"]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"ybcd\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"ybcd\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"str\",\"ybcd\"]]}],\"status\":\"passed\",\"stderr\":\"\",\"stdout\":\"\"}\n",
+  "stderr": "",
+  "returncode": 0,
+  "interruption": null,
+  "child_user_cpu_seconds": 0.027893999999999863,
+  "child_system_cpu_seconds": 0.0,
+  "group": "251a1743ca194acc133621d33d8014e37defce2d7b201d3af9fef9bb759afa2f",
+  "received_label": true,
+  "source_sha256": "17228b46f25a6f602de19af0e4252cc2f9313e2a2f448859f01d8af883d1a1b2",
+  "contract_sha256": "83f0c732163345b7730b21d1edfa7e8faf7ef0e64b913924c5746a4e3b20587e",
+  "worker_seconds": 0.05651859100180445
+}

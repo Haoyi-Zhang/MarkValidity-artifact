@@ -1,0 +1,85 @@
+{
+  "repeat": 1,
+  "dataset": "mbpp_sanitized",
+  "scope": "mbpp",
+  "left": "stock",
+  "right": "s4",
+  "target": "J",
+  "method": "coupled",
+  "policy": "joint_width_per_suite",
+  "ordinal": 6,
+  "directory": "06-r1-mbpp-stock-s4-J-coupled",
+  "denominator": 1281,
+  "initial_reference_groups": 20,
+  "candidate_suite_queries": 1,
+  "decision": "right_strict",
+  "final_bounds": {
+    "lower": -3,
+    "upper": -1,
+    "units": "joint_count_difference",
+    "decision": "right_strict",
+    "defined_all": true
+  },
+  "phase_seconds": {
+    "register_seconds": 0.01362009700096678,
+    "select_seconds": 2.34400067711249e-06,
+    "bounds_seconds": 1.0256000678054988e-05,
+    "worker_seconds": 0.02893879399925936,
+    "receive_seconds": 9.799699910217896e-05,
+    "record_seconds": 0.0007435880033881404
+  },
+  "audit_total_seconds": 0.0440956919992459,
+  "unallocated_loop_seconds": 0.0006826159951742738,
+  "queries": [
+    {
+      "step": 1,
+      "group": "0d08449da73913c95dbce2b680548b9901210b9164c44c970f7c9ad9b94f0bb6",
+      "received_label": true,
+      "evidence_file": "06-r1-mbpp-stock-s4-J-coupled/observations/00001-0d08449da73913c95dbce2b680548b9901210b9164c44c970f7c9ad9b94f0bb6.json",
+      "evidence_sha256": "c66fd36a3a67ffcc87063f77cd080321f204ba3e1dc39746baf7543194200479"
+    }
+  ],
+  "trace_sha256": "f6a269a3ae3d7a9db5534463137fd7f00aa6fbbea0d877c6314db861fca73751",
+  "load_before": {
+    "monotonic_seconds": 35213.093924966,
+    "load_average": [
+      7.7822265625,
+      7.51806640625,
+      6.82177734375
+    ],
+    "visible_processes": 3,
+    "producer_cpu_seconds": 5.641138303,
+    "cpu_affinity": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "load_after": {
+    "monotonic_seconds": 35213.138140208,
+    "load_average": [
+      7.7822265625,
+      7.51806640625,
+      6.82177734375
+    ],
+    "visible_processes": 3,
+    "producer_cpu_seconds": 5.657675455,
+    "cpu_affinity": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  }
+}

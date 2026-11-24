@@ -1,0 +1,13 @@
+{
+  "stdout": "{\"elapsed_seconds\":0.005286,\"error\":null,\"observations\":[{\"after\":{\"args\":[\"tuple\",[[\"str\",\"\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"str\",\"\"]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"Hello!\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"Hello!\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"str\",\"hELLO!\"]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"These violent delights have violent ends\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"These violent delights have violent ends\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"str\",\"tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS\"]]}],\"status\":\"passed\",\"stderr\":\"\",\"stdout\":\"\"}\n",
+  "stderr": "",
+  "returncode": 0,
+  "interruption": null,
+  "child_user_cpu_seconds": 0.02694500000000044,
+  "child_system_cpu_seconds": 0.02516600000000002,
+  "group": "4ddc9cb0bcc56fa7ef486cd6eec176bb26c218e5f389f09bc70d006415eab766",
+  "received_label": true,
+  "source_sha256": "4203d9cf47d01efa5e0c5868d3243199177ec2ea7879264fad7da3d4f9cf6fb1",
+  "contract_sha256": "33b34bead8b0aca188011b6af79ed8cd44630a8a9ecd3400be676e838dc80b8f",
+  "worker_seconds": 0.09756798399757827
+}

@@ -1,0 +1,13 @@
+{
+  "stdout": "{\"elapsed_seconds\":0.003832,\"error\":null,\"observations\":[{\"after\":{\"args\":[\"tuple\",[[\"str\",\"\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"list\",[]]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"o o o o\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"o o o o\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"list\",[[\"int\",\"4\"],[\"int\",\"4\"],[\"int\",\"4\"],[\"int\",\"4\"]]]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\".| .| .| .|\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\".| .| .| .|\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"list\",[[\"int\",\"1\"],[\"int\",\"1\"],[\"int\",\"1\"],[\"int\",\"1\"]]]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"o| o| .| .| o o o o\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"o| o| .| .| o o o o\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"list\",[[\"int\",\"2\"],[\"int\",\"2\"],[\"int\",\"1\"],[\"int\",\"1\"],[\"int\",\"4\"],[\"int\",\"4\"],[\"int\",\"4\"],[\"int\",\"4\"]]]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"o| .| o| .| o o| o o|\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"o| .| o| .| o o| o o|\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"list\",[[\"int\",\"2\"],[\"int\",\"1\"],[\"int\",\"2\"],[\"int\",\"1\"],[\"int\",\"4\"],[\"int\",\"2\"],[\"int\",\"4\"],[\"int\",\"2\"]]]]}],\"status\":\"passed\",\"stderr\":\"\",\"stdout\":\"\"}\n",
+  "stderr": "",
+  "returncode": 0,
+  "interruption": null,
+  "child_user_cpu_seconds": 0.020631000000008726,
+  "child_system_cpu_seconds": 0.003943999999997061,
+  "group": "1521817e64ea86cacd96c5e31a4a04240d2493f817a6b7c41a90c6e9443545d8",
+  "received_label": true,
+  "source_sha256": "b2a93c6f9b9d331d0b4211e2bbf16d23698c517b083718a727a41f2acec907a9",
+  "contract_sha256": "d04ebc2c52d128f566ffa6fc98f7d9108be1f631cb1a04e9984759ba0fa4aabf",
+  "worker_seconds": 0.025366169997141697
+}

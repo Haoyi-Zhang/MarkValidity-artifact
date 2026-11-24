@@ -1,0 +1,11 @@
+{
+  "group": "04672f784e9d136436f291c5dc7fccb231167c5ea729b501db538170a9aa554a",
+  "source_sha256": "459ab487f63b71d98dc742f83ba1e45a7e5a75368411ace37d58e446f4c6e846",
+  "contract_sha256": "e206d6e1e950e35e8ec8f97123f8f0150e959ccd1ef2f28059fab553d5e60d86",
+  "received_label": true,
+  "returncode": 0,
+  "interruption": null,
+  "stdout": "{\"elapsed_seconds\":0.002092,\"error\":null,\"observations\":[{\"after\":{\"args\":[\"tuple\",[[\"str\",\"\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"str\",\"\"]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"x\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"x\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"str\",\"x\"]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"xyz\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"xyz\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"str\",\"xyzyx\"]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"xyx\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"xyx\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"str\",\"xyx\"]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"jerry\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"jerry\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"str\",\"jerryrrej\"]]}],\"status\":\"passed\",\"stderr\":\"\",\"stdout\":\"\"}\n",
+  "stderr": "",
+  "elapsed_seconds": 0.021024450001277728
+}

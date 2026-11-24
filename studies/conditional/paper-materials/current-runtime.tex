@@ -1,0 +1,22 @@
+\begin{table}[t]
+\caption{Measured audit time through first certification.}
+\label{tab:natural-runtime}
+\centering\small
+\begin{tabular}{@{}llrrrr@{}}
+\toprule
+Target & Method & Suites & Select (ms) & Worker (s) & Audit (s): median [range]\\
+\midrule
+\multicolumn{6}{@{}l}{\textit{HumanEval: stock / S1}}\\
+$J$ & Shared & 146 & 0.498 & 4.817 & 4.956 [4.382, 11.786]\\
+$J$ & Separate & 429 & 1.460 & 14.768 & 15.155 [13.686, 23.971]\\
+$C$ & Shared & 154 & 4.250 & 5.002 & 5.146 [4.695, 9.456]\\
+$C$ & Separate & 532 & 115.594 & 19.718 & 20.346 [16.167, 36.630]\\
+\addlinespace
+\multicolumn{6}{@{}l}{\textit{MBPP: stock / S4}}\\
+$J$ & Shared & 1 & 0.001 & 0.035 & 0.049 [0.044, 0.052]\\
+$J$ & Separate & 811 & 2.849 & 38.596 & 39.335 [36.578, 44.859]\\
+$C$ & Shared & 1 & 0.017 & 0.028 & 0.042 [0.034, 0.108]\\
+$C$ & Separate & 1\,136 & 267.710 & 46.767 & 47.877 [45.424, 82.140]\\
+\bottomrule\end{tabular}
+\par\smallskip\begin{minipage}{\linewidth}\footnotesize $J$ uses retained matched blocks; $C$ uses a separate balanced serial block. Each method occupies the first and second position three times per comparison.\end{minipage}
+\end{table}

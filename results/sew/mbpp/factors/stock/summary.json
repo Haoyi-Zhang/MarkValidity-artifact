@@ -1,0 +1,157 @@
+{
+  "status": "COMPLETE",
+  "scope": "All frozen sanitized MBPP tasks and predefined keys; original assertion-suite contract, not complete-domain equivalence or a population failure estimate.",
+  "tasks": 427,
+  "keys": 3,
+  "original_test_list_entries": 1324,
+  "reference_statuses": {
+    "passed": 427
+  },
+  "all_scheduled_attempts": {
+    "attempts": 1281,
+    "candidate_statuses": {
+      "passed": 1278,
+      "failed": 3
+    },
+    "embedding_statuses": {
+      "ok": 1281
+    },
+    "validity_statuses": {
+      "supported": 1278,
+      "contradicted": 3
+    },
+    "detected": 849,
+    "detection_unavailable": 0,
+    "candidate_suite_pass": 1278,
+    "joint_supported": 849,
+    "detected_contradicted": 0,
+    "source_changed": 1261,
+    "distinct_candidate_bytes": 1152
+  },
+  "reference_passing_subset": {
+    "attempts": 1281,
+    "candidate_statuses": {
+      "passed": 1278,
+      "failed": 3
+    },
+    "embedding_statuses": {
+      "ok": 1281
+    },
+    "validity_statuses": {
+      "supported": 1278,
+      "contradicted": 3
+    },
+    "detected": 849,
+    "detection_unavailable": 0,
+    "candidate_suite_pass": 1278,
+    "joint_supported": 849,
+    "detected_contradicted": 0,
+    "source_changed": 1261,
+    "distinct_candidate_bytes": 1152
+  },
+  "reference_failed_tasks": [],
+  "contradicted_task_key_pairs": [
+    {
+      "task_id": 290,
+      "key_id": "upstream_default",
+      "detected": false,
+      "candidate_status": "failed",
+      "candidate_compile_status": "passed",
+      "failed_test_indices": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "task_id": 290,
+      "key_id": "integer_1",
+      "detected": false,
+      "candidate_status": "failed",
+      "candidate_compile_status": "passed",
+      "failed_test_indices": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "task_id": 393,
+      "key_id": "integer_0",
+      "detected": false,
+      "candidate_status": "failed",
+      "candidate_compile_status": "passed",
+      "failed_test_indices": [
+        0,
+        1,
+        2
+      ]
+    }
+  ],
+  "per_key": {
+    "upstream_default": {
+      "attempts": 427,
+      "candidate_statuses": {
+        "passed": 426,
+        "failed": 1
+      },
+      "embedding_statuses": {
+        "ok": 427
+      },
+      "validity_statuses": {
+        "supported": 426,
+        "contradicted": 1
+      },
+      "detected": 286,
+      "detection_unavailable": 0,
+      "candidate_suite_pass": 426,
+      "joint_supported": 286,
+      "detected_contradicted": 0,
+      "source_changed": 422,
+      "distinct_candidate_bytes": 426
+    },
+    "integer_0": {
+      "attempts": 427,
+      "candidate_statuses": {
+        "passed": 426,
+        "failed": 1
+      },
+      "embedding_statuses": {
+        "ok": 427
+      },
+      "validity_statuses": {
+        "supported": 426,
+        "contradicted": 1
+      },
+      "detected": 277,
+      "detection_unavailable": 0,
+      "candidate_suite_pass": 426,
+      "joint_supported": 277,
+      "detected_contradicted": 0,
+      "source_changed": 415,
+      "distinct_candidate_bytes": 426
+    },
+    "integer_1": {
+      "attempts": 427,
+      "candidate_statuses": {
+        "passed": 426,
+        "failed": 1
+      },
+      "embedding_statuses": {
+        "ok": 427
+      },
+      "validity_statuses": {
+        "supported": 426,
+        "contradicted": 1
+      },
+      "detected": 286,
+      "detection_unavailable": 0,
+      "candidate_suite_pass": 426,
+      "joint_supported": 286,
+      "detected_contradicted": 0,
+      "source_changed": 424,
+      "distinct_candidate_bytes": 426
+    }
+  },
+  "elapsed_seconds": 35.925
+}

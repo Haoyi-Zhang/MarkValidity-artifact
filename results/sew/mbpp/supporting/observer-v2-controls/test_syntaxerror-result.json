@@ -1,0 +1,41 @@
+{
+  "status": "evidence_rejected",
+  "returncode": 0,
+  "stderr": "",
+  "events": [
+    {
+      "error": null,
+      "event": "source_compile",
+      "status": "passed"
+    },
+    {
+      "assertion_reached": false,
+      "elapsed_seconds": 0.001193,
+      "error": {
+        "message": "'(' was never closed (<mbpp-original-test-0>, line 1)",
+        "phase": "compile_original_test",
+        "traceback": "Traceback (most recent call last):\n  File \"/workspace/scratch/3d557313f143/qa/round3/mbpp-v2/scripts/native_runner.py\", line 136, in main\n    test_code = compile(assertion, '<mbpp-original-test-%d>' % index, 'exec')\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<mbpp-original-test-0>\", line 1\n    assert (\n           ^\nSyntaxError: '(' was never closed\n",
+        "type": "builtins.SyntaxError"
+      },
+      "event": "test_result",
+      "status": "evidence_rejected",
+      "stderr": "",
+      "stdout": "",
+      "test_index": 0
+    },
+    {
+      "completed_tests": 1,
+      "elapsed_seconds": 0.002626,
+      "event": "complete",
+      "evidence_schema": "markvalidity-mbpp-original-assertions-v2",
+      "failed_tests": 0,
+      "passed_tests": 0,
+      "rejected_tests": 1,
+      "scheduled_tests": 1,
+      "status": "evidence_rejected",
+      "unavailable_tests": 0
+    }
+  ],
+  "raw_stdout": null,
+  "elapsed_seconds": 0.022829
+}

@@ -1,0 +1,63 @@
+{
+  "schema": "markvalidity-main-figure-captions-v1",
+  "caption_source": "paper/main.tex figure captions and graphic widths only",
+  "documentclass": "\\documentclass[manuscript,screen,review]{acmart}",
+  "additional_layout_commands": [],
+  "figures": [
+    {
+      "number": 1,
+      "name": "markvalidity-overview",
+      "label": "fig:architecture",
+      "caption_tex": "From a transformed source to a supported comparison.",
+      "caption_plain": "From a transformed source to a supported comparison.",
+      "caption_sha256": "addeb9b28a4fce96a7af1ef0f98a5244c780aead40d0f495b04f3fa851fa640c",
+      "main_pdf_include": "figures/markvalidity-overview.pdf",
+      "width_specification": "width=\\linewidth",
+      "linewidth_factor": 1.0
+    },
+    {
+      "number": 2,
+      "name": "source-admission",
+      "label": "fig:source-admission",
+      "caption_tex": "The erasure rule checks behavior and extraction on one source.",
+      "caption_plain": "The erasure rule checks behavior and extraction on one source.",
+      "caption_sha256": "3a34005e5fb370490bd86fcc6b458c24a0b3dc33b0827b7637fc4a1981b050b4",
+      "main_pdf_include": "figures/source-admission.pdf",
+      "width_specification": "width=\\linewidth",
+      "linewidth_factor": 1.0
+    },
+    {
+      "number": 3,
+      "name": "audit-budget",
+      "label": "fig:audit-budget",
+      "caption_tex": "Interval reduction and certification under additional source evidence.",
+      "caption_plain": "Interval reduction and certification under additional source evidence.",
+      "caption_sha256": "46ffe62496713be97544e9c76a7feade1d333f15139df601db1f255f208f3403",
+      "main_pdf_include": "figures/audit-budget.pdf",
+      "width_specification": "width=\\linewidth",
+      "linewidth_factor": 1.0
+    },
+    {
+      "number": 4,
+      "name": "metric-fingerprint",
+      "label": "fig:metric-fingerprint",
+      "caption_tex": "Responses to four controlled intervention dimensions.",
+      "caption_plain": "Responses to four controlled intervention dimensions.",
+      "caption_sha256": "40b8f309b8fa1d96a00cd2ef60725e35864fc7f9a35a769e487525e37a173880",
+      "main_pdf_include": "figures/metric-fingerprint.pdf",
+      "width_specification": "width=\\linewidth",
+      "linewidth_factor": 1.0
+    },
+    {
+      "number": 5,
+      "name": "attack-response",
+      "label": "fig:curves",
+      "caption_tex": "Actual-source detection under four intervention families.",
+      "caption_plain": "Actual-source detection under four intervention families.",
+      "caption_sha256": "959f68730889766b37ea101aee13b92cd126d765d6ea6e4c00cd9d16150f2255",
+      "main_pdf_include": "figures/attack-response.pdf",
+      "width_specification": "width=\\linewidth",
+      "linewidth_factor": 1.0
+    }
+  ]
+}

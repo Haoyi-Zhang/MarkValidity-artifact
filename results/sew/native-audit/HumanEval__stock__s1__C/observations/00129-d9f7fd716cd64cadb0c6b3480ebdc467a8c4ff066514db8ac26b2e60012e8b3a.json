@@ -1,0 +1,11 @@
+{
+  "group": "d9f7fd716cd64cadb0c6b3480ebdc467a8c4ff066514db8ac26b2e60012e8b3a",
+  "source_sha256": "57e1f283630aa8ffd6d3081f1617233efe6fac920d2ae75a1a6df3703df87e38",
+  "contract_sha256": "6a54c2c276af9d258e3d9367fc76b11fd603b3ef81319ae78d7d3dc2d7c10922",
+  "received_label": true,
+  "returncode": 0,
+  "interruption": null,
+  "stdout": "{\"elapsed_seconds\":0.019122,\"error\":null,\"observations\":[{\"after\":{\"args\":[\"tuple\",[[\"int\",\"50\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"50\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"0\"]]},{\"after\":{\"args\":[\"tuple\",[[\"int\",\"78\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"78\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"2\"]]},{\"after\":{\"args\":[\"tuple\",[[\"int\",\"79\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"79\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"3\"]]},{\"after\":{\"args\":[\"tuple\",[[\"int\",\"100\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"100\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"3\"]]},{\"after\":{\"args\":[\"tuple\",[[\"int\",\"200\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"200\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"6\"]]},{\"after\":{\"args\":[\"tuple\",[[\"int\",\"4000\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"4000\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"192\"]]},{\"after\":{\"args\":[\"tuple\",[[\"int\",\"10000\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"10000\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"639\"]]},{\"after\":{\"args\":[\"tuple\",[[\"int\",\"100000\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"int\",\"100000\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"int\",\"8026\"]]}],\"status\":\"passed\",\"stderr\":\"\",\"stdout\":\"\"}\n",
+  "stderr": "",
+  "elapsed_seconds": 0.0468039109982783
+}

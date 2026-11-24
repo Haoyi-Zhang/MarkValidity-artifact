@@ -1,0 +1,10 @@
+{
+  "variant_id": "s1-literal-predecessor",
+  "claim": "Only S1 receives an additional sufficient pre-state guard. The complete watermark system is not asserted sound.",
+  "precondition": "Same function-local name is assigned an int or float literal by the immediately preceding statement in the same basic-block list; the function has no global/nonlocal declaration for that name. Original S1 operator and expansion guards still apply.",
+  "byte_offsets": "AST lineno and UTF-8 col_offset mapped to exact source byte positions.",
+  "upstream_commit": "3c873186a56033e73347391b7aedebce1f7f71d0",
+  "file": "sew/rules/python_rules.py",
+  "before_sha256": "e66955351d547776faa9f431b9e630acd44c7a7786b05ab175515100ec7154c5",
+  "after_sha256": "6330975dea44864e07f8a419dd412e929fb53404f38d226b58efa5324fdcbe47"
+}

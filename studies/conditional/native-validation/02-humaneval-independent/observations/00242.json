@@ -1,0 +1,13 @@
+{
+  "stdout": "{\"elapsed_seconds\":0.001839,\"error\":null,\"observations\":[{\"after\":{\"args\":[\"tuple\",[[\"str\",\"Jupiter\"],[\"str\",\"Neptune\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"Jupiter\"],[\"str\",\"Neptune\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"tuple\",[[\"str\",\"Saturn\"],[\"str\",\"Uranus\"]]]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"Earth\"],[\"str\",\"Mercury\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"Earth\"],[\"str\",\"Mercury\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"tuple\",[[\"str\",\"Venus\"]]]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"Mercury\"],[\"str\",\"Uranus\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"Mercury\"],[\"str\",\"Uranus\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"tuple\",[[\"str\",\"Venus\"],[\"str\",\"Earth\"],[\"str\",\"Mars\"],[\"str\",\"Jupiter\"],[\"str\",\"Saturn\"]]]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"Neptune\"],[\"str\",\"Venus\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"Neptune\"],[\"str\",\"Venus\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"tuple\",[[\"str\",\"Earth\"],[\"str\",\"Mars\"],[\"str\",\"Jupiter\"],[\"str\",\"Saturn\"],[\"str\",\"Uranus\"]]]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"Earth\"],[\"str\",\"Earth\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"Earth\"],[\"str\",\"Earth\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"tuple\",[]]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"Mars\"],[\"str\",\"Earth\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"Mars\"],[\"str\",\"Earth\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"tuple\",[]]]},{\"after\":{\"args\":[\"tuple\",[[\"str\",\"Jupiter\"],[\"str\",\"Makemake\"]]],\"kwargs\":[\"dict\",[]]},\"before\":{\"args\":[\"tuple\",[[\"str\",\"Jupiter\"],[\"str\",\"Makemake\"]]],\"kwargs\":[\"dict\",[]]},\"result\":[\"return\",[\"tuple\",[]]]}],\"status\":\"passed\",\"stderr\":\"\",\"stdout\":\"\"}\n",
+  "stderr": "",
+  "returncode": 0,
+  "interruption": null,
+  "child_user_cpu_seconds": 0.022687000000001234,
+  "child_system_cpu_seconds": 0.0,
+  "group": "7e6960d2ad9bf31a9504034ec64de80859ee1f5b30f6c28ec1abb46caee621d2",
+  "received_label": true,
+  "source_sha256": "44def2b7e9ca8b77f947641df2dbbc9e995f72eda5a3963825df3338d034e1d3",
+  "contract_sha256": "8e22ac39fcbf0442f19967c66f765d81795d1f4d49d1aa4a06e8a54cbd62d693",
+  "worker_seconds": 0.034824517999368254
+}

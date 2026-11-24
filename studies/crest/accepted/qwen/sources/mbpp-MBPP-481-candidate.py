@@ -1,0 +1,16 @@
+
+def is_subset_sum(set1, n, sum):
+	# Base Cases
+	if sum == 0:
+		return True
+	if n == 0 and sum != 0:
+		return False
+
+	# If last element is greater than sum, ignore it
+	if set1[n - 1] > sum:
+		return is_subset_sum(set1, n - 1, sum)
+
+	# Else, check if sum can be obtained by any of the following
+	# (a) including the last element
+	# (b) excluding the last element
+	return is_subset_sum(set1, n - 1, sum) or is_subset_sum(set1, n - 1, sum - set1[n - 1])

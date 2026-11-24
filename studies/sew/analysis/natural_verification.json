@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "coefficient_systems": 1139,
+  "state_prefixes": 2623,
+  "direct_Boolean_completions": 28982,
+  "undefined_completions": 3004,
+  "full_schedule_assignments": 640,
+  "fixed_budget_width_checks": 320,
+  "receiving_and_boundary_controls": [
+    "same source under different contracts is not reused",
+    "reference identity changes group identity",
+    "public policy rows omit sealed labels and measured costs",
+    "same validity group may have different detector outcomes",
+    "source-only identity rejected",
+    "noninteger declared suite cost rejected",
+    "stored joint inconsistency rejected",
+    "contradictory labels within one group rejected",
+    "mismatched attempted workloads rejected",
+    "asset path escape rejected",
+    "source byte corruption rejected",
+    "unavailable execution retained as unknown",
+    "positive detection with zero row mass rejected",
+    "unequal workload denominators rejected",
+    "different coefficient pairs block common-remainder certificate",
+    "0/0 is undefined, never conditional score zero",
+    "identical methods certify equality, never a strict winner",
+    "unavailable query does not resolve a coefficient-different group",
+    "requery rejected by the one-suite disclosure experiment",
+    "all 16 hash orders and coefficient policies are blind to undisclosed labels",
+    "reference identity admission costs zero and is excluded from every query schedule",
+    "CSV conditional margins and rate gaps occupy separate fixed-unit columns",
+    "unit-cost linear-width policy attains exhaustive fixed-budget width optimum"
+  ],
+  "scope": "Synthetic finite-ledger oracle and file-envelope checks, not empirical program trials.",
+  "files_sha256": {
+    "natural_analysis.py": "bcf19e3111d68b43fbb144cff23ad844f7a9aeb9d9af18aff0f24a69e98e3551",
+    "verify_natural_analysis.py": "cec7a7b3f14e5453ed92e0ae61eb56b29ac9259fb15b86dbc915a2620064f641"
+  }
+}

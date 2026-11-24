@@ -1,0 +1,33 @@
+{
+  "selection": {
+    "selection": "Every candidate contradicted by fresh original tests in the complete canonical-reference run.",
+    "selection_timing": "Chosen after observing all original full-study results and source differences.",
+    "interventions": [
+      "unchanged full catalogue",
+      "omit the implicated rule",
+      "apply only the implicated rule"
+    ],
+    "mapping": {
+      "106": 46,
+      "126": 24,
+      "278": 20,
+      "414": 38,
+      "421": 46,
+      "422": 24,
+      "437": 46,
+      "630": 46,
+      "632": 46,
+      "791": 46,
+      "HumanEval/10": 46,
+      "HumanEval/79": 46,
+      "HumanEval/119": 46,
+      "HumanEval/140": 46,
+      "HumanEval/160": 46
+    },
+    "detector": "Always unchanged full catalogue and released RF model at its original threshold.",
+    "execution": "Fresh source and original suite per intervention; no prior candidate labels reused."
+  },
+  "generation_summary_sha256": "cd27fddbf59787e3c75513eea3281c164d37814889b228f78e81e74d54fa534f",
+  "source_policy": "Retain the already generated full/omit/only intervention sources. Re-execute every original suite in a new native subprocess; store exact submitted request, observer and environment.",
+  "fresh_native_suites": 45
+}

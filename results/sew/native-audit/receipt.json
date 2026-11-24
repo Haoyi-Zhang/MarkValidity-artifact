@@ -1,0 +1,331 @@
+{
+  "schema": "markvalidity-native-comparison-receiving-v1",
+  "status": "PASS",
+  "public_registry_sha256": "b27d496c4cb7dade0ec39d6a5094805e609d3bcf1cdb32654b12db160effce49",
+  "driver_sha256": "21ce8d9f7e17625728bdfee56015dedd58aadbe9d6e806eb38127ce93ec4bf42",
+  "analysis_sha256": "bcf19e3111d68b43fbb144cff23ad844f7a9aeb9d9af18aff0f24a69e98e3551",
+  "environment": {
+    "python": "3.12.14",
+    "sys_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "interpreter_executable_sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7"
+  },
+  "total_candidate_suite_queries": 313,
+  "candidate_observation_files_read_before_selection": 0,
+  "seconds": 9.251765119999618,
+  "scope": "Independent fresh native receiving replay; reference qualification is shared setup. Separate cases start with reference-identity labels only; no candidate-query labels are shared across cases.",
+  "cases": [
+    {
+      "case": "HumanEval__stock__s1__J",
+      "dataset": "HumanEval",
+      "left": "stock",
+      "right": "s1",
+      "target": "J",
+      "policy": "joint_width_per_suite",
+      "denominator": 492,
+      "initial_reference_groups": 3,
+      "candidate_suite_queries": 146,
+      "decision": "left_strict",
+      "final_snapshot": {
+        "left_joint": [
+          75,
+          368
+        ],
+        "left_valid": [
+          78,
+          492
+        ],
+        "left_C": {
+          "lower": "75/199",
+          "upper": "368/371",
+          "defined_all": true,
+          "defined_some": true
+        },
+        "right_joint": [
+          71,
+          365
+        ],
+        "right_valid": [
+          74,
+          492
+        ],
+        "right_C": {
+          "lower": "71/198",
+          "upper": "365/368",
+          "defined_all": true,
+          "defined_some": true
+        },
+        "independent_J": {
+          "lower": -290,
+          "upper": 297,
+          "decision": "unresolved"
+        },
+        "coupled_J": {
+          "lower": 1,
+          "upper": 6,
+          "decision": "left_strict"
+        },
+        "independent_A": {
+          "lower": -414,
+          "upper": 418,
+          "decision": "unresolved"
+        },
+        "coupled_A": {
+          "lower": -5,
+          "upper": 9,
+          "decision": "unresolved"
+        },
+        "independent_C": {
+          "lower": "-45035/73232",
+          "upper": "46523/73458",
+          "decision": "unresolved",
+          "relation_on_defined": "unresolved"
+        },
+        "coupled_C": {
+          "route": "individual_intervals_sufficient_only",
+          "lower": "-45035/73232",
+          "upper": "46523/73458",
+          "decision": "unresolved",
+          "relation_on_defined": "unresolved"
+        },
+        "coefficient_different_unresolved": 14,
+        "groups_resolved": 149
+      },
+      "seconds": 4.310021306999261
+    },
+    {
+      "case": "HumanEval__stock__s1__C",
+      "dataset": "HumanEval",
+      "left": "stock",
+      "right": "s1",
+      "target": "C",
+      "policy": "conditional_differences_first",
+      "denominator": 492,
+      "initial_reference_groups": 3,
+      "candidate_suite_queries": 160,
+      "decision": "left_strict",
+      "final_snapshot": {
+        "left_joint": [
+          77,
+          368
+        ],
+        "left_valid": [
+          83,
+          492
+        ],
+        "left_C": {
+          "lower": "77/201",
+          "upper": "184/187",
+          "defined_all": true,
+          "defined_some": true
+        },
+        "right_joint": [
+          74,
+          365
+        ],
+        "right_valid": [
+          83,
+          492
+        ],
+        "right_C": {
+          "lower": "74/201",
+          "upper": "365/374",
+          "defined_all": true,
+          "defined_some": true
+        },
+        "independent_J": {
+          "lower": -288,
+          "upper": 294,
+          "decision": "unresolved"
+        },
+        "coupled_J": {
+          "lower": 3,
+          "upper": 3,
+          "decision": "left_strict"
+        },
+        "independent_A": {
+          "lower": -409,
+          "upper": 409,
+          "decision": "unresolved"
+        },
+        "coupled_A": {
+          "lower": 0,
+          "upper": 0,
+          "decision": "tie"
+        },
+        "independent_C": {
+          "lower": "-44567/75174",
+          "upper": "23146/37587",
+          "decision": "unresolved",
+          "relation_on_defined": "unresolved"
+        },
+        "coupled_C": {
+          "route": "exact_common_remainder",
+          "lower": 249,
+          "upper": 1476,
+          "decision": "left_strict",
+          "relation_on_defined": "left_strict"
+        },
+        "coefficient_different_unresolved": 0,
+        "groups_resolved": 163
+      },
+      "seconds": 4.656464188999962
+    },
+    {
+      "case": "mbpp_sanitized__stock__s4__J",
+      "dataset": "mbpp_sanitized",
+      "left": "stock",
+      "right": "s4",
+      "target": "J",
+      "policy": "joint_width_per_suite",
+      "denominator": 1281,
+      "initial_reference_groups": 20,
+      "candidate_suite_queries": 1,
+      "decision": "right_strict",
+      "final_snapshot": {
+        "left_joint": [
+          1,
+          849
+        ],
+        "left_valid": [
+          20,
+          1281
+        ],
+        "left_C": {
+          "lower": "1/433",
+          "upper": "849/868",
+          "defined_all": true,
+          "defined_some": true
+        },
+        "right_joint": [
+          2,
+          852
+        ],
+        "right_valid": [
+          21,
+          1281
+        ],
+        "right_C": {
+          "lower": "2/431",
+          "upper": "852/871",
+          "defined_all": true,
+          "defined_some": true
+        },
+        "independent_J": {
+          "lower": -851,
+          "upper": 847,
+          "decision": "unresolved"
+        },
+        "coupled_J": {
+          "lower": -3,
+          "upper": -1,
+          "decision": "right_strict"
+        },
+        "independent_A": {
+          "lower": -1261,
+          "upper": 1260,
+          "decision": "unresolved"
+        },
+        "coupled_A": {
+          "lower": -3,
+          "upper": 2,
+          "decision": "unresolved"
+        },
+        "independent_C": {
+          "lower": "-368045/377143",
+          "upper": "364183/374108",
+          "decision": "unresolved",
+          "relation_on_defined": "unresolved"
+        },
+        "coupled_C": {
+          "route": "individual_intervals_sufficient_only",
+          "lower": "-368045/377143",
+          "upper": "364183/374108",
+          "decision": "unresolved",
+          "relation_on_defined": "unresolved"
+        },
+        "coefficient_different_unresolved": 5,
+        "groups_resolved": 21
+      },
+      "seconds": 0.02992933899804484
+    },
+    {
+      "case": "mbpp_sanitized__stock__s4__C",
+      "dataset": "mbpp_sanitized",
+      "left": "stock",
+      "right": "s4",
+      "target": "C",
+      "policy": "conditional_differences_first",
+      "denominator": 1281,
+      "initial_reference_groups": 20,
+      "candidate_suite_queries": 6,
+      "decision": "right_strict",
+      "final_snapshot": {
+        "left_joint": [
+          1,
+          849
+        ],
+        "left_valid": [
+          20,
+          1278
+        ],
+        "left_C": {
+          "lower": "1/430",
+          "upper": "849/868",
+          "defined_all": true,
+          "defined_some": true
+        },
+        "right_joint": [
+          4,
+          852
+        ],
+        "right_valid": [
+          23,
+          1281
+        ],
+        "right_C": {
+          "lower": "4/433",
+          "upper": "852/871",
+          "defined_all": true,
+          "defined_some": true
+        },
+        "independent_J": {
+          "lower": -851,
+          "upper": 845,
+          "decision": "unresolved"
+        },
+        "coupled_J": {
+          "lower": -3,
+          "upper": -3,
+          "decision": "right_strict"
+        },
+        "independent_A": {
+          "lower": -1261,
+          "upper": 1255,
+          "decision": "unresolved"
+        },
+        "coupled_A": {
+          "lower": -3,
+          "upper": -3,
+          "decision": "right_strict"
+        },
+        "independent_C": {
+          "lower": "-365489/374530",
+          "upper": "364145/375844",
+          "decision": "unresolved",
+          "relation_on_defined": "unresolved"
+        },
+        "coupled_C": {
+          "route": "exact_common_remainder",
+          "lower": -1287,
+          "upper": -57,
+          "decision": "right_strict",
+          "relation_on_defined": "right_strict"
+        },
+        "coefficient_different_unresolved": 0,
+        "groups_resolved": 26
+      },
+      "seconds": 0.18914749800023856
+    }
+  ]
+}

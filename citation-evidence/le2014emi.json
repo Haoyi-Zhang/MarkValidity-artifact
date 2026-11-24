@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.2",
+  "citation_key": "le2014emi",
+  "entry_type": "inproceedings",
+  "title": "Compiler Validation via Equivalence Modulo Inputs",
+  "authors": "Vu Le and Mehrdad Afshari and Zhendong Su",
+  "venue": "Proceedings of the 35th ACM SIGPLAN Conference on Programming Language Design and Implementation",
+  "year": "2014",
+  "pages_or_article": "216--226",
+  "verified_scholarly_identifier": "doi:10.1145/2594291.2594334",
+  "source_locator": "https://people.inf.ethz.ch/suz/publications/emi.pdf",
+  "verification_status": "VERIFIED_DOI_RECORD",
+  "verification_basis": "Publisher DOI record or formal scholarly proceedings/journal record; metadata cross-checked against the manuscript bibliography during the staged reference audit.",
+  "manuscript_occurrences": [
+    {
+      "file": "paper/main.tex",
+      "line": 973,
+      "claim": "Equivalence modulo inputs conditions transformations on observed executions \\cite{le2014emi}.",
+      "paragraph_sha256": "670946b1f1d349f7bcfcb92728bfe466e7f5c6ba303acd531927a44d14f61954",
+      "consumed_by": [
+        "paper/main.pdf"
+      ]
+    }
+  ],
+  "current_source_bindings": {
+    "paper/current-authors.tex": "2f54a9034521b4cf9d60eaa7bbae77113d6a5360ed868bf3f5a5c82c0780036e",
+    "paper/figdata/source-detection.tex": "d46a2ee2afc60f97dfa57dda0e46df8e0a27ab0f28b7dd72d3b30b08e5dc2f2c",
+    "paper/main.tex": "dc471eebfb6f0c06ec65b9172fd15fe38b6b53db98993826208615e180bee45a",
+    "paper/online-supplement.tex": "d6af4e34e0e16160037550602d9f0e316b7174f6f2c764d7d003eba815e56aa1",
+    "paper/project-repository.tex": "9cdd4507256375154cb467b25033e26f0635d433a5460dce9f697c09b9a6608a"
+  },
+  "current_claim_support": {
+    "status": "BODY_SUPPORT_CURRENT_CLAIMS",
+    "scope": "These exact current attributions only; no independent replication or whole-paper reread",
+    "original_source": "https://people.inf.ethz.ch/suz/publications/emi.pdf",
+    "version": "Original PLDI2014,DOI10.1145/2594291.2594334,11PDFpages",
+    "inspected_section": "Introduction p1, explicit EMI definition forall i in observed input set I, and profiling/pruning account; title/byline/DOI match",
+    "complete_original_paper_read_claimed": false
+  },
+  "evidence_sha256": "1deae47c3f62be479300143969693f22a6be290483a6c48f27f973eccdebd101"
+}

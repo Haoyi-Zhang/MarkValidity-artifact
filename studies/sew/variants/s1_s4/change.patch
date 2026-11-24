@@ -1,0 +1,88 @@
+--- stock/sew/rules/python_rules_extra.py
++++ s1_s4/sew/rules/python_rules_extra.py
+@@ -674,7 +674,12 @@
+         s, e = site.span
+         if target == 1:
+             return [Edit(s, e, b"(" + src[s:e] + b")")]
+-        return [Edit(s, e, src[s + 1:e - 1])]
++        new = src[s + 1:e - 1]
++        # Removing the tuple's opening parenthesis must keep the return token.
++        if src[max(0, s - 6):s] == b"return" and new:
++            if ("return" + new.decode("utf-8")[0]).isidentifier():
++                new = b" " + new
++        return [Edit(s, e, new)]
+ 
+     def erase_bytes(self, site, src):
+         return self.write_bytes(site, src, 0) if site.variant == 1 else []
+--- stock/sew/rules/python_rules.py
++++ s1_s4/sew/rules/python_rules.py
+@@ -15,6 +15,60 @@
+ PURE_LEAF = {"identifier", "attribute", "integer", "float", "string", "true", "false", "none"}
+ LITERAL = {"integer", "float", "string", "concatenated_string", "true", "false", "none"}
+ NUMERIC_LITERAL = {"integer", "float"}
++
++# MarkValidity local S1 policy: independent evidence about the pre-update value.
++# This constrains only S1. It does not certify the other SEW transformations.
++_PREDECESSOR_CACHE = {}
++
++
++def _literal_predecessor_guard(src, byte_offset, name):
++    import ast
++    if src not in _PREDECESSOR_CACHE:
++        try:
++            tree = ast.parse(src)
++        except SyntaxError:
++            return False
++        parents = {child: parent for parent in ast.walk(tree) for child in ast.iter_child_nodes(parent)}
++        starts, offset = [], 0
++        for line in src.splitlines(keepends=True):
++            starts.append(offset)
++            offset += len(line)
++        allowed = set()
++        for parent in ast.walk(tree):
++            for _, sequence in ast.iter_fields(parent):
++                if not isinstance(sequence, list):
++                    continue
++                for previous, current in zip(sequence, sequence[1:]):
++                    if not isinstance(previous, ast.Assign) or len(previous.targets) != 1:
++                        continue
++                    target = previous.targets[0]
++                    if not isinstance(target, ast.Name) or not isinstance(previous.value, ast.Constant):
++                        continue
++                    if type(previous.value.value) not in (int, float):
++                        continue
++                    if isinstance(current, ast.AugAssign):
++                        updated = current.target
++                    elif isinstance(current, ast.Assign) and len(current.targets) == 1:
++                        updated = current.targets[0]
++                    else:
++                        continue
++                    if not isinstance(updated, ast.Name) or updated.id != target.id:
++                        continue
++                    owner = current
++                    while owner in parents:
++                        owner = parents[owner]
++                        if isinstance(owner, (ast.FunctionDef, ast.AsyncFunctionDef, ast.ClassDef)):
++                            break
++                    if not isinstance(owner, (ast.FunctionDef, ast.AsyncFunctionDef)):
++                        continue
++                    if any(isinstance(n, (ast.Global, ast.Nonlocal)) and target.id in n.names for n in ast.walk(owner)):
++                        continue
++                    allowed.add((starts[current.lineno - 1] + current.col_offset, target.id))
++        _PREDECESSOR_CACHE[src] = frozenset(allowed)
++        if len(_PREDECESSOR_CACHE) > 256:
++            _PREDECESSOR_CACHE.pop(next(iter(_PREDECESSOR_CACHE)))
++    return (byte_offset, name) in _PREDECESSOR_CACHE[src]
++
+ 
+ 
+ def txt(n):
+@@ -255,6 +309,8 @@
+         if left is None or op is None or right is None:
+             return False
+         if left.type != "identifier":
++            return False
++        if not _literal_predecessor_guard(src, site.span[0], txt(left)):
+             return False
+         if right.type not in NUMERIC_LITERAL:
+             inf = _numeric_inference(src, site.span[0])

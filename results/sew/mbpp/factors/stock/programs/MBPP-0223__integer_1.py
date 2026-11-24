@@ -1,0 +1,18 @@
+def is_majority(arr, n, x):
+	i=binary_search(arr, 0, n-1, x)
+	if  i==-1:
+		return  False
+	if not (((i + n//2) <= (n -1)) and arr[i + n//2] == x):
+		return False
+	else:
+		return True
+def binary_search(arr, low, high, x):
+	if  low <= high:
+		mid=(low+high)//2 
+		if (0 == mid or x > arr[mid - 1]) and (x == arr[mid]):
+			return mid
+		elif x > arr[mid]:
+			return  binary_search(arr, (1 + mid), high, x)
+		else:
+			return binary_search(arr, low, (mid -1), x)
+	return  -1

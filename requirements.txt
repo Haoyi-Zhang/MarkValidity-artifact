@@ -1,0 +1,5 @@
+# The core checks and evidence receivers use only the Python standard library.
+# Runtime requirements: Python >= 3.11; Node.js >= 18 for the JavaScript controls.
+# CREST numerical receivers: pip install -r studies/crest/requirements.txt
+#   (pinned; also needs the system libarchive library, e.g. apt install libarchive13).
+# Paper/figure regeneration uses the paper's own requirements file (not part of this repository).

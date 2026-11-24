@@ -1,0 +1,8 @@
+{
+  "source": "def f(mode):\n    if mode == 0:\n        return missing_value\n    if mode == 1:\n        return [0] * 200_000_000\n    while True:\n        pass\n",
+  "test_imports": [],
+  "test_list": [
+    "assert f(0) == 1",
+    "assert f(1) == 1"
+  ]
+}

@@ -1,0 +1,1277 @@
+{
+  "schema_version": "1.2",
+  "review_date_utc": "2026-11-19T13:14:48.132110+00:00",
+  "scope": "Primary-source and author-source access scopes for all 30 currently cited works. Selected body passages, abstracts, project/executor files, and publisher overviews are distinguished. No complete-work reading is asserted.",
+  "source_access_counts": {
+    "fresh_selected_body": 22,
+    "fresh_primary_repository": 2,
+    "fresh_abstract": 4,
+    "fresh_publisher_overview": 1,
+    "fresh_author_project_and_conference_abstract": 1
+  },
+  "retained_receipts_policy": "Historical receipts and prior delivery snapshots are unchanged. Fresh access records describe only the passages actually inspected in this revision.",
+  "sources": [
+    {
+      "citation_key": "acw2026",
+      "primary_url": "https://arxiv.org/html/2402.07518v5",
+      "reading_level": "FRESH_SELECTED_BODY_AUTHOR_PREPRINT",
+      "access_category": "fresh_selected_body",
+      "version": "Author preprint arXiv:2402.07518v5, July 2026; final TSE DOI recorded separately.",
+      "inspected": "Sections IV-D and IV-E: utility evaluation and post-attack Pass Rate alongside TPR/FPR.",
+      "supports": [
+        "ACW evaluates source-transformation utility and reports both detection and post-attack pass rates."
+      ],
+      "does_not_establish": [
+        "These passages do not establish universal preservation or the prevalence of the local SEW failures."
+      ],
+      "metadata_note": "The bibliography records the verified 2026 TSE DOI and to-appear status; no unverified volume or pages are supplied.",
+      "evidence": [
+        {
+          "type": "fresh_primary_source_access",
+          "primary_url": "https://arxiv.org/html/2402.07518v5",
+          "version": "Author preprint arXiv:2402.07518v5, July 2026; final TSE DOI recorded separately.",
+          "inspected": "Sections IV-D and IV-E: utility evaluation and post-attack Pass Rate alongside TPR/FPR.",
+          "retrieval_reference_ids": [
+            "turn527399884view2",
+            "turn930828531view0"
+          ],
+          "access_context": "Source passages accessed in this revision and shared by the integrating reviewer (root); clause review performed against the current manuscript."
+        }
+      ],
+      "fresh_original_source_access_this_revision": true,
+      "complete_original_paper_read_claimed": false,
+      "bibliographic_identity_at_review": {
+        "title": "Efficient and Universal Watermarking for {LLM}-Generated Code Detection",
+        "author": "Boquan Li and Zirui Fu and Mengdi Zhang and Peixin Zhang and Jun Sun and Xingmei Wang",
+        "year": "2026",
+        "doi": "10.1109/TSE.2026.3710556",
+        "journal": "IEEE Transactions on Software Engineering"
+      },
+      "current_occurrences": 2
+    },
+    {
+      "citation_key": "athiwaratkun2022mxeval",
+      "primary_url": "https://github.com/amazon-science/mxeval",
+      "reading_level": "FRESH_PRIMARY_EXECUTOR_DATA_AND_CITATION",
+      "access_category": "fresh_primary_repository",
+      "inspected": "Official repository README, supplied bibliography, frozen HumanEval/MBPP task fields, and execution.py check_correctness: prompt, completion, unchanged test and final entry-point call. The isolated program/test namespaces are this study's declared contract, not a property attributed to the official executor.",
+      "supports": [
+        "mxeval supplies executable multilingual code-generation benchmarks, including Python benchmark prompts, tests and entry points.",
+        "The supplied Python completion executor assembles prompt plus completion plus original test and then invokes check on the entry point."
+      ],
+      "does_not_establish": [
+        "Our isolated-namespace contract is not the literal official assembly or an official benchmark score.",
+        "The reference only supplies benchmark infrastructure and metadata; MarkValidity outcomes come from retained native execution."
+      ],
+      "metadata_note": "Bibliographic identity checked against the primary repository and its supplied citation; no unverified publication fields added.",
+      "evidence": [
+        {
+          "type": "primary_source_and_executed_source_scope",
+          "primary_url": "https://github.com/amazon-science/mxeval",
+          "inspected": "Official repository README, supplied bibliography, frozen HumanEval/MBPP task fields, and execution.py check_correctness: prompt, completion, unchanged test and final entry-point call. The isolated program/test namespaces are this study's declared contract, not a property attributed to the official executor.",
+          "retrieval_reference_ids": [
+            "turn714958511view2",
+            "turn140746774view1"
+          ]
+        }
+      ],
+      "fresh_original_source_access_this_revision": true,
+      "complete_original_paper_read_claimed": false,
+      "bibliographic_identity_at_review": {
+        "author": "Athiwaratkun, Ben and Gouda, Sanjay Krishna and Wang, Zijian and Li, Xiaopeng and Tian, Yuchen and Tan, Ming and Ahmad, Wasi Uddin and Wang, Shiqi and Sun, Qing and Shang, Mingyue and Gonugondla, Sujan Kumar and Ding, Hantian and Kumar, Varun and Fulton, Nathan and Farahani, Arash and Jain, Siddhartha and Giaquinto, Robert and Qian, Haifeng and Ramanathan, Murali Krishna and Nallapati, Ramesh and Ray, Baishakhi and Bhatia, Parminder and Sengupta, Sudipta and Roth, Dan and Xiang, Bing",
+        "title": "Multi-lingual Evaluation of Code Generation Models",
+        "year": "2022",
+        "doi": "10.48550/arXiv.2210.14868"
+      },
+      "current_occurrences": 1
+    },
+    {
+      "citation_key": "austin2021mbpp",
+      "primary_url": "https://arxiv.org/pdf/2108.07732v1",
+      "reading_level": "FRESH_SELECTED_BODY_AND_FROZEN_PRIMARY_DATA",
+      "access_category": "fresh_selected_body",
+      "version": "arXiv:2108.07732v1; the sanitized-file release is separately pinned.",
+      "inspected": "Section 2.1 on short Python tasks, reference solutions and tests; local frozen sanitized file and provenance reopened.",
+      "supports": [
+        "MBPP supplies executable tasks with reference code and tests; its pinned sanitized file contains 427 records."
+      ],
+      "does_not_establish": [
+        "The original 974-task collection and the 427-record sanitized release are different denominators."
+      ],
+      "metadata_note": "Publication identity is retained; 427 is independently counted from the frozen official file, not inferred from the paper abstract.",
+      "evidence": [
+        {
+          "type": "fresh_primary_source_access",
+          "primary_url": "https://arxiv.org/pdf/2108.07732v1",
+          "version": "arXiv:2108.07732v1; the sanitized-file release is separately pinned.",
+          "inspected": "Section 2.1 on short Python tasks, reference solutions and tests; local frozen sanitized file and provenance reopened.",
+          "retrieval_reference_ids": [
+            "turn527399884view4"
+          ],
+          "access_context": "Source passages accessed in this revision and shared by the integrating reviewer (root); clause review performed against the current manuscript."
+        },
+        {
+          "type": "frozen_primary_dataset_reopened_this_review",
+          "path": "artifact/external-studies/sew_natural/mbpp/sanitized-mbpp.json",
+          "sha256": "ca95deaa9a01ef0a6f439f88bcf0dd3db3563d22f22aad6cae04ebb9a8d8c8e9",
+          "tasks": 427
+        },
+        {
+          "type": "dataset_provenance",
+          "path": "artifact/external-studies/sew_natural/mbpp/source-provenance.json",
+          "sha256": "a6431c8e25f9f504532c5b33e02b12d064fb3c625f744821d273b0644eef98d3"
+        }
+      ],
+      "fresh_original_source_access_this_revision": true,
+      "complete_original_paper_read_claimed": false,
+      "dataset_reopened_this_review": true,
+      "bibliographic_identity_at_review": {
+        "title": "Program Synthesis with Large Language Models",
+        "author": "Jacob Austin and Augustus Odena and Maxwell Nye and Maarten Bosma and Henryk Michalewski and David Dohan and Ellen Jiang and Carrie Cai and Michael Terry and Quoc Le and Charles Sutton",
+        "year": "2021",
+        "doi": "10.48550/arXiv.2108.07732",
+        "journal": "arXiv preprint arXiv:2108.07732"
+      },
+      "current_occurrences": 2
+    },
+    {
+      "citation_key": "barr2015",
+      "primary_url": "https://philmcminn.com/publications/barr2015.pdf",
+      "reading_level": "FRESH_SELECTED_BODY_AUTHOR_MANUSCRIPT",
+      "access_category": "fresh_selected_body",
+      "version": "Author-hosted survey manuscript; final TSE 41(5), 507–525, 2015.",
+      "inspected": "Abstract and Sections 2.2–2.3, especially Definition 2.4 on oracle information and observed activities.",
+      "supports": [
+        "Testing oracles judge behavior using available observations and an oracle relation."
+      ],
+      "does_not_establish": [
+        "The selected oracle definitions do not turn a passed finite suite into an all-input equivalence proof."
+      ],
+      "metadata_note": "",
+      "evidence": [
+        {
+          "type": "fresh_primary_source_access",
+          "primary_url": "https://philmcminn.com/publications/barr2015.pdf",
+          "version": "Author-hosted survey manuscript; final TSE 41(5), 507–525, 2015.",
+          "inspected": "Abstract and Sections 2.2–2.3, especially Definition 2.4 on oracle information and observed activities.",
+          "retrieval_reference_ids": [
+            "turn439406695view1"
+          ],
+          "access_context": "Source passages accessed in this revision and shared by the integrating reviewer (root); clause review performed against the current manuscript."
+        }
+      ],
+      "fresh_original_source_access_this_revision": true,
+      "complete_original_paper_read_claimed": false,
+      "bibliographic_identity_at_review": {
+        "title": "The Oracle Problem in Software Testing: A Survey",
+        "author": "Earl T. Barr and Mark Harman and Phil McMinn and Muzammil Shahbaz and Shin Yoo",
+        "year": "2015",
+        "doi": "10.1109/TSE.2014.2372785",
+        "journal": "IEEE Transactions on Software Engineering",
+        "volume": "41",
+        "number": "5",
+        "pages": "507--525"
+      },
+      "current_occurrences": 1
+    },
+    {
+      "citation_key": "chen2021humaneval",
+      "primary_url": "https://arxiv.org/pdf/2107.03374v2",
+      "reading_level": "FRESH_SELECTED_BODY_AND_FROZEN_PRIMARY_DATA",
+      "access_category": "fresh_selected_body",
+      "version": "arXiv:2107.03374v2, 2021; official HumanEval data pinned separately.",
+      "inspected": "Introduction on the 164 unit-tested benchmark tasks; frozen records, canonical solutions, tests and provenance reopened.",
+      "supports": [
+        "HumanEval provides 164 executable programming tasks; the frozen file supplies canonical reference implementations and tests."
+      ],
+      "does_not_establish": [
+        "The benchmark reference programs are not a probability sample of production code or model-generated completions."
+      ],
+      "metadata_note": "The paper identity and author list remain as recorded; task count and source-assembly facts are separately checked against primary data.",
+      "evidence": [
+        {
+          "type": "fresh_primary_source_access",
+          "primary_url": "https://arxiv.org/pdf/2107.03374v2",
+          "version": "arXiv:2107.03374v2, 2021; official HumanEval data pinned separately.",
+          "inspected": "Introduction on the 164 unit-tested benchmark tasks; frozen records, canonical solutions, tests and provenance reopened.",
+          "retrieval_reference_ids": [
+            "turn890252379view4"
+          ],
+          "access_context": "Source passages accessed in this revision and shared by the integrating reviewer (root); clause review performed against the current manuscript."
+        },
+        {
+          "type": "frozen_primary_dataset_reopened_this_review",
+          "path": "artifact/external-studies/sew_natural/data/HumanEval.jsonl.gz",
+          "sha256": "b796127e635a67f93fb35c04f4cb03cf06f38c8072ee7cee8833d7bee06979ef",
+          "tasks": 164
+        },
+        {
+          "type": "dataset_provenance",
+          "path": "artifact/external-studies/sew_natural/provenance-humaneval.json",
+          "sha256": "f11f0a73da79c7d35a13a6634ff8d97c9a1062b89fd50a6652a564a74d0d1a7d"
+        }
+      ],
+      "fresh_original_source_access_this_revision": true,
+      "complete_original_paper_read_claimed": false,
+      "dataset_reopened_this_review": true,
+      "bibliographic_identity_at_review": {
+        "title": "Evaluating Large Language Models Trained on Code",
+        "author": "Mark Chen and Jerry Tworek and Heewoo Jun and Qiming Yuan and Henrique Ponde de Oliveira Pinto and Jared Kaplan and Harri Edwards and Yuri Burda and Nicholas Joseph and Greg Brockman and Alex Ray and Raul Puri and Gretchen Krueger and Michael Petrov and Heidy Khlaaf and Girish Sastry and Pamela Mishkin and Brooke Chan and Scott Gray and Nick Ryder and Mikhail Pavlov and Alethea Power and Lukasz Kaiser and Mohammad Bavarian and Clemens Winter and Philippe Tillet and Felipe Petroski Such and Dave Cummings and Matthias Plappert and Fotios Chantzis and Elizabeth Barnes and Ariel Herbert-Voss and William Hebgen Guss and Alex Nichol and Alex Paino and Nikolas Tezak and Jie Tang and Igor Babuschkin and Suchir Balaji and Shantanu Jain and William Saunders and Christopher Hesse and Andrew N. Carr and Jan Leike and Josh Achiam and Vedant Misra and Evan Morikawa and Alec Radford and Matthew Knight and Miles Brundage and Mira Murati and Katie Mayer and Peter Welinder and Bob McGrew and Dario Amodei and Sam McCandlish and Ilya Sutskever and Wojciech Zaremba",
+        "year": "2021",
+        "doi": "10.48550/arXiv.2107.03374",
+        "journal": "arXiv preprint arXiv:2107.03374"
+      },
+      "current_occurrences": 2
+    },
+    {
+      "citation_key": "crest2026",
+      "primary_url": "https://github.com/niccap/crest",
+      "reading_level": "FRESH_PRIMARY_REPOSITORY_AND_EXECUTED_SOURCE",
+      "access_category": "fresh_primary_repository",
+      "inspected": "Public repository README: source-transform catalogue, embedding/detection CLI, default random forest and two logistic heads, released thresholds and data archive. Executed emitter/detector source and archive acquisition are retained in the empirical study.",
+      "supports": [
+        "CREST is a publicly released Python source-transform watermark pipeline with a default random-forest detector and two logistic-regression heads.",
+        "Its release supplies GPT-4o and Qwen code cohorts and a data path that uses released generated/watermarked programs in classifier development."
+      ],
+      "does_not_establish": [
+        "The repository describes the associated manuscript as submitted; it is cited as software, without a fabricated journal publication.",
+        "Released-cohort detection readings do not constitute independent held-out detection estimates."
+      ],
+      "metadata_note": "Bibliographic identity checked against the primary repository and its supplied citation; no unverified publication fields added.",
+      "evidence": [
+        {
+          "type": "primary_source_and_executed_source_scope",
+          "primary_url": "https://github.com/niccap/crest",
+          "inspected": "Public repository README: source-transform catalogue, embedding/detection CLI, default random forest and two logistic heads, released thresholds and data archive. Executed emitter/detector source and archive acquisition are retained in the empirical study.",
+          "retrieval_reference_ids": [
+            "turn714958511view0",
+            "turn674778417view2"
+          ]
+        }
+      ],
+      "fresh_original_source_access_this_revision": true,
+      "complete_original_paper_read_claimed": false,
+      "bibliographic_identity_at_review": {
+        "author": "Capuano, Nicola and Ritrovato, Pierluigi and Zottarelli, Egidio",
+        "title": "{CREST}: Code Robust Embedding via Syntactic Transformations",
+        "year": "2026"
+      },
+      "current_occurrences": 3
+    },
+    {
+      "citation_key": "deshpande2014sbfe",
+      "primary_url": "https://arxiv.org/pdf/1303.0726",
+      "reading_level": "FRESH_SELECTED_BODY_AUTHOR_PREPRINT",
+      "access_category": "fresh_selected_body",
+      "version": "Author preprint; final SODA 2014, 1453–1466, DOI 10.1137/1.9781611973402.107.",
+      "inspected": "Introduction and Section 2, PDF page index 2: product distribution, costs, certificates, linear-function ranking and the restricted coefficient-ordering result.",
+      "supports": [
+        "SBFE adaptively reveals costed independent bits until the answer is fixed. Its related work records optimal magnitude order for linear thresholds with uniform bits and unit costs."
+      ],
+      "does_not_establish": [
+        "That restricted result is not an optimality theorem for arbitrary linear rankings, correlated labels, or MarkValidity conditional ratios."
+      ],
+      "metadata_note": "Official SIAM record confirms three authors, SODA 2014, pages 1453–1466 and DOI; the coefficient-order result is attributed there to earlier work, not claimed as original to this source.",
+      "evidence": [
+        {
+          "type": "fresh_primary_source_access",
+          "primary_url": "https://arxiv.org/pdf/1303.0726",
+          "version": "Author preprint; final SODA 2014, 1453–1466, DOI 10.1137/1.9781611973402.107.",
+          "inspected": "Introduction and Section 2, PDF page index 2: product distribution, costs, certificates, linear-function ranking and the restricted coefficient-ordering result.",
+          "retrieval_reference_ids": [
+            "turn930828531view1",
+            "turn949373055view3",
+            "turn875238578view2"
+          ],
+          "access_context": "Source passages accessed in this revision and shared by the integrating reviewer (root); clause review performed against the current manuscript."
+        }
+      ],
+      "fresh_original_source_access_this_revision": true,
+      "complete_original_paper_read_claimed": false,
+      "additional_primary_urls": [
+        "https://epubs.siam.org/doi/abs/10.1137/1.9781611973402.107"
+      ],
+      "independent_citation_reviewer_access_refs": [
+        "turn495839340view0",
+        "turn949373055view3"
+      ],
+      "bibliographic_identity_at_review": {
+        "title": "Approximation Algorithms for Stochastic Boolean Function Evaluation and Stochastic Submodular Set Cover",
+        "author": "Amol Deshpande and Lisa Hellerstein and Devorah Kletenik",
+        "year": "2014",
+        "doi": "10.1137/1.9781611973402.107",
+        "booktitle": "Proceedings of the Twenty-Fifth Annual ACM-SIAM Symposium on Discrete Algorithms",
+        "pages": "1453--1466"
+      },
+      "current_occurrences": 1
+    },
+    {
+      "citation_key": "dinkelbach1967",
+      "primary_url": "https://pubsonline.informs.org/doi/10.1287/mnsc.13.7.492",
+      "reading_level": "FRESH_PUBLISHER_ABSTRACT",
+      "access_category": "fresh_abstract",
+      "version": "Management Science 13(7), 492–498, 1967, publisher abstract and metadata.",
+      "inspected": "Complete publisher abstract and bibliographic header; no body theorem attributed.",
+      "supports": [
+        "Fractional programming supplies general algorithms for ratio objectives."
+      ],
+      "does_not_establish": [
+        "The manuscript derives its own Boolean sorted-prefix endpoints; the inspected abstract does not prove those endpoints."
+      ],
+      "metadata_note": "",
+      "evidence": [
+        {
+          "type": "fresh_primary_source_access",
+          "primary_url": "https://pubsonline.informs.org/doi/10.1287/mnsc.13.7.492",
+          "version": "Management Science 13(7), 492–498, 1967, publisher abstract and metadata.",
+          "inspected": "Complete publisher abstract and bibliographic header; no body theorem attributed.",
+          "retrieval_reference_ids": [
+            "turn978553095view3",
+            "turn890252379view7"
+          ],
+          "access_context": "Source passages accessed in this revision and shared by the integrating reviewer (root); clause review performed against the current manuscript."
+        }
+      ],
+      "fresh_original_source_access_this_revision": true,
+      "complete_original_paper_read_claimed": false,
+      "bibliographic_identity_at_review": {
+        "title": "On Nonlinear Fractional Programming",
+        "author": "Werner Dinkelbach",
+        "year": "1967",
+        "doi": "10.1287/mnsc.13.7.492",
+        "journal": "Management Science",
+        "volume": "13",
+        "number": "7",
+        "pages": "492--498"
+      },
+      "current_occurrences": 1
+    },
+    {
+      "citation_key": "fenton1994",
+      "primary_url": "https://www.researchgate.net/publication/3187630_Software_measurement_a_necessary_scientific_basis",
+      "reading_level": "FRESH_SELECTED_BODY_AUTHOR_POSTED_PAPER",
+      "access_category": "fresh_selected_body",
+      "version": "Author-posted original paper; TSE 20(3), 199–206, 1994.",
+      "inspected": "Printed pages 199–200, Sections II-A and II-B: attributes, empirical relations, and numerical representation.",
+      "supports": [
+        "Numerical measures require a defined attribute and a representation consistent with the underlying empirical relations."
+      ],
+      "does_not_establish": [
+        "Intended-use criterion selection in the grouped citation is specifically supported by Meneely, not assigned solely to Fenton."
+      ],
+      "metadata_note": "1994 is the publication year; the later repository upload date is not substituted for it.",
+      "evidence": [
+        {
+          "type": "fresh_primary_source_access",
+          "primary_url": "https://www.researchgate.net/publication/3187630_Software_measurement_a_necessary_scientific_basis",
+          "version": "Author-posted original paper; TSE 20(3), 199–206, 1994.",
+          "inspected": "Printed pages 199–200, Sections II-A and II-B: attributes, empirical relations, and numerical representation.",
+          "retrieval_reference_ids": [
+            "turn122251933view3",
+            "turn446075722view3"
+          ],
+          "access_context": "Source passages accessed in this revision and shared by the integrating reviewer (root); clause review performed against the current manuscript."
+        }
+      ],
+      "fresh_original_source_access_this_revision": true,
+      "complete_original_paper_read_claimed": false,
+      "bibliographic_identity_at_review": {
+        "title": "Software Measurement: A Necessary Scientific Basis",
+        "author": "Norman Fenton",
+        "year": "1994",
+        "doi": "10.1109/32.268921",
+        "journal": "IEEE Transactions on Software Engineering",
+        "volume": "20",
+        "number": "3",
+        "pages": "199--206"
+      },
+      "current_occurrences": 1
+    },
+    {
+      "citation_key": "guan2024",
+      "primary_url": "https://aclanthology.org/2024.findings-emnlp.541.pdf",
+      "reading_level": "FRESH_SELECTED_BODY_FINAL_PAPER",
+      "access_category": "fresh_selected_body",
+      "version": "Final Findings of EMNLP 2024 paper, 9243–9258.",
+      "inspected": "Section 4.3, printed page 9248: CodeBLEU and the absence of test cases in the CodeSearchNet evaluation.",
+      "supports": [
+        "CodeIP reports CodeBLEU where its CodeSearchNet examples lack executable tests."
+      ],
+      "does_not_establish": [
+        "CodeBLEU is not treated as a proof of behavioral validity or as executable pass@k."
+      ],
+      "metadata_note": "",
+      "evidence": [
+        {
+          "type": "fresh_primary_source_access",
+          "primary_url": "https://aclanthology.org/2024.findings-emnlp.541.pdf",
+          "version": "Final Findings of EMNLP 2024 paper, 9243–9258.",
+          "inspected": "Section 4.3, printed page 9248: CodeBLEU and the absence of test cases in the CodeSearchNet evaluation.",
+          "retrieval_reference_ids": [
+            "turn609989302view4",
+            "turn495839340view1"
+          ],
+          "access_context": "Source passages accessed in this revision and shared by the integrating reviewer (root); clause review performed against the current manuscript."
+        }
+      ],
+      "fresh_original_source_access_this_revision": true,
+      "complete_original_paper_read_claimed": false,
+      "independent_citation_reviewer_access_refs": [
+        "turn495839340view1"
+      ],
+      "bibliographic_identity_at_review": {
+        "title": "{CodeIP}: A Grammar-Guided Multi-Bit Watermark for Large Language Models of Code",
+        "author": "Batu Guan and Yao Wan and Zhangqian Bi and Zheng Wang and Hongyu Zhang and Pan Zhou and Lichao Sun",
+        "year": "2024",
+        "doi": "10.18653/v1/2024.findings-emnlp.541",
+        "booktitle": "Findings of the Association for Computational Linguistics: EMNLP 2024",
+        "pages": "9243--9258"
+      },
+      "current_occurrences": 1
+    },
+    {
+      "citation_key": "kim2025",
+      "primary_url": "https://aclanthology.org/2026.findings-eacl.207.pdf",
+      "reading_level": "FRESH_SELECTED_BODY_FINAL_PAPER",
+      "access_category": "fresh_selected_body",
+      "version": "Final Findings of EACL 2026 paper, 3990–4002; stable historical key kim2025.",
+      "inspected": "Section 3.2, printed pages 3992–3993: STEM and weights over functional correctness, detectability and imperceptibility.",
+      "supports": [
+        "STONE defines a weighted preference over multiple evaluation dimensions."
+      ],
+      "does_not_establish": [
+        "A weighted preference is not the per-output joint validity-and-detection target used in this manuscript."
+      ],
+      "metadata_note": "The bibliography uses the final 2026 publication; the stable key is not a publication-year claim.",
+      "evidence": [
+        {
+          "type": "fresh_primary_source_access",
+          "primary_url": "https://aclanthology.org/2026.findings-eacl.207.pdf",
+          "version": "Final Findings of EACL 2026 paper, 3990–4002; stable historical key kim2025.",
+          "inspected": "Section 3.2, printed pages 3992–3993: STEM and weights over functional correctness, detectability and imperceptibility.",
+          "retrieval_reference_ids": [
+            "turn609989302view6",
+            "turn495839340view2"
+          ],
+          "access_context": "Source passages accessed in this revision and shared by the integrating reviewer (root); clause review performed against the current manuscript."
+        }
+      ],
+      "fresh_original_source_access_this_revision": true,
+      "complete_original_paper_read_claimed": false,
+      "independent_citation_reviewer_access_refs": [
+        "turn495839340view2"
+      ],
+      "bibliographic_identity_at_review": {
+        "title": "Marking Code Without Breaking It: Code Watermarking for Detecting LLM-Generated Code",
+        "author": "Jungin Kim and Shinwoo Park and Yo-Sub Han",
+        "year": "2026",
+        "doi": "10.18653/v1/2026.findings-eacl.207",
+        "booktitle": "Findings of the Association for Computational Linguistics: EACL 2026",
+        "pages": "3990--4002"
+      },
+      "current_occurrences": 1
+    },
+    {
+      "citation_key": "kitchenham1995",
+      "primary_url": "https://ieeexplore.ieee.org/abstract/document/489070",
+      "reading_level": "FRESH_PUBLISHER_INDEXED_ABSTRACT",
+      "access_category": "fresh_abstract",
+      "version": "IEEE TSE 21(12), 929–944, December 1995, publisher-indexed abstract and metadata.",
+      "inspected": "Complete IEEE-indexed abstract on measurement structure, attributes, protocols and population models; publisher page range.",
+      "supports": [
+        "Measurement validation examines the structure, attributes and models underlying numerical measures."
+      ],
+      "does_not_establish": [
+        "No fresh body-section reading is claimed; the grouped intended-use statement is additionally supported by Meneely."
+      ],
+      "metadata_note": "IEEE publisher metadata gives pages 929–944. The bibliography corrects the former 929–943 secondary-record range. Direct page access was blocked, so the fresh reading is the publisher-indexed abstract.",
+      "evidence": [
+        {
+          "type": "fresh_primary_source_access",
+          "primary_url": "https://ieeexplore.ieee.org/abstract/document/489070",
+          "version": "IEEE TSE 21(12), 929–944, December 1995, publisher-indexed abstract and metadata.",
+          "inspected": "Complete IEEE-indexed abstract on measurement structure, attributes, protocols and population models; publisher page range.",
+          "retrieval_reference_ids": [
+            "turn381710151search1",
+            "turn294478455search0"
+          ],
+          "access_context": "Source passages accessed in this revision and shared by the integrating reviewer (root); clause review performed against the current manuscript."
+        }
+      ],
+      "fresh_original_source_access_this_revision": true,
+      "complete_original_paper_read_claimed": false,
+      "additional_primary_urls": [
+        "https://doi.org/10.1109/32.489070"
+      ],
+      "independent_citation_reviewer_access_refs": [
+        "turn381710151search1",
+        "turn294478455search0"
+      ],
+      "bibliographic_identity_at_review": {
+        "title": "Towards a Framework for Software Measurement Validation",
+        "author": "Barbara A. Kitchenham and Shari Lawrence Pfleeger and Norman E. Fenton",
+        "year": "1995",
+        "doi": "10.1109/32.489070",
+        "journal": "IEEE Transactions on Software Engineering",
+        "volume": "21",
+        "number": "12",
+        "pages": "929--944"
+      },
+      "current_occurrences": 1
+    },
+    {
+      "citation_key": "kossen2021active",
+      "primary_url": "https://proceedings.mlr.press/v139/kossen21a/kossen21a.pdf",
+      "reading_level": "FRESH_SELECTED_BODY_FINAL_PAPER",
+      "access_category": "fresh_selected_body",
+      "version": "ICML 2021, PMLR 139, 5753–5763.",
+      "inspected": "Abstract, introduction and Section 2.2: costly test labels, model-risk estimates and acquisition-bias correction.",
+      "supports": [
+        "Active testing selects informative test labels and corrects adaptive selection bias in risk estimation."
+      ],
+      "does_not_establish": [
+        "The cited method estimates risk; it is not cited as MarkValidity exact completion certification."
+      ],
+      "metadata_note": "The official PMLR page confirms four authors, volume 139, year 2021 and pages 5753–5763.",
+      "evidence": [
+        {
+          "type": "fresh_primary_source_access",
+          "primary_url": "https://proceedings.mlr.press/v139/kossen21a/kossen21a.pdf",
+          "version": "ICML 2021, PMLR 139, 5753–5763.",
+          "inspected": "Abstract, introduction and Section 2.2: costly test labels, model-risk estimates and acquisition-bias correction.",
+          "retrieval_reference_ids": [
+            "turn439406695view4",
+            "turn949373055view2",
+            "turn122251933view1"
+          ],
+          "access_context": "Source passages accessed in this revision and shared by the integrating reviewer (root); clause review performed against the current manuscript."
+        }
+      ],
+      "fresh_original_source_access_this_revision": true,
+      "complete_original_paper_read_claimed": false,
+      "additional_primary_urls": [
+        "https://proceedings.mlr.press/v139/kossen21a.html"
+      ],
+      "independent_citation_reviewer_access_refs": [
+        "turn949373055view2"
+      ],
+      "bibliographic_identity_at_review": {
+        "title": "Active Testing: Sample-Efficient Model Evaluation",
+        "author": "Jannik Kossen and Sebastian Farquhar and Yarin Gal and Tom Rainforth",
+        "year": "2021",
+        "booktitle": "Proceedings of the 38th International Conference on Machine Learning",
+        "volume": "139",
+        "pages": "5753--5763"
+      },
+      "current_occurrences": 1
+    },
+    {
+      "citation_key": "le2014emi",
+      "primary_url": "https://people.inf.ethz.ch/suz/publications/emi.pdf",
+      "reading_level": "FRESH_SELECTED_BODY_AUTHOR_MANUSCRIPT",
+      "access_category": "fresh_selected_body",
+      "version": "Author-hosted PLDI 2014 paper.",
+      "inspected": "Introduction and Section 3.1.1: equivalence quantified over a specified set of program inputs.",
+      "supports": [
+        "Equivalence modulo inputs scopes equivalence to the specified exercised inputs."
+      ],
+      "does_not_establish": [
+        "That input restriction does not establish unrestricted semantic equivalence."
+      ],
+      "metadata_note": "",
+      "evidence": [
+        {
+          "type": "fresh_primary_source_access",
+          "primary_url": "https://people.inf.ethz.ch/suz/publications/emi.pdf",
+          "version": "Author-hosted PLDI 2014 paper.",
+          "inspected": "Introduction and Section 3.1.1: equivalence quantified over a specified set of program inputs.",
+          "retrieval_reference_ids": [
+            "turn439406695view2"
+          ],
+          "access_context": "Source passages accessed in this revision and shared by the integrating reviewer (root); clause review performed against the current manuscript."
+        }
+      ],
+      "fresh_original_source_access_this_revision": true,
+      "complete_original_paper_read_claimed": false,
+      "bibliographic_identity_at_review": {
+        "title": "Compiler Validation via Equivalence Modulo Inputs",
+        "author": "Vu Le and Mehrdad Afshari and Zhendong Su",
+        "year": "2014",
+        "doi": "10.1145/2594291.2594334",
+        "booktitle": "Proceedings of the 35th ACM SIGPLAN Conference on Programming Language Design and Implementation",
+        "pages": "216--226"
+      },
+      "current_occurrences": 1
+    },
+    {
+      "citation_key": "lee2024",
+      "primary_url": "https://arxiv.org/html/2305.15060v4",
+      "reading_level": "FRESH_SELECTED_BODY_AUTHOR_PREPRINT",
+      "access_category": "fresh_selected_body",
+      "version": "Author preprint v4; final ACL 2024 paper, 4890–4911, supplies bibliography metadata.",
+      "inspected": "Section 4.1: pass@k, AUROC, and TPR at an explicit FPR operating point.",
+      "supports": [
+        "SWEET reports code-generation performance and detection at stated operating points."
+      ],
+      "does_not_establish": [
+        "This does not identify a shared per-output behavioral label across paper versions."
+      ],
+      "metadata_note": "The fresh metric passage is from author preprint v4; the final ACL PDF timed out. Final publication metadata remains separately identified.",
+      "evidence": [
+        {
+          "type": "fresh_primary_source_access",
+          "primary_url": "https://arxiv.org/html/2305.15060v4",
+          "version": "Author preprint v4; final ACL 2024 paper, 4890–4911, supplies bibliography metadata.",
+          "inspected": "Section 4.1: pass@k, AUROC, and TPR at an explicit FPR operating point.",
+          "retrieval_reference_ids": [
+            "turn446075722view1"
+          ],
+          "access_context": "Source passages accessed in this revision and shared by the integrating reviewer (root); clause review performed against the current manuscript."
+        }
+      ],
+      "fresh_original_source_access_this_revision": true,
+      "complete_original_paper_read_claimed": false,
+      "additional_primary_urls": [
+        "https://aclanthology.org/2024.acl-long.268/"
+      ],
+      "bibliographic_identity_at_review": {
+        "title": "Who Wrote this Code? Watermarking for Code Generation",
+        "author": "Taehyun Lee and Seokhee Hong and Jaewoo Ahn and Ilgee Hong and Hwaran Lee and Sangdoo Yun and Jamin Shin and Gunhee Kim",
+        "year": "2024",
+        "doi": "10.18653/v1/2024.acl-long.268",
+        "booktitle": "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+        "pages": "4890--4911"
+      },
+      "current_occurrences": 1
+    },
+    {
+      "citation_key": "liang2025waterpark",
+      "primary_url": "https://aclanthology.org/2025.findings-emnlp.1148.pdf",
+      "reading_level": "FRESH_SELECTED_BODY_FINAL_PAPER",
+      "access_category": "fresh_selected_body",
+      "version": "Final Findings of EMNLP 2025 paper, 21050–21074.",
+      "inspected": "Section 3.2 evaluation metrics and Section 4.2.5 attack-quality assessment.",
+      "supports": [
+        "WaterPark organizes watermark evaluation across detection, quality and attack robustness."
+      ],
+      "does_not_establish": [
+        "The selected framework passages do not establish that all previous work omits behavioral checks."
+      ],
+      "metadata_note": "",
+      "evidence": [
+        {
+          "type": "fresh_primary_source_access",
+          "primary_url": "https://aclanthology.org/2025.findings-emnlp.1148.pdf",
+          "version": "Final Findings of EMNLP 2025 paper, 21050–21074.",
+          "inspected": "Section 3.2 evaluation metrics and Section 4.2.5 attack-quality assessment.",
+          "retrieval_reference_ids": [
+            "turn725364777view3"
+          ],
+          "access_context": "Source passages accessed in this revision and shared by the integrating reviewer (root); clause review performed against the current manuscript."
+        }
+      ],
+      "fresh_original_source_access_this_revision": true,
+      "complete_original_paper_read_claimed": false,
+      "bibliographic_identity_at_review": {
+        "title": "Watermark under Fire: A Robustness Evaluation of {LLM} Watermarking",
+        "author": "Jiacheng Liang and Zian Wang and Spencer Hong and Shouling Ji and Ting Wang",
+        "year": "2025",
+        "doi": "10.18653/v1/2025.findings-emnlp.1148",
+        "booktitle": "Findings of the Association for Computational Linguistics: EMNLP 2025",
+        "pages": "21050--21074"
+      },
+      "current_occurrences": 2
+    },
+    {
+      "citation_key": "liu2023evalplus",
+      "primary_url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/43e9d647ccd3e4b7b5baab53f0368686-Abstract-Conference.html",
+      "reading_level": "FRESH_PUBLISHER_ABSTRACT_AND_FROZEN_PRIMARY_DATA",
+      "access_category": "fresh_abstract",
+      "version": "Final NeurIPS 2023 abstract; HumanEval+ v0.1.10 is a separately frozen 2024 release.",
+      "inspected": "Complete publisher abstract and metadata; local v0.1.10 input inventory and provenance reopened.",
+      "supports": [
+        "Expanded tests expose missed errors and can change model comparisons; the pinned release supplies the additional input tuples used locally."
+      ],
+      "does_not_establish": [
+        "Release-specific facts come from the asset, not the 2023 abstract. The local preservation contract is not official EvalPlus scoring."
+      ],
+      "metadata_note": "Official NeurIPS title, four authors, year and DOI are retained; no unverified page range is added.",
+      "evidence": [
+        {
+          "type": "fresh_primary_source_access",
+          "primary_url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/43e9d647ccd3e4b7b5baab53f0368686-Abstract-Conference.html",
+          "version": "Final NeurIPS 2023 abstract; HumanEval+ v0.1.10 is a separately frozen 2024 release.",
+          "inspected": "Complete publisher abstract and metadata; local v0.1.10 input inventory and provenance reopened.",
+          "retrieval_reference_ids": [
+            "turn978553095view0"
+          ],
+          "access_context": "Source passages accessed in this revision and shared by the integrating reviewer (root); clause review performed against the current manuscript."
+        },
+        {
+          "type": "frozen_primary_dataset_reopened_this_review",
+          "path": "artifact/external-studies/sew_natural/data/HumanEvalPlus-v0.1.10.jsonl.gz",
+          "sha256": "272720b90ac375502c8ed23cd791c2a93dfb22a911641a494da74a426c09f101",
+          "tasks": 164,
+          "base_inputs": 1570,
+          "plus_inputs": 122683
+        },
+        {
+          "type": "dataset_provenance",
+          "path": "artifact/external-studies/sew_natural/provenance-humaneval.json",
+          "sha256": "f11f0a73da79c7d35a13a6634ff8d97c9a1062b89fd50a6652a564a74d0d1a7d"
+        }
+      ],
+      "fresh_original_source_access_this_revision": true,
+      "complete_original_paper_read_claimed": false,
+      "dataset_reopened_this_review": true,
+      "bibliographic_identity_at_review": {
+        "title": "Is Your Code Generated by {ChatGPT} Really Correct? Rigorous Evaluation of Large Language Models for Code Generation",
+        "author": "Jiawei Liu and Chunqiu Steven Xia and Yuyao Wang and Lingming Zhang",
+        "year": "2023",
+        "doi": "10.52202/075280-0943",
+        "booktitle": "Advances in Neural Information Processing Systems",
+        "volume": "36"
+      },
+      "current_occurrences": 2
+    },
+    {
+      "citation_key": "ma2021selection",
+      "primary_url": "https://mpapad.github.io/publications/pdfs/TOSEM2021B.pdf",
+      "reading_level": "FRESH_SELECTED_BODY_AUTHOR_PREPRINT",
+      "access_category": "fresh_selected_body",
+      "inspected": "Author preprint abstract, introduction and objectives distinguish selection for finding misclassifications from selection for retraining. Final bibliographic metadata verified against the University of Luxembourg repository record.",
+      "supports": [
+        "Ma et al. compare uncertainty-based test selection for detecting misclassified inputs and improving retraining."
+      ],
+      "does_not_establish": [
+        "The inspected author preprint contains placeholder title-page metadata; the bibliography uses the separately verified final TOSEM identity.",
+        "Its outcome is not a finite shared-label certificate of an aggregate score ordering."
+      ],
+      "metadata_note": "The final article is TOSEM 30(2), Article 13, 22 pages (2021), DOI 10.1145/3417330; the author preprint placeholder DOI is not used.",
+      "evidence": [
+        {
+          "type": "primary_source_and_executed_source_scope",
+          "primary_url": "https://mpapad.github.io/publications/pdfs/TOSEM2021B.pdf",
+          "inspected": "Author preprint abstract, introduction and objectives distinguish selection for finding misclassifications from selection for retraining. Final bibliographic metadata verified against the University of Luxembourg repository record.",
+          "retrieval_reference_ids": [
+            "turn674778417view0",
+            "turn780697333search0",
+            "turn780697333search6"
+          ]
+        }
+      ],
+      "fresh_original_source_access_this_revision": true,
+      "complete_original_paper_read_claimed": false,
+      "bibliographic_identity_at_review": {
+        "author": "Ma, Wei and Papadakis, Mike and Tsakmalis, Anestis and Cordy, Maxime and {Le Traon}, Yves",
+        "title": "Test Selection for Deep Learning Systems",
+        "journal": "ACM Transactions on Software Engineering and Methodology",
+        "year": "2021",
+        "doi": "10.1145/3417330"
+      },
+      "current_occurrences": 1
+    },
+    {
+      "citation_key": "manski2003",
+      "primary_url": "https://link.springer.com/book/10.1007/b97478",
+      "reading_level": "FRESH_PUBLISHER_OVERVIEW_AND_METADATA",
+      "access_category": "fresh_publisher_overview",
+      "version": "Springer book overview and metadata, 2003.",
+      "inspected": "Publisher About this book: identification regions under assumptions of varying strength.",
+      "supports": [
+        "Partial identification retains a set of compatible values rather than asserting point identification."
+      ],
+      "does_not_establish": [
+        "The overview is not a reading of the complete book or support for MarkValidity-specific sharpness proofs."
+      ],
+      "metadata_note": "",
+      "evidence": [
+        {
+          "type": "fresh_primary_source_access",
+          "primary_url": "https://link.springer.com/book/10.1007/b97478",
+          "version": "Springer book overview and metadata, 2003.",
+          "inspected": "Publisher About this book: identification regions under assumptions of varying strength.",
+          "retrieval_reference_ids": [
+            "turn122251933view5"
+          ],
+          "access_context": "Source passages accessed in this revision and shared by the integrating reviewer (root); clause review performed against the current manuscript."
+        }
+      ],
+      "fresh_original_source_access_this_revision": true,
+      "complete_original_paper_read_claimed": false,
+      "bibliographic_identity_at_review": {
+        "title": "Partial Identification of Probability Distributions",
+        "author": "Charles F. Manski",
+        "year": "2003",
+        "doi": "10.1007/b97478"
+      },
+      "current_occurrences": 1
+    },
+    {
+      "citation_key": "meneely2013",
+      "primary_url": "https://bensmith.s3.amazonaws.com/website/papers/tosem_metrics.pdf",
+      "reading_level": "FRESH_SELECTED_BODY_AUTHOR_MANUSCRIPT",
+      "access_category": "fresh_selected_body",
+      "version": "32-page author manuscript; final TOSEM 21(4), article 24, 28 typeset pages.",
+      "inspected": "Section 7 and opening of Section 7.1, manuscript pages 26–27, on selecting validation criteria by intended use; first-author publication/BibTeX entry.",
+      "supports": [
+        "Validation criteria should answer the questions posed by a metric intended use."
+      ],
+      "does_not_establish": [
+        "The author manuscript is not the final layout and does not establish a journal-wide paper-organization rule."
+      ],
+      "metadata_note": "The first author explicitly lists February 2013 and BibTeX year 2013, alongside issue_date November 2012. Retain 2013 and distinguish the issue cover date. DOI is 10.1145/2377656.2377661.",
+      "evidence": [
+        {
+          "type": "fresh_primary_source_access",
+          "primary_url": "https://bensmith.s3.amazonaws.com/website/papers/tosem_metrics.pdf",
+          "version": "32-page author manuscript; final TOSEM 21(4), article 24, 28 typeset pages.",
+          "inspected": "Section 7 and opening of Section 7.1, manuscript pages 26–27, on selecting validation criteria by intended use; first-author publication/BibTeX entry.",
+          "retrieval_reference_ids": [
+            "turn439406695view5",
+            "turn100103726view0",
+            "turn283758261view1"
+          ],
+          "access_context": "Source passages accessed in this revision and shared by the integrating reviewer (root); clause review performed against the current manuscript."
+        }
+      ],
+      "fresh_original_source_access_this_revision": true,
+      "complete_original_paper_read_claimed": false,
+      "additional_primary_urls": [
+        "https://www.se.rit.edu/~andy/pubs/"
+      ],
+      "independent_citation_reviewer_access_refs": [
+        "turn100103726view0",
+        "turn283758261view1"
+      ],
+      "bibliographic_identity_at_review": {
+        "title": "Validating Software Metrics: A Spectrum of Philosophies",
+        "author": "Andrew Meneely and Ben Smith and Laurie Williams",
+        "year": "2013",
+        "doi": "10.1145/2377656.2377661",
+        "journal": "ACM Transactions on Software Engineering and Methodology",
+        "volume": "21",
+        "number": "4",
+        "articleno": "24"
+      },
+      "current_occurrences": 1
+    },
+    {
+      "citation_key": "necula2000",
+      "primary_url": "https://people.eecs.berkeley.edu/~necula/Papers/tv_pldi00.pdf",
+      "reading_level": "FRESH_SELECTED_BODY_AUTHOR_MANUSCRIPT",
+      "access_category": "fresh_selected_body",
+      "version": "Author-hosted PLDI 2000 paper, final pages 83–94.",
+      "inspected": "Section 2, PDF page 2: source/target relation over calls, returns and memory state.",
+      "supports": [
+        "Translation validation checks a produced program against a specified source/target relation."
+      ],
+      "does_not_establish": [
+        "The source does not prove the correctness of the local Python observer or SEW implementation."
+      ],
+      "metadata_note": "",
+      "evidence": [
+        {
+          "type": "fresh_primary_source_access",
+          "primary_url": "https://people.eecs.berkeley.edu/~necula/Papers/tv_pldi00.pdf",
+          "version": "Author-hosted PLDI 2000 paper, final pages 83–94.",
+          "inspected": "Section 2, PDF page 2: source/target relation over calls, returns and memory state.",
+          "retrieval_reference_ids": [
+            "turn725364777view4"
+          ],
+          "access_context": "Source passages accessed in this revision and shared by the integrating reviewer (root); clause review performed against the current manuscript."
+        }
+      ],
+      "fresh_original_source_access_this_revision": true,
+      "complete_original_paper_read_claimed": false,
+      "bibliographic_identity_at_review": {
+        "title": "Translation Validation for an Optimizing Compiler",
+        "author": "George C. Necula",
+        "year": "2000",
+        "doi": "10.1145/349299.349314",
+        "booktitle": "Proceedings of the ACM SIGPLAN 2000 Conference on Programming Language Design and Implementation",
+        "pages": "83--94"
+      },
+      "current_occurrences": 1
+    },
+    {
+      "citation_key": "pan2024markllm",
+      "primary_url": "https://aclanthology.org/2024.emnlp-demo.7.pdf",
+      "reading_level": "FRESH_SELECTED_BODY_FINAL_PAPER",
+      "access_category": "fresh_selected_body",
+      "version": "Final EMNLP 2024 System Demonstrations paper, 61–71.",
+      "inspected": "Appendix A.1, printed page 70: detection, robustness and text-quality evaluation pipelines.",
+      "supports": [
+        "MarkLLM organizes detection, attack robustness and generated-text quality assessments."
+      ],
+      "does_not_establish": [
+        "The three assessment perspectives are not claimed to equal the number of implemented pipeline classes."
+      ],
+      "metadata_note": "The bibliography follows the PDF byline Bingling Zhou; landing-page metadata uses Binglin Zhou. This known spelling discrepancy remains explicit.",
+      "evidence": [
+        {
+          "type": "fresh_primary_source_access",
+          "primary_url": "https://aclanthology.org/2024.emnlp-demo.7.pdf",
+          "version": "Final EMNLP 2024 System Demonstrations paper, 61–71.",
+          "inspected": "Appendix A.1, printed page 70: detection, robustness and text-quality evaluation pipelines.",
+          "retrieval_reference_ids": [
+            "turn758033255view4",
+            "turn495839340view3"
+          ],
+          "access_context": "Source passages accessed in this revision and shared by the integrating reviewer (root); clause review performed against the current manuscript."
+        }
+      ],
+      "fresh_original_source_access_this_revision": true,
+      "complete_original_paper_read_claimed": false,
+      "independent_citation_reviewer_access_refs": [
+        "turn495839340view3"
+      ],
+      "bibliographic_identity_at_review": {
+        "title": "{MarkLLM}: An Open-Source Toolkit for {LLM} Watermarking",
+        "author": "Leyi Pan and Aiwei Liu and Zhiwei He and Zitian Gao and Xuandong Zhao and Yijian Lu and Bingling Zhou and Shuliang Liu and Xuming Hu and Lijie Wen and Irwin King and Philip S. Yu",
+        "year": "2024",
+        "doi": "10.18653/v1/2024.emnlp-demo.7",
+        "booktitle": "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing: System Demonstrations",
+        "pages": "61--71"
+      },
+      "current_occurrences": 2
+    },
+    {
+      "citation_key": "piet2024markmywords",
+      "primary_url": "https://wagner-group.github.io/projects/markmywords/index.html",
+      "reading_level": "FRESH_AUTHOR_PROJECT_AND_CONFERENCE_ABSTRACT",
+      "access_category": "fresh_author_project_and_conference_abstract",
+      "version": "Author project metrics; official SaTML 2025 accepted-paper/program abstract and authors.",
+      "inspected": "Author project Abstract and Metrics sections; official 2025 conference entry.",
+      "supports": [
+        "Mark My Words evaluates output quality, required detection length and tamper resistance."
+      ],
+      "does_not_establish": [
+        "The final full paper was not reread; the current broad framework claim needs only these stated metrics."
+      ],
+      "metadata_note": "Official SaTML 2025 program confirms title and five authors. Formal 2025 metadata supersedes the older preprint year while retaining the stable key; no unverified final pages are supplied.",
+      "evidence": [
+        {
+          "type": "fresh_primary_source_access",
+          "primary_url": "https://wagner-group.github.io/projects/markmywords/index.html",
+          "version": "Author project metrics; official SaTML 2025 accepted-paper/program abstract and authors.",
+          "inspected": "Author project Abstract and Metrics sections; official 2025 conference entry.",
+          "retrieval_reference_ids": [
+            "turn609989302view3",
+            "turn283758261view0",
+            "turn283758261search0",
+            "turn283758261search1"
+          ],
+          "access_context": "Source passages accessed in this revision and shared by the integrating reviewer (root); clause review performed against the current manuscript."
+        }
+      ],
+      "fresh_original_source_access_this_revision": true,
+      "complete_original_paper_read_claimed": false,
+      "additional_primary_urls": [
+        "https://satml.org/2025/program/",
+        "https://satml.org/2025/accepted-papers/",
+        "https://ieeexplore.ieee.org/document/10992530/"
+      ],
+      "independent_citation_reviewer_access_refs": [
+        "turn283758261view0",
+        "turn283758261search0",
+        "turn283758261search1"
+      ],
+      "bibliographic_identity_at_review": {
+        "title": "{Mark My Words}: Analyzing and Evaluating Language Model Watermarks",
+        "author": "Julien Piet and Chawin Sitawarin and Vivian Fang and Norman Mu and David Wagner",
+        "year": "2025",
+        "doi": "10.1109/SaTML64287.2025.00012",
+        "booktitle": "2025 IEEE Conference on Secure and Trustworthy Machine Learning (SaTML)"
+      },
+      "current_occurrences": 2
+    },
+    {
+      "citation_key": "rothermel1997",
+      "primary_url": "https://www.cs.purdue.edu/homes/xyzhang/spring07/Papers/p173-rothermel.pdf",
+      "reading_level": "FRESH_FINAL_PAPER_ABSTRACT",
+      "access_category": "fresh_abstract",
+      "version": "Final TOSEM 6(2), 173–210, April 1997; university-hosted copy.",
+      "inspected": "Complete abstract and first-page publication information, with introduction context.",
+      "supports": [
+        "Safe regression selection retains, under stated conditions, tests from an existing suite capable of exposing faults in the modified program."
+      ],
+      "does_not_establish": [
+        "This is existing-suite safety, not a guarantee to expose every possible program fault."
+      ],
+      "metadata_note": "",
+      "evidence": [
+        {
+          "type": "fresh_primary_source_access",
+          "primary_url": "https://www.cs.purdue.edu/homes/xyzhang/spring07/Papers/p173-rothermel.pdf",
+          "version": "Final TOSEM 6(2), 173–210, April 1997; university-hosted copy.",
+          "inspected": "Complete abstract and first-page publication information, with introduction context.",
+          "retrieval_reference_ids": [
+            "turn930828531view2",
+            "turn949373055view1"
+          ],
+          "access_context": "Source passages accessed in this revision and shared by the integrating reviewer (root); clause review performed against the current manuscript."
+        }
+      ],
+      "fresh_original_source_access_this_revision": true,
+      "complete_original_paper_read_claimed": false,
+      "independent_citation_reviewer_access_refs": [
+        "turn949373055view1"
+      ],
+      "bibliographic_identity_at_review": {
+        "title": "A Safe, Efficient Regression Test Selection Technique",
+        "author": "Gregg Rothermel and Mary Jean Harrold",
+        "year": "1997",
+        "doi": "10.1145/248233.248262",
+        "journal": "ACM Transactions on Software Engineering and Methodology",
+        "volume": "6",
+        "number": "2",
+        "pages": "173--210"
+      },
+      "current_occurrences": 1
+    },
+    {
+      "citation_key": "sew2026",
+      "primary_url": "https://arxiv.org/html/2609.39414v1",
+      "reading_level": "FRESH_SELECTED_BODY_AUTHOR_PREPRINT",
+      "access_category": "fresh_selected_body",
+      "version": "Author preprint arXiv:2609.39414v1, September 2026.",
+      "inspected": "Sections 3.1–3.3 and Appendix I: keyed style rules, structural context, eligibility and type/effect checks.",
+      "supports": [
+        "SEW states applicability conditions and aggregates keyed style evidence through structural context."
+      ],
+      "does_not_establish": [
+        "Stated applicability conditions do not establish correctness of every implementation path or the observed failure rate elsewhere."
+      ],
+      "metadata_note": "",
+      "evidence": [
+        {
+          "type": "fresh_primary_source_access",
+          "primary_url": "https://arxiv.org/html/2609.39414v1",
+          "version": "Author preprint arXiv:2609.39414v1, September 2026.",
+          "inspected": "Sections 3.1–3.3 and Appendix I: keyed style rules, structural context, eligibility and type/effect checks.",
+          "retrieval_reference_ids": [
+            "turn527399884view3"
+          ],
+          "access_context": "Source passages accessed in this revision and shared by the integrating reviewer (root); clause review performed against the current manuscript."
+        }
+      ],
+      "fresh_original_source_access_this_revision": true,
+      "complete_original_paper_read_claimed": false,
+      "bibliographic_identity_at_review": {
+        "title": "{SEW}: Style-Encoded Watermarking of {LLM}-Generated Code",
+        "author": "Soohan Lim and Hyundong Jin and Yo-Sub Han",
+        "year": "2026",
+        "doi": "10.48550/arXiv.2609.39414",
+        "journal": "arXiv preprint arXiv:2609.39414"
+      },
+      "current_occurrences": 2
+    },
+    {
+      "citation_key": "sjoberg2023",
+      "primary_url": "https://www.researchgate.net/publication/360817259_Construct_Validity_in_Software_Engineering",
+      "reading_level": "FRESH_SELECTED_BODY_AUTHOR_POSTED_MANUSCRIPT",
+      "access_category": "fresh_selected_body",
+      "version": "Author-posted accepted manuscript; final TSE 49(3), 1374–1396, March 2023.",
+      "inspected": "Manuscript page 2, Sections 2.1–2.2 on operationalization and validation evidence.",
+      "supports": [
+        "Construct-validity arguments relate operational measures to the concepts they are intended to represent."
+      ],
+      "does_not_establish": [
+        "The selected guidance does not validate MarkValidity automatically or replace its explicit contract."
+      ],
+      "metadata_note": "The final publication year is 2023; the accepted-manuscript date is earlier. The TeX Sjøberg accent is rendered with one command backslash.",
+      "evidence": [
+        {
+          "type": "fresh_primary_source_access",
+          "primary_url": "https://www.researchgate.net/publication/360817259_Construct_Validity_in_Software_Engineering",
+          "version": "Author-posted accepted manuscript; final TSE 49(3), 1374–1396, March 2023.",
+          "inspected": "Manuscript page 2, Sections 2.1–2.2 on operationalization and validation evidence.",
+          "retrieval_reference_ids": [
+            "turn446075722view2"
+          ],
+          "access_context": "Source passages accessed in this revision and shared by the integrating reviewer (root); clause review performed against the current manuscript."
+        }
+      ],
+      "fresh_original_source_access_this_revision": true,
+      "complete_original_paper_read_claimed": false,
+      "bibliographic_identity_at_review": {
+        "title": "Construct Validity in Software Engineering",
+        "author": "Dag I. K. Sj{\\o}berg and Gunnar R. Bergersen",
+        "year": "2023",
+        "doi": "10.1109/TSE.2022.3176725",
+        "journal": "IEEE Transactions on Software Engineering",
+        "volume": "49",
+        "number": "3",
+        "pages": "1374--1396"
+      },
+      "current_occurrences": 1
+    },
+    {
+      "citation_key": "sjoberg2023reporting",
+      "primary_url": "https://arxiv.org/pdf/2306.05336",
+      "reading_level": "FRESH_SELECTED_BODY_AUTHOR_PREPRINT",
+      "access_category": "fresh_selected_body",
+      "version": "Author preprint of the EASE 2023 reporting paper.",
+      "inspected": "Sections 3.2–3.4 on clear constructs, consistent operationalization and specific validity threats.",
+      "supports": [
+        "Construct-validity reporting should make the relevant construct, operationalization and evidence scope explicit."
+      ],
+      "does_not_establish": [
+        "This reporting guidance does not itself establish the empirical validity of the current metric."
+      ],
+      "metadata_note": "",
+      "evidence": [
+        {
+          "type": "fresh_primary_source_access",
+          "primary_url": "https://arxiv.org/pdf/2306.05336",
+          "version": "Author preprint of the EASE 2023 reporting paper.",
+          "inspected": "Sections 3.2–3.4 on clear constructs, consistent operationalization and specific validity threats.",
+          "retrieval_reference_ids": [
+            "turn446075722view4"
+          ],
+          "access_context": "Source passages accessed in this revision and shared by the integrating reviewer (root); clause review performed against the current manuscript."
+        }
+      ],
+      "fresh_original_source_access_this_revision": true,
+      "complete_original_paper_read_claimed": false,
+      "bibliographic_identity_at_review": {
+        "title": "Improving the Reporting of Threats to Construct Validity",
+        "author": "Dag I. K. Sj{\\o}berg and Gunnar R. Bergersen",
+        "year": "2023",
+        "doi": "10.1145/3593434.3593449",
+        "booktitle": "Proceedings of the 27th International Conference on Evaluation and Assessment in Software Engineering",
+        "pages": "205--209"
+      },
+      "current_occurrences": 1
+    },
+    {
+      "citation_key": "weyuker1982",
+      "primary_url": "https://homes.cs.washington.edu/~rjust/courses/CSE503/2021_02_12-reading1.pdf",
+      "reading_level": "FRESH_SELECTED_SCANNED_PAGES",
+      "access_category": "fresh_selected_body",
+      "version": "Original paper scan, The Computer Journal 25(4), 465–470, 1982.",
+      "inspected": "Actual page images of printed pages 465–466, including the oracle problem and partial/pseudo-oracles.",
+      "supports": [
+        "Testing without a complete oracle requires care about what observed evidence can establish."
+      ],
+      "does_not_establish": [
+        "Only the two stated scanned pages were freshly inspected; no OCR or full-paper reading is claimed."
+      ],
+      "metadata_note": "",
+      "evidence": [
+        {
+          "type": "fresh_primary_source_access",
+          "primary_url": "https://homes.cs.washington.edu/~rjust/courses/CSE503/2021_02_12-reading1.pdf",
+          "version": "Original paper scan, The Computer Journal 25(4), 465–470, 1982.",
+          "inspected": "Actual page images of printed pages 465–466, including the oracle problem and partial/pseudo-oracles.",
+          "retrieval_reference_ids": [
+            "turn122251933view6",
+            "turn122251933view7"
+          ],
+          "access_context": "Source passages accessed in this revision and shared by the integrating reviewer (root); clause review performed against the current manuscript."
+        }
+      ],
+      "fresh_original_source_access_this_revision": true,
+      "complete_original_paper_read_claimed": false,
+      "bibliographic_identity_at_review": {
+        "title": "On Testing Non-Testable Programs",
+        "author": "Elaine J. Weyuker",
+        "year": "1982",
+        "doi": "10.1093/comjnl/25.4.465",
+        "journal": "The Computer Journal",
+        "volume": "25",
+        "number": "4",
+        "pages": "465--470"
+      },
+      "current_occurrences": 1
+    },
+    {
+      "citation_key": "yang2011compiler",
+      "primary_url": "https://www.flux.utah.edu/paper/yang-pldi11/paper.pdf",
+      "reading_level": "FRESH_SELECTED_BODY_AUTHOR_HOSTED_PAPER",
+      "access_category": "fresh_selected_body",
+      "version": "Author-group-hosted PLDI 2011 paper.",
+      "inspected": "Introduction and Section 2.1: compile/run/output comparison and generated programs with a unique interpretation.",
+      "supports": [
+        "Csmith differential testing compares program executions across compilers."
+      ],
+      "does_not_establish": [
+        "Compiler-output disagreement does not supply MarkValidity local observer correctness or all-input equivalence."
+      ],
+      "metadata_note": "The working author-group PDF replaces the timing-out older Utah URL as the access locator.",
+      "evidence": [
+        {
+          "type": "fresh_primary_source_access",
+          "primary_url": "https://www.flux.utah.edu/paper/yang-pldi11/paper.pdf",
+          "version": "Author-group-hosted PLDI 2011 paper.",
+          "inspected": "Introduction and Section 2.1: compile/run/output comparison and generated programs with a unique interpretation.",
+          "retrieval_reference_ids": [
+            "turn930828531view4",
+            "turn446075722view0"
+          ],
+          "access_context": "Source passages accessed in this revision and shared by the integrating reviewer (root); clause review performed against the current manuscript."
+        }
+      ],
+      "fresh_original_source_access_this_revision": true,
+      "complete_original_paper_read_claimed": false,
+      "bibliographic_identity_at_review": {
+        "title": "Finding and Understanding Bugs in C Compilers",
+        "author": "Xuejun Yang and Yang Chen and Eric Eide and John Regehr",
+        "year": "2011",
+        "doi": "10.1145/1993498.1993532",
+        "booktitle": "Proceedings of the 32nd ACM SIGPLAN Conference on Programming Language Design and Implementation",
+        "pages": "283--294"
+      },
+      "current_occurrences": 1
+    },
+    {
+      "citation_key": "yang2023",
+      "primary_url": "https://arxiv.org/html/2309.00860v2",
+      "reading_level": "FRESH_SELECTED_BODY_AUTHOR_PREPRINT",
+      "access_category": "fresh_selected_body",
+      "version": "Author preprint v2; final SrcMarker at IEEE S&P 2024, 4088–4106.",
+      "inspected": "Sections IV-B and IV-C: correctness checks using supplied unit tests and bit/message recovery; official 2024 program title/byline.",
+      "supports": [
+        "SrcMarker separates supplied-unit-test transformation checks from bit and message recovery."
+      ],
+      "does_not_establish": [
+        "The supplied tests are not a guarantee of correctness on untested inputs."
+      ],
+      "metadata_note": "Body support is the author preprint; the IEEE S&P program confirms the final SrcMarker title and four authors. Final metadata remains distinct from the earlier preprint title.",
+      "evidence": [
+        {
+          "type": "fresh_primary_source_access",
+          "primary_url": "https://arxiv.org/html/2309.00860v2",
+          "version": "Author preprint v2; final SrcMarker at IEEE S&P 2024, 4088–4106.",
+          "inspected": "Sections IV-B and IV-C: correctness checks using supplied unit tests and bit/message recovery; official 2024 program title/byline.",
+          "retrieval_reference_ids": [
+            "turn609989302view5",
+            "turn439406695view6",
+            "turn283758261search2",
+            "turn283758261search3"
+          ],
+          "access_context": "Source passages accessed in this revision and shared by the integrating reviewer (root); clause review performed against the current manuscript."
+        }
+      ],
+      "fresh_original_source_access_this_revision": true,
+      "complete_original_paper_read_claimed": false,
+      "additional_primary_urls": [
+        "https://sp2024.ieee-security.org/program.html"
+      ],
+      "independent_citation_reviewer_access_refs": [
+        "turn283758261search2",
+        "turn283758261search3"
+      ],
+      "bibliographic_identity_at_review": {
+        "title": "{SrcMarker}: Dual-Channel Source Code Watermarking via Scalable Code Transformations",
+        "author": "Borui Yang and Wei Li and Liyao Xiang and Bo Li",
+        "year": "2024",
+        "doi": "10.1109/SP54263.2024.00097",
+        "booktitle": "Proceedings of the 45th IEEE Symposium on Security and Privacy",
+        "pages": "4088--4106"
+      },
+      "current_occurrences": 1
+    }
+  ]
+}

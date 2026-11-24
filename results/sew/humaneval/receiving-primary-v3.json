@@ -1,0 +1,140 @@
+{
+  "status": "PASS",
+  "mode": "read-only primary-v3 receiving; no source execution",
+  "receiver_sha256": "47e85488a92729dd9e49b59d3cb17fde304ed1c66901ccf73f2fad7643655e40",
+  "primary": {
+    "rows_sha256": "563d49e53640d8f97a91b416399643f76282de7f45ba16a8be18385774396dd0",
+    "specification_sha256": "2fa9b00ffb020edca05c571020d9b64ddc2e4d34bab3cb8be4bd1a771cbe730e",
+    "tasks": 164,
+    "rows": 1968,
+    "unique_source_contracts": 546,
+    "reference_function_invocations": 1534,
+    "observer_sha256": "232a7d6f47011501356a9c9ac07e17bf325bde345d9c707d32c4fae668367012",
+    "variants": [
+      {
+        "variant": "stock",
+        "configurations": 492,
+        "validity_labels": {
+          "supported": 492
+        },
+        "detected": 368,
+        "joint": 368,
+        "detected_contradicted": 0,
+        "reference_detections": 0,
+        "candidate_function_invocations": 4602,
+        "complete_call_record_agreement": 492,
+        "candidate_suite_executions": 492
+      },
+      {
+        "variant": "s1",
+        "configurations": 492,
+        "validity_labels": {
+          "supported": 492
+        },
+        "detected": 365,
+        "joint": 365,
+        "detected_contradicted": 0,
+        "reference_detections": 0,
+        "candidate_function_invocations": 4602,
+        "complete_call_record_agreement": 492,
+        "candidate_suite_executions": 492
+      },
+      {
+        "variant": "s4",
+        "configurations": 492,
+        "validity_labels": {
+          "supported": 492
+        },
+        "detected": 368,
+        "joint": 368,
+        "detected_contradicted": 0,
+        "reference_detections": 0,
+        "candidate_function_invocations": 4602,
+        "complete_call_record_agreement": 492,
+        "candidate_suite_executions": 492
+      },
+      {
+        "variant": "s1_s4",
+        "configurations": 492,
+        "validity_labels": {
+          "supported": 492
+        },
+        "detected": 365,
+        "joint": 365,
+        "detected_contradicted": 0,
+        "reference_detections": 0,
+        "candidate_function_invocations": 4602,
+        "complete_call_record_agreement": 492,
+        "candidate_suite_executions": 492
+      }
+    ],
+    "pairwise_checks": [
+      {
+        "left": "stock",
+        "right": "s1",
+        "unique_source_contracts": 546,
+        "nonzero_gap_source_groups": 151,
+        "withheld_gap_interval": [
+          "-37/246",
+          "77/492"
+        ],
+        "complete_gap": "1/164"
+      },
+      {
+        "left": "stock",
+        "right": "s4",
+        "unique_source_contracts": 466,
+        "nonzero_gap_source_groups": 0,
+        "withheld_gap_interval": [
+          "0",
+          "0"
+        ],
+        "complete_gap": "0"
+      },
+      {
+        "left": "stock",
+        "right": "s1_s4",
+        "unique_source_contracts": 546,
+        "nonzero_gap_source_groups": 151,
+        "withheld_gap_interval": [
+          "-37/246",
+          "77/492"
+        ],
+        "complete_gap": "1/164"
+      },
+      {
+        "left": "s1",
+        "right": "s4",
+        "unique_source_contracts": 546,
+        "nonzero_gap_source_groups": 151,
+        "withheld_gap_interval": [
+          "-77/492",
+          "37/246"
+        ],
+        "complete_gap": "-1/164"
+      },
+      {
+        "left": "s1",
+        "right": "s1_s4",
+        "unique_source_contracts": 466,
+        "nonzero_gap_source_groups": 0,
+        "withheld_gap_interval": [
+          "0",
+          "0"
+        ],
+        "complete_gap": "0"
+      },
+      {
+        "left": "s4",
+        "right": "s1_s4",
+        "unique_source_contracts": 546,
+        "nonzero_gap_source_groups": 151,
+        "withheld_gap_interval": [
+          "-37/246",
+          "77/492"
+        ],
+        "complete_gap": "1/164"
+      }
+    ]
+  }
+}

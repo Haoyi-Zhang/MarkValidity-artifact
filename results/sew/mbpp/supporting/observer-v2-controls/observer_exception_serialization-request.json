@@ -1,0 +1,7 @@
+{
+  "source": "class BrokenMessage(Exception):\n    def __str__(self):\n        raise RuntimeError(\"formatter failed\")\ndef f():\n    raise BrokenMessage()\n",
+  "test_imports": [],
+  "test_list": [
+    "assert f() == 1"
+  ]
+}

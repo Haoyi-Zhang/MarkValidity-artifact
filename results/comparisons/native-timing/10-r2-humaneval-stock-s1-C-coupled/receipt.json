@@ -1,0 +1,1198 @@
+{
+  "repeat": 2,
+  "dataset": "HumanEval",
+  "scope": "humaneval",
+  "left": "stock",
+  "right": "s1",
+  "target": "C",
+  "method": "coupled",
+  "policy": "conditional_differences_first",
+  "ordinal": 10,
+  "directory": "10-r2-humaneval-stock-s1-C-coupled",
+  "denominator": 492,
+  "initial_reference_groups": 3,
+  "candidate_suite_queries": 160,
+  "decision": "left_strict",
+  "final_bounds": {
+    "lower": 249,
+    "upper": 1476,
+    "units": "conditional_cross_product_count_margin",
+    "decision": "left_strict",
+    "defined_all": true
+  },
+  "phase_seconds": {
+    "register_seconds": 0.003507233996060677,
+    "select_seconds": 0.0007514570315834135,
+    "bounds_seconds": 0.011408599995775148,
+    "worker_seconds": 6.050167775007139,
+    "receive_seconds": 0.030383795012312476,
+    "record_seconds": 0.1321603430696996
+  },
+  "audit_total_seconds": 6.2330247220015735,
+  "unallocated_loop_seconds": 0.004645517889002804,
+  "queries": [
+    {
+      "step": 1,
+      "group": "007eb950e688d6891f7d3fad8d9dadfc40ec99846e0ea7f89b0547640c9c3c92",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00001-007eb950e688d6891f7d3fad8d9dadfc40ec99846e0ea7f89b0547640c9c3c92.json",
+      "evidence_sha256": "ed88f8ecc29629321bb42f0570efce1c5ae37f16592535b19d06ef791496430b"
+    },
+    {
+      "step": 2,
+      "group": "04672f784e9d136436f291c5dc7fccb231167c5ea729b501db538170a9aa554a",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00002-04672f784e9d136436f291c5dc7fccb231167c5ea729b501db538170a9aa554a.json",
+      "evidence_sha256": "12618057a6534b82b76bbb7fff892559383a888d8485d4c4fcaa91f7018c9197"
+    },
+    {
+      "step": 3,
+      "group": "0646fd8c79f95353dbc898aa9ddea5c0e148f7196d31c0e8cedba8bd6ef0d7d0",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00003-0646fd8c79f95353dbc898aa9ddea5c0e148f7196d31c0e8cedba8bd6ef0d7d0.json",
+      "evidence_sha256": "f2faf3534e619e2e3a635a2c300987dd83962a2945390a0605b67e1c949cd4cf"
+    },
+    {
+      "step": 4,
+      "group": "0901a76ea5203306d952045c96b0ab32d77055a7f2a7b7c493fbd224514c64b9",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00004-0901a76ea5203306d952045c96b0ab32d77055a7f2a7b7c493fbd224514c64b9.json",
+      "evidence_sha256": "e36b89f713ae60b5087b133c2f73e1e8b3a2e9295ef83fd109867e5335272b0f"
+    },
+    {
+      "step": 5,
+      "group": "09b80f30c7e8095fed0592212541b51739e9f2919a78330dbc11f00f26313b5b",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00005-09b80f30c7e8095fed0592212541b51739e9f2919a78330dbc11f00f26313b5b.json",
+      "evidence_sha256": "7ffffc38c4e9857de391d5cbb4fd7995f232c0f14c1ac5a20980fddde34c7633"
+    },
+    {
+      "step": 6,
+      "group": "0ad692cc70d9567f94b8c36ad2a5373f089165b260b0b5995d4e66b7827d8cdb",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00006-0ad692cc70d9567f94b8c36ad2a5373f089165b260b0b5995d4e66b7827d8cdb.json",
+      "evidence_sha256": "596cea9220a1d2274337a016aaef5d54fe518772c8b4a79a6cba668556d72deb"
+    },
+    {
+      "step": 7,
+      "group": "0c8b93b342fc4704f10a6a46ecfd6f7279455f4c068ab8b66769f924fee35a19",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00007-0c8b93b342fc4704f10a6a46ecfd6f7279455f4c068ab8b66769f924fee35a19.json",
+      "evidence_sha256": "a87a969ead36b856e97568047e0066e4ada713a6889f04e85a671daa62cc7eef"
+    },
+    {
+      "step": 8,
+      "group": "0d8dea6f2a1f998fbab70d5d0beed3fc7f02dd0a45a796f5caa06c66f24dbbb3",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00008-0d8dea6f2a1f998fbab70d5d0beed3fc7f02dd0a45a796f5caa06c66f24dbbb3.json",
+      "evidence_sha256": "a398190416d8e4edfc1c5c130c86fc7a2a928c532845499ca265b0e2c8937849"
+    },
+    {
+      "step": 9,
+      "group": "0de88c62bbe60d83bea3c8f1fdc17fb738cdca28ce0f17926791c69807c8ec10",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00009-0de88c62bbe60d83bea3c8f1fdc17fb738cdca28ce0f17926791c69807c8ec10.json",
+      "evidence_sha256": "45cb34ef44de0be5760c4c90ded12c21aa7bbcf38c4650438f3af7d4b3c04ccc"
+    },
+    {
+      "step": 10,
+      "group": "1078e6c10de62df9d043fb2724a873747a58aa477fb59056f1847459292738ca",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00010-1078e6c10de62df9d043fb2724a873747a58aa477fb59056f1847459292738ca.json",
+      "evidence_sha256": "d6266b3235aaa795190fcca31941399ceb8f8361655f8fb9235b2d76c9a916c9"
+    },
+    {
+      "step": 11,
+      "group": "11d42d79b4454f21be480736d27371812fb945705e26f10c9f8660106c14e200",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00011-11d42d79b4454f21be480736d27371812fb945705e26f10c9f8660106c14e200.json",
+      "evidence_sha256": "9ffe27ba3a45969bdefe385cb5cb01bba7ea29e5476f727e0a604c4b58592935"
+    },
+    {
+      "step": 12,
+      "group": "12aa8a5cc4ca7a6e31edda49ceba151edeb204186f19b72e6ad80c957d568c6e",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00012-12aa8a5cc4ca7a6e31edda49ceba151edeb204186f19b72e6ad80c957d568c6e.json",
+      "evidence_sha256": "fb85bc5c18fa0d93abe2a80a77278d884d86d0172ae23ea177a39337b36d7597"
+    },
+    {
+      "step": 13,
+      "group": "1519447cfc14e8affe118742955c377c35a9722ccc866ec0b11eca284ddcf02f",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00013-1519447cfc14e8affe118742955c377c35a9722ccc866ec0b11eca284ddcf02f.json",
+      "evidence_sha256": "b7c41421393be375bf0b7871b0466bfd2b457eca2f001b03b91c0b1682c0e8c1"
+    },
+    {
+      "step": 14,
+      "group": "16d32e3a4eb107425ae1305157f1099bd9207771ae978572da24b409110d70ba",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00014-16d32e3a4eb107425ae1305157f1099bd9207771ae978572da24b409110d70ba.json",
+      "evidence_sha256": "9a2c00c40147456c3db957970774b3da143be40d3d643108a3948d992ca76973"
+    },
+    {
+      "step": 15,
+      "group": "17cede22f7eace0230e6c0bed5fbe994ca090cd7895ffe657f1f567f39dfbe2f",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00015-17cede22f7eace0230e6c0bed5fbe994ca090cd7895ffe657f1f567f39dfbe2f.json",
+      "evidence_sha256": "6e73663eb3e0a1d0773e45dd98798f6752d0e306cc25d4636744fbe6a64e6af6"
+    },
+    {
+      "step": 16,
+      "group": "1c1acaa0f09ab7415fe1eadb796ce648d853da66f5978d3d5733f06efc89cd63",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00016-1c1acaa0f09ab7415fe1eadb796ce648d853da66f5978d3d5733f06efc89cd63.json",
+      "evidence_sha256": "f04ad329e93be73afc7fd626aac6fcd231e6f7566030925db278f8285be6180e"
+    },
+    {
+      "step": 17,
+      "group": "1c38f089036bc0ea1233db8d3d7627941b2b1057182ec7321e7cea7eb07459fa",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00017-1c38f089036bc0ea1233db8d3d7627941b2b1057182ec7321e7cea7eb07459fa.json",
+      "evidence_sha256": "86aeb563bf94aff0542c02b71ef9c6aa8ec67baa6612a2d375e861eb351c4059"
+    },
+    {
+      "step": 18,
+      "group": "21e0c4a228e36c15f9827de3a7fb6e98a86922a754c3dfbe5b855dce42ba56b3",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00018-21e0c4a228e36c15f9827de3a7fb6e98a86922a754c3dfbe5b855dce42ba56b3.json",
+      "evidence_sha256": "14b97bf92a0404937ce718241fcadcfc9f1dd3422363c1802df8e75c7a29b723"
+    },
+    {
+      "step": 19,
+      "group": "23b5e8d348c2858615717120a7964e94c62c6e0dbfbb0055ceaaac26c27b05d6",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00019-23b5e8d348c2858615717120a7964e94c62c6e0dbfbb0055ceaaac26c27b05d6.json",
+      "evidence_sha256": "86fb5ba7441d51a96f6cd64e9e465586233db884a9732ca3903ced871475cae5"
+    },
+    {
+      "step": 20,
+      "group": "258ceb67c06e882efa2b52ce0bf4ee72bb2ddbe71940bc72522b5768302e5d4e",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00020-258ceb67c06e882efa2b52ce0bf4ee72bb2ddbe71940bc72522b5768302e5d4e.json",
+      "evidence_sha256": "4ab18970cb274f3768f55d01b34970fbb9857c7edfc28f99332287e68e665eba"
+    },
+    {
+      "step": 21,
+      "group": "25d41c1dc9fb8edc309f47da82430c700b6986498ec3a5c4062cffb762afad89",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00021-25d41c1dc9fb8edc309f47da82430c700b6986498ec3a5c4062cffb762afad89.json",
+      "evidence_sha256": "115d4a90f51f252e0b89b4ab4749b34c5b46ba7e1ea30ebb942f8d72681542cd"
+    },
+    {
+      "step": 22,
+      "group": "292e5c7251c636eadc1f7b2f0702dd3b13f41acb2b68882a286bc0db9dfcc559",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00022-292e5c7251c636eadc1f7b2f0702dd3b13f41acb2b68882a286bc0db9dfcc559.json",
+      "evidence_sha256": "7f11d21682d3557e410f9c19125b93f3c7dfacc05fbfc88a5ec2eef0049d98c9"
+    },
+    {
+      "step": 23,
+      "group": "2b6fcdf0d59471e49dfa646e04f1974cbec630c04d6a18596d290a4ec095c690",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00023-2b6fcdf0d59471e49dfa646e04f1974cbec630c04d6a18596d290a4ec095c690.json",
+      "evidence_sha256": "41571bf97be58b5f2ffc78394b6dea77bb06e5c6695163c7d0bf073cf1b4b04a"
+    },
+    {
+      "step": 24,
+      "group": "2cf05275b579c8a664e85ffcf437ab0f72de6ccf4e9945d81df928c95aa54651",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00024-2cf05275b579c8a664e85ffcf437ab0f72de6ccf4e9945d81df928c95aa54651.json",
+      "evidence_sha256": "ba5302250fc0b7e635cde22b4dbd02ce97383ca6facbe385cda83984cff0f25d"
+    },
+    {
+      "step": 25,
+      "group": "2daab052febbb665f65f4b2764ccd354532bc0f47324c61fa7cf5e6eaad478bd",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00025-2daab052febbb665f65f4b2764ccd354532bc0f47324c61fa7cf5e6eaad478bd.json",
+      "evidence_sha256": "2e28ec7a4ac2c22004dbfa96160f462b5b2ba65b43d3a8f241f1d77c0162459c"
+    },
+    {
+      "step": 26,
+      "group": "315cc1b2e17a7e264ec7894995bfb68de2c210cc90ca57b816d75d09fc39c8ab",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00026-315cc1b2e17a7e264ec7894995bfb68de2c210cc90ca57b816d75d09fc39c8ab.json",
+      "evidence_sha256": "1f3abc8d5867be1423ace548e14ea8047d1015754d850abe479e5686a1b9fea6"
+    },
+    {
+      "step": 27,
+      "group": "33de31be544447d8101d891a0fe291a9353e6097943d6fd7aa969843d6f34292",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00027-33de31be544447d8101d891a0fe291a9353e6097943d6fd7aa969843d6f34292.json",
+      "evidence_sha256": "0e4d32a177b15cc2b0ce351bff2facee7603a2d693fb593393cddb00067380c0"
+    },
+    {
+      "step": 28,
+      "group": "34ed3c53c67687ff628e06a9f0faf8ae6132d9ce38b6445f594d72470715ea46",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00028-34ed3c53c67687ff628e06a9f0faf8ae6132d9ce38b6445f594d72470715ea46.json",
+      "evidence_sha256": "d15b11970d99f4a57697cd6ff546f09b973ca7550acb6846b86dd8414ae90904"
+    },
+    {
+      "step": 29,
+      "group": "35ba15753d5d05046e4715d07408566e0fa5e86ad7b101a6e03cdd8e2ce0d1d0",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00029-35ba15753d5d05046e4715d07408566e0fa5e86ad7b101a6e03cdd8e2ce0d1d0.json",
+      "evidence_sha256": "3a62605f514ce5846ca58bdf8e89d2533f4a74da00c93fbaadf09456585409ee"
+    },
+    {
+      "step": 30,
+      "group": "3a44e2ce420f9c4941ead669cfecdca1b51388b6166853c97bc9ccc6d37e43f4",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00030-3a44e2ce420f9c4941ead669cfecdca1b51388b6166853c97bc9ccc6d37e43f4.json",
+      "evidence_sha256": "c59bf330eb88c1b20542ac6be76b1c9a1e5140518e8b6cc8951df1f92d315b93"
+    },
+    {
+      "step": 31,
+      "group": "3af3df384db23d636706e415104188ec4a0285777b86614a2a5f671cfa21f9f7",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00031-3af3df384db23d636706e415104188ec4a0285777b86614a2a5f671cfa21f9f7.json",
+      "evidence_sha256": "972cd508de979f5b4e5b2aa7f6fbf86c0f82199e0369a7914f4f3bdcd726a767"
+    },
+    {
+      "step": 32,
+      "group": "3f98ad39d60ffc4e6f2b668f178c0b7357925f6bf276dae29564ff5ce93f241f",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00032-3f98ad39d60ffc4e6f2b668f178c0b7357925f6bf276dae29564ff5ce93f241f.json",
+      "evidence_sha256": "a6caf302963bb85625e4d9873c2851de3fe48fdabb2186fcf6f5ddf9ca6fd89f"
+    },
+    {
+      "step": 33,
+      "group": "4076d39cc15a9ff9e22df7993fb738dc1944a25299c0089ca469df6c126f669b",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00033-4076d39cc15a9ff9e22df7993fb738dc1944a25299c0089ca469df6c126f669b.json",
+      "evidence_sha256": "634cb7f9e1b4c0efc02b13fe680cf334b6d91fc032f2a7dc8a2d07047f96533b"
+    },
+    {
+      "step": 34,
+      "group": "40cde893dd2adb3d49703f95bc56b4473ae3d9d97f119486cccb9c2b112f0f05",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00034-40cde893dd2adb3d49703f95bc56b4473ae3d9d97f119486cccb9c2b112f0f05.json",
+      "evidence_sha256": "e146867e6b1004045fda347b9f1d5884961f7001e7c2399dbd45b93727d3f21e"
+    },
+    {
+      "step": 35,
+      "group": "40ddebfd10395dae043a42f5ee41e06893df62240cec88158b58c9ef05e6cf12",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00035-40ddebfd10395dae043a42f5ee41e06893df62240cec88158b58c9ef05e6cf12.json",
+      "evidence_sha256": "34b598ef30aef2dfcf60ba6c917a08600b0a965294ab154505065f275c12a82f"
+    },
+    {
+      "step": 36,
+      "group": "438bc6bda8f0061c1997e4ce5ae545130f59ff0923dd5aa55042e3fa211cd068",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00036-438bc6bda8f0061c1997e4ce5ae545130f59ff0923dd5aa55042e3fa211cd068.json",
+      "evidence_sha256": "b7f9f19c395b689422d6f6ec3c4af54265f22b2b8575e673bbd8f5e34f217289"
+    },
+    {
+      "step": 37,
+      "group": "43c6478d1dc16dab7ecbf27c2bf2651970f22dcb276f2c6788a3b10c294d94a0",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00037-43c6478d1dc16dab7ecbf27c2bf2651970f22dcb276f2c6788a3b10c294d94a0.json",
+      "evidence_sha256": "e34980ebf2bbb9616e71e10b53da2fba57a30fafa5f0c568db07b6033857d432"
+    },
+    {
+      "step": 38,
+      "group": "44621bfc17b16548e9d5e8867f3b1f1eca5fb6578e5bfba6ec15180f54c0798b",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00038-44621bfc17b16548e9d5e8867f3b1f1eca5fb6578e5bfba6ec15180f54c0798b.json",
+      "evidence_sha256": "ded038515d67d7af3d79f5ff6fc1977d5d67b4baee5733b41d65a014b1b4bc09"
+    },
+    {
+      "step": 39,
+      "group": "44aec7148e0458e3da1829f6a04e82a14afd2daee6e69250c69a5b19e7385458",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00039-44aec7148e0458e3da1829f6a04e82a14afd2daee6e69250c69a5b19e7385458.json",
+      "evidence_sha256": "18201d73bf84272a0c2adc6759403b47f15e8c5905bcebe23ba5e0ab83cea530"
+    },
+    {
+      "step": 40,
+      "group": "456e46486e965416f7c76dd6c2e11c3718d9155a6e50f7d6960a0a8b7598a1bc",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00040-456e46486e965416f7c76dd6c2e11c3718d9155a6e50f7d6960a0a8b7598a1bc.json",
+      "evidence_sha256": "87311c13f931ec8e6eda4051da1d32a3efe819aab37d0fa035c7400aafa91bf4"
+    },
+    {
+      "step": 41,
+      "group": "456e669980b56e9e8f5eeb7587f9c405b9b090897a85718ff1e635a6afe1b610",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00041-456e669980b56e9e8f5eeb7587f9c405b9b090897a85718ff1e635a6afe1b610.json",
+      "evidence_sha256": "dfbe105c1ef23c46908007c11231b7e9c15e00e2406db04c66acffdf4b995451"
+    },
+    {
+      "step": 42,
+      "group": "4911edf7fd634cc71ca3711c8afe28e254c9d69b07ce7bc452d498f005d5fae8",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00042-4911edf7fd634cc71ca3711c8afe28e254c9d69b07ce7bc452d498f005d5fae8.json",
+      "evidence_sha256": "814909cc30b607b7d168822737fa53d09113b80db045bf12be12866f11a3e014"
+    },
+    {
+      "step": 43,
+      "group": "4ba2e405c73bb28b5c5fa963ed67b0f95526d7df9fda85b9d690f7c9fa9ffa2e",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00043-4ba2e405c73bb28b5c5fa963ed67b0f95526d7df9fda85b9d690f7c9fa9ffa2e.json",
+      "evidence_sha256": "e497ac53503d3ca3468a2c6c4e51349478de0f95a9b5ef8559f123fc49554214"
+    },
+    {
+      "step": 44,
+      "group": "4f13906a53b4e3293f3753ef1bf47c3560d104a4494af7c0b7f95be56b21e302",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00044-4f13906a53b4e3293f3753ef1bf47c3560d104a4494af7c0b7f95be56b21e302.json",
+      "evidence_sha256": "d60b2a81b9db028bb97b088647654189b9f30421fdf9f42a82db29209c83d712"
+    },
+    {
+      "step": 45,
+      "group": "4f8ea7861b62ea83ba5b4d34f7ecf142b95743b36e671c268b229714a2993ed4",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00045-4f8ea7861b62ea83ba5b4d34f7ecf142b95743b36e671c268b229714a2993ed4.json",
+      "evidence_sha256": "160df4ff152a45fb64185c64a6bd879f813be1e172e55d1236a4ad49ae1fae9a"
+    },
+    {
+      "step": 46,
+      "group": "52639ca7e61b9298729bc774b73e25ec14309c991e270a838981a61f18751d65",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00046-52639ca7e61b9298729bc774b73e25ec14309c991e270a838981a61f18751d65.json",
+      "evidence_sha256": "19c74b9d5dfacfa020ff2d7b6260806f1ccf39bcdeda3d35eba44363a9a25cba"
+    },
+    {
+      "step": 47,
+      "group": "543c72d9f05c34db0756bb796d63bb087056bfb543865d632efeec4aec6ddbc6",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00047-543c72d9f05c34db0756bb796d63bb087056bfb543865d632efeec4aec6ddbc6.json",
+      "evidence_sha256": "67e5434cb28b9c23870437280f7190d61e50951973836300b539910bc8941289"
+    },
+    {
+      "step": 48,
+      "group": "55e248a21ef0904f6ef57c79f16dce28cb48bda8248787d42c0dc9e51bfcea74",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00048-55e248a21ef0904f6ef57c79f16dce28cb48bda8248787d42c0dc9e51bfcea74.json",
+      "evidence_sha256": "d16235eb878e1c1ffc5f6156d7dd292695319b101fc23caf4cd217b9242c63e5"
+    },
+    {
+      "step": 49,
+      "group": "563897ddf3a3f3bc4629f062ead77d9857e652b6b5d4daec69706fe56d2658dd",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00049-563897ddf3a3f3bc4629f062ead77d9857e652b6b5d4daec69706fe56d2658dd.json",
+      "evidence_sha256": "a277ac75a551882844fe90b7df820618284209a4fb6af458b3053dcd12a8eb9d"
+    },
+    {
+      "step": 50,
+      "group": "56aa89ff98231f93af13482008158c359b6d2e25776cf99cdfe501f11240502d",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00050-56aa89ff98231f93af13482008158c359b6d2e25776cf99cdfe501f11240502d.json",
+      "evidence_sha256": "cacd3e97f2ab3d2c59638bed6c4454b383f22bcbf44f6494f98399cdf4e78b53"
+    },
+    {
+      "step": 51,
+      "group": "588d34f16d91e96a890145833cb50e328101443920dff7d1278ab23241c84b62",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00051-588d34f16d91e96a890145833cb50e328101443920dff7d1278ab23241c84b62.json",
+      "evidence_sha256": "320b535e4b542f23a4a99efb40626629b3af3b30ed441ad140846cc315b23e48"
+    },
+    {
+      "step": 52,
+      "group": "58cb133c7bc4a32b7f8a1c6fa15f2d10d283b5eb9033ee8c268a33448c5bf587",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00052-58cb133c7bc4a32b7f8a1c6fa15f2d10d283b5eb9033ee8c268a33448c5bf587.json",
+      "evidence_sha256": "9f6f060ecf08856d4967dc8063b794e285f842a639574a0df968d475449b7ce4"
+    },
+    {
+      "step": 53,
+      "group": "5c2dcdf9043b2e9eee522dd7567c58f6143c383bf732bd9991f81681e70d907e",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00053-5c2dcdf9043b2e9eee522dd7567c58f6143c383bf732bd9991f81681e70d907e.json",
+      "evidence_sha256": "91f6be4922f4744d368aeb93f4b5d53c2baa0d5fa658432eba928cccd00ada28"
+    },
+    {
+      "step": 54,
+      "group": "5fd501648cf1b5a96779beecff2b8ea530738f6356aeaf0309117e8fd2539aab",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00054-5fd501648cf1b5a96779beecff2b8ea530738f6356aeaf0309117e8fd2539aab.json",
+      "evidence_sha256": "9bba07b77db31cb517440f6055f01cb018c050f018e88049e6d105488c346680"
+    },
+    {
+      "step": 55,
+      "group": "64581ab8d583f5bf3c26565a0e049c88719e208d2c7966323b6af95065908cc6",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00055-64581ab8d583f5bf3c26565a0e049c88719e208d2c7966323b6af95065908cc6.json",
+      "evidence_sha256": "e9e2ea32ef1b08d74e4a65fb6088aa8e59710b327c3dbe07a54e12a3ae38ebbd"
+    },
+    {
+      "step": 56,
+      "group": "6771482fb365cef0ae85bc57e76a38d5d63e8ae5a1fca16968d344cc0b2adcbc",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00056-6771482fb365cef0ae85bc57e76a38d5d63e8ae5a1fca16968d344cc0b2adcbc.json",
+      "evidence_sha256": "516bed849c5e71be596270ddc8ec9f260999a6fafea1baa85bb544b8a278dbf1"
+    },
+    {
+      "step": 57,
+      "group": "6863c0b24efad2a3f4f5889beecbe8cc10a47c1cb087120059a28bc7e97aa57c",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00057-6863c0b24efad2a3f4f5889beecbe8cc10a47c1cb087120059a28bc7e97aa57c.json",
+      "evidence_sha256": "a7958b2b8aebd91a19558ecc10464b94e427735ca1e4c7053a624470b08e6bde"
+    },
+    {
+      "step": 58,
+      "group": "6aefe2ee7f344f72cb230b83f17a40b1f5ce9b0d6017ae95ac6cd5c56f512257",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00058-6aefe2ee7f344f72cb230b83f17a40b1f5ce9b0d6017ae95ac6cd5c56f512257.json",
+      "evidence_sha256": "29093423dc73b76072e0209ee5a2fc87ea140299295000cbd4d23d83c756812e"
+    },
+    {
+      "step": 59,
+      "group": "6c17fe8a8c97a7dbfbbe5d97493ed66fecfef4773fd389606f6d17a87e603e42",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00059-6c17fe8a8c97a7dbfbbe5d97493ed66fecfef4773fd389606f6d17a87e603e42.json",
+      "evidence_sha256": "ce22b28cd7bfc252c747b3a3540f11859c6e87196049a852a67601ceecfca285"
+    },
+    {
+      "step": 60,
+      "group": "6e427c35bf0d84fdff276d53ce4202e340c063ec422156f5b113622de77ef2a7",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00060-6e427c35bf0d84fdff276d53ce4202e340c063ec422156f5b113622de77ef2a7.json",
+      "evidence_sha256": "bb50f1af8ea8c1801790bc6be068896c2486499e4d4f19c0494dc01812530479"
+    },
+    {
+      "step": 61,
+      "group": "70aced96346376943820650eff9737547a6e542eaaed4afbb7bfad9a9b579a2e",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00061-70aced96346376943820650eff9737547a6e542eaaed4afbb7bfad9a9b579a2e.json",
+      "evidence_sha256": "cf6946ab9ff31ae9eb9450745f20ed4475c4d16237762fbae2f742280244e070"
+    },
+    {
+      "step": 62,
+      "group": "72ab029efa7f5924c0e3585859cc6e1d014b85dae71967025bbce6923a734dff",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00062-72ab029efa7f5924c0e3585859cc6e1d014b85dae71967025bbce6923a734dff.json",
+      "evidence_sha256": "fa81aaae7f3e95ddc4b42c85cac15d3f97506aadf7a02de84778ace3cd2c9a52"
+    },
+    {
+      "step": 63,
+      "group": "72e9fe323cfbd81aa7ba346c370451eab158b5b48b6f00b0b88b11814666aafd",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00063-72e9fe323cfbd81aa7ba346c370451eab158b5b48b6f00b0b88b11814666aafd.json",
+      "evidence_sha256": "43c882ad631181c0be7f5a9c57a56c3a171a090a8714aa8e9c6ced5c1aec711c"
+    },
+    {
+      "step": 64,
+      "group": "745fbe5d031952a4f37f729e03170796fb4d3fcc462dd406d174e00377d27a09",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00064-745fbe5d031952a4f37f729e03170796fb4d3fcc462dd406d174e00377d27a09.json",
+      "evidence_sha256": "4dae5037e9adc9bb7940af04e5ad7a7bbcbcac7869b8fc78e5a8024251e1a6e9"
+    },
+    {
+      "step": 65,
+      "group": "74c85000b0afca612e4ac9d62af978d6434102366ca7f6cbe8470803bcbec525",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00065-74c85000b0afca612e4ac9d62af978d6434102366ca7f6cbe8470803bcbec525.json",
+      "evidence_sha256": "a6f55fb112015c93c129eebc2e86ad29e1e1102e37eee390eae7b75d66ad4063"
+    },
+    {
+      "step": 66,
+      "group": "754cb209500121af2a53ac65e74953a748c667ae296ba7641abcc425f0096f00",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00066-754cb209500121af2a53ac65e74953a748c667ae296ba7641abcc425f0096f00.json",
+      "evidence_sha256": "94f6ee6c0397c6236a716560e011851501e448d1f02fed789fc2b6bb01bbaed8"
+    },
+    {
+      "step": 67,
+      "group": "763cd27235416f6d2f4bbff0d78f098a0c9bab0afc8cfdf49e16d9e1073595aa",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00067-763cd27235416f6d2f4bbff0d78f098a0c9bab0afc8cfdf49e16d9e1073595aa.json",
+      "evidence_sha256": "05303bb7c83bac1207ebdc060e7353c7e0b20be222078d1b26c3b6f601f46e1c"
+    },
+    {
+      "step": 68,
+      "group": "76f4636b9fc4561d9d055c8a5b5ce85bd5409163c0d9c8e1d74b3ac8587be48e",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00068-76f4636b9fc4561d9d055c8a5b5ce85bd5409163c0d9c8e1d74b3ac8587be48e.json",
+      "evidence_sha256": "ad4ebd4643fe826491c0b2514f6a2f0e3cb8e9f25a9cf8db9d62202c5be8e2db"
+    },
+    {
+      "step": 69,
+      "group": "7881d518b8f2109a7e2632bb77eb7b5083aed71b6da29c452cacacdf03811f71",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00069-7881d518b8f2109a7e2632bb77eb7b5083aed71b6da29c452cacacdf03811f71.json",
+      "evidence_sha256": "6508c30325db9bdff983023cca619aebf85a7d3746488e1bcb358cdd0aff938e"
+    },
+    {
+      "step": 70,
+      "group": "7a75e55b06a258f828eaf473c8b9825e127e04ecb927d85fb955ecf2f15d2379",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00070-7a75e55b06a258f828eaf473c8b9825e127e04ecb927d85fb955ecf2f15d2379.json",
+      "evidence_sha256": "0f6ca7de58ffd93526f8af19e3fdf53dad8ec40138f11c674189103482a2cb7e"
+    },
+    {
+      "step": 71,
+      "group": "7d5d50b4550b2b01fdbca9568a62a6e711ca4bba72421024b327dadee3d95488",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00071-7d5d50b4550b2b01fdbca9568a62a6e711ca4bba72421024b327dadee3d95488.json",
+      "evidence_sha256": "b76aab9b823b5a7d1a7381ffd170726d4cfa855111ebbec415af639fbc7d7aec"
+    },
+    {
+      "step": 72,
+      "group": "7f3d49ba3eddee5ca5a4e28fab894ec8a29408dfd80f4ad21bbba1fbf9d3aeee",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00072-7f3d49ba3eddee5ca5a4e28fab894ec8a29408dfd80f4ad21bbba1fbf9d3aeee.json",
+      "evidence_sha256": "65fd49e18b08e518de4d096226ec8c2c67d1c13cc78c1228bd2e605d1d6a22ab"
+    },
+    {
+      "step": 73,
+      "group": "800d1029a5d463cafbeb972182e8525ddf2f52dc2fdc0868d899b77ab6ed43a3",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00073-800d1029a5d463cafbeb972182e8525ddf2f52dc2fdc0868d899b77ab6ed43a3.json",
+      "evidence_sha256": "ffad0a06c37b68413c3a5eb7a88457e5f2279026ab57eb817b7652df1b60bbe6"
+    },
+    {
+      "step": 74,
+      "group": "81ce7f451bb426a8a185df83d4fa68a0211471a7f8252001794d7da23f6f4e2e",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00074-81ce7f451bb426a8a185df83d4fa68a0211471a7f8252001794d7da23f6f4e2e.json",
+      "evidence_sha256": "f32f981d7708cf225e0b3bb0fc81f74cc2a422a7ba22fab2a75345a40886fe87"
+    },
+    {
+      "step": 75,
+      "group": "8326528498278809465598e1ef4b3f87be6539bdce2cab80d6fdfd2d483852e2",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00075-8326528498278809465598e1ef4b3f87be6539bdce2cab80d6fdfd2d483852e2.json",
+      "evidence_sha256": "9fdab6379396146651a6d8a77281b4fa3401c103adb1101fc8d0fb39fb42bcaa"
+    },
+    {
+      "step": 76,
+      "group": "8a5dd8c4a2cc272e8deb3db6fd0cb00eec2e2f1db4f611c29bcbd90a3c59e25d",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00076-8a5dd8c4a2cc272e8deb3db6fd0cb00eec2e2f1db4f611c29bcbd90a3c59e25d.json",
+      "evidence_sha256": "8e417eb9828925abc1394684f06cd6cd8f7c2c7f311baa72c0438ffdcb5866a6"
+    },
+    {
+      "step": 77,
+      "group": "8b130d7f2c66f3ee7285c56305bb98407c77de76a9e66178c4d7eb0bf1596130",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00077-8b130d7f2c66f3ee7285c56305bb98407c77de76a9e66178c4d7eb0bf1596130.json",
+      "evidence_sha256": "110bdaa22a6cb5dc311e62c2f366fc03ae6310150808a57ccfe805368a9bb8ca"
+    },
+    {
+      "step": 78,
+      "group": "8c4d993fbd109195d940d804b9e79289908a9ad136a2b3e6a1a5fd6903bb62d4",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00078-8c4d993fbd109195d940d804b9e79289908a9ad136a2b3e6a1a5fd6903bb62d4.json",
+      "evidence_sha256": "5fa27dc8d9478f6289030fd1cb0ea591d9902df3e4472632e7ce71b06f98ccaa"
+    },
+    {
+      "step": 79,
+      "group": "8d2d0199f0f3711eeeca8b7111b438fe8c90e883f492f0e7c5974f9d971584a8",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00079-8d2d0199f0f3711eeeca8b7111b438fe8c90e883f492f0e7c5974f9d971584a8.json",
+      "evidence_sha256": "495c2473ccd9e9a06b8a6dc69a1070b5508bbe61b78937eaf0e10b701507a4c6"
+    },
+    {
+      "step": 80,
+      "group": "8df3dfc713d4463e60899f8fb9182b19521d17b10ee13484119626cefdf4add4",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00080-8df3dfc713d4463e60899f8fb9182b19521d17b10ee13484119626cefdf4add4.json",
+      "evidence_sha256": "29d748f894f861e50f81006a5187451fdb30b70c0a6a29d3867916cd82a86856"
+    },
+    {
+      "step": 81,
+      "group": "8f711e6ca847e65d5a550d7ad8f12b9247c4f923a7b5c2fe2e1ad67e48014d80",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00081-8f711e6ca847e65d5a550d7ad8f12b9247c4f923a7b5c2fe2e1ad67e48014d80.json",
+      "evidence_sha256": "f2d91a7cc7d20039d65532f05c0fce1d1ee4e141b7493222608894b50d822aa1"
+    },
+    {
+      "step": 82,
+      "group": "8ff8f3d1c3ce7ba4718e0b7174f6dbf21fccde36ab367deec29d2f194d14383a",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00082-8ff8f3d1c3ce7ba4718e0b7174f6dbf21fccde36ab367deec29d2f194d14383a.json",
+      "evidence_sha256": "085b6d5542833aa34c19fdb00d04e36bb7510a95b64c1445855e7323dd03a662"
+    },
+    {
+      "step": 83,
+      "group": "90a392fd0cb8c75ef13774ac4706a81511fcd0ec1aa61a82304466e1eb166a0d",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00083-90a392fd0cb8c75ef13774ac4706a81511fcd0ec1aa61a82304466e1eb166a0d.json",
+      "evidence_sha256": "96be39712ceb41c1bcb8aabaea8291caf785adac982439a5efe149c71c5d4b18"
+    },
+    {
+      "step": 84,
+      "group": "9195a158832a5b1f79fac9dc3d96b1800e5fb15af42f10743d0720513cdba9f5",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00084-9195a158832a5b1f79fac9dc3d96b1800e5fb15af42f10743d0720513cdba9f5.json",
+      "evidence_sha256": "3bc73d8cb4150ffa9e35ece6b0a57dc42eeb9d934612a4eb12e261dcc2089088"
+    },
+    {
+      "step": 85,
+      "group": "92693fffd95fabb1022c1d3d46856a3aff9d82f0465c3304812a7816fa035dbf",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00085-92693fffd95fabb1022c1d3d46856a3aff9d82f0465c3304812a7816fa035dbf.json",
+      "evidence_sha256": "f48867533da7b8451312e90aeede947156c9ddeae088d4075081a400dd7e8281"
+    },
+    {
+      "step": 86,
+      "group": "95a74a199ca668978f94e609ac8b2325a222a0687f29c0212847a2a7b644d3b2",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00086-95a74a199ca668978f94e609ac8b2325a222a0687f29c0212847a2a7b644d3b2.json",
+      "evidence_sha256": "c1271b2861de87d43703198be86c4e27c7531856c66e96891d1df2e400275417"
+    },
+    {
+      "step": 87,
+      "group": "98331392a37452ebda25e90ffd5c3f4cebc8132659df0e6021f245bea8c4c98e",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00087-98331392a37452ebda25e90ffd5c3f4cebc8132659df0e6021f245bea8c4c98e.json",
+      "evidence_sha256": "a22d58a3609338c53f8bb3aaee69336abdca97056e6bec5ceabbc23edafa7eba"
+    },
+    {
+      "step": 88,
+      "group": "98a2dc302eaef99a2b52d7f100593f660327679169781fcdb2b1085ae3354049",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00088-98a2dc302eaef99a2b52d7f100593f660327679169781fcdb2b1085ae3354049.json",
+      "evidence_sha256": "aab4be8e9539d298348a4503e21d54b6cc1cd8faf68c10a4cc3e62b7cdc97c42"
+    },
+    {
+      "step": 89,
+      "group": "98ecb77e51dda6d79bb7cb0860410d4b87191c294e316b0984caafebdbd02fd3",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00089-98ecb77e51dda6d79bb7cb0860410d4b87191c294e316b0984caafebdbd02fd3.json",
+      "evidence_sha256": "4510cbc9a93bd28c2afe503aac2c10d83136c370c3e1d3ee732842f8b2d8118c"
+    },
+    {
+      "step": 90,
+      "group": "99bf4cf3f61c21859279efbf82e4fc0484b4f70c4fd78bd987054e6eebcdd097",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00090-99bf4cf3f61c21859279efbf82e4fc0484b4f70c4fd78bd987054e6eebcdd097.json",
+      "evidence_sha256": "ca85f834c945a7dccd739d7dfbe0c57a18419b4cf516734c12e46b28421ad363"
+    },
+    {
+      "step": 91,
+      "group": "9ef0c004a3f0f8e518f4eb80219e5f5e828550c506eae064e03cf033739fd7ec",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00091-9ef0c004a3f0f8e518f4eb80219e5f5e828550c506eae064e03cf033739fd7ec.json",
+      "evidence_sha256": "f9440f808b1330b795acb3c36d4d718f352846803e83371ded54beabb89fa9fb"
+    },
+    {
+      "step": 92,
+      "group": "a1040a766261dcd683af28b4e785eda80bb4834ea0b55c0ec824b7c72e844108",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00092-a1040a766261dcd683af28b4e785eda80bb4834ea0b55c0ec824b7c72e844108.json",
+      "evidence_sha256": "3aeca0c86506864dc665a1a05d582923ffa3954d628371bc0d996bff163892eb"
+    },
+    {
+      "step": 93,
+      "group": "a15b769a03d749fb2c42dc953a7a9c2c478f5b4538beb51d986c91ad431d0174",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00093-a15b769a03d749fb2c42dc953a7a9c2c478f5b4538beb51d986c91ad431d0174.json",
+      "evidence_sha256": "4b323be39516b461ec5d2267872303fcbf66e7e1c8f94d967fbc863f43cba1bb"
+    },
+    {
+      "step": 94,
+      "group": "ab23f2e8638894c2b4422a84c6f21166746897e480623efcc1d4cc670af2ef0b",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00094-ab23f2e8638894c2b4422a84c6f21166746897e480623efcc1d4cc670af2ef0b.json",
+      "evidence_sha256": "242685a18e9e1b934ae023a9213cc3f375250abc7f404fb4f8a9c59cf47d7c16"
+    },
+    {
+      "step": 95,
+      "group": "abedfc4acbc133d300cf5da9f18caf53a692fa830fd483f5be4579d2756e41d2",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00095-abedfc4acbc133d300cf5da9f18caf53a692fa830fd483f5be4579d2756e41d2.json",
+      "evidence_sha256": "22885f0f398ba71e648d3867c7def9e8a5572b55eedb09e3d4fb58148efa55ab"
+    },
+    {
+      "step": 96,
+      "group": "ae1f1e6a2476c11c788af955f2677774d6a7301f2755c9d571d6ef13053791a3",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00096-ae1f1e6a2476c11c788af955f2677774d6a7301f2755c9d571d6ef13053791a3.json",
+      "evidence_sha256": "dca8abbe288edbbde2c1ff4c0cda647ba062c61eef2d5644ba87565edd52c0ad"
+    },
+    {
+      "step": 97,
+      "group": "ae3e34729751c9b6f9266b8ce113342f9cf9bacecd854659721326b15056ca60",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00097-ae3e34729751c9b6f9266b8ce113342f9cf9bacecd854659721326b15056ca60.json",
+      "evidence_sha256": "2d9245be3de22b3cd7b45d503a3ea4e4e4c482e83d5c5260c1001060370ef08d"
+    },
+    {
+      "step": 98,
+      "group": "b11795015f358b20d0e175f0f447dd1a823293c3fff0c988bf1df528aa53a1db",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00098-b11795015f358b20d0e175f0f447dd1a823293c3fff0c988bf1df528aa53a1db.json",
+      "evidence_sha256": "a7ace15427a7aee61206eb8d98ade839f352e2ea6e55199acf3437fc98675536"
+    },
+    {
+      "step": 99,
+      "group": "b53f69249846e7918c678b77da8a11d5d70e5ef0ed20586b28d8ad2de9b928ea",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00099-b53f69249846e7918c678b77da8a11d5d70e5ef0ed20586b28d8ad2de9b928ea.json",
+      "evidence_sha256": "77c943ee2e39c1e2eb290addf21258333cf9b320b611cbf409e74d04fa304352"
+    },
+    {
+      "step": 100,
+      "group": "b63aad54a65d29e78904b44c0f5beba7b1b6dd6865cdbffa9e1f9db753e4559e",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00100-b63aad54a65d29e78904b44c0f5beba7b1b6dd6865cdbffa9e1f9db753e4559e.json",
+      "evidence_sha256": "c8670ee00957f64f0d41edaee1d236cdaee6329f5c8b0aae86683bfab8b07786"
+    },
+    {
+      "step": 101,
+      "group": "b6c747c052a12dd763b8c92c0e2ce4ba9fbe4b56d87a134eacd77b233919e3c0",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00101-b6c747c052a12dd763b8c92c0e2ce4ba9fbe4b56d87a134eacd77b233919e3c0.json",
+      "evidence_sha256": "75857f2d82b2aa858fa183ce9ab9b83f7c777d2da9f1c920bb2a8343195d78e9"
+    },
+    {
+      "step": 102,
+      "group": "b7628b0a8822c555194b08b8de7d75302be2b3a584455a6d8427e8c7750e6952",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00102-b7628b0a8822c555194b08b8de7d75302be2b3a584455a6d8427e8c7750e6952.json",
+      "evidence_sha256": "2f44ccc9c4f1c14b248ed007c8a52fcd85557c599d22c410b36c737b0189560f"
+    },
+    {
+      "step": 103,
+      "group": "b7cb095b07b001b663ddc305bbc5a91ec3bd7ce6324fb8c617d62547d74e4cec",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00103-b7cb095b07b001b663ddc305bbc5a91ec3bd7ce6324fb8c617d62547d74e4cec.json",
+      "evidence_sha256": "fc49117d8a8a5ef3411aa97c0ee209f93dc2ba50c2a53ef04057969b5bd24e87"
+    },
+    {
+      "step": 104,
+      "group": "b8af8a0acafe44e0a6851c7eac0dafbe67bb83b0522693b4752912bf62bf95fc",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00104-b8af8a0acafe44e0a6851c7eac0dafbe67bb83b0522693b4752912bf62bf95fc.json",
+      "evidence_sha256": "ae6f6ffc607956f1e5d918ec593ac4bef7034889294d987ff2c5add429cbcad4"
+    },
+    {
+      "step": 105,
+      "group": "b9e1f75918794a79ccc36ec13fa6169db5f93e1ed821394f4fec8d9c88193c91",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00105-b9e1f75918794a79ccc36ec13fa6169db5f93e1ed821394f4fec8d9c88193c91.json",
+      "evidence_sha256": "867cda90b044943b57c94d1708075ca4cfbac9c875b5470df315535bd159bd1a"
+    },
+    {
+      "step": 106,
+      "group": "baefa8cc0455aa7c8b6bec23c37b1b9e254710999f2016265642719b3987abd9",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00106-baefa8cc0455aa7c8b6bec23c37b1b9e254710999f2016265642719b3987abd9.json",
+      "evidence_sha256": "d2c7cb6b7b57bc4a268c84c98907172f45388543f528e6d8f67659ef26526c16"
+    },
+    {
+      "step": 107,
+      "group": "bb1e205a393ade7b0587a942976c0b9c994b6182f1fb2f497b301b329c209267",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00107-bb1e205a393ade7b0587a942976c0b9c994b6182f1fb2f497b301b329c209267.json",
+      "evidence_sha256": "6c85deb1bbed1a08cb4c406733acca666f82f9122ea1635046e505f64b9afcd6"
+    },
+    {
+      "step": 108,
+      "group": "bb5f8de2b727b01ffdf0b67158f7492f2767601b3630190848dac52abb5378fa",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00108-bb5f8de2b727b01ffdf0b67158f7492f2767601b3630190848dac52abb5378fa.json",
+      "evidence_sha256": "8c587ab99bec9fde13ccacd5f1525ab8f703eae99b6e04e0433a32199f1bc1dd"
+    },
+    {
+      "step": 109,
+      "group": "bbeb879b4abbc3cceee799bbaac8b08c9f25be7cd212c1eee8607678f57529d0",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00109-bbeb879b4abbc3cceee799bbaac8b08c9f25be7cd212c1eee8607678f57529d0.json",
+      "evidence_sha256": "8932de1986ea6de3ee042eb361513760ea0f294f12280f58b0d8b1249fe79b9b"
+    },
+    {
+      "step": 110,
+      "group": "bc3920e87e14930f74b5aa9b507bb9cbcc3cbd29f25f1f95348f2af5dadd20ad",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00110-bc3920e87e14930f74b5aa9b507bb9cbcc3cbd29f25f1f95348f2af5dadd20ad.json",
+      "evidence_sha256": "0db6d3c0a2f15873d0d8a8d4daff06f54f04e89efa8d3b48bb7296ca91aec288"
+    },
+    {
+      "step": 111,
+      "group": "bcce4a848bc86a3e92452f74cb4d9c1db584cb88c31b22c9d33a4395ab9667b2",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00111-bcce4a848bc86a3e92452f74cb4d9c1db584cb88c31b22c9d33a4395ab9667b2.json",
+      "evidence_sha256": "16979ada75ba947470b749dbbb9c8e78223e89cf056239b83c20fa2c7b64cfdc"
+    },
+    {
+      "step": 112,
+      "group": "c0d69b9dd2bf2be811406dd65038dfa87454a9270cb477d7b6994c965edddf1f",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00112-c0d69b9dd2bf2be811406dd65038dfa87454a9270cb477d7b6994c965edddf1f.json",
+      "evidence_sha256": "79283ffa2b54b79e5b98a9f10e573bdc63ad6fa187f687ab911d172024bd3c0b"
+    },
+    {
+      "step": 113,
+      "group": "c3ec45ee1fa15a160c61f8d3bc224af86be99d5d28855b48920905b02cc4c4cd",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00113-c3ec45ee1fa15a160c61f8d3bc224af86be99d5d28855b48920905b02cc4c4cd.json",
+      "evidence_sha256": "55bc4891c51f1e3df16f70d72f0700cdc59073617ef6b1c0060b45ba022ec513"
+    },
+    {
+      "step": 114,
+      "group": "c4d74729817e244927d2136c12a845edc3a3e33c4c917759eabd6e6572c630dd",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00114-c4d74729817e244927d2136c12a845edc3a3e33c4c917759eabd6e6572c630dd.json",
+      "evidence_sha256": "b6ce25e536fdbfa8aa10c0d5bde6ccd7bc855ba78eb0ccbdbb87a31f8d12dc52"
+    },
+    {
+      "step": 115,
+      "group": "c65aa480a8a7578bedb63f9538c474977b0a3c2e765455576ab82e769bf39b84",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00115-c65aa480a8a7578bedb63f9538c474977b0a3c2e765455576ab82e769bf39b84.json",
+      "evidence_sha256": "e56bd316a7bf7a21dc486397fdd9338cf5dda4d52a3134c0e9f35724135cc2e1"
+    },
+    {
+      "step": 116,
+      "group": "c99fa6f4ff4a096f4d8acdb246db2c1e5f3d806b34b6f1d33151ae863c516a53",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00116-c99fa6f4ff4a096f4d8acdb246db2c1e5f3d806b34b6f1d33151ae863c516a53.json",
+      "evidence_sha256": "07ea04513af28a24c51ee643b8824bfe99f66476c5baafd9b2e8bddacedcbdcc"
+    },
+    {
+      "step": 117,
+      "group": "cbc92052ba2ea7c79aada526c4510d9778c8b075c15dfadd7314a3f15d9f728a",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00117-cbc92052ba2ea7c79aada526c4510d9778c8b075c15dfadd7314a3f15d9f728a.json",
+      "evidence_sha256": "f380949b5167c16d9c16756ac8e8cc616a2887c8207d5aa5cf0fdcc473a0523b"
+    },
+    {
+      "step": 118,
+      "group": "d0a9d47ad557ed972508edabfbc8d82efe4c98c11b8a2f38774298a0c9fae50e",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00118-d0a9d47ad557ed972508edabfbc8d82efe4c98c11b8a2f38774298a0c9fae50e.json",
+      "evidence_sha256": "bba3c7a734265fa8ac6d00843e902e9e349218a5d426386e08eebe1e73eb81c2"
+    },
+    {
+      "step": 119,
+      "group": "d236cd2caa046856d606b92e7a1fcab11700a2fc09a956123d5a0557f6170d90",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00119-d236cd2caa046856d606b92e7a1fcab11700a2fc09a956123d5a0557f6170d90.json",
+      "evidence_sha256": "8c9f017adbfbb679fe1d0ba85027605e23f0ac40ac2bfa427526fbac0453f088"
+    },
+    {
+      "step": 120,
+      "group": "d28acd99a22977b2e35b7bf3a27ec388021ffc8835f5722bff8663628cef3364",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00120-d28acd99a22977b2e35b7bf3a27ec388021ffc8835f5722bff8663628cef3364.json",
+      "evidence_sha256": "a39664a3941d107bfe7d2139412923ddb3da757e0abde7708103da6191cad7ef"
+    },
+    {
+      "step": 121,
+      "group": "d29f02b3d54f37c617c809c59f7c130faf157651a8a4d2ccf9c98c701fd09c07",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00121-d29f02b3d54f37c617c809c59f7c130faf157651a8a4d2ccf9c98c701fd09c07.json",
+      "evidence_sha256": "bddad1c22463ab1bb338c8ce792b0cc12578a89e0a0cf9c0b29a0142d9757bc1"
+    },
+    {
+      "step": 122,
+      "group": "d2cc55bcf365bac0faa02444be2e65465cdcec18a5a8dd569909b2e6b92cd3c1",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00122-d2cc55bcf365bac0faa02444be2e65465cdcec18a5a8dd569909b2e6b92cd3c1.json",
+      "evidence_sha256": "7d23a830d1692bd68914b4aa45e08193aef9f5a8148e64947eb5b6ad10c31523"
+    },
+    {
+      "step": 123,
+      "group": "d369ebfd46b5ef745e57e1a91500ec8782be82064b48dab80a89a848f36dc0c5",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00123-d369ebfd46b5ef745e57e1a91500ec8782be82064b48dab80a89a848f36dc0c5.json",
+      "evidence_sha256": "889717641e5a751cf0356c4ee022fed01602992cd3add134d08bbd0e0b013e81"
+    },
+    {
+      "step": 124,
+      "group": "d5f616d789299aec9ceeb1839904933923243d62a23f8086a0a8bf6ef51990e4",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00124-d5f616d789299aec9ceeb1839904933923243d62a23f8086a0a8bf6ef51990e4.json",
+      "evidence_sha256": "b86b19e237b4becbad85ff10414b27c4fb3a5b112a005cf903fc433b4bd34140"
+    },
+    {
+      "step": 125,
+      "group": "d65c7e297aefac5d45abadc12f4ecf474a52b655029d7c5538fdc2882d6491d5",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00125-d65c7e297aefac5d45abadc12f4ecf474a52b655029d7c5538fdc2882d6491d5.json",
+      "evidence_sha256": "0d9ecd466b2bdaa19aae5339514bd6724717fb5576b5e179363eb8fe3e76a6a7"
+    },
+    {
+      "step": 126,
+      "group": "d747d4a31ae237f2765d9e36b759a70e73208f089f68120942126b08ea2b9ea3",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00126-d747d4a31ae237f2765d9e36b759a70e73208f089f68120942126b08ea2b9ea3.json",
+      "evidence_sha256": "7603f4c66e98a07c0d0b1e1be87cd5eb33c5bc36a8b74a11f20324789dc90fd0"
+    },
+    {
+      "step": 127,
+      "group": "d7bf0d750d574d840b5930a485af02384cc7decab9392b1528e42a1b76a841ae",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00127-d7bf0d750d574d840b5930a485af02384cc7decab9392b1528e42a1b76a841ae.json",
+      "evidence_sha256": "9864900016ccc26891c188b7c51528b0e243a9b614c45eb4f47a549092e95b2d"
+    },
+    {
+      "step": 128,
+      "group": "d8d47a3d70ab0cb9f85f40f2b8c42441fdd111ada05486f2ea5888ebd5677dde",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00128-d8d47a3d70ab0cb9f85f40f2b8c42441fdd111ada05486f2ea5888ebd5677dde.json",
+      "evidence_sha256": "efd91df54f90b99c887d8f934806479ff3753029c369fef81ea7479a7ffb96cd"
+    },
+    {
+      "step": 129,
+      "group": "d9f7fd716cd64cadb0c6b3480ebdc467a8c4ff066514db8ac26b2e60012e8b3a",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00129-d9f7fd716cd64cadb0c6b3480ebdc467a8c4ff066514db8ac26b2e60012e8b3a.json",
+      "evidence_sha256": "6ea18052aabf57ca64a0154864939baf86fbf17ef965d4b8c2935d1b1e68d7db"
+    },
+    {
+      "step": 130,
+      "group": "dd4ef763765232b73f730f5fdaefcc43640d8c5cc77db920a732e23f932ca898",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00130-dd4ef763765232b73f730f5fdaefcc43640d8c5cc77db920a732e23f932ca898.json",
+      "evidence_sha256": "e7680aea928b2bade7ffa944665ebe931443791290dff97513fcc58903240147"
+    },
+    {
+      "step": 131,
+      "group": "de41e5296821d0c9320c023770c7b5df8d3e7fd5212e3fa80016a65a2403b431",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00131-de41e5296821d0c9320c023770c7b5df8d3e7fd5212e3fa80016a65a2403b431.json",
+      "evidence_sha256": "ae94decc4c724922c2e39ed6cab8a4b9888a36ab5f926bb754b6b43c3f441869"
+    },
+    {
+      "step": 132,
+      "group": "de69c59f3e4c9e4077af108946c9b410a0fb3f0f7c87fabd3bc01cae4e0b8937",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00132-de69c59f3e4c9e4077af108946c9b410a0fb3f0f7c87fabd3bc01cae4e0b8937.json",
+      "evidence_sha256": "a988896eeaac8022646f84e04a0cae06ed22fbaa6ddbba289b55607827dad688"
+    },
+    {
+      "step": 133,
+      "group": "e1dac9d45f369d8a42807be0a1a09740af1bd4d937cc8767c66391e0678aeadf",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00133-e1dac9d45f369d8a42807be0a1a09740af1bd4d937cc8767c66391e0678aeadf.json",
+      "evidence_sha256": "fbcf4e83f58453328994233cd1893496ac6ecdf2fe15b64c196182f51223e9d1"
+    },
+    {
+      "step": 134,
+      "group": "e212f915c8b36b0b18f96d1fb8747a2d6c05151f06609d552a1fed44dcb50c97",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00134-e212f915c8b36b0b18f96d1fb8747a2d6c05151f06609d552a1fed44dcb50c97.json",
+      "evidence_sha256": "a98aa5b47ec8921d592f3b33bb29dec4f88a66962cbfcfaed635bf6c9cf7f91f"
+    },
+    {
+      "step": 135,
+      "group": "e2bfe1502fede26e9ff7886bbe0a91b84bc370f76d269dadb1fdfbf8c5df6d57",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00135-e2bfe1502fede26e9ff7886bbe0a91b84bc370f76d269dadb1fdfbf8c5df6d57.json",
+      "evidence_sha256": "9eaddcf068a7ea07f63e2b06485be020ab023e36fd5774a9d12385d976de8384"
+    },
+    {
+      "step": 136,
+      "group": "e2c0af89682a25e64331c948c64b354bd66da6cbb5764e26edbbc18664bb85dc",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00136-e2c0af89682a25e64331c948c64b354bd66da6cbb5764e26edbbc18664bb85dc.json",
+      "evidence_sha256": "d02724caf49862fe1244cbfa972e64313d0a663fbc581ef20f12eaa25b422e76"
+    },
+    {
+      "step": 137,
+      "group": "e4d4ac922258af7616d501c9df4673742a26dd09d0e58b39d2dab499f3d27289",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00137-e4d4ac922258af7616d501c9df4673742a26dd09d0e58b39d2dab499f3d27289.json",
+      "evidence_sha256": "ad355d0d71fb26a819e589af7bd0bc951d5bfbf239bf011ff85c55cb469f5bfb"
+    },
+    {
+      "step": 138,
+      "group": "e5fe914454b490c69f31bdaf16774f7f8c4879a14022173801e6ecc1ba25201d",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00138-e5fe914454b490c69f31bdaf16774f7f8c4879a14022173801e6ecc1ba25201d.json",
+      "evidence_sha256": "cfe2334744c8617a149bc64ed0dea03de384a00414f5df4ba63646ca66ac441e"
+    },
+    {
+      "step": 139,
+      "group": "e60546dee9a1b72958e436de72fb619cdc521386b6f47ec040f8f2a6e544de76",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00139-e60546dee9a1b72958e436de72fb619cdc521386b6f47ec040f8f2a6e544de76.json",
+      "evidence_sha256": "5b5a57afe428302c536dddaacd4594c4ae4f3a13a09aafae1d56417edd92ba69"
+    },
+    {
+      "step": 140,
+      "group": "e71d0c9dd80d9cdb558a95a47a898f9f0219417cf981b2b06abd4df7f582e83e",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00140-e71d0c9dd80d9cdb558a95a47a898f9f0219417cf981b2b06abd4df7f582e83e.json",
+      "evidence_sha256": "2ada44cf3a729b57a955e38ccd737ac053fceed34f4641f99de4f074cd64d465"
+    },
+    {
+      "step": 141,
+      "group": "e8b259e792a8f0e2bb54bdfb3244003469e5fa7090a25bd749f4e9a83e54642b",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00141-e8b259e792a8f0e2bb54bdfb3244003469e5fa7090a25bd749f4e9a83e54642b.json",
+      "evidence_sha256": "0a39cf05d84949146b45ac37b09a732148a1b04492f539b0229e5743e99af353"
+    },
+    {
+      "step": 142,
+      "group": "e9aec6531b3b3d702d7a37bf526bab583fb014c5fa8b190e89c33531b07135da",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00142-e9aec6531b3b3d702d7a37bf526bab583fb014c5fa8b190e89c33531b07135da.json",
+      "evidence_sha256": "f37b64e6cb5aef4193bf7721cbd49c86ba81c828761b403de6d816694b2a5ed2"
+    },
+    {
+      "step": 143,
+      "group": "eb863986ac568e60e44a940654a471730c247eafea9c2f7980fa39f3ecaf9e96",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00143-eb863986ac568e60e44a940654a471730c247eafea9c2f7980fa39f3ecaf9e96.json",
+      "evidence_sha256": "e356b65cecdcec276061e41d125f6834c4cf45a9094c591cc2ca00f469f4a962"
+    },
+    {
+      "step": 144,
+      "group": "ec96a54ee46a48e1ee174a4df14d3311991fa1612c907dc71f31dba12871b01c",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00144-ec96a54ee46a48e1ee174a4df14d3311991fa1612c907dc71f31dba12871b01c.json",
+      "evidence_sha256": "9cb23cd0b24450a2a986518e324dd227a55b18cdf7ea0cbdde80150c596faf56"
+    },
+    {
+      "step": 145,
+      "group": "ed19a22ef22e35776b5431bf8ab674b6e7e4737d12c99329329b64be8aa6f496",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00145-ed19a22ef22e35776b5431bf8ab674b6e7e4737d12c99329329b64be8aa6f496.json",
+      "evidence_sha256": "8d4ab539a3851a2f52492deaba35c775a8ede6a1b68f45f4e94e72268a820b2b"
+    },
+    {
+      "step": 146,
+      "group": "f1ca6090064baea85036d03542d930409290fbc4991248ca6b88294ef028e6fb",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00146-f1ca6090064baea85036d03542d930409290fbc4991248ca6b88294ef028e6fb.json",
+      "evidence_sha256": "f44c745b622e2b066a8d8fd96c21f4d882f3e6084ac60533824d31989b5659e9"
+    },
+    {
+      "step": 147,
+      "group": "f3f92b44fd7be9b55e06cdfc17d16b6fef4be05f298363454dc45c37c7baf951",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00147-f3f92b44fd7be9b55e06cdfc17d16b6fef4be05f298363454dc45c37c7baf951.json",
+      "evidence_sha256": "ba48896cee15a69ed22a08a3f9310e0156db7d175971ea6f3268e74c820249bc"
+    },
+    {
+      "step": 148,
+      "group": "f9d3b547a878bf4942b640ff23944a533b2e40ae278bf855a6e03ad36edf206d",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00148-f9d3b547a878bf4942b640ff23944a533b2e40ae278bf855a6e03ad36edf206d.json",
+      "evidence_sha256": "2138295463f3d5476984c189263b4da4cc4999af968aee609dbda452040e9739"
+    },
+    {
+      "step": 149,
+      "group": "fc0ec93fe1520e0b8934210252f3d16cda2d7d413f64adb238a97fad925bf62f",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00149-fc0ec93fe1520e0b8934210252f3d16cda2d7d413f64adb238a97fad925bf62f.json",
+      "evidence_sha256": "d9ba0da31fc33222aea10eab526e5d8b368d709478c291b826c80dcea731c238"
+    },
+    {
+      "step": 150,
+      "group": "fd27c2f2ff7d8ee45ebc94a273ea868c2c3f261e018755012dd7307dd143dcef",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00150-fd27c2f2ff7d8ee45ebc94a273ea868c2c3f261e018755012dd7307dd143dcef.json",
+      "evidence_sha256": "ed0674ff38e96d8b70b3b920021282470c35f8564bcfed80e6a8cc6c692843e7"
+    },
+    {
+      "step": 151,
+      "group": "fddf743e4c43559fe5a9cca6d0ded6d03144da5681beb5f8771ecfb29d7d06b9",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00151-fddf743e4c43559fe5a9cca6d0ded6d03144da5681beb5f8771ecfb29d7d06b9.json",
+      "evidence_sha256": "434b3ec2facc7f62840fd1060d0a87cd7e17ef9c201b31a0a5e46dd338b45a3b"
+    },
+    {
+      "step": 152,
+      "group": "040780bcad3cb1bdee0178587a44f68528a00e714a81562467b01bac4b92591e",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00152-040780bcad3cb1bdee0178587a44f68528a00e714a81562467b01bac4b92591e.json",
+      "evidence_sha256": "423c8ede6facee619699b8653e4035bd14adb8ceba1155270cbe55afe14637b9"
+    },
+    {
+      "step": 153,
+      "group": "4870aa3ac1aecefd6fd25b022eaf928d09f277c557c01f9dede9855c87bd4d3f",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00153-4870aa3ac1aecefd6fd25b022eaf928d09f277c557c01f9dede9855c87bd4d3f.json",
+      "evidence_sha256": "eabecf3d4c082e9dec1372e19c06f441665f977d1611d95a102ad65d185d509a"
+    },
+    {
+      "step": 154,
+      "group": "5ca380a2feadeb077be0e612708ddcec0d9126d3df5941267337cda1003c71be",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00154-5ca380a2feadeb077be0e612708ddcec0d9126d3df5941267337cda1003c71be.json",
+      "evidence_sha256": "54db22de7daec1088039d0b89755def4f68557c8497b6a23bb6ec15731bd14db"
+    },
+    {
+      "step": 155,
+      "group": "63ef84a4b36e6c1a47482f6a6c52672df1588db93cce3a954dc5a0abd30950ae",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00155-63ef84a4b36e6c1a47482f6a6c52672df1588db93cce3a954dc5a0abd30950ae.json",
+      "evidence_sha256": "a908ba2b117d336c00ee2b3d8bb26eb47aa16014ad83b7c49cdfb77510152757"
+    },
+    {
+      "step": 156,
+      "group": "8873809ae5912280ecf1be0ac96eb454ce2b7f9eaab121aabea429141448efea",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00156-8873809ae5912280ecf1be0ac96eb454ce2b7f9eaab121aabea429141448efea.json",
+      "evidence_sha256": "e7d8c8fb7a723fc7bbffb3e22adb5e7792509aa53298937c40f4b31065658160"
+    },
+    {
+      "step": 157,
+      "group": "b4b26fca94747b936f2496b9b55dbc356cf65300b0f0b2c19e152a9f4c11e8fc",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00157-b4b26fca94747b936f2496b9b55dbc356cf65300b0f0b2c19e152a9f4c11e8fc.json",
+      "evidence_sha256": "65deac1372f27a0769c3fb5162ce944df07ff55b169136aa60e0136ee29ff731"
+    },
+    {
+      "step": 158,
+      "group": "c532162d9d9064ead3f9121a28c8565810520992ea18bc70db1a80b5e59e1d4a",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00158-c532162d9d9064ead3f9121a28c8565810520992ea18bc70db1a80b5e59e1d4a.json",
+      "evidence_sha256": "abe6fdce17d0a7b1f08db0560b1833500e575a79375d4f66905928175be4eb84"
+    },
+    {
+      "step": 159,
+      "group": "e8f7890512168311e5347ca4dd9550733a99951b2f794a6a9c44a2a891d94d9f",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00159-e8f7890512168311e5347ca4dd9550733a99951b2f794a6a9c44a2a891d94d9f.json",
+      "evidence_sha256": "3f11bddbbf221ecd94b707937b18c5084d866e67ebff0a00f36c32fd28745752"
+    },
+    {
+      "step": 160,
+      "group": "e9a9d6f58b81dc9c8f7980de478b1391e97bd6dfe1f5c02a16a65d775625d99c",
+      "received_label": true,
+      "evidence_file": "10-r2-humaneval-stock-s1-C-coupled/observations/00160-e9a9d6f58b81dc9c8f7980de478b1391e97bd6dfe1f5c02a16a65d775625d99c.json",
+      "evidence_sha256": "9c11846c9b94b82d838e5ce129d5add46395c0b5b9c8f01df432da28f8b82f60"
+    }
+  ],
+  "trace_sha256": "d2f39f239bbb17a4480c3e91a60eab06695f020b595e06df5d2098996d796a64",
+  "load_before": {
+    "monotonic_seconds": 33863.301897632,
+    "load_average": [
+      5.6884765625,
+      4.5556640625,
+      4.1171875
+    ],
+    "visible_processes": 3,
+    "producer_cpu_seconds": 10.203696591,
+    "cpu_affinity": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "load_after": {
+    "monotonic_seconds": 33869.535090918,
+    "load_average": [
+      5.8740234375,
+      4.61328125,
+      4.13818359375
+    ],
+    "visible_processes": 3,
+    "producer_cpu_seconds": 10.61768018,
+    "cpu_affinity": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  }
+}

@@ -1,0 +1,1311 @@
+{
+  "status": "PASS",
+  "controls": 21,
+  "observer_sha256": "7bddddcc0f58593e38345c8150eb104b726424af96b0fac116ef332109bc8670",
+  "records": [
+    {
+      "family": "enhanced",
+      "control": "normal_return",
+      "passed": true,
+      "expected": "observed_return",
+      "source": "def f(): return 4\n",
+      "request": {
+        "reference": "def f(): return 4\n",
+        "candidate": "def f(): return 4\n",
+        "entry_point": "f",
+        "base_input": [
+          []
+        ],
+        "plus_input": [],
+        "invocation_seconds": 0.05
+      },
+      "wall_limit": 16,
+      "wall_timeout": false,
+      "returncode": 0,
+      "stderr": "",
+      "records": [
+        {
+          "candidate": {
+            "outcome": [
+              "return",
+              [
+                "int_hex",
+                "0x4"
+              ]
+            ],
+            "post_arguments": [
+              "list",
+              []
+            ],
+            "status": "observed",
+            "stderr": "",
+            "stdout": ""
+          },
+          "index": 0,
+          "kind": "pair",
+          "post_arguments_equal": true,
+          "reference": {
+            "outcome": [
+              "return",
+              [
+                "int_hex",
+                "0x4"
+              ]
+            ],
+            "post_arguments": [
+              "list",
+              []
+            ],
+            "status": "observed",
+            "stderr": "",
+            "stdout": ""
+          },
+          "return_equal": true,
+          "split": "base_input",
+          "streams_equal": true
+        },
+        {
+          "elapsed_seconds": 0.000127,
+          "kind": "worker_summary",
+          "recorded_pairs": 1,
+          "status": "complete",
+          "worker_cpu_seconds": 11
+        }
+      ]
+    },
+    {
+      "family": "enhanced",
+      "control": "large_integer",
+      "passed": true,
+      "expected": "observed_return",
+      "source": "def f(): return 2 ** 20000\n",
+      "request": {
+        "reference": "def f(): return 2 ** 20000\n",
+        "candidate": "def f(): return 2 ** 20000\n",
+        "entry_point": "f",
+        "base_input": [
+          []
+        ],
+        "plus_input": [],
+        "invocation_seconds": 0.05
+      },
+      "wall_limit": 16,
+      "wall_timeout": false,
+      "returncode": 0,
+      "stderr": "",
+      "records": [
+        {
+          "candidate": {
+            "outcome": [
+              "return",
+              [
+                "int_hex",
+                "0x100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+              ]
+            ],
+            "post_arguments": [
+              "list",
+              []
+            ],
+            "status": "observed",
+            "stderr": "",
+            "stdout": ""
+          },
+          "index": 0,
+          "kind": "pair",
+          "post_arguments_equal": true,
+          "reference": {
+            "outcome": [
+              "return",
+              [
+                "int_hex",
+                "0x100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+              ]
+            ],
+            "post_arguments": [
+              "list",
+              []
+            ],
+            "status": "observed",
+            "stderr": "",
+            "stdout": ""
+          },
+          "return_equal": true,
+          "split": "base_input",
+          "streams_equal": true
+        },
+        {
+          "elapsed_seconds": 0.00029,
+          "kind": "worker_summary",
+          "recorded_pairs": 1,
+          "status": "complete",
+          "worker_cpu_seconds": 11
+        }
+      ]
+    },
+    {
+      "family": "enhanced",
+      "control": "exception_shaped_return",
+      "passed": true,
+      "expected": "observed_return",
+      "source": "def f(): return ['exception', 'builtins.ValueError', 'payload']\n",
+      "request": {
+        "reference": "def f(): return ['exception', 'builtins.ValueError', 'payload']\n",
+        "candidate": "def f(): return ['exception', 'builtins.ValueError', 'payload']\n",
+        "entry_point": "f",
+        "base_input": [
+          []
+        ],
+        "plus_input": [],
+        "invocation_seconds": 0.05
+      },
+      "wall_limit": 16,
+      "wall_timeout": false,
+      "returncode": 0,
+      "stderr": "",
+      "records": [
+        {
+          "candidate": {
+            "outcome": [
+              "return",
+              [
+                "list",
+                [
+                  [
+                    "str",
+                    "exception"
+                  ],
+                  [
+                    "str",
+                    "builtins.ValueError"
+                  ],
+                  [
+                    "str",
+                    "payload"
+                  ]
+                ]
+              ]
+            ],
+            "post_arguments": [
+              "list",
+              []
+            ],
+            "status": "observed",
+            "stderr": "",
+            "stdout": ""
+          },
+          "index": 0,
+          "kind": "pair",
+          "post_arguments_equal": true,
+          "reference": {
+            "outcome": [
+              "return",
+              [
+                "list",
+                [
+                  [
+                    "str",
+                    "exception"
+                  ],
+                  [
+                    "str",
+                    "builtins.ValueError"
+                  ],
+                  [
+                    "str",
+                    "payload"
+                  ]
+                ]
+              ]
+            ],
+            "post_arguments": [
+              "list",
+              []
+            ],
+            "status": "observed",
+            "stderr": "",
+            "stdout": ""
+          },
+          "return_equal": true,
+          "split": "base_input",
+          "streams_equal": true
+        },
+        {
+          "elapsed_seconds": 0.000123,
+          "kind": "worker_summary",
+          "recorded_pairs": 1,
+          "status": "complete",
+          "worker_cpu_seconds": 11
+        }
+      ]
+    },
+    {
+      "family": "enhanced",
+      "control": "program_name_error",
+      "passed": true,
+      "expected": "observed_exception",
+      "source": "def f(): return nonexistent_name\n",
+      "request": {
+        "reference": "def f(): return nonexistent_name\n",
+        "candidate": "def f(): return nonexistent_name\n",
+        "entry_point": "f",
+        "base_input": [
+          []
+        ],
+        "plus_input": [],
+        "invocation_seconds": 0.05
+      },
+      "wall_limit": 16,
+      "wall_timeout": false,
+      "returncode": 0,
+      "stderr": "",
+      "records": [
+        {
+          "candidate": {
+            "outcome": [
+              "exception",
+              "builtins.NameError",
+              "name 'nonexistent_name' is not defined"
+            ],
+            "post_arguments": [
+              "list",
+              []
+            ],
+            "status": "observed",
+            "stderr": "",
+            "stdout": ""
+          },
+          "index": 0,
+          "kind": "pair",
+          "post_arguments_equal": true,
+          "reference": {
+            "outcome": [
+              "exception",
+              "builtins.NameError",
+              "name 'nonexistent_name' is not defined"
+            ],
+            "post_arguments": [
+              "list",
+              []
+            ],
+            "status": "observed",
+            "stderr": "",
+            "stdout": ""
+          },
+          "return_equal": true,
+          "split": "base_input",
+          "streams_equal": true
+        },
+        {
+          "elapsed_seconds": 0.000139,
+          "kind": "worker_summary",
+          "recorded_pairs": 1,
+          "status": "complete",
+          "worker_cpu_seconds": 11
+        }
+      ]
+    },
+    {
+      "family": "enhanced",
+      "control": "program_assertion_error",
+      "passed": true,
+      "expected": "observed_exception",
+      "source": "def f(): assert False\n",
+      "request": {
+        "reference": "def f(): assert False\n",
+        "candidate": "def f(): assert False\n",
+        "entry_point": "f",
+        "base_input": [
+          []
+        ],
+        "plus_input": [],
+        "invocation_seconds": 0.05
+      },
+      "wall_limit": 16,
+      "wall_timeout": false,
+      "returncode": 0,
+      "stderr": "",
+      "records": [
+        {
+          "candidate": {
+            "outcome": [
+              "exception",
+              "builtins.AssertionError",
+              ""
+            ],
+            "post_arguments": [
+              "list",
+              []
+            ],
+            "status": "observed",
+            "stderr": "",
+            "stdout": ""
+          },
+          "index": 0,
+          "kind": "pair",
+          "post_arguments_equal": true,
+          "reference": {
+            "outcome": [
+              "exception",
+              "builtins.AssertionError",
+              ""
+            ],
+            "post_arguments": [
+              "list",
+              []
+            ],
+            "status": "observed",
+            "stderr": "",
+            "stdout": ""
+          },
+          "return_equal": true,
+          "split": "base_input",
+          "streams_equal": true
+        },
+        {
+          "elapsed_seconds": 0.000162,
+          "kind": "worker_summary",
+          "recorded_pairs": 1,
+          "status": "complete",
+          "worker_cpu_seconds": 11
+        }
+      ]
+    },
+    {
+      "family": "enhanced",
+      "control": "ordinary_oserror",
+      "passed": true,
+      "expected": "observed_exception",
+      "source": "def f(): raise OSError(5, 'ordinary I/O error')\n",
+      "request": {
+        "reference": "def f(): raise OSError(5, 'ordinary I/O error')\n",
+        "candidate": "def f(): raise OSError(5, 'ordinary I/O error')\n",
+        "entry_point": "f",
+        "base_input": [
+          []
+        ],
+        "plus_input": [],
+        "invocation_seconds": 0.05
+      },
+      "wall_limit": 16,
+      "wall_timeout": false,
+      "returncode": 0,
+      "stderr": "",
+      "records": [
+        {
+          "candidate": {
+            "outcome": [
+              "exception",
+              "builtins.OSError",
+              "[Errno 5] ordinary I/O error"
+            ],
+            "post_arguments": [
+              "list",
+              []
+            ],
+            "status": "observed",
+            "stderr": "",
+            "stdout": ""
+          },
+          "index": 0,
+          "kind": "pair",
+          "post_arguments_equal": true,
+          "reference": {
+            "outcome": [
+              "exception",
+              "builtins.OSError",
+              "[Errno 5] ordinary I/O error"
+            ],
+            "post_arguments": [
+              "list",
+              []
+            ],
+            "status": "observed",
+            "stderr": "",
+            "stdout": ""
+          },
+          "return_equal": true,
+          "split": "base_input",
+          "streams_equal": true
+        },
+        {
+          "elapsed_seconds": 0.000123,
+          "kind": "worker_summary",
+          "recorded_pairs": 1,
+          "status": "complete",
+          "worker_cpu_seconds": 11
+        }
+      ]
+    },
+    {
+      "family": "enhanced",
+      "control": "program_value_error",
+      "passed": true,
+      "expected": "observed_exception",
+      "source": "def f(): raise ValueError('program sentinel')\n",
+      "request": {
+        "reference": "def f(): raise ValueError('program sentinel')\n",
+        "candidate": "def f(): raise ValueError('program sentinel')\n",
+        "entry_point": "f",
+        "base_input": [
+          []
+        ],
+        "plus_input": [],
+        "invocation_seconds": 0.05
+      },
+      "wall_limit": 16,
+      "wall_timeout": false,
+      "returncode": 0,
+      "stderr": "",
+      "records": [
+        {
+          "candidate": {
+            "outcome": [
+              "exception",
+              "builtins.ValueError",
+              "program sentinel"
+            ],
+            "post_arguments": [
+              "list",
+              []
+            ],
+            "status": "observed",
+            "stderr": "",
+            "stdout": ""
+          },
+          "index": 0,
+          "kind": "pair",
+          "post_arguments_equal": true,
+          "reference": {
+            "outcome": [
+              "exception",
+              "builtins.ValueError",
+              "program sentinel"
+            ],
+            "post_arguments": [
+              "list",
+              []
+            ],
+            "status": "observed",
+            "stderr": "",
+            "stdout": ""
+          },
+          "return_equal": true,
+          "split": "base_input",
+          "streams_equal": true
+        },
+        {
+          "elapsed_seconds": 0.000105,
+          "kind": "worker_summary",
+          "recorded_pairs": 1,
+          "status": "complete",
+          "worker_cpu_seconds": 11
+        }
+      ]
+    },
+    {
+      "family": "enhanced",
+      "control": "source_syntax_error",
+      "passed": true,
+      "expected": "compile_unavailable",
+      "source": "def f(: pass\n",
+      "request": {
+        "reference": "def f(: pass\n",
+        "candidate": "def f(: pass\n",
+        "entry_point": "f",
+        "base_input": [
+          []
+        ],
+        "plus_input": [],
+        "invocation_seconds": 0.05
+      },
+      "wall_limit": 16,
+      "wall_timeout": false,
+      "returncode": 0,
+      "stderr": "",
+      "records": [
+        {
+          "error": {
+            "message": "invalid syntax (<human-eval-reference>, line 1)",
+            "type": "builtins.SyntaxError"
+          },
+          "kind": "worker_summary",
+          "status": "compile_unavailable"
+        }
+      ]
+    },
+    {
+      "family": "enhanced",
+      "control": "initialization_error",
+      "passed": true,
+      "expected": "unavailable",
+      "source": "raise ValueError('initialization')\ndef f(): return 4\n",
+      "request": {
+        "reference": "raise ValueError('initialization')\ndef f(): return 4\n",
+        "candidate": "raise ValueError('initialization')\ndef f(): return 4\n",
+        "entry_point": "f",
+        "base_input": [
+          []
+        ],
+        "plus_input": [],
+        "invocation_seconds": 0.05
+      },
+      "wall_limit": 16,
+      "wall_timeout": false,
+      "returncode": 0,
+      "stderr": "",
+      "records": [
+        {
+          "candidate": {
+            "error": {
+              "message": "initialization",
+              "type": "builtins.ValueError"
+            },
+            "phase": "initialize_source",
+            "reason": "initialization_or_observer_error",
+            "status": "unavailable",
+            "stderr": "",
+            "stdout": ""
+          },
+          "index": 0,
+          "kind": "pair",
+          "post_arguments_equal": null,
+          "reference": {
+            "error": {
+              "message": "initialization",
+              "type": "builtins.ValueError"
+            },
+            "phase": "initialize_source",
+            "reason": "initialization_or_observer_error",
+            "status": "unavailable",
+            "stderr": "",
+            "stdout": ""
+          },
+          "return_equal": null,
+          "split": "base_input",
+          "streams_equal": null
+        },
+        {
+          "elapsed_seconds": 0.000125,
+          "kind": "worker_summary",
+          "recorded_pairs": 1,
+          "status": "complete",
+          "worker_cpu_seconds": 11
+        }
+      ]
+    },
+    {
+      "family": "enhanced",
+      "control": "real_memory_error",
+      "passed": true,
+      "expected": "unavailable",
+      "source": "def f(): return bytearray(2**31)\n",
+      "request": {
+        "reference": "def f(): return bytearray(2**31)\n",
+        "candidate": "def f(): return bytearray(2**31)\n",
+        "entry_point": "f",
+        "base_input": [
+          []
+        ],
+        "plus_input": [],
+        "invocation_seconds": 0.05
+      },
+      "wall_limit": 16,
+      "wall_timeout": false,
+      "returncode": 0,
+      "stderr": "",
+      "records": [
+        {
+          "candidate": {
+            "error": {
+              "message": "",
+              "type": "builtins.MemoryError"
+            },
+            "phase": "invoke_program",
+            "reason": "resource_unavailable",
+            "status": "unavailable",
+            "stderr": "",
+            "stdout": ""
+          },
+          "index": 0,
+          "kind": "pair",
+          "post_arguments_equal": null,
+          "reference": {
+            "error": {
+              "message": "",
+              "type": "builtins.MemoryError"
+            },
+            "phase": "invoke_program",
+            "reason": "resource_unavailable",
+            "status": "unavailable",
+            "stderr": "",
+            "stdout": ""
+          },
+          "return_equal": null,
+          "split": "base_input",
+          "streams_equal": null
+        },
+        {
+          "elapsed_seconds": 0.00019,
+          "kind": "worker_summary",
+          "recorded_pairs": 1,
+          "status": "complete",
+          "worker_cpu_seconds": 11
+        }
+      ]
+    },
+    {
+      "family": "enhanced",
+      "control": "real_os_enomem",
+      "passed": true,
+      "expected": "unavailable",
+      "source": "import mmap\ndef f(): return mmap.mmap(-1, 2**31)\n",
+      "request": {
+        "reference": "import mmap\ndef f(): return mmap.mmap(-1, 2**31)\n",
+        "candidate": "import mmap\ndef f(): return mmap.mmap(-1, 2**31)\n",
+        "entry_point": "f",
+        "base_input": [
+          []
+        ],
+        "plus_input": [],
+        "invocation_seconds": 0.05
+      },
+      "wall_limit": 16,
+      "wall_timeout": false,
+      "returncode": 0,
+      "stderr": "",
+      "records": [
+        {
+          "candidate": {
+            "error": {
+              "message": "[Errno 12] Cannot allocate memory",
+              "type": "builtins.OSError"
+            },
+            "phase": "invoke_program",
+            "reason": "resource_unavailable",
+            "status": "unavailable",
+            "stderr": "",
+            "stdout": ""
+          },
+          "index": 0,
+          "kind": "pair",
+          "post_arguments_equal": null,
+          "reference": {
+            "error": {
+              "message": "[Errno 12] Cannot allocate memory",
+              "type": "builtins.OSError"
+            },
+            "phase": "invoke_program",
+            "reason": "resource_unavailable",
+            "status": "unavailable",
+            "stderr": "",
+            "stdout": ""
+          },
+          "return_equal": null,
+          "split": "base_input",
+          "streams_equal": null
+        },
+        {
+          "elapsed_seconds": 0.000283,
+          "kind": "worker_summary",
+          "recorded_pairs": 1,
+          "status": "complete",
+          "worker_cpu_seconds": 11
+        }
+      ]
+    },
+    {
+      "family": "enhanced",
+      "control": "keyboard_interrupt",
+      "passed": true,
+      "expected": "unavailable",
+      "source": "def f(): raise KeyboardInterrupt()\n",
+      "request": {
+        "reference": "def f(): raise KeyboardInterrupt()\n",
+        "candidate": "def f(): raise KeyboardInterrupt()\n",
+        "entry_point": "f",
+        "base_input": [
+          []
+        ],
+        "plus_input": [],
+        "invocation_seconds": 0.05
+      },
+      "wall_limit": 16,
+      "wall_timeout": false,
+      "returncode": 0,
+      "stderr": "",
+      "records": [
+        {
+          "candidate": {
+            "error": {
+              "message": "",
+              "type": "builtins.KeyboardInterrupt"
+            },
+            "phase": "invoke_program",
+            "reason": "interrupted",
+            "status": "unavailable",
+            "stderr": "",
+            "stdout": ""
+          },
+          "index": 0,
+          "kind": "pair",
+          "post_arguments_equal": null,
+          "reference": {
+            "error": {
+              "message": "",
+              "type": "builtins.KeyboardInterrupt"
+            },
+            "phase": "invoke_program",
+            "reason": "interrupted",
+            "status": "unavailable",
+            "stderr": "",
+            "stdout": ""
+          },
+          "return_equal": null,
+          "split": "base_input",
+          "streams_equal": null
+        },
+        {
+          "elapsed_seconds": 0.000135,
+          "kind": "worker_summary",
+          "recorded_pairs": 1,
+          "status": "complete",
+          "worker_cpu_seconds": 11
+        }
+      ]
+    },
+    {
+      "family": "enhanced",
+      "control": "resource_caught_inside_program",
+      "passed": true,
+      "expected": "observed_return",
+      "source": "import mmap\ndef f():\n    try: mmap.mmap(-1, 2**31)\n    except OSError: return 7\n",
+      "request": {
+        "reference": "import mmap\ndef f():\n    try: mmap.mmap(-1, 2**31)\n    except OSError: return 7\n",
+        "candidate": "import mmap\ndef f():\n    try: mmap.mmap(-1, 2**31)\n    except OSError: return 7\n",
+        "entry_point": "f",
+        "base_input": [
+          []
+        ],
+        "plus_input": [],
+        "invocation_seconds": 0.05
+      },
+      "wall_limit": 16,
+      "wall_timeout": false,
+      "returncode": 0,
+      "stderr": "",
+      "records": [
+        {
+          "candidate": {
+            "outcome": [
+              "return",
+              [
+                "int_hex",
+                "0x7"
+              ]
+            ],
+            "post_arguments": [
+              "list",
+              []
+            ],
+            "status": "observed",
+            "stderr": "",
+            "stdout": ""
+          },
+          "index": 0,
+          "kind": "pair",
+          "post_arguments_equal": true,
+          "reference": {
+            "outcome": [
+              "return",
+              [
+                "int_hex",
+                "0x7"
+              ]
+            ],
+            "post_arguments": [
+              "list",
+              []
+            ],
+            "status": "observed",
+            "stderr": "",
+            "stdout": ""
+          },
+          "return_equal": true,
+          "split": "base_input",
+          "streams_equal": true
+        },
+        {
+          "elapsed_seconds": 0.000241,
+          "kind": "worker_summary",
+          "recorded_pairs": 1,
+          "status": "complete",
+          "worker_cpu_seconds": 11
+        }
+      ]
+    },
+    {
+      "family": "enhanced",
+      "control": "return_encoding_failure",
+      "passed": true,
+      "expected": "unavailable",
+      "source": "def f(): return object()\n",
+      "request": {
+        "reference": "def f(): return object()\n",
+        "candidate": "def f(): return object()\n",
+        "entry_point": "f",
+        "base_input": [
+          []
+        ],
+        "plus_input": [],
+        "invocation_seconds": 0.05
+      },
+      "wall_limit": 16,
+      "wall_timeout": false,
+      "returncode": 0,
+      "stderr": "",
+      "records": [
+        {
+          "candidate": {
+            "error": {
+              "message": "Unsupported observed builtin type: object",
+              "type": "builtins.TypeError"
+            },
+            "phase": "encode_return_value",
+            "reason": "initialization_or_observer_error",
+            "status": "unavailable",
+            "stderr": "",
+            "stdout": ""
+          },
+          "index": 0,
+          "kind": "pair",
+          "post_arguments_equal": null,
+          "reference": {
+            "error": {
+              "message": "Unsupported observed builtin type: object",
+              "type": "builtins.TypeError"
+            },
+            "phase": "encode_return_value",
+            "reason": "initialization_or_observer_error",
+            "status": "unavailable",
+            "stderr": "",
+            "stdout": ""
+          },
+          "return_equal": null,
+          "split": "base_input",
+          "streams_equal": null
+        },
+        {
+          "elapsed_seconds": 9.8e-05,
+          "kind": "worker_summary",
+          "recorded_pairs": 1,
+          "status": "complete",
+          "worker_cpu_seconds": 11
+        }
+      ]
+    },
+    {
+      "family": "enhanced",
+      "control": "post_encoding_failure",
+      "passed": true,
+      "expected": "unavailable",
+      "source": "def f(x):\n    x.append(object())\n    return 1\n",
+      "request": {
+        "reference": "def f(x):\n    x.append(object())\n    return 1\n",
+        "candidate": "def f(x):\n    x.append(object())\n    return 1\n",
+        "entry_point": "f",
+        "base_input": [
+          [
+            []
+          ]
+        ],
+        "plus_input": [],
+        "invocation_seconds": 0.05
+      },
+      "wall_limit": 16,
+      "wall_timeout": false,
+      "returncode": 0,
+      "stderr": "",
+      "records": [
+        {
+          "candidate": {
+            "error": {
+              "message": "Unsupported observed builtin type: object",
+              "type": "builtins.TypeError"
+            },
+            "phase": "encode_argument_poststate",
+            "reason": "initialization_or_observer_error",
+            "status": "unavailable",
+            "stderr": "",
+            "stdout": ""
+          },
+          "index": 0,
+          "kind": "pair",
+          "post_arguments_equal": null,
+          "reference": {
+            "error": {
+              "message": "Unsupported observed builtin type: object",
+              "type": "builtins.TypeError"
+            },
+            "phase": "encode_argument_poststate",
+            "reason": "initialization_or_observer_error",
+            "status": "unavailable",
+            "stderr": "",
+            "stdout": ""
+          },
+          "return_equal": null,
+          "split": "base_input",
+          "streams_equal": null
+        },
+        {
+          "elapsed_seconds": 0.000176,
+          "kind": "worker_summary",
+          "recorded_pairs": 1,
+          "status": "complete",
+          "worker_cpu_seconds": 11
+        }
+      ]
+    },
+    {
+      "family": "enhanced",
+      "control": "exception_message_encoding_failure",
+      "passed": true,
+      "expected": "unavailable",
+      "source": "class Bad(Exception):\n    def __str__(self): raise ValueError('message observer failed')\ndef f(): raise Bad()\n",
+      "request": {
+        "reference": "class Bad(Exception):\n    def __str__(self): raise ValueError('message observer failed')\ndef f(): raise Bad()\n",
+        "candidate": "class Bad(Exception):\n    def __str__(self): raise ValueError('message observer failed')\ndef f(): raise Bad()\n",
+        "entry_point": "f",
+        "base_input": [
+          []
+        ],
+        "plus_input": [],
+        "invocation_seconds": 0.05
+      },
+      "wall_limit": 16,
+      "wall_timeout": false,
+      "returncode": 0,
+      "stderr": "",
+      "records": [
+        {
+          "candidate": {
+            "error": {
+              "message": "message observer failed",
+              "type": "builtins.ValueError"
+            },
+            "phase": "encode_program_exception",
+            "reason": "initialization_or_observer_error",
+            "status": "unavailable",
+            "stderr": "",
+            "stdout": ""
+          },
+          "index": 0,
+          "kind": "pair",
+          "post_arguments_equal": null,
+          "reference": {
+            "error": {
+              "message": "message observer failed",
+              "type": "builtins.ValueError"
+            },
+            "phase": "encode_program_exception",
+            "reason": "initialization_or_observer_error",
+            "status": "unavailable",
+            "stderr": "",
+            "stdout": ""
+          },
+          "return_equal": null,
+          "split": "base_input",
+          "streams_equal": null
+        },
+        {
+          "elapsed_seconds": 0.000138,
+          "kind": "worker_summary",
+          "recorded_pairs": 1,
+          "status": "complete",
+          "worker_cpu_seconds": 11
+        }
+      ]
+    },
+    {
+      "family": "enhanced",
+      "control": "per_invocation_guard",
+      "passed": true,
+      "expected": "unavailable",
+      "source": "def f():\n    while True: pass\n",
+      "request": {
+        "reference": "def f():\n    while True: pass\n",
+        "candidate": "def f():\n    while True: pass\n",
+        "entry_point": "f",
+        "base_input": [
+          []
+        ],
+        "plus_input": [],
+        "invocation_seconds": 0.05
+      },
+      "wall_limit": 16,
+      "wall_timeout": false,
+      "returncode": 0,
+      "stderr": "",
+      "records": [
+        {
+          "candidate": {
+            "phase": "invoke_program",
+            "reason": "per_invocation_guard",
+            "status": "unavailable",
+            "stderr": "",
+            "stdout": ""
+          },
+          "index": 0,
+          "kind": "pair",
+          "post_arguments_equal": null,
+          "reference": {
+            "phase": "invoke_program",
+            "reason": "per_invocation_guard",
+            "status": "unavailable",
+            "stderr": "",
+            "stdout": ""
+          },
+          "return_equal": null,
+          "split": "base_input",
+          "streams_equal": null
+        },
+        {
+          "elapsed_seconds": 0.100378,
+          "kind": "worker_summary",
+          "recorded_pairs": 1,
+          "status": "complete",
+          "worker_cpu_seconds": 11
+        }
+      ]
+    },
+    {
+      "family": "enhanced",
+      "control": "per_invocation_guard_caught_broadly",
+      "passed": true,
+      "expected": "unavailable",
+      "source": "import __main__\ndef f():\n    try:\n        __main__.alarm_handler(14, None)\n    except BaseException:\n        print('caught alarm')\n        return 7\n",
+      "request": {
+        "reference": "import __main__\ndef f():\n    try:\n        __main__.alarm_handler(14, None)\n    except BaseException:\n        print('caught alarm')\n        return 7\n",
+        "candidate": "import __main__\ndef f():\n    try:\n        __main__.alarm_handler(14, None)\n    except BaseException:\n        print('caught alarm')\n        return 7\n",
+        "entry_point": "f",
+        "base_input": [
+          []
+        ],
+        "plus_input": [],
+        "invocation_seconds": 0.05
+      },
+      "wall_limit": 16,
+      "wall_timeout": false,
+      "returncode": 0,
+      "stderr": "",
+      "records": [
+        {
+          "candidate": {
+            "phase": "invoke_program",
+            "reason": "per_invocation_guard",
+            "status": "unavailable",
+            "stderr": "",
+            "stdout": "caught alarm\n"
+          },
+          "index": 0,
+          "kind": "pair",
+          "post_arguments_equal": null,
+          "reference": {
+            "phase": "invoke_program",
+            "reason": "per_invocation_guard",
+            "status": "unavailable",
+            "stderr": "",
+            "stdout": "caught alarm\n"
+          },
+          "return_equal": null,
+          "split": "base_input",
+          "streams_equal": null
+        },
+        {
+          "elapsed_seconds": 0.00011,
+          "kind": "worker_summary",
+          "recorded_pairs": 1,
+          "status": "complete",
+          "worker_cpu_seconds": 11
+        }
+      ]
+    },
+    {
+      "family": "enhanced",
+      "control": "cpu_limit_with_flushed_prefix",
+      "passed": true,
+      "expected": "process_unavailable",
+      "source": "import signal\ndef f(x):\n    if x == 0: return 0\n    signal.signal(signal.SIGALRM, signal.SIG_IGN)\n    while True: pass\n",
+      "request": {
+        "reference": "import signal\ndef f(x):\n    if x == 0: return 0\n    signal.signal(signal.SIGALRM, signal.SIG_IGN)\n    while True: pass\n",
+        "candidate": "import signal\ndef f(x):\n    if x == 0: return 0\n    signal.signal(signal.SIGALRM, signal.SIG_IGN)\n    while True: pass\n",
+        "entry_point": "f",
+        "base_input": [
+          [
+            0
+          ],
+          [
+            1
+          ]
+        ],
+        "plus_input": [],
+        "invocation_seconds": 0.05
+      },
+      "wall_limit": 16,
+      "wall_timeout": false,
+      "returncode": -9,
+      "stderr": "",
+      "records": [
+        {
+          "candidate": {
+            "outcome": [
+              "return",
+              [
+                "int_hex",
+                "0x0"
+              ]
+            ],
+            "post_arguments": [
+              "list",
+              [
+                [
+                  "int_hex",
+                  "0x0"
+                ]
+              ]
+            ],
+            "status": "observed",
+            "stderr": "",
+            "stdout": ""
+          },
+          "index": 0,
+          "kind": "pair",
+          "post_arguments_equal": true,
+          "reference": {
+            "outcome": [
+              "return",
+              [
+                "int_hex",
+                "0x0"
+              ]
+            ],
+            "post_arguments": [
+              "list",
+              [
+                [
+                  "int_hex",
+                  "0x0"
+                ]
+              ]
+            ],
+            "status": "observed",
+            "stderr": "",
+            "stdout": ""
+          },
+          "return_equal": true,
+          "split": "base_input",
+          "streams_equal": true
+        }
+      ]
+    },
+    {
+      "family": "enhanced",
+      "control": "wall_limit_with_flushed_prefix",
+      "passed": true,
+      "expected": "wall_unavailable",
+      "source": "import signal,time\ndef f(x):\n    if x == 0: return 0\n    signal.signal(signal.SIGALRM, signal.SIG_IGN)\n    time.sleep(30)\n",
+      "request": {
+        "reference": "import signal,time\ndef f(x):\n    if x == 0: return 0\n    signal.signal(signal.SIGALRM, signal.SIG_IGN)\n    time.sleep(30)\n",
+        "candidate": "import signal,time\ndef f(x):\n    if x == 0: return 0\n    signal.signal(signal.SIGALRM, signal.SIG_IGN)\n    time.sleep(30)\n",
+        "entry_point": "f",
+        "base_input": [
+          [
+            0
+          ],
+          [
+            1
+          ]
+        ],
+        "plus_input": [],
+        "invocation_seconds": 0.05
+      },
+      "wall_limit": 16,
+      "wall_timeout": true,
+      "returncode": -9,
+      "stderr": "",
+      "records": [
+        {
+          "candidate": {
+            "outcome": [
+              "return",
+              [
+                "int_hex",
+                "0x0"
+              ]
+            ],
+            "post_arguments": [
+              "list",
+              [
+                [
+                  "int_hex",
+                  "0x0"
+                ]
+              ]
+            ],
+            "status": "observed",
+            "stderr": "",
+            "stdout": ""
+          },
+          "index": 0,
+          "kind": "pair",
+          "post_arguments_equal": true,
+          "reference": {
+            "outcome": [
+              "return",
+              [
+                "int_hex",
+                "0x0"
+              ]
+            ],
+            "post_arguments": [
+              "list",
+              [
+                [
+                  "int_hex",
+                  "0x0"
+                ]
+              ]
+            ],
+            "status": "observed",
+            "stderr": "",
+            "stdout": ""
+          },
+          "return_equal": true,
+          "split": "base_input",
+          "streams_equal": true
+        }
+      ]
+    },
+    {
+      "family": "enhanced",
+      "control": "copy_failure",
+      "passed": true,
+      "expected": "unavailable",
+      "native_request_roundtrip": false,
+      "scope": "Direct bounded observer unit: custom deepcopy objects cannot occur in the JSON input asset.",
+      "records": [
+        {
+          "status": "unavailable",
+          "reason": "initialization_or_observer_error",
+          "phase": "copy_arguments",
+          "error": {
+            "type": "builtins.ValueError",
+            "message": "copy control"
+          },
+          "stdout": "",
+          "stderr": ""
+        }
+      ]
+    }
+  ]
+}

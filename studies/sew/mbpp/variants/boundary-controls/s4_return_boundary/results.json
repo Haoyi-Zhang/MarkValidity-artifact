@@ -1,0 +1,392 @@
+{
+  "scope": "Nineteen manually specified lexical-boundary controls, not benchmark samples or a global S4 soundness claim.",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "vendor": "/workspace/scratch/3d557313f143/qa/round3/mbpp/variants/s4_return_boundary",
+  "s4_match_sha256": "bdff747b15fa1018b4950df72df0fa2067a34cfdf1b6d9e2b407ec101de0ee90",
+  "s4_guard_sha256": "60511b667f563194b136d85be716e4ab79fd37d651de97af7949d3e20f2a0dfa",
+  "s4_emitter_sha256": "e01b5861c03a788a5591623d79756c386534eb0f90d55af3fe0ab87546b544ad",
+  "cases": 19,
+  "preserved": 19,
+  "records": [
+    {
+      "case": "identifier",
+      "reference_sha256": "28edf2f1587e5e00f98ed8fdeee0e163561a080f4e158f846db00337773a5b74",
+      "candidate_sha256": "e05b4c03a7c1248f9e57f10a9e678222b53b597aa735edcae3aa89d3ebde6f25",
+      "site_span": [
+        61,
+        67
+      ],
+      "reference": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "(1, 2)"
+      },
+      "candidate": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "(1, 2)"
+      },
+      "preserved": true
+    },
+    {
+      "case": "integer",
+      "reference_sha256": "95e7dd8b47d359ed62969360e9b51596b0b50f2ded892b8633534a247c7a37ba",
+      "candidate_sha256": "a949a5039906785784a1b2802350ae5b4a01cefc5c1765447375c4865d83d179",
+      "site_span": [
+        61,
+        67
+      ],
+      "reference": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "(1, 2)"
+      },
+      "candidate": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "(1, 2)"
+      },
+      "preserved": true
+    },
+    {
+      "case": "negative",
+      "reference_sha256": "e389e36f6acf986d686f7bc068fb3fd5d7267d429068fd95a693d643b024c296",
+      "candidate_sha256": "b25a384966c86f3057f7a1dd0a419f9d4d3a19b259dc761d8ba97a25db2ea9e6",
+      "site_span": [
+        61,
+        68
+      ],
+      "reference": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "(-1, 2)"
+      },
+      "candidate": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "(-1, 2)"
+      },
+      "preserved": true
+    },
+    {
+      "case": "decimal",
+      "reference_sha256": "d8285a47dc12a478c1feb3fc5a42bd666de6a442f1b9c6d40f50fcac8fb6103e",
+      "candidate_sha256": "67847c44060543253ca29ed27da401f6561a13ea642139f831bd870ffad2ec33",
+      "site_span": [
+        61,
+        68
+      ],
+      "reference": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "(0.5, 2)"
+      },
+      "candidate": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "(0.5, 2)"
+      },
+      "preserved": true
+    },
+    {
+      "case": "string",
+      "reference_sha256": "25435ea87138cc5c6fcde9853c0aeab8f29b06bff115b83c29840a8b8f53a04f",
+      "candidate_sha256": "e4066c11772f9ab908ff5b71b7eca1f15f9be922a07891930fa53be5b9ccf916",
+      "site_span": [
+        61,
+        69
+      ],
+      "reference": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "('x', 2)"
+      },
+      "candidate": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "('x', 2)"
+      },
+      "preserved": true
+    },
+    {
+      "case": "format_string",
+      "reference_sha256": "10827faf76b1e2496055913b9ab33e797f947764ea4531eec1cda8bd2417464c",
+      "candidate_sha256": "1b31acda4d881d1cf160e1ba43f7c4d18a532765847c0bc30bbb81dff40d44e2",
+      "site_span": [
+        61,
+        72
+      ],
+      "reference": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "('1', 2)"
+      },
+      "candidate": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "('1', 2)"
+      },
+      "preserved": true
+    },
+    {
+      "case": "raw_string",
+      "reference_sha256": "c0375b1023d64753d825f82422e9412d9bd9f47d8be60c0fa9e08fbb00ffd908",
+      "candidate_sha256": "43faef992b8caa46b877bb057338b6de51f16ea88da8f5d30c3afc7c489ed3cd",
+      "site_span": [
+        61,
+        70
+      ],
+      "reference": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "('x', 2)"
+      },
+      "candidate": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "('x', 2)"
+      },
+      "preserved": true
+    },
+    {
+      "case": "byte_string",
+      "reference_sha256": "54fb21dd4527cf72d280e4a58a697bdb4810be30df84147ff161980e87dc7efd",
+      "candidate_sha256": "c52126aa47ddcd75b95725d416c875641a29ec781f2a90fca0bb4af051a812a0",
+      "site_span": [
+        61,
+        70
+      ],
+      "reference": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "(b'x', 2)"
+      },
+      "candidate": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "(b'x', 2)"
+      },
+      "preserved": true
+    },
+    {
+      "case": "unicode_identifier",
+      "reference_sha256": "aba20f89b5211fd00137108624cd6f913b02d3396902aa940853e7d2526612da",
+      "candidate_sha256": "c5ef9e789724089a2d999405efcb69105c85c5cbe3a1e252288a5248ee9aae47",
+      "site_span": [
+        61,
+        68
+      ],
+      "reference": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "(3, 2)"
+      },
+      "candidate": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "(3, 2)"
+      },
+      "preserved": true
+    },
+    {
+      "case": "existing_space",
+      "reference_sha256": "16569035d20c27c8ddd43002ba3e46cec9d0486f5fa266c362fc0bbe513f4f92",
+      "candidate_sha256": "e05b4c03a7c1248f9e57f10a9e678222b53b597aa735edcae3aa89d3ebde6f25",
+      "site_span": [
+        62,
+        68
+      ],
+      "reference": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "(1, 2)"
+      },
+      "candidate": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "(1, 2)"
+      },
+      "preserved": true
+    },
+    {
+      "case": "existing_tab",
+      "reference_sha256": "d08929f95802b3000d940e48936ba7d33e7b3a0b702933e21312039ed4594aef",
+      "candidate_sha256": "b083c856a669759d6a5e01b96a0c1b985818c4f3ac75c820930b0e4d863b6dd3",
+      "site_span": [
+        62,
+        68
+      ],
+      "reference": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "(1, 2)"
+      },
+      "candidate": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "(1, 2)"
+      },
+      "preserved": true
+    },
+    {
+      "case": "inner_space",
+      "reference_sha256": "4acdb9fdd3b1d35918f9d425c3df747a4c69a0876ed9635e0a543c4dc9991ad9",
+      "candidate_sha256": "e05b4c03a7c1248f9e57f10a9e678222b53b597aa735edcae3aa89d3ebde6f25",
+      "site_span": [
+        61,
+        68
+      ],
+      "reference": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "(1, 2)"
+      },
+      "candidate": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "(1, 2)"
+      },
+      "preserved": true
+    },
+    {
+      "case": "parenthesized_first",
+      "reference_sha256": "21a09af440f037a35994d21327e5e6de5e229c829f81182877fcef47ac7be6a2",
+      "candidate_sha256": "4f212701637da770f3fdfedd24dc04d0c04d51c0f904f867c00293b4c8d15ff9",
+      "site_span": [
+        61,
+        73
+      ],
+      "reference": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "(2, 2)"
+      },
+      "candidate": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "(2, 2)"
+      },
+      "preserved": true
+    },
+    {
+      "case": "list_first",
+      "reference_sha256": "bb0f99485bf2ea3104d6f240ad1e1045f11face1b773717559c0880e24baea0e",
+      "candidate_sha256": "f3a40abf769972fc18e0ca7141866cf4d0df5f8c91802dc98e394d546b5c0dd2",
+      "site_span": [
+        61,
+        69
+      ],
+      "reference": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "([1], 2)"
+      },
+      "candidate": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "([1], 2)"
+      },
+      "preserved": true
+    },
+    {
+      "case": "dict_first",
+      "reference_sha256": "753032e385e169463eb6e02f56728b3ba50a6a33e568aafca759aaaad2afdcc7",
+      "candidate_sha256": "f004a43149c166c331a307f50803bfd930b53360ea58d8e8a1ab8370870f2ed0",
+      "site_span": [
+        61,
+        74
+      ],
+      "reference": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "({'x': 1}, 2)"
+      },
+      "candidate": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "({'x': 1}, 2)"
+      },
+      "preserved": true
+    },
+    {
+      "case": "none_first",
+      "reference_sha256": "64d67c78cbcfe1c0954504649fbeacc78b1695122b8a99d99d0db99ada940144",
+      "candidate_sha256": "fead114300030c78f778d0e0055457f2475166ad637d86ecd6c414bb961a5a9f",
+      "site_span": [
+        61,
+        70
+      ],
+      "reference": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "(None, 2)"
+      },
+      "candidate": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "(None, 2)"
+      },
+      "preserved": true
+    },
+    {
+      "case": "true_first",
+      "reference_sha256": "4344d964977a5e7306e364ee1af5e5cf109e75a68dcaad30d0dea142ab6a6836",
+      "candidate_sha256": "3c090157c6112c8e977769a84051e738f54bdc742448aa6b621bd762a2a8337a",
+      "site_span": [
+        61,
+        70
+      ],
+      "reference": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "(True, 2)"
+      },
+      "candidate": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "(True, 2)"
+      },
+      "preserved": true
+    },
+    {
+      "case": "underscore",
+      "reference_sha256": "9c084f1af73fb0b29d3bcec90540c6204ac2f67509c69ee1a386d5ef8120d1f7",
+      "candidate_sha256": "6da448a8a5dfaf5acee0100d0b43d37ce5998b37f5ab607c33c2bb39fbc8f685",
+      "site_span": [
+        61,
+        68
+      ],
+      "reference": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "(4, 2)"
+      },
+      "candidate": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "(4, 2)"
+      },
+      "preserved": true
+    },
+    {
+      "case": "exponent",
+      "reference_sha256": "60dff4e70352dfcf5f3268b9480235b8e57ea14b278b933e057e1759d28d6821",
+      "candidate_sha256": "be30a631a3d13e0b25989ecdb27b71b1264aa38f2da763ea80844f0e8e40da2e",
+      "site_span": [
+        61,
+        69
+      ],
+      "reference": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "(100.0, 2)"
+      },
+      "candidate": {
+        "status": "returned",
+        "type": "tuple",
+        "value_repr": "(100.0, 2)"
+      },
+      "preserved": true
+    }
+  ]
+}

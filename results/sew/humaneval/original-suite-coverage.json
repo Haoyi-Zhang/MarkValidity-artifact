@@ -1,0 +1,30 @@
+{
+  "original_suite_observed_calls": 1534,
+  "calls_with_nonempty_kwargs": 0,
+  "tasks_with_nonempty_kwargs": [],
+  "static_candidate_calls_with_keywords_tasks": [],
+  "static_same_name_in_multiple_arguments_tasks": [],
+  "calls_changing_argument_value": 23,
+  "tasks_changing_argument_value": [
+    {
+      "task_id": "HumanEval/70",
+      "calls_changing_argument_value": 8
+    },
+    {
+      "task_id": "HumanEval/120",
+      "calls_changing_argument_value": 9
+    },
+    {
+      "task_id": "HumanEval/149",
+      "calls_changing_argument_value": 6
+    }
+  ],
+  "canonical_augassign_operator_counts": {
+    "Add": 52,
+    "Sub": 8,
+    "Mult": 6,
+    "FloorDiv": 2,
+    "Mod": 1
+  },
+  "scope": "Observed builtin values and static direct candidate calls only. No full alias-graph observation or proof that original tests cover alias-sensitive use."
+}
