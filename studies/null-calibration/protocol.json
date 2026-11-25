@@ -1,0 +1,69 @@
+{
+  "schema": "markvalidity-null-calibration-protocol-v1",
+  "status": "PRE_DECLARED_BEFORE_POPULATION_EXECUTION",
+  "declared_at_utc": "2026-11-25T03:02:08+00:00",
+  "motivation": "Reviewer request: the supplement's controlled-detector false-positive analysis (301/2^24) assumes independent fair null bits and a single key comparison. This study adds (1) exact correlated-null and multiple-query calculations for the controlled detector and (2) repository-derived empirical nulls for the real SEW detector, and (3) binds the retained CREST detector readings on unmodified programs.",
+  "no_tuning": "All populations, keys, grids, statistics, decision rules and unavailable-evidence rules below are fixed before any detector is run on the populations. No threshold, key, grid point or population member is changed after results are seen. All results are reported, including null and negative outcomes.",
+  "part1_controlled_detector": {
+    "detector": "src/covewm/benchmark.py detector(): with n surviving sites and m matching bits, accept iff binomial_tail(n, m) = sum_{i>=m} C(n,i)/2^n <= ALPHA = 1e-4. The acceptance threshold k*(n) is the smallest m with binomial_tail(n,m) <= 1e-4 (none if no m qualifies; then the detector never accepts). k*(n) is derived for n = 0..24 and confirmed by calling the implementation's detector() on synthetic CarrierState lists for every (n, m), 0 <= m <= n <= 24 (325 calls).",
+    "surviving_site_counts": "n = 0, 1, ..., 24 (all counts the detector can see; 24 is the full payload).",
+    "computation": "Exact rational arithmetic (Python fractions); decimal renderings are rounded from the exact rational to 40 significant digits by integer arithmetic.",
+    "null_models": {
+      "N0_independent_fair": "Match indicators i.i.d. Bernoulli(1/2) (the supplement's null).",
+      "N1_exchangeable_beta_binomial": "Match count M ~ BetaBinomial(n, a, a), a = (1 - rho) / (2 rho), i.e. exchangeable match indicators with marginal 1/2 and pairwise intra-class correlation rho. rho = 0 is N0. rho = 1 is the degenerate all-equal limit P(M=0)=P(M=n)=1/2.",
+      "rho_grid": ["0", "1/100", "1/50", "1/20", "1/10", "1/5", "3/10", "1/2", "1"],
+      "N2_duplicated_site_blocks": "Secondary, n = 24 only: the 24 sites form 24/c independent blocks of c identical fair match bits (candidate sites duplicated c times), so M = c * Binomial(24/c, 1/2). c in {1, 2, 3, 4, 6, 8, 12, 24}."
+    },
+    "per_query_quantity": "p(n, model) = P(detector accepts | n surviving sites) = P(M >= k*(n)).",
+    "multiple_queries": {
+      "K_grid": [1, 3, 16, 128, 1003, 1024, 16384],
+      "independent_queries": "P(at least one of K accepts) = 1 - (1 - p)^K for K mutually independent queries (exact for the controlled detector when the K keys are independent and uniform, because each key's match vector is then an independent fair word for any fixed observed bits). Computed for n = 24 under every N1 rho and every N2 c, and for every n under N0.",
+      "arbitrary_dependence_bounds": "For K queries with arbitrary dependence among them: p <= P(any accepts) <= min(1, K p) (Frechet/union bounds). Reported alongside."
+    },
+    "reported_change": "Ratio p(n, model) / p(n, N0) for every model and n with p(n, N0) > 0."
+  },
+  "part2_sew_empirical_null": {
+    "detector": "Pinned stock SEW variant studies/sew/variants/stock (vendor file SHA-256 values must equal the 'stock' entry of results/sew/humaneval/specification.json before execution), sew.detect(code, 'python', key) with its defaults: released q_table calibration (calibrate=True), Poisson-binomial tails, Bonferroni N_TESTS=2, ALPHA=0.01, MIN_EVIDENCE=5.",
+    "environment": "CPython 3.12 with tree-sitter==0.23.2 and tree-sitter-python==0.23.6 (the versions recorded in the SEW MBPP specification).",
+    "populations": {
+      "humaneval": "All 164 HumanEval tasks of results/sew/humaneval/data/HumanEval.jsonl.gz (SHA-256 b796127e635a67f93fb35c04f4cb03cf06f38c8072ee7cee8833d7bee06979ef), source = prompt + canonical_solution, exactly as studies/sew/scripts/humaneval/run_humaneval.py builds it. Each source SHA-256 must equal the retained reference_sha256 in results/sew/humaneval/references.json.",
+      "mbpp": "All 427 records of studies/sew/mbpp/sanitized-mbpp.json, source = task['code'], exactly as studies/sew/mbpp/scripts/run_factor_portable.py builds it. Each source SHA-256 must equal the retained source_sha256 in results/sew/mbpp/factors/stock/references.json.",
+      "references": "Union of humaneval and mbpp: 591 unwatermarked reference programs. No exclusions.",
+      "projects": "All 120 public project modules listed in corpus/transfer_manifest.csv, file corpus/transfer/<project_slug>/module-<NN>.py where NN is the two-digit suffix of module_id. File SHA-256 must equal the manifest source_sha256. Decoded as UTF-8. No exclusions."
+    },
+    "keys": {
+      "paper_keys": [
+        {"key_id": "upstream_default", "hex": "76767676767676767676767676767676"},
+        {"key_id": "integer_0", "hex": "00000000000000000000000000000000"},
+        {"key_id": "integer_1", "hex": "00000000000000000000000000000001"}
+      ],
+      "extended_keys": "key_id integer_i = i.to_bytes(16, 'big') for i = 2, 3, ..., 1001 (1,000 keys). Together with the paper keys: 1,003 keys, fixed before execution.",
+      "every_source_every_key": true
+    },
+    "recorded_per_source_and_key": ["verdict", "p", "p_all", "p_syntax", "n_grades", "k_grades", "n_syntax", "k_syntax", "n_sites"],
+    "decision_rule": "Positive (false positive on an unwatermarked source) iff verdict == 'Watermark detected'. 'No watermark evidence' and 'Insufficient evidence' (including parse abstention and n_grades < 5) are non-positive and counted separately.",
+    "unavailable": "A source is unavailable (kept in every denominator, never counted as positive, reason recorded) if its file is missing, fails its SHA-256 identity, cannot be decoded as UTF-8, or if a detect() call raises an exception or exceeds 60 s wall time (SIGALRM guard). An unavailable (source, key) pair is likewise kept in the denominator.",
+    "nominal_level": "The released calibration states per-query level ALPHA = 0.01 (p < 0.01 after Bonferroni over the two tests). Nominal per-query false-positive rate <= 0.01; for any-of-K keys on the same source the nominal union bound is min(1, 0.01 K), and if the K key decisions were independent with level exactly 0.01, P(any) = 1 - 0.99^K.",
+    "statistics": {
+      "S1_per_key_rate": "For each corpus (humaneval, mbpp, references, projects) and each of the 3 paper keys: positives / sources, with exact two-sided 95% Clopper-Pearson interval; denominator = all sources (primary) and also sources with available detector output (secondary).",
+      "S2_any_paper_key": "Per corpus: number of sources positive under at least one of the 3 paper keys, with Clopper-Pearson interval; compared with union bound 0.03 and 1 - 0.99^3.",
+      "S3_extended": "Per corpus over all 1,003 keys: pooled positives / (source, key) pairs (point estimate only; pairs are clustered by source and not independent); per-key positive counts across sources (min, median, max) and number of keys whose Clopper-Pearson lower bound exceeds 0.01; per-source positive-key-count histogram; number of sources with any positive key; number of sources whose positive-key count exceeds q999 = smallest q with P(Binomial(1003, 1/100) <= q) >= 0.999 (exact rational CDF).",
+      "S4_p_value_profile": "Per corpus, pooled over 1,003 keys and over available pairs: fraction of pairs with reported p <= 0.001, 0.01, 0.05, 0.1, 0.5 (descriptive calibration profile), and counts per verdict.",
+      "S5_retained_agreement": "For the 591 references and the 3 paper keys, the fresh detect() dictionary must be compared with the retained reference_detector of the stock rows in results/sew/humaneval/rows.json and results/sew/mbpp/factors/stock/rows.json; agreement counts are reported (disagreements are reported, not repaired)."
+    },
+    "exceedance_rule": "A per-key rate is declared to exceed the nominal level iff its two-sided 95% Clopper-Pearson lower bound > 0.01. Otherwise no exceedance is claimed; zero or small counts are reported with their upper bounds."
+  },
+  "part3_crest_unmarked": {
+    "first_check": "Search studies/crest/accepted and paper/figdata/crest-report-data.json for retained detector readings on unmodified programs. If retained, bind to them instead of re-running.",
+    "populations": "studies/crest/accepted/reference/results.json (591 canonical references), studies/crest/accepted/gpt4o/results.json and studies/crest/accepted/qwen/results.json (1,138 original published programs each, before CREST transformation). The program read is the row's reference_detector, i.e. the detector applied to the unmodified original.",
+    "heads": ["rf", "logreg_l1", "logreg_l2"],
+    "decision_rule": "Positive iff the retained classifiers[head].detected is true at the retained released threshold (constraint fpr_1pct). Rows whose reference_detector status is not 'completed' or lacks the head are unavailable and kept in the denominator.",
+    "statistics": "Per population and head: positives / programs with exact two-sided 95% Clopper-Pearson interval (all rows; also completed rows and qualified_reference rows), compared with the nominal 1% operating point; any-head positives per program.",
+    "caveat": "The released GPT-4o/Qwen cohorts participate in the upstream classifier data workflow (studies/crest/README.md), so their readings are not held-out false-positive estimates."
+  },
+  "outputs": {
+    "code": "studies/null-calibration/",
+    "results": "results/null-calibration/ (raw per-item files and summary.json)",
+    "verifier": "python3 -B -S studies/null-calibration/verify_null_calibration.py --results results/null-calibration (stdlib only; recomputes every summary number from the raw files and the exact correlated-null values from first principles; exits nonzero on any mismatch)."
+  }
+}

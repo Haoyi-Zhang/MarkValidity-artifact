@@ -1,0 +1,87 @@
+{
+  "schema": "markvalidity-controlled-validation-protocol-v1",
+  "frozen_before_results": true,
+  "frozen_at_utc": "2026-11-25T00:00:00Z",
+  "purpose": {
+    "A_matched_effort": "Reviewer R2: compare the three indexed carriers under matched realized edits / a common attack-effort budget instead of matched nominal severity, using only the retained 76,032 rows of results/controlled/raw/robustness.csv (no new program execution).",
+    "B_source_level_validation": "Reviewer R6: for a pre-declared stratified sample at intermediate severities, render the UNATTACKED marked program, apply each attack as a transformation of the rendered source text, re-extract with the existing extractor (covewm.benchmark.extract_carriers) and detector, and compare with the state-model row in robustness.csv."
+  },
+  "pilot_disclosure": "Before freezing this protocol the author of the study read the implementation (src/covewm/benchmark.py, run_all.py, check_source_detection.py) and the published aggregate tables of the online supplement (attack-response table, mixture frontier, decision functionals, attack_family_means.csv, mixture_scores.csv). No matched-effort aggregation and no source-level attack of this study had been computed. The secondary sensitivity variants of part B were chosen after reading the extractor code as targeted probes of its declared syntax assumptions; they are reported separately and never enter the primary agreement rates.",
+  "inputs": {
+    "robustness_csv": "results/controlled/raw/robustness.csv",
+    "robustness_csv_sha256": "f42970e2dd73f1fb790a5697be032e835ba1686df97bf80843fbe46427ca368c",
+    "robustness_rows": 76032,
+    "nominal_mixture_scores": "results/controlled/derived/mixture_scores.csv",
+    "implementation_imported_read_only": ["src/covewm/benchmark.py (payload_bits, carrier_only_states, render_program, extract_carriers, detector, attacked_states for diagnostics only)", "src/covewm/tasks.py (templates)"]
+  },
+  "declared_site_selection_rule": {
+    "description": "Identical to the frozen state model. u01(s) = int.from_bytes(sha256(s)[:8], 'big') / 2**64. key = f'{salt}|{scheme}|{attack}|{severity:.1f}|{task}|{language}|{payload_index}'. p = min(1, max(0, severity * multiplier)). Site k (0-based ordinal in source order, equal to the carrier index in the unattacked program) is selected iff u01(f'{key}|{op}|{k}') < p, where op is rename->'rename', normalize->'normalize', random_flip->'flip', strip->'strip', mixed->'mixedapply'. For mixed the operation selector is u01(f'{key}|mixedop|{k}') with thresholds 0.25/0.50/0.75. Eligibility: rename only acts on identifier-declaration (lexical) carriers, normalize only on control-statement (structural) carriers; flip, strip and mixed act on all carriers.",
+    "multipliers": {
+      "lexical": {"rename": 1.15, "normalize": 1.15, "random_flip": 1.08, "strip": 1.09, "mixed": 1.23, "format": 1.0},
+      "structural": {"rename": 1.15, "normalize": 1.15, "random_flip": 1.07, "strip": 1.08, "mixed": 1.22, "format": 1.0},
+      "hybrid": {"rename": 1.25, "normalize": 1.23, "random_flip": 1.09, "strip": 1.09, "mixed": 1.30, "format": 1.0}
+    },
+    "salts": {
+      "lexical": {"rename": "lr4", "normalize": "unaffected-lexical-normalize", "random_flip": "rf-lexical", "strip": "strip-lexical", "mixed": "mixed-lexical", "format": "format"},
+      "structural": {"rename": "unaffected-structural-rename", "normalize": "sn152", "random_flip": "rf-structural", "strip": "strip-structural", "mixed": "mixed-structural", "format": "format"},
+      "hybrid": {"rename": "hrfixed", "normalize": "hnfixed", "random_flip": "rf-hybrid", "strip": "strip-hybrid", "mixed": "mixed-hybrid", "format": "format"}
+    },
+    "format_selection": "The state model's formatting control changes no carrier state and has no site selection. For the source-level formatting counterpart this study declares the same rule with op='format' and multiplier 1 to choose which carriers receive formatting edits; the state prediction is the unchanged state at every severity.",
+    "consistency_check": "The study's own re-implementation of the rule must reproduce realized_bit_changes, deletions, surviving_sites and match_count of all 76,032 retained rows exactly, and the declared constants must equal those in covewm.benchmark; otherwise the study stops."
+  },
+  "A_matched_effort": {
+    "population": "All 76,032 retained rows: 3 carriers x 6 attacks x 11 severities x 12 tasks x 2 languages x 16 payloads. Families compared: rename, normalize, random_flip, strip, mixed. Formatting is reported as the invariant control (zero edits at every severity).",
+    "effort_measures": {
+      "E1_realized_edits": {"role": "primary", "definition": "realized_bit_changes + deletions of the retained row (number of carrier sites whose observed state differs from the embedded state, including deletions). Integer 0..24."},
+      "E2_requested_operations_bin": {"role": "secondary", "definition": "requested_operations of the retained row (= eligible_sites * effective probability, the expected number of selected sites) binned into half-open width-2 bins [0,2),[2,4),...,[22,24),[24,26); bin label = lower bound."},
+      "E3_attempted_operations": {"role": "secondary (common attack-effort budget in attacker actions)", "definition": "number of sites selected by the declared rule among eligible sites, counting selections that realize no state change (e.g. canonicalizing an identifier already in canonical form). Recomputed deterministically from the declared rule; not a column of robustness.csv."}
+    },
+    "relations": {"eq": "configurations with effort exactly b", "le": "configurations with effort <= b (common budget b)"},
+    "cell": "(effort_measure, relation, attack, carrier, effort value b): n configurations, detected count, rate = detected/n as an exact fraction.",
+    "support_rule": "A carrier is supported in a cell iff n >= 30. A cell value b is three-way common support iff all three carriers are supported; pairwise common support analogously for each carrier pair.",
+    "ranking_rule": "Within a cell, rank supported carriers by exact rate descending; exactly equal fractions tie. Winner set = all carriers attaining the maximum. A winner is unique iff the winner set has one element.",
+    "family_score_at_matched_effort": "Direct standardization: for attack a and measure E (relation eq), over the three-way common-support values B_a, score_s(a) = sum_{b in B_a} w_b * rate_s(a,b), w_b = (sum_s n_{s,a,b}) / (sum_{b' in B_a} sum_s n_{s,a,b'}). Undefined if B_a is empty. Also report each carrier's coverage = share of its rows of family a lying in B_a. Pairwise standardized scores use pairwise common support.",
+    "mixture_scores_at_matched_effort": "For mixtures balanced, rename-heavy, structure-heavy (weights of covewm.benchmark.MIXTURE_WEIGHTS), score_s(m) = sum_a weight_{m,a} * score_s(a). Undefined if any positive-weight family has an undefined score.",
+    "nominal_comparator": "Nominal-severity family means (mean over the 11 severity strata) and mixture scores recomputed from robustness.csv; must equal results/controlled/derived/attack_family_means.csv and mixture_scores.csv. Nominal winners: balanced lexical, rename-heavy structural, structure-heavy lexical.",
+    "decision_rules": {
+      "reversal_persists": "The reported mixture reversal persists at matched realized effort iff, under E1/eq standardized scores, the rename-heavy unique winner is structural AND the structure-heavy unique winner is lexical. If either mixture score is undefined or its winner set is not that unique carrier, the reversal is declared NOT to persist at matched realized effort. The same rule is evaluated and reported for E2 and E3 (secondary).",
+      "carrier_invariance_check": "Report whether, for every (realized_bit_changes, deletions) pair, all retained rows have the same detected value (exact check over all rows), and, per family and measure, the number of three-way common-support eq cells in which the three carriers' rates are exactly equal."
+    },
+    "outputs": ["matched_effort_curves.csv (tidy: effort_measure, relation, attack, carrier, effort, n, detected, rate, rate_exact)", "matched_effort_rankings.csv", "matched_effort_family_scores.csv", "matched_effort_mixture_scores.csv", "summary.json:A"]
+  },
+  "B_source_level_validation": {
+    "pipeline": "For each sampled configuration: (1) states0 = carrier_only_states(payload_bits(task, language, payload_index), scheme); (2) source0 = render_program(template, language, states0) (the unattacked marked program); (3) source1 = text-level attack of source0 (studies/controlled-validation/source_attacks.py), which never calls attacked_states nor renders attacked states; it locates carrier statements in the text through their WM_SITE comment lines, decides lexical/structural shape from the statement text, and selects sites with the declared rule; (4) extracted = extract_carriers(source1, language); (5) detector over CarrierState(i, channel_i, expected_i, extracted.get(i,0), i in extracted) exactly as check_source_detection.py; (6) compare with the robustness.csv row of the same (scheme, attack, severity, task, language, payload_index).",
+    "text_level_attacks": {
+      "rename": "Selected identifier-declaration carriers: the declared identifier is converted to snake_case (split at lower->upper and letter<->digit boundaries, lowercase, join with '_'; e.g. wmBit07 -> wm_bit_07) and every whole-word occurrence in the program is replaced. Already-snake identifiers are unchanged.",
+      "normalize": "Selected control-statement carriers: an empty-iterable loop (Python 'for X in ():' with its 'pass' body; JavaScript 'for (const X of []) {}') is rewritten to the equivalent dead conditional ('if False:' keeping the body; 'if (false) {}'). Already-conditional carriers are unchanged.",
+      "random_flip": "Selected carriers: identifier style toggled (snake_case <-> camelCase, wm_bit_07 <-> wmBit07, all whole-word occurrences); control form toggled (dead conditional <-> empty loop over a fresh loop variable named _wm_{k:02d}).",
+      "strip": "Selected carriers: the WM_SITE comment line and the complete carrier statement (Python: header plus more-indented body lines; JavaScript: lines until braces balance) are deleted.",
+      "mixed": "Selected carriers (op 'mixedapply'), with selector u: u<0.25: declaration -> rename canonicalization, control -> control flip; 0.25<=u<0.50: control -> normalize, declaration -> identifier flip; 0.50<=u<0.75: flip; u>=0.75: strip.",
+      "format": "Selected carriers (op 'format', multiplier 1): a formatting-only comment line '# format-only padding for site NN' / '// format-only padding for site NN' is inserted before the WM_SITE line and an empty line after the statement (the layout of the state model's formatted rendering). Predicted state: unchanged."
+    },
+    "languages": "Python and JavaScript. All six attacks have a text-level counterpart in both languages; no attack/language is excluded. The extractor is the single Python regex extractor used for both languages in the retained pipeline; there is no separate JavaScript extractor.",
+    "sample": {
+      "carriers": ["lexical", "structural", "hybrid"],
+      "attacks": ["format", "rename", "normalize", "random_flip", "strip", "mixed"],
+      "severities": ["0.2", "0.4", "0.5", "0.6", "0.8"],
+      "tasks": "all 12",
+      "languages": ["python", "javascript"],
+      "payload_indices": "0..15 (all retained payloads)",
+      "size": 34560,
+      "strata_reported": ["carrier", "attack", "severity", "language", "carrier x attack", "attack x severity", "carrier x attack x language", "carrier x attack x severity x language (180 cells of 192 configurations)"],
+      "randomness": "none; the sample is the complete declared grid and site selection is the declared deterministic rule"
+    },
+    "primary_metrics": "Exact agreement of surviving_sites, match_count and detected with the retained row; a configuration agrees iff all three agree. Reported overall and per stratum with exact counts.",
+    "secondary_metrics": "Agreement of realized_bit_changes, deletions and p_value (string-formatted as in robustness.csv); per-site agreement of the extracted observation map with the state model's present/observed map (attacked_states, used only for this diagnostic); byte identity of source1 with render_program(template, language, attacked_states(...)) for non-format attacks; syntax validity of source1 (Python: compile() without execution; JavaScript: vm.Script compilation in Node without execution).",
+    "disagreement_classification": "Every configuration with a primary disagreement is listed with: differing fields, the sites whose extracted observation differs from the state prediction, the text operations applied, and a cause category from {extractor_does_not_recognize_transformed_form, marker_statement_attribution_shift, selection_or_eligibility_mismatch, other}.",
+    "secondary_sensitivity_variants": {
+      "note": "Reported separately; not part of the primary agreement. Same sample restricted to the variant's attack (3 carriers x 5 severities x 12 tasks x 2 languages x 16 payloads = 5,760 each); compared with the robustness.csv row of the base attack.",
+      "format_whitespace": "base attack format: selected carrier statements receive whitespace-only token-spacing changes (Python: 'if False :', 'for X in ( ) :', 'name=0'; JavaScript: 'if(false){}', 'for(const X of[]){}', 'const name=0;').",
+      "strip_statement_only": "base attack strip: the carrier statement is deleted but its WM_SITE comment line is kept.",
+      "rename_no_digit_split": "base attack rename: snake_case conversion without a letter/digit boundary (wmBit07 -> wm_bit07)."
+    },
+    "decision_rule": "The state model is declared validated for the detection side on this sample iff all 34,560 primary configurations agree on surviving_sites, match_count and detected. Otherwise the agreement rate, its per-stratum counts and every disagreement with its cause are reported; no attack is redefined after results.",
+    "scope_exclusion": "Behavioral preservation of the source-attacked programs is NOT validated here and not needed: the paper's behavioral labels come from separate execution of the retained programs. Only the detection side (render -> text attack -> extract -> detect) is validated. Programs are compiled for syntax only and never executed."
+  },
+  "verification": "studies/controlled-validation/verify_controlled_validation.py (stdlib only) recomputes every summary number from the per-configuration records and robustness.csv, re-runs the Python and JavaScript text attacks and extraction (pure Python), re-checks Python syntax with compile(), and re-checks JavaScript syntax with Node if available (explicitly reported as SKIPPED otherwise; --require-node turns a skip into failure). Exit status nonzero on any mismatch."
+}

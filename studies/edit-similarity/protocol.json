@@ -1,0 +1,100 @@
+{
+  "study": "edit-similarity",
+  "status": "PRE_DECLARED",
+  "declared_at_utc": "2026-11-25T09:38:00Z",
+  "question": "On real watermark edits emitted by SEW and CREST, does source distortion between the qualified reference and the emitted candidate separate behaviorally invalid (contradicted) candidates from valid (supported) ones?",
+  "motivation": "Reviewer concern that the controlled contrast (large semantic no-op edits vs. small semantic mutants) is constructed to make source-similarity metrics fail; this study uses the naturally occurring edit distributions of two real watermark pipelines already in the artifact.",
+  "unit": "One emitted candidate row with a Boolean behavioral label (supported / contradicted) whose reference qualifies (passed its own suite). Rows without emission, with an unavailable candidate label, or with a non-qualified reference are counted by reason and excluded from all statistics.",
+  "populations": {
+    "crest_reference": {
+      "input": "studies/crest/accepted/reference/results.json",
+      "expected_rows": 591,
+      "expected": {"emitted": 589, "contradicted": 15}
+    },
+    "crest_gpt4o": {
+      "input": "studies/crest/accepted/gpt4o/results.json",
+      "expected_rows": 1138,
+      "expected": {"qualified": 948, "supported": 934, "contradicted": 14}
+    },
+    "crest_qwen": {
+      "input": "studies/crest/accepted/qwen/results.json",
+      "expected_rows": 1138,
+      "expected": {"qualified": 826, "supported": 761, "contradicted": 13, "qualified_not_emitted": 52}
+    },
+    "crest_pooled": {
+      "definition": "Union of the units of crest_reference, crest_gpt4o and crest_qwen."
+    },
+    "sew": {
+      "inputs": ["results/sew/humaneval/rows.json", "results/sew/humaneval/references.json", "results/sew/mbpp/factors/normalized_rows.json"],
+      "definition": "Union of SEW HumanEval (all four variants x three keys) and SEW sanitized MBPP (stock, s1_literal_predecessor, s4_return_boundary, s1_s4 x three keys). Sub-populations sew_humaneval and sew_mbpp are also reported; statistics requiring both classes are null where a class is absent.",
+      "expected": {"humaneval_contradicted": 0, "mbpp_contradicted": 6, "mbpp_contradicted_tasks": ["MBPP/290", "MBPP/393"]}
+    }
+  },
+  "label_rules": {
+    "crest": {
+      "emission": "row['emission'] if present; else 'emitted' if candidate_source and embedding.status == 'completed'; 'rejected' if embedding.status == 'error' and no candidate_source; else 'unknown' (copied from regressions/test_publication_reporting.py emission(row)).",
+      "native_label": "Copied from regressions/test_publication_reporting.py label(record) and regressions/test_natural_reporting.py mbpp_observed_label: None if evidence_rejected, interruption or returncode != 0; else parse worker stdout JSON status passed->True, failed->False, unknown/unavailable->None (a True with error or unfinished check aborts); if stdout is JSONL events, reconstruct from events. The reconstructed label must equal record['label'] or the run aborts.",
+      "qualified": "label(reference_native) is True.",
+      "valid": "emitted and label(candidate_native) is True.",
+      "invalid": "emitted and label(candidate_native) is False.",
+      "exclusion_reasons": ["reference_not_qualified_failed", "reference_not_qualified_unavailable", "not_emitted_rejected", "not_emitted_unknown", "candidate_label_unavailable"],
+      "exclusion_precedence": "reference qualification is checked first, then emission, then candidate label."
+    },
+    "sew": {
+      "qualified": "reference_status == 'passed'.",
+      "valid": "validity_label in ('supported', 1).",
+      "invalid": "validity_label in ('contradicted', 0).",
+      "other_labels": "excluded as candidate_label_unavailable.",
+      "byte_identical_candidates": "included with distortion 0."
+    }
+  },
+  "source_resolution_and_integrity": {
+    "crest": "reference_source and candidate_source are resolved relative to the cohort folder studies/crest/accepted/<cohort>/ and must exist. Rows carry no source hash; integrity check: the decoded file text must equal, or be a suffix of, the source text in the corresponding native execution_request (the program that was executed and labeled); otherwise abort.",
+    "sew_humaneval": "candidate = results/sew/humaneval/<source_path>; reference = results/sew/humaneval/<references.json[task_id].source_path>. SHA-256 of raw candidate bytes must equal candidate_sha256; SHA-256 of raw reference bytes must equal the row reference_sha256 and the references.json reference_sha256; otherwise abort.",
+    "sew_mbpp": "candidate = results/sew/mbpp/<source_path>; reference = results/sew/mbpp/<reference_path>. SHA-256 checks as for HumanEval against candidate_sha256 and reference_sha256; otherwise abort.",
+    "text_decoding": "Raw bytes decoded as strict UTF-8 without newline translation; SHA-256 values in records.csv are of raw bytes."
+  },
+  "instruments": {
+    "function": "covewm.metrics.source_metrics(reference, candidate, 'python') from artifact/src (added to sys.path)",
+    "similarities": ["character_similarity", "token_similarity", "identifier_normalized_similarity", "ast_type_similarity", "control_profile_similarity", "identifier_multiset_similarity", "identifier_style_similarity"],
+    "distortion": "1 - similarity for each of the seven instruments",
+    "identical_flag": "candidate bytes == reference bytes"
+  },
+  "statistics": {
+    "per_population_and_instrument": {
+      "n_valid": "count of valid units",
+      "n_invalid": "count of invalid units",
+      "auroc": "covewm.metrics.roc_auc with invalid = 1 (positive), valid = 0, score = distortion; ties count 1/2; null when a class is absent",
+      "median_distortion_valid": "statistics.median over valid units",
+      "median_distortion_invalid": "statistics.median over invalid units (null if none)",
+      "fraction_invalid_at_or_below_valid_median": "share of invalid units whose distortion <= median_distortion_valid (null if no invalid)",
+      "bootstrap": {
+        "replicates": 2000,
+        "rng": "random.Random(20261125), freshly constructed once per population",
+        "resampling": "Cluster bootstrap: the population's sorted list of task clusters (C clusters) is sampled with replacement C times via rng.choice per draw; all units of a sampled cluster are kept, with multiplicity. The same 2000 resampled replicates are used for all seven instruments of that population.",
+        "cluster_key": "'<dataset>:<numeric task id>' where dataset is HumanEval or MBPP, so a task is one cluster across CREST cohorts in crest_pooled and across variants/keys in SEW.",
+        "skipped": "replicates in which either class is absent are skipped and counted",
+        "interval": "95% percentile interval: 2.5% and 97.5% quantiles of the non-skipped replicate AUROCs using linear interpolation between order statistics (statistics.quantiles method='inclusive' equivalent; position p*(m-1))"
+      }
+    },
+    "controlled_claim_comparison": {
+      "instrument": "character distortion",
+      "small_faulty_edits": "count of invalid units whose character distortion is strictly below the 10th percentile of valid units' character distortion",
+      "large_harmless_edits": "count of valid units whose character distortion is strictly above the 90th percentile of invalid units' character distortion",
+      "percentile_method": "linear interpolation, position p*(n-1) over the sorted values",
+      "null_when": "the reference class is empty"
+    },
+    "not_performed": "No other statistics, no threshold tuning, no exclusions beyond the rules above."
+  },
+  "interpretation_rule": {
+    "auroc_in_[0.4,0.6]": "distortion does not separate validity",
+    "auroc_gt_0.6": "distortion is associated with invalidity",
+    "auroc_lt_0.4": "inverse association",
+    "applies_to": "the point AUROC of each population x instrument; SEW has too few invalid units for a stable AUROC and is reported with counts"
+  },
+  "outputs": ["results/edit-similarity/records.csv", "results/edit-similarity/summary.json"],
+  "commands": [
+    "python3 -B -S studies/edit-similarity/run_edit_similarity.py --out results/edit-similarity",
+    "python3 -B -S studies/edit-similarity/verify_edit_similarity.py --out results/edit-similarity"
+  ]
+}

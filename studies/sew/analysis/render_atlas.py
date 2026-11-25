@@ -48,6 +48,8 @@ def main():
         return re.sub(r'\\input\{([^}]+)\}',lambda m:expand(paper/(m.group(1)+('.tex' if not Path(m.group(1)).suffix else '')),stack+(path,)),t)
     source=expand(paper/'main.tex')
     blocks=re.findall(r'\\begin\{figure\}(?:\[[^\]]*\])?(.*?)\\end\{figure\}',source,re.S)
+    # Conceptual figures are framed placeholders without an image; the atlas covers drawn figures.
+    blocks=[b for b in blocks if re.search(r'\\includegraphics',b)]
     if not blocks:raise ValueError('main article contains no figures')
     atlas=fitz.open();records=[];page_w,page_h=612,720
     total_pages=2*len(blocks)
@@ -64,6 +66,15 @@ def main():
                             '$NF$':'NF','$C$':'C','$J$':'J','$D$':'D','$H$':'H',
                             '$J_L-J_R=1/2$':'J<sub>L</sub> − J<sub>R</sub> = 1/2'}.items():
             markup=markup.replace(token,value)
+        markup=markup.replace('\\%','%').replace('~',' ')
+        markup=re.sub(r'Equation ?\\eqref\{[^{}]*\}|\\eqref\{[^{}]*\}','the paired envelope',markup)
+        markup=re.sub(r'\s*\([^()]*\\ref\{[^{}]*\}[^()]*\)','',markup)
+        def inline(m):
+            body=m.group(1)
+            body=re.sub(r'\\(?:mathrm|mathit)\{([^{}]*)\}',r'\1',body)
+            body=re.sub(r'_\{([^{}]*)\}|_(\w)',lambda s:'<sub>'+(s.group(1) or s.group(2))+'</sub>',body)
+            return body.replace('\\geq','≥').replace('\\leq','≤').replace('\\,',' ')
+        markup=re.sub(r'\$([^$]*)\$',inline,markup)
         if re.search(r'[\\{}$]',markup):raise ValueError('caption needs an explicit math rendering rule: '+caption)
         width=layout['linewidth_bp'];height=figure[0].rect.height*width/figure[0].rect.width
         left=(page_w-width)/2;top=104

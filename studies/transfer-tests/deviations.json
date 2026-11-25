@@ -1,0 +1,26 @@
+{
+  "note": "Deviations from protocol.json, decided after the first baseline runs and before any variant run. Each is an environment or test-source repair for a failure unrelated to the interventions; protocol.json is left unchanged. The runner merges these per-project overrides over protocol.json.",
+  "harness": [
+    {"observed": "In the first baseline round the monitor plugin called os.path.realpath inside its sys.monitoring callback; suites that enable the blockbuster blocking-call detector (anyio, aiohttp) reported BlockingError for it.", "repair": "The callback now uses string operations only (os.path.normpath on co_filename); target paths are normalized the same way."},
+    {"observed": "TMPDIR under the deep work directory made AF_UNIX socket paths exceed 108 bytes (anyio).", "repair": "TMPDIR is /tmp/tt/<project>-c<clone>, emptied before each run."},
+    {"observed": "With only loopback up in the network namespace, getaddrinfo with AI_ADDRCONFIG does not resolve 'localhost', so localhost-server tests failed (anyio).", "repair": "The namespace additionally gets an unrouted dummy interface (10.213.0.1/24, fd00:7474::1/64). There is still no route and no reachable DNS resolver; outbound connections fail with 'Network is unreachable'."},
+    {"note": "All baselines were rerun after these repairs; superseded baseline rounds are not used. No variant had been run."}
+  ],
+  "projects": {
+    "anyio": {
+      "override": {"exclude_newer": "2026-03-24T12:59:09Z"},
+      "observed": "Both baseline runs aborted with pytest exit status 3 before collecting any test: anyio 4.13.0's pytest plugin imports _pytest.python.CallSpec2, and pytest 9.2.0 (resolved under the 2026-11-24 cutoff) raises PytestRemovedIn10Warning for it.",
+      "deviation": "anyio is re-resolved with --exclude-newer set to its own sdist upload time on PyPI (2026-03-24T12:59:09Z), i.e. the dependency versions available when this release was published. Its declared test dependencies are unchanged."
+    },
+    "urllib3": {
+      "override": {"exclude_newer": "2026-05-07T16:13:18Z"},
+      "observed": "The baseline completed, but test/test_util.py failed to collect because pytest 9.2.0 (resolved under the 2026-11-24 cutoff) deprecates iterator arguments to parametrize and the project's filterwarnings=error turns that into an error; 57 further tests failed on DeprecationWarnings from a pyOpenSSL newer than the release.",
+      "deviation": "Same repair as anyio: urllib3 is re-resolved with --exclude-newer set to its own sdist upload time (2026-05-07T16:13:18Z). Its declared test dependencies are unchanged."
+    },
+    "jmespath": {
+      "override": {"source": "git-tag"},
+      "observed": "The jmespath 1.1.0 sdist ships tests/*.py but not tests/__init__.py, which defines the OrderedDict, json and unittest names the test modules import; 5 of 6 test modules failed to collect and only 1 test ran.",
+      "deviation": "The protocol's git-tag fallback (declared for sdists without tests) is applied to this incomplete test tree: jmespath/jmespath.py tag 1.1.0 is used as test and install source. Module bytes are matched by sha256 as for every other project."
+    }
+  }
+}

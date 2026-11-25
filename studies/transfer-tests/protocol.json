@@ -1,0 +1,107 @@
+{
+  "study": "transfer-tests",
+  "title": "Behavioral oracle for the multi-project transfer audit: each project's own test suite at the pinned version",
+  "status": "pre-declared",
+  "declared_at": "2026-11-25, after downloading the pinned sdists and reading their test-dependency declarations, and before any baseline or variant test run",
+  "question": "When the three audited transfer-audit variants (inert trailing comment, syntax-aware local rename, scope-blind identifier collapse) replace one selected module inside its own project at the pinned version, does the project's own test suite still pass every test that passed on the unmodified code?",
+  "population": {
+    "projects": 24,
+    "modules": 120,
+    "interventions": ["inert-trailing-comment", "syntax-aware-local-rename", "scope-blind-identifier-collapse"],
+    "planned_variant_cells": 360,
+    "manifests": ["corpus/project_manifest.csv", "corpus/transfer_manifest.csv"],
+    "rule": "All 24 projects and all 120 frozen modules are attempted. No project, module or test is selected or dropped on the basis of variant outcomes."
+  },
+  "variant_bytes": {
+    "generator": "studies/transfer-tests/variants.py, which calls covewm.extended.inert_trailing_comment, covewm.extended.syntax_aware_local_rename (replacement 'cvlocal' + source_sha256[:7]) and covewm.extended.scope_blind_identifier_collapse on the frozen module text in corpus/transfer",
+    "check": "Every frozen source must match transfer_manifest.csv source_sha256 and every variant must match the retained candidate_sha256 in results/controlled/raw/project_transfer.csv before any run; a mismatch aborts the study.",
+    "write_rule": "Variant text is written as raw UTF-8 bytes with no newline translation over the module file."
+  },
+  "sources": {
+    "default": "The pinned release's sdist from PyPI (filename, URL and PyPI sha256 verified and recorded); each archive is extracted into its own new empty directory with tarfile filter='data'.",
+    "git_tag_fallback": "When the sdist contains no tests, the matching tag archive from the project's official repository is used as the test and install source: rich (Textualize/rich v15.0.0) and asn1crypto (wbond/asn1crypto 1.5.1). For httpx the tag archive (encode/httpx 0.28.1) is read only for the test-requirement declaration (requirements.txt) that the sdist omits.",
+    "module_location": "Each selected module is located in the test source tree, and in the installed site-packages, by matching the sha256 of its UTF-8 text to transfer_manifest.csv source_sha256. A module that cannot be located in the test source tree is recorded as unavailable (module not located)."
+  },
+  "environment": {
+    "interpreter": "CPython 3.12.14 (uv-managed, linux x86_64), one isolated uv venv per project",
+    "resolver": "uv pip install, resolving the project (from its source tree, non-editable) together with its declared test dependencies in one resolution, with --exclude-newer 2026-11-24T00:00:00Z; resolved versions are recorded with uv pip freeze",
+    "test_dependency_rule": "Declared test dependencies are taken from the project's own declaration (listed per project below). Tooling that only lints, type-checks, measures coverage, builds documentation, publishes, or benchmarks timing is omitted unless the test configuration loads it (e.g. pytest-benchmark for cattrs). A pinned lock file shipped for tests is installed as is.",
+    "resolution_fallback": "If the declared set fails to resolve or install, one retry is made with version specifiers removed from the test dependencies (the project itself stays at its pinned source). If that also fails the project is ineligible (install failure).",
+    "isolation": "Tests run in a fresh Linux network namespace (unshare -rn, loopback up, then mapped back to the invoking uid), so the Internet is unreachable and localhost servers work. Proxy variables are unset. This is the declared rule for network-dependent tests: they are not deselected by name; they fail or skip in the baseline and are therefore outside the baseline-passing set. dnspython additionally receives its own documented switch NO_INTERNET=1.",
+    "fixed_env": {"PYTHONHASHSEED": "0", "PYTHONDONTWRITEBYTECODE": "1", "TZ": "UTC", "LANG": "C.UTF-8", "LC_ALL": "C.UTF-8", "HOME": "<per-clone empty directory>", "TMPDIR": "<per-clone empty directory>", "COLUMNS": "80"},
+    "bytecode": "PYTHONDONTWRITEBYTECODE=1 and every __pycache__ entry for the target module is deleted before each run, so no stale bytecode can stand in for the written source.",
+    "compiled_extensions": "aiohttp is built and tested with its supported AIOHTTP_NO_EXTENSIONS=1 switch; coverage is tested with COVERAGE_CORE=pytrace (one of the cores its own igor.py test driver runs), so the flat-layout source tree needs no in-place compiled extension."
+  },
+  "test_command": {
+    "base": ["<venv>/bin/python", "-m", "pytest", "-p", "no:cacheprovider", "-p", "no:randomly", "-p", "tt_monitor", "-q", "--tb=line", "-rN", "--continue-on-collection-errors"],
+    "hypothesis": "If hypothesis is installed in the project venv, --hypothesis-seed=0 is appended.",
+    "cwd": "the (per-clone copy of the) extracted source root",
+    "project_overrides": "per-project pytest arguments, environment and setup commands below; project ini options (filterwarnings, xfail_strict, markers, testpaths) are kept, except that addopts requesting parallel execution or coverage reporting are overridden as listed",
+    "no -x": true,
+    "timeout_seconds": 2400,
+    "timeout_rule": "A run that exceeds the timeout is killed with its process group and its outcome is 'unavailable', never a failure."
+  },
+  "monitor_plugin": {
+    "file": "studies/transfer-tests/plugin/tt_monitor.py (loaded via PYTHONPATH and -p tt_monitor in every run, baseline and variant alike)",
+    "records": "per test node id: final outcome (passed / failed / error / skipped / xfailed / xpassed) with a truncated failure line; and, using sys.monitoring tool id 4 with PY_START events, which code objects whose co_filename is one of the target module's two installed copies started executing in the pytest process"
+  },
+  "eligibility": {
+    "baseline_runs": "The unmodified project is run twice with the identical command.",
+    "baseline_complete": "A baseline run completes if it finishes within the timeout, the monitor wrote its report, and at least one test passed.",
+    "eligible": "A project is eligible if both baseline runs complete. The baseline-passing set is the set of node ids that passed in both runs (tests passing in only one are flaky and excluded from the criterion).",
+    "ineligible_reasons": ["no tests in sdist or tag", "install failure", "setup failure", "baseline timeout", "baseline did not complete"]
+  },
+  "variant_runs": {
+    "procedure": "For each eligible project, each of its 5 modules and each intervention: write the variant bytes over the module file in BOTH the test source tree copy and the installed site-packages copy (whichever the suite imports), delete the module's cached bytecode, run the identical test command, then restore the original bytes in both places and check their sha256.",
+    "confirmation_rerun": "If a variant run reports at least one baseline-passing test as not passed, the same variant is run once more. Only tests not passed in both runs count as reproducible breaks.",
+    "post_control": "After its queue, every clone reruns the unmodified code once; tests in the baseline-passing set that do not pass there are recorded as drift (reported, not used to change outcomes)."
+  },
+  "outcomes": {
+    "not_preserved_test": "A baseline-passing test is not preserved if, in the variant run, it is failed, error, skipped, xfailed, or absent (e.g. its test file no longer imports or the harness could not start).",
+    "preserved": "the run finished within the timeout and every baseline-passing test passed",
+    "contradicted": "at least one baseline-passing test is not preserved in the variant run and in its confirmation rerun",
+    "unavailable": "project ineligible, module not located, run timed out (either run), or failures that did not reproduce in the confirmation rerun"
+  },
+  "exercise_rule": {
+    "exercised": "The module counts as exercised by the suite if, in the first baseline run, at least one code object with the CO_NEWLOCALS flag (a function, method, lambda or generator expression; class bodies and module top level excluded) whose co_filename is one of the module's installed copies started executing inside the pytest process, at any time during the session.",
+    "imported": "Recorded separately: the module's top-level code executed in the pytest process.",
+    "target_function_executed": "Recorded separately for the rename: the code object of the renamed function (first line = its first decorator line, or its def line) started executing.",
+    "limitation": "Execution in subprocesses spawned by tests is not observed.",
+    "reporting": "Preserved cells on non-exercised modules are reported as 'not exercised' (no behavioral evidence), separately from 'preserved'."
+  },
+  "parallelism": {
+    "rule": "Each eligible project's venv and source tree are copied into K clones (K = 1 if the first baseline took at most 60 s, 3 if at most 300 s, otherwise 5; venv script shebangs rewritten to the clone). Variant cells are assigned to clones round-robin in manifest order (module rank, then intervention order above). At most 18 test processes run concurrently. Each clone is used by one process at a time.",
+    "determinism": "Fixed hash seed, fixed hypothesis seed when available, no random-order plugin, fixed assignment of cells to clones."
+  },
+  "analysis": {
+    "per_intervention": "counts over 120 modules of: preserved (exercised), contradicted, unavailable, not exercised (preserved but not exercised); plus contradicted split by exercised flag",
+    "rename_keyword_probe": "For contradicted rename cells, failing-test messages are scanned for 'unexpected keyword argument' or 'got multiple values for argument' to identify keyword-caller breaks; this is descriptive only.",
+    "no_tuning": "No rule above is changed after seeing baseline or variant outcomes; any deviation is reported in results/transfer-tests/README.md."
+  },
+  "projects": {
+    "aiohttp": {"source": "sdist", "deps": ["-r", "requirements/test.txt"], "deps_declared_in": "requirements/test.txt (pinned lock in sdist)", "pytest_args": ["-o", "addopts=", "-m", "not dev_mode"], "env": {"AIOHTTP_NO_EXTENSIONS": "1"}, "install_env": {"AIOHTTP_NO_EXTENSIONS": "1"}},
+    "anyio": {"source": "sdist", "extras": ["trio"], "deps": ["blockbuster >= 1.5.23", "hypothesis >= 4.18.2", "psutil >= 5.9", "pytest >= 8.4", "pytest-mock >= 3.14", "trustme >= 1.0.0", "truststore >= 0.9.1", "uvloop >= 0.22.1"], "deps_declared_in": "pyproject [dependency-groups] test (coverage omitted) + extra trio"},
+    "asn1crypto": {"source": "git-tag", "deps": ["pytest"], "deps_declared_in": "no test-runner declaration (requires/ lists only coverage and lint); unittest suite run by pytest", "pytest_args": ["tests"]},
+    "attrs": {"source": "sdist", "deps": ["cloudpickle", "hypothesis", "pympler", "pytest", "pytest-xdist[psutil]"], "deps_declared_in": "pyproject [dependency-groups] tests"},
+    "babel": {"source": "sdist", "deps": ["freezegun~=1.0", "jinja2>=3.0", "pytest>=6.0", "pytz", "setuptools"], "deps_declared_in": "setup.py extras_require dev (pytest-cov omitted)"},
+    "beautifulsoup4": {"source": "sdist", "deps": ["lxml", "html5lib", "packaging", "soupsieve>=2.6", "pytest>=6", "typing_extensions>=4.0.0"], "deps_declared_in": "tox.ini [testenv] deps"},
+    "cattrs": {"source": "sdist", "extras": ["ujson", "orjson", "msgpack", "pyyaml", "tomlkit", "cbor2", "bson", "msgspec", "tomllib"], "deps": ["hypothesis>=6.135.26", "pytest>=8.4.1", "pytest-benchmark>=5.1.0", "immutables>=0.21", "pytest-xdist>=3.8.0"], "deps_declared_in": "Justfile test recipe: --all-extras --group test (coverage omitted)"},
+    "charset-normalizer": {"source": "sdist", "deps": ["pytest==8.4.1"], "deps_declared_in": "pyproject [dependency-groups] dev (coverage omitted)"},
+    "click": {"source": "sdist", "deps": ["-r", "requirements/tests.txt"], "deps_declared_in": "requirements/tests.txt (pinned)"},
+    "coverage": {"source": "sdist", "deps": ["-r", "requirements/pytest.pip"], "deps_declared_in": "requirements/pytest.pip (pinned), as installed by tox.ini", "pytest_args": ["-o", "addopts=", "-p", "no:legacypath"], "env": {"COVERAGE_CORE": "pytrace", "COVERAGE_TESTING": "True"}, "setup": [["python", "igor.py", "zip_mods"]]},
+    "defusedxml": {"source": "sdist", "deps": ["lxml", "pytest"], "deps_declared_in": "tox.ini [testenv] deps (coverage omitted) and tox.ini [pytest] python_files = tests.py"},
+    "dnspython": {"source": "sdist", "extras": ["dnssec", "doh", "doq", "idna", "trio"], "deps": ["pytest>=8.4", "hypercorn>=0.17.0", "quart-trio>=0.12.0"], "deps_declared_in": "pyproject optional-dependencies (dev: test-relevant entries only) + feature extras", "env": {"NO_INTERNET": "1"}},
+    "h11": {"source": "sdist", "deps": ["pytest"], "deps_declared_in": "no declaration in sdist; tests import only pytest and the standard library"},
+    "httpx": {"source": "sdist", "extras": ["brotli", "cli", "http2", "socks", "zstd"], "deps": ["chardet==5.2.0", "cryptography==44.0.0", "pytest==8.3.4", "trio==0.27.0", "trustme==1.2.0", "uvicorn==0.32.1"], "deps_declared_in": "requirements.txt at git tag 0.28.1 (coverage, mypy, ruff, docs and packaging tools omitted)"},
+    "idna": {"source": "sdist", "deps": ["pytest >= 8.3.2"], "deps_declared_in": "pyproject optional-dependencies all (ruff, mypy omitted)"},
+    "jinja2": {"source": "sdist", "deps": ["-r", "requirements/tests.txt"], "deps_declared_in": "requirements/tests.txt (pinned)"},
+    "jmespath": {"source": "sdist", "deps": ["pytest"], "deps_declared_in": "no declaration in sdist; tests import only pytest and the standard library"},
+    "lark": {"source": "sdist", "deps": ["interegular>=0.3.1,<0.4.0", "Js2Py==0.68", "regex", "pytest"], "deps_declared_in": "test-requirements.txt (+ pytest as runner)"},
+    "Mako": {"source": "sdist", "deps": ["pytest>=3.1.0", "beaker", "markupsafe", "pygments", "babel", "dogpile.cache", "lingua<4"], "deps_declared_in": "tox.ini [testenv] deps"},
+    "mistune": {"source": "sdist", "deps": ["pytest"], "deps_declared_in": "pyproject [dependency-groups] dev (mypy, ruff, pytest-cov omitted)"},
+    "packaging": {"source": "sdist", "deps": ["pip>=21.1", "pretend", "pytest>=6.2.0"], "deps_declared_in": "tests/requirements.txt (coverage omitted)"},
+    "requests": {"source": "sdist", "extras": ["socks"], "deps": ["pytest>=2.8.0,<9", "pytest-httpbin==2.1.0", "httpbin~=0.10.0", "trustme", "wheel"], "deps_declared_in": "requirements-dev.txt (pytest-cov omitted)"},
+    "rich": {"source": "git-tag", "deps": ["pytest>=7.0.0,<8", "attrs>=21.4.0,<22", "typing-extensions>=4.0.0,<5"], "deps_declared_in": "pyproject [tool.poetry.dev-dependencies] at tag v15.0.0 (black, mypy, pytest-cov, pre-commit omitted)"},
+    "urllib3": {"source": "sdist", "extras": ["brotli", "zstd", "socks", "h2"], "deps": ["anyio[trio]>=4.8.0", "h2>=4.1.0", "httpx>=0.28.1", "hypercorn", "pysocks>=1.7.1", "pytest>=8.3.4", "pytest-memray==1.8.0", "pytest-socket>=0.7.0", "pytest-timeout>=2.3.1", "quart>=0.20.0", "quart-trio>=0.12.0", "trio>=0.27.0", "cryptography>=44.0.2", "idna>=3.10", "pyopenssl>=25.0.0", "trustme>=1.2.1"], "deps_declared_in": "pyproject [dependency-groups] dev (build, coverage, towncrier omitted) + extras"}
+  }
+}

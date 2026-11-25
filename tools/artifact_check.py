@@ -22,6 +22,23 @@ SMOKE_COMPONENTS = (
 )
 
 
+# Receivers of the pre-declared follow-up studies (null calibration, controlled
+# validation, real-edit similarity, project test suites). They read the clean
+# repository layout directly and never write into it, so they run on this tree
+# rather than in the restored-layout copy used by check.py.
+def study_receivers(py: str) -> list[tuple[str, list[str]]]:
+    return [
+        ("null-calibration", [py, "-B", "-S", "studies/null-calibration/verify_null_calibration.py",
+                              "--results", "results/null-calibration"]),
+        ("controlled-validation", [py, "-B", "-S", "studies/controlled-validation/verify_controlled_validation.py",
+                                   "--results", "results/controlled-validation"]),
+        ("transfer-tests", [py, "-B", "-S", "studies/transfer-tests/verify_transfer_tests.py",
+                            "--results", "results/transfer-tests"]),
+        ("edit-similarity", [py, "-B", "-S", "studies/edit-similarity/verify_edit_similarity.py",
+                             "--out", "results/edit-similarity"]),
+    ]
+
+
 def run_stage(name: str, command: list[str], cwd: Path, env: dict[str, str]) -> dict[str, object]:
     print(f"\n== {name} ==", flush=True)
     print("$ " + " ".join(command), flush=True)
@@ -55,6 +72,8 @@ def main() -> int:
     check = [py, "-B", "-S", "check.py"]
     smoke = [("fast evidence receivers (SEW arithmetic, paired certificates, query budgets)",
               check + ["--keep-going"] + [a for c in SMOKE_COMPONENTS for a in ("--component", c)], ARTIFACT)]
+    smoke += [("follow-up study receiver: " + name, command, ARTIFACT) for name, command in study_receivers(py)
+              if name in ("null-calibration", "transfer-tests")]
     if has_paper:
         smoke.insert(0, ("paper-data and citation bindings", check + ["--scope", "publication"], ARTIFACT))
     plans = {
@@ -67,6 +86,7 @@ def main() -> int:
              (["--crest-upstream-cache", str(args.crest_upstream_cache.resolve())] if args.crest_upstream_cache else []),
              ARTIFACT),
             ("supporting evidence receivers", check + ["--scope", "supporting", "--keep-going"], ARTIFACT),
+            *[("follow-up study receiver: " + name, command, ARTIFACT) for name, command in study_receivers(py)],
         ],
         "paper": [
             ("regenerate publication material", [py, "paper/generate_publication.py", "--project", "."], PROJECT),

@@ -27,6 +27,10 @@ candidate behavior, emission and detector output are separate fields.
 | Exact detector-null enumeration | `results/detector-null/` | `scripts/exact_detector_null.py` |
 | Paired conditional certificates, exact inference, native costs | `studies/conditional/` | `studies/conditional/` |
 | CREST canonical/published outcomes, causal diagnosis, comparison replay | `studies/crest/accepted/` | `studies/crest/` |
+| Detector decisions on unwatermarked programs (SEW 1,003 keys, CREST heads), correlated nulls | `results/null-calibration/` | `studies/null-calibration/` |
+| Source distortion vs. executed validity on real SEW/CREST edits | `results/edit-similarity/` | `studies/edit-similarity/` |
+| Controlled carriers: matched realized effort, render-attack-extract validation | `results/controlled-validation/` | `studies/controlled-validation/` |
+| Project test suites on the 120 transfer-audit modules | `results/transfer-tests/` | `studies/transfer-tests/` |
 
 Other directories:
 
@@ -161,6 +165,20 @@ A CREST cache can be created once with
 `python3 studies/crest/acquire_crest_upstream.py --output DIR` (downloads 17
 files of the pinned upstream commit and checks their SHA-256 values).
 
+## Follow-up studies (pre-declared protocols)
+
+Four studies answer reviewer questions on an earlier draft. Each has a protocol written before any
+outcome was computed (`studies/<name>/protocol.json`), raw results, a standard-library verifier and a
+README in `results/<name>/`. Their receivers read the clean repository layout and run as the last
+stages of `make artifact-check` (the first two also in `make artifact-smoke`):
+
+| Study | Paper | Verifier runtime | Notes |
+| --- | --- | --- | --- |
+| `null-calibration` | RQ1, Fig. 5; supplement proxy checks and null section | ~6 s | producer needs tree-sitter (SEW) and scipy |
+| `edit-similarity` | RQ1, Fig. 6; supplement proxy checks | ~10 min | recomputes every metric from the sources |
+| `controlled-validation` | supplement matched effort (supplement Fig. 1), source-level validation | ~20 s | JavaScript syntax check needs Node.js, otherwise reported SKIPPED |
+| `transfer-tests` | supplement transfer audit .5; threats | ~5 s | producer needs uv, CPython 3.12.14, `unshare`, ~1 h; on CPython other than 3.12.14 four tokenize-sensitive regeneration checks are reported SKIPPED |
+
 ## Fresh executions
 
 `run.py` runs a selected scientific script in an isolated copy and saves its new
@@ -185,15 +203,31 @@ exits 0 with no FAIL (standalone and with `../paper`), as listed here. The
 `run.py` aliasing example reproduces the retained `results/aliasing/` rows and
 summary exactly (only per-run `elapsed_seconds` differ).
 
-- `make artifact-smoke`: PASS (6 components, ~1 min); with the paper present
+- `make artifact-smoke`: PASS (6 components, ~1 min on a native filesystem; the
+  staging copy dominates the runtime when the repository sits on a Windows
+  drive mounted into WSL, about 9 min on the test host); with the paper present
   (`../paper` or `PAPER=...`) the two paper-binding components also PASS.
-- `make artifact-check`: PASS, ~6 min (tests 127/127 incl. the 4 Node.js tests;
-  primary and supporting scopes all PASS). In a standalone checkout the two
-  paper-binding components of the tests scope report `SKIPPED`.
+- `make artifact-check`: PASS (tests 127/127 incl. the 4 Node.js tests; primary
+  and supporting scopes all PASS; ~35 min on the test host, most of it staging
+  the copy). Standalone, the report is `PASS_WITH_SKIPS` because only the two
+  paper-binding components of the tests scope are skipped; with `../paper`
+  beside the artifact the same command is `PASS` and both components pass
+  (`paper-data-consistency`, `citation-source-bindings`).
+- The four follow-up study receivers (`null-calibration`,
+  `controlled-validation`, `edit-similarity`, `transfer-tests`) run as the last
+  stages of both levels and PASS. On the test host (CPython 3.12.3) the
+  transfer-tests receiver reports four tokenize-sensitive regeneration checks as
+  SKIPPED, as documented below.
 - `make artifact-paper` (submission package): PASS; the regenerated tables,
-  figure data and three of the four figure PDFs are byte-identical to `../paper`;
-  `natural-overview.pdf`, the figure atlas and the compiled PDFs differ only in
-  PDF-internal bytes (identical extracted text and identical rendering).
+  macros, figure data, all nine figure stems (`natural-overview`,
+  `natural-joint-budget`, `natural-conditional`, `crest-outcomes`,
+  `detector-null`, `edit-similarity`, `certificate-costs`, `native-timing`,
+  `matched-effort`; PDF, SVG and PNG) and the figure atlas are byte-identical to
+  `../paper` (regenerated on the test host with Python 3.13.18 and matplotlib
+  3.11.2, beyond the pinned 3.10.8, without changing a byte). The compiled
+  article has 39 pages with seven statistical figures and two conceptual-figure
+  placeholders; the online supplement has 47 pages and the supplement figure
+  `matched-effort`.
 - CREST classifier scores (`crest-native-model-*`): the saved LogReg
   probabilities were computed on an x86-64 CPU with AVX-512 (recorded platform:
   Linux 6.18, glibc 2.41, Python 3.12.14), where the OpenBLAS 0.3.30 bundled with
@@ -220,8 +254,13 @@ summary exactly (only per-run `elapsed_seconds` differ).
   regenerates it.
 - Regenerating the paper's figures and PDFs (`make artifact-paper`) needs the
   paper sources and their build requirements and only works inside the
-  submission package (`../paper`); all generated tables, macros and figure data
-  were checked to be identical to those in the paper.
+  submission package (`../paper`); all generated tables, macros, figure data
+  and figures were checked to be identical to those in the paper. The hash index
+  of the bound paper files is `reporting/paper/manifest.json`; the generator,
+  input and output hashes of the publication material are recorded in
+  `../paper/figdata/publication-bindings.json`. The citation audit
+  (`citations/`) binds every citing paragraph of the current main text and
+  supplement (66 references, 95 citation positions).
 
 ## License
 

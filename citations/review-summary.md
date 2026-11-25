@@ -1,17 +1,17 @@
 # Reference and claim review
 
-The current manuscript contains **66 bibliography entries**, cites **66 distinct keys** at **66 citation positions**, and leaves no bibliography entry unused. The local audit reports no duplicate keys, undefined citations, missing required metadata, malformed DOI strings, or missing source locators.
+The current manuscript contains **66 bibliography entries**, cites **66 distinct keys** at **95 citation positions** (one position per citing paragraph and key), and leaves no bibliography entry unused. The local audit reports no duplicate keys, undefined citations, missing required metadata, malformed DOI strings, or missing source locators.
 
 Claim-level source review is deliberately reported at two different strengths:
 
-- **30 cited clauses** were reopened after the Round 5 reorganization and checked against the source scope already recorded in this project. Their status is `RECHECKED_AGAINST_RECORDED_SOURCE_SCOPE`.
-- **36 cited clauses** retain bibliographic identity and a source locator but were not freshly reopened for claim-entailment review in this round. Their status is `NOT_AUTOMATICALLY_ASSESSED`; the manuscript uses them for narrow background or category placement, but this status is not a whole-paper reading claim.
+- **57 citation positions of 30 sources** were checked against the source scope already recorded in this project after the latest revision of the manuscript (two citing sentences, ACW in Related Work and the grouped utility sentence of the Introduction, were narrowed to that scope first). Their status is `RECHECKED_AGAINST_RECORDED_SOURCE_SCOPE`.
+- **38 citation positions of 36 sources** retain bibliographic identity and a source locator but were not freshly reopened for claim-entailment review in this round. Their status is `NOT_AUTOMATICALLY_ASSESSED`; the manuscript uses them for narrow background or category placement, but this status is not a whole-paper reading claim.
 
 The review therefore does **not** claim that all 66 works were read in full. It distinguishes selected body passages, abstracts, official repositories or project pages, retained source records, and local primary data. No citation count is used as a substitute for support.
 
 ## What was checked
 
-For the 30 rechecked clauses, source access is recorded at the level actually inspected: selected body passages or scanned pages, abstracts, repository and executor files, author project pages, and publisher overviews. These records support the attributed clauses; they do not claim complete-work readings. Bibliographic identity, the cited source's substantive claim, and this paper's own empirical result remain separate.
+For the 30 rechecked sources, source access is recorded at the level actually inspected: selected body passages or scanned pages, abstracts, repository and executor files, author project pages, and publisher overviews. These records support the attributed clauses; they do not claim complete-work readings. Bibliographic identity, the cited source's substantive claim, and this paper's own empirical result remain separate.
 
 The public input inventories were checked against their retained primary files: 164 HumanEval tasks, 427 sanitized MBPP tasks, and 164 HumanEval+ records with 1,570 base and 122,683 additional input tuples. The generated-program study joins every released program to the original mxeval prompt, tests, and entry point. Dataset inventory is not attributed to publication abstracts.
 
@@ -27,7 +27,7 @@ The public input inventories were checked against their retained primary files: 
 - STONE, SrcMarker, and Mark My Words use verified final publication metadata, irrespective of internal citation-key spelling.
 - The current Mark My Words title/year differ from an older retained receipt because the official SaTML 2025 record supersedes the preprint metadata; the audit records that reconciliation explicitly.
 
-## Access ledger for the 30 rechecked clauses
+## Access ledger for the 30 rechecked sources
 
 | Reference key | Inspected source level | Occurrences | Inspected scope |
 | --- | --- | ---: | --- |
@@ -36,31 +36,31 @@ The public input inventories were checked against their retained primary files: 
 | `austin2021mbpp` | FRESH_SELECTED_BODY_AND_FROZEN_PRIMARY_DATA | 2 | Section 2.1 on short Python tasks, reference solutions and tests; local frozen sanitized file and provenance reopened. |
 | `barr2015` | FRESH_SELECTED_BODY_AUTHOR_MANUSCRIPT | 1 | Abstract and Sections 2.2–2.3, especially Definition 2.4 on oracle information and observed activities. |
 | `chen2021humaneval` | FRESH_SELECTED_BODY_AND_FROZEN_PRIMARY_DATA | 2 | Introduction on the 164 unit-tested benchmark tasks; frozen records, canonical solutions, tests and provenance reopened. |
-| `crest2026` | FRESH_PRIMARY_REPOSITORY_AND_EXECUTED_SOURCE | 3 | Public repository README: source-transform catalogue, embedding/detection CLI, default random forest and two logistic heads, released thresholds and data archive. Executed emitter/detector source and archive acquisition are retained in the empirical study. |
+| `crest2026` | FRESH_PRIMARY_REPOSITORY_AND_EXECUTED_SOURCE | 4 | Public repository README: source-transform catalogue, embedding/detection CLI, default random forest and two logistic heads, released thresholds and data archive. Executed emitter/detector source and archive acquisition are retained in the empirical study. |
 | `deshpande2014sbfe` | FRESH_SELECTED_BODY_AUTHOR_PREPRINT | 1 | Introduction and Section 2, PDF page index 2: product distribution, costs, certificates, linear-function ranking and the restricted coefficient-ordering result. |
 | `dinkelbach1967` | FRESH_PUBLISHER_ABSTRACT | 1 | Complete publisher abstract and bibliographic header; no body theorem attributed. |
-| `fenton1994` | FRESH_SELECTED_BODY_AUTHOR_POSTED_PAPER | 1 | Printed pages 199–200, Sections II-A and II-B: attributes, empirical relations, and numerical representation. |
-| `guan2024` | FRESH_SELECTED_BODY_FINAL_PAPER | 1 | Section 4.3, printed page 9248: CodeBLEU and the absence of test cases in the CodeSearchNet evaluation. |
-| `kim2025` | FRESH_SELECTED_BODY_FINAL_PAPER | 1 | Section 3.2, printed pages 3992–3993: STEM and weights over functional correctness, detectability and imperceptibility. |
-| `kitchenham1995` | FRESH_PUBLISHER_INDEXED_ABSTRACT | 1 | Complete IEEE-indexed abstract on measurement structure, attributes, protocols and population models; publisher page range. |
-| `kossen2021active` | FRESH_SELECTED_BODY_FINAL_PAPER | 1 | Abstract, introduction and Section 2.2: costly test labels, model-risk estimates and acquisition-bias correction. |
+| `fenton1994` | FRESH_SELECTED_BODY_AUTHOR_POSTED_PAPER | 2 | Printed pages 199–200, Sections II-A and II-B: attributes, empirical relations, and numerical representation. |
+| `guan2024` | FRESH_SELECTED_BODY_FINAL_PAPER | 2 | Section 4.3, printed page 9248: CodeBLEU and the absence of test cases in the CodeSearchNet evaluation. |
+| `kim2025` | FRESH_SELECTED_BODY_FINAL_PAPER | 2 | Section 3.2, printed pages 3992–3993: STEM and weights over functional correctness, detectability and imperceptibility. |
+| `kitchenham1995` | FRESH_PUBLISHER_INDEXED_ABSTRACT | 2 | Complete IEEE-indexed abstract on measurement structure, attributes, protocols and population models; publisher page range. |
+| `kossen2021active` | FRESH_SELECTED_BODY_FINAL_PAPER | 2 | Abstract, introduction and Section 2.2: costly test labels, model-risk estimates and acquisition-bias correction. |
 | `le2014emi` | FRESH_SELECTED_BODY_AUTHOR_MANUSCRIPT | 1 | Introduction and Section 3.1.1: equivalence quantified over a specified set of program inputs. |
-| `lee2024` | FRESH_SELECTED_BODY_AUTHOR_PREPRINT | 1 | Section 4.1: pass@k, AUROC, and TPR at an explicit FPR operating point. |
+| `lee2024` | FRESH_SELECTED_BODY_AUTHOR_PREPRINT | 3 | Section 4.1: pass@k, AUROC, and TPR at an explicit FPR operating point. |
 | `liang2025waterpark` | FRESH_SELECTED_BODY_FINAL_PAPER | 2 | Section 3.2 evaluation metrics and Section 4.2.5 attack-quality assessment. |
-| `liu2023evalplus` | FRESH_PUBLISHER_ABSTRACT_AND_FROZEN_PRIMARY_DATA | 2 | Complete publisher abstract and metadata; local v0.1.10 input inventory and provenance reopened. |
+| `liu2023evalplus` | FRESH_PUBLISHER_ABSTRACT_AND_FROZEN_PRIMARY_DATA | 3 | Complete publisher abstract and metadata; local v0.1.10 input inventory and provenance reopened. |
 | `ma2021selection` | FRESH_SELECTED_BODY_AUTHOR_PREPRINT | 1 | Author preprint abstract, introduction and objectives distinguish selection for finding misclassifications from selection for retraining. Final bibliographic metadata verified against the University of Luxembourg repository record. |
-| `manski2003` | FRESH_PUBLISHER_OVERVIEW_AND_METADATA | 1 | Publisher About this book: identification regions under assumptions of varying strength. |
-| `meneely2013` | FRESH_SELECTED_BODY_AUTHOR_MANUSCRIPT | 1 | Section 7 and opening of Section 7.1, manuscript pages 26–27, on selecting validation criteria by intended use; first-author publication/BibTeX entry. |
+| `manski2003` | FRESH_PUBLISHER_OVERVIEW_AND_METADATA | 2 | Publisher About this book: identification regions under assumptions of varying strength. |
+| `meneely2013` | FRESH_SELECTED_BODY_AUTHOR_MANUSCRIPT | 2 | Section 7 and opening of Section 7.1, manuscript pages 26–27, on selecting validation criteria by intended use; first-author publication/BibTeX entry. |
 | `necula2000` | FRESH_SELECTED_BODY_AUTHOR_MANUSCRIPT | 1 | Section 2, PDF page 2: source/target relation over calls, returns and memory state. |
 | `pan2024markllm` | FRESH_SELECTED_BODY_FINAL_PAPER | 2 | Appendix A.1, printed page 70: detection, robustness and text-quality evaluation pipelines. |
 | `piet2024markmywords` | FRESH_AUTHOR_PROJECT_AND_CONFERENCE_ABSTRACT | 2 | Author project Abstract and Metrics sections; official 2025 conference entry. |
-| `rothermel1997` | FRESH_FINAL_PAPER_ABSTRACT | 1 | Complete abstract and first-page publication information, with introduction context. |
-| `sew2026` | FRESH_SELECTED_BODY_AUTHOR_PREPRINT | 2 | Sections 3.1–3.3 and Appendix I: keyed style rules, structural context, eligibility and type/effect checks. |
-| `sjoberg2023` | FRESH_SELECTED_BODY_AUTHOR_POSTED_MANUSCRIPT | 1 | Manuscript page 2, Sections 2.1–2.2 on operationalization and validation evidence. |
+| `rothermel1997` | FRESH_FINAL_PAPER_ABSTRACT | 2 | Complete abstract and first-page publication information, with introduction context. |
+| `sew2026` | FRESH_SELECTED_BODY_AUTHOR_PREPRINT | 4 | Sections 3.1–3.3 and Appendix I: keyed style rules, structural context, eligibility and type/effect checks. |
+| `sjoberg2023` | FRESH_SELECTED_BODY_AUTHOR_POSTED_MANUSCRIPT | 2 | Manuscript page 2, Sections 2.1–2.2 on operationalization and validation evidence. |
 | `sjoberg2023reporting` | FRESH_SELECTED_BODY_AUTHOR_PREPRINT | 1 | Sections 3.2–3.4 on clear constructs, consistent operationalization and specific validity threats. |
 | `weyuker1982` | FRESH_SELECTED_SCANNED_PAGES | 1 | Actual page images of printed pages 465–466, including the oracle problem and partial/pseudo-oracles. |
 | `yang2011compiler` | FRESH_SELECTED_BODY_AUTHOR_HOSTED_PAPER | 1 | Introduction and Section 2.1: compile/run/output comparison and generated programs with a unique interpretation. |
-| `yang2023` | FRESH_SELECTED_BODY_AUTHOR_PREPRINT | 1 | Sections IV-B and IV-C: correctness checks using supplied unit tests and bit/message recovery; official 2024 program title/byline. |
+| `yang2023` | FRESH_SELECTED_BODY_AUTHOR_PREPRINT | 3 | Sections IV-B and IV-C: correctness checks using supplied unit tests and bit/message recovery; official 2024 program title/byline. |
 
 ## Clauses not freshly reopened in this round
 
@@ -74,7 +74,7 @@ This is not a missing-key or missing-locator error. It is an explicit review bou
 
 ## Checking the current files
 
-`artifact/citation-current/claim-reviews.json` records the 30 current paragraph-bound reassessments. `artifact/citation-current/verified-sources.json` records source access, usable support, limits, and bibliographic identity. `artifact/citation-current/citation-positions.csv` maps the assessments to the current TeX source. `artifact/citation-current/audit.json` traverses the complete main and supplement input graph and records all 66 cited keys, including the 36 explicitly unassessed clauses.
+`artifact/citation-current/claim-reviews.json` records the paragraph-bound reassessments (57 of them bind current paragraphs; older records bind earlier paragraph versions and are kept as history). `artifact/citation-current/verified-sources.json` records source access, usable support, limits, and bibliographic identity. `artifact/citation-current/citation-positions.csv` maps the assessments to the current TeX source. `artifact/citation-current/audit.json` traverses the complete main and supplement input graph and records all 66 cited keys, including the 38 explicitly unassessed positions of 36 sources.
 
 The canonical packaged copies under `artifact/citations/` mirror the current audit inputs. From the project root, run:
 

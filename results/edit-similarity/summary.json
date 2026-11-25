@@ -1,0 +1,907 @@
+{
+  "study": "edit-similarity",
+  "status": "COMPLETE",
+  "protocol": "studies/edit-similarity/protocol.json",
+  "protocol_sha256": "4690e1b5b2c3d248db9575d91addf3abdad2ae875fd63e1541f91918168649da",
+  "protocol_declared_at_utc": "2026-11-25T09:38:00Z",
+  "input_sha256": {
+    "studies/crest/accepted/reference/results.json": "bae856b280a8f04840c7df051c8f2171d9d67a2c2009621d0e14c3e7847e1589",
+    "studies/crest/accepted/gpt4o/results.json": "1c8d1996abe9b955ff3e553a7cca7adc98cd398fb0842bea73d0963c3d3be83c",
+    "studies/crest/accepted/qwen/results.json": "a720cd4dba12507fb14313e44ff5498d401d44026839176aee7189322f663d28",
+    "results/sew/humaneval/rows.json": "563d49e53640d8f97a91b416399643f76282de7f45ba16a8be18385774396dd0",
+    "results/sew/humaneval/references.json": "fb918678e5332e1ab4517342d7b08f6b4060975e709edcd2fabc23263d869a44",
+    "results/sew/mbpp/factors/normalized_rows.json": "5e7a760cec77f512bab53d2c0812242b7d66959186aeb50f8657c3f7c5fd8a0f",
+    "src/covewm/metrics.py": "a764f999fa19796b435810bf8dc8039f54608882faf838593c8262d857416a1b",
+    "studies/edit-similarity/run_edit_similarity.py": "9b67e7de4b39b02162c704608f2f1ce8485719174dcd7648d7f9a8cd9175da1e"
+  },
+  "records_csv_sha256": "19f6e0f73ca218dfc8eb4e51fe8ab602fa56b7b779a2b964fcab2074dccd65a2",
+  "records": 9403,
+  "instruments": [
+    "character",
+    "token",
+    "identifier_normalized",
+    "ast_type",
+    "control_profile",
+    "identifier_multiset",
+    "identifier_style"
+  ],
+  "expected_count_checks": {
+    "crest_reference": {
+      "rows": {
+        "expected": 591,
+        "observed": 591,
+        "match": true
+      },
+      "emitted": {
+        "expected": 589,
+        "observed": 589,
+        "match": true
+      },
+      "n_invalid": {
+        "expected": 15,
+        "observed": 15,
+        "match": true
+      }
+    },
+    "crest_gpt4o": {
+      "rows": {
+        "expected": 1138,
+        "observed": 1138,
+        "match": true
+      },
+      "qualified": {
+        "expected": 948,
+        "observed": 948,
+        "match": true
+      },
+      "n_valid": {
+        "expected": 934,
+        "observed": 934,
+        "match": true
+      },
+      "n_invalid": {
+        "expected": 14,
+        "observed": 14,
+        "match": true
+      }
+    },
+    "crest_qwen": {
+      "rows": {
+        "expected": 1138,
+        "observed": 1138,
+        "match": true
+      },
+      "qualified": {
+        "expected": 826,
+        "observed": 826,
+        "match": true
+      },
+      "n_valid": {
+        "expected": 761,
+        "observed": 761,
+        "match": true
+      },
+      "n_invalid": {
+        "expected": 13,
+        "observed": 13,
+        "match": true
+      },
+      "not_emitted_rejected": {
+        "expected": 52,
+        "observed": 52,
+        "match": true
+      }
+    },
+    "sew_humaneval": {
+      "n_invalid": {
+        "expected": 0,
+        "observed": 0,
+        "match": true
+      }
+    },
+    "sew_mbpp": {
+      "n_invalid": {
+        "expected": 6,
+        "observed": 6,
+        "match": true
+      }
+    }
+  },
+  "sew_mbpp_invalid_units": [
+    [
+      "MBPP/290",
+      "s1_literal_predecessor/integer_1"
+    ],
+    [
+      "MBPP/290",
+      "s1_literal_predecessor/upstream_default"
+    ],
+    [
+      "MBPP/290",
+      "stock/integer_1"
+    ],
+    [
+      "MBPP/290",
+      "stock/upstream_default"
+    ],
+    [
+      "MBPP/393",
+      "s1_literal_predecessor/integer_0"
+    ],
+    [
+      "MBPP/393",
+      "stock/integer_0"
+    ]
+  ],
+  "populations": {
+    "crest_reference": {
+      "members": [
+        "crest_reference"
+      ],
+      "counts": {
+        "emitted": 589,
+        "emitted_labeled": 589,
+        "not_emitted_rejected": 2,
+        "qualified": 591,
+        "rows": 591
+      },
+      "excluded_by_reason": {
+        "not_emitted_rejected": 2
+      },
+      "n_units": 589,
+      "n_valid": 574,
+      "n_invalid": 15,
+      "n_identical": 0,
+      "n_identical_invalid": 0,
+      "n_task_clusters": 589,
+      "n_invalid_task_clusters": 15,
+      "bootstrap": {
+        "replicates": 2000,
+        "seed": 20261125,
+        "skipped_replicates": 0,
+        "used_replicates": 2000
+      },
+      "instruments": {
+        "character": {
+          "auroc": 0.5644599303135889,
+          "auroc_ci95": [
+            0.4037252503668938,
+            0.7144035969420105
+          ],
+          "median_distortion_valid": 0.12377208896055902,
+          "median_distortion_invalid": 0.14199395770392753,
+          "fraction_invalid_at_or_below_valid_median": 0.4,
+          "interpretation": "distortion does not separate validity"
+        },
+        "token": {
+          "auroc": 0.6166085946573752,
+          "auroc_ci95": [
+            0.48397513537187453,
+            0.7533627786897082
+          ],
+          "median_distortion_valid": 0.0577317059095106,
+          "median_distortion_invalid": 0.0714285714285714,
+          "fraction_invalid_at_or_below_valid_median": 0.4,
+          "interpretation": "distortion is associated with invalidity"
+        },
+        "identifier_normalized": {
+          "auroc": 0.6158536585365854,
+          "auroc_ci95": [
+            0.4764319420623019,
+            0.7555107738282478
+          ],
+          "median_distortion_valid": 0.050000000000000044,
+          "median_distortion_invalid": 0.06000000000000005,
+          "fraction_invalid_at_or_below_valid_median": 0.4,
+          "interpretation": "distortion is associated with invalidity"
+        },
+        "ast_type": {
+          "auroc": 0.4959349593495935,
+          "auroc_ci95": [
+            0.33574996571665844,
+            0.6664019322107081
+          ],
+          "median_distortion_valid": 0.056832298136645976,
+          "median_distortion_invalid": 0.03448275862068961,
+          "fraction_invalid_at_or_below_valid_median": 0.5333333333333333,
+          "interpretation": "distortion does not separate validity"
+        },
+        "control_profile": {
+          "auroc": 0.46318234610917536,
+          "auroc_ci95": [
+            0.4241365769994584,
+            0.5323070074346946
+          ],
+          "median_distortion_valid": 0.0,
+          "median_distortion_invalid": 0.0,
+          "fraction_invalid_at_or_below_valid_median": 0.9333333333333333,
+          "interpretation": "distortion does not separate validity"
+        },
+        "identifier_multiset": {
+          "auroc": 0.5376887340301975,
+          "auroc_ci95": [
+            0.3939623309216735,
+            0.6918119593025966
+          ],
+          "median_distortion_valid": 0.021527777777777812,
+          "median_distortion_invalid": 0.052631578947368474,
+          "fraction_invalid_at_or_below_valid_median": 0.4666666666666667,
+          "interpretation": "distortion does not separate validity"
+        },
+        "identifier_style": {
+          "auroc": 0.5321718931475029,
+          "auroc_ci95": [
+            0.37546120202130767,
+            0.6910524465850119
+          ],
+          "median_distortion_valid": 0.0008172329240251353,
+          "median_distortion_invalid": 0.002079207920792081,
+          "fraction_invalid_at_or_below_valid_median": 0.4666666666666667,
+          "interpretation": "distortion does not separate validity"
+        }
+      },
+      "controlled_claim_comparison": {
+        "valid_character_distortion_p10": 0.029437792816241537,
+        "invalid_character_distortion_p90": 0.30775293025123607,
+        "small_faulty_edits": 2,
+        "large_harmless_edits": 47
+      }
+    },
+    "crest_gpt4o": {
+      "members": [
+        "crest_gpt4o"
+      ],
+      "counts": {
+        "emitted": 1138,
+        "emitted_labeled": 1138,
+        "qualified": 948,
+        "rows": 1138
+      },
+      "excluded_by_reason": {
+        "reference_not_qualified_failed": 190
+      },
+      "n_units": 948,
+      "n_valid": 934,
+      "n_invalid": 14,
+      "n_identical": 0,
+      "n_identical_invalid": 0,
+      "n_task_clusters": 948,
+      "n_invalid_task_clusters": 14,
+      "bootstrap": {
+        "replicates": 2000,
+        "seed": 20261125,
+        "skipped_replicates": 0,
+        "used_replicates": 2000
+      },
+      "instruments": {
+        "character": {
+          "auroc": 0.6700061180789232,
+          "auroc_ci95": [
+            0.547537936765551,
+            0.7763499906997157
+          ],
+          "median_distortion_valid": 0.09090909090909094,
+          "median_distortion_invalid": 0.16894735959484158,
+          "fraction_invalid_at_or_below_valid_median": 0.14285714285714285,
+          "interpretation": "distortion is associated with invalidity"
+        },
+        "token": {
+          "auroc": 0.7892704190884062,
+          "auroc_ci95": [
+            0.7222052990178288,
+            0.852533244680851
+          ],
+          "median_distortion_valid": 0.022222222222222254,
+          "median_distortion_invalid": 0.1136950904392765,
+          "fraction_invalid_at_or_below_valid_median": 0.0,
+          "interpretation": "distortion is associated with invalidity"
+        },
+        "identifier_normalized": {
+          "auroc": 0.7731339859284184,
+          "auroc_ci95": [
+            0.6641173246549648,
+            0.8585948498400188
+          ],
+          "median_distortion_valid": 0.0,
+          "median_distortion_invalid": 0.07818677573278804,
+          "fraction_invalid_at_or_below_valid_median": 0.07142857142857142,
+          "interpretation": "distortion is associated with invalidity"
+        },
+        "ast_type": {
+          "auroc": 0.5796497399816458,
+          "auroc_ci95": [
+            0.4685486122744683,
+            0.6938699553371249
+          ],
+          "median_distortion_valid": 0.0,
+          "median_distortion_invalid": 0.0264912280701754,
+          "fraction_invalid_at_or_below_valid_median": 0.35714285714285715,
+          "interpretation": "distortion does not separate validity"
+        },
+        "control_profile": {
+          "auroc": 0.4776690119302539,
+          "auroc_ci95": [
+            0.4368983957219251,
+            0.5533214317252009
+          ],
+          "median_distortion_valid": 0.0,
+          "median_distortion_invalid": 0.0,
+          "fraction_invalid_at_or_below_valid_median": 0.9285714285714286,
+          "interpretation": "distortion does not separate validity"
+        },
+        "identifier_multiset": {
+          "auroc": 0.48967574181706947,
+          "auroc_ci95": [
+            0.39102522188720623,
+            0.6013656933227034
+          ],
+          "median_distortion_valid": 0.0,
+          "median_distortion_invalid": 0.0,
+          "fraction_invalid_at_or_below_valid_median": 0.7142857142857143,
+          "interpretation": "distortion does not separate validity"
+        },
+        "identifier_style": {
+          "auroc": 0.5153716732945856,
+          "auroc_ci95": [
+            0.4108341781589245,
+            0.6412150542586167
+          ],
+          "median_distortion_valid": 0.0,
+          "median_distortion_invalid": 0.0,
+          "fraction_invalid_at_or_below_valid_median": 0.7142857142857143,
+          "interpretation": "distortion does not separate validity"
+        }
+      },
+      "controlled_claim_comparison": {
+        "valid_character_distortion_p10": 0.03717592592592596,
+        "invalid_character_distortion_p90": 0.23327015912748084,
+        "small_faulty_edits": 0,
+        "large_harmless_edits": 126
+      }
+    },
+    "crest_qwen": {
+      "members": [
+        "crest_qwen"
+      ],
+      "counts": {
+        "emitted": 1020,
+        "emitted_label_unavailable": 1,
+        "emitted_labeled": 1019,
+        "not_emitted_rejected": 118,
+        "qualified": 826,
+        "rows": 1138
+      },
+      "excluded_by_reason": {
+        "not_emitted_rejected": 52,
+        "reference_not_qualified_failed": 311,
+        "reference_not_qualified_unavailable": 1
+      },
+      "n_units": 774,
+      "n_valid": 761,
+      "n_invalid": 13,
+      "n_identical": 0,
+      "n_identical_invalid": 0,
+      "n_task_clusters": 774,
+      "n_invalid_task_clusters": 13,
+      "bootstrap": {
+        "replicates": 2000,
+        "seed": 20261125,
+        "skipped_replicates": 0,
+        "used_replicates": 2000
+      },
+      "instruments": {
+        "character": {
+          "auroc": 0.7345092489639139,
+          "auroc_ci95": [
+            0.6328887951226233,
+            0.8242593708183266
+          ],
+          "median_distortion_valid": 0.09734513274336287,
+          "median_distortion_invalid": 0.18120805369127513,
+          "fraction_invalid_at_or_below_valid_median": 0.07692307692307693,
+          "interpretation": "distortion is associated with invalidity"
+        },
+        "token": {
+          "auroc": 0.7591226119478419,
+          "auroc_ci95": [
+            0.676016699976225,
+            0.8399928156477168
+          ],
+          "median_distortion_valid": 0.025000000000000022,
+          "median_distortion_invalid": 0.08333333333333337,
+          "fraction_invalid_at_or_below_valid_median": 0.0,
+          "interpretation": "distortion is associated with invalidity"
+        },
+        "identifier_normalized": {
+          "auroc": 0.7435560497321339,
+          "auroc_ci95": [
+            0.6264625489556136,
+            0.8455119929347918
+          ],
+          "median_distortion_valid": 0.0,
+          "median_distortion_invalid": 0.08333333333333337,
+          "fraction_invalid_at_or_below_valid_median": 0.07692307692307693,
+          "interpretation": "distortion is associated with invalidity"
+        },
+        "ast_type": {
+          "auroc": 0.5062670575154149,
+          "auroc_ci95": [
+            0.3769586105268936,
+            0.6536023193265985
+          ],
+          "median_distortion_valid": 0.0,
+          "median_distortion_invalid": 0.0,
+          "fraction_invalid_at_or_below_valid_median": 0.6153846153846154,
+          "interpretation": "distortion does not separate validity"
+        },
+        "control_profile": {
+          "auroc": 0.47174770039421815,
+          "auroc_ci95": [
+            0.4237386569872958,
+            0.5631674851654829
+          ],
+          "median_distortion_valid": 0.0,
+          "median_distortion_invalid": 0.0,
+          "fraction_invalid_at_or_below_valid_median": 0.9230769230769231,
+          "interpretation": "distortion does not separate validity"
+        },
+        "identifier_multiset": {
+          "auroc": 0.5052057010007076,
+          "auroc_ci95": [
+            0.38555093750616704,
+            0.6395451570680627
+          ],
+          "median_distortion_valid": 0.0,
+          "median_distortion_invalid": 0.0,
+          "fraction_invalid_at_or_below_valid_median": 0.6923076923076923,
+          "interpretation": "distortion does not separate validity"
+        },
+        "identifier_style": {
+          "auroc": 0.5366420701506115,
+          "auroc_ci95": [
+            0.41278427984330907,
+            0.676281148685935
+          ],
+          "median_distortion_valid": 0.0,
+          "median_distortion_invalid": 0.0,
+          "fraction_invalid_at_or_below_valid_median": 0.6923076923076923,
+          "interpretation": "distortion does not separate validity"
+        }
+      },
+      "controlled_claim_comparison": {
+        "valid_character_distortion_p10": 0.031847133757961776,
+        "invalid_character_distortion_p90": 0.27409558684260366,
+        "small_faulty_edits": 0,
+        "large_harmless_edits": 76
+      }
+    },
+    "crest_pooled": {
+      "members": [
+        "crest_reference",
+        "crest_gpt4o",
+        "crest_qwen"
+      ],
+      "counts": {
+        "emitted": 2747,
+        "emitted_label_unavailable": 1,
+        "emitted_labeled": 2746,
+        "not_emitted_rejected": 120,
+        "qualified": 2365,
+        "rows": 2867
+      },
+      "excluded_by_reason": {
+        "not_emitted_rejected": 54,
+        "reference_not_qualified_failed": 501,
+        "reference_not_qualified_unavailable": 1
+      },
+      "n_units": 2311,
+      "n_valid": 2269,
+      "n_invalid": 42,
+      "n_identical": 0,
+      "n_identical_invalid": 0,
+      "n_task_clusters": 1064,
+      "n_invalid_task_clusters": 32,
+      "bootstrap": {
+        "replicates": 2000,
+        "seed": 20261125,
+        "skipped_replicates": 0,
+        "used_replicates": 2000
+      },
+      "instruments": {
+        "character": {
+          "auroc": 0.6554492224390858,
+          "auroc_ci95": [
+            0.5649762742974538,
+            0.733558449300354
+          ],
+          "median_distortion_valid": 0.10077519379844957,
+          "median_distortion_invalid": 0.1738611855434285,
+          "fraction_invalid_at_or_below_valid_median": 0.21428571428571427,
+          "interpretation": "distortion is associated with invalidity"
+        },
+        "token": {
+          "auroc": 0.730246175155827,
+          "auroc_ci95": [
+            0.6657253791791481,
+            0.7910419895576313
+          ],
+          "median_distortion_valid": 0.033333333333333326,
+          "median_distortion_invalid": 0.09232954545454547,
+          "fraction_invalid_at_or_below_valid_median": 0.07142857142857142,
+          "interpretation": "distortion is associated with invalidity"
+        },
+        "identifier_normalized": {
+          "auroc": 0.7194327268148335,
+          "auroc_ci95": [
+            0.6416781985766075,
+            0.7878472789691984
+          ],
+          "median_distortion_valid": 0.018181818181818188,
+          "median_distortion_invalid": 0.07540899795501027,
+          "fraction_invalid_at_or_below_valid_median": 0.11904761904761904,
+          "interpretation": "distortion is associated with invalidity"
+        },
+        "ast_type": {
+          "auroc": 0.5328915612080002,
+          "auroc_ci95": [
+            0.4473691154801245,
+            0.6213654129833075
+          ],
+          "median_distortion_valid": 0.0,
+          "median_distortion_invalid": 0.02244668911335579,
+          "fraction_invalid_at_or_below_valid_median": 0.47619047619047616,
+          "interpretation": "distortion does not separate validity"
+        },
+        "control_profile": {
+          "auroc": 0.47145270624777014,
+          "auroc_ci95": [
+            0.43809745442003506,
+            0.511918970940516
+          ],
+          "median_distortion_valid": 0.0,
+          "median_distortion_invalid": 0.0,
+          "fraction_invalid_at_or_below_valid_median": 0.9285714285714286,
+          "interpretation": "distortion does not separate validity"
+        },
+        "identifier_multiset": {
+          "auroc": 0.5239984050032529,
+          "auroc_ci95": [
+            0.4344801430033005,
+            0.6087913014081938
+          ],
+          "median_distortion_valid": 0.0,
+          "median_distortion_invalid": 0.0,
+          "fraction_invalid_at_or_below_valid_median": 0.5952380952380952,
+          "interpretation": "distortion does not separate validity"
+        },
+        "identifier_style": {
+          "auroc": 0.5400113328716237,
+          "auroc_ci95": [
+            0.45505746394327456,
+            0.6246013372955462
+          ],
+          "median_distortion_valid": 0.0,
+          "median_distortion_invalid": 0.0,
+          "fraction_invalid_at_or_below_valid_median": 0.6190476190476191,
+          "interpretation": "distortion does not separate validity"
+        }
+      },
+      "controlled_claim_comparison": {
+        "valid_character_distortion_p10": 0.03346092503987237,
+        "invalid_character_distortion_p90": 0.2855543113101904,
+        "small_faulty_edits": 2,
+        "large_harmless_edits": 176
+      }
+    },
+    "sew_humaneval": {
+      "members": [
+        "sew_humaneval"
+      ],
+      "counts": {
+        "emitted": 1968,
+        "emitted_labeled": 1968,
+        "qualified": 1968,
+        "rows": 1968
+      },
+      "excluded_by_reason": {},
+      "n_units": 1968,
+      "n_valid": 1968,
+      "n_invalid": 0,
+      "n_identical": 12,
+      "n_identical_invalid": 0,
+      "n_task_clusters": 164,
+      "n_invalid_task_clusters": 0,
+      "bootstrap": {
+        "replicates": 2000,
+        "seed": 20261125,
+        "skipped_replicates": 2000,
+        "used_replicates": 0
+      },
+      "instruments": {
+        "character": {
+          "auroc": null,
+          "auroc_ci95": null,
+          "median_distortion_valid": 0.009606986899563297,
+          "median_distortion_invalid": null,
+          "fraction_invalid_at_or_below_valid_median": null,
+          "interpretation": null
+        },
+        "token": {
+          "auroc": null,
+          "auroc_ci95": null,
+          "median_distortion_valid": 0.007553025203372643,
+          "median_distortion_invalid": null,
+          "fraction_invalid_at_or_below_valid_median": null,
+          "interpretation": null
+        },
+        "identifier_normalized": {
+          "auroc": null,
+          "auroc_ci95": null,
+          "median_distortion_valid": 0.00497512437810943,
+          "median_distortion_invalid": null,
+          "fraction_invalid_at_or_below_valid_median": null,
+          "interpretation": null
+        },
+        "ast_type": {
+          "auroc": null,
+          "auroc_ci95": null,
+          "median_distortion_valid": 0.0,
+          "median_distortion_invalid": null,
+          "fraction_invalid_at_or_below_valid_median": null,
+          "interpretation": null
+        },
+        "control_profile": {
+          "auroc": null,
+          "auroc_ci95": null,
+          "median_distortion_valid": 0.0,
+          "median_distortion_invalid": null,
+          "fraction_invalid_at_or_below_valid_median": null,
+          "interpretation": null
+        },
+        "identifier_multiset": {
+          "auroc": null,
+          "auroc_ci95": null,
+          "median_distortion_valid": 0.0,
+          "median_distortion_invalid": null,
+          "fraction_invalid_at_or_below_valid_median": null,
+          "interpretation": null
+        },
+        "identifier_style": {
+          "auroc": null,
+          "auroc_ci95": null,
+          "median_distortion_valid": 0.0,
+          "median_distortion_invalid": null,
+          "fraction_invalid_at_or_below_valid_median": null,
+          "interpretation": null
+        }
+      },
+      "controlled_claim_comparison": {
+        "valid_character_distortion_p10": 0.0031152647975077885,
+        "invalid_character_distortion_p90": null,
+        "small_faulty_edits": 0,
+        "large_harmless_edits": null
+      }
+    },
+    "sew_mbpp": {
+      "members": [
+        "sew_mbpp"
+      ],
+      "counts": {
+        "emitted": 5124,
+        "emitted_labeled": 5124,
+        "qualified": 5124,
+        "rows": 5124
+      },
+      "excluded_by_reason": {},
+      "n_units": 5124,
+      "n_valid": 5118,
+      "n_invalid": 6,
+      "n_identical": 80,
+      "n_identical_invalid": 0,
+      "n_task_clusters": 427,
+      "n_invalid_task_clusters": 2,
+      "bootstrap": {
+        "replicates": 2000,
+        "seed": 20261125,
+        "skipped_replicates": 254,
+        "used_replicates": 1746
+      },
+      "instruments": {
+        "character": {
+          "auroc": 0.43311189266640615,
+          "auroc_ci95": [
+            0.3861772745021476,
+            0.46392237539575815
+          ],
+          "median_distortion_valid": 0.024622716441620285,
+          "median_distortion_invalid": 0.02005730659025784,
+          "fraction_invalid_at_or_below_valid_median": 0.6666666666666666,
+          "interpretation": "distortion does not separate validity"
+        },
+        "token": {
+          "auroc": 0.8330076852937345,
+          "auroc_ci95": [
+            0.8015043185594214,
+            0.8588396254223104
+          ],
+          "median_distortion_valid": 0.0,
+          "median_distortion_invalid": 0.07042253521126762,
+          "fraction_invalid_at_or_below_valid_median": 0.0,
+          "interpretation": "distortion is associated with invalidity"
+        },
+        "identifier_normalized": {
+          "auroc": 0.7636446528591898,
+          "auroc_ci95": [
+            0.7273875658099525,
+            0.791796875
+          ],
+          "median_distortion_valid": 0.0,
+          "median_distortion_invalid": 0.04225352112676062,
+          "fraction_invalid_at_or_below_valid_median": 0.0,
+          "interpretation": "distortion is associated with invalidity"
+        },
+        "ast_type": {
+          "auroc": 0.8414094047153836,
+          "auroc_ci95": [
+            0.8145362847055864,
+            0.8652612802933674
+          ],
+          "median_distortion_valid": 0.0,
+          "median_distortion_invalid": 0.046511627906976716,
+          "fraction_invalid_at_or_below_valid_median": 0.0,
+          "interpretation": "distortion is associated with invalidity"
+        },
+        "control_profile": {
+          "auroc": 1.0,
+          "auroc_ci95": [
+            1.0,
+            1.0
+          ],
+          "median_distortion_valid": 0.0,
+          "median_distortion_invalid": 0.33333333333333337,
+          "fraction_invalid_at_or_below_valid_median": 0.0,
+          "interpretation": "distortion is associated with invalidity"
+        },
+        "identifier_multiset": {
+          "auroc": 0.9844991533150971,
+          "auroc_ci95": [
+            0.9744240531042562,
+            0.9918950294961735
+          ],
+          "median_distortion_valid": 0.0,
+          "median_distortion_invalid": 0.125,
+          "fraction_invalid_at_or_below_valid_median": 0.0,
+          "interpretation": "distortion is associated with invalidity"
+        },
+        "identifier_style": {
+          "auroc": 0.4525205158264947,
+          "auroc_ci95": [
+            0.44234339054703214,
+            0.4615234375
+          ],
+          "median_distortion_valid": 0.0,
+          "median_distortion_invalid": 0.0,
+          "fraction_invalid_at_or_below_valid_median": 1.0,
+          "interpretation": "distortion does not separate validity"
+        }
+      },
+      "controlled_claim_comparison": {
+        "valid_character_distortion_p10": 0.007407407407407418,
+        "invalid_character_distortion_p90": 0.03157894736842104,
+        "small_faulty_edits": 0,
+        "large_harmless_edits": 1968
+      }
+    },
+    "sew": {
+      "members": [
+        "sew_humaneval",
+        "sew_mbpp"
+      ],
+      "counts": {
+        "emitted": 7092,
+        "emitted_labeled": 7092,
+        "qualified": 7092,
+        "rows": 7092
+      },
+      "excluded_by_reason": {},
+      "n_units": 7092,
+      "n_valid": 7086,
+      "n_invalid": 6,
+      "n_identical": 92,
+      "n_identical_invalid": 0,
+      "n_task_clusters": 591,
+      "n_invalid_task_clusters": 2,
+      "bootstrap": {
+        "replicates": 2000,
+        "seed": 20261125,
+        "skipped_replicates": 271,
+        "used_replicates": 1729
+      },
+      "instruments": {
+        "character": {
+          "auroc": 0.5247906670429956,
+          "auroc_ci95": [
+            0.4859190761167698,
+            0.5526217740840448
+          ],
+          "median_distortion_valid": 0.019935691318327953,
+          "median_distortion_invalid": 0.02005730659025784,
+          "fraction_invalid_at_or_below_valid_median": 0.3333333333333333,
+          "interpretation": "distortion does not separate validity"
+        },
+        "token": {
+          "auroc": 0.8701665255433249,
+          "auroc_ci95": [
+            0.8447393657922598,
+            0.8905367116929201
+          ],
+          "median_distortion_valid": 0.0,
+          "median_distortion_invalid": 0.07042253521126762,
+          "fraction_invalid_at_or_below_valid_median": 0.0,
+          "interpretation": "distortion is associated with invalidity"
+        },
+        "identifier_normalized": {
+          "auroc": 0.8019098692257033,
+          "auroc_ci95": [
+            0.7698538009949892,
+            0.8264661052118906
+          ],
+          "median_distortion_valid": 0.0,
+          "median_distortion_invalid": 0.04225352112676062,
+          "fraction_invalid_at_or_below_valid_median": 0.0,
+          "interpretation": "distortion is associated with invalidity"
+        },
+        "ast_type": {
+          "auroc": 0.8249600150531564,
+          "auroc_ci95": [
+            0.8010780023784244,
+            0.8477598099453744
+          ],
+          "median_distortion_valid": 0.0,
+          "median_distortion_invalid": 0.046511627906976716,
+          "fraction_invalid_at_or_below_valid_median": 0.0,
+          "interpretation": "distortion is associated with invalidity"
+        },
+        "control_profile": {
+          "auroc": 1.0,
+          "auroc_ci95": [
+            1.0,
+            1.0
+          ],
+          "median_distortion_valid": 0.0,
+          "median_distortion_invalid": 0.33333333333333337,
+          "fraction_invalid_at_or_below_valid_median": 0.0,
+          "interpretation": "distortion is associated with invalidity"
+        },
+        "identifier_multiset": {
+          "auroc": 0.9888042148838084,
+          "auroc_ci95": [
+            0.9819372316506207,
+            0.9939299830604178
+          ],
+          "median_distortion_valid": 0.0,
+          "median_distortion_invalid": 0.125,
+          "fraction_invalid_at_or_below_valid_median": 0.0,
+          "interpretation": "distortion is associated with invalidity"
+        },
+        "identifier_style": {
+          "auroc": 0.4397403330510867,
+          "auroc_ci95": [
+            0.42988544575229154,
+            0.4487150677727045
+          ],
+          "median_distortion_valid": 0.0,
+          "median_distortion_invalid": 0.0,
+          "fraction_invalid_at_or_below_valid_median": 1.0,
+          "interpretation": "distortion does not separate validity"
+        }
+      },
+      "controlled_claim_comparison": {
+        "valid_character_distortion_p10": 0.004830917874396157,
+        "invalid_character_distortion_p90": 0.03157894736842104,
+        "small_faulty_edits": 0,
+        "large_harmless_edits": 2194
+      }
+    }
+  }
+}
