@@ -385,8 +385,13 @@ class CurrentPublicationTests(unittest.TestCase):
                     'c_separate' if item['method'] == 'independent' else 'c_adaptive' if ('adaptive' in item['policy'] or 'point' in item['policy']) else 'c_h_first')
                 self.assertEqual(row[key], item['first_certificate']['suite_queries'])
             title = {'rf': 'Random forest', 'logreg_l1': r'Logistic $L_1$', 'logreg_l2': r'Logistic $L_2$'}[row['model']]
+            # The typeset table reports the singleton-aware adaptive cost once, in the
+            # "C sep." column, because it equals the separate baseline in every row
+            # (the full catalogue's conditional score is a point). Check that premise
+            # here; c_adaptive itself stays bound to the summary above and to its macro.
+            self.assertEqual(row['c_adaptive'], row['c_separate'])
             expected = ['Pooled' if row['scope'] == 'pooled' else row['scope'], title] + [
-                count(row[k]) for k in ('j_separate', 'j_shared', 'c_separate', 'c_h_first', 'c_adaptive')]
+                count(row[k]) for k in ('j_separate', 'j_shared', 'c_separate', 'c_h_first')]
             self.assertIn(' & '.join(expected) + r'\\', tables['comparisons'])
             if row['scope'] == 'pooled' and row['model'] == 'rf':
                 for key, name in [('j_separate', 'CRESTJointSeparate'), ('j_shared', 'CRESTJointShared'),

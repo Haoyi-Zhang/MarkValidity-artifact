@@ -174,8 +174,8 @@ stages of `make artifact-check` (the first two also in `make artifact-smoke`):
 
 | Study | Paper | Verifier runtime | Notes |
 | --- | --- | --- | --- |
-| `null-calibration` | RQ1, Fig. 5; supplement proxy checks and null section | ~6 s | producer needs tree-sitter (SEW) and scipy |
-| `edit-similarity` | RQ1, Fig. 6; supplement proxy checks | ~10 min | recomputes every metric from the sources |
+| `null-calibration` | RQ1, Fig. 6; supplement proxy checks and null section | ~6 s | producer needs tree-sitter (SEW) and scipy |
+| `edit-similarity` | RQ1, Fig. 7; supplement proxy checks | ~10 min | recomputes every metric from the sources |
 | `controlled-validation` | supplement matched effort (supplement Fig. 1), source-level validation | ~20 s | JavaScript syntax check needs Node.js, otherwise reported SKIPPED |
 | `transfer-tests` | supplement transfer audit .5; threats | ~5 s | producer needs uv, CPython 3.12.14, `unshare`, ~1 h; on CPython other than 3.12.14 four tokenize-sensitive regeneration checks are reported SKIPPED |
 
@@ -225,8 +225,8 @@ summary exactly (only per-run `elapsed_seconds` differ).
   `matched-effort`; PDF, SVG and PNG) and the figure atlas are byte-identical to
   `../paper` (regenerated on the test host with Python 3.13.18 and matplotlib
   3.11.2, beyond the pinned 3.10.8, without changing a byte). The compiled
-  article has 39 pages with seven statistical figures and two conceptual-figure
-  placeholders; the online supplement has 47 pages and the supplement figure
+  article has 39 pages with seven statistical figures (Figs. 4 to 10) and three
+  conceptual-figure placeholders (Figs. 1 to 3); the online supplement has 48 pages and the supplement figure
   `matched-effort`.
 - CREST classifier scores (`crest-native-model-*`): the saved LogReg
   probabilities were computed on an x86-64 CPU with AVX-512 (recorded platform:

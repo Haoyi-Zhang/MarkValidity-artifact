@@ -1970,6 +1970,486 @@
       "scope": "The assessment applies to the attributed clause in the current paragraph, not adjacent local method, protocol, or empirical results. Grouped citations retain each source contribution.",
       "source_evidence_id": "yang2023",
       "status": "RECHECKED_AGAINST_RECORDED_SOURCE_SCOPE"
+    },
+    {
+      "attributed_clause": "MBPP supplies executable tasks and reference code; the frozen sanitized file contains 427 records, distinct from the original 974-task collection.",
+      "citation_key": "austin2021mbpp",
+      "citing_sentence": "We applied the full catalogue to every canonical HumanEval~\\cite{chen2021humaneval} and sanitized MBPP~\\cite{austin2021mbpp} reference.",
+      "complete_original_paper_read_claimed": false,
+      "evidence": [
+        {
+          "path": "artifact/citation-current/verified-sources.json",
+          "record_selector": "austin2021mbpp",
+          "sha256": "05310b3dcbc39a326f29fe6ddc3a3a9ef703c85cc22605d910e7b216e91febc0",
+          "type": "reviewed_source_scope_and_primary_receipts"
+        }
+      ],
+      "file": "paper/figdata/main-evidence.tex",
+      "fresh_original_source_access_this_revision": false,
+      "line_at_review": 24,
+      "note": "MBPP supplies executable tasks with reference code and tests; its pinned sanitized file contains 427 records. The original 974-task collection and the 427-record sanitized release are different denominators. Round-6 recheck: the citing sentence is word-identical to the one reviewed in R6C004 and attributes only content within the recorded source scope; Paragraph changed in its Title Case heading and in local prose (listing and its explanation, figure pointer); the added text reports this study's own CREST results and attributes nothing further to the source. Grouped citations keep each source contribution.",
+      "paragraph_sha256": "2041181e075d0dabc209baca1a8a362213b0719c8675c4fbc03639d423b0e488",
+      "renews_review_id": "R6C004",
+      "review_id": "R7C001",
+      "scope": "The assessment applies to the attributed clause in the current paragraph, not adjacent local method, protocol, or empirical results. Grouped citations retain each source contribution.",
+      "source_evidence_id": "austin2021mbpp",
+      "status": "RECHECKED_AGAINST_RECORDED_SOURCE_SCOPE"
+    },
+    {
+      "attributed_clause": "Oracle judgments depend on observed behavior and the testing relation.",
+      "citation_key": "barr2015",
+      "citing_sentence": "A test result establishes a property only for the exercised inputs, observer, and oracle, and the oracle problem prevents a trace from being interpreted in isolation~\\cite{weyuker1982,barr2015}.",
+      "complete_original_paper_read_claimed": false,
+      "evidence": [
+        {
+          "path": "artifact/citation-current/verified-sources.json",
+          "record_selector": "barr2015",
+          "sha256": "05310b3dcbc39a326f29fe6ddc3a3a9ef703c85cc22605d910e7b216e91febc0",
+          "type": "reviewed_source_scope_and_primary_receipts"
+        }
+      ],
+      "file": "paper/figdata/main-related.tex",
+      "fresh_original_source_access_this_revision": false,
+      "line_at_review": 15,
+      "note": "Testing oracles judge behavior using available observations and an oracle relation. The selected oracle definitions do not turn a passed finite suite into an all-input equivalence proof. Round-6 recheck: the citing sentence is word-identical to the one reviewed in R6C006 and attributes only content within the recorded source scope; Paragraph changed only by removal of the subsection heading line that the paragraph split included. Grouped citations keep each source contribution.",
+      "paragraph_sha256": "62783ef681a347181855bb86fa56eff8b228a90005480cbc3806a204cb0adb5a",
+      "renews_review_id": "R6C006",
+      "review_id": "R7C002",
+      "scope": "The assessment applies to the attributed clause in the current paragraph, not adjacent local method, protocol, or empirical results. Grouped citations retain each source contribution.",
+      "source_evidence_id": "barr2015",
+      "status": "RECHECKED_AGAINST_RECORDED_SOURCE_SCOPE"
+    },
+    {
+      "attributed_clause": "HumanEval supplies executable programming tasks and canonical reference programs; the complete frozen official file contains 164 tasks.",
+      "citation_key": "chen2021humaneval",
+      "citing_sentence": "We applied the full catalogue to every canonical HumanEval~\\cite{chen2021humaneval} and sanitized MBPP~\\cite{austin2021mbpp} reference.",
+      "complete_original_paper_read_claimed": false,
+      "evidence": [
+        {
+          "path": "artifact/citation-current/verified-sources.json",
+          "record_selector": "chen2021humaneval",
+          "sha256": "05310b3dcbc39a326f29fe6ddc3a3a9ef703c85cc22605d910e7b216e91febc0",
+          "type": "reviewed_source_scope_and_primary_receipts"
+        }
+      ],
+      "file": "paper/figdata/main-evidence.tex",
+      "fresh_original_source_access_this_revision": false,
+      "line_at_review": 24,
+      "note": "HumanEval provides 164 executable programming tasks; the frozen file supplies canonical reference implementations and tests. The benchmark reference programs are not a probability sample of production code or model-generated completions. Round-6 recheck: the citing sentence is word-identical to the one reviewed in R6C007 and attributes only content within the recorded source scope; Paragraph changed in its Title Case heading and in local prose (listing and its explanation, figure pointer); the added text reports this study's own CREST results and attributes nothing further to the source. Grouped citations keep each source contribution.",
+      "paragraph_sha256": "2041181e075d0dabc209baca1a8a362213b0719c8675c4fbc03639d423b0e488",
+      "renews_review_id": "R6C007",
+      "review_id": "R7C003",
+      "scope": "The assessment applies to the attributed clause in the current paragraph, not adjacent local method, protocol, or empirical results. Grouped citations retain each source contribution.",
+      "source_evidence_id": "chen2021humaneval",
+      "status": "RECHECKED_AGAINST_RECORDED_SOURCE_SCOPE"
+    },
+    {
+      "attributed_clause": "The released CREST implementation supplies Python source transformations, probabilistic detection, and three released classifier heads; local outcomes are not attributed to the repository.",
+      "citation_key": "crest2026",
+      "citing_sentence": "\\subsection{Detection and Behavioral Validity Diverge}\n\\label{sec:obs-divergence}\nCREST rewrites Python programs with a catalogue of syntactic transformations and ships a random-forest detector and two logistic-regression detectors with released thresholds~\\cite{crest2026}.",
+      "complete_original_paper_read_claimed": false,
+      "evidence": [
+        {
+          "path": "artifact/citation-current/verified-sources.json",
+          "record_selector": "crest2026",
+          "sha256": "05310b3dcbc39a326f29fe6ddc3a3a9ef703c85cc22605d910e7b216e91febc0",
+          "type": "reviewed_source_scope_and_primary_receipts"
+        }
+      ],
+      "file": "paper/figdata/main-evidence.tex",
+      "fresh_original_source_access_this_revision": false,
+      "line_at_review": 24,
+      "note": "CREST is a publicly released Python source-transform watermark pipeline with a default random-forest detector and two logistic-regression heads. Its release supplies GPT-4o and Qwen code cohorts and a data path that uses released generated/watermarked programs in classifier development. The repository describes the associated manuscript as submitted; it is cited as software, without a fabricated journal publication. Released-cohort detection readings do not constitute independent held-out detection estimates. Round-6 recheck: the citing sentence is word-identical to the one reviewed in R6C010 and attributes only content within the recorded source scope; Paragraph changed in its Title Case heading and in local prose (listing and its explanation, figure pointer); the added text reports this study's own CREST results and attributes nothing further to the source. Grouped citations keep each source contribution.",
+      "paragraph_sha256": "2041181e075d0dabc209baca1a8a362213b0719c8675c4fbc03639d423b0e488",
+      "renews_review_id": "R6C010",
+      "review_id": "R7C004",
+      "scope": "The assessment applies to the attributed clause in the current paragraph, not adjacent local method, protocol, or empirical results. Grouped citations retain each source contribution.",
+      "source_evidence_id": "crest2026",
+      "status": "RECHECKED_AGAINST_RECORDED_SOURCE_SCOPE"
+    },
+    {
+      "attributed_clause": "Fractional programming supplies general algorithms for ratio objectives; the following Boolean endpoints are derived locally.",
+      "citation_key": "dinkelbach1967",
+      "citing_sentence": "\\subsection{Partial Identification and Closest Alternatives}\nPartial identification retains the set of values compatible with incomplete data instead of imputing a point~\\cite{manski2003}, and fractional programming supplies tools for ratio objectives~\\cite{dinkelbach1967}.",
+      "complete_original_paper_read_claimed": false,
+      "evidence": [
+        {
+          "path": "artifact/citation-current/verified-sources.json",
+          "record_selector": "dinkelbach1967",
+          "sha256": "05310b3dcbc39a326f29fe6ddc3a3a9ef703c85cc22605d910e7b216e91febc0",
+          "type": "reviewed_source_scope_and_primary_receipts"
+        }
+      ],
+      "file": "paper/figdata/main-related.tex",
+      "fresh_original_source_access_this_revision": false,
+      "line_at_review": 25,
+      "note": "Fractional programming supplies general algorithms for ratio objectives. The manuscript derives its own Boolean sorted-prefix endpoints; the inspected abstract does not prove those endpoints. Round-6 recheck: the citing sentence is word-identical to the one reviewed in R6C014 and attributes only content within the recorded source scope; Paragraph changed in its Title Case heading and in one local clause (\"our baseline\"); nothing further is attributed to the source. Grouped citations keep each source contribution.",
+      "paragraph_sha256": "113c298f89f10843d7d811eef7d6737871c1be5974ce00c80565e0a586cdb84c",
+      "renews_review_id": "R6C014",
+      "review_id": "R7C005",
+      "scope": "The assessment applies to the attributed clause in the current paragraph, not adjacent local method, protocol, or empirical results. Grouped citations retain each source contribution.",
+      "source_evidence_id": "dinkelbach1967",
+      "status": "RECHECKED_AGAINST_RECORDED_SOURCE_SCOPE"
+    },
+    {
+      "attributed_clause": "Measurement validation requires defined attributes and a numerical representation consistent with empirical relations.",
+      "citation_key": "fenton1994",
+      "citing_sentence": "\\subsection{Metric Validity and Behavioral Evidence}\nSoftware metrics are meaningful only through the attribute and decision they operationalize~\\cite{fenton1994,kitchenham1995,meneely2013}, and construct-validity guidance requires the measured quantity, the claim, and its scope to stay aligned~\\cite{sjoberg2023,sjoberg2023reporting}.",
+      "complete_original_paper_read_claimed": false,
+      "evidence": [
+        {
+          "path": "artifact/citation-current/verified-sources.json",
+          "record_selector": "fenton1994",
+          "sha256": "05310b3dcbc39a326f29fe6ddc3a3a9ef703c85cc22605d910e7b216e91febc0",
+          "type": "reviewed_source_scope_and_primary_receipts"
+        }
+      ],
+      "file": "paper/figdata/main-related.tex",
+      "fresh_original_source_access_this_revision": false,
+      "line_at_review": 13,
+      "note": "Numerical measures require a defined attribute and a representation consistent with the underlying empirical relations. Intended-use criterion selection in the grouped citation is specifically supported by Meneely, not assigned solely to Fenton. Round-6 recheck: the citing sentence is word-identical to the one reviewed in R6C016 and attributes only content within the recorded source scope; Paragraph changed only in its Title Case subsection heading. Grouped citations keep each source contribution.",
+      "paragraph_sha256": "0bce24284e7b9a802ec677d3363c5281b33d6675c4e1739d8eb6ea5fe8a0b0cd",
+      "renews_review_id": "R6C016",
+      "review_id": "R7C006",
+      "scope": "The assessment applies to the attributed clause in the current paragraph, not adjacent local method, protocol, or empirical results. Grouped citations retain each source contribution.",
+      "source_evidence_id": "fenton1994",
+      "status": "RECHECKED_AGAINST_RECORDED_SOURCE_SCOPE"
+    },
+    {
+      "attributed_clause": "Measurement validation examines attributes, structure and underlying models; the grouped intended-use component is supported separately by Meneely.",
+      "citation_key": "kitchenham1995",
+      "citing_sentence": "\\subsection{Metric Validity and Behavioral Evidence}\nSoftware metrics are meaningful only through the attribute and decision they operationalize~\\cite{fenton1994,kitchenham1995,meneely2013}, and construct-validity guidance requires the measured quantity, the claim, and its scope to stay aligned~\\cite{sjoberg2023,sjoberg2023reporting}.",
+      "complete_original_paper_read_claimed": false,
+      "evidence": [
+        {
+          "path": "artifact/citation-current/verified-sources.json",
+          "record_selector": "kitchenham1995",
+          "sha256": "05310b3dcbc39a326f29fe6ddc3a3a9ef703c85cc22605d910e7b216e91febc0",
+          "type": "reviewed_source_scope_and_primary_receipts"
+        }
+      ],
+      "file": "paper/figdata/main-related.tex",
+      "fresh_original_source_access_this_revision": false,
+      "line_at_review": 13,
+      "note": "Measurement validation examines the structure, attributes and models underlying numerical measures. No fresh body-section reading is claimed; the grouped intended-use statement is additionally supported by Meneely. Round-6 recheck: the citing sentence is word-identical to the one reviewed in R6C022 and attributes only content within the recorded source scope; Paragraph changed only in its Title Case subsection heading. Grouped citations keep each source contribution.",
+      "paragraph_sha256": "0bce24284e7b9a802ec677d3363c5281b33d6675c4e1739d8eb6ea5fe8a0b0cd",
+      "renews_review_id": "R6C022",
+      "review_id": "R7C007",
+      "scope": "The assessment applies to the attributed clause in the current paragraph, not adjacent local method, protocol, or empirical results. Grouped citations retain each source contribution.",
+      "source_evidence_id": "kitchenham1995",
+      "status": "RECHECKED_AGAINST_RECORDED_SOURCE_SCOPE"
+    },
+    {
+      "attributed_clause": "Equivalence modulo inputs scopes a transformation claim to exercised inputs.",
+      "citation_key": "le2014emi",
+      "citing_sentence": "Translation validation checks each transformed program against its source instead of proving the transformer correct once~\\cite{pnueli1998,necula2000,tristan2011}, equivalence modulo inputs makes the exercised domain explicit~\\cite{le2014emi}, and verified compilation and proof-producing optimization occupy the formal end of this spectrum~\\cite{leroy2009,lopes2015}.",
+      "complete_original_paper_read_claimed": false,
+      "evidence": [
+        {
+          "path": "artifact/citation-current/verified-sources.json",
+          "record_selector": "le2014emi",
+          "sha256": "05310b3dcbc39a326f29fe6ddc3a3a9ef703c85cc22605d910e7b216e91febc0",
+          "type": "reviewed_source_scope_and_primary_receipts"
+        }
+      ],
+      "file": "paper/figdata/main-related.tex",
+      "fresh_original_source_access_this_revision": false,
+      "line_at_review": 15,
+      "note": "Equivalence modulo inputs scopes equivalence to the specified exercised inputs. That input restriction does not establish unrestricted semantic equivalence. Round-6 recheck: the citing sentence is word-identical to the one reviewed in R6C025 and attributes only content within the recorded source scope; Paragraph changed only by removal of the subsection heading line that the paragraph split included. Grouped citations keep each source contribution.",
+      "paragraph_sha256": "62783ef681a347181855bb86fa56eff8b228a90005480cbc3806a204cb0adb5a",
+      "renews_review_id": "R6C025",
+      "review_id": "R7C008",
+      "scope": "The assessment applies to the attributed clause in the current paragraph, not adjacent local method, protocol, or empirical results. Grouped citations retain each source contribution.",
+      "source_evidence_id": "le2014emi",
+      "status": "RECHECKED_AGAINST_RECORDED_SOURCE_SCOPE"
+    },
+    {
+      "attributed_clause": "Expanded test inputs expose errors missed by original suites and may alter model comparisons; the frozen additional-input asset supplies the locally studied inputs.",
+      "citation_key": "liu2023evalplus",
+      "citing_sentence": "HumanEval and MBPP suites can miss faults~\\cite{liu2023evalplus}, and their assertion styles differ.",
+      "complete_original_paper_read_claimed": false,
+      "evidence": [
+        {
+          "path": "artifact/citation-current/verified-sources.json",
+          "record_selector": "liu2023evalplus",
+          "sha256": "05310b3dcbc39a326f29fe6ddc3a3a9ef703c85cc22605d910e7b216e91febc0",
+          "type": "reviewed_source_scope_and_primary_receipts"
+        }
+      ],
+      "file": "paper/figdata/main-threats.tex",
+      "fresh_original_source_access_this_revision": false,
+      "line_at_review": 22,
+      "note": "Expanded tests expose missed errors and can change model comparisons; the pinned release supplies the additional input tuples used locally. Release-specific facts come from the asset, not the 2023 abstract. The local preservation contract is not official EvalPlus scoring. Round-6 recheck: the citing sentence is word-identical to the one reviewed in R6C033 and attributes only content within the recorded source scope; Paragraph changed only in its headings (Title Case subsection and run-in paragraph heading). Grouped citations keep each source contribution.",
+      "paragraph_sha256": "f8d0318fe0bacbcea8091203acecfe8857b3c577666399fd03f938199ceceed2",
+      "renews_review_id": "R6C033",
+      "review_id": "R7C009",
+      "scope": "The assessment applies to the attributed clause in the current paragraph, not adjacent local method, protocol, or empirical results. Grouped citations retain each source contribution.",
+      "source_evidence_id": "liu2023evalplus",
+      "status": "RECHECKED_AGAINST_RECORDED_SOURCE_SCOPE"
+    },
+    {
+      "attributed_clause": "Ma et al. evaluate uncertainty-based test selection for finding misclassifications and improving retraining.",
+      "citation_key": "ma2021selection",
+      "citing_sentence": "and test selection for learned systems chooses inputs by downstream objectives~\\cite{ma2021selection}.",
+      "complete_original_paper_read_claimed": false,
+      "evidence": [
+        {
+          "path": "artifact/citation-current/verified-sources.json",
+          "record_selector": "ma2021selection",
+          "sha256": "05310b3dcbc39a326f29fe6ddc3a3a9ef703c85cc22605d910e7b216e91febc0",
+          "type": "reviewed_source_scope_and_primary_receipts"
+        }
+      ],
+      "file": "paper/figdata/main-related.tex",
+      "fresh_original_source_access_this_revision": false,
+      "line_at_review": 20,
+      "note": "Ma et al. compare uncertainty-based test selection for detecting misclassified inputs and improving retraining. The inspected author preprint contains placeholder title-page metadata; the bibliography uses the separately verified final TOSEM identity. Its outcome is not a finite shared-label certificate of an aggregate score ordering. Round-6 recheck: the citing sentence is word-identical to the one reviewed in R6C034 and attributes only content within the recorded source scope; Paragraph changed only in its Title Case subsection heading. Grouped citations keep each source contribution.",
+      "paragraph_sha256": "b84de94fdb3b16c1096e456a7334276bbae5c3958c2f3d650f4211bbc8e9ad7b",
+      "renews_review_id": "R6C034",
+      "review_id": "R7C010",
+      "scope": "The assessment applies to the attributed clause in the current paragraph, not adjacent local method, protocol, or empirical results. Grouped citations retain each source contribution.",
+      "source_evidence_id": "ma2021selection",
+      "status": "RECHECKED_AGAINST_RECORDED_SOURCE_SCOPE"
+    },
+    {
+      "attributed_clause": "Partial identification retains values compatible with the available information.",
+      "citation_key": "manski2003",
+      "citing_sentence": "\\subsection{Partial Identification and Closest Alternatives}\nPartial identification retains the set of values compatible with incomplete data instead of imputing a point~\\cite{manski2003}, and fractional programming supplies tools for ratio objectives~\\cite{dinkelbach1967}.",
+      "complete_original_paper_read_claimed": false,
+      "evidence": [
+        {
+          "path": "artifact/citation-current/verified-sources.json",
+          "record_selector": "manski2003",
+          "sha256": "05310b3dcbc39a326f29fe6ddc3a3a9ef703c85cc22605d910e7b216e91febc0",
+          "type": "reviewed_source_scope_and_primary_receipts"
+        }
+      ],
+      "file": "paper/figdata/main-related.tex",
+      "fresh_original_source_access_this_revision": false,
+      "line_at_review": 25,
+      "note": "Partial identification retains a set of compatible values rather than asserting point identification. The overview is not a reading of the complete book or support for MarkValidity-specific sharpness proofs. Round-6 recheck: the citing sentence is word-identical to the one reviewed in R6C036 and attributes only content within the recorded source scope; Paragraph changed in its Title Case heading and in one local clause (\"our baseline\"); nothing further is attributed to the source. Grouped citations keep each source contribution.",
+      "paragraph_sha256": "113c298f89f10843d7d811eef7d6737871c1be5974ce00c80565e0a586cdb84c",
+      "renews_review_id": "R6C036",
+      "review_id": "R7C011",
+      "scope": "The assessment applies to the attributed clause in the current paragraph, not adjacent local method, protocol, or empirical results. Grouped citations retain each source contribution.",
+      "source_evidence_id": "manski2003",
+      "status": "RECHECKED_AGAINST_RECORDED_SOURCE_SCOPE"
+    },
+    {
+      "attributed_clause": "The intended use of a software metric determines the relevant validation questions.",
+      "citation_key": "meneely2013",
+      "citing_sentence": "\\subsection{Metric Validity and Behavioral Evidence}\nSoftware metrics are meaningful only through the attribute and decision they operationalize~\\cite{fenton1994,kitchenham1995,meneely2013}, and construct-validity guidance requires the measured quantity, the claim, and its scope to stay aligned~\\cite{sjoberg2023,sjoberg2023reporting}.",
+      "complete_original_paper_read_claimed": false,
+      "evidence": [
+        {
+          "path": "artifact/citation-current/verified-sources.json",
+          "record_selector": "meneely2013",
+          "sha256": "05310b3dcbc39a326f29fe6ddc3a3a9ef703c85cc22605d910e7b216e91febc0",
+          "type": "reviewed_source_scope_and_primary_receipts"
+        }
+      ],
+      "file": "paper/figdata/main-related.tex",
+      "fresh_original_source_access_this_revision": false,
+      "line_at_review": 13,
+      "note": "Validation criteria should answer the questions posed by a metric intended use. The author manuscript is not the final layout and does not establish a journal-wide paper-organization rule. Round-6 recheck: the citing sentence is word-identical to the one reviewed in R6C038 and attributes only content within the recorded source scope; Paragraph changed only in its Title Case subsection heading. Grouped citations keep each source contribution.",
+      "paragraph_sha256": "0bce24284e7b9a802ec677d3363c5281b33d6675c4e1739d8eb6ea5fe8a0b0cd",
+      "renews_review_id": "R6C038",
+      "review_id": "R7C012",
+      "scope": "The assessment applies to the attributed clause in the current paragraph, not adjacent local method, protocol, or empirical results. Grouped citations retain each source contribution.",
+      "source_evidence_id": "meneely2013",
+      "status": "RECHECKED_AGAINST_RECORDED_SOURCE_SCOPE"
+    },
+    {
+      "attributed_clause": "Translation validation checks a produced program against a specified source/target relation.",
+      "citation_key": "necula2000",
+      "citing_sentence": "Translation validation checks each transformed program against its source instead of proving the transformer correct once~\\cite{pnueli1998,necula2000,tristan2011}, equivalence modulo inputs makes the exercised domain explicit~\\cite{le2014emi}, and verified compilation and proof-producing optimization occupy the formal end of this spectrum~\\cite{leroy2009,lopes2015}.",
+      "complete_original_paper_read_claimed": false,
+      "evidence": [
+        {
+          "path": "artifact/citation-current/verified-sources.json",
+          "record_selector": "necula2000",
+          "sha256": "05310b3dcbc39a326f29fe6ddc3a3a9ef703c85cc22605d910e7b216e91febc0",
+          "type": "reviewed_source_scope_and_primary_receipts"
+        }
+      ],
+      "file": "paper/figdata/main-related.tex",
+      "fresh_original_source_access_this_revision": false,
+      "line_at_review": 15,
+      "note": "Translation validation checks a produced program against a specified source/target relation. The source does not prove the correctness of the local Python observer or SEW implementation. Round-6 recheck: the citing sentence is word-identical to the one reviewed in R6C039 and attributes only content within the recorded source scope; Paragraph changed only by removal of the subsection heading line that the paragraph split included. Grouped citations keep each source contribution.",
+      "paragraph_sha256": "62783ef681a347181855bb86fa56eff8b228a90005480cbc3806a204cb0adb5a",
+      "renews_review_id": "R6C039",
+      "review_id": "R7C013",
+      "scope": "The assessment applies to the attributed clause in the current paragraph, not adjacent local method, protocol, or empirical results. Grouped citations retain each source contribution.",
+      "source_evidence_id": "necula2000",
+      "status": "RECHECKED_AGAINST_RECORDED_SOURCE_SCOPE"
+    },
+    {
+      "attributed_clause": "Safe regression selection retains relevant fault-revealing tests from an existing suite under its stated conditions.",
+      "citation_key": "rothermel1997",
+      "citing_sentence": "Safe techniques preserve fault-detection capability under explicit assumptions, and empirical studies characterize their granularity, precision, and cost~\\cite{rothermel1997,rothermel1998,engstrom2010,yoo2012};",
+      "complete_original_paper_read_claimed": false,
+      "evidence": [
+        {
+          "path": "artifact/citation-current/verified-sources.json",
+          "record_selector": "rothermel1997",
+          "sha256": "05310b3dcbc39a326f29fe6ddc3a3a9ef703c85cc22605d910e7b216e91febc0",
+          "type": "reviewed_source_scope_and_primary_receipts"
+        }
+      ],
+      "file": "paper/figdata/main-related.tex",
+      "fresh_original_source_access_this_revision": false,
+      "line_at_review": 20,
+      "note": "Safe regression selection retains, under stated conditions, tests from an existing suite capable of exposing faults in the modified program. This is existing-suite safety, not a guarantee to expose every possible program fault. Round-6 recheck: the citing sentence is word-identical to the one reviewed in R6C045 and attributes only content within the recorded source scope; Paragraph changed only in its Title Case subsection heading. Grouped citations keep each source contribution.",
+      "paragraph_sha256": "b84de94fdb3b16c1096e456a7334276bbae5c3958c2f3d650f4211bbc8e9ad7b",
+      "renews_review_id": "R6C045",
+      "review_id": "R7C014",
+      "scope": "The assessment applies to the attributed clause in the current paragraph, not adjacent local method, protocol, or empirical results. Grouped citations retain each source contribution.",
+      "source_evidence_id": "rothermel1997",
+      "status": "RECHECKED_AGAINST_RECORDED_SOURCE_SCOPE"
+    },
+    {
+      "attributed_clause": "SEW states type, effect and structural applicability conditions and aggregates keyed style evidence through structural context.",
+      "citation_key": "sew2026",
+      "citing_sentence": "\\emph{SEW}~\\cite{sew2026} embeds a keyed style watermark and uses the released detector calibration.",
+      "complete_original_paper_read_claimed": false,
+      "evidence": [
+        {
+          "path": "artifact/citation-current/verified-sources.json",
+          "record_selector": "sew2026",
+          "sha256": "05310b3dcbc39a326f29fe6ddc3a3a9ef703c85cc22605d910e7b216e91febc0",
+          "type": "reviewed_source_scope_and_primary_receipts"
+        }
+      ],
+      "file": "paper/figdata/main-evaluation.tex",
+      "fresh_original_source_access_this_revision": false,
+      "line_at_review": 28,
+      "note": "SEW states applicability conditions and aggregates keyed style evidence through structural context. Stated applicability conditions do not establish correctness of every implementation path or the observed failure rate elsewhere. Round-6 recheck: the citing sentence is word-identical to the one reviewed in R6C046 and attributes only content within the recorded source scope; Paragraph changed only in a local sentence about this study's S1/S4 design; nothing further is attributed to SEW. Grouped citations keep each source contribution.",
+      "paragraph_sha256": "c7033852b46a4720dc8e8ba3dc7a63007e7bfd555b3b83d5d7f84e934d8b7d1b",
+      "renews_review_id": "R6C046",
+      "review_id": "R7C015",
+      "scope": "The assessment applies to the attributed clause in the current paragraph, not adjacent local method, protocol, or empirical results. Grouped citations retain each source contribution.",
+      "source_evidence_id": "sew2026",
+      "status": "RECHECKED_AGAINST_RECORDED_SOURCE_SCOPE"
+    },
+    {
+      "attributed_clause": "SEW states type, effect and structural applicability conditions and aggregates keyed style evidence through structural context.",
+      "citation_key": "sew2026",
+      "citing_sentence": "SEW embeds a keyed style watermark into Python sources~\\cite{sew2026}, and we evaluate four versions of it on the same tasks and keys.",
+      "complete_original_paper_read_claimed": false,
+      "evidence": [
+        {
+          "path": "artifact/citation-current/verified-sources.json",
+          "record_selector": "sew2026",
+          "sha256": "05310b3dcbc39a326f29fe6ddc3a3a9ef703c85cc22605d910e7b216e91febc0",
+          "type": "reviewed_source_scope_and_primary_receipts"
+        }
+      ],
+      "file": "paper/figdata/main-evidence.tex",
+      "fresh_original_source_access_this_revision": false,
+      "line_at_review": 45,
+      "note": "SEW states applicability conditions and aggregates keyed style evidence through structural context. Stated applicability conditions do not establish correctness of every implementation path or the observed failure rate elsewhere. Round-6 recheck: the citing sentence is word-identical to the one reviewed in R6C047 and attributes only content within the recorded source scope; Paragraph changed only in its Title Case subsection heading. Grouped citations keep each source contribution.",
+      "paragraph_sha256": "b3d5ca8f57a7b9cfb38d12ea1e00dce6b8bd5147fe66095c12f57609605678a7",
+      "renews_review_id": "R6C047",
+      "review_id": "R7C016",
+      "scope": "The assessment applies to the attributed clause in the current paragraph, not adjacent local method, protocol, or empirical results. Grouped citations retain each source contribution.",
+      "source_evidence_id": "sew2026",
+      "status": "RECHECKED_AGAINST_RECORDED_SOURCE_SCOPE"
+    },
+    {
+      "attributed_clause": "Construct-validity arguments connect operational measures with the concepts they represent.",
+      "citation_key": "sjoberg2023",
+      "citing_sentence": "\\subsection{Metric Validity and Behavioral Evidence}\nSoftware metrics are meaningful only through the attribute and decision they operationalize~\\cite{fenton1994,kitchenham1995,meneely2013}, and construct-validity guidance requires the measured quantity, the claim, and its scope to stay aligned~\\cite{sjoberg2023,sjoberg2023reporting}.",
+      "complete_original_paper_read_claimed": false,
+      "evidence": [
+        {
+          "path": "artifact/citation-current/verified-sources.json",
+          "record_selector": "sjoberg2023",
+          "sha256": "05310b3dcbc39a326f29fe6ddc3a3a9ef703c85cc22605d910e7b216e91febc0",
+          "type": "reviewed_source_scope_and_primary_receipts"
+        }
+      ],
+      "file": "paper/figdata/main-related.tex",
+      "fresh_original_source_access_this_revision": false,
+      "line_at_review": 13,
+      "note": "Construct-validity arguments relate operational measures to the concepts they are intended to represent. The selected guidance does not validate MarkValidity automatically or replace its explicit contract. Round-6 recheck: the citing sentence is word-identical to the one reviewed in R6C051 and attributes only content within the recorded source scope; Paragraph changed only in its Title Case subsection heading. Grouped citations keep each source contribution.",
+      "paragraph_sha256": "0bce24284e7b9a802ec677d3363c5281b33d6675c4e1739d8eb6ea5fe8a0b0cd",
+      "renews_review_id": "R6C051",
+      "review_id": "R7C017",
+      "scope": "The assessment applies to the attributed clause in the current paragraph, not adjacent local method, protocol, or empirical results. Grouped citations retain each source contribution.",
+      "source_evidence_id": "sjoberg2023",
+      "status": "RECHECKED_AGAINST_RECORDED_SOURCE_SCOPE"
+    },
+    {
+      "attributed_clause": "Reporting construct validity requires explicit construct, operationalization and evidence scope.",
+      "citation_key": "sjoberg2023reporting",
+      "citing_sentence": "\\subsection{Metric Validity and Behavioral Evidence}\nSoftware metrics are meaningful only through the attribute and decision they operationalize~\\cite{fenton1994,kitchenham1995,meneely2013}, and construct-validity guidance requires the measured quantity, the claim, and its scope to stay aligned~\\cite{sjoberg2023,sjoberg2023reporting}.",
+      "complete_original_paper_read_claimed": false,
+      "evidence": [
+        {
+          "path": "artifact/citation-current/verified-sources.json",
+          "record_selector": "sjoberg2023reporting",
+          "sha256": "05310b3dcbc39a326f29fe6ddc3a3a9ef703c85cc22605d910e7b216e91febc0",
+          "type": "reviewed_source_scope_and_primary_receipts"
+        }
+      ],
+      "file": "paper/figdata/main-related.tex",
+      "fresh_original_source_access_this_revision": false,
+      "line_at_review": 13,
+      "note": "Construct-validity reporting should make the relevant construct, operationalization and evidence scope explicit. This reporting guidance does not itself establish the empirical validity of the current metric. Round-6 recheck: the citing sentence is word-identical to the one reviewed in R6C052 and attributes only content within the recorded source scope; Paragraph changed only in its Title Case subsection heading. Grouped citations keep each source contribution.",
+      "paragraph_sha256": "0bce24284e7b9a802ec677d3363c5281b33d6675c4e1739d8eb6ea5fe8a0b0cd",
+      "renews_review_id": "R6C052",
+      "review_id": "R7C018",
+      "scope": "The assessment applies to the attributed clause in the current paragraph, not adjacent local method, protocol, or empirical results. Grouped citations retain each source contribution.",
+      "source_evidence_id": "sjoberg2023reporting",
+      "status": "RECHECKED_AGAINST_RECORDED_SOURCE_SCOPE"
+    },
+    {
+      "attributed_clause": "The oracle problem limits what observed tests can establish.",
+      "citation_key": "weyuker1982",
+      "citing_sentence": "A test result establishes a property only for the exercised inputs, observer, and oracle, and the oracle problem prevents a trace from being interpreted in isolation~\\cite{weyuker1982,barr2015}.",
+      "complete_original_paper_read_claimed": false,
+      "evidence": [
+        {
+          "path": "artifact/citation-current/verified-sources.json",
+          "record_selector": "weyuker1982",
+          "sha256": "05310b3dcbc39a326f29fe6ddc3a3a9ef703c85cc22605d910e7b216e91febc0",
+          "type": "reviewed_source_scope_and_primary_receipts"
+        }
+      ],
+      "file": "paper/figdata/main-related.tex",
+      "fresh_original_source_access_this_revision": false,
+      "line_at_review": 15,
+      "note": "Testing without a complete oracle requires care about what observed evidence can establish. Only the two stated scanned pages were freshly inspected; no OCR or full-paper reading is claimed. Round-6 recheck: the citing sentence is word-identical to the one reviewed in R6C053 and attributes only content within the recorded source scope; Paragraph changed only by removal of the subsection heading line that the paragraph split included. Grouped citations keep each source contribution.",
+      "paragraph_sha256": "62783ef681a347181855bb86fa56eff8b228a90005480cbc3806a204cb0adb5a",
+      "renews_review_id": "R6C053",
+      "review_id": "R7C019",
+      "scope": "The assessment applies to the attributed clause in the current paragraph, not adjacent local method, protocol, or empirical results. Grouped citations retain each source contribution.",
+      "source_evidence_id": "weyuker1982",
+      "status": "RECHECKED_AGAINST_RECORDED_SOURCE_SCOPE"
+    },
+    {
+      "attributed_clause": "Differential testing compares program executions across compilers.",
+      "citation_key": "yang2011compiler",
+      "citing_sentence": "Differential testing obtains an oracle by comparing implementations and has exposed defects in compilers and other complex systems~\\cite{mckeeman1998,yang2011compiler};",
+      "complete_original_paper_read_claimed": false,
+      "evidence": [
+        {
+          "path": "artifact/citation-current/verified-sources.json",
+          "record_selector": "yang2011compiler",
+          "sha256": "05310b3dcbc39a326f29fe6ddc3a3a9ef703c85cc22605d910e7b216e91febc0",
+          "type": "reviewed_source_scope_and_primary_receipts"
+        }
+      ],
+      "file": "paper/figdata/main-related.tex",
+      "fresh_original_source_access_this_revision": false,
+      "line_at_review": 15,
+      "note": "Csmith differential testing compares program executions across compilers. Compiler-output disagreement does not supply MarkValidity local observer correctness or all-input equivalence. Round-6 recheck: the citing sentence is word-identical to the one reviewed in R6C054 and attributes only content within the recorded source scope; Paragraph changed only by removal of the subsection heading line that the paragraph split included. Grouped citations keep each source contribution.",
+      "paragraph_sha256": "62783ef681a347181855bb86fa56eff8b228a90005480cbc3806a204cb0adb5a",
+      "renews_review_id": "R6C054",
+      "review_id": "R7C020",
+      "scope": "The assessment applies to the attributed clause in the current paragraph, not adjacent local method, protocol, or empirical results. Grouped citations retain each source contribution.",
+      "source_evidence_id": "yang2011compiler",
+      "status": "RECHECKED_AGAINST_RECORDED_SOURCE_SCOPE"
     }
   ]
 }
