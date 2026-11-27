@@ -225,9 +225,10 @@ summary exactly (only per-run `elapsed_seconds` differ).
   `matched-effort`; PDF, SVG and PNG) and the figure atlas are byte-identical to
   `../paper` (regenerated on the test host with Python 3.13.18 and matplotlib
   3.11.2, beyond the pinned 3.10.8, without changing a byte). The compiled
-  article has 39 pages with seven statistical figures (Figs. 4 to 10) and three
-  conceptual-figure placeholders (Figs. 1 to 3); the online supplement has 48 pages and the supplement figure
-  `matched-effort`.
+  article has 39 pages with three drawn conceptual figures (Figs. 1 to 3,
+  `fig1_framework`, `fig2_motivating`, `fig3_overview`) and seven statistical
+  figures (Figs. 4 to 10); the figure atlas shows all ten. The online supplement
+  has 48 pages and the supplement figure `matched-effort`.
 - CREST classifier scores (`crest-native-model-*`): the saved LogReg
   probabilities were computed on an x86-64 CPU with AVX-512 (recorded platform:
   Linux 6.18, glibc 2.41, Python 3.12.14), where the OpenBLAS 0.3.30 bundled with
